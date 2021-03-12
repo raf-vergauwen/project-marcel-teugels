@@ -1,0 +1,7 @@
+.gitkeep (Track Empty Directory)
+====================================================================================================
+
+Does does not track empty directory. In order to track a directory, a file must exist within it.
+A trick that many people use is to create a hidden file usually called .gitkeep.
+The name of the file doesn't matter. As long as there is a file in the
+directory .gitkeep, readme.txt etc, git will track directory.
