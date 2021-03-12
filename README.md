@@ -1,59 +1,56 @@
-# Project Title
+# Project Marcel Teugels AKA Project Marsteel
 
-A short description about the project and/or client.
+## **Members**
 
-## Getting Started
+- Emiel: Teamleader
+- Kenneth: Graphical Designer
+- Raf: Support
+- Lins : Support
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Het project is onderverdeeld in twee delen, een restoratie gedeelte en een verkoopgedeelte.
+Voorbeeld: https://remmen.be/
+Switchen van het ene deel naar het andere deel is mogelijk.
 
-### Prerequisites
+## **Deel 1: Restoratie**
 
-The things you need before installing the software.
+Het eerste deel draait rond het leveren van een dienst, namelijk het conserveren en restoreren van (antieke) voorwerpen.
+Redelijk klassieke en profesionele opbouw en stijl.
+Voorbeeld: https://remmen.be/heritage
 
-- You need this
-- And you need this
-- Oh, and don't forget this
+### **Core**
 
-### Installation
+- Voorstelling
+- Portfolio
+- Conservatie en restoratie:
+  - Restoratie houtwerk
+    - Meubels
+    - Beeldhouwwerk
+    - Etnografie
+  - Restoratie smeedwerk
+    - Algemeen
+  - Restoratie taxidermie
+- Workshops
+- Contact
 
-A step by step guide that will tell you how to get the development environment up and running.
+## **Deel 2: Webshop**
 
-```
-$ First step
-$ Another step
-$ Final step
-```
+Het tweede deel draait rond het creëeren en verkopen van eigen, zelfgemaakte voorwerpen via een webshop.
+Voorbeeld: https://alecsteeleshop.com/
 
-## Usage
+Inclusief uitgebreidde database tools voor de admins.
 
-A few examples of useful commands and/or tasks.
+Een blog is geen must, maar een optie.
+**Als de blog wordt geintegreerd dan moet er een duidelijke scheiding komen tussen webshop en de blog!**
 
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
+### **Core**
 
-## Deployment
+- Webwinkel
+  - Database
+  - Userstories:
+    - Admin
+    - User
+- Costum work
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
+### **Advanced**
 
-### Server
-
-- Live:
-- Release:
-- Development:
-
-### Branches
-
-- Master:
-- Feature:
-- Bugfix:
-- etc...
-
-## Additional Documentation and Acknowledgments
-
-- Project folder on server:
-- Confluence link:
-- Asana board:
-- etc...
+- Blog
