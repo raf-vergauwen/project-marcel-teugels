@@ -14,6 +14,7 @@
   - meest bekeken items en tags
   - meest gewilde items (via wishlist van users)
 - Gewichtstabel voor verzendkosten
+- Btw bepalen
 
 ### Advanced
 
@@ -32,6 +33,7 @@
 
   - Persoonlijk gegevens:
     - Naam
+    - paswoord
     - email-adress
     - Adress
     - Regio
@@ -60,6 +62,13 @@
 - Notificaties kunnen worden aan- of uitgezet bij de instellingen
 - De user kan producten die uitverkocht zijn, makkelijk terug aanvragen via de costum webshop
 
+## Anonieme User
+- Ook dingen kopen maar anoniem
+- Geen database
+- Gewoon bestellen zonder account
+
 [^1]:
     Vragen aan Korneel
     (payment providers)
+
+## klad

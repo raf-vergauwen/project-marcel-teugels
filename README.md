@@ -32,6 +32,10 @@ Voorbeeld: https://remmen.be/heritage
 - Workshops
 - Contact
 
+### **Advanced**
+
+	- makkelijk switchen naar andere talen
+
 ## **Deel 2: Webshop**
 
 Het tweede deel draait rond het creëeren en verkopen van eigen, zelfgemaakte voorwerpen via een webshop.
