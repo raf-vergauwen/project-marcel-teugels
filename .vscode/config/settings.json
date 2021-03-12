@@ -1,0 +1,276 @@
+{
+	"terminal.integrated.shell.windows": "cmd.exe",
+	"terminal.integrated.shellArgs.windows": [
+		"/k",
+		"\\Apps\\cmdr\\vendor\\bin\\vscode_init.cmd"
+	],
+	"git.enableSmartCommit": true,
+	"explorer.confirmDragAndDrop": false,
+	"git.autofetch": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.formatOnSave": true,
+	"explorer.confirmDelete": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": ["comment"],
+				"settings": { "fontStyle": "italic" }
+			}
+		]
+	},
+	"editor.semanticTokenColorCustomizations": {
+		"[Atom One Dark]": {
+			"rules": {
+				// Web API
+				"variable.defaultLibrary": "#56B6C2",
+				// parameter
+				"variable.parameter": "#7789FF",
+				// let variable
+				"variable.local": "#E5C07B",
+				"variable.declaration.local": "#E5C07B",
+				// const variable
+				"variable.readonly": "#D19A66",
+				"variable.readonly.local": "#D19A66",
+				// class
+				// "class.defaultLibrary": "#E57BCA",
+				"class.defaultLibrary": "#E5E47B",
+				// "class.declaration": "#E57BCA"
+				"class.declaration": "#E5E47B"
+			}
+		}
+	},
+	"editor.semanticHighlighting.enabled": true,
+	"workbench.colorCustomizations": {},
+
+	// Controls if quick suggestions should show up while typing
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": true,
+		"strings": true
+	},
+
+	// Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+	"editor.acceptSuggestionOnCommitCharacter": true,
+
+	// Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+	"editor.acceptSuggestionOnEnter": "off",
+
+	// Controls the delay in ms after which quick suggestions will show up.
+	"editor.quickSuggestionsDelay": 10,
+
+	// Controls if suggestions should automatically show up when typing trigger characters
+	"editor.suggestOnTriggerCharacters": true,
+
+	// Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+	"editor.tabCompletion": "on",
+
+	// Controls whether sorting favours words that appear close to the cursor
+	"editor.suggest.localityBonus": true,
+
+	// Controls how suggestions are pre-selected when showing the suggest list
+	"editor.suggestSelection": "first",
+
+	// Enable word based suggestions
+	"editor.wordBasedSuggestions": true,
+
+	// Enable parameter hints
+	"editor.parameterHints.enabled": true,
+	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+	"sync.gist": "5fd714f9ffdf7511e04b51c4b35d8638",
+	"sync.autoDownload": true,
+	"sync.autoUpload": true,
+	"sync.forceDownload": false,
+	"sync.forceUpload": false,
+	"sync.quietSync": true,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+	"settingsSync.ignoredSettings": ["-eslint.nodePath"],
+	"liveServer.settings.donotShowInfoMsg": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 250,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#E06C75",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "@",
+			"color": "crimson",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "+",
+			"color": "ghostwhite",
+			"strikethrough": false,
+			"underline": true,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": true
+		},
+		{
+			"tag": "*",
+			"color": "darkgray",
+			"strikethrough": false,
+			"underline": true,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": true
+		},
+		{
+			"tag": "-",
+			"color": "gray",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true
+		},
+		{
+			"tag": "#",
+			"color": "lightslategray",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true
+		},
+		{
+			"tag": "//",
+			"color": "#596673",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+	"better-comments.highlightPlainText": true,
+	"workbench.preferredDarkColorTheme": "Atom One Dark",
+	"workbench.preferredLightColorTheme": "Atom One Light",
+	"window.autoDetectColorScheme": true,
+	"material-icon-theme.files.associations": {
+		"*.7z": "zip"
+	},
+	"material-icon-theme.folders.associations": {
+		"repos": "git",
+		".git": "git",
+		"git": "git",
+		"project-marsteel": "github",
+		"networking": "webpack",
+		"00-resource": "resource",
+		"00-template-website-default": "template",
+		"01-javascript": "javascript",
+		"02-html-&-css": "css",
+		"html-&-css": "css",
+		"03-sql": "database",
+		"sql": "database",
+		"04-json": "json",
+		"05-markdown": "markdown",
+		"06-xml": "src",
+		"07-git": "git",
+		"xml": "src",
+		"08-vue": "vue",
+		"scss": "sass",
+		"jpeg": "svg",
+		"png": "svg",
+		"default-stylesheets": "helper",
+		"partials": "import",
+		"normalize-css": "custom",
+		"reset-css": "custom",
+		"custom-css": "custom",
+		// "bootstrap": "./../folder-batch"
+		"bootstrap": "github",
+		"vscode-material-icon-theme": "github",
+		"backup": "archive",
+		"downloaded": "download",
+		"links": "connection"
+	},
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace"
+	},
+	"terminal.integrated.automationShell.linux": "",
+	"[jsonc]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace"
+	},
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"prettier.useTabs": true,
+	"typescript.npm": "",
+	"editor.lineHeight": 20,
+	"vsintellicode.features.python.deepLearning": "enabled",
+	"eslint.debug": true,
+	"eslint.format.enable": true,
+	"eslint.nodePath": "enabled",
+	"eslint.alwaysShowStatus": true,
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"workbench.editor.enablePreviewFromQuickOpen": true,
+	"tabnine.experimentalAutoImports": true,
+	"editor.maxTokenizationLineLength": 50000,
+	"npm-intellisense.packageSubfoldersIntellisense": true,
+	"npm-intellisense.scanDevDependencies": true,
+	"npm-intellisense.showBuildInLibs": true,
+	"html-css-class-completion.enableEmmetSupport": true,
+	"html-css-class-completion.JavaScriptLanguages": [
+		"javascript",
+		"javascriptreact",
+		"typescriptreact"
+	],
+	"editor.minimap.enabled": false,
+	"cSpell.language": "nl,nl-NL,en,en-GB,en-US",
+	"editor.suggest.showStatusBar": true,
+	"eslint.lintTask.enable": true,
+	"eslint.nodeEnv": "",
+	"files.trimTrailingWhitespace": true,
+	"editor.fontLigatures": null,
+	"notebook.kernelProviderAssociations": [],
+	"typescript.implementationsCodeLens.enabled": true,
+	"js/ts.implicitProjectConfig.strictNullChecks": true,
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"emmet.extensionsPath": "",
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "~/../css/"
+		}
+	],
+	"editor.linkedEditing": true,
+	"prettier.withNodeModules": true,
+	"cSpell.userWords": [
+		"Flexbox",
+		"autofetch",
+		"currentcolor",
+		"darkgray",
+		"esversion",
+		"onedark",
+		"preconnect",
+		"readonly",
+		"strikethrough",
+		"termcolors",
+		"vsintellicode"
+	],
+	"eslint.options": {},
+	"workbench.colorTheme": "Atom One Dark",
+	"php.validate.executablePath": ""
+}
