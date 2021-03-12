@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/RafVergauwen/project-marsteel">
-    <img src="img/svg/marcel-teugels-logo.svg" alt="marcel teugels logo" width="240" height="240">
+    <img src="img/svg/marcel-teugels-logo.svg" alt="marcel teugels logo" width="480" height="480">
   </a>
 </p>
 
