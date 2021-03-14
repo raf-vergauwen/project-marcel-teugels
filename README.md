@@ -1,5 +1,32 @@
 #
 
+<head>
+   <style>
+       a {
+          color: teal;
+          font-size: 1rem;
+          text-decoration: none;
+          font-variant: small-caps;
+          font-family: sans-serif;
+        }
+        .link-instagram {
+          color: darkslategray;
+          font-size: 1.25rem;
+          text-decoration: none;
+          font-variant: small-caps;
+          font-family: sans-serif;
+        }
+        .quote {
+          font-size: 1.5rem;
+        }
+
+        .header {
+          font-size: 3rem;
+        }
+
+   </style>
+ </head>
+
 <br>
 <br>
 
@@ -15,26 +42,30 @@
 <h1 align="center">Project Marcel Teugels</h1>
 
 <p align="center">
-  <i>"One machine can do the work of 50 ordinary men.</i>
-  <i>No machine can do the work of one extraordinary men"</i>
+  <i class="quote">"One machine can do the work of 50 ordinary men.</i>
+  <i class="quote">No machine can do the work of one extraordinary men"</i>
   <br>
 	<br>
-  <a href="https://www.instagram.com/marcelteugels/"><strong>Experience true craftsmanship »</strong></a>
-
+  <a href="https://www.instagram.com/marcelteugels/"><strong class="link-instagram">Experience true craftsmanship »</strong></a>
   <br>
-  <br>
+	<br>
 
 </p>
 
 <p align="center">
-  <a href="https://github.com/EmielTeugels">Emiel Teugels -</a>
-  <a href="https://github.com/EmielTeugels" target="_blank"><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="50px" alt="a picture of emiel teugels"></a>
-  <a href="https://github.com/KennethBlondeel">- Kenneth Blondeel -</a>
-  <a href="https://github.com/KennethBlondeel" target="_blank"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="50px" alt="a picture of kenneth blondeel"></a>
-  <a href="https://github.com/LinsTimperman">- Lins Timperman - </a>
-  <a href="https://github.com/LinsTimperman" target="_blank"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="50px" alt="a picture of lins timper"></a>
-  <a href="https://github.com/RafVergauwen">- Raf Vergauwen -</a>
-	<a href="https://github.com/RafVergauwen" target="_blank"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="50px" alt="a picture of raf vergauwen"></a>
+
+  <br>
+  <a href="https://github.com/EmielTeugels" style="none">&#160;&#8729; Emiel Teugels &#8729;&#160;</a>
+  <a href="https://www.facebook.com/emiel.teugels/" target="_blank"><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="50px" alt="a picture of emiel teugels"></a>
+  <a href="https://github.com/KennethBlondeel">&#160;&#8729; Kenneth Blondeel &#8729;&#160;</a>
+  <a href="https://www.facebook.com/kenneth.blondeel/" target="_blank"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="50px" alt="a picture of kenneth blondeel"></a>
+  <a href="https://github.com/LinsTimperman">&#160;&#8729; Lins Timperman &#8729;&#160;</a>
+  <a href="https://www.facebook.com/lins.timperman.3/" target="_blank"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="50px" alt="a picture of lins timper"></a>
+  <a href="https://github.com/RafVergauwen">&#160;&#8729; Raf Vergauwen &#8729;&#160;</a>
+	<a href="https://www.facebook.com/raf.vergauwen/" target="_blank"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="50px" alt="a picture of raf vergauwen"></a>
+	<br>
+	<br>
+	<br>
 </p>
 
 ## **Intro**
