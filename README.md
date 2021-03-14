@@ -53,11 +53,9 @@
 
 ### **Beschrijving**
 
----
-
-Het project is onderverdeeld in twee delen, een restoratie gedeelte en een verkoopgedeelte.
-Voorbeeld: https://remmen.be/
-Switchen van het ene deel naar het andere deel is mogelijk.
+> Het project is onderverdeeld in twee delen, een restoratie gedeelte en een verkoopgedeelte.
+> Voorbeeld: https://remmen.be/
+> Switchen van het ene deel naar het andere deel is mogelijk.
 
 ## **Stuctuur van Deel 1: Restoratie**
 
