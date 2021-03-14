@@ -28,14 +28,14 @@
 <p align="center">
 
   <br>
-  <a href="https://github.com/EmielTeugels" target="_blank">&#160;&#8729; Emiel Teugels &#8729;&#160;</a>
-  <a href="https://www.facebook.com/emiel.teugels/" target="_blank"><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="50px" alt="a picture of emiel teugels"></a>
-  <a href="https://github.com/KennethBlondeel" target="_blank">&#160;&#8729; Kenneth Blondeel &#8729;&#160;</a>
-  <a href="https://www.facebook.com/kenneth.blondeel/" target="_blank"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="50px" alt="a picture of kenneth blondeel"></a>
-  <a href="https://github.com/LinsTimperman" target="_blank">&#160;&#8729; Lins Timperman &#8729;&#160;</a>
-  <a href="https://www.facebook.com/lins.timperman.3/" target="_blank"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="50px" alt="a picture of lins timper"></a>
-  <a href="https://github.com/RafVergauwen" target="_blank">&#160;&#8729; Raf Vergauwen &#8729;&#160;</a>
-	<a href="https://www.facebook.com/raf.vergauwen/" target="_blank"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="50px" alt="a picture of raf vergauwen"></a>
+  <a href="https://github.com/EmielTeugels" target="_blank" class="member">&#160;&#8900; E. Teugels &#160;</a>
+  <a href="https://www.facebook.com/emiel.teugels/" target="_blank" class="member" ><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="40px" alt="a picture of emiel teugels"></a>
+  <a href="https://github.com/KennethBlondeel" target="_blank" class="member">&#160;&#8900; K. Blondeel &#160;</a>
+  <a href="https://www.facebook.com/kenneth.blondeel/" target="_blank" class="member"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="40px" alt="a picture of kenneth blondeel"></a>
+  <a href="https://github.com/LinsTimperman" target="_blank" class="member">&#160;&#8900; L. Timperman &#160;</a>
+  <a href="https://www.facebook.com/lins.timperman.3/" target="_blank" class="member"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="40px" alt="a picture of lins timper"></a>
+  <a href="https://github.com/RafVergauwen" target="_blank" class="member">&#160;&#8900; R. Vergauwen &#160;</a>
+	<a href="https://www.facebook.com/raf.vergauwen/" target="_blank" class="member"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="40px" alt="a picture of raf vergauwen"></a>
 	<br>
 	<br>
 	<br>
@@ -45,12 +45,13 @@
 
 ### **Leden**
 
-- Emiel: Teamleader
-- Kenneth: Graphical Designer
-- Raf: Support
-- Lins : Support
+| IT Project Manager | Graphics Engineer  | Support Specialist | Support Specialist |
+| ------------------ | ------------------ | ------------------ | ------------------ |
+| _Emiel Teugels_    | _Kenneth Blondeel_ | _Lins Timperman_   | _Raf Vergauwen_    |
 
 ### **Beschrijving**
+
+---
 
 Het project is onderverdeeld in twee delen, een restoratie gedeelte en een verkoopgedeelte.
 Voorbeeld: https://remmen.be/
@@ -59,6 +60,8 @@ Switchen van het ene deel naar het andere deel is mogelijk.
 ## **Stuctuur van Deel 1: Restoratie**
 
 ### **Homepagina**
+
+---
 
 Kortere versie van heel het restoratie gedeelte.
 
@@ -101,6 +104,8 @@ Kortere versie van heel het restoratie gedeelte.
 
 ### **Restoratie en Conservatie**
 
+---
+
 Uitleg over restoratie-diensten en processen die worden aangeboden.
 
 - Header (sticky)
@@ -128,6 +133,8 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 
 ### **Workshops**
 
+---
+
 - Header (sticky)
 
   - Logo
@@ -146,6 +153,8 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
   - contact
 
 ### **Contact**
+
+---
 
 - Header (sticky)
 
@@ -185,6 +194,8 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 
 ### **Homepagina**
 
+---
+
 - Header
 
   - logo
@@ -212,6 +223,8 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 
 ### **Webshop**
 
+---
+
 - Header
 
   - logo
@@ -234,6 +247,8 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
   - contactgegevens?!
 
 ### **Custom Work**
+
+---
 
 - Header
 
@@ -276,8 +291,14 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 	}
 	.quote {
 		font-size: 1.5rem;
+		font-family: serif;
 	}
 	.header {
 		font-size: 3rem;
+
+	}
+	.member {
+		font-size: 1.25rem;
+		font-family: sans-serif;
 	}
 </style>
