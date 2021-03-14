@@ -1,29 +1,5 @@
 #
 
-<style>
-		a {
-			color: teal;
-			font-size: 1rem;
-			text-decoration: none;
-			font-variant: small-caps;
-			font-family: sans-serif;
-		}
-		.link-instagram {
-			color: darkslategray;
-			font-size: 1.25rem;
-			text-decoration: none;
-			font-variant: small-caps;
-			font-family: sans-serif;
-		}
-		.quote {
-			font-size: 1.5rem;
-		}
-		.header {
-			font-size: 3rem;
-		}
-
-</style>
-
 <br>
 <br>
 
@@ -282,3 +258,26 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 - footer
   - sociale media
   - contactgegevens?!
+
+<style>
+	a {
+		color: teal;
+		font-size: 1rem;
+		text-decoration: none;
+		font-variant: small-caps;
+		font-family: sans-serif;
+	}
+	.link-instagram {
+		color: darkslategray;
+		font-size: 1.25rem;
+		text-decoration: none;
+		font-variant: small-caps;
+		font-family: sans-serif;
+	}
+	.quote {
+		font-size: 1.5rem;
+	}
+	.header {
+		font-size: 3rem;
+	}
+</style>
