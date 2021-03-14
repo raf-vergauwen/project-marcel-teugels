@@ -19,7 +19,6 @@
         .quote {
           font-size: 1.5rem;
         }
-
         .header {
           font-size: 3rem;
         }
