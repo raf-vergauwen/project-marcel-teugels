@@ -63,7 +63,7 @@
 
 ### **Homepagina**
 
-> _Kortere versie van heel het restoratie gedeelte._
+> _Kortere versie van heel het restoratie gedeelte_
 
 ---
 
@@ -107,7 +107,7 @@
 
 ### **Restoratie en Conservatie**
 
-> _Uitleg over restoratie-diensten en processen die worden aangeboden._
+> _Uitleg over restoratie-diensten en processen die worden aangeboden_
 
 ---
 
@@ -137,7 +137,7 @@
 
 ### **Workshops**
 
-> _Uitleg over workshops die worden aangeboden._
+> _Uitleg over workshops die worden aangeboden_
 
 ---
 
@@ -162,7 +162,7 @@
 
 ### **Contact**
 
-> _Toegang tot alle contact info._
+> _Toegang tot alle contact info_
 
 ---
 
@@ -209,7 +209,7 @@
 
 ### **Homepagina**
 
-> _Kortere versie van heel het webshop gedeelte._
+> _Kortere versie van heel het webshop gedeelte_
 
 ---
 
