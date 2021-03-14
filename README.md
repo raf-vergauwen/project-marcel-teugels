@@ -43,6 +43,8 @@
 
 ## **Intro**
 
+---
+
 ### **Leden**
 
 | IT Project Manager | Graphics Engineer  | Support Specialist | Support Specialist |
@@ -59,220 +61,244 @@ Switchen van het ene deel naar het andere deel is mogelijk.
 
 ## **Stuctuur van Deel 1: Restoratie**
 
+---
+
 ### **Homepagina**
+
+> _Kortere versie van heel het restoratie gedeelte._
 
 ---
 
-Kortere versie van heel het restoratie gedeelte.
+#### _Header (sticky)_
 
-- Header (sticky)
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Restoratie_
+  - _Workshops_
+  - _Contact_
+- [ ] Link naar ander deel
 
-  - Logo
-  - Navigatie
-    - Home
-    - Restoratie
-    - Workshops
-    - Contact
-  - link naar ander deel
+#### _Hero_
 
-- Hero
+- [ ] Inspirerende quote
+- [ ] Link naar ander deel
 
-  - inspirerende quote
-  - link naar ander deel
+#### _Conservatie en restoratie_
 
-- Conservatie en restoratie
+- [ ] Korte versie
+- [ ] Link conservatiegedeelte van de website
 
-  - korte versie
-  - link conservatiegedeelte van de website
+#### _Voorstelling_
 
-- Voorstelling
+- [ ] Portfolio
 
-  - Portfolio
+#### _Workshops_
 
-- Workshops
+- [ ] Korte uitleg
+- [ ] Link workshopgedeelte van de website
 
-  - korte uitleg
-  - link workshopgedeelte van de website
+#### **Contact**
 
-- Contact
+- [ ] Link contactgedeelte van de website
 
-  - link contactgedeelte van de website
+#### _Footer_
 
-- footer
-  - sociale media
-  - contact
+- [ ] Sociale media
+- [ ] Contact
 
 ### **Restoratie en Conservatie**
 
+> _Uitleg over restoratie-diensten en processen die worden aangeboden._
+
 ---
 
-Uitleg over restoratie-diensten en processen die worden aangeboden.
+#### _Header (sticky)_
 
-- Header (sticky)
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Restoratie_
+  - _Workshops_
+  - _Contact_
+- [ ] Link naar ander deel
 
-  - Logo
-  - Navigatie
-    - Home
-    - Restoratie
-    - Workshops
-    - Contact
-  - link naar ander deel
+#### _Restoratie houtwerk_
 
-- Restoratie houtwerk
+- [ ] Meubels
+- [ ] Beeldhouwwerk
+- [ ] Etnografie
+- [ ] Restoratie smeedwerk
+  - _Algemeen_
+- [ ] Restoratie taxidermie
 
-  - Meubels
-  - Beeldhouwwerk
-  - Etnografie
-  - Restoratie smeedwerk
-    - Algemeen
-  - Restoratie taxidermie
+#### _Footer_
 
-- footer
-  - sociale media
-  - contact
+- [ ] Sociale media
+- [ ] Contact
 
 ### **Workshops**
 
+> _Uitleg over workshops die worden aangeboden._
+
 ---
 
-- Header (sticky)
+#### _Header (sticky)_
 
-  - Logo
-  - Navigatie
-    - Home
-    - Restoratie
-    - Workshops
-    - Contact
-  - link naar ander deel
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Restoratie_
+  - _Workshops_
+  - _Contact_
+- [ ] Link naar ander deel
 
-- Uitleg welke soort workshops
-- Al gegeven workshops
+#### _Uitleg welke soort workshops_
 
-- footer
-  - sociale media
-  - contact
+#### _Al gegeven workshops_
+
+#### _Footer_
+
+- [ ] Sociale media
+- [ ] Contact
 
 ### **Contact**
 
+> _Toegang tot alle contact info._
+
 ---
 
-- Header (sticky)
+#### _Header (sticky)_
 
-  - Logo
-  - Navigatie
-    - Home
-    - Restoratie
-    - Workshops
-    - Contact
-  - link naar ander deel
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Restoratie_
+  - _Workshops_
+  - _Contact_
+- [ ] Link naar ander deel
 
-- Contactformulier
-  - Naam
-  - email
-  - telefoonnummer
-  - categorie
-    - restoratie
-    - conservatie
-    - workshop
-    - andere
-  - categorie
-    - hout
-    - smeedwerk
-    - taxidermie
-    - andere
-  - bericht
-- Persoonlijke contactgegevens
+#### _Contactformulier_
 
-  - locatie atelier
-  - persoonlijke gegevens
+- [ ] Naam
+- [ ] Email
+- [ ] Telefoonnummer
+- [ ] Categorie
+  - _Restoratie_
+  - _Conservatie_
+  - _Workshop_
+  - _Andere_
+- [ ] Categorie
+  - _Hout_
+  - _Smeedwerk_
+  - _Taxidermie_
+  - _Andere_
+- [ ] Bericht
 
-- footer
-  - sociale media
-  - contact
+#### _Persoonlijke contactgegevens_
+
+- [ ] Locatie atelier
+- [ ] Persoonlijke gegevens
+
+#### _Footer_
+
+- [ ] Sociale media
+- [ ] Contact
 
 ## **Structuur van Deel 2: Webshop**
 
+---
+
 ### **Homepagina**
+
+> _Kortere versie van heel het webshop gedeelte._
 
 ---
 
-- Header
+#### _Header_
 
-  - logo
-  - navigatie
-    - Home
-    - webshop
-    - custom work
-  - login
-  - link naar ander deel
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Webshop_
+  - _Custom work_
+- [ ] Login
+- [ ] Link naar ander deel
 
-- Hero
+#### _Hero_
 
-  - inspirerende quote
-  - link naar ander deel
+- [ ] Inspirerende quote
+- [ ] Link naar ander deel
 
-- New and hot items
+#### _New and hot items_
 
-  - link naar webshop
+- [ ] Link naar webshop
 
-- Voorstelling
+#### _Voorstelling_
 
-- footer
-  - sociale media
-  - contactgegevens?!
+#### _Footer_
+
+- _Sociale media_
+- _Contactgegevens?!_
 
 ### **Webshop**
 
+> _Onderdelen van het webshop gedeelte_
+
 ---
 
-- Header
+#### _Header_
 
-  - logo
-  - navigatie
-    - Home
-    - webshop
-    - custom work
-  - login
-  - link naar ander deel
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Webshop_
+  - _Custom work_
+- [ ] Login
+- [ ] Link naar ander deel
 
-- Grid van Tiles
+#### _Grid van Tiles_
 
-  - Foto
-  - beschrijving
-  - prijs
-  - rating
+- [ ] Foto
+- [ ] Beschrijving
+- [ ] Prijs
+- [ ] Rating
 
-- footer
-  - sociale media
-  - contactgegevens?!
+#### _Footer_
+
+- [ ] Sociale media
+- [ ] Contactgegevens?!
 
 ### **Custom Work**
 
+> _Onderdelen van het custom work gedeelte_
+
 ---
 
-- Header
+#### _Header_
 
-  - logo
-  - navigatie
-    - Home
-    - webshop
-    - custom work
-  - login
-  - link naar ander deel
+- [ ] Logo
+- [ ] Navigatie
+  - _Home_
+  - _Webshop_
+  - _Custom work_
+- [ ] Login
+- [ ] Link naar ander deel
 
-- formulier voor custom items
+#### _Formulier voor custom items_
 
-  - naam
-  - email
-  - adress
-  - categorien
-  - tekstbeschrijving
-  - vragen aan klant
-  - wip
+- [ ] Naam
+- [ ] Email
+- [ ] Adress
+- [ ] Categorien
+- [ ] Tekstbeschrijving
+- [ ] Vragen aan klant
+- [ ] Wip
 
-- footer
-  - sociale media
-  - contactgegevens?!
+#### _Footer_
+
+- [ ] Sociale media
+- [ ] Contactgegevens?!
 
 <style>
 	a {
@@ -298,7 +324,7 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
 
 	}
 	.member {
-		font-size: 1.25rem;
+		font-size: 1.4rem;
 		font-family: sans-serif;
 	}
 </style>
