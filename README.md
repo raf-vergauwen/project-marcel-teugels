@@ -28,13 +28,13 @@
 <p align="center">
 
   <br>
-  <a href="https://github.com/EmielTeugels" style="none">&#160;&#8729; Emiel Teugels &#8729;&#160;</a>
+  <a href="https://github.com/EmielTeugels" target="_blank">&#160;&#8729; Emiel Teugels &#8729;&#160;</a>
   <a href="https://www.facebook.com/emiel.teugels/" target="_blank"><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="50px" alt="a picture of emiel teugels"></a>
-  <a href="https://github.com/KennethBlondeel">&#160;&#8729; Kenneth Blondeel &#8729;&#160;</a>
+  <a href="https://github.com/KennethBlondeel" target="_blank">&#160;&#8729; Kenneth Blondeel &#8729;&#160;</a>
   <a href="https://www.facebook.com/kenneth.blondeel/" target="_blank"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="50px" alt="a picture of kenneth blondeel"></a>
-  <a href="https://github.com/LinsTimperman">&#160;&#8729; Lins Timperman &#8729;&#160;</a>
+  <a href="https://github.com/LinsTimperman" target="_blank">&#160;&#8729; Lins Timperman &#8729;&#160;</a>
   <a href="https://www.facebook.com/lins.timperman.3/" target="_blank"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="50px" alt="a picture of lins timper"></a>
-  <a href="https://github.com/RafVergauwen">&#160;&#8729; Raf Vergauwen &#8729;&#160;</a>
+  <a href="https://github.com/RafVergauwen" target="_blank">&#160;&#8729; Raf Vergauwen &#8729;&#160;</a>
 	<a href="https://www.facebook.com/raf.vergauwen/" target="_blank"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="50px" alt="a picture of raf vergauwen"></a>
 	<br>
 	<br>
