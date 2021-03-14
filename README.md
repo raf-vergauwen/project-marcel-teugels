@@ -4,8 +4,8 @@
 <br>
 
 <p align="center">
-  <a href="https://github.com/RafVergauwen/project-marsteel">
-    <img src="img/svg/marcel-teugels-logo.svg" alt="marcel teugels logo" width="240" height="240">
+  <a href="https://github.com/RafVergauwen/project-marsteel" >
+    <img src="img/svg/marcel-teugels-logo--improved.svg" alt="marcel teugels logo" width="240" height="240">
   </a>
 </p>
 
@@ -20,8 +20,21 @@
   <br>
 	<br>
   <a href="https://www.instagram.com/marcelteugels/"><strong>Experience true craftsmanship »</strong></a>
+
   <br>
   <br>
+
+</p>
+
+<p align="center">
+  <a href="https://github.com/EmielTeugels">Emiel Teugels -</a>
+  <a href="https://github.com/EmielTeugels" target="_blank"><img src="img\png\leden\emiel-circle.png"  align="center" valign="middle" width="50px" alt="a picture of emiel teugels"></a>
+  <a href="https://github.com/KennethBlondeel">- Kenneth Blondeel -</a>
+  <a href="https://github.com/KennethBlondeel" target="_blank"><img src="img\png\leden\kenneth-circle.png"  align="center" valign="middle" width="50px" alt="a picture of kenneth blondeel"></a>
+  <a href="https://github.com/LinsTimperman">- Lins Timperman - </a>
+  <a href="https://github.com/LinsTimperman" target="_blank"><img src="img\png\leden\lins-circle.png"  align="center" valign="middle" width="50px" alt="a picture of lins timper"></a>
+  <a href="https://github.com/RafVergauwen">- Raf Vergauwen -</a>
+	<a href="https://github.com/RafVergauwen" target="_blank"><img src="img\png\leden\raf-circle.png" align="center" valign="middle" width="50px" alt="a picture of raf vergauwen"></a>
 </p>
 
 ## **Intro**
