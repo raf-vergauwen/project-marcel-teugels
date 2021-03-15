@@ -162,7 +162,7 @@
 					alt="a picture of raf vergauwen"
 			/></a>
 		</p>
-		<p class="hero__quote--instragram align="center" valign="middle">
+		<p  align="center" valign="middle">
 			<a href="https://www.instagram.com/marcelteugels/" style="text-decoration: none;">
 					Experience true craftsmanship »
 				</a>
@@ -182,7 +182,7 @@
 			<br />
 	</div>
 	<div class="technologies__content" align="center" valign="middle">
-		<p class="technologies__languages"align="center" valign="middle">
+		<p class="technologies__languages" align="center" valign="middle">
 			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/48/000000/css3.png" />
 			</a>
@@ -519,8 +519,9 @@
 	}
 	.hero__contributors {
 	}
-	.hero__quote--instragram {
-
+	.hero__quote {
+		font-size: 1.35rem;
+		font-family: serif;
 	}
 	.hero__logo {
 	}
