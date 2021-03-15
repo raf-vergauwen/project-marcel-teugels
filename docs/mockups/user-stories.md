@@ -6,13 +6,14 @@
 
 - De admin kan dingen op de webshop zetten en er terug af halen
 - De admin heeft toegang tot een klantendatabase met transaction interface (voorbeeld):
-  - wat er besteld is geweest,
+  - wat er besteld is geweest
   - door wie
   - gegevens van die user
   - etc.
 - Duidelijke overzichtspagina voor admin met nuttige statistieken en grafieken zoals (voorbeeld):
   - meest bekeken items en tags
   - meest gewilde items (via wishlist van users)
+  - uit welke landen het vaakst word besteld
 - Gewichtstabel voor verzendkosten
 - Btw bepalen
 
@@ -28,7 +29,6 @@
 
 ### Core
 
-- Onderscheid tussen blog en webshop
 - De user kan een account aanmaken:
 
   - Persoonlijk gegevens:
@@ -49,13 +49,14 @@
 
 - De user wilt een account aanmaken om iets te kunnen kopen van de webshop
 - De user wilt verschillende zaken toevoegen in zijn winkelmandje en aankopen
-- De user kan een account aanmaken om de blog te bekijken
 - De user wilt zijn account bekijken en zijn gegevens aanpassen
 - De user kan een costum item aanvragen via een formulier
 - Verzendkostbereking
+- !Onderscheid tussen blog en webshop!
 
 ### Advanced
 
+- De user kan een account aanmaken om de blog te bekijken
 - De user wilt een review schrijven bij een aangekocht product
 - De user wilt bij een blogpost zelf een reactie schrijven
 - De user kan aangeven dat hij interesse heeft in een bepaald soort product (door bepaalde tags te liken), en krijgt notificaties als een gelijkaardige producten terug op verkoop staan
@@ -63,12 +64,11 @@
 - De user kan producten die uitverkocht zijn, makkelijk terug aanvragen via de costum webshop
 
 ## Anonieme User
+
+- Gewoon bestellen zonder account
 - Ook dingen kopen maar anoniem
 - Geen database
-- Gewoon bestellen zonder account
 
 [^1]:
     Vragen aan Korneel
     (payment providers)
-
-## klad
