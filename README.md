@@ -1,12 +1,9 @@
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-	href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-	rel="stylesheet"
-/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&display=swap" rel="stylesheet">
 
 <section class="section__hero" id="hero" align="center" valign="middle">
 	<br />
-	<h1 class="hero__heading">Project Marcel Teugels</h1>
+	<h1 class="hero__heading"  align="center" valign="middle">>Project Marcel Teugels</h1>
 	<br />
 	<div class="hero__content" align="center" valign="middle">
 		<p class="hero__quote">
@@ -18,6 +15,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://GitHub.com/RafVergauwen/project-marsteel/stargazers/"
+				style="text-decoration: none;"
 			>
 				<img alt="stargazers" src="./.vscode/icons/svg/stargazers.svg" />
 			</a>
@@ -25,6 +23,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://GitHub.com/RafVergauwen/project-marsteel/watchers/"
+				style="text-decoration: none;"
 			>
 				<img alt="watchers" src="./.vscode/icons/svg/watchers.svg" />
 			</a>
@@ -32,6 +31,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://github.com/RafVergauwen?tab=followers"
+				style="text-decoration: none;"
 			>
 				<img alt="followers" src="./.vscode/icons/svg/followers.svg" />
 			</a>
@@ -39,6 +39,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://GitHub.com/RafVergauwen/project-marsteel/fork"
+				style="text-decoration: none;"
 			>
 				<img alt="fork" src="./.vscode/icons/svg/forks.svg" />
 			</a>
@@ -46,25 +47,24 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://GitHub.com/RafVergauwen/project-marsteel/network/"
+				style="text-decoration: none;"
 			>
 				<img alt="network" src="./.vscode/icons/svg/network.svg" />
 			</a>
 		</p>
 		<p class="hero__contributors" align="center" valign="middle">
 			<a
-				href="https://github.com/EmielTeugels"
 				target="_blank"
 				rel="noopener noreferrer"
-				align="top"
-				valign="middle"
+				href="https://github.com/EmielTeugels"
+				style="text-decoration: none;"
 				>&#183;E. Teugels&#183;</a
 			>
 			<a
 				href="https://www.facebook.com/emiel.teugels/"
 				target="_blank"
 				rel="noopener noreferrer"
-				align="middle"
-				valign="middle"
+				style="text-decoration: none;"
 				><img
 					src="img\png\leden\emiel-circle.png"
 					width="30px"
@@ -74,12 +74,14 @@
 				href="https://github.com/KennethBlondeel"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				>&#183;K. Blondeel&#183;</a
 			>
 			<a
 				href="https://www.facebook.com/kenneth.blondeel/"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				><img
 					src="img\png\leden\kenneth-circle.png"
 					width="30px"
@@ -137,27 +139,25 @@
 	</div>
 	<div class="technologies__content" align="center" valign="middle">
 		<p class="technologies__languages"align="center" valign="middle">
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/48/000000/css3.png" />
 			</a>
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/64/000000/html-5.png" />
 			</a>
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+			<a href="https://javascript.info" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/96/javascript.png" />
 			</a>
 			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/128/vue-js.png" />
 			</a>
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+			<a href="https://sass-lang.com/documentation" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/96/000000/sass-avatar.png" />
 			</a>
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
-				<img
-					src="https://img.icons8.com/fluent/64/000000/data-configuration.png"
-				/>
+			<a href="https://www.mysqltutorial.org/" target="_blank" rel="noopener noreferrer">
+				<img src="https://img.icons8.com/fluent/64/000000/data-configuration.png"/>
 			</a>
-			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+			<a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/48/000000/mongodb.png" />
 			</a>
 		</p>
@@ -230,50 +230,6 @@
 				<img
 					alt="stargazers"
 					src="https://forthebadge.com/images/badges/built-with-love.svg"
-				/>
-			</a>
-		</p>
-		<p class="technologies__badges"  align="center" valign="middle">
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="Adobe"
-					src="https://img.shields.io/badge/adobe%20-%23FF0000.svg?&style=for-the-badge&logo=adobe&logoColor=white"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="Adobe XD"
-					src="https://img.shields.io/badge/adobe%20xd%20-%23FF26BE.svg?&style=for-the-badge&logo=adobe%20xd&logoColor=white"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="CSS3"
-					src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="HTML5"
-					src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="SASS"
-					src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=for-the-badge&logo=SASS&logoColor=white"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="JavaScript"
-					src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-				/>
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="">
-				<img
-					alt="Vue.js"
-					src="https://img.shields.io/badge/vuejs%20-%2335495e.svg?&style=for-the-badge&logo=vue.js&logoColor=%234FC08D"
 				/>
 			</a>
 		</p>
@@ -536,6 +492,10 @@
 	}
 	a {
 		text-decoration: none;
+		font-family: 'Cardo', serif;
+		font-variant: small-caps;
+		color: teal;
+		font-size: 1.2em;
 	}
 	h1 {
 		font-family: 'Oswald', sans-serif;
@@ -556,6 +516,7 @@
 	.hero__contributors {
 	}
 	.hero__quote--instragram {
+
 	}
 	.hero__logo {
 	}
