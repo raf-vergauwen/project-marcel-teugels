@@ -6,6 +6,46 @@
 	<h1 class="hero__heading"  align="center" valign="middle">Project Marcel Teugels</h1>
 	<br />
 	<div class="hero__content" align="center" valign="middle">
+		<p class="technologies__info" align="center" valign="middle">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity"
+			>
+				<img alt="stargazers" src="./.vscode/icons/svg/maintained.svg" />
+			</a>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="http://commonmark.org"
+			>
+				<img alt="watchers" src="./.vscode/icons/svg/markdown.svg" />
+			</a>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/RafVergauwen?tab=followers"
+			>
+				<img alt="followers" src="./.vscode/icons/svg/contributors.svg" />
+			</a>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://www.gnu.org/licenses/gpl-3.0"
+			>
+				<img alt="fork" src="./.vscode/icons/svg/license.svg" />
+			</a>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/RafVergauwen/project-marsteel/commit/main"
+			>
+				<img
+					alt="network"
+					src="./.vscode/icons/svg/total-commit-amount.svg"
+				/>
+			</a>
+		</p>
 		<p class="hero__quote">
 			<i>"One machine can do the work of 50 ordinary men.</i>
 			<i>No machine can do the work of one extraordinary men"</i>
@@ -163,46 +203,6 @@
 			</a>
 			<a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/48/000000/mongodb.png" />
-			</a>
-		</p>
-		<p class="technologies__info" align="center" valign="middle">
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity"
-			>
-				<img alt="stargazers" src="./.vscode/icons/svg/maintained.svg" />
-			</a>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="http://commonmark.org"
-			>
-				<img alt="watchers" src="./.vscode/icons/svg/markdown.svg" />
-			</a>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://github.com/RafVergauwen?tab=followers"
-			>
-				<img alt="followers" src="./.vscode/icons/svg/contributors.svg" />
-			</a>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://www.gnu.org/licenses/gpl-3.0"
-			>
-				<img alt="fork" src="./.vscode/icons/svg/license.svg" />
-			</a>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://github.com/RafVergauwen/project-marsteel/commit/main"
-			>
-				<img
-					alt="network"
-					src="./.vscode/icons/svg/total-commit-amount.svg"
-				/>
 			</a>
 		</p>
 		<p class="technologies__gag" align="center" valign="middle">
