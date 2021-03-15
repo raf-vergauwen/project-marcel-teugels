@@ -3,7 +3,7 @@
 
 <section class="section__hero" id="hero" align="center" valign="middle">
 	<br />
-	<h1 class="hero__heading"  align="center" valign="middle">>Project Marcel Teugels</h1>
+	<h1 class="hero__heading"  align="center" valign="middle">Project Marcel Teugels</h1>
 	<br />
 	<div class="hero__content" align="center" valign="middle">
 		<p class="hero__quote">
@@ -91,12 +91,14 @@
 				href="https://github.com/LinsTimperman"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				>&#183;L. Timperman&#183;</a
 			>
 			<a
 				href="https://www.facebook.com/lins.timperman.3/"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				><img
 					src="img\png\leden\lins-circle.png"
 					width="30px"
@@ -106,12 +108,14 @@
 				href="https://github.com/RafVergauwen"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				>&#183;R. Vergauwen&#183;</a
 			>
 			<a
 				href="https://www.facebook.com/raf.vergauwen/"
 				target="_blank"
 				rel="noopener noreferrer"
+				style="text-decoration: none;"
 				><img
 					src="img\png\leden\raf-circle.png"
 					width="30px"
@@ -119,7 +123,7 @@
 			/></a>
 		</p>
 		<p class="hero__quote--instragram align="center" valign="middle">
-			<a href="https://www.instagram.com/marcelteugels/">
+			<a href="https://www.instagram.com/marcelteugels/" style="text-decoration: none;">
 					Experience true craftsmanship »
 				</a>
 		</p>
