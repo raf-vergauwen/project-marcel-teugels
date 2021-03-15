@@ -534,6 +534,9 @@
 	* {
 		color: white;
 	}
+	a {
+		text-decoration: none;
+	}
 	h1 {
 		font-family: 'Oswald', sans-serif;
 
