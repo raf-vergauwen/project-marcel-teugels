@@ -8,12 +8,12 @@
 	<br />
 	<h1 class="hero__heading">Project Marcel Teugels</h1>
 	<br />
-	<div class="hero__content">
-		<p>
+	<div class="hero__content" align="center" valign="middle">
+		<p class="hero__quote">
 			<i>"One machine can do the work of 50 ordinary men.</i>
 			<i>No machine can do the work of one extraordinary men"</i>
 		</p>
-		<p align="center">
+		<p class="hero__git" align="center" valign="middle">
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
@@ -50,7 +50,7 @@
 				<img alt="network" src="./.vscode/icons/svg/network.svg" />
 			</a>
 		</p>
-		<p align="center">
+		<p class="hero__contributors" align="center" valign="middle">
 			<a
 				href="https://github.com/EmielTeugels"
 				target="_blank"
@@ -116,27 +116,27 @@
 					alt="a picture of raf vergauwen"
 			/></a>
 		</p>
-		<p>
-			<a href="https://www.instagram.com/marcelteugels/"
-				>Experience true craftsmanship »</a
-			>
+		<p class="hero__quote--instragram align="center" valign="middle">
+			<a href="https://www.instagram.com/marcelteugels/">
+					Experience true craftsmanship »
+				</a>
 		</p>
-		<a href="https://github.com/RafVergauwen/project-marsteel">
 			<br />
 			<br />
+			<p class="hero__logo align="center" valign="middle">
+				<a href="https://github.com/RafVergauwen/project-marsteel">
+					<img
+						src="img/svg/marcel-teugels-logo__improved.svg"
+						alt="marcel teugels logo"
+						width="45%"
+					/>
+				</a>
+		</p>
 			<br />
 			<br />
-			<img
-				src="img/svg/marcel-teugels-logo__improved.svg"
-				alt="marcel teugels logo"
-				width="45%"
-			/>
-			<br />
-			<br />
-		</a>
 	</div>
-	<div class="technologies__content">
-		<p align="center">
+	<div class="technologies__content" align="center" valign="middle">
+		<p class="technologies__languages"align="center" valign="middle">
 			<a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
 				<img src="https://img.icons8.com/color/48/000000/css3.png" />
 			</a>
@@ -161,7 +161,7 @@
 				<img src="https://img.icons8.com/color/48/000000/mongodb.png" />
 			</a>
 		</p>
-		<p align="center">
+		<p class="technologies__info" align="center" valign="middle">
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
@@ -201,7 +201,7 @@
 				/>
 			</a>
 		</p>
-		<p align="center">
+		<p class="technologies__gag" align="center" valign="middle">
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
@@ -233,7 +233,7 @@
 				/>
 			</a>
 		</p>
-		<p align="center">
+		<p class="technologies__badges"  align="center" valign="middle">
 			<a target="_blank" rel="noopener noreferrer" href="">
 				<img
 					alt="Adobe"
@@ -544,10 +544,29 @@
 		border-radius: 1rem;
 	}
 	.arm {
-		color: red;
-	}
+			color: red;
+		}
 	.section__hero {
+		}
+	.hero__content {
 	}
-	.section__technologies {
+	.hero__contributors {
 	}
+	.hero__quote--instragram {
+	}
+	.hero__logo {
+	}
+	.technologies__content {
+	}
+	.technologies__languages{
+	}
+	.technologies__info {
+	}
+	.technologies__gag {
+	}
+	.technologies__badges {
+	}
+
+
+
 </style>
