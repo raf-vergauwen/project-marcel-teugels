@@ -4,29 +4,7 @@
 	rel="stylesheet"
 />
 
-<style>
-	* {
-		color: white;
-	}
-	h1 {
-		font-family: 'Oswald', sans-serif;
-
-	}
-	section {
-		background: url('img/jpeg/background/vintage-wooden-wall--4k.jpg')
-			center center / cover no-repeat content-box;
-		border-radius: 1rem;
-	}
-	.arm {
-		color: red;
-	}
-	.section__hero {
-	}
-	.section__technologies {
-	}
-</style>
 <section class="section__hero" id="hero" align="center" valign="middle">
-	<br />
 	<br />
 	<h1 class="hero__heading">Project Marcel Teugels</h1>
 	<br />
@@ -301,7 +279,6 @@
 		</p>
 	</div>
 	<br />
-	<br />
 </section>
 
 ## **Intro**
@@ -552,3 +529,25 @@
 
 - [ ] Sociale media
 - [ ] Contactgegevens?!
+
+<style>
+	* {
+		color: white;
+	}
+	h1 {
+		font-family: 'Oswald', sans-serif;
+
+	}
+	section {
+		background: url("img/jpeg/background/wooden-wall--2.webp")
+			center center / cover no-repeat content-box;
+		border-radius: 1rem;
+	}
+	.arm {
+		color: red;
+	}
+	.section__hero {
+	}
+	.section__technologies {
+	}
+</style>
