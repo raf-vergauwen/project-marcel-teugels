@@ -63,7 +63,7 @@
 				href="https://www.facebook.com/emiel.teugels/"
 				target="_blank"
 				rel="noopener noreferrer"
-				align="top"
+				align="middle"
 				valign="middle"
 				><img
 					src="img\png\leden\emiel-circle.png"
@@ -539,7 +539,7 @@
 
 	}
 	section {
-		background: url("img/jpeg/background/wooden-wall--2.webp")
+		background: url("https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80")
 			center center / cover no-repeat content-box;
 		border-radius: 1rem;
 	}
