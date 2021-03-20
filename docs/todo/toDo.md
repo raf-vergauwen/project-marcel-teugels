@@ -8,3 +8,4 @@
 - database => vrijdag
 - waar domeinnaam aankopen
 - database voor frontend voor veilige transacties => researchen
+- Database refreshen
