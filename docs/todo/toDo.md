@@ -1,15 +1,20 @@
 # **To Do**
 
 - vragen aan klant wat er juist in costum item formulier moet
-- vragen voor exampanples aan klant
+- vragen voor examples aan klant
 - MockUp voor login en account aanmaken
 - md voor ideeen/brainstorm
-- waar domeinnaam aankopen -> done
+- <s> waar domeinnaam aankopen </s>
+- Database theorie refreshen
 
 ## **Database To Do**
 
 - **database voor frontend voor veilige transacties => researchen**
-- Database theorie refreshen
+
+  - Stripe
+  - SupaBase.io
+  - Directus
+
 - admin kan in user tabel met boolean
 - user request tabel
 - product category tabel -> algemene sortering
@@ -18,6 +23,3 @@
 - coupon systeem/ store credit indien kapot product
 - tabel voor terugzendingen
 - password reset
-- Stripe voor veilige transacties
-- SupaBase.io
-- Directus
