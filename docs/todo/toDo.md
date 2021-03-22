@@ -9,7 +9,7 @@
 
 ## **Database To Do**
 
-- **database voor frontend voor veilige transacties => researchen**
+- **database voor veilige transacties met frontend => researchen!**
 
   - Stripe
   - SupaBase.io
