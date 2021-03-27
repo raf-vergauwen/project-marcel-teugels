@@ -6,20 +6,25 @@
 - md voor ideeen/brainstorm
 - <s> waar domeinnaam aankopen </s>
 - Database theorie refreshen
+- Bart toegang geven
+- Fotos klant
 
 ## **Database To Do**
 
 - **database voor veilige transacties met frontend => researchen!**
 
-  - Stripe
-  - SupaBase.io
-  - Directus
+  - Stripe -> Kenneth
+  - SupaBase.io -> Raf
+  - Directus -> Lins
+  - Shopify -> Emiel
+  - Firebase -> Emiel
 
-- admin kan in user tabel met boolean
-- user request tabel
-- product category tabel -> algemene sortering
-- tags tabel -> subjectieve sortering
+- <s> admin kan in user tabel met boolean </s>
+- <s> user request tabel </s>
+- <s> product category tabel -> algemene sortering </s>
+- <s> tags tabel -> subjectieve sortering </s>
 - verzendkosttabel
-- coupon systeem/ store credit indien kapot product
-- tabel voor terugzendingen
+- <s> coupon systeem/ store credit indien kapot product </s>
+- <s> tabel voor terugzendingen </s>
 - password reset
+- many to many relationships in dbdiagram.io?
