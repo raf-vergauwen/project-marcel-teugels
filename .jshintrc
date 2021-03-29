@@ -1,8 +1,0 @@
-{
-  "esversion": 10,
-  "globals": {
-    "console": true,
-    "document": true,
-    "window": true
-  }
-}
