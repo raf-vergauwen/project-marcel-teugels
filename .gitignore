@@ -447,3 +447,5 @@ $RECYCLE.BIN/
 # Name: Custom Whitelist
 # Created by : Raf Vergauwen
 archives/
+
+.idea
