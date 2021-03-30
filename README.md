@@ -106,7 +106,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\emiel-circle.png"
+					src="assets\img\png\leden\emiel-circle.png"
 					width="30px"
 					alt="a picture of emiel teugels"
 			/></a>
@@ -123,7 +123,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\kenneth-circle.png"
+					src="assets\img\png\leden\kenneth-circle.png"
 					width="30px"
 					alt="a picture of kenneth blondeel"
 			/></a>
@@ -140,7 +140,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\lins-circle.png"
+					src="assets\img\png\leden\lins-circle.png"
 					width="30px"
 					alt="a picture of lins timper"
 			/></a>
@@ -157,7 +157,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\raf-circle.png"
+					src="assets\img\png\leden\raf-circle.png"
 					width="30px"
 					alt="a picture of raf vergauwen"
 			/></a>
