@@ -249,7 +249,15 @@
 > Voorbeeld: https://remmen.be/
 > Switchen van het ene deel naar het andere deel is mogelijk.
 
-## Build Setup
+### **Roles**
+
+* Korneel Eeckhout : Prestigious Project Patriarch
+* Emiel Teugels : Driven Database Director
+* Raf Vergauwen : Glorious Git Governor
+* Kenneth Blondeel : Illustrious Illustration Inventor
+* Lins Timperman : Suitable Support Sidekick
+
+### **Build Setup**
 
 ```bash
 # install dependencies
