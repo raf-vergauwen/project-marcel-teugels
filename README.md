@@ -172,7 +172,7 @@
 			<p class="hero__logo align="center" valign="middle">
 				<a href="https://github.com/RafVergauwen/project-marsteel">
 					<img
-						src="img/svg/marcel-teugels-logo__improved.svg"
+						src="assets/img/svg/logo/marcel-teugels-logo__improved.svg"
 						alt="marcel teugels logo"
 						width="45%"
 					/>
