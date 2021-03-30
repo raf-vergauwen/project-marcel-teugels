@@ -1,18 +1,12 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title">marcel_teugels</h1>
-    </div>
+    <h1>Login</h1>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo'
-
 export default {
-  components: {
-    Logo,
-  },
+  name: 'LoginPage',
 }
 </script>
 
