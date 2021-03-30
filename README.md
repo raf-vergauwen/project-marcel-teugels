@@ -106,7 +106,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\emiel-circle.png"
+					src="assets\img\png\leden\emiel-circle.png"
 					width="30px"
 					alt="a picture of emiel teugels"
 			/></a>
@@ -123,7 +123,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\kenneth-circle.png"
+					src="assets\img\png\leden\kenneth-circle.png"
 					width="30px"
 					alt="a picture of kenneth blondeel"
 			/></a>
@@ -140,7 +140,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\lins-circle.png"
+					src="assets\img\png\leden\lins-circle.png"
 					width="30px"
 					alt="a picture of lins timper"
 			/></a>
@@ -157,7 +157,7 @@
 				rel="noopener noreferrer"
 				style="text-decoration: none;"
 				><img
-					src="img\png\leden\raf-circle.png"
+					src="assets\img\png\leden\raf-circle.png"
 					width="30px"
 					alt="a picture of raf vergauwen"
 			/></a>
@@ -172,7 +172,7 @@
 			<p class="hero__logo align="center" valign="middle">
 				<a href="https://github.com/RafVergauwen/project-marsteel">
 					<img
-						src="img/svg/marcel-teugels-logo__improved.svg"
+						src="assets/img/svg/logo/marcel-teugels-logo__improved.svg"
 						alt="marcel teugels logo"
 						width="45%"
 					/>
@@ -248,6 +248,25 @@
 > Het project is onderverdeeld in twee delen, een restoratie gedeelte en een verkoopgedeelte.
 > Voorbeeld: https://remmen.be/
 > Switchen van het ene deel naar het andere deel is mogelijk.
+
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## **Stuctuur van Deel 1: Restoratie**
 
