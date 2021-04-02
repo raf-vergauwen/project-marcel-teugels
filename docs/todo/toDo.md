@@ -15,7 +15,6 @@
 
   - Stripe -> Kenneth
   - SupaBase.io -> Raf
-  - Directus -> Lins
   - Shopify -> Emiel
   - Firebase -> Emiel
 
@@ -34,4 +33,4 @@
   - user id
 - img bij blogpost
 - region bij orders
-- 
+-
