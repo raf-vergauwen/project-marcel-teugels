@@ -28,3 +28,10 @@
 - <s> tabel voor terugzendingen </s>
 - password reset
 - many to many relationships in dbdiagram.io?
+- huidige prijs bij order tabel
+- discount code
+  - start en end date
+  - user id
+- img bij blogpost
+- region bij orders
+- 
