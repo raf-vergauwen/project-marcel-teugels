@@ -15,7 +15,7 @@
 
   - Stripe -> Kenneth
   - SupaBase.io -> Raf
-  - Shopify -> Emiel
+  - Shopify -> Lins
   - Firebase -> Emiel
 
 - <s> admin kan in user tabel met boolean </s>
