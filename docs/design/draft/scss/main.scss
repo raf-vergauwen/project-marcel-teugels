@@ -1,0 +1,47 @@
+// +  main.scss : This is main file which imports the rest of the scss files and is compiled to “css/main.css”.
+
+/*
+	+  Partial SCSS Group 1 : <default-stylesheets>
+*/
+
+// -  Variant A: <normalize-css>
+// @import './partials/default-stylesheets/normalize-css/_normalize--default';
+// @import './partials/default-stylesheets/normalize-css/_normalize--modern';
+// @import './partials/default-stylesheets/normalize-css/_normalize--sanitize';
+// @import './partials/default-stylesheets/normalize-css/_normalize--sanitize-opinionated';
+@import './partials/default-stylesheets/normalize-css/_normalize--reboot';
+
+// -  Variant B: <reset-css>
+// @import './partials/default-stylesheets/reset-css/_reset--default';
+// @import './partials/default-stylesheets/reset-css/_reset--html5-reset';
+// @import './partials/default-stylesheets/reset-css/_reset--mini-reset';
+
+/*
+	+  Partial SCSS Group 2 : <default-tags>
+*/
+
+@import './partials/default-stylesheets/custom-css/_custom-css--default';
+
+/*
+	+  Partial SCSS Group 3 : <core>
+*/
+
+@import './partials/core/_mixins';
+@import './partials/core/_global-variables';
+@import './partials/core/_colors';
+@import './partials/core/_fonts';
+@import './partials/core/_typography';
+@import './partials/core/_animations';
+@import './partials/core/_media-queries';
+
+/*
+	+  Partial SCSS Group 4 : <components>
+*/
+
+@import './partials/components/_header';
+@import './partials/components/_hero';
+@import './partials/components/_section-name--1';
+@import './partials/components/_section-name--2';
+@import './partials/components/_section-name--3';
+@import './partials/components/_section-name--4';
+@import './partials/components/_footer';
