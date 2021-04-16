@@ -71,8 +71,6 @@
 </div>
  <br />
  <br />
- <br />
- <br />
 
 <!-- - Validator.js -->
 <!-- - Vuedraggable.js -->
