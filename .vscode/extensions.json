@@ -34,12 +34,12 @@
     "formulahendry.auto-close-tag",
     "aaron-bond.better-comments",
     "coenraads.bracket-pair-colorizer-2",
-    "vivaxy.vscode-conventional-comm",
+    "vivaxy.vscode-conventional-commits",
     "pranaygp.vscode-css-peek",
     "ecmel.vscode-html-css",
     "davidanson.vscode-markdownlint",
     "christian-kohler.path-intellisense",
-    "ebbs.plantuml",
+    "jebbs.plantuml",
     "mechatroner.rainbow-csv",
     "natqe.reload",
     "pflannery.vscode-versionlens",
@@ -62,9 +62,9 @@
 
     // Optional Suggested Big
     "gep13.chocolatey-vscode",
-    "xabikos.javascriptsnipp",
+    "xabikos.javascriptsnippets",
     "sburg.vscode-javascript-booster",
-    "akamud.vscode-javascript-snippet",
+    "akamud.vscode-javascript-snippet-pack",
     "alefragnani.project-manager",
     "chenxsan.vscode-standardjs",
 
