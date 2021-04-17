@@ -1,0 +1,77 @@
+{
+  "recommendations": [
+    // Suggest Custom Smart Synstax Highlighting Theme
+    "akamud.vscode-theme-onedark",
+    "akamud.vscode-theme-onelight",
+    // Fundamental Big
+    "eamodio.gitlens",
+    "pkief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-dutch",
+    "mgmcdermott.vscode-language-babel",
+    "formulahendry.auto-rename-tag",
+    "msjsdiag.debugger-for-chrome",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "ritwickdey.liveserver",
+    "ritwickdey.live-sass",
+    "ms-vsliveshare.vsliveshare",
+    "ms-vsliveshare.vsliveshare-audio",
+    "yzhang.markdown-all-in-one",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "syler.sass-indented",
+    "shan.code-settings-sync",
+    "mtxr.sqltools",
+    "stylelint.vscode-stylelint",
+    "octref.vetur",
+    "visualstudioexptteam.vscodeintellicode",
+    "dotjoshjohnson.xml",
+
+    // Fundamental Small
+    "formulahendry.auto-close-tag",
+    "aaron-bond.better-comments",
+    "coenraads.bracket-pair-colorizer-2",
+    "vivaxy.vscode-conventional-comm",
+    "pranaygp.vscode-css-peek",
+    "ecmel.vscode-html-css",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.path-intellisense",
+    "ebbs.plantuml",
+    "mechatroner.rainbow-csv",
+    "natqe.reload",
+    "pflannery.vscode-versionlens",
+
+    // Advanced Big
+    "formulahendry.code-runner",
+    "mikestead.dotenv",
+
+    // Advanced Small
+    "usernamehw.errorlens",
+    "igorsbitnev.error-gutters",
+    "dbaeumer.vscode-eslint",
+    "zignd.html-css-class-completion",
+    "emilast.logfilehighlighter",
+    "yzane.markdown-pdf",
+    "bierner.markdown-mermaid",
+    "mdickin.markdown-shortcuts",
+    "alanwalk.markdown-toc",
+    "goessner.mdmath",
+
+    // Optional Suggested Big
+    "gep13.chocolatey-vscode",
+    "xabikos.javascriptsnipp",
+    "sburg.vscode-javascript-booster",
+    "akamud.vscode-javascript-snippet",
+    "alefragnani.project-manager",
+    "chenxsan.vscode-standardjs",
+
+    // Optional Suggested Small
+    "ecmel.vscode-html-css",
+    "gera2ld.markmap-vscode",
+    "bengreenier.vscode-node-readme",
+    "hediet.debug-visualizer",
+  ]
+}
