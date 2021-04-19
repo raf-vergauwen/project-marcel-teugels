@@ -89,79 +89,81 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
-## ⚜ &nbsp; **Table of Contents** <!-- {#root-toc} -->
+## <img src="./assets/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#toc-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#toc-main} -->
 
 ---
 
-- [⚜ &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
-- [⚜ &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
-- [⚜ &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
-- [⚜ &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
-- [⚜ &nbsp; **Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
-- [⚜ &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
-- [⚜ &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
-- [⚜ &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
-- [⚜ &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
-- [⚜ &nbsp; **Git Basics**](#-nbsp-git-basics-nbsp-)
-- [⚜ &nbsp; **Tools and Utilities**](#-nbsp-tools-and-utilities-nbsp-)
-- [⚜ &nbsp; **Authors and Contributors**](#-nbsp-authors-and-contributors-nbsp-)
-- [⚜ &nbsp; **Development Changelog**](#-nbsp-development-changelog-nbsp-)
-- [⚜ &nbsp; **Legal License**](#-nbsp-legal-license-nbsp-)
+- [<img src="./assets/icons/vendors/flat-file.svg" width="16px" /> &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
+- [<img src="./assets/icons/vendors/flat-idea.svg" width="16px" /> &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
+- [<img src="./assets/icons/vendors/flat-more.svg" width="16px" /> &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
+- [<img src="./assets/icons/vendors/flat-config.svg" width="16px" /> &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
+- [<img src="./assets/icons/vendors/flat-blueprint.svg" width="16px" /> &nbsp; **Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
+- [<img src="./assets/icons/vendors/flat-checked.svg" width="16px" /> &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
+- [<img src="./assets/icons/vendors/flat-home.svg" width="16px" /> &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
+- [<img src="./assets/icons/vendors/flat-error.svg" width="16px" /> &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
+- [<img src="./assets/icons/vendors/mit-readme.svg" width="16px" /> &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
+- [<img src="./assets/icons/vendors/si-git.svg" width="16px" /> &nbsp; **Git**](#-nbsp-git-basics-nbsp-)
+- [<img src="./assets/icons/vendors/flat-settings.svg" width="16px" /> &nbsp; **Tools & Utilities**](#-nbsp-tools-and-utilities-nbsp-)
+- [<img src="./assets/icons/vendors/flat-users.svg" width="16px" /> &nbsp; **Authors & Contributors**](#-nbsp-authors-and-contributors-nbsp-)
+- [<img src="./assets/icons/vendors/flat-file.svg" width="16px" /> &nbsp; **Development Changelog**](#-nbsp-development-changelog-nbsp-)
+- [<img src="./assets/icons/vendors/flat-diploma.svg" width="16px" /> &nbsp; **Legal License**](#-nbsp-legal-license-nbsp-)
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#toc-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#toc-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Table Of Contents </i></summary>
+  <summary><i> Collapse Extended - Table Of Contents </i></summary>
+
+---
 
 <br/>
 
-- [⚜ &nbsp; **Table of Contents**](#--table-of-contents)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content)
-- [⚜ &nbsp; **Technology Stack**](#--technology-stack)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-1)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-1)
+- [<img src="./assets/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents**](#--table-of-contents)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content)
+- [<img src="./assets/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-1)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-1)
     - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
     - [_B2 ❖ &nbsp; Frameworks_](#b2---frameworks)
     - [_B3 ❖ &nbsp; Database Tools_](#b3---database-tools)
     - [_B4 ❖ &nbsp; Extentions_](#b4---extentions)
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
-- [⚜ &nbsp; **Installation**](#--installation)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-2)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-2)
+- [<img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation**](#--installation)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-2)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-2)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
-- [⚜ &nbsp; **Configuration**](#--configuration)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-3)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-3)
+- [<img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-3)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-3)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-1)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-1)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-1)
-- [⚜ &nbsp; **Conventions & Styles**](#--conventions--styles)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-4)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-4)
+- [<img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-4)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-4)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
-- [⚜ &nbsp; **Rules**](#--rules)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-5)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-5)
+- [<img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-5)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-5)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
-- [⚜ &nbsp; **Architecture**](#--architecture)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-6)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-6)
+- [<img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
     - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
@@ -182,45 +184,45 @@
     - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
-- [⚜ &nbsp; **Testing**](#--testing)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-7)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-7)
+- [<img src="./assets/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
-- [⚜ &nbsp; **Website Usage**](#--website-usage)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-8)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-8)
+- [<img src="./assets/icons/vendors/mit-readme.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-- [⚜ &nbsp; **Git Basics**](#--git-basics)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-9)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-9)
+- [<img src="./assets/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git**](#--git)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-9)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
-- [⚜ &nbsp; **Tools & Utilities**](#--tools--utilities)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-10)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-10)
+- [<img src="./assets/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities**](#--tools--utilities)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-10)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-10)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
-- [⚜ &nbsp; **Authors & Contributors**](#--authors--contributors)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-11)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-11)
+- [<img src="./assets/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-11)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-11)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
-- [⚜ &nbsp; **Development Changelog**](#--development-changelog)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-12)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-12)
+- [<img src="./assets/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-12)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-12)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
-- [⚜ &nbsp; **Legal License**](#--legal-license)
-  - [**A ☱ &nbsp; Main Content**](#a---main-content-13)
-  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-13)
+- [<img src="./assets/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-13)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-13)
 
 <br/>
 
@@ -229,58 +231,124 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Technology Stack** <!-- {#root-techstack} -->
+## <img src="./assets/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content**
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#techstack-main} -->
 
 ---
 
 <div class="hero__tech-stack" align="center">
-  <a href="https://github.com/raf-vergauwen/project-marcel-teugels/"><img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" /></a>
-  <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" /></a>
-  <a href="https://www.adobe.com/products/xd.html"><img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" /></a>
-  <a href="https://affinity.serif.com/en-us/photo/"><img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" /></a>
-  <a href="https://mattermost.com/"><img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" /></a>
-  <a href="https://www.messenger.com/"><img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" /></a>
-  <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" /></a>
-  <a href="https://commonmark.org/"><img src="https://img.shields.io/badge/Markdown-Commonmark-gray?labelColor=whitesmoke&style=social&logo=Markdown&logoColor=000000" alt="Markdown" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="https://img.shields.io/badge/HTML-5.2-gray?labelColor=whitesmoke&style=social&logo=HTML5&logoColor=E34F26" alt="HTML5" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS-3.0-gray?labelColor=whitesmoke&style=social&logo=CSS3&logoColor=1572B6" alt="CSS3" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img src="https://img.shields.io/badge/JavaScript-ECMAScript_2020-gray?labelColor=whitesmoke&style=social&logo=JavaScript&logoColor=F7DF1E" alt="JavaScript" /></a>
-  <a href="https://www.json.org/json-en.html"><img src="https://img.shields.io/badge/JSON-ECMA_404-gray?labelColor=whitesmoke&style=social&logo=JSON&logoColor=000000" alt="JSON" /></a>
-  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" /></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" /></a>
-  <a href="https://sass-lang.com/dart-sass"><img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" /></a>
-  <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" /></a>
-  <a href="https://nuxtjs.org/"><img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" /></a>
-  <a href="https://buefy.org/"><img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" /></a>
-  <a href="https://mochajs.org/"><img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" /></a>
-  <a href="https://pugjs.org/api/getting-started.html"><img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" /></a>
-  <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" /></a>
-  <a href="https://babeljs.io/"><img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" /></a>
-  <a href="https://webpack.js.org/"><img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" /></a>
-  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" /></a>
-  <a href="https://eslint.org/"><img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" /></a>
-  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" /></a>
-  <a href="https://www.chartjs.org/"><img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" /></a>
-  <a href="https://storybook.js.org/"><img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" /></a>
-  <a href="https://d3js.org/"><img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" /></a>
-  <a href="https://insomnia.rest/"><img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" /></a>
-  <a href="https://directus.io/"><img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" /></a>
-  <a href="https://affinity.serif.com/en-us/photo/"><img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" /></a>
+  <a href="https://github.com/raf-vergauwen/project-marcel-teugels/">
+  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" />
+  </a>
+  <a href="https://code.visualstudio.com/">
+   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" />
+  </a>
+  <a href="https://www.adobe.com/products/xd.html">
+   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" />
+  </a>
+  <a href="https://affinity.serif.com/en-us/photo/">
+   <img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" />
+  </a>
+  <a href="https://mattermost.com/">
+   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" />
+  </a>
+  <a href="https://www.messenger.com/">
+   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" />
+  </a>
+  <a href="https://git-scm.com/">
+   <img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" />
+  </a>
+  <a href="https://commonmark.org/">
+   <img src="https://img.shields.io/badge/Markdown-Commonmark-gray?labelColor=whitesmoke&style=social&logo=Markdown&logoColor=000000" alt="Markdown" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+   <img src="https://img.shields.io/badge/HTML-5.2-gray?labelColor=whitesmoke&style=social&logo=HTML5&logoColor=E34F26" alt="HTML5" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+   <img src="https://img.shields.io/badge/CSS-3.0-gray?labelColor=whitesmoke&style=social&logo=CSS3&logoColor=1572B6" alt="CSS3" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">
+   <img src="https://img.shields.io/badge/JavaScript-ECMAScript_2020-gray?labelColor=whitesmoke&style=social&logo=JavaScript&logoColor=F7DF1E" alt="JavaScript" />
+  </a>
+  <a href="https://www.json.org/json-en.html">
+   <img src="https://img.shields.io/badge/JSON-ECMA_404-gray?labelColor=whitesmoke&style=social&logo=JSON&logoColor=000000" alt="JSON" />
+  </a>
+  <a href="https://www.postgresql.org/">
+   <img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" />
+  </a>
+  <a href="https://sass-lang.com/dart-sass">
+   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" />
+  </a>
+  <a href="https://vuejs.org/">
+   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" />
+  </a>
+  <a href="https://nuxtjs.org/">
+   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" />
+  </a>
+  <a href="https://buefy.org/">
+   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" />
+  </a>
+  <a href="https://mochajs.org/">
+   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" />
+  </a>
+  <a href="https://pugjs.org/api/getting-started.html">
+   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" />
+  </a>
+  <a href="https://jestjs.io/">
+   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" />
+  </a>
+  <a href="https://babeljs.io/">
+   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" />
+  </a>
+  <a href="https://webpack.js.org/">
+   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" />
+  </a>
+  <a href="https://prettier.io/">
+   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" />
+  </a>
+  <a href="https://eslint.org/">
+   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" />
+  </a>
+  <a href="https://prettier.io/">
+   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" />
+  </a>
+  <a href="https://www.chartjs.org/">
+   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" />
+  </a>
+  <a href="https://storybook.js.org/">
+   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" />
+  </a>
+  <a href="https://d3js.org/">
+   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" />
+  </a>
+  <a href="https://insomnia.rest/">
+   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" />
+  </a>
+  <a href="https://directus.io/">
+   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" />
+  </a>
+  <a href="https://affinity.serif.com/en-us/photo/">
+   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" />
+  </a>
   <br />
 </div>
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content**
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#techstack-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Technology Stack</i></summary>
+
+---
 
 <br/>
 
@@ -540,11 +608,11 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Installation** <!-- {#root-install} -->
+## <img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#install-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#install-main} -->
 
 ---
 
@@ -567,12 +635,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#install-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#install-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Installation </i></summary>
+
+---
 
 <br/>
 
@@ -605,11 +675,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Configuration** <!-- {#root-config} -->
+## <img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#config-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
 
 ---
 
@@ -617,12 +687,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#config-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#config-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Configuration</i></summary>
+
+---
 
 <br/>
 
@@ -655,11 +727,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
+## <img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#convens-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#convens-main} -->
 
 ---
 
@@ -667,12 +739,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#convens-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#convens-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Conventions & Styles</i></summary>
+
+---
 
 <br/>
 
@@ -705,11 +779,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Rules** <!-- {#root-rules} -->
+## <img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#rules-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#rules-main} -->
 
 ---
 
@@ -719,12 +793,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#rules-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#rules-extended} -->
 
 <br/>
 
 <details>
   <summary><i>Collapse Extended - Rules</i></summary>
+
+---
 
 <br/>
 
@@ -757,11 +833,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Architecture** <!-- {#root-architecture} -->
+## <img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#architecture-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#architecture-main} -->
 
 ---
 
@@ -790,7 +866,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#architecture-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#architecture-extended} -->
 
 ---
 
@@ -1064,11 +1140,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Testing** <!-- {#root-testing} -->
+## <img src="./assets/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#testing-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#testing-main} -->
 
 ---
 
@@ -1076,12 +1152,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#testing-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#testing-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Testing</i></summary>
+
+---
 
 <br/>
 
@@ -1114,11 +1192,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Website Usage** <!-- {#root-usage} -->
+## <img src="./assets/icons/vendors/mit-readme.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#usage-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
 
 ---
 
@@ -1126,12 +1204,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#usage-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#usage-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Usage</i></summary>
+
+---
 
 <br/>
 
@@ -1164,24 +1244,26 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Git Basics** <!-- {#root-git} -->
+## <img src="./assets/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#git-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#git-main} -->
 
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+> Git \(/ɡɪt/\) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows \(thousands of parallel branches running on different systems\)
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#git-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#git-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Git Basics</i></summary>
+
+---
 
 <br/>
 
@@ -1214,11 +1296,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
+## <img src="./assets/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#tools-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#tools-main} -->
 
 ---
 
@@ -1226,12 +1308,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#tools-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#tools-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended Tools and Utilities</i></summary>
+
+---
 
 <br/>
 
@@ -1264,11 +1348,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
+## <img src="./assets/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#authors-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#authors-main} -->
 
 ---
 
@@ -1298,12 +1382,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 [facebook:kenneth]: https://facebook.com/KennethBlondeel
 [facebook:lins]: https://facebook.com/LinsTimperman
 
-### **B ☱ &nbsp; Extended Content** <!-- {#authors-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#authors-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Authors & Contributors</i></summary>
+
+---
 
 <br/>
 
@@ -1336,11 +1422,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Development Changelog** <!-- {#root-changelog} -->
+## <img src="./assets/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#changelog-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#changelog-main} -->
 
 ---
 
@@ -1348,12 +1434,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#changelog-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#changelog-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Changelog</i></summary>
+
+---
 
 <br/>
 
@@ -1386,11 +1474,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Legal License** <!-- {#root-license} -->
+## <img src="./assets/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content** <!-- {#license-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#license-main} -->
 
 ---
 
@@ -1409,7 +1497,7 @@ Licensed works, modifications, and larger works may be distributed under differe
 <br/>
 <br/>
 
-### **B ☱ &nbsp; Extended Content** <!-- {#license-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#license-extended} -->
 
 ---
 
