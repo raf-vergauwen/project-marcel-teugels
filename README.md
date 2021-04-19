@@ -105,7 +105,7 @@
 - [<img src="./assets/icons/vendors/flat-checked.svg" width="16px" /> &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
 - [<img src="./assets/icons/vendors/flat-home.svg" width="16px" /> &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
 - [<img src="./assets/icons/vendors/flat-error.svg" width="16px" /> &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
-- [<img src="./assets/icons/vendors/mit-readme.svg" width="16px" /> &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
+- [<img src="./assets/icons/vendors/flat-info.svg" width="16px" /> &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
 - [<img src="./assets/icons/vendors/si-git.svg" width="16px" /> &nbsp; **Git**](#-nbsp-git-basics-nbsp-)
 - [<img src="./assets/icons/vendors/flat-settings.svg" width="16px" /> &nbsp; **Tools & Utilities**](#-nbsp-tools-and-utilities-nbsp-)
 - [<img src="./assets/icons/vendors/flat-users.svg" width="16px" /> &nbsp; **Authors & Contributors**](#-nbsp-authors-and-contributors-nbsp-)
@@ -190,7 +190,7 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
-- [<img src="./assets/icons/vendors/mit-readme.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
+- [<img src="./assets/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
@@ -1192,7 +1192,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## <img src="./assets/icons/vendors/mit-readme.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
+## <img src="./assets/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
 
 <br/>
 
