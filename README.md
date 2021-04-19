@@ -89,6 +89,8 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
+---
+
 ## <img src="./assets/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
@@ -228,8 +230,10 @@
 
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
@@ -454,8 +458,6 @@
 
 <br/>
 
-</details>
-
 <!-- Technologies Links -->
 
 [github]: https://github.com/ 'Official Github website'
@@ -605,8 +607,12 @@
 
 [sqltools]: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools#review-details 'SQL-tools marketplace'
 
-\
-&nbsp;
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
 
@@ -668,12 +674,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
 
@@ -720,12 +726,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
@@ -772,12 +778,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
 
@@ -795,7 +801,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#rules-extended} -->
 
-<br/>
+---
 
 <details>
   <summary><i>Collapse Extended - Rules</i></summary>
@@ -826,12 +832,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
 
@@ -1136,9 +1142,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 </details>
 
 <br/>
-
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
 
@@ -1185,12 +1191,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
 
@@ -1237,12 +1243,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
 
@@ -1289,12 +1295,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
 
@@ -1341,12 +1347,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
 
@@ -1415,12 +1421,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
@@ -1467,12 +1473,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
 
