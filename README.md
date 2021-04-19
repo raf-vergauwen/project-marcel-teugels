@@ -89,8 +89,6 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
----
-
 ## <img src="./assets/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
@@ -1566,7 +1564,6 @@ Licensed works, modifications, and larger works may be distributed under differe
 | <img src="assets\icons\vendors\b-circle-fill--green.svg" alt="Green icon"> Modification   |                                                                                                        |                                                                                    |
 | <img src="assets\icons\vendors\b-circle-fill--green.svg" alt="Green icon"> Private use    |                                                                                                        |                                                                                    |
 
-<br/>
 <br/>
 
 ### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#license-extended} -->
