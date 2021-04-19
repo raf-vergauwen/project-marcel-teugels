@@ -89,7 +89,7 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
-## ⚜ &nbsp; **Table of Contents** <!-- {#root-toc} -->
+## <img src="./assets/icons/vendors/flat-file.svg" alt="Git icon" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
 
@@ -125,10 +125,10 @@
 
 <br/>
 
-- [⚜ &nbsp; **Table of Contents**](#--table-of-contents)
+- [<img src="./assets/icons/vendors/flat-file.svg" alt="Git icon" width="24px" /> &nbsp; **Table of Contents**](#--table-of-contents)
   - [**A ☱ &nbsp; Main Content**](#a---main-content)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content)
-- [⚜ &nbsp; **Technology Stack**](#--technology-stack)
+- [<img src="./assets/icons/vendors/flat-idea.svg" alt="Git icon" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-1)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-1)
     - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
@@ -137,31 +137,31 @@
     - [_B4 ❖ &nbsp; Extentions_](#b4---extentions)
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
-- [⚜ &nbsp; **Installation**](#--installation)
+- [<img src="./assets/icons/vendors/flat-more.svg" alt="Git icon" width="24px" /> &nbsp; **Installation**](#--installation)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-2)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-2)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
-- [⚜ &nbsp; **Configuration**](#--configuration)
+- [<img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" / &nbsp; **Configuration**](#img-srcassetsiconsvendorsflat-configsvg-altgit-icon-width24px---configuration)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-3)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-3)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-1)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-1)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-1)
-- [⚜ &nbsp; **Conventions & Styles**](#--conventions--styles)
+- [<img src="./assets/icons/vendors/flat-blueprint.svg" alt="Git icon" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-4)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-4)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
-- [⚜ &nbsp; **Rules**](#--rules)
+- [<img src="./assets/icons/vendors/flat-checked.svg" alt="Git icon" width="24px" /> &nbsp; **Rules**](#--rules)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-5)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-5)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
-- [⚜ &nbsp; **Architecture**](#--architecture)
+- [<img src="./assets/icons/vendors/flat-home.svg" alt="Git icon" width="24px" /> &nbsp; **Architecture**](#--architecture)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-6)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-6)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
@@ -184,43 +184,43 @@
     - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
-- [⚜ &nbsp; **Testing**](#--testing)
+- [<img src="./assets/icons/vendors/flat-battery.svg" alt="Git icon" width="24px" /> &nbsp; **Testing**](#--testing)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-7)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-7)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
-- [⚜ &nbsp; **Website Usage**](#--website-usage)
+- [<img src="./assets/icons/vendors/mit-readme.svg" alt="Git icon" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-8)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-- [<a href="https://guides.github.com/"><img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="32px" /></a> &nbsp; **Git Basics**](#--git-basics)
+- [<img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="24px" /> &nbsp; **Git**](#--git)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-9)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
-- [⚜ &nbsp; **Tools & Utilities**](#--tools--utilities)
+- [<img src="./assets/icons/vendors/flat-settings.svg" alt="Git icon" width="24px" /> &nbsp; **Tools & Utilities**](#--tools--utilities)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-10)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-10)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
-- [⚜ &nbsp; **Authors & Contributors**](#--authors--contributors)
+- [<img src="./assets/icons/vendors/flat-users.svg" alt="Git icon" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-11)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-11)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
-- [⚜ &nbsp; **Development Changelog**](#--development-changelog)
+- [<img src="./assets/icons/vendors/flat-changelog.svg" alt="Git icon" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-12)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-12)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
-- [<a href="https://guides.github.com/"><img src="./assets/icons/vendors/-certificate.svg" alt="Git icon" width="32px" /></a> &nbsp; **Legal License**](#--legal-license)
+- [<img src="./assets/icons/vendors/flat-diploma.svg" alt="Git icon" width="24px" /> &nbsp; **Legal License**](#--legal-license)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-13)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-13)
 
@@ -231,7 +231,7 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Technology Stack** <!-- {#root-techstack} -->
+## <img src="./assets/icons/vendors/flat-idea.svg" alt="Git icon" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
 <br/>
 
@@ -608,7 +608,7 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Installation** <!-- {#root-install} -->
+## <img src="./assets/icons/vendors/flat-more.svg" alt="Git icon" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
 
 <br/>
 
@@ -675,7 +675,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Configuration** <!-- {#root-config} -->
+## <img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" / &nbsp; **Configuration** <!-- {#root-config} -->
 
 <br/>
 
@@ -727,7 +727,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
+## <img src="./assets/icons/vendors/flat-blueprint.svg" alt="Git icon" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
 <br/>
 
@@ -779,7 +779,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Rules** <!-- {#root-rules} -->
+## <img src="./assets/icons/vendors/flat-checked.svg" alt="Git icon" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
 
 <br/>
 
@@ -833,7 +833,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Architecture** <!-- {#root-architecture} -->
+## <img src="./assets/icons/vendors/flat-home.svg" alt="Git icon" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
 
 <br/>
 
@@ -1140,7 +1140,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Testing** <!-- {#root-testing} -->
+## <img src="./assets/icons/vendors/flat-battery.svg" alt="Git icon" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
 
 <br/>
 
@@ -1192,7 +1192,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Website Usage** <!-- {#root-usage} -->
+## <img src="./assets/icons/vendors/mit-readme.svg" alt="Git icon" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
 
 <br/>
 
@@ -1244,7 +1244,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## <a href="https://guides.github.com/"><img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="32px" /></a> &nbsp; **Git Basics** <!-- {#root-git} -->
+## <img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
 
 <br/>
 
@@ -1296,7 +1296,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
+## <img src="./assets/icons/vendors/flat-settings.svg" alt="Git icon" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
 
 <br/>
 
@@ -1348,7 +1348,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
+## <img src="./assets/icons/vendors/flat-users.svg" alt="Git icon" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
 
 <br/>
 
@@ -1422,7 +1422,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Development Changelog** <!-- {#root-changelog} -->
+## <img src="./assets/icons/vendors/flat-changelog.svg" alt="Git icon" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
 <br/>
 
@@ -1474,7 +1474,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## <a href="https://guides.github.com/"><img src="./assets/icons/vendors/mit-certificate.svg" alt="Git icon" width="32px" /></a> &nbsp; **Legal License** <!-- {#root-license} -->
+## <img src="./assets/icons/vendors/flat-diploma.svg" alt="Git icon" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
 
 <br/>
 
