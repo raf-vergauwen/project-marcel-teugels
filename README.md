@@ -245,22 +245,22 @@
 
 <div class="hero__tech-stack" align="center">
   <a href="https://github.com/raf-vergauwen/project-marcel-teugels/">
-  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" />
+  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717" alt="Github" />
   </a>
   <a href="https://code.visualstudio.com/">
-   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" />
+   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC" alt="Visual_Studio_Code" />
   </a>
   <a href="https://www.adobe.com/products/xd.html">
-   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" />
+   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6" alt="Adobe XD" />
   </a>
   <a href="https://affinity.serif.com/en-us/photo/">
-   <img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" />
+   <img src="https://img.shields.io/badge/Affinity_Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity_Photo&logoColor=7E4DD2" alt="Affinity Photo" />
   </a>
   <a href="https://mattermost.com/">
-   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" />
+   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC" alt="Mattermost" />
   </a>
   <a href="https://www.messenger.com/">
-   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" />
+   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF" alt="Messenger" />
   </a>
   <a href="https://git-scm.com/">
    <img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" />
@@ -284,61 +284,61 @@
    <img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" />
   </a>
   <a href="https://www.typescriptlang.org/">
-   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" />
+   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&" alt="TypeScript" />
   </a>
   <a href="https://sass-lang.com/dart-sass">
-   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" />
+   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699" alt="Dart Sass" />
   </a>
   <a href="https://vuejs.org/">
-   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" />
+   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D" alt="Vue.js" />
   </a>
   <a href="https://nuxtjs.org/">
-   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" />
+   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E" alt="Nuxt.js" />
   </a>
   <a href="https://buefy.org/">
-   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" />
+   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5" alt="Buefy" />
   </a>
   <a href="https://mochajs.org/">
-   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" />
+   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748" alt="Mocha" />
   </a>
   <a href="https://pugjs.org/api/getting-started.html">
-   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" />
+   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454" alt="Pug.js" />
   </a>
   <a href="https://jestjs.io/">
-   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" />
+   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325" alt="Jest.js" />
   </a>
   <a href="https://babeljs.io/">
-   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" />
+   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E" alt="Babel.js" />
   </a>
   <a href="https://webpack.js.org/">
-   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" />
+   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9" alt="Webpack.js" />
   </a>
   <a href="https://prettier.io/">
-   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" />
+   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E" alt="Prettier" />
   </a>
   <a href="https://eslint.org/">
-   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" />
+   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3" alt="Eslint.js" />
   </a>
   <a href="https://prettier.io/">
-   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" />
+   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238" alt="Stylelint" />
   </a>
   <a href="https://www.chartjs.org/">
-   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" />
+   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384" alt="Chart.js" />
   </a>
   <a href="https://storybook.js.org/">
-   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" />
+   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785" alt="Storybook" />
   </a>
   <a href="https://d3js.org/">
-   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" />
+   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C" alt="D3.js" />
   </a>
   <a href="https://insomnia.rest/">
-   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" />
+   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE" alt="Insomnia.io" />
   </a>
   <a href="https://directus.io/">
-   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" />
+   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238" alt="Directus.io" />
   </a>
-  <a href="https://affinity.serif.com/en-us/photo/">
-   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" />
+  <a href="https://supabase.io">
+   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E" alt="Supabase.io" />
   </a>
   <br />
 </div>
