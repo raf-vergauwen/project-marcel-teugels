@@ -119,7 +119,7 @@
 ---
 
 <details>
-  <summary><i>Collapse Extended - Table Of Contents </i></summary>
+  <summary><i> Collapse Extended - Table Of Contents </i></summary>
 
 ---
 
