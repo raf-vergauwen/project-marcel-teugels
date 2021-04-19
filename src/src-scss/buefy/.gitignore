@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+dist-docs/
+lib/
+coverage/
+npm-debug.log*
+debug.log*
+.idea/
+cypress/videos/
+cypress/screenshots/
+.vscode/
