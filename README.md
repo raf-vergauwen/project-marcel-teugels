@@ -97,20 +97,20 @@
 
 ---
 
-- [⚜ &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
-- [⚜ &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
-- [⚜ &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
-- [⚜ &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
-- [⚜ &nbsp; **Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
-- [⚜ &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
-- [⚜ &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
-- [⚜ &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
-- [⚜ &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
-- [⚜ &nbsp; **Git Basics**](#-nbsp-git-basics-nbsp-)
-- [⚜ &nbsp; **Tools and Utilities**](#-nbsp-tools-and-utilities-nbsp-)
-- [⚜ &nbsp; **Authors and Contributors**](#-nbsp-authors-and-contributors-nbsp-)
-- [⚜ &nbsp; **Development Changelog**](#-nbsp-development-changelog-nbsp-)
-- [⚜ &nbsp; **Legal License**](#-nbsp-legal-license-nbsp-)
+- [<img src="./assets/icons/vendors/flat-file.svg" width="16px" /> &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
+- [<img src="./assets/icons/vendors/flat-idea.svg" width="16px" /> &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
+- [<img src="./assets/icons/vendors/flat-more.svg" width="16px" /> &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
+- [<img src="./assets/icons/vendors/flat-config.svg" width="16px" /> &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
+- [<img src="./assets/icons/vendors/flat-blueprint.svg" width="16px" /> &nbsp; **Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
+- [<img src="./assets/icons/vendors/flat-checked.svg" width="16px" /> &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
+- [<img src="./assets/icons/vendors/flat-home.svg" width="16px" /> &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
+- [<img src="./assets/icons/vendors/flat-error.svg" width="16px" /> &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
+- [<img src="./assets/icons/vendors/mit-readme.svg" width="16px" /> &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
+- [<img src="./assets/icons/vendors/si-git.svg" width="16px" /> &nbsp; **Git**](#-nbsp-git-basics-nbsp-)
+- [<img src="./assets/icons/vendors/flat-settings.svg" width="16px" /> &nbsp; **Tools & Utilities**](#-nbsp-tools-and-utilities-nbsp-)
+- [<img src="./assets/icons/vendors/flat-users.svg" width="16px" /> &nbsp; **Authors & Contributors**](#-nbsp-authors-and-contributors-nbsp-)
+- [<img src="./assets/icons/vendors/flat-file.svg" width="16px" /> &nbsp; **Development Changelog**](#-nbsp-development-changelog-nbsp-)
+- [<img src="./assets/icons/vendors/flat-diploma.svg" width="16px" /> &nbsp; **Legal License**](#-nbsp-legal-license-nbsp-)
 
 <br/>
 
