@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <div class="buttons">
+            <a
+                class="button"
+                href="https://logaretm.github.io/vee-validate/"
+                target="_blank">
+                Website
+            </a>
+            <a
+                class="button"
+                href="https://logaretm.github.io/vee-validate/guide/basics.html"
+                target="_blank">
+                Docs
+            </a>
+            <a
+                class="button"
+                href="https://codesandbox.io/s/veevalidate-components-buefy-znj4u"
+                target="_blank">
+                Example
+            </a>
+        </div>
+    </div>
+</template>
