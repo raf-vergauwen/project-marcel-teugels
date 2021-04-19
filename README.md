@@ -89,6 +89,8 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
+---
+
 ## <img src="./assets/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
@@ -199,27 +201,27 @@
 - [<img src="./assets/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git**](#--git)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-9)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-9)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
+    - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
+    - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
+    - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
 - [<img src="./assets/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities**](#--tools--utilities)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-10)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-10)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
 - [<img src="./assets/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-11)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-11)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
 - [<img src="./assets/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-12)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-12)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
 - [<img src="./assets/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-13)
   - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-13)
@@ -228,8 +230,10 @@
 
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
@@ -241,22 +245,22 @@
 
 <div class="hero__tech-stack" align="center">
   <a href="https://github.com/raf-vergauwen/project-marcel-teugels/">
-  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" />
+  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717" alt="Github" />
   </a>
   <a href="https://code.visualstudio.com/">
-   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" />
+   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC" alt="Visual_Studio_Code" />
   </a>
   <a href="https://www.adobe.com/products/xd.html">
-   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" />
+   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6" alt="Adobe XD" />
   </a>
   <a href="https://affinity.serif.com/en-us/photo/">
-   <img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" />
+   <img src="https://img.shields.io/badge/Affinity_Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity+Photo&logoColor=7E4DD2" alt="Affinity Photo" />
   </a>
   <a href="https://mattermost.com/">
-   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" />
+   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC" alt="Mattermost" />
   </a>
   <a href="https://www.messenger.com/">
-   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" />
+   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF" alt="Messenger" />
   </a>
   <a href="https://git-scm.com/">
    <img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" />
@@ -280,61 +284,61 @@
    <img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" />
   </a>
   <a href="https://www.typescriptlang.org/">
-   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" />
+   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&" alt="TypeScript" />
   </a>
   <a href="https://sass-lang.com/dart-sass">
-   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" />
+   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699" alt="Dart Sass" />
   </a>
   <a href="https://vuejs.org/">
-   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" />
+   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D" alt="Vue.js" />
   </a>
   <a href="https://nuxtjs.org/">
-   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" />
+   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E" alt="Nuxt.js" />
   </a>
   <a href="https://buefy.org/">
-   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" />
+   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5" alt="Buefy" />
   </a>
   <a href="https://mochajs.org/">
-   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" />
+   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748" alt="Mocha" />
   </a>
   <a href="https://pugjs.org/api/getting-started.html">
-   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" />
+   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454" alt="Pug.js" />
   </a>
   <a href="https://jestjs.io/">
-   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" />
+   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325" alt="Jest.js" />
   </a>
   <a href="https://babeljs.io/">
-   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" />
+   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E" alt="Babel.js" />
   </a>
   <a href="https://webpack.js.org/">
-   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" />
+   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9" alt="Webpack.js" />
   </a>
   <a href="https://prettier.io/">
-   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" />
+   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E" alt="Prettier" />
   </a>
   <a href="https://eslint.org/">
-   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" />
+   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3" alt="Eslint.js" />
   </a>
   <a href="https://prettier.io/">
-   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" />
+   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238" alt="Stylelint" />
   </a>
   <a href="https://www.chartjs.org/">
-   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" />
+   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384" alt="Chart.js" />
   </a>
   <a href="https://storybook.js.org/">
-   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" />
+   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785" alt="Storybook" />
   </a>
   <a href="https://d3js.org/">
-   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" />
+   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C" alt="D3.js" />
   </a>
   <a href="https://insomnia.rest/">
-   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" />
+   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE" alt="Insomnia.io" />
   </a>
   <a href="https://directus.io/">
-   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" />
+   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238" alt="Directus.io" />
   </a>
-  <a href="https://affinity.serif.com/en-us/photo/">
-   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" />
+  <a href="https://supabase.io">
+   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E" alt="Supabase.io" />
   </a>
   <br />
 </div>
@@ -453,8 +457,6 @@
 | <img src="assets\icons\vendors\si-supabase.svg" alt="Supabase icon" title="Supabase icon">       | **[Supabase.io]** | null           | null        | 'Work in progress...' | 'Work in progress...' | 'Work in progress...' |
 
 <br/>
-
-</details>
 
 <!-- Technologies Links -->
 
@@ -605,8 +607,12 @@
 
 [sqltools]: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools#review-details 'SQL-tools marketplace'
 
-\
-&nbsp;
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
 
@@ -668,12 +674,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
 
@@ -720,12 +726,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
@@ -772,12 +778,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
 
@@ -795,7 +801,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#rules-extended} -->
 
-<br/>
+---
 
 <details>
   <summary><i>Collapse Extended - Rules</i></summary>
@@ -826,12 +832,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
 
@@ -1136,9 +1142,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 </details>
 
 <br/>
-
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
 
@@ -1185,12 +1191,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
 
@@ -1237,12 +1243,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
 
@@ -1252,7 +1258,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ---
 
-> Git \(/ɡɪt/\) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows \(thousands of parallel branches running on different systems\)
+> Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows \(thousands of parallel branches running on different systems\)
 
 <br/>
 
@@ -1267,34 +1273,100 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#git-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Example: Contribute to an existing repository_ <!-- {#git-extended-subcat-1} -->
 
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+```bash
+# download a repository on GitHub.com to our machine
+git clone https://github.com/me/repo.git
+
+# change into the `repo` directory
+cd repo
+
+# create a new branch to store any new changes
+git branch my-branch
+
+# switch to that branch (line of development)
+git checkout my-branch
+
+# make changes, for example, edit `file1.md` and `file2.md` using the text editor
+
+# stage the changed files
+git add file1.md file2.md
+
+# take a snapshot of the staging area (anything that's been added)
+git commit -m "my snapshot"
+
+# push changes to github
+git push --set-upstream origin my-branch
+```
 
 <br/>
 
-#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#git-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_ <!-- {#git-extended-subcat-2} -->
 
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+```bash
+# create a new directory, and initialize it with git-specific functions
+git init my-repo
+
+# change into the `my-repo` directory
+cd my-repo
+
+# create the first file in the project
+touch README.md
+
+# git isn't aware of the file, stage it
+git add README.md
+
+# take a snapshot of the staging area
+git commit -m "add README to initial commit"
+
+# provide the path for the repository you created on github
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+# push changes to github
+git push --set-upstream origin main
+```
 
 <br/>
 
-#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#git-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_ <!-- {#git-extended-subcat-3} -->
 
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+```bash
+# assumption: a project called `repo` already exists on the machine, and a new branch has been pushed to GitHub.com since the last time changes were made locally
 
-<br/>
+# change into the `repo` directory
+cd repo
+
+# update all remote tracking branches, and the currently checked out branch
+git pull
+
+# change into the existing branch called `feature-a`
+git checkout feature-a
+
+# make changes, for example, edit `file1.md` using the text editor
+
+# stage the changed file
+git add file1.md
+
+# take a snapshot of the staging area
+git commit -m "edit file1"
+
+# push changes to github
+git push
+```
 
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
 
@@ -1341,12 +1413,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
 
@@ -1415,12 +1487,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
@@ -1467,12 +1539,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
-<br/>
-
 </details>
 
-\
-&nbsp;
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## <img src="./assets/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
 
