@@ -254,7 +254,7 @@
    <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6" alt="Adobe XD" />
   </a>
   <a href="https://affinity.serif.com/en-us/photo/">
-   <img src="https://img.shields.io/badge/Affinity_Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity_Photo&logoColor=7E4DD2" alt="Affinity Photo" />
+   <img src="https://img.shields.io/badge/Affinity_Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity+Photo&logoColor=7E4DD2" alt="Affinity Photo" />
   </a>
   <a href="https://mattermost.com/">
    <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC" alt="Mattermost" />
