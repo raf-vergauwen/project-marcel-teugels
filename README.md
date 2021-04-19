@@ -121,6 +121,8 @@
 <details>
   <summary><i>Collapse Extended - Table Of Contents </i></summary>
 
+---
+
 <br/>
 
 - [⚜ &nbsp; **Table of Contents**](#--table-of-contents)
@@ -194,7 +196,7 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-- [⚜ &nbsp; **Git Basics**](#--git-basics)
+- [<a href="https://guides.github.com/"><img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="32px" /></a> &nbsp; **Git Basics**](#--git-basics)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-9)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
@@ -218,7 +220,7 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
-- [⚜ &nbsp; **Legal License**](#--legal-license)
+- [<a href="https://guides.github.com/"><img src="./assets/icons/vendors/-certificate.svg" alt="Git icon" width="32px" /></a> &nbsp; **Legal License**](#--legal-license)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-13)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-13)
 
@@ -238,38 +240,102 @@
 ---
 
 <div class="hero__tech-stack" align="center">
-  <a href="https://github.com/raf-vergauwen/project-marcel-teugels/"><img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" /></a>
-  <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" /></a>
-  <a href="https://www.adobe.com/products/xd.html"><img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" /></a>
-  <a href="https://affinity.serif.com/en-us/photo/"><img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" /></a>
-  <a href="https://mattermost.com/"><img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" /></a>
-  <a href="https://www.messenger.com/"><img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" /></a>
-  <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" /></a>
-  <a href="https://commonmark.org/"><img src="https://img.shields.io/badge/Markdown-Commonmark-gray?labelColor=whitesmoke&style=social&logo=Markdown&logoColor=000000" alt="Markdown" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="https://img.shields.io/badge/HTML-5.2-gray?labelColor=whitesmoke&style=social&logo=HTML5&logoColor=E34F26" alt="HTML5" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS-3.0-gray?labelColor=whitesmoke&style=social&logo=CSS3&logoColor=1572B6" alt="CSS3" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img src="https://img.shields.io/badge/JavaScript-ECMAScript_2020-gray?labelColor=whitesmoke&style=social&logo=JavaScript&logoColor=F7DF1E" alt="JavaScript" /></a>
-  <a href="https://www.json.org/json-en.html"><img src="https://img.shields.io/badge/JSON-ECMA_404-gray?labelColor=whitesmoke&style=social&logo=JSON&logoColor=000000" alt="JSON" /></a>
-  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" /></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" /></a>
-  <a href="https://sass-lang.com/dart-sass"><img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" /></a>
-  <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" /></a>
-  <a href="https://nuxtjs.org/"><img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" /></a>
-  <a href="https://buefy.org/"><img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" /></a>
-  <a href="https://mochajs.org/"><img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" /></a>
-  <a href="https://pugjs.org/api/getting-started.html"><img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" /></a>
-  <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" /></a>
-  <a href="https://babeljs.io/"><img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" /></a>
-  <a href="https://webpack.js.org/"><img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" /></a>
-  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" /></a>
-  <a href="https://eslint.org/"><img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" /></a>
-  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" /></a>
-  <a href="https://www.chartjs.org/"><img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" /></a>
-  <a href="https://storybook.js.org/"><img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" /></a>
-  <a href="https://d3js.org/"><img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" /></a>
-  <a href="https://insomnia.rest/"><img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" /></a>
-  <a href="https://directus.io/"><img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" /></a>
-  <a href="https://affinity.serif.com/en-us/photo/"><img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" /></a>
+  <a href="https://github.com/raf-vergauwen/project-marcel-teugels/">
+  <img src="https://img.shields.io/badge/Github-auto-gray?labelColor=whitesmoke&style=social&logo=Github&logoColor=181717&link=https://github.com/raf-vergauwen/project-marcel-teugels" alt="Github" />
+  </a>
+  <a href="https://code.visualstudio.com/">
+   <img src="https://img.shields.io/badge/Visual_Studio_Code-Auto-gray?labelColor=whitesmoke&style=social&logo=Visual+Studio+Code&logoColor=007ACC&link=https://code.visualstudio.com/" alt="Visual_Studio_Code" />
+  </a>
+  <a href="https://www.adobe.com/products/xd.html">
+   <img src="https://img.shields.io/badge/Adobe_XD-XD38-gray?labelColor=whitesmoke&style=social&logo=Adobe+XD&logoColor=FF61F6&link=https://www.adobe.com/products/xd.html" alt="Adobe XD" />
+  </a>
+  <a href="https://affinity.serif.com/en-us/photo/">
+   <img src="https://img.shields.io/badge/Affinity Photo-1.9-gray?labelColor=whitesmoke&style=social&logo=Affinity Photo&logoColor=7E4DD2&link=https://affinity.serif.com/en-us/photo/" alt="Affinity Photo" />
+  </a>
+  <a href="https://mattermost.com/">
+   <img src="https://img.shields.io/badge/Mattermost-5.34.1-gray?labelColor=whitesmoke&style=social&logo=Mattermost&logoColor=0058CC&link=https://mattermost.com/" alt="Mattermost" />
+  </a>
+  <a href="https://www.messenger.com/">
+   <img src="https://img.shields.io/badge/Messenger-Auto-gray?labelColor=whitesmoke&style=social&logo=Messenger&logoColor=00B2FF&link=https://www.messenger.com/" alt="Messenger" />
+  </a>
+  <a href="https://git-scm.com/">
+   <img src="https://img.shields.io/badge/Git-2.31-gray?labelColor=whitesmoke&style=social&logo=Git&logoColor=F05032" alt="Git" />
+  </a>
+  <a href="https://commonmark.org/">
+   <img src="https://img.shields.io/badge/Markdown-Commonmark-gray?labelColor=whitesmoke&style=social&logo=Markdown&logoColor=000000" alt="Markdown" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+   <img src="https://img.shields.io/badge/HTML-5.2-gray?labelColor=whitesmoke&style=social&logo=HTML5&logoColor=E34F26" alt="HTML5" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+   <img src="https://img.shields.io/badge/CSS-3.0-gray?labelColor=whitesmoke&style=social&logo=CSS3&logoColor=1572B6" alt="CSS3" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">
+   <img src="https://img.shields.io/badge/JavaScript-ECMAScript_2020-gray?labelColor=whitesmoke&style=social&logo=JavaScript&logoColor=F7DF1E" alt="JavaScript" />
+  </a>
+  <a href="https://www.json.org/json-en.html">
+   <img src="https://img.shields.io/badge/JSON-ECMA_404-gray?labelColor=whitesmoke&style=social&logo=JSON&logoColor=000000" alt="JSON" />
+  </a>
+  <a href="https://www.postgresql.org/">
+   <img src="https://img.shields.io/badge/PostgreSQL-13.2-gray?labelColor=whitesmoke&style=social&logo=PostgreSQL&logoColor=336791" alt="PostgreSQL" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+   <img src="https://img.shields.io/badge/TypeScript-4.2-gray?labelColor=whitesmoke&style=social&logo=TypeScript&logoColor=3178C6&link=https://www.typescriptlang.org/" alt="TypeScript" />
+  </a>
+  <a href="https://sass-lang.com/dart-sass">
+   <img src="https://img.shields.io/badge/Dart_Sass-1.32.8-gray?labelColor=whitesmoke&style=social&logo=Sass&logoColor=CC6699&link=https://sass-lang.com/dart-sass" alt="Dart Sass" />
+  </a>
+  <a href="https://vuejs.org/">
+   <img src="https://img.shields.io/badge/Vue.js-2.6.11-gray?labelColor=whitesmoke&style=social&logo=Vue.js&logoColor=4FC08D&link=https://vuejs.org/" alt="Vue.js" />
+  </a>
+  <a href="https://nuxtjs.org/">
+   <img src="https://img.shields.io/badge/Nuxt.js-2.15.4-gray?labelColor=whitesmoke&style=social&logo=Nuxt.js&logoColor=00C58E&link=https://nuxtjs.org/" alt="Nuxt.js" />
+  </a>
+  <a href="https://buefy.org/">
+   <img src="https://img.shields.io/badge/Buefy.js-0.9.6-gray?labelColor=whitesmoke&style=social&logo=Buefy&logoColor=7957D5&link=https://buefy.org/" alt="Buefy" />
+  </a>
+  <a href="https://mochajs.org/">
+   <img src="https://img.shields.io/badge/Mocha.js-8.3.2-gray?labelColor=whitesmoke&style=social&logo=Mocha&logoColor=8D6748&link=https://mochajs.org/" alt="Mocha" />
+  </a>
+  <a href="https://pugjs.org/api/getting-started.html">
+   <img src="https://img.shields.io/badge/Pug.js-3.0.2-gray?labelColor=whitesmoke&style=social&logo=Pug&logoColor=A86454&link=https://pugjs.org/api/getting-started.html" alt="Pug.js" />
+  </a>
+  <a href="https://jestjs.io/">
+   <img src="https://img.shields.io/badge/Jest.js-26.6.3-gray?labelColor=whitesmoke&style=social&logo=Jest&logoColor=C21325&link=https://jestjs.io/" alt="Jest.js" />
+  </a>
+  <a href="https://babeljs.io/">
+   <img src="https://img.shields.io/badge/Babel.js-7.13.15-gray?labelColor=whitesmoke&style=social&logo=Babel&logoColor=F9DC3E&link=https://babeljs.io/" alt="Babel.js" />
+  </a>
+  <a href="https://webpack.js.org/">
+   <img src="https://img.shields.io/badge/Webpack.js-5.33.2-gray?labelColor=whitesmoke&style=social&logo=Webpack&logoColor=8DD6F9&link=https://webpack.js.org/" alt="Webpack.js" />
+  </a>
+  <a href="https://prettier.io/">
+   <img src="https://img.shields.io/badge/§_Prettier-2.2.1-gray?labelColor=whitesmoke&style=social&logo=Prettier&logoColor=F7B93E&link=https://prettier.io/" alt="Prettier" />
+  </a>
+  <a href="https://eslint.org/">
+   <img src="https://img.shields.io/badge/§_Eslint-7.24.0-gray?labelColor=whitesmoke&style=social&logo=Eslint&logoColor=4B32C3&link=https://eslint.org/" alt="Eslint.js" />
+  </a>
+  <a href="https://prettier.io/">
+   <img src="https://img.shields.io/badge/§_Stylelint-13.12.0-gray?labelColor=whitesmoke&style=social&logo=Stylelint&logoColor=263238&link=https://prettier.io/" alt="Stylelint" />
+  </a>
+  <a href="https://www.chartjs.org/">
+   <img src="https://img.shields.io/badge/Chart.js-3.1.0-gray?labelColor=whitesmoke&style=social&logo=Chart.js&logoColor=FF6384&link=https://www.chartjs.org/" alt="Chart.js" />
+  </a>
+  <a href="https://storybook.js.org/">
+   <img src="https://img.shields.io/badge/Storybook.js-6.2.8-gray?labelColor=whitesmoke&style=social&logo=Storybook&logoColor=FF4785&link=https://storybook.js.org/" alt="Storybook" />
+  </a>
+  <a href="https://d3js.org/">
+   <img src="https://img.shields.io/badge/D3.js-6.6.2-gray?labelColor=whitesmoke&style=social&logo=d3.js&logoColor=F9A03C&link=https://d3js.org/" alt="D3.js" />
+  </a>
+  <a href="https://insomnia.rest/">
+   <img src="https://img.shields.io/badge/Insomnia.io-2.2-gray?labelColor=whitesmoke&style=social&logo=Insomnia&logoColor=5849BE&link=https://insomnia.rest/" alt="Insomnia.io" />
+  </a>
+  <a href="https://directus.io/">
+   <img src="https://img.shields.io/badge/Directus.io-9.0.0-gray?labelColor=whitesmoke&style=social&logo=Directus&logoColor=263238&link=https://directus.io/" alt="Directus.io" />
+  </a>
+  <a href="https://affinity.serif.com/en-us/photo/">
+   <img src="https://img.shields.io/badge/Supabase.io-1.9-gray?labelColor=whitesmoke&style=social&logo=Supabase&logoColor=3ECF8E&link=https://affinity.serif.com/en-us/photo/" alt="Supabase.io" />
+  </a>
   <br />
 </div>
 
@@ -281,6 +347,8 @@
 
 <details>
   <summary><i>Collapse Extended - Technology Stack</i></summary>
+
+---
 
 <br/>
 
@@ -574,6 +642,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Installation </i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#install-extended-subcat-1} -->
@@ -624,6 +694,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Configuration</i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#config-extended-subcat-1} -->
@@ -673,6 +745,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <details>
   <summary><i>Collapse Extended - Conventions & Styles</i></summary>
+
+---
 
 <br/>
 
@@ -725,6 +799,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <details>
   <summary><i>Collapse Extended - Rules</i></summary>
+
+---
 
 <br/>
 
@@ -1083,6 +1159,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Testing</i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#testing-extended-subcat-1} -->
@@ -1133,6 +1211,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Usage</i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
@@ -1164,7 +1244,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Git Basics** <!-- {#root-git} -->
+## <a href="https://guides.github.com/"><img src="./assets/icons/vendors/si-git.svg" alt="Git icon" width="32px" /></a> &nbsp; **Git Basics** <!-- {#root-git} -->
 
 <br/>
 
@@ -1172,7 +1252,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+> Git \(/ɡɪt/\) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows \(thousands of parallel branches running on different systems\)
 
 <br/>
 
@@ -1182,6 +1262,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <details>
   <summary><i>Collapse Extended - Git Basics</i></summary>
+
+---
 
 <br/>
 
@@ -1232,6 +1314,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <details>
   <summary><i>Collapse Extended Tools and Utilities</i></summary>
+
+---
 
 <br/>
 
@@ -1305,6 +1389,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Authors & Contributors</i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#authors-extended-subcat-1} -->
@@ -1355,6 +1441,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Changelog</i></summary>
 
+---
+
 <br/>
 
 #### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-extended-subcat-1} -->
@@ -1386,7 +1474,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Legal License** <!-- {#root-license} -->
+## <a href="https://guides.github.com/"><img src="./assets/icons/vendors/mit-certificate.svg" alt="Git icon" width="32px" /></a> &nbsp; **Legal License** <!-- {#root-license} -->
 
 <br/>
 
