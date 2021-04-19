@@ -89,26 +89,22 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
-## ⚜ &nbsp; **Table of Contents**
-
-<!-- {#hero-toc} -->
+## ⚜ &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${toc-main}_
-
-<!-- {#toc-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#toc-main} -->
 
 ---
 
 - [⚜ &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
-- [⚜ &nbsp; **Project Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
-- [⚜ &nbsp; **Project Installation**](#-nbsp-project-installation-nbsp-)
-- [⚜ &nbsp; **Project Configuration**](#-nbsp-project-configuration-nbsp-)
-- [⚜ &nbsp; **Project Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
-- [⚜ &nbsp; **Project Rules**](#-nbsp-project-rules-nbsp-)
-- [⚜ &nbsp; **Project Architecture**](#-nbsp-project-architecture-nbsp-)
-- [⚜ &nbsp; **Project Testing**](#-nbsp-project-testing-nbsp-)
+- [⚜ &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
+- [⚜ &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
+- [⚜ &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
+- [⚜ &nbsp; **Conventions & Styles**](#-nbsp-project-conventions--styles-nbsp-)
+- [⚜ &nbsp; **Rules**](#-nbsp-project-rules-nbsp-)
+- [⚜ &nbsp; **Architecture**](#-nbsp-project-architecture-nbsp-)
+- [⚜ &nbsp; **Testing**](#-nbsp-project-testing-nbsp-)
 - [⚜ &nbsp; **Website Usage**](#-nbsp-website-usage-nbsp-)
 - [⚜ &nbsp; **Git Basics**](#-nbsp-git-basics-nbsp-)
 - [⚜ &nbsp; **Tools and Utilities**](#-nbsp-tools-and-utilities-nbsp-)
@@ -118,60 +114,56 @@
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${toc-extended}_
-
-<!-- {#toc-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#toc-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: toc-extended} </i></summary>
+  <summary><i>Collapse Extended - Table Of Contents </i></summary>
 
 ---
 
 <br/>
 
-<!-- {#toc-extended-subcat-1} -->
-
 - [⚜ &nbsp; **Table of Contents**](#--table-of-contents)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${toc-main}_](#a---main-content---toc-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${toc-extended}_](#b---extended-content---toc-extended)
-- [⚜ &nbsp; **Project Technology Stack**](#--project-technology-stack)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${technologies-main}_](#a---main-content---technologies-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${technologies-extended}_](#b---extended-content---technologies-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${technologies-extended-subcat-1}_](#b1---subcategory-i---technologies-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${technologies-extended-subcat-2}_](#b2---subcategory-ii---technologies-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${technologies-extended-subcat-3}_](#b3---subcategory-iii---technologies-extended-subcat-3)
-    - [**B4 ❖ &nbsp; Subcategory IV &nbsp; ❖** _${technologies-extended-subcat-4}_](#b4---subcategory-iv---technologies-extended-subcat-4)
-    - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
-    - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
-- [⚜ &nbsp; **Project Installation**](#--project-installation)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${install-main}_](#a---main-content---install-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${install-extended}_](#b---extended-content---install-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${install-extended-subcat-1}_](#b1---subcategory-i---install-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${install-extended-subcat-2}_](#b2---subcategory-ii---install-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${install-extended-subcat-3}_](#b3---subcategory-iii---install-extended-subcat-3)
-- [⚜ &nbsp; **Project Configuration**](#--project-configuration)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${configuration-main}_](#a---main-content---configuration-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${configuration-extended}_](#b---extended-content---configuration-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${configuration-extended-subcat-1}_](#b1---subcategory-i---configuration-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${configuration-extended-subcat-2}_](#b2---subcategory-ii---configuration-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${configuration-extended-subcat-3}_](#b3---subcategory-iii---configuration-extended-subcat-3)
-- [⚜ &nbsp; **Project Conventions & Styles**](#--project-conventions--styles)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${conventions-main}_](#a---main-content---conventions-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${conventions-extended}_](#b---extended-content---conventions-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${conventions-extended-subcat-1}_](#b1---subcategory-i---conventions-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${conventions-extended-subcat-2}_](#b2---subcategory-ii---conventions-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${conventions-extended-subcat-3}_](#b3---subcategory-iii---conventions-extended-subcat-3)
-- [⚜ &nbsp; **Project Rules**](#--project-rules)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${rules-main}_](#a---main-content---rules-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${rules-extended}_](#b---extended-content---rules-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${rules-extended-subcat-1}_](#b1---subcategory-i---rules-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${rules-extended-subcat-2}_](#b2---subcategory-ii---rules-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${rules-extended-subcat-3}_](#b3---subcategory-iii---rules-extended-subcat-3)
-- [⚜ &nbsp; **Project Architecture**](#--project-architecture)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${architecture-main}_](#a---main-content---architecture-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${architecture-extended}_](#b---extended-content---architecture-extended)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content)
+- [⚜ &nbsp; **Technology Stack**](#--technology-stack)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-1)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-1)
+    - [**B1 ❖ &nbsp; Main Technologies**](#b1---main-technologies)
+    - [**B2 ❖ &nbsp; Frameworks**](#b2---frameworks)
+    - [**B3 ❖ &nbsp; Database Tools**](#b3---database-tools)
+    - [**B4 ❖ &nbsp; Extentions**](#b4---extentions)
+      - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
+      - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
+- [⚜ &nbsp; **Installation**](#--installation)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-2)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-2)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii)
+- [⚜ &nbsp; **Configuration**](#--configuration)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-3)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-3)
+    - [**B1 ❖ &nbsp; Subcategory I**](#b1---subcategory-i-1)
+    - [**B2 ❖ &nbsp; Subcategory II**](#b2---subcategory-ii-1)
+    - [**B3 ❖ &nbsp; Subcategory III**](#b3---subcategory-iii-1)
+- [⚜ &nbsp; **Conventions & Styles**](#--conventions--styles)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-4)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-4)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-2)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-2)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-2)
+- [⚜ &nbsp; **Rules**](#--rules)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-5)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-5)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-3)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-3)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-3)
+- [⚜ &nbsp; **Architecture**](#--architecture)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-6)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-6)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
     - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
@@ -192,45 +184,45 @@
     - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
-- [⚜ &nbsp; **Project Testing**](#--project-testing)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${testing-main}_](#a---main-content---testing-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${testing-extended}_](#b---extended-content---testing-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${testing-extended-subcat-1}_](#b1---subcategory-i---testing-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${testing-extended-subcat-2}_](#b2---subcategory-ii---testing-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${testing-extended-subcat-3}_](#b3---subcategory-iii---testing-extended-subcat-3)
+- [⚜ &nbsp; **Testing**](#--testing)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-7)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-7)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-4)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-4)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-4)
 - [⚜ &nbsp; **Website Usage**](#--website-usage)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${usage-main}_](#a---main-content---usage-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${usage-extended}_](#b---extended-content---usage-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${usage-extended-subcat-1}_](#b1---subcategory-i---usage-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${usage-extended-subcat-2}_](#b2---subcategory-ii---usage-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${usage-extended-subcat-3}_](#b3---subcategory-iii---usage-extended-subcat-3)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-8)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-8)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-5)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-5)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-5)
 - [⚜ &nbsp; **Git Basics**](#--git-basics)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${git-main}_](#a---main-content---git-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${git-extended}_](#b---extended-content---git-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${git-extended-subcat-1}_](#b1---subcategory-i---git-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${git-extended-subcat-2}_](#b2---subcategory-ii---git-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${git-extended-subcat-3}_](#b3---subcategory-iii---git-extended-subcat-3)
-- [⚜ &nbsp; **Tools and Utilities**](#--tools-and-utilities)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${tools-utils-main}_](#a---main-content---tools-utils-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${tools-utils-extended}_](#b---extended-content---tools-utils-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${tools-utils-extended-subcat-1}_](#b1---subcategory-i---tools-utils-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${tools-utils-extended-subcat-2}_](#b2---subcategory-ii---tools-utils-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${tools-utils-extended-subcat-3}_](#b3---subcategory-iii---tools-utils-extended-subcat-3)
-- [⚜ &nbsp; **Authors and Contributors**](#--authors-and-contributors)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${authors-main}_](#a---main-content---authors-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${authors-extended}_](#b---extended-content---authors-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${authors-extended-subcat-1}_](#b1---subcategory-i---authors-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${authors-extended-subcat-2}_](#b2---subcategory-ii---authors-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${authors-extended-subcat-3}_](#b3---subcategory-iii---authors-extended-subcat-3)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-9)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-9)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-6)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-6)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-6)
+- [⚜ &nbsp; **Tools & Utilities**](#--tools--utilities)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-10)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-10)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-7)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-7)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-7)
+- [⚜ &nbsp; **Authors & Contributors**](#--authors--contributors)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-11)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-11)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-8)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-8)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-8)
 - [⚜ &nbsp; **Development Changelog**](#--development-changelog)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${changelog-main}_](#a---main-content---changelog-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${changelog-extended}_](#b---extended-content---changelog-extended)
-    - [**B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${changelog-extended-subcat-1}_](#b1---subcategory-i---changelog-extended-subcat-1)
-    - [**B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${changelog-extended-subcat-2}_](#b2---subcategory-ii---changelog-extended-subcat-2)
-    - [**B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${changelog-extended-subcat-3}_](#b3---subcategory-iii---changelog-extended-subcat-3)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-12)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-12)
+    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-9)
+    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-9)
+    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-9)
 - [⚜ &nbsp; **Legal License**](#--legal-license)
-  - [**A ☱ &nbsp; Main Content &nbsp; ☱** _${license-main}_](#a---main-content---license-main)
-  - [**B ☱ &nbsp; Extended Content &nbsp; ☱** _${license-extended}_](#b---extended-content---license-extended)
+  - [**A ☱ &nbsp; Main Content**](#a---main-content-13)
+  - [**B ☱ &nbsp; Extended Content**](#b---extended-content-13)
 
 <br/>
 
@@ -239,15 +231,11 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Technology Stack**
-
-<!-- {#techs-root} -->
+## ⚜ &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${technologies-main}_
-
-<!-- {#technologies-main} -->
+### **A ☱ &nbsp; Main Content**
 
 ---
 
@@ -289,22 +277,18 @@
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${technologies-extended}_
-
-<!-- {#technologies-extended} -->
+### **B ☱ &nbsp; Extended Content**
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: technologies-extended} </i></summary>
+  <summary><i>Collapse Extended - Technology Stack</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${technologies-extended-subcat-1}_
-
-<!-- {#technologies-extended-subcat-1} -->
+#### **B1 ❖ &nbsp; Main Technologies**
 
 ---
 
@@ -321,9 +305,7 @@
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${technologies-extended-subcat-2}_
-
-<!-- {#technologies-extended-subcat-2} -->
+#### **B2 ❖ &nbsp; Frameworks**
 
 ---
 
@@ -335,9 +317,7 @@
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${technologies-extended-subcat-3}_
-
-<!-- {#technologies-extended-subcat-3} -->
+#### **B3 ❖ &nbsp; Database Tools**
 
 ---
 
@@ -350,13 +330,13 @@
 
 <br/>
 
-#### **B4 ❖ &nbsp; Subcategory IV &nbsp; ❖** _${technologies-extended-subcat-4}_
-
-<!-- {#technologies-extended-subcat-4} -->
+#### **B4 ❖ &nbsp; Extentions**
 
 ---
 
-#### **NPM Extentions:** Formatters, Linters, and Extentions
+<br/>
+
+##### **NPM Extentions:** Formatters, Linters, and Extentions
 
 ---
 
@@ -381,7 +361,9 @@
 | <img src="assets\icons\vendors\si-directus.svg" alt="Directus icon" title="Directus icon">       | **[Directus.io]** | null           | null                   | 'Work in progress...' | 'Work in progress...' | 'Work in progress...' |
 | <img src="assets\icons\vendors\si-supabase.svg" alt="Supabase icon" title="Supabase icon">       | **[Supabase.io]** | null           | null                   | 'Work in progress...' | 'Work in progress...' | 'Work in progress...' |
 
-#### **VSCODE Exclusive Extentions:** Formatters, Linters and Extentions
+<br/>
+
+##### **VSCODE Exclusive Extentions:** Formatters, Linters and Extentions
 
 ---
 
@@ -562,15 +544,11 @@
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Installation**
-
-<!-- {#installs-root} -->
+## ⚜ &nbsp; **Installation** <!-- {#root-install} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${install-main}_
-
-<!-- {#install-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#install-main} -->
 
 ---
 
@@ -593,20 +571,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${install-extended}_
-
-<!-- {#install-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#install-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: install-extended} </i></summary>
+  <summary><i>Collapse Extended - Installation </i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${install-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#install-extended-subcat-1} -->
 
 <!-- {#install-extended-subcat-1} -->
 
@@ -616,7 +592,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${install-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#install-extended-subcat-2} -->
 
 <!-- {#install-extended-subcat-2} -->
 
@@ -626,7 +602,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${install-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#install-extended-subcat-3} -->
 
 <!-- {#install-extended-subcat-3} -->
 
@@ -641,15 +617,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Configuration**
-
-<!-- {#config-root} -->
+## ⚜ &nbsp; **Configuration** <!-- {#root-config} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${configuration-main}_
-
-<!-- {#configuration-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#config-main} -->
 
 ---
 
@@ -657,32 +629,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${configuration-extended}_
-
-<!-- {#configuration-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#config-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: configuration-extended} </i></summary>
+  <summary><i>Collapse Extended - Configuration</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${configuration-extended-subcat-1}_
-
-<!-- {#configuration-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${configuration-extended-subcat-2}_
-
-<!-- {#configuration-extended-subcat-2} -->
+#### **B1 ❖ &nbsp; Subcategory I** <!-- {#config-extended-subcat-1} -->
 
 ---
 
@@ -690,9 +648,15 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${configuration-extended-subcat-3}_
+#### **B2 ❖ &nbsp; Subcategory II** <!-- {#config-extended-subcat-2} -->
 
-<!-- {#configuration-extended-subcat-3} -->
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### **B3 ❖ &nbsp; Subcategory III** <!-- {#config-extended-subcat-3} -->
 
 ---
 
@@ -705,15 +669,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Conventions & Styles**
-
-<!-- {#convens-root} -->
+## ⚜ &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${conventions-main}_
-
-<!-- {#conventions-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#convens-main} -->
 
 ---
 
@@ -721,20 +681,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${conventions-extended}_
-
-<!-- {#conventions-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#convens-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: conventions-extended} </i></summary>
+  <summary><i>Collapse Extended - Conventions & Styles</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${conventions-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#conventions-extended-subcat-1} -->
 
 <!-- {#conventions-extended-subcat-1} -->
 
@@ -744,7 +702,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${conventions-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#conventions-extended-subcat-2} -->
 
 <!-- {#conventions-extended-subcat-2} -->
 
@@ -754,7 +712,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${conventions-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#conventions-extended-subcat-3} -->
 
 <!-- {#conventions-extended-subcat-3} -->
 
@@ -769,15 +727,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Rules**
-
-<!-- {#rules-root} -->
+## ⚜ &nbsp; **Rules** <!-- {#root-rules} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${rules-main}_
-
-<!-- {#rules-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#rules-main} -->
 
 ---
 
@@ -787,19 +741,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${rules-extended}_
+### **B ☱ &nbsp; Extended Content** <!-- {#rules-extended} -->
 
-<!-- {#rules-extended} -->
 <br/>
 
 <details>
-  <summary><i>Collapse Extended ${: rules-extended} </i></summary>
+  <summary><i>Collapse Extended - Rules</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${rules-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#rules-extended-subcat-1} -->
 
 <!-- {#rules-extended-subcat-1} -->
 
@@ -809,7 +762,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${rules-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#rules-extended-subcat-2} -->
 
 <!-- {#rules-extended-subcat-2} -->
 
@@ -819,7 +772,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${rules-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#rules-extended-subcat-3} -->
 
 <!-- {#rules-extended-subcat-3} -->
 
@@ -834,15 +787,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Architecture**
-
-<!-- {#arch-root} -->
+## ⚜ &nbsp; **Architecture** <!-- {#root-architecture} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${architecture-main}_
-
-<!-- {#architecture-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#architecture-main} -->
 
 ---
 
@@ -871,14 +820,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${architecture-extended}_
-
-<!-- {#architecture-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#architecture-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: architecture-extended} </i></summary>
+  <summary><i>Collapse Extended - Architecture </i></summary>
 
 #### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
@@ -1147,15 +1094,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Project Testing**
-
-<!-- {#testing-root} -->
+## ⚜ &nbsp; **Testing** <!-- {#root-testing} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${testing-main}_
-
-<!-- {#testing-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#testing-main} -->
 
 ---
 
@@ -1163,20 +1106,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${testing-extended}_
-
-<!-- {#testing-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#testing-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: testing-extended} </i></summary>
+  <summary><i>Collapse Extended - Testing</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${testing-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#testing-extended-subcat-1} -->
 
 <!-- {#testing-extended-subcat-1} -->
 
@@ -1186,7 +1127,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${testing-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#testing-extended-subcat-2} -->
 
 <!-- {#testing-extended-subcat-2} -->
 
@@ -1196,7 +1137,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${testing-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#testing-extended-subcat-3} -->
 
 <!-- {#testing-extended-subcat-3} -->
 
@@ -1211,15 +1152,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Website Usage**
-
-<!-- {#usage-root} -->
+## ⚜ &nbsp; **Website Usage** <!-- {#root-usage} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${usage-main}_
-
-<!-- {#usage-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#usage-main} -->
 
 ---
 
@@ -1227,20 +1164,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${usage-extended}_
-
-<!-- {#usage-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#usage-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: usage-extended} </i></summary>
+  <summary><i>Collapse Extended - Usage</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${usage-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#usage-extended-subcat-1} -->
 
 <!-- {#usage-extended-subcat-1} -->
 
@@ -1250,7 +1185,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${usage-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#usage-extended-subcat-2} -->
 
 <!-- {#usage-extended-subcat-2} -->
 
@@ -1260,7 +1195,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${usage-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#usage-extended-subcat-3} -->
 
 <!-- {#usage-extended-subcat-3} -->
 
@@ -1275,15 +1210,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Git Basics**
-
-<!-- {#license-root} -->
+## ⚜ &nbsp; **Git Basics** <!-- {#root-git} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${git-main}_
-
-<!-- {#git-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#git-main} -->
 
 ---
 
@@ -1291,20 +1222,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${git-extended}_
-
-<!-- {#git-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#git-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: git-extended} </i></summary>
+  <summary><i>Collapse Extended - Git Basics</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${git-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#git-extended-subcat-1} -->
 
 <!-- {#git-extended-subcat-1} -->
 
@@ -1314,7 +1243,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${git-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#git-extended-subcat-2} -->
 
 <!-- {#git-extended-subcat-2} -->
 
@@ -1324,7 +1253,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${git-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#git-extended-subcat-3} -->
 
 <!-- {#git-extended-subcat-3} -->
 
@@ -1339,15 +1268,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Tools and Utilities**
-
-<!-- {#tools-utils-root} -->
+## ⚜ &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${tools-utils-main}_
-
-<!-- {#tools-utils-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#tools-main} -->
 
 ---
 
@@ -1355,20 +1280,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${tools-utils-extended}_
-
-<!-- {#tools-utils-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#tools-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: tools-utils-extended} </i></summary>
+  <summary><i>Collapse Extended Tools and Utilities</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${tools-utils-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#tools-utils-extended-subcat-1} -->
 
 <!-- {#tools-utils-extended-subcat-1} -->
 
@@ -1378,7 +1301,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${tools-utils-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#tools-utils-extended-subcat-2} -->
 
 <!-- {#tools-utils-extended-subcat-2} -->
 
@@ -1388,7 +1311,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${tools-utils-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#tools-utils-extended-subcat-3} -->
 
 <!-- {#tools-utils-extended-subcat-3} -->
 
@@ -1403,15 +1326,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Authors and Contributors**
-
-<!-- {#auths-contribs-root} -->
+## ⚜ &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${authors-main}_
-
-<!-- {#authors-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#authors-main} -->
 
 ---
 
@@ -1441,20 +1360,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 [facebook:kenneth]: https://facebook.com/KennethBlondeel
 [facebook:lins]: https://facebook.com/LinsTimperman
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${authors-extended}_
-
-<!-- {#authors-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#authors-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: authors-extended} </i></summary>
+  <summary><i>Collapse Extended - Authors & Contributors</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${authors-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#authors-extended-subcat-1} -->
 
 <!-- {#authors-extended-subcat-1} -->
 
@@ -1464,7 +1381,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${authors-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#authors-extended-subcat-2} -->
 
 <!-- {#authors-extended-subcat-2} -->
 
@@ -1474,7 +1391,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${authors-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#authors-extended-subcat-3} -->
 
 <!-- {#authors-extended-subcat-3} -->
 
@@ -1489,15 +1406,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Development Changelog**
-
-<!-- {#changelog-root} -->
+## ⚜ &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${changelog-main}_
-
-<!-- {#changelog-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#changelog-main} -->
 
 ---
 
@@ -1505,20 +1418,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${changelog-extended}_
-
-<!-- {#changelog-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#changelog-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended ${: changelog-extended} </i></summary>
+  <summary><i>Collapse Extended - Changelog</i></summary>
 
 ---
 
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I &nbsp; ❖** _${changelog-extended-subcat-1}_
+#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#changelog-extended-subcat-1} -->
 
 <!-- {#changelog-extended-subcat-1} -->
 
@@ -1528,7 +1439,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B2 ❖ &nbsp; Subcategory II &nbsp; ❖** _${changelog-extended-subcat-2}_
+#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#changelog-extended-subcat-2} -->
 
 <!-- {#changelog-extended-subcat-2} -->
 
@@ -1538,7 +1449,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III &nbsp; ❖** _${changelog-extended-subcat-3}_
+#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#changelog-extended-subcat-3} -->
 
 <!-- {#changelog-extended-subcat-3} -->
 
@@ -1553,15 +1464,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 \
 &nbsp;
 
-## ⚜ &nbsp; **Legal License**
-
-<!-- {#license-root} -->
+## ⚜ &nbsp; **Legal License** <!-- {#root-license} -->
 
 <br/>
 
-### **A ☱ &nbsp; Main Content &nbsp; ☱** _${license-main}_
-
-<!-- {#license-main} -->
+### **A ☱ &nbsp; Main Content** <!-- {#license-main} -->
 
 ---
 
@@ -1580,14 +1487,12 @@ Licensed works, modifications, and larger works may be distributed under differe
 <br/>
 <br/>
 
-### **B ☱ &nbsp; Extended Content &nbsp; ☱** _${license-extended}_
-
-<!-- {#license-extended} -->
+### **B ☱ &nbsp; Extended Content** <!-- {#license-extended} -->
 
 ---
 
 <details>
-  <summary><b>Collapse Extended</b> ⚊ <i> ${: license-extended} </i></summary>
+  <summary><i>Collapse Extended - License</i></summary>
 
 <br/>
 <br/>
