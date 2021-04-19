@@ -121,8 +121,6 @@
 <details>
   <summary><i>Collapse Extended - Table Of Contents </i></summary>
 
----
-
 <br/>
 
 - [⚜ &nbsp; **Table of Contents**](#--table-of-contents)
@@ -131,36 +129,36 @@
 - [⚜ &nbsp; **Technology Stack**](#--technology-stack)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-1)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-1)
-    - [**B1 ❖ &nbsp; Main Technologies**](#b1---main-technologies)
-    - [**B2 ❖ &nbsp; Frameworks**](#b2---frameworks)
-    - [**B3 ❖ &nbsp; Database Tools**](#b3---database-tools)
-    - [**B4 ❖ &nbsp; Extentions**](#b4---extentions)
+    - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
+    - [_B2 ❖ &nbsp; Frameworks_](#b2---frameworks)
+    - [_B3 ❖ &nbsp; Database Tools_](#b3---database-tools)
+    - [_B4 ❖ &nbsp; Extentions_](#b4---extentions)
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
 - [⚜ &nbsp; **Installation**](#--installation)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-2)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-2)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
 - [⚜ &nbsp; **Configuration**](#--configuration)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-3)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-3)
-    - [**B1 ❖ &nbsp; Subcategory I**](#b1---subcategory-i-1)
-    - [**B2 ❖ &nbsp; Subcategory II**](#b2---subcategory-ii-1)
-    - [**B3 ❖ &nbsp; Subcategory III**](#b3---subcategory-iii-1)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-1)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-1)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-1)
 - [⚜ &nbsp; **Conventions & Styles**](#--conventions--styles)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-4)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-4)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-2)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-2)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-2)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
 - [⚜ &nbsp; **Rules**](#--rules)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-5)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-5)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-3)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-3)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-3)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
 - [⚜ &nbsp; **Architecture**](#--architecture)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-6)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-6)
@@ -187,39 +185,39 @@
 - [⚜ &nbsp; **Testing**](#--testing)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-7)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-7)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-4)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-4)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-4)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
 - [⚜ &nbsp; **Website Usage**](#--website-usage)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-8)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-8)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-5)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-5)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-5)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
 - [⚜ &nbsp; **Git Basics**](#--git-basics)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-9)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-9)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-6)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-6)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-6)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
 - [⚜ &nbsp; **Tools & Utilities**](#--tools--utilities)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-10)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-10)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-7)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-7)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-7)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
 - [⚜ &nbsp; **Authors & Contributors**](#--authors--contributors)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-11)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-11)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-8)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-8)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-8)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
 - [⚜ &nbsp; **Development Changelog**](#--development-changelog)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-12)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-12)
-    - [\*\*B1 ❖ &nbsp; Subcategory I](#b1---subcategory-i-9)
-    - [\*\*B2 ❖ &nbsp; Subcategory II](#b2---subcategory-ii-9)
-    - [\*\*B3 ❖ &nbsp; Subcategory III](#b3---subcategory-iii-9)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
 - [⚜ &nbsp; **Legal License**](#--legal-license)
   - [**A ☱ &nbsp; Main Content**](#a---main-content-13)
   - [**B ☱ &nbsp; Extended Content**](#b---extended-content-13)
@@ -284,11 +282,9 @@
 <details>
   <summary><i>Collapse Extended - Technology Stack</i></summary>
 
----
-
 <br/>
 
-#### **B1 ❖ &nbsp; Main Technologies**
+#### _B1 ❖ &nbsp; Main Technologies_
 
 ---
 
@@ -305,7 +301,7 @@
 
 <br/>
 
-#### **B2 ❖ &nbsp; Frameworks**
+#### _B2 ❖ &nbsp; Frameworks_
 
 ---
 
@@ -317,7 +313,7 @@
 
 <br/>
 
-#### **B3 ❖ &nbsp; Database Tools**
+#### _B3 ❖ &nbsp; Database Tools_
 
 ---
 
@@ -330,7 +326,7 @@
 
 <br/>
 
-#### **B4 ❖ &nbsp; Extentions**
+#### _B4 ❖ &nbsp; Extentions_
 
 ---
 
@@ -578,13 +574,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Installation </i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#install-extended-subcat-1} -->
-
-<!-- {#install-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#install-extended-subcat-1} -->
 
 ---
 
@@ -592,9 +584,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#install-extended-subcat-2} -->
-
-<!-- {#install-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#install-extended-subcat-2} -->
 
 ---
 
@@ -602,9 +592,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#install-extended-subcat-3} -->
-
-<!-- {#install-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#install-extended-subcat-3} -->
 
 ---
 
@@ -636,19 +624,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Configuration</i></summary>
 
----
-
 <br/>
 
-#### **B1 ❖ &nbsp; Subcategory I** <!-- {#config-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### **B2 ❖ &nbsp; Subcategory II** <!-- {#config-extended-subcat-2} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#config-extended-subcat-1} -->
 
 ---
 
@@ -656,7 +634,15 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### **B3 ❖ &nbsp; Subcategory III** <!-- {#config-extended-subcat-3} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#config-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#config-extended-subcat-3} -->
 
 ---
 
@@ -688,13 +674,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Conventions & Styles</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#conventions-extended-subcat-1} -->
-
-<!-- {#conventions-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#conventions-extended-subcat-1} -->
 
 ---
 
@@ -702,9 +684,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#conventions-extended-subcat-2} -->
-
-<!-- {#conventions-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#conventions-extended-subcat-2} -->
 
 ---
 
@@ -712,9 +692,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#conventions-extended-subcat-3} -->
-
-<!-- {#conventions-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#conventions-extended-subcat-3} -->
 
 ---
 
@@ -748,13 +726,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Rules</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#rules-extended-subcat-1} -->
-
-<!-- {#rules-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#rules-extended-subcat-1} -->
 
 ---
 
@@ -762,9 +736,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#rules-extended-subcat-2} -->
-
-<!-- {#rules-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#rules-extended-subcat-2} -->
 
 ---
 
@@ -772,9 +744,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#rules-extended-subcat-3} -->
-
-<!-- {#rules-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#rules-extended-subcat-3} -->
 
 ---
 
@@ -1113,13 +1083,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Testing</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#testing-extended-subcat-1} -->
-
-<!-- {#testing-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#testing-extended-subcat-1} -->
 
 ---
 
@@ -1127,9 +1093,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#testing-extended-subcat-2} -->
-
-<!-- {#testing-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#testing-extended-subcat-2} -->
 
 ---
 
@@ -1137,9 +1101,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#testing-extended-subcat-3} -->
-
-<!-- {#testing-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#testing-extended-subcat-3} -->
 
 ---
 
@@ -1171,13 +1133,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Usage</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#usage-extended-subcat-1} -->
-
-<!-- {#usage-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
 
 ---
 
@@ -1185,9 +1143,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#usage-extended-subcat-2} -->
-
-<!-- {#usage-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#usage-extended-subcat-2} -->
 
 ---
 
@@ -1195,9 +1151,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#usage-extended-subcat-3} -->
-
-<!-- {#usage-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#usage-extended-subcat-3} -->
 
 ---
 
@@ -1229,13 +1183,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Git Basics</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#git-extended-subcat-1} -->
-
-<!-- {#git-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#git-extended-subcat-1} -->
 
 ---
 
@@ -1243,9 +1193,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#git-extended-subcat-2} -->
-
-<!-- {#git-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#git-extended-subcat-2} -->
 
 ---
 
@@ -1253,9 +1201,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#git-extended-subcat-3} -->
-
-<!-- {#git-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#git-extended-subcat-3} -->
 
 ---
 
@@ -1287,13 +1233,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended Tools and Utilities</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#tools-utils-extended-subcat-1} -->
-
-<!-- {#tools-utils-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-utils-extended-subcat-1} -->
 
 ---
 
@@ -1301,9 +1243,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#tools-utils-extended-subcat-2} -->
-
-<!-- {#tools-utils-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-utils-extended-subcat-2} -->
 
 ---
 
@@ -1311,9 +1251,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#tools-utils-extended-subcat-3} -->
-
-<!-- {#tools-utils-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-utils-extended-subcat-3} -->
 
 ---
 
@@ -1334,13 +1272,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ---
 
-| Photo                                                          | Full Name            | Team Proffesion                     | Social Media Accounts                                    | Email Address                 | Current Main Focus                                                      |
-| -------------------------------------------------------------- | -------------------- | ----------------------------------- | -------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------- |
-| <img src="docs\members\members__korneel-eeckhout--photo.png">  | **Korneel Eeckhout** | _Prestigious Project Patriarch_     | [Github:Korneel], [Linkedin:Korneel], [Facebook:Korneel] | _..._                         | <img src="assets\icons\vendors\flat-team-leader.svg"> Project Oversight |
-| <img src="docs\members\members__emiel-teugels--photo.png">     | **Emiel Teugels**    | _Driven Database Director_          | [Github:Emiel], [Linkedin:Emiel], [Facebook:Emiel]       | _emiel_teugels@hotmail.com_   | <img src="assets\icons\vendors\flat--database.svg"> Datbase Management  |
-| <img src="docs\members\members__raf-vergauwen--photo.png">     | **Raf Vergauwen**    | _Glorious Git Governor_             | [Github:Raf], [Linkedin:Raf], [Facebook:Raf]             | _vergauwen.r@outlook.com_     | <img src="assets\icons\vendors\si-git.svg"> Git Management              |
-| <img src="docs\members\members__kenneth-blondeel--photo.png" > | **Kenneth Blondeel** | _Illustrious Illustration Inventor_ | [Github:Kenneth], [Linkedin:Kenneth], [Facebook:Kenneth] | _kennethblondeel@hotmail.com_ | <img src="assets\icons\vendors\si-adobexd.svg"> Git Management          |
-| <img src="docs\members\members__lins-timperman--photo.png">    | **Lins Timperman**   | _Suitable Support Sidekick_         | [Github:Lins], [Linkedin:Lins], [Facebook:Lins]          | _lins.timperman@gmail.com_    | <img src="assets\icons\vendors\un-tech-support.svg"> Universal Support  |
+| Photo                                                                   | Full Name            | Team Proffesion                     | Social Media Accounts                                    | Email Address                 | Current Main Focus                                                      |
+| ----------------------------------------------------------------------- | -------------------- | ----------------------------------- | -------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------- |
+| <img src="assets\images\members\members__korneel-eeckhout--photo.png">  | **Korneel Eeckhout** | _Prestigious Project Patriarch_     | [Github:Korneel], [Linkedin:Korneel], [Facebook:Korneel] | _..._                         | <img src="assets\icons\vendors\flat-team-leader.svg"> Project Oversight |
+| <img src="assets\images\members\members__emiel-teugels--photo.png">     | **Emiel Teugels**    | _Driven Database Director_          | [Github:Emiel], [Linkedin:Emiel], [Facebook:Emiel]       | _emiel_teugels@hotmail.com_   | <img src="assets\icons\vendors\flat--database.svg"> Datbase Management  |
+| <img src="assets\images\members\members__raf-vergauwen--photo.png">     | **Raf Vergauwen**    | _Glorious Git Governor_             | [Github:Raf], [Linkedin:Raf], [Facebook:Raf]             | _vergauwen.r@outlook.com_     | <img src="assets\icons\vendors\si-git.svg"> Git Management              |
+| <img src="assets\images\members\members__kenneth-blondeel--photo.png" > | **Kenneth Blondeel** | _Illustrious Illustration Inventor_ | [Github:Kenneth], [Linkedin:Kenneth], [Facebook:Kenneth] | _kennethblondeel@hotmail.com_ | <img src="assets\icons\vendors\si-adobexd.svg"> Git Management          |
+| <img src="assets\images\members\members__lins-timperman--photo.png">    | **Lins Timperman**   | _Suitable Support Sidekick_         | [Github:Lins], [Linkedin:Lins], [Facebook:Lins]          | _lins.timperman@gmail.com_    | <img src="assets\icons\vendors\un-tech-support.svg"> Universal Support  |
 
 <br/>
 
@@ -1367,13 +1305,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Authors & Contributors</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#authors-extended-subcat-1} -->
-
-<!-- {#authors-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#authors-extended-subcat-1} -->
 
 ---
 
@@ -1381,9 +1315,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#authors-extended-subcat-2} -->
-
-<!-- {#authors-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#authors-extended-subcat-2} -->
 
 ---
 
@@ -1391,9 +1323,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#authors-extended-subcat-3} -->
-
-<!-- {#authors-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#authors-extended-subcat-3} -->
 
 ---
 
@@ -1425,13 +1355,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <details>
   <summary><i>Collapse Extended - Changelog</i></summary>
 
----
-
 <br/>
 
-#### \*\*B1 ❖ &nbsp; Subcategory I <!-- {#changelog-extended-subcat-1} -->
-
-<!-- {#changelog-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-extended-subcat-1} -->
 
 ---
 
@@ -1439,9 +1365,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B2 ❖ &nbsp; Subcategory II <!-- {#changelog-extended-subcat-2} -->
-
-<!-- {#changelog-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#changelog-extended-subcat-2} -->
 
 ---
 
@@ -1449,9 +1373,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### \*\*B3 ❖ &nbsp; Subcategory III <!-- {#changelog-extended-subcat-3} -->
-
-<!-- {#changelog-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#changelog-extended-subcat-3} -->
 
 ---
 
