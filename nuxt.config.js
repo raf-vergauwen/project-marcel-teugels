@@ -53,6 +53,6 @@ export default {
   build: {},
 
   styleResources: {
-    scss: ['~/assets/scss/resources.scss'],
+    scss: ['~/assets/scss/core/*.scss'],
   },
 };
