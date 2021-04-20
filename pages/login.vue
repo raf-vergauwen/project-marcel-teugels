@@ -1,13 +1,62 @@
 <template>
   <div class="container">
     <h1>Login</h1>
+    <form @submit.prevent="login">
+      <label
+        >E-mail:
+        <input type="text" name="email" v-model="email" />
+      </label>
+      <label
+        >Password:
+        <input type="password" name="password" v-model="password" />
+      </label>
+      <button type="submit">Log in</button>
+    </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoginPage',
-}
+  data() {
+    return {
+      email: '',
+      password: '',
+    };
+  },
+  computed: {
+    loginBody() {
+      return JSON.stringify({ email: this.email, password: this.password });
+    },
+    access_token() {
+      return sessionStorage.getItem('access_token');
+    },
+  },
+  methods: {
+    login() {
+      fetch('http://157.230.126.154/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.loginBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not login');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          sessionStorage.setItem('access_token', body.data.access_token);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+  },
+};
 </script>
 
 <style>
