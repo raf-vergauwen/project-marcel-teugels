@@ -22,6 +22,7 @@
             <li>{{ product.description }}</li>
             <li>Quantity: {{ product.quantity_in_stock }}</li>
             <li>Price: € {{ product.price }}</li>
+            <li>{{ product.name }}</li>
           </ul>
         </li>
       </ul>
