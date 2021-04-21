@@ -1,5 +1,5 @@
 <h1 class="hero__title" align="center">
-  ⚒️ &nbsp; Project Marcel Teugels &nbsp; 🛠️
+  ⚒️ &nbsp; <b>PROJECT MARCEL TEUGELS</b>&nbsp; 🛠️
 </h1>
 <br />
 <div class="hero__github-badges" align="center">
@@ -90,7 +90,7 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
-## <img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
+## <img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->
 
 <br/>
 
@@ -132,62 +132,62 @@
 
 <br/>
 
-- [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents**](#--table-of-contents)
+- [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **TABLE OF CONTENTS**](#--table-of-contents)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content)
   - [<img src="./assets/media/icons/vendors/flat--list.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content)
-- [<img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **Getting Started**](#--getting-started)
+- [<img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **GETTING STARTED**](#--getting-started)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-1)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-1)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
-- [<img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **Prerequisites**](#--prerequisites)
+- [<img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **PREREQUISITEs**](#--prerequisites)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-2)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-2)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-1)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-1)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-1)
-- [<img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **Installation**](#--installation)
+- [<img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **INSTALLATION**](#--installation)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-3)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-3)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
-- [<img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage**](#--usage)
+- [<img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **USAGE**](#--usage)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-4)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-4)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
-- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management**](#--project-management)
+- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **PROJECT MANAGEMENT**](#--project-management)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-5)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-5)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
   - [<img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
-    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
-    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
-    - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
-    - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
-    - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
-    - [<img src="assets\icons\vendors\mit-folder-archive.svg" width="24"> ⚜ **archive** ⚜ _Accumulation of historical records_](#--archive--accumulation-of-historical-records)
-    - [<img src="assets\icons\vendors\mit-folder-resource.svg" width="24"> ⚜ **assets** ⚜ _Placeholder description_](#--assets--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-vue-dir.svg" width="24"> ⚜ **components** ⚜ _Placeholder description_](#--components--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-config.svg" width="24"> ⚜ **config** ⚜ _Placeholder description_](#--config--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-content.svg" width="24"> ⚜ **content** ⚜ _Placeholder description_](#--content--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-docs.svg" width="24"> ⚜ **docs** ⚜ _Placeholder description_](#--docs--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-layout.svg" width="24"> ⚜ **layouts** ⚜ _Placeholder description_](#--layouts--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-middleware.svg" width="24"> ⚜ **middleware** ⚜ _Placeholder description_](#--middleware--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-node.svg" width="24"> ⚜ **node_modules** ⚜ _Placeholder description_](#--node_modules--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-views.svg" width="24"> ⚜ **pages** ⚜ _Placeholder description_](#--pages--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-plugin.svg" width="24"> ⚜ **plugins** ⚜ _Placeholder description_](#--plugins--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-src.svg" width="24"> ⚜ **src** ⚜ _Placeholder description_](#--src--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-stack.svg" width="24"> ⚜ **static** ⚜ _Placeholder description_](#--static--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-vuex-store.svg" width="24"> ⚜ **store** ⚜ _Placeholder description_](#--store--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
-    - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
+      - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
+      - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
+      - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
+      - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
+      - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
+      - [<img src="assets\icons\vendors\mit-folder-archive.svg" width="24"> ⚜ **archive** ⚜ _Accumulation of historical records_](#--archive--accumulation-of-historical-records)
+      - [<img src="assets\icons\vendors\mit-folder-resource.svg" width="24"> ⚜ **assets** ⚜ _Placeholder description_](#--assets--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-vue-dir.svg" width="24"> ⚜ **components** ⚜ _Placeholder description_](#--components--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-config.svg" width="24"> ⚜ **config** ⚜ _Placeholder description_](#--config--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-content.svg" width="24"> ⚜ **content** ⚜ _Placeholder description_](#--content--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-docs.svg" width="24"> ⚜ **docs** ⚜ _Placeholder description_](#--docs--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-layout.svg" width="24"> ⚜ **layouts** ⚜ _Placeholder description_](#--layouts--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-middleware.svg" width="24"> ⚜ **middleware** ⚜ _Placeholder description_](#--middleware--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-node.svg" width="24"> ⚜ **node_modules** ⚜ _Placeholder description_](#--node_modules--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-views.svg" width="24"> ⚜ **pages** ⚜ _Placeholder description_](#--pages--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-plugin.svg" width="24"> ⚜ **plugins** ⚜ _Placeholder description_](#--plugins--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-src.svg" width="24"> ⚜ **src** ⚜ _Placeholder description_](#--src--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-stack.svg" width="24"> ⚜ **static** ⚜ _Placeholder description_](#--static--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-vuex-store.svg" width="24"> ⚜ **store** ⚜ _Placeholder description_](#--store--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
+      - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
     - [<img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
     - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
     - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
@@ -234,19 +234,19 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
-- [<img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
+- [<img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **AUTHORS**](#--authors)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-14)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-14)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-10)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-10)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-10)
-- [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
+- [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **CHANGELOG**](#--changelog)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-15)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-15)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-11)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-11)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-11)
-- [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
+- [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **LICENSE**](#--license)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-16)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-16)
 
@@ -257,7 +257,7 @@
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->
+## <img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->
 
 <br/>
 
@@ -310,7 +310,7 @@
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->
+## <img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **PREREQUISITEs** <!-- {#root-prereq} -->
 
 <br/>
 
@@ -363,7 +363,7 @@
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
+## <img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **INSTALLATION** <!-- {#root-install} -->
 
 <br/>
 
@@ -428,7 +428,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->
+## <img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **USAGE** <!-- {#root-usage} -->
 
 <br/>
 
@@ -481,7 +481,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->
+## <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->
 
 <br/>
 
@@ -1582,7 +1582,7 @@ git push
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
+## <img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->
 
 <br/>
 
@@ -1654,7 +1654,7 @@ git push
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
+## <img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **CHANGELOG** <!-- {#root-changelog} -->
 
 <br/>
 
@@ -1707,7 +1707,7 @@ git push
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
+## <img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **LICENSE** <!-- {#root-license} -->
 
 <br/>
 
