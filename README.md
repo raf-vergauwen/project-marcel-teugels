@@ -1740,7 +1740,8 @@ Licensed works, modifications, and larger works may be distributed under differe
 <details>
   <summary><i>Collapse Extended - License</i></summary>
 
-<br/>
+---
+
 <br/>
 
 Copyright (c) [2020] [Raf Vergauwen]
@@ -1766,11 +1767,3 @@ SOFTWARE.
 <br/>
 
 </details>
-
-/
-&nbsp;
-
-<h2 class="root-placeholder" align="center">
-  <img src="./assets/media/icons/vendors/flat--menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER</b>&nbsp; <img src="./assets/media/icons/vendors/flat--menu.svg" width="24px" />
-</h2>
-<br/>
