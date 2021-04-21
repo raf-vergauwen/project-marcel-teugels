@@ -92,6 +92,8 @@
 
 ## <img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#toc-main} -->
 
 ---
@@ -111,7 +113,7 @@
   - [<img src="./assets/media/icons/vendors/flat--checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
   - [<img src="./assets/media/icons/vendors/flat--error.svg" width="16px" /> &nbsp; **Testing**](#Testing)
   - [<img src="./assets/media/icons/vendors/si--git.svg" width="16px" /> &nbsp; **Git**](#Git)
-  - [<img src="./assets/media/icons/vendors/flat--settings.svg" width="16px" /> &nbsp; **Tools**](#Tools)
+  - [<img src="./assets/media/icons/vendors/flat--compose.svg" width="16px" /> &nbsp; **Tools**](#Tools)
 
 - [<img src="./assets/media/icons/vendors/flat--users.svg" width="16px" /> &nbsp; **Authors**](#Authors)
 - [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
@@ -164,8 +166,8 @@
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
   - [<img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
     - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
@@ -186,23 +188,23 @@
     - [<img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **test** ⚜ _Placeholder description_](#--test--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
-  - [<img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
+    - [<img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
     - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
     - [_B2 ❖ &nbsp; Frameworks_](#b2---frameworks)
     - [_B3 ❖ &nbsp; Database Tools_](#b3---database-tools)
     - [_B4 ❖ &nbsp; Extentions_](#b4---extentions)
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
-  - [<img src="./assets/media/icons/vendors/flat--config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
+    - [<img src="./assets/media/icons/vendors/flat--config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
+    - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
-  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles-1)
+    - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
+    - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles-1)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-9)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
@@ -220,13 +222,13 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
-- [<img src="./assets/media/icons/vendors/si--git.svg" width="24px" /> &nbsp; **Git**](#--git)
+  - [<img src="./assets/media/icons/vendors/si--git.svg" width="24px" /> &nbsp; **Git**](#--git)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-12)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-12)
     - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
     - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
     - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
-- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Tools & Utilities**](#--tools--utilities)
+  - [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Tools**](#--tools)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-13)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-13)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
@@ -257,12 +259,17 @@
 
 ## <img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#started-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#started-extended} -->
@@ -305,6 +312,8 @@
 
 ## <img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#prereq-main} -->
 
 <hr/>
@@ -313,6 +322,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
     <i/>
   </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#prereq-extended} -->
@@ -354,6 +364,8 @@
 <br/>
 
 ## <img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#install-main} -->
 
@@ -418,12 +430,17 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## <img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#usage-extended} -->
@@ -466,6 +483,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#project-mgmt-main} -->
 
 <hr/>
@@ -474,6 +493,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
     <i/>
   </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#project-mgmt-extended} -->
@@ -487,7 +507,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#project-mgmt-utils-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#project-mgmt-extended-subcat-1} -->
 
 ---
 
@@ -495,7 +515,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#project-mgmt-utils-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#project-mgmt-extended-subcat-2} -->
 
 ---
 
@@ -503,7 +523,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#project-mgmt-utils-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#project-mgmt-extended-subcat-3} -->
 
 ---
 
@@ -516,7 +536,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### <img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#architecture-main} -->
+##### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#architecture-main} -->
 
 ---
 
@@ -545,14 +565,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#architecture-extended} -->
+##### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#architecture-extended} -->
 
 ---
 
 <details>
   <summary><i>Collapse Extended - Architecture </i></summary>
 
-#### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
+##### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -565,7 +585,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **[.nuxt](.nuxt)** ⚜ _So-called build directory, dynamically generated and hidden by default_
+##### <img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **[.nuxt](.nuxt)** ⚜ _So-called build directory, dynamically generated and hidden by default_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -578,7 +598,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **[.vscode](.vscode)** ⚜ _Freeware source-code editor made by Microsoft_
+##### <img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **[.vscode](.vscode)** ⚜ _Freeware source-code editor made by Microsoft_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -591,7 +611,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-archive.svg" width="24"> ⚜ **[archive](archive)** ⚜ _Accumulation of historical records_
+##### <img src="assets\icons\vendors\mit-folder-archive.svg" width="24"> ⚜ **[archive](archive)** ⚜ _Accumulation of historical records_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -604,7 +624,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-resource.svg" width="24"> ⚜ **[assets](assets)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-resource.svg" width="24"> ⚜ **[assets](assets)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -617,7 +637,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-vue-dir.svg" width="24"> ⚜ **[components](components)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-vue-dir.svg" width="24"> ⚜ **[components](components)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -630,7 +650,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-config.svg" width="24"> ⚜ **[config](config)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-config.svg" width="24"> ⚜ **[config](config)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -643,7 +663,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-content.svg" width="24"> ⚜ **[content](content)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-content.svg" width="24"> ⚜ **[content](content)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -656,7 +676,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-docs.svg" width="24"> ⚜ **[docs](docs)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-docs.svg" width="24"> ⚜ **[docs](docs)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -669,7 +689,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-layout.svg" width="24"> ⚜ **[layouts](layouts)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-layout.svg" width="24"> ⚜ **[layouts](layouts)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -682,7 +702,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-middleware.svg" width="24"> ⚜ **[middleware](middleware)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-middleware.svg" width="24"> ⚜ **[middleware](middleware)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -695,7 +715,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-node.svg" width="24"> ⚜ **[node_modules](node_modules)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-node.svg" width="24"> ⚜ **[node_modules](node_modules)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -708,7 +728,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-views.svg" width="24"> ⚜ **[pages](pages)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-views.svg" width="24"> ⚜ **[pages](pages)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -721,7 +741,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-plugin.svg" width="24"> ⚜ **[plugins](plugins)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-plugin.svg" width="24"> ⚜ **[plugins](plugins)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -734,7 +754,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-src.svg" width="24"> ⚜ **[src](src)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-src.svg" width="24"> ⚜ **[src](src)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -747,7 +767,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-stack.svg" width="24"> ⚜ **[static](static)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-stack.svg" width="24"> ⚜ **[static](static)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -760,7 +780,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-vuex-store.svg" width="24"> ⚜ **[store](store)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-vuex-store.svg" width="24"> ⚜ **[store](store)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -773,7 +793,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **[test](test)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-test.svg" width="24"> ⚜ **[test](test)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -786,7 +806,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **[tools](tools)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **[tools](tools)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -799,7 +819,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 </details>
 
-#### <img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **[utilities](utilities)** ⚜ _Placeholder description_
+##### <img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **[utilities](utilities)** ⚜ _Placeholder description_
 
 <details>
   <summary><i>More information...</summary></i>
@@ -817,9 +837,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
+#### <img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#techstack-main} -->
+#### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#techstack-main} -->
 
 ---
 
@@ -925,7 +945,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#techstack-extended} -->
+#### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#techstack-extended} -->
 
 ---
 
@@ -1192,9 +1212,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
+#### <img src="./assets/media/icons/vendors/flat--config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
+#### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
 
 ---
 
@@ -1202,7 +1222,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#config-extended} -->
+#### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#config-extended} -->
 
 ---
 
@@ -1240,9 +1260,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
+#### <img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
 
-### <img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-styles} -->
+#### <img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-styles} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#styles-main} -->
 
@@ -1291,6 +1313,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#rules-main} -->
 
@@ -1342,6 +1366,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### <img src="./assets/media/icons/vendors/flat--error.svg" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#testing-main} -->
 
 ---
@@ -1388,7 +1414,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/si--git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
+### <img src="./assets/media/icons/vendors/si--git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#git-main} -->
 
@@ -1502,7 +1530,9 @@ git push
 <br/>
 <br/>
  
-## <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
+### <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Tools** <!-- {#root-tools} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#tools-main} -->
 
@@ -1553,6 +1583,8 @@ git push
 <br/>
 
 ## <img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#authors-main} -->
 
@@ -1624,12 +1656,17 @@ git push
 
 ## <img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
 
+<br/>
+
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#changelog-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#changelog-extended} -->
@@ -1637,21 +1674,13 @@ git push
 ---
 
 <details>
-  <summary><i>Collapse Extended - Changelog</i></summary>
+  <summary><i>Collapse Extended Project Management</i></summary>
 
 ---
 
 <br/>
 
-#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#changelog-extended-subcat-2} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-utils-extended-subcat-1} -->
 
 ---
 
@@ -1659,7 +1688,15 @@ git push
 
 <br/>
 
-#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#changelog-extended-subcat-3} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#changelog-utils-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#changelog-utils-extended-subcat-3} -->
 
 ---
 
@@ -1671,6 +1708,8 @@ git push
 <br/>
 
 ## <img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#license-main} -->
 
@@ -1726,5 +1765,3 @@ SOFTWARE.
 
 \
 &nbsp;
-
----
