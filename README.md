@@ -61,27 +61,14 @@
   <br />
   <br />
   <br />
-  <cite>
-    A personal website for Marcel Teugels, a young passionate blacksmith who
-    mainly deals with restoration and handmade assignments. The website consists of 2 parts.
-    A restoration area for normal repairs and a sale personal section for handmade creations.
-  </cite>
-  <br/>
-  <br/>
   <q>
     <i>
-    A personal website for Marcel Teugels, a young passionate blacksmith who
-    mainly deals with restoration and handmade assignments. The website consists of 2 parts.
-    A restoration area for normal repairs and a sale personal section for handmade creations.
+    A personal website for Marcel Teugels, a young passionate blacksmith who mainly deals with restoration and handmade assignments.
+    The website consists out of 2 main parts, a restoration area for regular repairs and a personal section for handmade creations.
     <i/>
   </q>
   <br/>
   <br/>
-  <blockquote>
-    A personal website for Marcel Teugels, a young passionate blacksmith who
-    mainly deals with restoration and handmade assignments. The website consists of 2 parts.
-    A restoration area for normal repairs and a sale personal section for handmade creations.
-  </blockquote>
 </div>
  <br />
  <br />
