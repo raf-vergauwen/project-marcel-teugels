@@ -53,7 +53,7 @@
   <br />
   <br />
   <img
-  src="assets/icons/icons__marcel-teugels-logo--improved.svg"
+  src="assets/media/icons/icons__marcel-teugels-logo--improved.svg"
   alt="marcel teugels logo"
   width="35%"
   />
@@ -90,8 +90,6 @@
 <!-- - Dotenv.js -->
 
 ## <img src="./assets/media/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#toc-main} -->
 
@@ -230,12 +228,8 @@
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack** <!-- {#root-techstack} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#techstack-main} -->
 
@@ -609,12 +603,8 @@
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#install-main} -->
 
@@ -676,12 +666,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
 
@@ -728,12 +714,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#convens-main} -->
 
@@ -780,12 +762,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#rules-main} -->
 
@@ -834,12 +812,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#architecture-main} -->
 
@@ -1141,12 +1115,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing** <!-- {#root-testing} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#testing-main} -->
 
@@ -1193,12 +1163,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
 
@@ -1245,12 +1211,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#git-main} -->
 
@@ -1363,12 +1325,8 @@ git push
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities** <!-- {#root-tools} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#tools-main} -->
 
@@ -1415,12 +1373,8 @@ git push
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors** <!-- {#root-authors} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#authors-main} -->
 
@@ -1489,12 +1443,8 @@ git push
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog** <!-- {#root-changelog} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#changelog-main} -->
 
@@ -1541,12 +1491,8 @@ git push
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 ## <img src="./assets/media/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License** <!-- {#root-license} -->
-
-<br/>
 
 ### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#license-main} -->
 
