@@ -90,34 +90,31 @@
 <!-- - Chalk.js -->
 <!-- - Dotenv.js -->
 
-## Test
-
 ## <img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#toc-main} -->
 
 ---
 
-- [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="16px" /> &nbsp; **Test**](#Test)
-- [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="16px" /> &nbsp; **Table of Contents**](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat--power.svg" width="16px" /> &nbsp; **Getting Started**](#Getting_Started)
-- [<img src="./assets/media/icons/vendors/flat--list.svg" width="16px" /> &nbsp; **Prerequisites**](#Prerequisites)
-- [<img src="./assets/media/icons/vendors/flat--download.svg" width="16px" /> &nbsp; **Installation**](#Installation)
-- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="16px" /> &nbsp; **Project Management**](#Project_Management)
+- [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
+- [<img src="./assets/media/icons/vendors/flat--power.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="./assets/media/icons/vendors/flat--list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
+- [<img src="./assets/media/icons/vendors/flat--download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
+- [<img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
+- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/flat--home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
   - [<img src="./assets/media/icons/vendors/flat--layers.svg" width="16px" /> &nbsp; **Technology Stack**](#-Technology_Stack)
   - [<img src="./assets/media/icons/vendors/flat--config.svg" width="16px" /> &nbsp; **Configuration**](#Configuration)
   - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="16px" /> &nbsp; **Conventions**](#Conventions)
-  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="16px" /> &nbsp; **Styles**](#Styles)
+  - [<img src="./assets/media/icons/vendors/flat--magic-wand.svg" width="16px" /> &nbsp; **Styles**](#Styles)
   - [<img src="./assets/media/icons/vendors/flat--checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
   - [<img src="./assets/media/icons/vendors/flat--error.svg" width="16px" /> &nbsp; **Testing**](#Testing)
+  - [<img src="./assets/media/icons/vendors/si--git.svg" width="16px" /> &nbsp; **Git**](#Git)
+  - [<img src="./assets/media/icons/vendors/flat--settings.svg" width="16px" /> &nbsp; **Tools**](#Tools)
 
-- [<img src="./assets/media/icons/vendors/flat--info.svg" width="16px" /> &nbsp; **Usage**](#Usage)
-- [<img src="./assets/media/icons/vendors/si--git.svg" width="16px" /> &nbsp; **Git**](#Git)
-- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="16px" /> &nbsp; **Tools**](#Tools)
 - [<img src="./assets/media/icons/vendors/flat--users.svg" width="16px" /> &nbsp; **Authors**](#Authors)
-- [<img src="./assets/media/icons/vendors/flat--file.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
+- [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
 - [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="16px" /> &nbsp; **License**](#License)
 
 <br/>
@@ -133,7 +130,6 @@
 
 <br/>
 
-- [Test](#test)
 - [<img src="./assets/media/icons/vendors/flat--bookmark---v02.svg" width="24px" /> &nbsp; **Table of Contents**](#--table-of-contents)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content)
   - [<img src="./assets/media/icons/vendors/flat--list.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content)
@@ -155,15 +151,21 @@
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
-- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management**](#--project-management)
+- [<img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage**](#--usage)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-4)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-4)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
-  - [<img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
+- [<img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **Project Management**](#--project-management)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-5)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-5)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
+  - [<img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
+  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
+  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
     - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
@@ -185,8 +187,8 @@
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
   - [<img src="./assets/media/icons/vendors/flat--idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
+  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
+  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
     - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
     - [_B2 ❖ &nbsp; Frameworks_](#b2---frameworks)
     - [_B3 ❖ &nbsp; Database Tools_](#b3---database-tools)
@@ -194,31 +196,25 @@
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
   - [<img src="./assets/media/icons/vendors/flat--config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
-  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
-  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles-1)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-  - [<img src="./assets/media/icons/vendors/flat--checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
+  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
+  - [<img src="./assets/media/icons/vendors/flat--blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles-1)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-9)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
-  - [<img src="./assets/media/icons/vendors/flat--error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
+  - [<img src="./assets/media/icons/vendors/flat--checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-10)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-10)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
-- [<img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
+  - [<img src="./assets/media/icons/vendors/flat--error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-11)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-11)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
@@ -251,12 +247,6 @@
 - [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-16)
   - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-16)
-- [<img src="./assets/media/icons/vendors/flat--file.svg" width="24px" /> &nbsp; **placeholder**](#--placeholder)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-17)
-  - [<img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-17)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-12)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-12)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-12)
 
 <br/>
 
@@ -416,6 +406,54 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 
 #### _B3 ❖ &nbsp; Subcategory III_ <!-- {#install-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+</details>
+
+<br/>
+<br/>
+
+## <img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->
+
+### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+
+<br/>
+
+### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#usage-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Usage</i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#usage-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#usage-extended-subcat-3} -->
 
 ---
 
@@ -1350,54 +1388,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-## <img src="./assets/media/icons/vendors/flat--info.svg" width="24px" /> &nbsp; **Website Usage** <!-- {#root-usage} -->
-
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
-<br/>
-
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#usage-extended} -->
-
----
-
-<details>
-  <summary><i>Collapse Extended - Usage</i></summary>
-
----
-
-<br/>
-
-#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#usage-extended-subcat-2} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#usage-extended-subcat-3} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-</details>
-
-<br/>
-<br/>
-
 ## <img src="./assets/media/icons/vendors/si--git.svg" width="24px" /> &nbsp; **Git** <!-- {#root-git} -->
 
 ### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#git-main} -->
@@ -1738,53 +1728,3 @@ SOFTWARE.
 &nbsp;
 
 ---
-
-## <img src="./assets/media/icons/vendors/flat--file.svg" width="24px" /> &nbsp; **placeholder** <!-- {#root-placeholder} -->
-
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#placeholder-main} -->
-
-<hr/>
-  <q>
-    <i>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-    <i/>
-  </q>
-<br/>
-
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#placeholder-extended} -->
-
----
-
-<details>
-  <summary><i>Collapse Extended Placeholder</i></summary>
-
----
-
-<br/>
-
-#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#placeholder-utils-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#placeholder-utils-extended-subcat-2} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#placeholder-utils-extended-subcat-3} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-</details>
-
-<br/>
-<br/>
