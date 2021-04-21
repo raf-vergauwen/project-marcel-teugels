@@ -116,9 +116,9 @@
   - [<img src="./assets/media/icons/vendors/si--git.svg" width="16px" /> &nbsp; **Git**](#Git)
   - [<img src="./assets/media/icons/vendors/flat--compose.svg" width="16px" /> &nbsp; **Tools**](#Tools)
 
-- [<img src="./assets/media/icons/vendors/flat--users.svg" width="16px" /> &nbsp; **Authors**](#Authors)
-- [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
-- [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="16px" /> &nbsp; **License**](#License)
+- [<img src="./assets/media/icons/vendors/flat--users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
+- [<img src="./assets/media/icons/vendors/flat--changelog.svg" width="24px" /> &nbsp; **Changelog**](#Changelog)
+- [<img src="./assets/media/icons/vendors/flat--diploma.svg" width="24px" /> &nbsp; **License**](#License)
 
 <br/>
 
@@ -492,6 +492,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->
 
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 ### <img src="./assets/media/icons/vendors/flat--home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
@@ -1176,10 +1183,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#config-extended} -->
@@ -1232,10 +1242,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#styles-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
+<br/>
 <br/>
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#styles-extended} -->
@@ -1342,12 +1355,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#testing-main} -->
 
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
 <br/>
-
+<br/>
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#testing-extended} -->
 
 ---
@@ -1396,12 +1411,14 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#git-main} -->
 
----
-
-> Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows /(thousands of parallel branches running on different systems/)
-
+<hr/>
+  <q>
+    <i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+    <i/>
+  </q>
 <br/>
-
+<br/>
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#git-extended} -->
 
 ---
@@ -1519,6 +1536,7 @@ git push
     <i/>
   </q>
 <br/>
+<br/>
 
 #### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#tools-extended} -->
 
@@ -1607,7 +1625,7 @@ git push
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#authors-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#authors-extended-subcat-1} -->
 
 ---
 
@@ -1615,7 +1633,7 @@ git push
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#authors-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#authors-extended-subcat-2} -->
 
 ---
 
@@ -1623,7 +1641,7 @@ git push
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#authors-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#authors-extended-subcat-3} -->
 
 ---
 
