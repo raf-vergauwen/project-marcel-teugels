@@ -97,6 +97,7 @@
 ---
 
 - [<img src="./assets/media/icons/vendors/flat-file.svg" width="16px" /> &nbsp; **Table of Contents**](#-nbsp-table-of-contents-nbsp-)
+- [<img src="./assets/media/icons/vendors/flat-power.svg" width="16px" /> &nbsp; **Getting Started**](#Getting-Started)
 - [<img src="./assets/media/icons/vendors/flat-idea.svg" width="16px" /> &nbsp; **Technology Stack**](#-nbsp-project-technology-stack-nbsp-)
 - [<img src="./assets/media/icons/vendors/flat-more.svg" width="16px" /> &nbsp; **Installation**](#-nbsp-project-installation-nbsp-)
 - [<img src="./assets/media/icons/vendors/flat-config.svg" width="16px" /> &nbsp; **Configuration**](#-nbsp-project-config-nbsp-)
@@ -127,9 +128,15 @@
 - [<img src="./assets/media/icons/vendors/flat-file.svg" width="24px" /> &nbsp; **Table of Contents**](#--table-of-contents)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content)
-- [<img src="./assets/media/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
+- [<img src="./assets/media/icons/vendors/flat-power.svg" width="24px" /> &nbsp; **Getting Started**](#--getting-started)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-1)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-1)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
+- [<img src="./assets/media/icons/vendors/flat-idea.svg" width="24px" /> &nbsp; **Technology Stack**](#--technology-stack)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-2)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-2)
     - [_B1 ❖ &nbsp; Main Technologies_](#b1---main-technologies)
     - [_B2 ❖ &nbsp; Frameworks_](#b2---frameworks)
     - [_B3 ❖ &nbsp; Database Tools_](#b3---database-tools)
@@ -137,32 +144,32 @@
       - [**NPM Extentions:** Formatters, Linters, and Extentions](#npm-extentions-formatters-linters-and-extentions)
       - [**VSCODE Exclusive Extentions:** Formatters, Linters and Extentions](#vscode-exclusive-extentions-formatters-linters-and-extentions)
 - [<img src="./assets/media/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation**](#--installation)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-2)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-2)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii)
-- [<img src="./assets/media/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-3)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-3)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-1)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-1)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-1)
-- [<img src="./assets/media/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
+- [<img src="./assets/media/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-4)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-4)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-2)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-2)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-2)
-- [<img src="./assets/media/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
+- [<img src="./assets/media/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-5)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-5)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-3)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-3)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-3)
-- [<img src="./assets/media/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
+- [<img src="./assets/media/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-6)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-6)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
+- [<img src="./assets/media/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default)
     - [<img src="assets\icons\vendors\mit-folder-vscode.svg" width="24"> ⚜ **.vscode** ⚜ _Freeware source-code editor made by Microsoft_](#--vscode--freeware-source-code-editor-made-by-microsoft)
@@ -184,46 +191,94 @@
     - [<img src="assets\icons\vendors\mit-folder-tools.svg" width="24"> ⚜ **tools** ⚜ _Placeholder description_](#--tools--placeholder-description)
     - [<img src="assets\icons\vendors\mit-folder-utils.svg" width="24"> ⚜ **utilities** ⚜ _Placeholder description_](#--utilities--placeholder-description)
 - [<img src="./assets/media/icons/vendors/flat-error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-7)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-7)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
-- [<img src="./assets/media/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-8)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
-- [<img src="./assets/media/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git**](#--git)
+- [<img src="./assets/media/icons/vendors/flat-info.svg" width="24px" /> &nbsp; **Website Usage**](#--website-usage)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-9)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-9)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
+- [<img src="./assets/media/icons/vendors/si-git.svg" width="24px" /> &nbsp; **Git**](#--git)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-10)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-10)
     - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
     - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
     - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
 - [<img src="./assets/media/icons/vendors/flat-settings.svg" width="24px" /> &nbsp; **Tools & Utilities**](#--tools--utilities)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-10)
-  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-10)
-    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
-    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
-    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
-- [<img src="./assets/media/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-11)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-11)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
-- [<img src="./assets/media/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
+- [<img src="./assets/media/icons/vendors/flat-users.svg" width="24px" /> &nbsp; **Authors & Contributors**](#--authors--contributors)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-12)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-12)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
-- [<img src="./assets/media/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
+- [<img src="./assets/media/icons/vendors/flat-changelog.svg" width="24px" /> &nbsp; **Development Changelog**](#--development-changelog)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-13)
   - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-13)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
+- [<img src="./assets/media/icons/vendors/flat-diploma.svg" width="24px" /> &nbsp; **Legal License**](#--legal-license)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-14)
+  - [<img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-14)
 
 <br/>
+
+</details>
+
+<br/>
+<br/>
+
+## <img src="./assets/media/icons/vendors/flat-power.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->
+
+### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#started-main} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+
+<br/>
+
+### <img src="./assets/media/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#started-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended Tools and Utilities</i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-utils-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-utils-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-utils-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
 
 </details>
 
