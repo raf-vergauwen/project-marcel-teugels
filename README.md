@@ -61,13 +61,13 @@
   <br />
   <br />
   <br />
-  <blockquote>
+  <cite>
     <b>
     A personal website for Marcel Teugels, a young passionate blacksmith who
     mainly deals with restoration and handmade assignments. The website consists of 2 parts.
     A restoration area for normal repairs and a sale personal section for handmade creations.
     <b/>
-  </blockquote>
+  </cite>
 </div>
  <br />
  <br />
