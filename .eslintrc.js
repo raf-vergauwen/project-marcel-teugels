@@ -2,17 +2,22 @@ module.exports = {
   root: true,
   env: {
     browser: true,
+    es2021: true,
     node: true,
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
   extends: [
-    '@nuxtjs',
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    'prettier/vue',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
+    'prettier-standard',
   ],
-  plugins: [],
-  // add your custom rules here
-  rules: {},
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['vue', 'prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+  },
 };
