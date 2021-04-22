@@ -12,7 +12,17 @@
       "h1",
       "div",
       "blockquote",
-      "b"
+      "b",
+      "u",
+      "code",
+      "em",
+      "strong",
+      "pre",
+      "p",
+      "cite",
+      "q",
+      "hr",
+      "h2"
     ]
   }
 }
