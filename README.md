@@ -280,7 +280,7 @@
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-utils-extended-subcat-1} -->
+##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#started-extended-subcat-1} -->
 
 ---
 
@@ -288,7 +288,7 @@
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-utils-extended-subcat-2} -->
+##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#started-extended-subcat-2} -->
 
 ---
 
@@ -296,7 +296,7 @@
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-utils-extended-subcat-3} -->
+##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#started-extended-subcat-3} -->
 
 ---
 
@@ -334,7 +334,7 @@
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#prereq-utils-extended-subcat-1} -->
+##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#prereq-extended-subcat-1} -->
 
 ---
 
@@ -342,7 +342,7 @@
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#prereq-utils-extended-subcat-2} -->
+##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#prereq-extended-subcat-2} -->
 
 ---
 
@@ -350,7 +350,7 @@
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#prereq-utils-extended-subcat-3} -->
+##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#prereq-extended-subcat-3} -->
 
 ---
 
@@ -486,7 +486,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" /> &nbsp; <b>PROJECT MANAGEMENT</b> &nbsp; <img src="./assets/media/icons/vendors/flat--settings.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#usage-main} -->
+### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#project-mgmt-main} -->
 
 <hr/>
   <q>
@@ -497,7 +497,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#usage-extended} -->
+### <img src="./assets/media/icons/vendors/flat--menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#project-mgmt-extended} -->
 
 ---
 
@@ -1617,7 +1617,7 @@ git push
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-utils-extended-subcat-1} -->
+##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-extended-subcat-1} -->
 
 ---
 
@@ -1625,7 +1625,7 @@ git push
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-utils-extended-subcat-2} -->
+##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-extended-subcat-2} -->
 
 ---
 
@@ -1633,7 +1633,7 @@ git push
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-utils-extended-subcat-3} -->
+##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-extended-subcat-3} -->
 
 ---
 
