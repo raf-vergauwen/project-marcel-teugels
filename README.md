@@ -274,7 +274,7 @@
 ---
 
 <details>
-  <summary><i>Collapse Extended Tools and Utilities</i></summary>
+  <summary><i>Collapse Extended - Getting Started</i></summary>
 
 ---
 
@@ -328,7 +328,7 @@
 ---
 
 <details>
-  <summary><i>Collapse Extended Prerequisites</i></summary>
+  <summary><i>Collapse Extended - Prerequisites</i></summary>
 
 ---
 
@@ -502,7 +502,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended - Usage</i></summary>
+  <summary><i>Collapse Extended - Project Management</i></summary>
 
 ---
 
@@ -1490,7 +1490,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended - Git Basics</i></summary>
+  <summary><i>Collapse Extended - Git</i></summary>
 
 ---
 
@@ -1611,7 +1611,7 @@ git push
 ---
 
 <details>
-  <summary><i>Collapse Extended Tools and Utilities</i></summary>
+  <summary><i>Collapse Extended - Tools</i></summary>
 
 ---
 
@@ -1686,7 +1686,7 @@ git push
 ---
 
 <details>
-  <summary><i>Collapse Extended - Authors & Contributors</i></summary>
+  <summary><i>Collapse Extended - Authors</i></summary>
 
 ---
 
@@ -1740,7 +1740,7 @@ git push
 ---
 
 <details>
-  <summary><i>Collapse Extended Project Management</i></summary>
+  <summary><i>Collapse Extended - Changelog</i></summary>
 
 ---
 
