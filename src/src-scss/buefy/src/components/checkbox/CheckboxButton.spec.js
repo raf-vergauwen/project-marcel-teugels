@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils'
 import BCheckboxButton from '@components/checkbox/CheckboxButton'
+import { shallowMount } from '@vue/test-utils'
 
 let wrapper
 
