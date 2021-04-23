@@ -122,7 +122,7 @@
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#toc-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#toc-extended} -->
 
 ---
 
