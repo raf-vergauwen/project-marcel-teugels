@@ -1,0 +1,55 @@
+---
+fulltitle: Love for Bulma 😍
+layout: default
+route: love
+breadcrumb:
+- home
+- love
+tweets:
+- id: "900692286744535041"
+  date: "2:12 PM - 24 Aug 2017"
+  content: 'So impressed with the speed and clarity of implementing <a href="https://twitter.com/search?q=%23bulma">#bulma</a> CSS framework on a new project. Kudos <a href="https://twitter.com/jgthms">@jgthms</a>'
+  fullname: "Jamie Hylands"
+  username: "JamieAHylands"
+  avatar: "https://pbs.twimg.com/profile_images/872757791236272128/31VmJF-L_normal.jpg"
+  hearts: "1"
+  retweets: "0"
+---
+
+{% include global/navbar.html id="Love" %}
+
+{%
+  include components/hero.html
+  color="love"
+  icon="fas fa-heart"
+  title="**Love** for Bulma"
+  subtitle="Happy thoughts from all around the world"
+%}
+
+{% assign encoded_url = site.data.meta.title | urlencode %}
+{% assign encoded_url_bis = 'https://bulma.io' | urlencode %}
+{% assign tweet_href = 'https://twitter.com/intent/tweet?text=' | append: encoded_url | append: '&hashtags=bulmaio&url=' | append: encoded_url_bis | append: '&via=jgthms' %}
+
+{% capture call_button %}
+  {% include
+    elements/tw-button.html
+    label="Tweet #bulmaio"
+    href=tweet_href
+  %}
+{% endcapture %}
+
+{%
+  include components/call.html
+  color="twitter"
+  text='Are you a Bulma fan too? <strong>Show your support!</strong> <span style="font-size: 20px; margin-left: 2px; position: relative; top: 1px;">🤗</span>'
+  button=call_button
+%}
+
+<div class="bd-tws">
+  <div class="bd-tws-list">
+    {% for tweet_pair in site.data.love.tweets_by_id reversed %}
+      {% assign tweet_id = tweet_pair[0] %}
+      {% include elements/tw.html tweet_id=tweet_id %}
+    {% endfor %}
+  </div>
+</div>

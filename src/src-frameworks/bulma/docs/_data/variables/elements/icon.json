@@ -1,0 +1,37 @@
+{
+  "by_name": {
+    "$icon-dimensions": {
+      "name": "$icon-dimensions",
+      "value": "1.5rem",
+      "type": "size"
+    },
+    "$icon-dimensions-small": {
+      "name": "$icon-dimensions-small",
+      "value": "1rem",
+      "type": "size"
+    },
+    "$icon-dimensions-medium": {
+      "name": "$icon-dimensions-medium",
+      "value": "2rem",
+      "type": "size"
+    },
+    "$icon-dimensions-large": {
+      "name": "$icon-dimensions-large",
+      "value": "3rem",
+      "type": "size"
+    },
+    "$icon-text-spacing": {
+      "name": "$icon-text-spacing",
+      "value": "0.25em",
+      "type": "size"
+    }
+  },
+  "list": [
+    "$icon-dimensions",
+    "$icon-dimensions-small",
+    "$icon-dimensions-medium",
+    "$icon-dimensions-large",
+    "$icon-text-spacing"
+  ],
+  "file_path": "elements/icon.sass"
+}

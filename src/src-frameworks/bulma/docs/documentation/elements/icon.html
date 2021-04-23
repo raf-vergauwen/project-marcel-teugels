@@ -1,0 +1,1003 @@
+---
+title: Icon
+subtitle: "Bulma is compatible with <strong>all icon font libraries</strong>: <a href=\"https://fontawesome.com/\">Font Awesome 5</a>, <a href=\"http://fontawesome.io/\">Font Awesome 4</a>, <a href=\"https://materialdesignicons.com\">Material Design Icons</a>, <a href=\"http://ionicons.com/\">Ionicons</a>, etc."
+fontawesome4: true
+ionicons: true
+mdi: true
+layout: documentation
+doc-tab: elements
+doc-subtab: icon
+breadcrumb:
+- home
+- documentation
+- elements
+- elements-icon
+meta:
+  colors: true
+  sizes: true
+  variables: true
+---
+
+{% capture icon_example %}
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+{% endcapture %}
+
+{% capture icon_text_example %}
+<span class="icon-text">
+  <span class="icon">
+    <i class="fas fa-home"></i>
+  </span>
+  <span>Home</span>
+</span>
+{% endcapture %}
+
+{% capture icon_text_train_example %}
+<span class="icon-text">
+  <span class="icon">
+    <i class="fas fa-train"></i>
+  </span>
+  <span>Paris</span>
+  <span class="icon">
+    <i class="fas fa-arrow-right"></i>
+  </span>
+  <span>Budapest</span>
+  <span class="icon">
+    <i class="fas fa-arrow-right"></i>
+  </span>
+  <span>Bucharest</span>
+  <span class="icon">
+    <i class="fas fa-arrow-right"></i>
+  </span>
+  <span>Istanbul</span>
+  <span class="icon">
+    <i class="fas fa-flag-checkered"></i>
+  </span>
+</span>
+{% endcapture %}
+
+{% capture icon_text_in_content_example %}
+<div class="content">
+  <p>
+    An invitation to
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-utensils"></i>
+      </span>
+      <span>dinner</span>
+    </span>
+    was soon afterwards dispatched; and already had Mrs. Bennet planned the courses that were to do credit to her housekeeping, when an answer arrived which deferred it all. Mr. Bingley was obliged to be in
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-city"></i>
+      </span>
+      <span>town</span>
+    </span>
+    the following day, and, consequently, unable to accept the honour of their
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-envelope-open-text"></i>
+      </span>
+      <span>invitation</span>
+    </span>,
+    etc.
+  </p>
+
+  <p>
+    Mrs. Bennet was quite disconcerted. She could not imagine what business he could have in town so soon after his
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-flag-checkered"></i>
+      </span>
+      <span>arrival</span>
+    </span>
+    in Hertfordshire; and she began to fear that he might be always
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-plane-departure"></i>
+      </span>
+      <span>flying</span>
+    </span>
+    about from one place to another, and never settled at Netherfield as he ought to be.
+  </p>
+</div>
+{% endcapture %}
+
+{% capture icon_text_div_example %}
+<div class="icon-text">
+  <span class="icon has-text-info">
+    <i class="fas fa-info-circle"></i>
+  </span>
+  <span>Information</span>
+</div>
+
+<p class="block">
+  Your package will be delivered on <strong>Tuesday at 08:00</strong>.
+</p>
+
+<div class="icon-text">
+  <span class="icon has-text-success">
+    <i class="fas fa-check-square"></i>
+  </span>
+  <span>Success</span>
+</div>
+
+<p class="block">
+  Your image has been successfully uploaded.
+</p>
+
+<div class="icon-text">
+  <span class="icon has-text-warning">
+    <i class="fas fa-exclamation-triangle"></i>
+  </span>
+  <span>Warning</span>
+</div>
+
+<p class="block">
+  Some information is missing from your <a href="#">profile</a> details.
+</p>
+
+<div class="icon-text">
+  <span class="icon has-text-danger">
+    <i class="fas fa-ban"></i>
+  </span>
+  <span>Danger</span>
+</div>
+
+<p class="block">
+  There was an error in your submission. <a href="#">Please try again</a>.
+</p>
+
+{% endcapture %}
+
+{% capture icon_color_example %}
+<span class="icon has-text-info">
+  <i class="fas fa-info-circle"></i>
+</span>
+<span class="icon has-text-success">
+  <i class="fas fa-check-square"></i>
+</span>
+<span class="icon has-text-warning">
+  <i class="fas fa-exclamation-triangle"></i>
+</span>
+<span class="icon has-text-danger">
+  <i class="fas fa-ban"></i>
+</span>
+{% endcapture %}
+
+{% capture icon_text_color_example %}
+<span class="icon-text has-text-info">
+  <span class="icon">
+    <i class="fas fa-info-circle"></i>
+  </span>
+  <span>Info</span>
+</span>
+
+<span class="icon-text has-text-success">
+  <span class="icon">
+    <i class="fas fa-check-square"></i>
+  </span>
+  <span>Success</span>
+</span>
+
+<span class="icon-text has-text-warning">
+  <span class="icon">
+    <i class="fas fa-exclamation-triangle"></i>
+  </span>
+  <span>Warning</span>
+</span>
+
+<span class="icon-text has-text-danger">
+  <span class="icon">
+    <i class="fas fa-ban"></i>
+  </span>
+  <span>Danger</span>
+</span>
+{% endcapture %}
+
+{% capture icon_sizes_example %}
+<span class="icon">
+  <i class="fas fa-camera-retro fa-lg"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-camera-retro fa-2x"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-camera-retro fa-3x"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-camera-retro fa-4x"></i>
+</span>
+<span class="icon">
+  <i class="fas fa-camera-retro fa-5x"></i>
+</span>
+{% endcapture %}
+
+{% capture stacked_medium %}
+<span class="icon is-medium">
+  <span class="fa-stack fa-sm">
+    <i class="fas fa-circle fa-stack-2x"></i>
+    <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+  </span>
+</span>
+{% endcapture %}
+
+{% capture stacked_large %}
+<span class="icon is-large">
+  <span class="fa-stack fa-lg">
+    <i class="fas fa-camera fa-stack-1x"></i>
+    <i class="fas fa-ban fa-stack-2x has-text-danger"></i>
+  </span>
+</span>
+{% endcapture %}
+
+<div class="content">
+  <p>
+    The <code>icon</code> element is a <strong>container</strong> for any type of <strong>icon font</strong>. Because the icons can take a few seconds to load, and because you want control over the <strong>space</strong> the icons will take, you can use the <code>icon</code> class as a reliable square container that will prevent the page to "jump" on page load.</p>
+</div>
+
+<div class="block bd-icon-size">
+  {% include elements/snippet.html content=icon_example %}
+</div>
+
+<div class="message is-info">
+  <div class="message-body">
+    The <strong>yellow background</strong> is only here for demonstration purposes, to highlight the icon container's area.
+  </div>
+</div>
+
+<div class="content">
+  <p>
+    By default, the <code>icon</code> container will take up <em>exactly</em> <code>1.5rem x 1.5rem</code>. The icon itself is sized accordingly to the icon library you're using. For example, Font Awesome 5 icons will <strong>inherit</strong> the font size.
+  </p>
+</div>
+
+<!--  -->
+{% include elements/anchor.html name="Icon text" %}
+
+{% include elements/new-tag.html version="0.9.2" %}
+
+<div class="content">
+  <p>
+    You can combine an <code>icon</code> with <strong>text</strong>, using the <code>icon-text</code> wrapper, as long as all text <em>inside</em> is wrapped in its own <code>span</code> element:
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_text_example %}
+
+<div class="content">
+  <p>
+    You can combine <strong>as many</strong> <code>icon</code> elements and text elements as you want:
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_text_train_example %}
+
+<div class="content">
+  <p>
+    Since <code>icon-text</code> is an <code>inline-flex</code> element, it can easily be inserted within any paragraph of <strong>text</strong>.
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_text_in_content_example %}
+
+<div class="content">
+  <p>
+    You can also turn the <code>icon-text</code> into a <code>flex</code> element simply by using a <code>&lt;div&gt;</code> tag instead:
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_text_div_example %}
+
+<!--  -->
+{% include elements/anchor.html name="Colors" %}
+
+<div class="content">
+  <p>
+    Since icon fonts are simply <strong>text</strong>, you can use the <a href="{{ site.url }}/documentation/helpers/color-helpers/">color helpers</a> to change the icon's color.
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_color_example %}
+
+<div class="content">
+  <p>
+    The same applies to the <code>icon-text</code>:
+  </p>
+</div>
+
+{% include elements/snippet.html content=icon_text_color_example %}
+
+<!--  -->
+{% include elements/anchor.html name="Sizes" %}
+
+<div class="content">
+  <p>
+    The Bulma <code>icon</code> container comes in <strong>4 sizes</strong>. It should always be <em>slightly bigger</em> than the icon it contains. For example, Font Awesome 5 icons use a font-size of <code>1em</code> by default (since it inherits the font size), but provides <a href="https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons" target="_blank">additional sizes</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>Font Awesome 5 class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <code>icon</code>
+      </td>
+      <td rowspan="2">
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        <code>icon is-medium</code>
+      </td>
+      <td rowspan="3">
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-2x</code>
+      </td>
+      <td>
+        <code>2em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-2x fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        <code>icon is-large</code>
+      </td>
+      <td rowspan="4">
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-2x</code>
+      </td>
+      <td>
+        <code>2em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-2x fa-home"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--  -->
+{% include elements/anchor.html name="Font Awesome variations" %}
+
+<div class="content">
+  <p>
+    Font Awesome also provides modifier classes for:
+  </p>
+  <ul>
+    <li>
+      fixed width icons
+    </li>
+    <li>
+      bordered icons
+    </li>
+    <li>
+      animated icons
+    </li>
+    <li>
+      stacked icons
+    </li>
+  </ul>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Font Awesome class</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Fixed width
+      </td>
+      <td>
+        <code>fas fa-fw</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-home fa-fw"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bordered
+      </td>
+      <td>
+        <code>fas fa-border</code>
+      </td>
+      <td>
+        <span class="icon">
+          <i class="fas fa-home fa-border"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Animated
+      </td>
+      <td>
+        <code>fas fa-spinner fa-pulse</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-spinner fa-pulse"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        Stacked
+      </td>
+      <td>
+        {% highlight html %}{{ stacked_medium }}{% endhighlight %}
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+          </span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% highlight html %}{{ stacked_large }}{% endhighlight %}
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x has-text-danger"></i>
+          </span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--  -->
+{% include elements/anchor.html name="Material Design Icons" %}
+
+<div class="content">
+  <p>
+    Here is how the <code>icon</code> container can be used with <a href="https://materialdesignicons.com">Material Design Icons</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>MDI class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <code>icon</code>
+      </td>
+      <td rowspan="2">
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <code>icon is-medium</code>
+      </td>
+      <td rowspan="4">
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-36px</code>
+      </td>
+      <td>
+        <code>36px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-36px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="5">
+        <code>icon is-large</code>
+      </td>
+      <td rowspan="5">
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-36px</code>
+      </td>
+      <td>
+        <code>36px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-36px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-48px</code>
+      </td>
+      <td>
+        <code>48px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-48px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="content">
+  <p>
+    MDI also provides modifier classes for:
+  </p>
+  <ul>
+    <li>
+      light and dark icons
+    </li>
+    <li>
+      rotated &amp; flipped icons
+    </li>
+  </ul>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Material Design Icon class</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Light color
+      </td>
+      <td>
+        <code>mdi mdi-light</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-light"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dark color
+      </td>
+      <td>
+        <code>mdi mdi-dark</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-dark"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Light inactive color
+      </td>
+      <td>
+        <code>mdi mdi-light mdi-inactive</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-light mdi-inactive"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dark inactive color
+      </td>
+      <td>
+        <code>mdi mdi-dark mdi-inactive</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-dark mdi-inactive"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Flipped
+      </td>
+      <td>
+        <code>mdi mdi-flip-h</code>
+        <br>
+        <code>mdi mdi-flip-v</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-flip-h"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-flip-v"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Rotated
+      </td>
+      <td>
+        <code>mdi mdi-rotate-45</code>
+        <br>
+        <code>mdi mdi-rotate-90</code>
+        <br>
+        <code>mdi mdi-rotate-180</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-45"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-90"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-180"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--  -->
+{% include elements/anchor.html name="Ionicons" %}
+
+<div class="content">
+  <p>
+    Here is how the <code>icon</code> container can be used with <a href="http://ionicons.com">Ionicons</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>Ionicon class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon</code>
+      </td>
+      <td>
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-medium</code>
+      </td>
+      <td>
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-large</code>
+      </td>
+      <td>
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% include components/variables.html type='element' %}

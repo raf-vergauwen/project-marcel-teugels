@@ -1,10 +1,10 @@
-# Layout & elements
+# **BUEFY - LAYOUT & ELEMENTS**
 
 Buefy has the entire Bulma's core built in. You can use any feature from Bulma, plus all the components Buefy offers
 
 ---
 
-## Layout
+## Bulma **Layout**
 
 - [Container](https://bulma.io/documentation/layout/container/)
 - [Hero](https://bulma.io/documentation/layout/hero/)

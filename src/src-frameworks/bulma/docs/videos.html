@@ -1,0 +1,100 @@
+---
+fulltitle: Bulma Videos
+layout: default
+route: videos
+breadcrumb:
+- home
+- videos
+videos:
+- id: tesla
+  title: Tesla launch page
+  subtitle: 4 videos – 20 min
+  content: Design a responsive launch page with Bulma's component and CSS Grid.
+  video_url: https://scrimba.com/p/pV5eHk/cvrwyfR
+  article_url: https://medium.freecodecamp.org/how-to-build-a-responsive-tesla-launch-page-with-bulma-css-2bf484057349
+- id: blog
+  title: Blog
+  subtitle: 4 videos – 23 min
+  content: Build a responsive blog with Bulma components.
+  video_url: https://scrimba.com/p/pV5eHk/c4EMaUR
+  article_url: https://medium.freecodecamp.org/how-to-build-a-responsive-blog-design-with-bulma-css-c2257a17c16b
+- id: slide
+  title: Slide
+  subtitle: 4 videos – 15 min
+  content: Create web-based presentation slides with Bulma.
+  video_url: https://scrimba.com/p/pV5eHk/cGym4Ta
+  no_video: true
+---
+
+{% include global/navbar.html id="Videos" %}
+
+{% capture hero_content %}
+<a class="button bd-fat-button is-success is-medium"
+  href="{{ site.data.meta.scrimba_url }}"
+  target="_blank">
+  <span class="icon">
+    <i class="fas fa-graduation-cap"></i>
+  </span>
+  <span>
+    Enroll in the free course
+  </span>
+</a>
+{% endcapture %}
+
+{%
+  include components/hero.html
+  color="videos"
+  icon="fas fa-play-circle"
+  title="**Video** tutorials"
+  subtitle="Learn Bulma with free interactive Scrimba tutorials"
+  content=hero_content
+%}
+
+{% for video in page.videos %}
+  <div class="bd-video">
+    <div class="bd-video-info">
+      <h2 class="title">
+        {{ video.title }}
+      </h2>
+
+      <p class="subtitle has-text-grey-light">
+        {{ video.subtitle }}
+      </p>
+
+      <div class="content is-medium">
+        <p>
+          {{ video.content }}
+        </p>
+      </div>
+
+      <div class="buttons">
+        <p>
+          <a class="button bd-fat-button is-success is-medium" href="{{ video.video_url }}" target="_blank" rel="nofollow">
+            <span class="icon">
+              <i class="fas fa-play"></i>
+            </span>
+            <span>Watch video</span>
+          </a>
+
+          {% if video.article_url %}
+            <a class="button bd-fat-button is-success is-light is-medium" href="{{ video.article_url }}" target="_blank" rel="nofollow">
+              Read article
+            </a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    <figure class="bd-video-figure">
+      <a class="image" href="{{ video.video_url }}" target="_blank" rel="nofollow">
+        {% if video.no_video %}
+          <img src="{{ site.url }}/images/videos/{{ video.id }}.png" alt="{{ video.title }} screenshot">
+        {% else %}
+          <video autoplay loop muted>
+            <source media="(min-width: 640px)" src="{{ site.url }}/images/videos/{{ video.id }}.mp4">
+          </video>
+          {% endif %}
+      </a>
+    </figure>
+  </div>
+{% endfor %}
