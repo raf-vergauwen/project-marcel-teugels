@@ -70,8 +70,6 @@
   <br/>
   <br/>
 </div>
- <br />
- <br />
 
 <!-- - Validator.js -->
 <!-- - Vuedraggable.js -->
