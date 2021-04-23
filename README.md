@@ -102,7 +102,7 @@
 ---
 
 - [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-started} -->](#Getting_Started)
 - [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
 - [<img src="./assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
 - [<img src="./assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
@@ -167,45 +167,45 @@
   - [<img src="./assets/media/icons/vendors/flat__config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration-1)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-13)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-13)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
   - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Conventions**](#--conventions)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-14)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-14)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
   - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Styles**](#--styles)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-15)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-15)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-10)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-10)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-10)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-10)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-10)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-10)
   - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; **Rules**](#--rules-1)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-16)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-16)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-11)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-11)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-11)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-11)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-11)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-11)
   - [<img src="./assets/media/icons/vendors/flat__error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-17)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-17)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-12)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-12)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-12)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-12)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-12)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-12)
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; **Git**](#--git)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-18)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-18)
-      - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
-      - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
-      - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
+    - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
+    - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
+    - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
   - [<img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; **Tools**](#--tools)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-19)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-19)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-13)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-13)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-13)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-13)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-13)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-13)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-20)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-20)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-14)
@@ -213,9 +213,9 @@
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-14)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-21)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-21)
-      - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-15)
-      - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-15)
-      - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-15)
+    - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-15)
+    - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-15)
+    - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-15)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content**](#--a---main-content-22)
   - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content**](#--b---extended-content-22)
 
@@ -228,40 +228,33 @@
 <br/>
 <br/>
 <h2 class="root-started" align="center">
-  <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; <b>GETTING STARTED</b> &nbsp; <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; <b>Key Features</b> &nbsp; <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#started-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#key-feat-main} -->
 
-<hr/>
-  <q>
-    <i>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
-    <i/>
-  </q>
-<br/>
-<br/>
+- _Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor._
+- _Egestas maecenas pharetra convallis posuere morbi leo augue eget urna._
+- _Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas._
+- _Sit amet consectetur adipiscing elit ut aliquam purus sit cursus in hac habitasse._
+- _Fermentum odio eu feugiat pretium nibh incididunt ut labore et dolore magna aliqua._
+- _Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis_
+- _Morbi tincidunt ornare massa eget egestas purus viverra accumsan._
+- _Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi._
+- _Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit._
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#started-extended}-->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#key-feat-extended}-->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Getting Started</i></summary>
+  <summary><i>Collapse Extended - Key Features</i></summary>
 
 ---
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#started-extended-subcat-1} -->
-
----
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
-
-<br/>
-
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#started-extended-subcat-2} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#key-feat-extended-subcat-1} -->
 
 ---
 
@@ -269,7 +262,15 @@
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#started-extended-subcat-3} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#key-feat-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#key-feat-extended-subcat-3} -->
 
 ---
 
@@ -307,7 +308,7 @@ $ git config --global fetch.prune true
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#prereq-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#prereq-extended-subcat-1} -->
 
 ---
 
@@ -315,7 +316,7 @@ $ git config --global fetch.prune true
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#prereq-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#prereq-extended-subcat-2} -->
 
 ---
 
@@ -323,7 +324,7 @@ $ git config --global fetch.prune true
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#prereq-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#prereq-extended-subcat-3} -->
 
 ---
 
@@ -373,7 +374,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#install-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#install-extended-subcat-1} -->
 
 ---
 
@@ -381,7 +382,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#install-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#install-extended-subcat-2} -->
 
 ---
 
@@ -389,7 +390,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#install-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#install-extended-subcat-3} -->
 
 ---
 
@@ -427,7 +428,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#usage-extended-subcat-1} -->
 
 ---
 
@@ -435,7 +436,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#usage-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#usage-extended-subcat-2} -->
 
 ---
 
@@ -443,7 +444,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#usage-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#usage-extended-subcat-3} -->
 
 ---
 
@@ -911,7 +912,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Main Technologies_
+#### _B1 ❖ &nbsp; Main Technologies_
 
 ---
 
@@ -928,7 +929,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Frameworks_
+#### _B2 ❖ &nbsp; Frameworks_
 
 ---
 
@@ -940,7 +941,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Database Tools_
+#### _B3 ❖ &nbsp; Database Tools_
 
 ---
 
@@ -1493,7 +1494,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#config-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#config-extended-subcat-1} -->
 
 ---
 
@@ -1501,7 +1502,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#config-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#config-extended-subcat-2} -->
 
 ---
 
@@ -1509,7 +1510,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#config-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#config-extended-subcat-3} -->
 
 ---
 
@@ -1548,7 +1549,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#convens-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#convens-extended-subcat-1} -->
 
 ---
 
@@ -1556,7 +1557,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#convens-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#convens-extended-subcat-2} -->
 
 ---
 
@@ -1564,7 +1565,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#convens-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#convens-extended-subcat-3} -->
 
 ---
 
@@ -1603,7 +1604,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#styles-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#styles-extended-subcat-1} -->
 
 ---
 
@@ -1611,7 +1612,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#styles-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#styles-extended-subcat-2} -->
 
 ---
 
@@ -1619,7 +1620,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#styles-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#styles-extended-subcat-3} -->
 
 ---
 
@@ -1657,7 +1658,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#rules-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#rules-extended-subcat-1} -->
 
 ---
 
@@ -1665,7 +1666,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#rules-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#rules-extended-subcat-2} -->
 
 ---
 
@@ -1673,7 +1674,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#rules-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#rules-extended-subcat-3} -->
 
 ---
 
@@ -1712,7 +1713,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#testing-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#testing-extended-subcat-1} -->
 
 ---
 
@@ -1720,7 +1721,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#testing-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#testing-extended-subcat-2} -->
 
 ---
 
@@ -1728,7 +1729,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#testing-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#testing-extended-subcat-3} -->
 
 ---
 
@@ -1767,7 +1768,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-##### _B1 ❖ &nbsp; Example: Contribute to an existing repository_ <!-- {#git-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Example: Contribute to an existing repository_ <!-- {#git-extended-subcat-1} -->
 
 ---
 
@@ -1798,7 +1799,7 @@ git push --set-upstream origin my-branch
 
 <br/>
 
-##### _B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_ <!-- {#git-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_ <!-- {#git-extended-subcat-2} -->
 
 ---
 
@@ -1827,7 +1828,7 @@ git push --set-upstream origin main
 
 <br/>
 
-##### _B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_ <!-- {#git-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_ <!-- {#git-extended-subcat-3} -->
 
 ---
 
@@ -1888,7 +1889,7 @@ git push
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#tools-extended-subcat-1} -->
 
 ---
 
@@ -1896,7 +1897,7 @@ git push
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#tools-extended-subcat-2} -->
 
 ---
 
@@ -1904,7 +1905,7 @@ git push
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#tools-extended-subcat-3} -->
 
 ---
 
@@ -2017,7 +2018,7 @@ git push
 
 <br/>
 
-##### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-utils-extended-subcat-1} -->
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#changelog-utils-extended-subcat-1} -->
 
 ---
 
@@ -2025,7 +2026,7 @@ git push
 
 <br/>
 
-##### _B2 ❖ &nbsp; Subcategory II_ <!-- {#changelog-utils-extended-subcat-2} -->
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#changelog-utils-extended-subcat-2} -->
 
 ---
 
@@ -2033,7 +2034,7 @@ git push
 
 <br/>
 
-##### _B3 ❖ &nbsp; Subcategory III_ <!-- {#changelog-utils-extended-subcat-3} -->
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#changelog-utils-extended-subcat-3} -->
 
 ---
 
