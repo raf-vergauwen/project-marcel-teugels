@@ -1184,6 +1184,301 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 [jsonlint]: https://github.com/zaach/jsonlint 'Superlinter compatible JSONlint link'
 [yamllint]: https://github.com/adrienverge/yamllint 'Superlinter compatible YAMLlint link'
 [sql-lint]: https://github.com/joereynolds/sql-lint 'Superlinter compatible SQLlint link'
+<<<<<<< HEAD
+
+<!-- Vscode Extentions and Plugins Links -->
+
+[sqltools]: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools#review-details 'SQL-tools marketplace'
+
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## <img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#install-main} -->
+
+---
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#install-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Installation </i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#install-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#install-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#install-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## <img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration** <!-- {#root-config} -->
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#config-main} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#config-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Configuration</i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#config-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#config-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#config-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## <img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles** <!-- {#root-convens} -->
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#convens-main} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Sit amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh. Ut faucibus pulvinar elementum integer enim neque. Amet purus gravida quis blandit turpis cursus in hac habitasse. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi. Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit.
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#convens-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Conventions & Styles</i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#conventions-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#conventions-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#conventions-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## <img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules** <!-- {#root-rules} -->
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#rules-main} -->
+
+---
+
+1. > BEM style for assets can be ignored only inside the root _'./assets'_ folder to make **HTML** \<img\> _src_ paths shorter
+2. > ...
+3. > ...
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#rules-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Rules</i></summary>
+
+---
+
+<br/>
+
+#### _B1 ❖ &nbsp; Subcategory I_ <!-- {#rules-extended-subcat-1} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B2 ❖ &nbsp; Subcategory II_ <!-- {#rules-extended-subcat-2} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+<br/>
+
+#### _B3 ❖ &nbsp; Subcategory III_ <!-- {#rules-extended-subcat-3} -->
+
+---
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
+
+</details>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## <img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture** <!-- {#root-architecture} -->
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - Main Content** <!-- {#architecture-main} -->
+
+---
+
+| Icon                                                                                                         | Name                              | Folder Contents       |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------- | --------------------- |
+| <img src="assets\icons\vendors\mit-folder-github.svg" alt="Github folder icon" title="Github folder icon">   | **[GITHUB](#.github)**            | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-nuxt.svg" alt="Nuxt folder icon" title=" folder icon">             | **[NUXT](#.nuxt)**                | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-vscode.svg" alt="Vscode folder icon" title=" folder icon">         | **[VSCODE](#.vscode)**            | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-archive.svg" alt="Archive folder icon" title=" folder icon">       | **[ARCHIVE](#archive)**           | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-resource.svg" alt="Assets folder icon" title=" folder icon">       | **[ASSETS](#assets)**             | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-vue-dir.svg" alt="Components folder icon" title=" folder icon">    | **[COMPONENTS](#components)**     | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-config.svg" alt="Config folder icon" title=" folder icon">         | **[CONFIG](#config)**             | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-content.svg" alt="Content folder icon" title=" folder icon">       | **[CONTENT](#content)**           | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-docs.svg" alt="Docs folder icon" title=" folder icon">             | **[DOCS](#docs)**                 | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-layout.svg" alt="Layouts folder icon" title=" folder icon">        | **[LAYOUTS](#layouts)**           | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-middleware.svg" alt="Middleware folder icon" title=" folder icon"> | **[MIDDLEWARE](#middleware)**     | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-node.svg" alt="Node Modules folder icon" title=" folder icon">     | **[NODE MODULES](#node_modules)** | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-views.svg" alt="Pages folder icon" title=" folder icon">           | **[PAGES](#pages)**               | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-plugin.svg" alt="Plugins folder icon" title=" folder icon">        | **[PLUGINS](#plugins)**           | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-src.svg" alt="Src folder icon" title=" folder icon">               | **[SRC](#src)**                   | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-stack.svg" alt="Static folder icon" title=" folder icon">          | **[STATIC](#static)**             | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-vuex-store.svg" alt="Store folder icon" title=" folder icon">      | **[STORE](#store)**               | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-test.svg" alt="Test folder icon" title=" folder icon">             | **[TEST](#test)**                 | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-tools.svg" alt="Tools folder icon" title=" folder icon">           | **[TOOLS](#tools)**               | _Work in progress..._ |
+| <img src="assets\icons\vendors\mit-folder-utils.svg" alt="Utilities folder icon" title=" folder icon">       | **[UTILITIES](#utilities)**       | _Work in progress..._ |
+
+<br/>
+
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - Extended Content** <!-- {#architecture-extended} -->
+
+---
+
+<details>
+  <summary><i>Collapse Extended - Architecture </i></summary>
+
+#### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
+
+<details>
+  <summary><i>More information...</summary></i>
+
+```text
+... Placeholder text, placeholder text
+... Placeholder text, placeholder text
+... Placeholder text, placeholder text
+```
+
+</details>
+
+#### <img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **[.nuxt](.nuxt)** ⚜ _So-called build directory, dynamically generated and hidden by default_
+=======
+>>>>>>> main
 
 <!-- Vscode Extentions and Plugins Links -->
 
