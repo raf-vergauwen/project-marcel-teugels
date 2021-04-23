@@ -1,0 +1,9 @@
+.bd-navbar {
+  background-color: #121212;
+}
+
+.bd-navbar.has-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=bulma-dark.css.map */

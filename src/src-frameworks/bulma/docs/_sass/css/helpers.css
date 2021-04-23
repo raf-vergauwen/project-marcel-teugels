@@ -1,0 +1,72 @@
+.has-text-bootstrap {
+  color: var(--bootstrap) !important;
+}
+
+.has-text-github {
+  color: var(--github) !important;
+}
+
+.has-text-twitter {
+  color: var(--twitter) !important;
+}
+
+.has-text-patreon {
+  color: var(--patreon) !important;
+}
+
+.has-text-patreon-blue {
+  color: var(--patreon-blue) !important;
+}
+
+.has-text-fortyfour {
+  color: var(--fortyfour) !important;
+}
+
+.has-text-amazon {
+  color: var(--amazon) !important;
+}
+
+.has-text-bleeding-green {
+  color: var(--bleeding-green) !important;
+}
+
+.has-text-bleeding-red {
+  color: var(--bleeding-red) !important;
+}
+
+.has-text-rss {
+  color: var(--rss) !important;
+}
+
+.has-text-videos {
+  color: var(--videos) !important;
+}
+
+.has-text-expo {
+  color: var(--expo) !important;
+}
+
+.has-text-love {
+  color: var(--love) !important;
+}
+
+.has-text-backers {
+  color: var(--backers) !important;
+}
+
+.has-text-sponsors {
+  color: var(--sponsors) !important;
+}
+
+.has-text-blog {
+  color: var(--blog) !important;
+}
+
+.has-text-extensions {
+  color: var(--extensions) !important;
+}
+
+.has-text-algolia {
+  color: var(--algolia) !important;
+}
+/*# sourceMappingURL=helpers.css.map */
