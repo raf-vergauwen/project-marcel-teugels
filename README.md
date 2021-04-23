@@ -95,7 +95,7 @@
   <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#toc-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#toc-main} -->
 
 ---
 
@@ -122,100 +122,100 @@
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__list.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#toc-extended} -->
+### <img src="./assets/media/icons/vendors/flat__list.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#toc-extended} -->
 
 ---
 
 <details>
-  <summary><i> Collapse Extended - Table Of Contents </i></summary>
+  <summary><i> Collapse Extended ⚊ Table Of Contents </i></summary>
 
 ---
 
 <br/>
 
 - [<img src="./assets/icons/vendors/flat-more.svg" width="24px" /> &nbsp; **Installation**](#--installation)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-8)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-8)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-8)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-8)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-4)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-4)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-4)
 - [<img src="./assets/icons/vendors/flat-config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-9)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-9)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-9)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-9)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-5)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-5)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-5)
 - [<img src="./assets/icons/vendors/flat-blueprint.svg" width="24px" /> &nbsp; **Conventions & Styles**](#--conventions--styles)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-10)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-10)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-10)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-10)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-6)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-6)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-6)
 - [<img src="./assets/icons/vendors/flat-checked.svg" width="24px" /> &nbsp; **Rules**](#--rules)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-11)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-11)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-11)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-11)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-7)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-7)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-7)
 - [<img src="./assets/icons/vendors/flat-home.svg" width="24px" /> &nbsp; **Architecture**](#--architecture-1)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-12)
-  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-12)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-12)
+  - [<img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-12)
     - [<img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **.github** ⚜ _Collaborative version control and source code management_](#--github--collaborative-version-control-and-source-code-management-1)
     - [<img src="assets\icons\vendors\mit-folder-nuxt.svg" width="24"> ⚜ **.nuxt** ⚜ _So-called build directory, dynamically generated and hidden by default_](#--nuxt--so-called-build-directory-dynamically-generated-and-hidden-by-default-1)
   - [<img src="./assets/media/icons/vendors/flat__config.svg" alt="Git icon" width="24px" /> &nbsp; **Configuration**](#--configuration-1)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-13)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-13)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-13)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-13)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-8)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-8)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-8)
   - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Conventions**](#--conventions)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-14)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-14)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-14)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-14)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-9)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-9)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-9)
   - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Styles**](#--styles)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-15)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-15)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-15)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-15)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-10)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-10)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-10)
   - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; **Rules**](#--rules-1)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-16)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-16)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-16)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-16)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-11)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-11)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-11)
   - [<img src="./assets/media/icons/vendors/flat__error.svg" width="24px" /> &nbsp; **Testing**](#--testing)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-17)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-17)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-17)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-17)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-12)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-12)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-12)
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; **Git**](#--git)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-18)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-18)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-18)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-18)
     - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
     - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
     - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
   - [<img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; **Tools**](#--tools)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-19)
-    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-19)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-19)
+    - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-19)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-13)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-13)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-13)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-20)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-20)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-20)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-20)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-14)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-14)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-14)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-21)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-21)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-21)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-21)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-15)
     - [_B2 ❖ &nbsp; Subcategory II_](#b2---subcategory-ii-15)
     - [_B3 ❖ &nbsp; Subcategory III_](#b3---subcategory-iii-15)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT**](#--a---main-content-22)
-  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT**](#--b---extended-content-22)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-22)
+  - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-22)
 
 <br/>
 
@@ -229,7 +229,7 @@
   <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; <b>Key Features</b> &nbsp; <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#key-feat-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#key-feat-main} -->
 
 - _Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor._
 - _Egestas maecenas pharetra convallis posuere morbi leo augue eget urna._
@@ -241,12 +241,12 @@
 - _Nulla aliquet porttitor lacus luctus accumsan. At elementum eu facilisis sed odio morbi._
 - _Feugiat vivamus at augue eget. Orci sagittis eu volutpat odio facilisis mauris sit._
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#key-feat-extended}-->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#key-feat-extended}-->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Key Features</i></summary>
+  <summary><i>Collapse Extended ⚊ Key Features</i></summary>
 
 ---
 
@@ -284,7 +284,7 @@
   <img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; <b>PREREQUISITES</b> &nbsp; <img src="./assets/media/icons/vendors/flat__list.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#prereq-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#prereq-main} -->
 
 ---
 
@@ -295,12 +295,12 @@
 $ git config --global fetch.prune true
 ```
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#prereq-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#prereq-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Prerequisites</i></summary>
+  <summary><i>Collapse Extended ⚊ Prerequisites</i></summary>
 
 ---
 
@@ -338,7 +338,7 @@ $ git config --global fetch.prune true
   <img src="./assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; <b>INSTALLATION</b> &nbsp; <img src="./assets/media/icons/vendors/flat__download.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#install-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#install-main} -->
 
 ---
 
@@ -361,12 +361,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#install-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#install-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation </i></summary>
 
 ---
 
@@ -404,7 +404,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   <img src="./assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; <b>USAGE</b> &nbsp; <img src="./assets/media/icons/vendors/flat__info.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#usage-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#usage-main} -->
 
 <hr/>
   <q>
@@ -415,12 +415,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#usage-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#usage-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Usage</i></summary>
+  <summary><i>Collapse Extended ⚊ Usage</i></summary>
 
 ---
 
@@ -458,7 +458,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   <img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; <b>PROJECT MANAGEMENT</b> &nbsp; <img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#project-mgmt-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#project-mgmt-main} -->
 
 <hr/>
   <q>
@@ -469,12 +469,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#project-mgmt-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#project-mgmt-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Project Management</i></summary>
+  <summary><i>Collapse Extended ⚊ Project Management</i></summary>
 
 ---
 
@@ -486,7 +486,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#architecture-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#architecture-main} -->
 
 ---
 
@@ -515,12 +515,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#architecture-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#architecture-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
 
 ##### <img src="assets/media/icons/vendors/mit__folder--github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
@@ -793,7 +793,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#techstack-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#techstack-main} -->
 
 ---
 
@@ -899,12 +899,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#techstack-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#techstack-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Technology Stack</i></summary>
+  <summary><i>Collapse Extended ⚊ Technology Stack</i></summary>
 
 ---
 
@@ -1174,7 +1174,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#install-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#install-main} -->
 
 ---
 
@@ -1198,12 +1198,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#install-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#install-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation </i></summary>
 
 ---
 
@@ -1242,7 +1242,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#config-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#config-main} -->
 
 ---
 
@@ -1250,12 +1250,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#config-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#config-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Configuration</i></summary>
+  <summary><i>Collapse Extended ⚊ Configuration</i></summary>
 
 ---
 
@@ -1294,7 +1294,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#convens-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#convens-main} -->
 
 ---
 
@@ -1302,12 +1302,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#convens-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#convens-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Conventions & Styles</i></summary>
+  <summary><i>Collapse Extended ⚊ Conventions & Styles</i></summary>
 
 ---
 
@@ -1346,7 +1346,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#rules-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#rules-main} -->
 
 ---
 
@@ -1356,12 +1356,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#rules-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#rules-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Rules</i></summary>
+  <summary><i>Collapse Extended ⚊ Rules</i></summary>
 
 ---
 
@@ -1400,7 +1400,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#architecture-main} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#architecture-main} -->
 
 ---
 
@@ -1429,12 +1429,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#architecture-extended} -->
+### <img src="./assets/icons/vendors/flat-menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#architecture-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
 
 #### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
@@ -1470,7 +1470,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#config-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#config-main} -->
 
 <hr/>
   <q>
@@ -1481,12 +1481,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#config-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#config-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Configuration</i></summary>
+  <summary><i>Collapse Extended ⚊ Configuration</i></summary>
 
 ---
 
@@ -1525,7 +1525,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#convens-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#convens-main} -->
 
 <hr/>
   <q>
@@ -1536,12 +1536,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#convens-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#convens-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Conventions</i></summary>
+  <summary><i>Collapse Extended ⚊ Conventions</i></summary>
 
 ---
 
@@ -1580,7 +1580,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#styles-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#styles-main} -->
 
 <hr/>
   <q>
@@ -1591,12 +1591,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#styles-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#styles-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Styles</i></summary>
+  <summary><i>Collapse Extended ⚊ Styles</i></summary>
 
 ---
 
@@ -1635,7 +1635,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#rules-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#rules-main} -->
 
 ---
 
@@ -1645,12 +1645,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#rules-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#rules-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Rules</i></summary>
+  <summary><i>Collapse Extended ⚊ Rules</i></summary>
 
 ---
 
@@ -1689,7 +1689,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#testing-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#testing-main} -->
 
 <hr/>
   <q>
@@ -1700,12 +1700,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#testing-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#testing-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Testing</i></summary>
+  <summary><i>Collapse Extended ⚊ Testing</i></summary>
 
 ---
 
@@ -1744,7 +1744,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#git-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#git-main} -->
 
 <hr/>
   <q>
@@ -1755,12 +1755,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#git-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#git-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Git</i></summary>
+  <summary><i>Collapse Extended ⚊ Git</i></summary>
 
 ---
 
@@ -1865,7 +1865,7 @@ git push
 
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#tools-main} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#tools-main} -->
 
 <hr/>
   <q>
@@ -1876,12 +1876,12 @@ git push
 <br/>
 <br/>
 
-#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#tools-extended} -->
+#### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#tools-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Tools</i></summary>
+  <summary><i>Collapse Extended ⚊ Tools</i></summary>
 
 ---
 
@@ -1921,7 +1921,7 @@ git push
   <img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; <b>AUTHORS</b> &nbsp; <img src="./assets/media/icons/vendors/flat__users.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#authors-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#authors-main} -->
 
 ---
 
@@ -1951,12 +1951,12 @@ git push
 [facebook:kenneth]: https://facebook.com/KennethBlondeel
 [facebook:lins]: https://facebook.com/LinsTimperman
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#authors-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#authors-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Authors</i></summary>
+  <summary><i>Collapse Extended ⚊ Authors</i></summary>
 
 ---
 
@@ -1994,7 +1994,7 @@ git push
   <img src="./assets/media/icons/vendors/flat__changelog.svg" width="24px" /> &nbsp; <b>CHANGELOG</b> &nbsp; <img src="./assets/media/icons/vendors/flat__changelog.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#changelog-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#changelog-main} -->
 
 <hr/>
   <q>
@@ -2005,12 +2005,12 @@ git push
 <br/>
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#changelog-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#changelog-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - Changelog</i></summary>
+  <summary><i>Collapse Extended ⚊ Changelog</i></summary>
 
 ---
 
@@ -2048,7 +2048,7 @@ git push
   <img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; <b>LICENSE</b> &nbsp; <img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" />
 </h2>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **A - MAIN CONTENT** <!-- {#license-main} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#license-main} -->
 
 ---
 
@@ -2066,12 +2066,12 @@ Licensed works, modifications, and larger works may be distributed under differe
 
 <br/>
 
-### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **B - EXTENDED CONTENT** <!-- {#license-extended} -->
+### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»** <!-- {#license-extended} -->
 
 ---
 
 <details>
-  <summary><i>Collapse Extended - License</i></summary>
+  <summary><i>Collapse Extended ⚊ License</i></summary>
 
 ---
 
