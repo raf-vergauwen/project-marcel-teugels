@@ -104,7 +104,7 @@
 - [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
 - [<img src="./assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
 - [<img src="./assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
-- [<img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
+- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
   - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#-Technology_Stack)
@@ -114,7 +114,7 @@
   - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
   - [<img src="./assets/media/icons/vendors/flat__error.svg" width="16px" /> &nbsp; **Testing**](#Testing)
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git**](#Git)
-  - [<img src="./assets/media/icons/vendors/flat__compose.svg" width="16px" /> &nbsp; **Tools**](#Tools)
+  - [<img src="./assets/media/icons/vendors/flat__technics.svg" width="16px" /> &nbsp; **Tools**](#Tools)
 
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
 - [<img src="./assets/media/icons/vendors/flat__changelog.svg" width="24px" /> &nbsp; **Changelog**](#Changelog)
@@ -198,7 +198,7 @@
     - [_B1 ❖ &nbsp; Example: Contribute to an existing repository_](#b1---example-contribute-to-an-existing-repository)
     - [_B2 ❖ &nbsp; Example: Start a new repository and publish it to GitHub_](#b2---example-start-a-new-repository-and-publish-it-to-github)
     - [_B3 ❖ &nbsp; Example: contribute to an existing branch on GitHub_](#b3---example-contribute-to-an-existing-branch-on-github)
-  - [<img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; **Tools**](#--tools)
+  - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Tools**](#--tools)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»**](#--main-content--placeholder-19)
     - [<img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «placeholder»**](#--extended-content--placeholder-19)
     - [_B1 ❖ &nbsp; Subcategory I_](#b1---subcategory-i-13)
@@ -455,7 +455,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 <br/>
 <br/>
 <h2 class="root-project-mgmt" align="center">
-  <img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; <b>PROJECT MANAGEMENT</b> &nbsp; <img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; <b>PROJECT MANAGEMENT</b> &nbsp; <img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" />
 </h2>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#project-mgmt-main} -->
@@ -1859,7 +1859,7 @@ git push
 <br/>
 <br/>
  
-### <img src="./assets/media/icons/vendors/flat__settings.svg" width="24px" /> &nbsp; **Tools** <!-- {#root-tools} -->
+### <img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Tools** <!-- {#root-tools} -->
 
 ---
 
