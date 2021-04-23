@@ -100,7 +100,7 @@
 ---
 
 - [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **KEY FEATURES** <!-- {#root-started} -->](#Getting_Started)
 - [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
 - [<img src="./assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
 - [<img src="./assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
@@ -226,7 +226,7 @@
 <br/>
 <br/>
 <h2 class="root-started" align="center">
-  <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" /> &nbsp; <b>Key Features</b> &nbsp; <img src="./assets/media/icons/vendors/flat__power.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; <b>KEY FEATURES</b> &nbsp; <img src="./assets/media/icons/vendors/flat__star.svg" width="24px" />
 </h2>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «placeholder»** <!-- {#key-feat-main} -->
@@ -246,7 +246,7 @@
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Key Features</i></summary>
+  <summary><i>Collapse Extended ⚊ KEY FEATURES</i></summary>
 
 ---
 
