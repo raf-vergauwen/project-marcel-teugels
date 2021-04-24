@@ -100,10 +100,13 @@
 ---
 
 - [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **KEY FEATURES** <!-- {#root-started} -->](#Getting_Started)
-- [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
-- [<img src="./assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
-- [<img src="./assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
+- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
+- [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+
+  - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
+  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
+  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
+
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
