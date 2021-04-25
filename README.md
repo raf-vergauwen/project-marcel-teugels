@@ -118,7 +118,7 @@
 
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
-  - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; _Git & Github_ ](#Git_&_Github)
+  - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; _Git & Github_](#Git_&_Github)
   - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; _Architecture & Layout_ &nbsp; <img src="./assets/media/icons/vendors/flat__blueprint.svg" width="16px" />](#Architecture_&_Layout)
   - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; _Technology Stack & Tools_ &nbsp; <img src="./assets/media/icons/vendors/flat__customer-support.svg" width="16px" />](#Technology_Stack_&_Tools)
   - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; _Roadmap & Changelog_ &nbsp; <img src="./assets/media/icons/vendors/flat__notebook.svg" width="16px" />](#Roadmap_&_Changelog)
