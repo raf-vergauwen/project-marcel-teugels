@@ -106,7 +106,7 @@
   - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; **Advanced** <!-- {#root-advanced} -->](#Advanced)
   - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; **Extra** <!-- {#root-extra} -->](#Extra)
 
-- [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
 
   - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
   - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
@@ -114,26 +114,23 @@
 
 - [<img src="./assets/media/icons/vendors/flat__network.svg" width="24px" /> &nbsp; **Version Control**](#Version_Control)
 
-  - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git**](#Git)
   - [<img src="./assets/media/icons/vendors/si__github.svg" width="16px" /> &nbsp; **Github**](#Github)
-  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; **Semantic Versioning**](#Semantic_Versioning)
 
-- [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
+- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
 
   - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
   - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; **Styles**](#Styles)
-  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; **Configuration**](#Configuration)
+  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; **Semver**](#Semver)
 
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
-  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
-  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#Technology_Stack)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Roadmap**](#Roadmap)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **NPM**](#NPM)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Extensions**](#Extensions)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Deployment**](#Deployment)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Release**](#Release)
-  - [<img src="./assets/media/icons/vendors/flat__changelog.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
+  - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git & Github** &nbsp; <img src="./assets/media/icons/vendors/si__github.svg" width="16px" />](#Git_&_Github)
+  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture & Layout** &nbsp; <img src="./assets/media/icons/vendors/flat__blueprint.svg" width="16px" />](#Architecture_&_Layout)
+  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack & Tools** &nbsp; <img src="./assets/media/icons/vendors/flat__customer-support.svg" width="16px" />](#Technology_Stack_&_Tools)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Roadmap & Changelog** &nbsp; <img src="./assets/media/icons/vendors/flat__notebook.svg" width="16px" />](#Roadmap_&_Changelog)
+  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; **Configuration & Settings** &nbsp; <img src="./assets/media/icons/vendors/flat__controls.svg" width="16px" />](#Configuration_&_Settings)
+  - [<img src="./assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; **NPM & Extensions** &nbsp; <img src="./assets/media/icons/vendors/si__visualstudiocode.svg" width="16px" />](#NPM_&_VScode)
+  - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; **Deployment & Release** &nbsp; <img src="./assets/media/icons/vendors/flat__cloud-computing.svg" width="16px" />](#Deployment_&_Release)
 
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
