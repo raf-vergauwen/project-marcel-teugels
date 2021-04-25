@@ -297,11 +297,23 @@
 
 ---
 
-#### Git Prune
+#### Git Config
 
 ```bash
-# GIT PRUNE - Use `prune` to ch
+# If you want to have prune executed with every fetch operation
 $ git config --global fetch.prune true
+```
+
+#### Git Manual
+
+```bash
+# To update the local list of remote branches
+git remote update origin --prune
+```
+
+```bash
+# To show all local and remote branches that (local) Git knows about
+git branch -a
 ```
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «PLACEHOLDER»** <!-- {#prereq-extended} -->
