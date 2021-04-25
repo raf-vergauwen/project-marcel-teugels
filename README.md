@@ -101,6 +101,11 @@
 
 - [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
 - [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
+
+  - [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **Essential** <!-- {#root-essential} -->](#Essential)
+  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; **Advanced** <!-- {#root-advanced} -->](#Advanced)
+  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; **Extra** <!-- {#root-extra} -->](#Extra)
+
 - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
 
   - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
@@ -110,14 +115,21 @@
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
-  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#-Technology_Stack)
-  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; **Configuration**](#Configuration)
   - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="16px" /> &nbsp; **Conventions**](#Conventions)
   - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; **Styles**](#Styles)
-  - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
-  - [<img src="./assets/media/icons/vendors/flat__error.svg" width="16px" /> &nbsp; **Testing**](#Testing)
+
+- [<img src="./assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; **General** <!-- {#rootgeneral} -->](#General)
+- 
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git**](#Git)
+  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; **Configuration**](#Configuration)
+  - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
+
+
+
+  - [<img src="./assets/media/icons/vendors/flat__error.svg" width="16px" /> &nbsp; **Testing**](#Testing) B
   - [<img src="./assets/media/icons/vendors/flat__technics.svg" width="16px" /> &nbsp; **Tools**](#Tools)
+
+- [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#Technology_Stack)
 
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
 - [<img src="./assets/media/icons/vendors/flat__changelog.svg" width="24px" /> &nbsp; **Changelog**](#Changelog)
