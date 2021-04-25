@@ -119,12 +119,12 @@
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; _Git & Github_](#Git_&_Github)
-  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; _Architecture & Layout_ &nbsp; <img src="./assets/media/icons/vendors/flat__blueprint.svg" width="16px" />](#Architecture_&_Layout)
-  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; _Technology Stack & Tools_ &nbsp; <img src="./assets/media/icons/vendors/flat__customer-support.svg" width="16px" />](#Technology_Stack_&_Tools)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; _Roadmap & Changelog_ &nbsp; <img src="./assets/media/icons/vendors/flat__notebook.svg" width="16px" />](#Roadmap_&_Changelog)
-  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; _Configuration & Settings_ &nbsp; <img src="./assets/media/icons/vendors/flat__controls.svg" width="16px" />](#Configuration_&_Settings)
-  - [<img src="./assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; _NPM & Extensions_ &nbsp; <img src="./assets/media/icons/vendors/si__visualstudiocode.svg" width="16px" />](#NPM_&_VScode)
-  - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; _Deployment & Release_ &nbsp; <img src="./assets/media/icons/vendors/flat__cloud-computing.svg" width="16px" />](#Deployment_&_Release)
+  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; _Architecture & Layout_](#Architecture_&_Layout)
+  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; _Technology Stack & Tools_](#Technology_Stack_&_Tools)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; _Roadmap & Changelog_](#Roadmap_&_Changelog)
+  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; _Configuration & Settings_](#Configuration_&_Settings)
+  - [<img src="./assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; _NPM & Extensions_](#NPM_&_VScode)
+  - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; _Deployment & Release_](#Deployment_&_Release)
 
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
