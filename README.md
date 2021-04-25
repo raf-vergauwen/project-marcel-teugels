@@ -116,13 +116,7 @@
 
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git**](#Git)
   - [<img src="./assets/media/icons/vendors/si__github.svg" width="16px" /> &nbsp; **Github**](#Github)
-  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; **Versioning**](#Versioning)
-
-- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
-
-  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
-  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#Technology_Stack)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Roadmap**](#Roadmap)
+  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; **Semantic Versioning**](#Semantic_Versioning)
 
 - [<img src="./assets/media/icons/vendors/flat__blueprint.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
 
@@ -130,8 +124,18 @@
   - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; **Styles**](#Styles)
   - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; **Configuration**](#Configuration)
 
+- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
+
+  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture**](#Architecture)
+  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; **Technology Stack**](#Technology_Stack)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Roadmap**](#Roadmap)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **NPM**](#NPM)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Extensions**](#Extensions)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Deployment**](#Deployment)
+  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; **Release**](#Release)
+  - [<img src="./assets/media/icons/vendors/flat__changelog.svg" width="16px" /> &nbsp; **Changelog**](#Changelog)
+
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
-- [<img src="./assets/media/icons/vendors/flat__changelog.svg" width="24px" /> &nbsp; **Changelog**](#Changelog)
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
 
 <br/>
