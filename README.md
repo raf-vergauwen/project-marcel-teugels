@@ -97,30 +97,26 @@
 
 ---
 
-- [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
+- [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](#Table_of_Contents)
+- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](#Key_Features)
 
-  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; **Essential** <!-- {#root-essential} -->](#Essential)
-  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; **Advanced** <!-- {#root-advanced} -->](#Advanced)
-  - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; **Extra** <!-- {#root-extra} -->](#Extra)
+  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#root-essential} -->](#Essential)
+  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#root-advanced} -->](#Advanced)
+  - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#root-extra} -->](#Extra)
 
-- [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->](#Getting_Started)
 
   - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; **Prerequisites** <!-- {#root-prereq} -->](#Prerequisites)
   - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; **Installation** <!-- {#root-install} -->](#Installation)
   - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; **Usage** <!-- {#root-usage} -->](#Usage)
 
-- [<img src="./assets/media/icons/vendors/flat__network.svg" width="24px" /> &nbsp; **Version Control**](#Version_Control)
-
-  - [<img src="./assets/media/icons/vendors/si__github.svg" width="16px" /> &nbsp; **Github**](#Github)
-
-- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
+- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **COMMON CONVENTIONS**](#Common_Conventions)
 
   - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; **Rules**](#Rules)
   - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; **Styles**](#Styles)
   - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; **Semver**](#Semver)
 
-- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
+- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](#Project_Management)
 
   - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; **Git & Github** &nbsp; <img src="./assets/media/icons/vendors/si__github.svg" width="16px" />](#Git_&_Github)
   - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; **Architecture & Layout** &nbsp; <img src="./assets/media/icons/vendors/flat__blueprint.svg" width="16px" />](#Architecture_&_Layout)
@@ -130,8 +126,8 @@
   - [<img src="./assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; **NPM & Extensions** &nbsp; <img src="./assets/media/icons/vendors/si__visualstudiocode.svg" width="16px" />](#NPM_&_VScode)
   - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; **Deployment & Release** &nbsp; <img src="./assets/media/icons/vendors/flat__cloud-computing.svg" width="16px" />](#Deployment_&_Release)
 
-- [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
-- [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
+- [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **AUTHORS**](#Authors)
+- [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **LICENSE**](#License)
 
 <br/>
 
