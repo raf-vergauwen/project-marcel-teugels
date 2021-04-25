@@ -67,8 +67,6 @@
     The website consists out of 2 main parts, a restoration area for regular repairs and a personal section for handmade creations.
     <i/>
   </q>
-  <br/>
-  <br/>
 </div>
 
 <!-- - Validator.js -->
