@@ -107,8 +107,8 @@
 - [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
 
   - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; _Prerequisites_ <!-- {#root-prereq} -->](#Prerequisites)
-  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; \*_Installation_ <!-- {#root-install} -->](#Installation)
-  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _\*Usage_ <!-- {#root-usage} -->](#Usage)
+  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; _Installation_ <!-- {#root-install} -->](#Installation)
+  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _Usage_ <!-- {#root-usage} -->](#Usage)
 
 - [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
 
