@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#F7DF1E">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#0F0E0E">
+>>>>>>> style-main
   <path
     class="logo"
 		id="logo-main"
