@@ -84,12 +84,6 @@
 </h2>
 <br/>
 
-- [<img src="../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](../../docs/toc/table-of-contents/)
-
-  - [<img src="../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](../../docs/toc/table-of-contents/essential/)
-  - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](../../docs/toc/table-of-contents/advanced/)
-  - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#toc-extra} -->](../../docs/toc/table-of-contents/extra/)
-
 - [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](../../docs/toc/key-features/)
 
   - [<img src="../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](../../docs/toc/key-features/essential)
