@@ -98,23 +98,28 @@
 ---
 
 - [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
+
+  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](#Essential)
+  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](#Advanced)
+  - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#root-extra} -->](#Extra)
+
 - [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
 
-  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#root-essential} -->](#Essential)
-  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#root-advanced} -->](#Advanced)
+  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](#Essential)
+  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](#Advanced)
   - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#root-extra} -->](#Extra)
 
 - [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
 
-  - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; _Prerequisites_ <!-- {#root-prereq} -->](#Prerequisites)
-  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; _Installation_ <!-- {#root-install} -->](#Installation)
-  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _Usage_ <!-- {#root-usage} -->](#Usage)
+  - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; _Prerequisites_ <!-- {#started-prereq} -->](#Prerequisites)
+  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; _Installation_ <!-- {#started-install} -->](#Installation)
+  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](#Usage)
 
-- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
+- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions** <!-- {#root-com-convens} -->](#Common_Conventions)
 
-  - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; _Rules_](#Rules)
-  - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; _Styles_](#Styles)
-  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; _Semver_](#Semver)
+  - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](#Rules)
+  - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](#Styles)
+  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](#Semver)
 
 - [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
 
@@ -127,6 +132,11 @@
   - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; _Deployment & Release_](#Deployment_&_Release)
 
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
+
+  - [<img src="./assets/media/icons/vendors/flat__presentation.svg" width="16px" /> &nbsp; _Introduction_](#Introduction)
+  - [<img src="./assets/media/icons/vendors/flat__presentation--2.svg" width="16px" /> &nbsp; _Responsibilities and Abilities_](#Responsibilities_&_Abilities)
+  - [<img src="./assets/media/icons/vendors/flat__communicate.svg" width="16px" /> &nbsp; _Contact Info_](#contact_Info)
+
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
 
 <br/>
