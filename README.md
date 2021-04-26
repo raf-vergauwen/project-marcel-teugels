@@ -43,7 +43,8 @@
     alt="badge: contributors"
     title="contributors"
   />
-</div>
+<div />
+<div align="left"><div/>
 <br />
 <div class="hero__main" align="center">
   <i>"One machine can do the work of 50 ordinary men.</i>
@@ -53,7 +54,7 @@
   <br />
   <br />
   <img
-  src="assets/media/icons/icons__marcel-teugels-logo--improved.svg"
+  src="./assets/media/icons/icons__marcel-teugels-logo--improved.svg"
   alt="marcel teugels logo"
   width="35%"
   />
@@ -67,6 +68,8 @@
     The website consists out of 2 main parts, a restoration area for regular repairs and a personal section for handmade creations.
     <i/>
   </q>
+  <br/>
+  <br/>
 </div>
 
 <!-- - Validator.js -->
@@ -90,44 +93,58 @@
 <br/>
 <br/>
 <h2 class="root-toc" align="center">
-  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
+  <b>TABLE OF CONTENTS</b> &nbsp;
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
 </h2>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «PLACEHOLDER»** <!-- {#toc-main} -->
 
 ---
 
-- [<img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
-- [<img src="./assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
+- [<img src="assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](docs/toc/table-of-contents/)
 
-  - [<img src="./assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#root-essential} -->](#Essential)
-  - [<img src="./assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#root-advanced} -->](#Advanced)
-  - [<img src="./assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#root-extra} -->](#Extra)
+  - [<img src="assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](docs/toc/table-of-contents/essential/)
+  - [<img src="assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](docs/toc/table-of-contents/advanced/)
+  - [<img src="assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#toc-extra} -->](docs/toc/table-of-contents/extra/)
 
-- [<img src="./assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+- [<img src="assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](docs/toc/key-features/)
 
-  - [<img src="./assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; _Prerequisites_ <!-- {#root-prereq} -->](#Prerequisites)
-  - [<img src="./assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; _Installation_ <!-- {#root-install} -->](#Installation)
-  - [<img src="./assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _Usage_ <!-- {#root-usage} -->](#Usage)
+  - [<img src="assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](docs/toc/key-features/essential)
+  - [<img src="assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](docs/toc/key-features/advanced)
+  - [<img src="assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](docs/toc/key-features/extra)
 
-- [<img src="./assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions**](#Common_Conventions)
+- [<img src="assets/media/icons/vendors/flat__power-button.svg" width="32px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->](docs/toc/getting-started/)
 
-  - [<img src="./assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; _Rules_](#Rules)
-  - [<img src="./assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; _Styles_](#Styles)
-  - [<img src="./assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; _Semver_](#Semver)
+  - [<img src="assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; _Prerequisites_ <!-- {#started-prereq} -->](docs/toc/getting-started/prerequisites)
+  - [<img src="assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; _Installation_ <!-- {#started-install} -->](docs/toc/getting-started/installation)
+  - [<img src="assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](docs/toc/getting-started/usage)
 
-- [<img src="./assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
+- [<img src="assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp; **COMMON CONVENTIONS** <!-- {#root-com-convens} -->](docs/toc/common-conventions/)
 
-  - [<img src="./assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; _Git & Github_](#Git_&_Github)
-  - [<img src="./assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; _Architecture & Layout_](#Architecture_&_Layout)
-  - [<img src="./assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; _Technology Stack & Tools_](#Technology_Stack_&_Tools)
-  - [<img src="./assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; _Roadmap & Changelog_](#Roadmap_&_Changelog)
-  - [<img src="./assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; _Configuration & Settings_](#Configuration_&_Settings)
-  - [<img src="./assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; _NPM & Extensions_](#NPM_&_VScode)
-  - [<img src="./assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; _Deployment & Release_](#Deployment_&_Release)
+  - [<img src="assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](docs/toc/common-conventions/rules)
+  - [<img src="assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](docs/toc/common-conventions/styles)
+  - [<img src="assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](docs/toc/common-conventions/semver)
 
-- [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
-- [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
+- [<img src="assets/media/icons/vendors/flat__project-management.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](docs/toc/project-management/)
+
+  - [<img src="assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](docs/toc/project-management/git-&-github/)
+  - [<img src="assets/media/icons/vendors/flat__home.svg" width="24px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](docs/toc/project-management/architecture-&-layout)
+  - [<img src="assets/media/icons/vendors/flat__layers.svg" width="24px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](docs/toc/project-management/technology-stack-&-tools)
+  - [<img src="assets/media/icons/vendors/flat__route.svg" width="24px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](docs/toc/project-management/roadmap-&-changelog)
+  - [<img src="assets/media/icons/vendors/flat__config.svg" width="24px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](docs/toc/project-management/configuration-&-settings)
+  - [<img src="assets/media/icons/vendors/si__npm.svg" width="24px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](docs/toc/project-management/npm-&-extensions)
+  - [<img src="assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](docs/toc/project-management/deployment-&-release)
+
+- [<img src="assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->](docs/toc/authors/)
+
+  - [<img src="assets/media/icons/vendors/flat__presentation.svg" width="24px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](docs/toc/authors/introduction)
+  - [<img src="assets/media/icons/vendors/flat__presentation--2.svg" width="24px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](docs/toc/authors/responsibilities-&-abilities)
+  - [<img src="assets/media/icons/vendors/flat__communicate.svg" width="24px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](docs/toc/authors/contact-info)
+
+- [<img src="assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp; **LICENSE** <!-- {#root-license} -->](docs/toc/license/)
+
+  - [<img src="assets/media/icons/vendors/flat__notebook.svg" width="24px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](docs/toc/license/legal-information)
 
 <br/>
 
@@ -136,7 +153,7 @@
 ---
 
 <details>
-  <summary><i> Collapse Extended ⚊ Table Of Contents </i></summary>
+  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
 
 ---
 
@@ -387,7 +404,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation</i></summary>
 
 ---
 
@@ -541,7 +558,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture</i></summary>
 
 ##### <img src="assets/media/icons/vendors/mit__folder--github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
@@ -1224,7 +1241,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation</i></summary>
 
 ---
 
@@ -1455,7 +1472,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture</i></summary>
 
 #### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
