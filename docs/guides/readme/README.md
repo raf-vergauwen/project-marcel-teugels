@@ -85,7 +85,53 @@
 
 **Subcategory Title 1 Description**
 
-Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+---
+
+- [<img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; **Table of Contents** <!-- {#root-toc} -->](#Table_of_Contents)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](#Essential)
+  - [<img src="../../../assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](#Advanced)
+  - [<img src="../../../assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#toc-extra} -->](#Extra)
+
+- [<img src="../../../assets/media/icons/vendors/flat__star.svg" width="24px" /> &nbsp; **Key Features** <!-- {#root-feat} -->](#Key_Features)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="16px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](#Essential)
+  - [<img src="../../../assets/media/icons/vendors/flat__fast-forward.svg" width="16px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](#Advanced)
+  - [<img src="../../../assets/media/icons/vendors/flat__more.svg" width="16px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](#Extra)
+
+- [<img src="../../../assets/media/icons/vendors/flat__power-button.svg" width="24px" /> &nbsp; **Getting Started** <!-- {#root-started} -->](#Getting_Started)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__list.svg" width="16px" /> &nbsp; _Prerequisites_ <!-- {#started-prereq} -->](#Prerequisites)
+  - [<img src="../../../assets/media/icons/vendors/flat__download.svg" width="16px" /> &nbsp; _Installation_ <!-- {#started-install} -->](#Installation)
+  - [<img src="../../../assets/media/icons/vendors/flat__info.svg" width="16px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](#Usage)
+
+- [<img src="../../../assets/media/icons/vendors/flat__internet.svg" width="24px" /> &nbsp; **Common Conventions** <!-- {#root-com-convens} -->](#Common_Conventions)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__checked.svg" width="16px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](#Rules)
+  - [<img src="../../../assets/media/icons/vendors/flat__magic-wand.svg" width="16px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](#Styles)
+  - [<img src="../../../assets/media/icons/vendors/flat__file.svg" width="16px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](#Semver)
+
+- [<img src="../../../assets/media/icons/vendors/flat__project-management.svg" width="24px" /> &nbsp; **Project Management** <!-- {#root-project-mgmt} -->](#Project_Management)
+
+  - [<img src="../../../assets/media/icons/vendors/si__git.svg" width="16px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](#Git_&_Github)
+  - [<img src="../../../assets/media/icons/vendors/flat__home.svg" width="16px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](#Architecture_&_Layout)
+  - [<img src="../../../assets/media/icons/vendors/flat__layers.svg" width="16px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](#Technology_Stack_&_Tools)
+  - [<img src="../../../assets/media/icons/vendors/flat__route.svg" width="16px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](#Roadmap_&_Changelog)
+  - [<img src="../../../assets/media/icons/vendors/flat__config.svg" width="16px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](#Configuration_&_Settings)
+  - [<img src="../../../assets/media/icons/vendors/si__npm.svg" width="16px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](#NPM_&_VScode)
+  - [<img src="../../../assets/media/icons/vendors/flat__shuttle.svg" width="16px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](#Deployment_&_Release)
+
+- [<img src="../../../assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors** <!-- {#root-authors} -->](#Authors)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__presentation.svg" width="16px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](#Introduction)
+  - [<img src="../../../assets/media/icons/vendors/flat__presentation--2.svg" width="16px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](#Responsibilities_&_Abilities)
+  - [<img src="../../../assets/media/icons/vendors/flat__communicate.svg" width="16px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](#contact_Info)
+
+- [<img src="../../../assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License** <!-- {#root-license} -->](#License)
+
+  - [<img src="../../../assets/media/icons/vendors/flat__notebook.svg" width="16px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](#legal_information)
+
+<br/>
 
 ---
 
@@ -101,59 +147,3 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 
 </details>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<h2 class="heading__subcat-title--root---v02" align="center">
-  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
-  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
-</h2>
-
-**Subcategory Title 2 Description**
-
-Ipsum in amet enim pariatur. Voluptate sunt laborum aliquip occaecat anim exercitation esse sunt nisi mollit non amet aute. Dolor pariatur esse minim laboris consectetur. Sunt consequat sint eiusmod labore ex ut nulla. Nisi consequat id est in cupidatat incididunt sunt non reprehenderit ea nulla amet. Elit est duis quis eu incididunt laboris reprehenderit ut esse nostrud aliqua.
-
----
-
-<details>
-  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
-
----
-
-<br/>
-
-Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irure tempor sint ad occaecat sit ut sint. Aliquip incididunt aliquip elit commodo cupidatat dolore. Consequat nostrud duis dolor et voluptate nostrud do duis. Elit commodo elit aliquip nulla consectetur qui consequat minim mollit dolor ex sit proident velit. Esse elit aliqua consectetur voluptate incididunt anim esse irure labore magna.
-
-<br/>
-
-</details>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<h2 class="heading__subcat-title--root---v03" align="center">
-  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
-  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
-</h2>
-
-**Subcategory Title 3 Description**
-
-Consequat consectetur quis id veniam. Mollit laborum anim aute ut duis adipisicing exercitation consequat. Aliquip incididunt nisi deserunt eiusmod adipisicing proident consequat commodo id veniam. Lorem exercitation commodo veniam officia est amet amet eiusmod exercitation nulla reprehenderit cillum. Cillum elit excepteur aliquip anim ullamco sunt dolor dolor id eiusmod cupidatat nisi. Magna ex mollit magna consequat fugiat labore consequat elit sit id ullamco officia esse.
-
----
-
-<details>
-  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
-
----
-
-<br/>
-
-Consectetur incididunt velit tempor veniam nostrud culpa minim enim proident aliqua fugiat officia ut. Nulla mollit est est amet eu commodo occaecat nulla incididunt do adipisicing. Aute ut non amet incididunt incididunt. Est quis consequat veniam elit eu. Ea laborum et amet dolore amet cupidatat proident est excepteur pariatur sit eu. Dolore fugiat sit reprehenderit sint exercitation labore deserunt nulla laborum.
-
-<br/>
