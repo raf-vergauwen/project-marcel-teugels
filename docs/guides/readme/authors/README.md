@@ -10,7 +10,7 @@
   <br />
   <br />
   <img
-  src="/assets/media/images/vendors/wf__hero-image--1200px.png"
+  src="https://wireflow.co/static/media/2.86643db5.svg"
   alt="placeholder main hero image"
   width="800px"
   />
