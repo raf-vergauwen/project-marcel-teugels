@@ -1,4 +1,6 @@
-# `PLACEHOLDER CATEGORY TITLE`
+<h1 class="hero__title" align="center">
+  <b>PLACEHOLDER CATEGORY TITLE</b>
+</h1>
 
 <div class="hero__main" align="center">
   <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
