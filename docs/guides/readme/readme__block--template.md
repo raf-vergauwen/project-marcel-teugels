@@ -31,7 +31,7 @@
 <br/>
 <br/>
 <h2 class="root-subcat-1" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="./assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
@@ -41,7 +41,7 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <h2 class="root-subcat-2" align="center">
-  <img src="./assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="./assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irure tempor sint ad occaecat sit ut sint. Aliquip incididunt aliquip elit commodo cupidatat dolore. Consequat nostrud duis dolor et voluptate nostrud do duis. Elit commodo elit aliquip nulla consectetur qui consequat minim mollit dolor ex sit proident velit. Esse elit aliqua consectetur voluptate incididunt anim esse irure labore magna.
@@ -51,7 +51,7 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <h2 class="root-subcat-3" align="center">
-  <img src="./assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="./assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 Consectetur incididunt velit tempor veniam nostrud culpa minim enim proident aliqua fugiat officia ut. Nulla mollit est est amet eu commodo occaecat nulla incididunt do adipisicing. Aute ut non amet incididunt incididunt. Est quis consequat veniam elit eu. Ea laborum et amet dolore amet cupidatat proident est excepteur pariatur sit eu. Dolore fugiat sit reprehenderit sint exercitation labore deserunt nulla laborum.
