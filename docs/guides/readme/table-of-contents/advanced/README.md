@@ -1,8 +1,8 @@
-<h1 class="hero__subject--advanced-toc" align="center">
+<h1 class="hero__subject--toc-advanced" align="center">
   <b>PLACEHOLDER CATEGORY TITLE</b>
 </h1>
 
-<div class="hero__main--advanced-toc" align="center">
+<div class="hero__main--toc-advanced" align="center">
   <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
@@ -29,7 +29,7 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--advanced-toc---v01" align="center">
+<h2 class="heading__subcat-title--toc-advanced---v01" align="center">
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
@@ -56,7 +56,7 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--advanced-toc---v02"" align="center">
+<h2 class="heading__subcat-title--toc-advanced---v02"" align="center">
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
@@ -83,7 +83,7 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--advanced-toc---v03" align="center">
+<h2 class="heading__subcat-title--toc-advanced---v03" align="center">
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
