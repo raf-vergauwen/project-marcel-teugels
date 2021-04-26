@@ -55,7 +55,7 @@
   <br />
   <br />
   <img
-  src="../../.../../../assets/media/icons/icons__marcel-teugels-logo--improved.svg"
+  src="../../../assets/media/icons/icons__marcel-teugels-logo--improved.svg"
   alt="marcel teugels logo"
   width="35%"
   />
@@ -107,9 +107,9 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <h2 class="heading__subcat-title--root---v02" align="center">
-  <img src="../../../assets//media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
   <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
-  <img src="../../../assets//media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 **Subcategory Title 2 Description**
@@ -136,9 +136,9 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <h2 class="heading__subcat-title--root---v03" align="center">
-  <img src="../../../assets//media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
   <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
-  <img src="../../../assets//media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 **Subcategory Title 3 Description**
