@@ -93,7 +93,9 @@
 <br/>
 <br/>
 <h2 class="root-toc" align="center">
-  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
+  <b>TABLE OF CONTENTS</b> &nbsp;
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
 </h2>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **MAIN CONTENT ⚊ «PLACEHOLDER»** <!-- {#toc-main} -->

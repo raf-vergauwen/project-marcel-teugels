@@ -1,5 +1,7 @@
 <h1 class="hero__subject--root" align="center">
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
   <b>PLACEHOLDER CATEGORY TITLE</b>
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
 </h1>
 
 <div class="hero__main--root" align="center">
@@ -30,7 +32,9 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--root---v01" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 **Subcategory Title 1 Description**
@@ -56,8 +60,10 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--root---v02"" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+<h2 class="heading__subcat-title--root---v02" align="center">
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 **Subcategory Title 2 Description**
@@ -84,7 +90,9 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <h2 class="heading__subcat-title--root---v03" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
 **Subcategory Title 3 Description**
