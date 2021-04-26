@@ -23,6 +23,8 @@
 
 <br/>
 <br/>
+<br/>
+<br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
@@ -49,6 +51,8 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 
 <br/>
 <br/>
+<br/>
+<br/>
 <h2 class="heading__subcat-title--placeholder---v02"" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
@@ -73,6 +77,8 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 
 </details>
 
+<br/>
+<br/>
 <br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v03" align="center">
