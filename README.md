@@ -122,7 +122,7 @@
 
   - [<img src="assets/media/icons/vendors/flat__notebook.svg" width="24px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](docs/toc/license/legal-information)
 
-<br/>
+<!-- <br/>
 
 ---
 
@@ -137,4 +137,4 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 
 <br/>
 
-</details>
+</details> -->
