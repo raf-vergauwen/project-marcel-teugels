@@ -2,7 +2,7 @@
   ⚒️ &nbsp; <b>PROJECT MARCEL TEUGELS</b> &nbsp; 🛠️
 </h1>
 <br />
-<div class="hero__github-badges" align="center">
+<div class="hero__github-badges" align="left">
   <img
     src="https://img.shields.io/badge/License-mit__blue?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
     alt="badge: license mit"
@@ -43,6 +43,7 @@
     alt="badge: contributors"
     title="contributors"
   />
+<div />
 
 <br />
 <div class="hero__main" align="center">
@@ -142,7 +143,8 @@
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License** <!-- {#root-license} -->](#License)
 
   - [<img src="./assets/media/icons/vendors/flat__notebook.svg" width="16px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](#legal_information)
-    <br/>
+
+<br/>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «PLACEHOLDER»** <!-- {#toc-extended} -->
 
