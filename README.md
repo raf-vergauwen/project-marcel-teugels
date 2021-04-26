@@ -2,7 +2,7 @@
   ⚒️ &nbsp; <b>PROJECT MARCEL TEUGELS</b> &nbsp; 🛠️
 </h1>
 <br />
-<!-- <div class="hero__github-badges" align="left"> -->
+<div class="hero__github-badges" align="center">
   <img
     src="https://img.shields.io/badge/License-mit__blue?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
     alt="badge: license mit"
@@ -43,8 +43,8 @@
     alt="badge: contributors"
     title="contributors"
   />
-<!-- <div /> -->
-
+<div />
+<div align="left"><div/>
 <br />
 <div class="hero__main" align="center">
   <i>"One machine can do the work of 50 ordinary men.</i>
