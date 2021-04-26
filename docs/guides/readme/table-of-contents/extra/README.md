@@ -1,21 +1,17 @@
-<h1 class="hero__subject--toc-extra" align="center">
-  <b>PLACEHOLDER CATEGORY TITLE</b>
+<h1 class="hero__subject--placeholder" align="center">
+  <b>PLACEHOLDER CATEGORY SUBJECT</b>
 </h1>
 
-<div class="hero__main--toc-extra" align="center">
+<div class="hero__main--placeholder" align="center">
   <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
   <br />
-  <br />
-  <br />
   <img
-  src="/assets/media/images/vendors/wf__hero-image--1200px.png"
+  src="https://wireflow.co/static/media/2.86643db5.svg"
   alt="placeholder main hero image"
   width="800px"
   />
-  <br />
-  <br />
   <br />
   <br />
   <q>
@@ -28,14 +24,14 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<h2 class="heading__subcat-title--toc-extra---v01" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+<h2 class="heading__subcat-title--placeholder---v01" align="center">
+  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-
-**Subcategory Title 1 Description**
+<br/>
 
 Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+
+<br/>
 
 ---
 
@@ -55,14 +51,14 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <br/>
-<br/>
-<h2 class="heading__subcat-title--toc-extra---v02"" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+<h2 class="heading__subcat-title--placeholder---v02"" align="center">
+  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-
-**Subcategory Title 2 Description**
+<br/>
 
 Ipsum in amet enim pariatur. Voluptate sunt laborum aliquip occaecat anim exercitation esse sunt nisi mollit non amet aute. Dolor pariatur esse minim laboris consectetur. Sunt consequat sint eiusmod labore ex ut nulla. Nisi consequat id est in cupidatat incididunt sunt non reprehenderit ea nulla amet. Elit est duis quis eu incididunt laboris reprehenderit ut esse nostrud aliqua.
+
+<br/>
 
 ---
 
@@ -82,14 +78,14 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <br/>
-<br/>
-<h2 class="heading__subcat-title--toc-extra---v03" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+<h2 class="heading__subcat-title--placeholder---v03" align="center">
+  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-
-**Subcategory Title 3 Description**
+<br/>
 
 Consequat consectetur quis id veniam. Mollit laborum anim aute ut duis adipisicing exercitation consequat. Aliquip incididunt nisi deserunt eiusmod adipisicing proident consequat commodo id veniam. Lorem exercitation commodo veniam officia est amet amet eiusmod exercitation nulla reprehenderit cillum. Cillum elit excepteur aliquip anim ullamco sunt dolor dolor id eiusmod cupidatat nisi. Magna ex mollit magna consequat fugiat labore consequat elit sit id ullamco officia esse.
+
+<br/>
 
 ---
 
