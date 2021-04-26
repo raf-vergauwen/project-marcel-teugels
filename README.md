@@ -134,12 +134,12 @@
 - [<img src="./assets/media/icons/vendors/flat__users.svg" width="24px" /> &nbsp; **Authors**](#Authors)
 
   - [<img src="./assets/media/icons/vendors/flat__presentation.svg" width="16px" /> &nbsp; _Introduction_](#Introduction)
-  - [<img src="./assets/media/icons/vendors/flat__presentation--2.svg" width="16px" /> &nbsp; _Responsibilities and Abilities_](#Responsibilities_&_Abilities)
+  - [<img src="./assets/media/icons/vendors/flat__presentation--2.svg" width="16px" /> &nbsp; _Responsibilities & Abilities_](#Responsibilities_&_Abilities)
   - [<img src="./assets/media/icons/vendors/flat__communicate.svg" width="16px" /> &nbsp; _Contact Info_](#contact_Info)
 
 - [<img src="./assets/media/icons/vendors/flat__diploma.svg" width="24px" /> &nbsp; **License**](#License)
-
-<br/>
+- - [<img src="./assets/media/icons/vendors/flat__notebook.svg" width="16px" /> &nbsp; _Legal Information_](#legal_information)
+    <br/>
 
 ### <img src="./assets/media/icons/vendors/flat__menu.svg" width="20px" /> &nbsp; **EXTENDED CONTENT ⚊ «PLACEHOLDER»** <!-- {#toc-extended} -->
 
