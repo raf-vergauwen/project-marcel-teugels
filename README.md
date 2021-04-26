@@ -45,7 +45,7 @@
   />
 </div>
 <br />
-<div class="hero__main" align="center">
+<div class="hero__main" align="center"></div>
   <i>"One machine can do the work of 50 ordinary men.</i>
   <i>No machine can do the work of one extraordinary men."</i>
   <br />
