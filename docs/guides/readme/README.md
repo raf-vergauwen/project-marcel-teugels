@@ -1,20 +1,63 @@
 <h1 class="hero__subject--root" align="center">
-  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER CATEGORY TITLE</b>
-  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
+  ⚒️ &nbsp; <b>PROJECT MARCEL TEUGELS</b> &nbsp; 🛠️
 </h1>
+<br />
+<div class="hero__github-badges" align="center">
+  <img
+    src="https://img.shields.io/badge/License-mit__blue?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: license mit"
+    title="license: mit"
+  />
+  <img
+    src="https://img.shields.io/badge/Release-none-yellow?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: release version"
+    title="release version"
+  />
+  <img
+    src="https://img.shields.io/badge/Tags-none-yellow?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: tags"
+    title="tags"
+  />
+  <img
+    src="https://img.shields.io/badge/Commits-100-whitesmoke?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: commits"
+    title="commits"
+  />
+  <img
+    src="https://img.shields.io/badge/Forks-0-whitesmoke?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: forks"
+    title="forks"
+  />
+  <img
+    src="https://img.shields.io/badge/Stars-5-whitesmoke?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: stargazers"
+    title="stargazers"
+  />
+  <img
+    src="https://img.shields.io/badge/Watchers-5-whitesmoke?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: watchers"
+    title="watchers"
+  />
+  <img
+    src="https://img.shields.io/badge/Contributors-5-whitesmoke?labelColor=181717&style=flat&logo=Github&logoColor=#181717"
+    alt="badge: contributors"
+    title="contributors"
+  />
+<div />
+<div align="left"><div/>
+<br />
 
 <div class="hero__main--root" align="center">
-  <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
-  <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
+  <i>"One machine can do the work of 50 ordinary men.</i>
+  <i>No machine can do the work of one extraordinary men."</i>
   <br />
   <br />
   <br />
   <br />
   <img
-  src="/assets/media/images/vendors/wf__hero-image--1200px.png"
-  alt="placeholder main hero image"
-  width="800px"
+  src="assets/media/icons/icons__marcel-teugels-logo--improved.svg"
+  alt="marcel teugels logo"
+  width="35%"
   />
   <br />
   <br />
@@ -22,9 +65,12 @@
   <br />
   <q>
     <i>
-    Nostrud Lorem tempor anim aliquip minim officia labore culpa adipisicing excepteur fugiat. Ut eu laborum culpa dolor aliquip. Culpa occaecat excepteur proident est ullamco cillum anim deserunt cupidatat culpa sint voluptate commodo esse. Proident velit tempor velit nisi cupidatat. Qui velit tempor irure ullamco sint ad deserunt nulla nulla est dolor irure.
+    A personal website for Marcel Teugels, a young passionate blacksmith who mainly deals with restoration and handmade assignments.
+    The website consists out of 2 main parts, a restoration area for regular repairs and a personal section for handmade creations.
     <i/>
   </q>
+  <br/>
+  <br/>
 </div>
 
 <br/>
@@ -32,9 +78,9 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--root---v01" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" /> &nbsp;
+  <b>TABLE OF CONTENTS</b> &nbsp;
+  <img src="./assets/media/icons/vendors/flat__bookmark--2.svg" width="24px" />
 </h2>
 
 **Subcategory Title 1 Description**
