@@ -44,7 +44,7 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 ---
 
 <details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
 
 ---
 
@@ -73,7 +73,7 @@ Ipsum in amet enim pariatur. Voluptate sunt laborum aliquip occaecat anim exerci
 ---
 
 <details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
 
 ---
 
@@ -102,7 +102,7 @@ Consequat consectetur quis id veniam. Mollit laborum anim aute ut duis adipisici
 ---
 
 <details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
 
 ---
 
