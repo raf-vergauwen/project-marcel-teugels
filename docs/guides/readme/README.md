@@ -1,8 +1,19 @@
-<h1 class="hero__title" align="center">
+<h1 class="hero__title--toc" align="center">
   <b>PLACEHOLDER CATEGORY TITLE</b>
 </h1>
 
-<div class="hero__main" align="center">
+<header class="header">
+  <div class="header__container">
+    <span class="header__logo">Logo</span>
+    <nav class="header__nav main-nav">
+      <a class="main-nav__item" href="#last-spots">Laatste plaatsen</a>
+      <a class="main-nav__item" href="#top-locations">Onze top locaties</a>
+      <a class="main-nav__item" href="#spotlight">In the spotlight</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero__main--toc" align="center">
   <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
@@ -14,7 +25,6 @@
   alt="placeholder main hero image"
   width="800px"
   />
-
   <br />
   <br />
   <br />
