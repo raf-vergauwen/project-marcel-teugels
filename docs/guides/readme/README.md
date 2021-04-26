@@ -87,7 +87,7 @@
 
 ---
 
-- [<img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](/table-of-contents)
+- [<img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](../readme/table-of-contents/README.md)
 
   - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](/table-of-contents/essential/README.md)
   - [<img src="../../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](/table-of-contents/advanced/)
