@@ -34,7 +34,24 @@
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
+**Subcategory Title 1 Description**
+
 Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+
+---
+
+<details>
+  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+
+---
+
+<br/>
+
+Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+
+<br/>
+
+</details>
 
 <br/>
 <br/>
@@ -44,7 +61,22 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
+**Subcategory Title 2 Description**
+
+---
+
+<details>
+  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+
+---
+
+<br/>
+
 Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irure tempor sint ad occaecat sit ut sint. Aliquip incididunt aliquip elit commodo cupidatat dolore. Consequat nostrud duis dolor et voluptate nostrud do duis. Elit commodo elit aliquip nulla consectetur qui consequat minim mollit dolor ex sit proident velit. Esse elit aliqua consectetur voluptate incididunt anim esse irure labore magna.
+
+<br/>
+
+</details>
 
 <br/>
 <br/>
@@ -54,4 +86,17 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
   <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 
+**Subcategory Title 3 Description**
+
+---
+
+<details>
+  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+
+---
+
+<br/>
+
 Consectetur incididunt velit tempor veniam nostrud culpa minim enim proident aliqua fugiat officia ut. Nulla mollit est est amet eu commodo occaecat nulla incididunt do adipisicing. Aute ut non amet incididunt incididunt. Est quis consequat veniam elit eu. Ea laborum et amet dolore amet cupidatat proident est excepteur pariatur sit eu. Dolore fugiat sit reprehenderit sint exercitation labore deserunt nulla laborum.
+
+<br/>

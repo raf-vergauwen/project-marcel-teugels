@@ -136,7 +136,7 @@
 ---
 
 <details>
-  <summary><i> Collapse Extended ⚊ Table Of Contents </i></summary>
+  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
 
 ---
 
@@ -387,7 +387,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation</i></summary>
 
 ---
 
@@ -541,7 +541,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture</i></summary>
 
 ##### <img src="assets/media/icons/vendors/mit__folder--github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
@@ -1224,7 +1224,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Installation </i></summary>
+  <summary><i>Collapse Extended ⚊ Installation</i></summary>
 
 ---
 
@@ -1455,7 +1455,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ---
 
 <details>
-  <summary><i>Collapse Extended ⚊ Architecture </i></summary>
+  <summary><i>Collapse Extended ⚊ Architecture</i></summary>
 
 #### <img src="assets\icons\vendors\mit-folder-github.svg" width="24"> ⚜ **[.github](.github)** ⚜ _Collaborative version control and source code management_
 
