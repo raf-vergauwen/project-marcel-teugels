@@ -7,15 +7,11 @@
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
   <br />
-  <br />
-  <br />
   <img
   src="https://wireflow.co/static/media/2.86643db5.svg"
   alt="placeholder main hero image"
   width="800px"
   />
-  <br />
-  <br />
   <br />
   <br />
   <q>
@@ -30,7 +26,7 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--authors---v01" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" />
 </h2>
 
 **Subcategory Title 1 Description**
@@ -57,7 +53,7 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 <br/>
 <br/>
 <h2 class="heading__subcat-title--authors---v02"" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" />
 </h2>
 
 **Subcategory Title 2 Description**
@@ -84,7 +80,7 @@ Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irur
 <br/>
 <br/>
 <h2 class="heading__subcat-title--authors---v03" align="center">
-  <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="/assets/media/icons/vendors/flat__menu.svg" width="24px" />
+  <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/814/814038.png" width="24px" />
 </h2>
 
 **Subcategory Title 3 Description**

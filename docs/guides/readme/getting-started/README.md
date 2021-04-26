@@ -7,15 +7,11 @@
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
   <br />
-  <br />
-  <br />
   <img
-  src="/assets/media/images/vendors/wf__hero-image--1200px.png"
+  src="https://wireflow.co/static/media/2.86643db5.svg"
   alt="placeholder main hero image"
   width="800px"
   />
-  <br />
-  <br />
   <br />
   <br />
   <q>
