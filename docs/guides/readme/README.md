@@ -83,10 +83,6 @@
   <img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" />
 </h2>
 
-**Subcategory Title 1 Description**
-
----
-
 - [<img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](./../readme/table-of-contents/README.md)
 
   - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](./../readme/table-of-contents/essential/README.md)
