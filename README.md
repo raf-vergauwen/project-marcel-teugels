@@ -84,7 +84,7 @@
 
 - [<img src="assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](docs/toc/key-features/)
 
-  - [<img src="assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](docs/toc/key-features/essential)
+  - [<img src="assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](docs/toc/key-features/essential)
   - [<img src="assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](docs/toc/key-features/advanced)
   - [<img src="assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](docs/toc/key-features/extra)
 
@@ -119,20 +119,3 @@
 - [<img src="assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp; **LICENSE** <!-- {#root-license} -->](docs/toc/license/)
 
   - [<img src="assets/media/icons/vendors/flat__notebook.svg" width="24px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](docs/toc/license/legal-information)
-
-<!-- <br/>
-
----
-
-<details>
-  <summary><b>Subject Extended ⚊ Placeholder title</b></summary>
-
----
-
-<br/>
-
-Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
-
-<br/>
-
-</details> -->
