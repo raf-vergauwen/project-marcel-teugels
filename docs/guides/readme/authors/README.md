@@ -1,5 +1,5 @@
 <h1 class="hero__subject--placeholder" align="center">
-  <b>PLACEHOLDER CATEGORY TITLE</b>
+  <b>PLACEHOLDER CATEGORY SUBJECT</b>
 </h1>
 
 <div class="hero__main--placeholder" align="center">
