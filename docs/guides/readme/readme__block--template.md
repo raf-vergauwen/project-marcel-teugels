@@ -1,6 +1,6 @@
 # `PLACEHOLDER CATEGORY TITLE`
 
-<img src="/assets/media/images/vendors/wf__hero-image--1200px.png" width="35%"/>
+<img src="/assets/media/images/vendors/wf__hero-image--1200px.png" width="50%"/>
 
 ## `PLACEHOLDER SUBCATEGORY TITLE 1`
 
