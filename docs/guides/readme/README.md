@@ -89,9 +89,9 @@
 
 - [<img src="../../../assets/media/icons/vendors/flat__bookmark--2.svg" width="32px" /> &nbsp; **TABLE OF CONTENTS** <!-- {#root-toc} -->](/table-of-contents)
 
-  - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](/table-of-contents/essential)
-  - [<img src="../../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](/table-of-contents/advanced)
-  - [<img src="../../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#toc-extra} -->](/table-of-contents/extra)
+  - [<img src="../../../assets/media/icons/vendors/flat__play-button.svg" width="24px" /> &nbsp; _Essential_ <!-- {#toc-essential} -->](/table-of-contents/essential/README.md)
+  - [<img src="../../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#toc-advanced} -->](/table-of-contents/advanced/)
+  - [<img src="../../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#toc-extra} -->](/table-of-contents/extra/)
 
 - [<img src="../../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](#Key_Features)
 
