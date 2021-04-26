@@ -43,9 +43,9 @@
     alt="badge: contributors"
     title="contributors"
   />
-</div>
+
 <br />
-<div class="hero__main" align="center"></div>
+<div class="hero__main" align="center">
   <i>"One machine can do the work of 50 ordinary men.</i>
   <i>No machine can do the work of one extraordinary men."</i>
   <br />
@@ -67,6 +67,8 @@
     The website consists out of 2 main parts, a restoration area for regular repairs and a personal section for handmade creations.
     <i/>
   </q>
+  <br/>
+  <br/>
 </div>
 
 <!-- - Validator.js -->
