@@ -1,5 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
-  <b>LICENSE/LEGAL-INFORMATION</b>
+  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp;
+  <b>LICENSE/LEGAL-INFORMATION</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">
@@ -7,7 +9,7 @@
   <br />
   <br />
   <img
-  src="https://wireflow.co/static/media/2.86643db5.svg"
+  src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg"
   alt="placeholder main hero image"
   width="800px"
   />
@@ -24,9 +26,9 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp;
-  <b>MIT LICENSE</b> &nbsp;
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
+  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="24px" /> &nbsp;
+  <b>MIT LICENSE</b> &nbsp; 
+  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="24px" />
 </h2>
 <br/>
 
