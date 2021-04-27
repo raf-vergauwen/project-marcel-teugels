@@ -33,7 +33,7 @@
 <br/>
 <h2 class="heading__subcat-title--styles---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <b>STYLES</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>

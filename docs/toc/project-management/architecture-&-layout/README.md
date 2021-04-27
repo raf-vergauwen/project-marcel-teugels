@@ -1,6 +1,6 @@
 <h1 class="hero__subject--architecture-layout" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>PROJECT-MANAGEMENT/ARCHITECTURE</b> &nbsp;
+  <b>PROJECT-MANAGEMENT/ARCHITECTURE-&-LAYOUT</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__home.svg" width="32px" />
 </h1>
 
@@ -33,7 +33,7 @@
 <br/>
 <h2 class="heading__subcat-title--architecture-layout---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <b>ARCHITECTURE-&-LAYOUT</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>

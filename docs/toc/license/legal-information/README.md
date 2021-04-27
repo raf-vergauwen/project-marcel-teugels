@@ -31,7 +31,7 @@
 <br/>
 <h2 class="heading__subcat-title--legal-info---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>MIT LICENSE</b> &nbsp;
+  <b>LEGAL-INFORMATION</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>

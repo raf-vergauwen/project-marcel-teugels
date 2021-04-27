@@ -1,19 +1,19 @@
-<h1 class="hero__subject--advanced" align="center">
+<h1 class="hero__subject--extra" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>KEY-FEATURES/ADVANCED</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__fast-forward.svg" width="32px" />
+  <b>FEATURES/EXTRA</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__more.svg" width="32px" />
 </h1>
 
-<div class="hero__main--advanced" align="center">
+<div class="hero__main--extra" align="center">
   <i>
-  "All the advanced key-features."
+  "All the extra features."
   </i>
   <br />
   <br />
   <br />
   <br />
   <img
-  src="../../../../assets/media/icons/vendors/flat__fast-forward.svg"
+  src="../../../../assets/media/icons/vendors/flat__more.svg"
   alt="placeholder main hero image"
   width="300px"
   />
@@ -31,9 +31,9 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--advanced---v01" align="center">
+<h2 class="heading__subcat-title--extra---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <b>EXTRA</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>

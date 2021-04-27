@@ -83,11 +83,11 @@
 </h2>
 <br/>
 
-- [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](../../docs/toc/key-features)
+- [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **FEATURES** <!-- {#root-feat} -->](../../docs/toc/features)
 
-  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](../../docs/toc/key-features/essential)
-  - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](../../docs/toc/key-features/advanced)
-  - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](../../docs/toc/key-features/extra)
+  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](../../docs/toc/features/essential)
+  - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](../../docs/toc/features/advanced)
+  - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](../../docs/toc/features/extra)
 
 - [<img src="../../assets/media/icons/vendors/flat__power-button.svg" width="32px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->](../../docs/toc/getting-started)
 

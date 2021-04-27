@@ -1,19 +1,19 @@
-<h1 class="hero__subject--essential" align="center">
+<h1 class="hero__subject--advanced" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>KEY-FEATURES/ESSENTIAL</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__play-button--2.svg" width="32px" />
+  <b>FEATURES/ADVANCED</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__fast-forward.svg" width="32px" />
 </h1>
 
-<div class="hero__main--essential" align="center">
+<div class="hero__main--advanced" align="center">
   <i>
-  "All the essential key-features."
+  "All the advanced features."
   </i>
   <br />
   <br />
   <br />
   <br />
   <img
-  src="../../../../assets/media/icons/vendors/flat__play-button--2.svg"
+  src="../../../../assets/media/icons/vendors/flat__fast-forward.svg"
   alt="placeholder main hero image"
   width="300px"
   />
@@ -31,9 +31,9 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--essential---v01" align="center">
+<h2 class="heading__subcat-title--advanced---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <b>ADVANCED</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>
