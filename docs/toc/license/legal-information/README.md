@@ -1,10 +1,10 @@
-<h1 class="hero__subject--placeholder" align="center">
+<h1 class="hero__subject--legal-info" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp;
   <b>LICENSE/LEGAL-INFORMATION</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__notebook.svg" width="32px" />
 </h1>
 
-<div class="hero__main--placeholder" align="center">
+<div class="hero__main--legal-info" align="center">
   <i>"A software license is a legal instrument governing the use or redistribution of software."</i>
   <br />
   <br />
@@ -29,7 +29,7 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--placeholder---v01" align="center">
+<h2 class="heading__subcat-title--legal-info---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="32px" /> &nbsp;
   <b>MIT LICENSE</b> &nbsp; 
   <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="32px" />

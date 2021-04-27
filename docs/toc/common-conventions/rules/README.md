@@ -1,10 +1,10 @@
-<h1 class="hero__subject--placeholder" align="center">
+<h1 class="hero__subject--rules" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp;
   <b>COMMON-CONVENTIONS/RULES</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__checked.svg" width="32px" />
 </h1>
 
-<div class="hero__main--placeholder" align="center">
+<div class="hero__main--rules" align="center">
   <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
   <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
   <br />
@@ -27,7 +27,7 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--placeholder---v01" align="center">
+<h2 class="heading__subcat-title--rules---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
 <br/>
