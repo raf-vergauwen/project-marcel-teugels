@@ -41,12 +41,16 @@
 _A short and simple permissive license with conditions only requiring preservation of copyright and license notices.
 Licensed works, modifications, and larger works may be distributed under different terms and without source code._
 
+<br/>
+
 | **Permissions**                                                                             | **Conditions**                                                                                           | **Limitations**                                                                      |
 | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Commercial use | <img src="../../../../assets/media/icons/vendors/b__circle-fill--blue.svg"> License and copyright notice | <img src="../../../../assets/media/icons/vendors/b__circle-fill--red.svg"> Liability |
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Distribution   |                                                                                                          | <img src="../../../../assets/media/icons/vendors/b__circle-fill--red.svg"> Warranty  |
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Modification   |                                                                                                          |                                                                                      |
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Private use    |                                                                                                          |                                                                                      |
+
+<br/>
 
 Copyright (c) [2020] [Raf Vergauwen]
 
