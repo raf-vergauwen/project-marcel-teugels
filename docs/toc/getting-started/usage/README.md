@@ -5,7 +5,7 @@
 </h1>
 <div class="hero__main--usage" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "The website's usage explained."
   </i>
   <br />
   <br />

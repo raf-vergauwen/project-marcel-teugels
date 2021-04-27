@@ -6,7 +6,7 @@
 
 <div class="hero__main--introduction" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "A general and short description of all the authors."
   </i>
   <br />
   <br />

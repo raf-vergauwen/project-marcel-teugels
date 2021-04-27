@@ -6,7 +6,7 @@
 
 <div class="hero__main--essential" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All the essential key-features."
   </i>
   <br />
   <br />

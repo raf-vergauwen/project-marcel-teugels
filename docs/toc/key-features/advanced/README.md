@@ -6,7 +6,7 @@
 
 <div class="hero__main--advanced" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All the advanced key-features."
   </i>
   <br />
   <br />

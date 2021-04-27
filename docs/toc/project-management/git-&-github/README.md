@@ -6,7 +6,7 @@
 
 <div class="hero__main--git" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All you need to now about version control."
   </i>
   <br />
   <br />

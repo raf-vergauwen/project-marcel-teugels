@@ -5,7 +5,7 @@
 </h1>
 <div class="hero__main--deployment" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "A guide to deployment and release."
   </i>
   <br />
   <br />

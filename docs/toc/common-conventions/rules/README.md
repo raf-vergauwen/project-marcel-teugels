@@ -6,7 +6,7 @@
 
 <div class="hero__main--rules" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "A collection of the the project rules."
   </i>
   <br />
   <br />

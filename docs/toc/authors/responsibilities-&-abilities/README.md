@@ -6,7 +6,7 @@
 
 <div class="hero__main--responsibilities" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "A list of all the responsibilities and abilities of all the team members."
   </i>
   <br />
   <br />

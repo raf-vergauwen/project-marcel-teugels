@@ -6,7 +6,7 @@
 
 <div class="hero__main--installation" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "The project installation guide."
   </i>
   <br />
   <br />

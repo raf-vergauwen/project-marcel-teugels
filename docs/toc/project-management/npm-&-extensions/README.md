@@ -5,7 +5,7 @@
 </h1>
 <div class="hero__main--npm" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All the extentions and packages used in this project."
   </i>
   <br />
   <br />

@@ -6,7 +6,7 @@
 
 <div class="hero__main--roadmap" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "The roadmap and changelog of this project."
   </i>
   <br />
   <br />

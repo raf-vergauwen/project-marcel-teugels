@@ -6,7 +6,7 @@
 
 <div class="hero__main--architecture-layout" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "The architecture, layout, structure of the project."
   </i>
   <br />
   <br />

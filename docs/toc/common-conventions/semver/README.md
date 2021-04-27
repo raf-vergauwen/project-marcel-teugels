@@ -6,7 +6,7 @@
 
 <div class="hero__main--semver" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "Semantic versioning lets you keep track of all the changes and progress you make."
   </i>
   <br />
   <br />

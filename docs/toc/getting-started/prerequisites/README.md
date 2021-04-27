@@ -6,7 +6,7 @@
 
 <div class="hero__main--prerequisites" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All the project prerequisites are collected here"
   </i>
   <br />
   <br />

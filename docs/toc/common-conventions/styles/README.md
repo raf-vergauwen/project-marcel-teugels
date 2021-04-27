@@ -6,7 +6,7 @@
 
 <div class="hero__main--styles" align="center">
   <i>
-  "Est commodo nisi culpa minim esse occaecat officia non."
+  "All the style and design choices."
   </i>
   <br />
   <br />
