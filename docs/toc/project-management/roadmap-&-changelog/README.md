@@ -45,13 +45,17 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 ---
 
 <details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+  <summary><i>Extended ⚊ Roadmap & Changelog</i></summary>
 
 ---
 
 <br/>
 
-Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+Ullamco ipsum aliqua tempor labore qui nulla excepteur minim cupidatat eu. Nostrud voluptate elit do nisi eu pariatur quis veniam consequat Lorem culpa incididunt. Esse deserunt excepteur duis adipisicing nisi ex.
+
+Incididunt irure labore nostrud cillum enim voluptate nostrud sunt. Pariatur deserunt sit voluptate adipisicing qui ut nostrud velit enim culpa proident voluptate esse qui. Excepteur duis quis deserunt magna dolor quis dolor enim non nisi. Sunt anim nostrud aliquip sint officia veniam excepteur Lorem sint tempor ad ipsum. Culpa dolore sunt irure consectetur veniam incididunt dolore et aute cillum. Et id minim enim incididunt eu magna mollit labore enim incididunt tempor veniam cupidatat esse.
+
+Sit dolor et aliquip consequat consequat dolor ut. Nostrud reprehenderit excepteur non qui nisi et consequat ullamco duis fugiat veniam officia. Labore irure ut eu consequat deserunt adipisicing fugiat exercitation ex id sit minim officia. Lorem excepteur quis excepteur ullamco nostrud.
 
 <br/>
 

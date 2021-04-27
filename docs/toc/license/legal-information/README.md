@@ -48,17 +48,6 @@ Licensed works, modifications, and larger works may be distributed under differe
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Modification   |                                                                                                          |                                                                                      |
 | <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Private use    |                                                                                                          |                                                                                      |
 
-<br/>
-
----
-
-<details>
-  <summary><i>Subject Extended ⚊ MIT License</i></summary>
-
----
-
-<br/>
-
 Copyright (c) [2020] [Raf Vergauwen]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -78,6 +67,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<br/>
+
+---
+
+<details>
+  <summary><i>Extended ⚊ Legal Information</i></summary>
+
+---
+
+<br/>
+
+Ullamco ipsum aliqua tempor labore qui nulla excepteur minim cupidatat eu. Nostrud voluptate elit do nisi eu pariatur quis veniam consequat Lorem culpa incididunt. Esse deserunt excepteur duis adipisicing nisi ex.
+
+Incididunt irure labore nostrud cillum enim voluptate nostrud sunt. Pariatur deserunt sit voluptate adipisicing qui ut nostrud velit enim culpa proident voluptate esse qui. Excepteur duis quis deserunt magna dolor quis dolor enim non nisi. Sunt anim nostrud aliquip sint officia veniam excepteur Lorem sint tempor ad ipsum. Culpa dolore sunt irure consectetur veniam incididunt dolore et aute cillum. Et id minim enim incididunt eu magna mollit labore enim incididunt tempor veniam cupidatat esse.
+
+Sit dolor et aliquip consequat consequat dolor ut. Nostrud reprehenderit excepteur non qui nisi et consequat ullamco duis fugiat veniam officia. Labore irure ut eu consequat deserunt adipisicing fugiat exercitation ex id sit minim officia. Lorem excepteur quis excepteur ullamco nostrud.
 
 <br/>
 
