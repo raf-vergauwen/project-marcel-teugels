@@ -112,9 +112,9 @@
 
 - [<img src="assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->](docs/toc/authors)
 
-  - [<img src="assets/media/icons/vendors/flat__presentation.svg" width="24px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](docs/toc/authors/introduction)
-  - [<img src="assets/media/icons/vendors/flat__presentation--2.svg" width="24px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](docs/toc/authors/responsibilities-&-abilities)
-  - [<img src="assets/media/icons/vendors/flat__communicate.svg" width="24px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](docs/toc/authors/contact-info)
+  - [<img src="assets/media/icons/vendors/flat__id-card.svg" width="24px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](docs/toc/authors/introduction)
+  - [<img src="assets/media/icons/vendors/flat__agenda.svg" width="24px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](docs/toc/authors/responsibilities-&-abilities)
+  - [<img src="assets/media/icons/vendors/flat__book.svg" width="24px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](docs/toc/authors/contact-info)
 
 - [<img src="assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp; **LICENSE** <!-- {#root-license} -->](docs/toc/license)
 
