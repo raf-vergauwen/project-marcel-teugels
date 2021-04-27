@@ -55,7 +55,7 @@
   <br />
   <br />
   <img
-  src="assets/media/icons/icons__marcel-teugels-logo--improved.svg"
+  src="assets/media/icons/marcel-teugels/icons__marcel-teugels-logo--improved.svg"
   alt="marcel teugels logo"
   width="35%"
   />
