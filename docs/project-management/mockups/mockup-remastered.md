@@ -57,14 +57,14 @@ Uitleg over restoratie-diensten en processen die worden aangeboden.
     - Contact
   - link naar ander deel
 
-- Restoratie houtwerk
+- Restauratie houtwerk
 
   - Meubels
   - Beeldhouwwerk
   - Etnografie
-  - Restoratie smeedwerk
+  - Restauratie smeedwerk
     - Algemeen
-  - Restoratie taxidermie
+  - Restauratie taxidermie
 
 - footer
   - sociale media
