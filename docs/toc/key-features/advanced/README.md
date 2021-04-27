@@ -5,8 +5,11 @@
 </h1>
 
 <div class="hero__main--advanced" align="center">
-  <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
-  <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
+  <i>
+  "Est commodo nisi culpa minim esse occaecat officia non."
+  </i>
+  <br />
+  <br />
   <br />
   <br />
   <img
@@ -14,6 +17,8 @@
   alt="placeholder main hero image"
   width="300px"
   />
+  <br />
+  <br />
   <br />
   <br />
   <q>

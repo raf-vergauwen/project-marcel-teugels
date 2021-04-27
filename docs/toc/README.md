@@ -48,8 +48,9 @@
 <br />
 
 <div class="hero__main--root" align="center">
-  <i>"One machine can do the work of 50 ordinary men.</i>
-  <i>No machine can do the work of one extraordinary men."</i>
+  <i>
+  "One machine can do the work of 50 ordinary men. No machine can do the work of one extraordinary men."
+  </i>
   <br />
   <br />
   <br />

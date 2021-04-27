@@ -6,8 +6,10 @@
 
 <div class="hero__main--contact-info" align="center">
   <i>
-  "information to enable an individual at a place of business to be contacted and includes the name, position name or title, business telephone number, business address, business email or business fax number of the individual"
+  "Information to enable an individual at a place of business to be contacted and includes the name, position name or title, business telephone number, business address, business email or business fax number of the individual."
   </i>
+  <br />
+  <br />
   <br />
   <br />
   <img
@@ -15,6 +17,8 @@
   alt="placeholder main hero image"
   width="300px"
   />
+  <br />
+  <br />
   <br />
   <br />
   <q>
