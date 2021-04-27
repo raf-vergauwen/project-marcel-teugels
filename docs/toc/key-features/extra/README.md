@@ -32,7 +32,9 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--extra---v01" align="center">
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
+  <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>
 
