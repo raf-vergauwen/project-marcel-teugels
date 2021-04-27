@@ -8,11 +8,15 @@
   <i>"A software license is a legal instrument governing the use or redistribution of software."</i>
   <br />
   <br />
+  <br />
+  <br />
   <img
   src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg"
   alt="placeholder main hero image"
-  width="800px"
+  width="600px"
   />
+  <br />
+  <br />
   <br />
   <br />
   <q>
