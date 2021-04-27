@@ -82,40 +82,40 @@
 </h2>
 <br/>
 
-- [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](docs/toc/key-features)
+- [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **KEY FEATURES** <!-- {#root-feat} -->](../..docs/toc/key-features)
 
-  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](docs/toc/key-features/essential)
-  - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](docs/toc/key-features/advanced)
-  - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](docs/toc/key-features/extra)
+  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](../..docs/toc/key-features/essential)
+  - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](../..docs/toc/key-features/advanced)
+  - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](../..docs/toc/key-features/extra)
 
-- [<img src="../../assets/media/icons/vendors/flat__power-button.svg" width="32px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->](docs/toc/getting-started)
+- [<img src="../../assets/media/icons/vendors/flat__power-button.svg" width="32px" /> &nbsp; **GETTING STARTED** <!-- {#root-started} -->](../..docs/toc/getting-started)
 
-  - [<img src="../../assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; _Prerequisites_ <!-- {#started-prereq} -->](docs/toc/getting-started/prerequisites)
-  - [<img src="../../assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; _Installation_ <!-- {#started-install} -->](docs/toc/getting-started/installation)
-  - [<img src="../../assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](docs/toc/getting-started/usage)
+  - [<img src="../../assets/media/icons/vendors/flat__list.svg" width="24px" /> &nbsp; _Prerequisites_ <!-- {#started-prereq} -->](../..docs/toc/getting-started/prerequisites)
+  - [<img src="../../assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; _Installation_ <!-- {#started-install} -->](../..docs/toc/getting-started/installation)
+  - [<img src="../../assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](../..docs/toc/getting-started/usage)
 
-- [<img src="../../assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp; **COMMON CONVENTIONS** <!-- {#root-com-convens} -->](docs/toc/common-conventions)
+- [<img src="../../assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp; **COMMON CONVENTIONS** <!-- {#root-com-convens} -->](../..docs/toc/common-conventions)
 
-  - [<img src="../../assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](docs/toc/common-conventions/rules)
-  - [<img src="../../assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](docs/toc/common-conventions/styles)
-  - [<img src="../../assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](docs/toc/common-conventions/semver)
+  - [<img src="../../assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](../..docs/toc/common-conventions/rules)
+  - [<img src="../../assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](../..docs/toc/common-conventions/styles)
+  - [<img src="../../assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](../..docs/toc/common-conventions/semver)
 
-- [<img src="../../assets/media/icons/vendors/flat__project-management.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](docs/toc/project-management)
+- [<img src="../../assets/media/icons/vendors/flat__project-management.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](../..docs/toc/project-management)
 
-  - [<img src="../../assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](docs/toc/project-management/git-&-github)
-  - [<img src="../../assets/media/icons/vendors/flat__home.svg" width="24px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](docs/toc/project-management/architecture-&-layout)
-  - [<img src="../../assets/media/icons/vendors/flat__layers.svg" width="24px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](docs/toc/project-management/technology-stack-&-tools)
-  - [<img src="../../assets/media/icons/vendors/flat__route.svg" width="24px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](docs/toc/project-management/roadmap-&-changelog)
-  - [<img src="../../assets/media/icons/vendors/flat__config.svg" width="24px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](docs/toc/project-management/configuration-&-settings)
-  - [<img src="../../assets/media/icons/vendors/si__npm.svg" width="24px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](docs/toc/project-management/npm-&-extensions)
-  - [<img src="../../assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](docs/toc/project-management/deployment-&-release)
+  - [<img src="../../assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](../..docs/toc/project-management/git-&-github)
+  - [<img src="../../assets/media/icons/vendors/flat__home.svg" width="24px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](../..docs/toc/project-management/architecture-&-layout)
+  - [<img src="../../assets/media/icons/vendors/flat__layers.svg" width="24px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](../..docs/toc/project-management/technology-stack-&-tools)
+  - [<img src="../../assets/media/icons/vendors/flat__route.svg" width="24px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](../..docs/toc/project-management/roadmap-&-changelog)
+  - [<img src="../../assets/media/icons/vendors/flat__config.svg" width="24px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](../..docs/toc/project-management/configuration-&-settings)
+  - [<img src="../../assets/media/icons/vendors/si__npm.svg" width="24px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](../..docs/toc/project-management/npm-&-extensions)
+  - [<img src="../../assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](../..docs/toc/project-management/deployment-&-release)
 
-- [<img src="../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->](docs/toc/authors)
+- [<img src="../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->](../..docs/toc/authors)
 
-  - [<img src="../../assets/media/icons/vendors/flat__id-card.svg" width="24px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](docs/toc/authors/introduction)
-  - [<img src="../../assets/media/icons/vendors/flat__agenda.svg" width="24px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](docs/toc/authors/responsibilities-&-abilities)
-  - [<img src="../../assets/media/icons/vendors/flat__book.svg" width="24px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](docs/toc/authors/contact-info)
+  - [<img src="../../assets/media/icons/vendors/flat__id-card.svg" width="24px" /> &nbsp; _Introduction_ <!-- {#authors-} -->](../..docs/toc/authors/introduction)
+  - [<img src="../../assets/media/icons/vendors/flat__agenda.svg" width="24px" /> &nbsp; _Responsibilities & Abilities_ <!-- {#authors-respons} -->](../..docs/toc/authors/responsibilities-&-abilities)
+  - [<img src="../../assets/media/icons/vendors/flat__book.svg" width="24px" /> &nbsp; _Contact Info_ <!-- {#authors-contact-info} -->](../..docs/toc/authors/contact-info)
 
-- [<img src="../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp; **LICENSE** <!-- {#root-license} -->](docs/toc/license)
+- [<img src="../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp; **LICENSE** <!-- {#root-license} -->](../..docs/toc/license)
 
-  - [<img src="../../assets/media/icons/vendors/flat__notebook.svg" width="24px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](docs/toc/license/legal-information)
+  - [<img src="../../assets/media/icons/vendors/flat__notebook.svg" width="24px" /> &nbsp; _Legal Information_ <!-- {#license-legal-info} -->](../..docs/toc/license/legal-information)
