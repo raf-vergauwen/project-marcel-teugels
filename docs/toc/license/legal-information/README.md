@@ -1,22 +1,27 @@
-<h1 class="hero__subject--placeholder" align="center">
-  <b>PLACEHOLDER CATEGORY SUBJECT</b>
+<h1 class="hero__subject--legal-info" align="center">
+  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp;
+  <b>LICENSE/LEGAL-INFORMATION</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__notebook.svg" width="32px" />
 </h1>
 
-<div class="hero__main--placeholder" align="center">
-  <i>"Est commodo nisi culpa minim esse occaecat officia non.</i>
-  <i>Velit consequat labore minim sint cupidatat Lorem irure sunt ea ad enim id ut in."</i>
+<div class="hero__main--legal-info" align="center">
+  <i>"A software license is a legal instrument governing the use or redistribution of software."</i>
+  <br />
+  <br />
   <br />
   <br />
   <img
-  src="https://wireflow.co/static/media/2.86643db5.svg"
+  src="../../../../assets/media/icons/vendors/flat__notebook.svg"
   alt="placeholder main hero image"
-  width="800px"
+  width="300px"
   />
+  <br />
+  <br />
   <br />
   <br />
   <q>
     <i>
-    Nostrud Lorem tempor anim aliquip minim officia labore culpa adipisicing excepteur fugiat. Ut eu laborum culpa dolor aliquip. Culpa occaecat excepteur proident est ullamco cillum anim deserunt cupidatat culpa sint voluptate commodo esse. Proident velit tempor velit nisi cupidatat. Qui velit tempor irure ullamco sint ad deserunt nulla nulla est dolor irure.
+    The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility. The Wikipedia and Wikimedia Commons projects use the alternative name Expat License.
     <i/>
   </q>
 </div>
@@ -24,78 +29,66 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--placeholder---v01" align="center">
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 1</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
+<h2 class="heading__subcat-title--legal-info---v01" align="center">
+  <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
+  <b>LEGAL-INFORMATION</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>
 
-Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+**[MIT License](https://choosealicense.com/licenses/mit/)**
+
+_A short and simple permissive license with conditions only requiring preservation of copyright and license notices.
+Licensed works, modifications, and larger works may be distributed under different terms and without source code._
+
+<br/>
+
+| **Permissions**                                                                             | **Conditions**                                                                                           | **Limitations**                                                                      |
+| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Commercial use | <img src="../../../../assets/media/icons/vendors/b__circle-fill--blue.svg"> License and copyright notice | <img src="../../../../assets/media/icons/vendors/b__circle-fill--red.svg"> Liability |
+| <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Distribution   |                                                                                                          | <img src="../../../../assets/media/icons/vendors/b__circle-fill--red.svg"> Warranty  |
+| <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Modification   |                                                                                                          |                                                                                      |
+| <img src="../../../../assets/media/icons/vendors/b__circle-fill--green.svg"> Private use    |                                                                                                          |                                                                                      |
+
+<br/>
+
+Copyright (c) [2020] [Raf Vergauwen]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 <br/>
 
 ---
 
 <details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
+  <summary><i>Extended ⚊ Legal Information</i></summary>
 
 ---
 
 <br/>
 
-Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi incididunt labore dolor id. Voluptate proident tempor incididunt quis consequat nostrud. Aliquip enim magna excepteur aliqua magna. Incididunt enim quis elit cillum deserunt.
+Ullamco ipsum aliqua tempor labore qui nulla excepteur minim cupidatat eu. Nostrud voluptate elit do nisi eu pariatur quis veniam consequat Lorem culpa incididunt. Esse deserunt excepteur duis adipisicing nisi ex.
+
+Incididunt irure labore nostrud cillum enim voluptate nostrud sunt. Pariatur deserunt sit voluptate adipisicing qui ut nostrud velit enim culpa proident voluptate esse qui. Excepteur duis quis deserunt magna dolor quis dolor enim non nisi. Sunt anim nostrud aliquip sint officia veniam excepteur Lorem sint tempor ad ipsum. Culpa dolore sunt irure consectetur veniam incididunt dolore et aute cillum. Et id minim enim incididunt eu magna mollit labore enim incididunt tempor veniam cupidatat esse.
+
+Sit dolor et aliquip consequat consequat dolor ut. Nostrud reprehenderit excepteur non qui nisi et consequat ullamco duis fugiat veniam officia. Labore irure ut eu consequat deserunt adipisicing fugiat exercitation ex id sit minim officia. Lorem excepteur quis excepteur ullamco nostrud.
 
 <br/>
 
 </details>
-
-<br/>
-<br/>
-<br/>
-<h2 class="heading__subcat-title--placeholder---v02"" align="center">
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 2</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
-</h2>
-<br/>
-
-Ipsum in amet enim pariatur. Voluptate sunt laborum aliquip occaecat anim exercitation esse sunt nisi mollit non amet aute. Dolor pariatur esse minim laboris consectetur. Sunt consequat sint eiusmod labore ex ut nulla. Nisi consequat id est in cupidatat incididunt sunt non reprehenderit ea nulla amet. Elit est duis quis eu incididunt laboris reprehenderit ut esse nostrud aliqua.
-
-<br/>
-
----
-
-<details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
-
----
-
-<br/>
-
-Culpa aliquip culpa nisi voluptate id voluptate dolore dolor. Magna ullamco irure tempor sint ad occaecat sit ut sint. Aliquip incididunt aliquip elit commodo cupidatat dolore. Consequat nostrud duis dolor et voluptate nostrud do duis. Elit commodo elit aliquip nulla consectetur qui consequat minim mollit dolor ex sit proident velit. Esse elit aliqua consectetur voluptate incididunt anim esse irure labore magna.
-
-<br/>
-
-</details>
-
-<br/>
-<br/>
-<br/>
-<h2 class="heading__subcat-title--placeholder---v03" align="center">
-  <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>PLACEHOLDER SUBCATEGORY TITLE 3</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
-</h2>
-<br/>
-
-Consequat consectetur quis id veniam. Mollit laborum anim aute ut duis adipisicing exercitation consequat. Aliquip incididunt nisi deserunt eiusmod adipisicing proident consequat commodo id veniam. Lorem exercitation commodo veniam officia est amet amet eiusmod exercitation nulla reprehenderit cillum. Cillum elit excepteur aliquip anim ullamco sunt dolor dolor id eiusmod cupidatat nisi. Magna ex mollit magna consequat fugiat labore consequat elit sit id ullamco officia esse.
-
-<br/>
-
----
-
-<details>
-  <summary><i>Subject Extended ⚊ Placeholder title</i></summary>
-
----
-
-<br/>
-
-Consectetur incididunt velit tempor veniam nostrud culpa minim enim proident aliqua fugiat officia ut. Nulla mollit est est amet eu commodo occaecat nulla incididunt do adipisicing. Aute ut non amet incididunt incididunt. Est quis consequat veniam elit eu. Ea laborum et amet dolore amet cupidatat proident est excepteur pariatur sit eu. Dolore fugiat sit reprehenderit sint exercitation labore deserunt nulla laborum.
-
-<br/>

@@ -1,19 +1,19 @@
-<h1 class="hero__subject--tech-stack" align="center">
+<h1 class="hero__subject--essential" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>PROJECT-MANAGEMENT/TECHNOLOGY-STACK-&-TOOLS</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__layers.svg" width="32px" />
+  <b>FEATURES/ESSENTIALS</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__play-button--2.svg" width="32px" />
 </h1>
 
-<div class="hero__main--tech-stack" align="center">
+<div class="hero__main--essential" align="center">
   <i>
-  "All the technologies used in this project."
+  "All the essential features."
   </i>
   <br />
   <br />
   <br />
   <br />
   <img
-  src="../../../../assets/media/icons/vendors/flat__layers.svg"
+  src="../../../../assets/media/icons/vendors/flat__play-button--2.svg"
   alt="placeholder main hero image"
   width="300px"
   />
@@ -31,9 +31,9 @@
 <br/>
 <br/>
 <br/>
-<h2 class="heading__subcat-title--tech-stack---v01" align="center">
+<h2 class="heading__subcat-title--essential---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>TECHNOLOGY-STACK-&-TOOLS</b> &nbsp;
+  <b>ESSENTIALS</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>
@@ -45,7 +45,7 @@ Occaecat occaecat enim sint adipisicing amet pariatur. Reprehenderit id nisi inc
 ---
 
 <details>
-  <summary><i>Extended ⚊ Technology Stack & Tools</i></summary>
+  <summary><i>Extended ⚊ Essentials</i></summary>
 
 ---
 
