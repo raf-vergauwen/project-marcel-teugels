@@ -1,6 +1,6 @@
 <h1 class="hero__subject--essential" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>FEATURES/ESSENTIAL</b> &nbsp;
+  <b>FEATURES/ESSENTIALS</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__play-button--2.svg" width="32px" />
 </h1>
 
@@ -33,7 +33,7 @@
 <br/>
 <h2 class="heading__subcat-title--essential---v01" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" /> &nbsp;
-  <b>ESSENTIAL</b> &nbsp;
+  <b>ESSENTIALS</b> &nbsp;
   <img src="../../../../assets/media/icons/vendors/flat__menu.svg" width="24px" />
 </h2>
 <br/>
