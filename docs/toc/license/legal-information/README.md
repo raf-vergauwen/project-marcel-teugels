@@ -1,7 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
-  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="48px" /> &nbsp;
   <b>LICENSE/LEGAL-INFORMATION</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" />
+  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="48px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">
@@ -30,9 +30,9 @@
 <br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
-  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="24px" /> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="32px" /> &nbsp;
   <b>MIT LICENSE</b> &nbsp; 
-  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="24px" />
+  <img src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg" width="32px" />
 </h2>
 <br/>
 
