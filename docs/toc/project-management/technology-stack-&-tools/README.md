@@ -1,5 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
-  <b>PLACEHOLDER CATEGORY SUBJECT</b>
+  <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
+  <b>AUTHORS/INTRODUCTION</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">

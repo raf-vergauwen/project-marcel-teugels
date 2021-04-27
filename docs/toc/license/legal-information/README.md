@@ -1,7 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" /> &nbsp;
   <b>LICENSE/LEGAL-INFORMATION</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__diploma.svg" width="32px" />
+  <img src="../../../../assets/media/icons/vendors/flat__notebook.svg" width="32px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">

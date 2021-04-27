@@ -1,5 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
-  <b>PLACEHOLDER CATEGORY SUBJECT</b>
+  <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
+  <b>AUTHORS/RESPONSIBILITIES & ABILITIES</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__agenda.svg" width="32px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">
@@ -8,9 +10,9 @@
   <br />
   <br />
   <img
-  src="https://wireflow.co/static/media/2.86643db5.svg"
+  src="../../../../assets/media/icons/vendors/flat__agenda.svg"
   alt="placeholder main hero image"
-  width="800px"
+  width="300px"
   />
   <br />
   <br />
@@ -21,6 +23,7 @@
   </q>
 </div>
 
+<br/>
 <br/>
 <br/>
 <br/>
