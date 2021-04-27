@@ -1,7 +1,7 @@
 <h1 class="hero__subject--placeholder" align="center">
   <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp;
-  <b>AUTHORS/INTRODUCTION</b> &nbsp;
-  <img src="../../../../assets/media/icons/vendors/flat__users.svg" width="32px" />
+  <b>GETTING-STARTED/PREREQUISITES</b> &nbsp;
+  <img src="../../../../assets/media/icons/vendors/flat__list.svg" width="32px" />
 </h1>
 
 <div class="hero__main--placeholder" align="center">
@@ -10,9 +10,9 @@
   <br />
   <br />
   <img
-  src="https://wireflow.co/static/media/2.86643db5.svg"
+  src="../../../../assets/media/icons/vendors/flat__list.svg"
   alt="placeholder main hero image"
-  width="800px"
+  width="300px"
   />
   <br />
   <br />

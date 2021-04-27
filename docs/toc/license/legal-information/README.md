@@ -11,9 +11,9 @@
   <br />
   <br />
   <img
-  src="../../../../assets/media/icons/vendors/wiki__mit-logo.svg"
+  src="../../../../assets/media/icons/vendors/flat__notebook.svg"
   alt="placeholder main hero image"
-  width="600px"
+  width="300px"
   />
   <br />
   <br />
