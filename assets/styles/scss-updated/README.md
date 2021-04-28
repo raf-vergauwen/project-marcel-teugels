@@ -9,15 +9,14 @@
   width="800px"
   />
   <br />
-  <br />
   <q>
     <i>
     The main file (usually labelled main.scss) should be the only Sass file from the whole code base not to begin with an underscore. This file should not contain anything but @import and comments.
     <i/>
   </q>
+  <br />
 </div>
 
-<br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
@@ -31,7 +30,6 @@
 - [`abstracts/`](abstracts/)
 - [`vendors/`](vendors/)
 
-<br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>DIRECTORY STRUCTURE</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
@@ -85,7 +83,6 @@ sass/
 `– main.scss              # Main Sass file
 ```
 
-<br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>REFERENCE</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
