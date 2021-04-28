@@ -22,7 +22,6 @@
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-<br/>
 
 - [`base/`](base/)
 - [`components/`](components/)
@@ -37,7 +36,6 @@
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>DIRECTORY STRUCTURE</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-<br/>
 
 ```bash
 sass/
@@ -92,7 +90,6 @@ sass/
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>REFERENCE</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
-<br/>
 
 - [base/](http://sass-guidelin.es/#base-folder)
 - [components/](http://sass-guidelin.es/#components-folder)
