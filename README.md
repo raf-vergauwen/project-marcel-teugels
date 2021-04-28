@@ -94,11 +94,11 @@
   - [<img src="assets/media/icons/vendors/flat__download.svg" width="24px" /> &nbsp; _Installation_ <!-- {#started-install} -->](docs/toc/getting-started/installation)
   - [<img src="assets/media/icons/vendors/flat__info.svg" width="24px" /> &nbsp; _Usage_ <!-- {#started-usage} -->](docs/toc/getting-started/usage)
 
-- [<img src="assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp; **COMMON CONVENTIONS** <!-- {#root-com-convens} -->](docs/toc/common-conventions)
+- [<img src="assets/media/icons/vendors/flat__internet.svg" width="32px" /> &nbsp; **COMMON CONVENTIONS** <!-- {#root-conventions} -->](docs/toc/conventions)
 
-  - [<img src="assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; _Rules_ <!-- {#com-convens-rules} -->](docs/toc/common-conventions/rules)
-  - [<img src="assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](docs/toc/common-conventions/styles)
-  - [<img src="assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](docs/toc/common-conventions/semver)
+  - [<img src="assets/media/icons/vendors/flat__checked.svg" width="24px" /> &nbsp; _Rules_ <!-- {#conventions-rules} -->](docs/toc/conventions/rules)
+  - [<img src="assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#conventions-styles} -->](docs/toc/conventions/styles)
+  - [<img src="assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#conventions-semver} -->](docs/toc/conventions/semver)
 
 - [<img src="assets/media/icons/vendors/flat__project-mgmt.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](docs/toc/project-mgmt)
 
