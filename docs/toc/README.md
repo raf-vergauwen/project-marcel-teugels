@@ -85,7 +85,7 @@
 
 - [<img src="../../assets/media/icons/vendors/flat__star.svg" width="32px" /> &nbsp; **FEATURES** <!-- {#root-feat} -->](../../docs/toc/features)
 
-  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essential_ <!-- {#feat-essential} -->](../../docs/toc/features/essentialS)
+  - [<img src="../../assets/media/icons/vendors/flat__play-button--2.svg" width="24px" /> &nbsp; _Essentials_ <!-- {#feat-essentials} -->](../../docs/toc/features/essentials)
   - [<img src="../../assets/media/icons/vendors/flat__fast-forward.svg" width="24px" /> &nbsp; _Advanced_ <!-- {#feat-advanced} -->](../../docs/toc/features/advanced)
   - [<img src="../../assets/media/icons/vendors/flat__more.svg" width="24px" /> &nbsp; _Extra_ <!-- {#feat-extra} -->](../../docs/toc/features/extra)
 
@@ -101,15 +101,15 @@
   - [<img src="../../assets/media/icons/vendors/flat__magic-wand.svg" width="24px" /> &nbsp; _Styles_ <!-- {#com-convens-styles} -->](../../docs/toc/common-conventions/styles)
   - [<img src="../../assets/media/icons/vendors/flat__file.svg" width="24px" /> &nbsp; _Semver_ <!-- {#com-convens-semver} -->](../../docs/toc/common-conventions/semver)
 
-- [<img src="../../assets/media/icons/vendors/flat__project-management.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](../../docs/toc/project-management)
+- [<img src="../../assets/media/icons/vendors/flat__project-mgmt.svg" width="32px" /> &nbsp; **PROJECT MANAGEMENT** <!-- {#root-project-mgmt} -->](../../docs/toc/project-mgmt)
 
-  - [<img src="../../assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](../../docs/toc/project-management/git-&-github)
-  - [<img src="../../assets/media/icons/vendors/flat__home.svg" width="24px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](../../docs/toc/project-management/architecture-&-layout)
-  - [<img src="../../assets/media/icons/vendors/flat__layers.svg" width="24px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](../../docs/toc/project-management/technology-stack-&-tools)
-  - [<img src="../../assets/media/icons/vendors/flat__route.svg" width="24px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](../../docs/toc/project-management/roadmap-&-changelog)
-  - [<img src="../../assets/media/icons/vendors/flat__config.svg" width="24px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](../../docs/toc/project-management/configuration-&-settings)
-  - [<img src="../../assets/media/icons/vendors/si__npm.svg" width="24px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](../../docs/toc/project-management/npm-&-extensions)
-  - [<img src="../../assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](../../docs/toc/project-management/deployment-&-release)
+  - [<img src="../../assets/media/icons/vendors/si__git.svg" width="24px" /> &nbsp; _Git & Github_ <!-- {#project-mgmt-git} -->](../../docs/toc/project-mgmt/git-&-github)
+  - [<img src="../../assets/media/icons/vendors/flat__home.svg" width="24px" /> &nbsp; _Architecture & Layout_ <!-- {#project-mgmt-architecture} -->](../../docs/toc/project-mgmt/architecture-&-layout)
+  - [<img src="../../assets/media/icons/vendors/flat__layers.svg" width="24px" /> &nbsp; _Technology Stack & Tools_ <!-- {#project-mgmt-tech-stack} -->](../../docs/toc/project-mgmt/technology-stack-&-tools)
+  - [<img src="../../assets/media/icons/vendors/flat__route.svg" width="24px" /> &nbsp; _Roadmap & Changelog_ <!-- {#project-mgmt-roadmap} -->](../../docs/toc/project-mgmt/roadmap-&-changelog)
+  - [<img src="../../assets/media/icons/vendors/flat__config.svg" width="24px" /> &nbsp; _Configuration & Settings_ <!-- {#project-mgmt-config} -->](../../docs/toc/project-mgmt/configuration-&-settings)
+  - [<img src="../../assets/media/icons/vendors/si__npm.svg" width="24px" /> &nbsp; _NPM & Extensions_ <!-- {#project-mgmt-npm} -->](../../docs/toc/project-mgmt/npm-&-extensions)
+  - [<img src="../../assets/media/icons/vendors/flat__shuttle.svg" width="24px" /> &nbsp; _Deployment & Release_ <!-- {#project-mgmt-deployment} -->](../../docs/toc/project-mgmt/deployment-&-release)
 
 - [<img src="../../assets/media/icons/vendors/flat__users.svg" width="32px" /> &nbsp; **AUTHORS** <!-- {#root-authors} -->](../../docs/toc/authors)
 
