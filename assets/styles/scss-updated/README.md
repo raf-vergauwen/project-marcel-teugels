@@ -4,7 +4,7 @@
 
 <div class="hero__main--placeholder" align="center">
   <img
-  src="https://d33wubrfki0l68.cloudfront.net/7af45331e458c5ec4e4dcb6448185664f6fb72a4/7c690/assets/images/sass-wallpaper_huge.avif"
+  src="../../media/images/vendors/uk__sass-quote.png"
   alt="placeholder main hero image"
   width="800px"
   />
