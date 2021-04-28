@@ -24,13 +24,13 @@
 </h2>
 <br/>
 
-- [base/](http://sass-guidelin.es/#base-folder)
-- [components/](http://sass-guidelin.es/#components-folder)
-- [layout/](http://sass-guidelin.es/#layout-folder)
-- [pages/](http://sass-guidelin.es/#pages-folder)
-- [themes/](http://sass-guidelin.es/#themes-folder)
-- [abstracts/](http://sass-guidelin.es/#abstracts-folder)
-- [vendors/](http://sass-guidelin.es/#vendors-folder)
+- [`base/`](http://sass-guidelin.es/#base-folder)
+- [`components/`](http://sass-guidelin.es/#components-folder)
+- [`layout/`](http://sass-guidelin.es/#layout-folder)
+- [`pages/`](http://sass-guidelin.es/#pages-folder)
+- [`themes/`](http://sass-guidelin.es/#themes-folder)
+- [`abstracts/`](http://sass-guidelin.es/#abstracts-folder)
+- [`vendors/`](http://sass-guidelin.es/#vendors-folder)
 
 <br/>
 <br/>
