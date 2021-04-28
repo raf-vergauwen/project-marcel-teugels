@@ -24,13 +24,13 @@
 </h2>
 <br/>
 
-- [`base/`](http://sass-guidelin.es/#base-folder)
-- [`components/`](http://sass-guidelin.es/#components-folder)
-- [`layout/`](http://sass-guidelin.es/#layout-folder)
-- [`pages/`](http://sass-guidelin.es/#pages-folder)
-- [`themes/`](http://sass-guidelin.es/#themes-folder)
-- [`abstracts/`](http://sass-guidelin.es/#abstracts-folder)
-- [`vendors/`](http://sass-guidelin.es/#vendors-folder)
+- [`base/`](base/)
+- [`components/`](components/)
+- [`layout/`](layout/)
+- [`pages/`](pages/)
+- [`themes/`](themes/)
+- [`abstracts/`](abstracts/)
+- [`vendors/`](vendors/)
 
 <br/>
 <br/>
@@ -93,5 +93,13 @@ sass/
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>REFERENCE</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
 <br/>
+
+- [base/](http://sass-guidelin.es/#base-folder)
+- [components/](http://sass-guidelin.es/#components-folder)
+- [layout/](http://sass-guidelin.es/#layout-folder)
+- [pages/](http://sass-guidelin.es/#pages-folder)
+- [themes/](http://sass-guidelin.es/#themes-folder)
+- [abstracts/](http://sass-guidelin.es/#abstracts-folder)
+- [vendors/](http://sass-guidelin.es/#vendors-folder)
 
 Reference: [Sass Guidelines](http://sass-guidelin.es/) > [Architecture](http://sass-guidelin.es/#architecture) > [Main file](http://sass-guidelin.es/#main-file)
