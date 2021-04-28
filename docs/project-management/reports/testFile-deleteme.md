@@ -1,3 +1,0 @@
-blablabla
-
-Lorem Ipsum
