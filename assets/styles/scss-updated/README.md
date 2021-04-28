@@ -19,7 +19,6 @@
 
 <br/>
 <br/>
-<br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
   <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" /> &nbsp; <b>TABLE OF CONTENTS</b> &nbsp; <img src="https://image.flaticon.com/icons/png/128/1636/1636053.png" width="24px" />
 </h2>
@@ -33,7 +32,6 @@
 - [abstracts/](http://sass-guidelin.es/#abstracts-folder)
 - [vendors/](http://sass-guidelin.es/#vendors-folder)
 
-<br/>
 <br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
@@ -89,7 +87,6 @@ sass/
 `– main.scss              # Main Sass file
 ```
 
-<br/>
 <br/>
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
