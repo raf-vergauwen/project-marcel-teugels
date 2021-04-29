@@ -37,61 +37,13 @@
 </h2>
 
 ```bash
-sass/
-|
-|– abstracts/
-|   |– _variables.scss    # Sass Variables
-|   |– _functions.scss    # Sass Functions
-|   |– _mixins.scss       # Sass Mixins
-|   |– _placeholders.scss # Sass Placeholders
-|
-|– base/
-|   |– _reset.scss        # Reset/normalize
-|   |– _typography.scss   # Typography rules
-|   …                     # Etc.
-|
-|– components/
-|   |– _buttons.scss      # Buttons
-|   |– _carousel.scss     # Carousel
-|   |– _cover.scss        # Cover
-|   |– _dropdown.scss     # Dropdown
-|   …                     # Etc.
-|
-|– layout/
-|   |– _navigation.scss   # Navigation
-|   |– _grid.scss         # Grid system
-|   |– _header.scss       # Header
-|   |– _footer.scss       # Footer
-|   |– _sidebar.scss      # Sidebar
-|   |– _forms.scss        # Forms
-|   …                     # Etc.
-|
-|– pages/
-|   |– _home.scss         # Home specific styles
-|   |– _contact.scss      # Contact specific styles
-|   …                     # Etc.
-|
-|– themes/
-|   |– _theme.scss        # Default theme
-|   |– _admin.scss        # Admin theme
-|   …                     # Etc.
-|
-|– vendors/
-|   |– _bootstrap.scss    # Bootstrap
-|   |– _jquery-ui.scss    # jQuery UI
-|   …                     # Etc.
-|
-`– main.scss              # Main Sass file
-```
-
-```bash
 `sass/`
 |
 +---`abstracts/`
-|     _functions.scss         # Sass functions
-|     _mixins.scss            # Sass mixins
-|     _utilities.scss         # Sass utilities
 |     _variables.scss         # Sass variables
+|     _mixins.scss            # Sass mixins
+|     _functions.scss         # Sass functions
+|     _utilities.scss         # Sass utilities
 |
 +---`base/`
 |     _custom-normalize.scss  # Custom default HTML tags
@@ -135,30 +87,29 @@ sass/
 |         _title.scss         # Simple headings to add depth to your page
 |
 +---`layout/`
-|     _article.scss           #
-|     _aside.scss             #
-|     _footer.scss            #
-|     _header.scss            #
-|     _main.scss              #
-|     _nav.scss               #
-|     _section.scss           #
+|     _header.scss            # HTML <header>
+|     _nav.scss               # HTML <nav>
+|     _section.scss           # HTML <section>
+|     _article.scss           # HTML <article>
+|     _aside.scss             # HTML <aside>
+|     _footer.scss            # HTML <footer>
 |
 +---`pages/`
-|     _home.scss              #
-|     _index.scss             #
-|     _login.scss             #
-|     _profile.scss           #
-|     _storefront.scss        #
+|     _home.scss              # Home page specific styles
+|     _index.scss             # Index page specific styles
+|     _login.scss             # Login page specific styles
+|     _profile.scss           # Profile page specific styles
+|     _storefront.scss        # Storefront page specific styles
 |
 +---`themes/`
-|     _dark.scss              #
-|     _light.scss             #
-|     _midnight.scss          #
+|     _light.scss             # Light theme
+|     _dark.scss              # Dark theme
+|     _midnight.scss          # Midnight OLED theme
 |
 +---`vendors/`
-|     _buefy.scss             #
-|     _bulma.scss             #
-|     _reboot.scss             #
+|     _reboot.scss            # Vanilla Boostrap reset
+|     _buefy.scss             # Custom Buefy override
+|     _bulma.scss             # Custom Bulma override
 |
 \– main.scss                  # Main Scss file
 
