@@ -87,19 +87,19 @@ sass/
 ```bash
 main.scss/
 |
-+---abstracts/
++---`abstracts/`
 |       _functions.scss
 |       _mixins.scss
 |       _utilities.scss
 |       _variables.scss
 |
-+---base/
++---`base/`
 |       _reboot.scss
 |       _typography.scss
 |
-+---components/
++---`components/`
 |   |
-|   +---forms
+|   +---`forms`
 |   |       _checkbox.scss
 |   |       _file.scss
 |   |       _general.scss
@@ -108,7 +108,7 @@ main.scss/
 |   |       _select.scss
 |   |       _textarea.scss
 |   |
-|   +---multi-part
+|   +---`multi-part`
 |   |       _breadcrumb.scss
 |   |       _card.scss
 |   |       _dropdown.scss
@@ -120,7 +120,7 @@ main.scss/
 |   |       _panel.scss
 |   |       _tabs.scss
 |   |
-|   \---single-part
+|   \---`single-part`
 |           README.md
 |           _block.scss
 |           _box.scss
@@ -135,7 +135,7 @@ main.scss/
 |           _tag.scss
 |           _title.scss
 |
-+---layout/
++---`layout/`
 |       _article.scss
 |       _aside.scss
 |       _footer.scss
@@ -145,7 +145,7 @@ main.scss/
 |       _nav.scss
 |       _section.scss
 |
-+---pages/
++---`pages/`
 |       _home.scss
 |       _index.scss
 |       _login.scss
