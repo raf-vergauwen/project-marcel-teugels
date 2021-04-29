@@ -85,81 +85,82 @@ sass/
 ```
 
 ```bash
-main.scss/
+`sass/`
 |
 +---`abstracts/`
-|       _functions.scss
-|       _mixins.scss
-|       _utilities.scss
-|       _variables.scss
+|     _functions.scss         # Sass functions
+|     _mixins.scss            # Sass mixins
+|     _utilities.scss         # Sass utilities
+|     _variables.scss         # Sass variables
 |
 +---`base/`
-|       _reboot.scss
-|       _typography.scss
+|     _custom-normalize.scss  # Custom default HTML tags
+|     _typography.scss        # Typography rules (h1-6, p, a, blockquote, etc.)
 |
 +---`components/`
 |   |
-|   +---`forms`
-|   |       _checkbox.scss
-|   |       _file.scss
-|   |       _general.scss
-|   |       _input.scss
-|   |       _radio.scss
-|   |       _select.scss
-|   |       _textarea.scss
+|   +---`forms/`
+|   |     _checkbox.scss      # All generic form controls
+|   |     _file.scss          # Custom file upload input, without JavaScript
+|   |     _general.scss       # Generic form controls
+|   |     _input.scss         # Text input and its variations
+|   |     _radio.scss         # Radio buttons in their native format
+|   |     _select.scss        # Browser built-in select dropdown
+|   |     _textarea.scss      # Multiline textarea and its variations
 |   |
-|   +---`multi-part`
-|   |       _breadcrumb.scss
-|   |       _card.scss
-|   |       _dropdown.scss
-|   |       _menu.scss
-|   |       _message.scss
-|   |       _modal.scss
-|   |       _navbar.scss
-|   |       _pagination.scss
-|   |       _panel.scss
-|   |       _tabs.scss
+|   +---`multi-part/`
+|   |     _breadcrumb.scss    # Component to improve your navigation experience
+|   |     _card.scss          # All-around flexible and composable component
+|   |     _dropdown.scss      # Interactive dropdown menu for content
+|   |     _menu.scss          # Simple menu, for any type of vertical navigation
+|   |     _message.scss       # Message blocks, to emphasize part of your page
+|   |     _modal.scss         # Classic modal overlay
+|   |     _navbar.scss        # Responsive horizontal navbar
+|   |     _pagination.scss    # Responsive, usable, and flexible pagination
+|   |     _panel.scss         # Composable panel, for compact controls
+|   |     _tabs.scss          # Simple responsive horizontal navigation tabs
 |   |
-|   \---`single-part`
-|           README.md
-|           _block.scss
-|           _box.scss
-|           _button.scss
-|           _content.scss
-|           _delete.scss
-|           _icon.scss
-|           _image.scss
-|           _notification.scss
-|           _progress-bars.scss
-|           _table.scss
-|           _tag.scss
-|           _title.scss
+|   +---`single-part/`
+|         _block.scss         # Most basic spacer block
+|         _box.scss           # White box to contain other elements
+|         _button.scss        # The classic button
+|         _content.scss       # Single class to handle WYSIWYG generated content
+|         _delete.scss        # Versatile delete cross
+|         _icon.scss          # All icon related scss
+|         _image.scss         # Container for responsive images
+|         _notification.scss  # Bold notification blocks, to alert your users
+|         _progress-bars.scss # Native HTML progress bars
+|         _table.scss         # HTML table, with special case cells
+|         _tag.scss           # Small tag labels to insert anywhere
+|         _title.scss         # Simple headings to add depth to your page
 |
 +---`layout/`
-|       _article.scss
-|       _aside.scss
-|       _footer.scss
-|       _header.scss
-|       _headings.scss
-|       _main.scss
-|       _nav.scss
-|       _section.scss
+|     _article.scss           #
+|     _aside.scss             #
+|     _footer.scss            #
+|     _header.scss            #
+|     _main.scss              #
+|     _nav.scss               #
+|     _section.scss           #
 |
 +---`pages/`
-|       _home.scss
-|       _index.scss
-|       _login.scss
-|       _profile.scss
-|       _storefront.scss
+|     _home.scss              #
+|     _index.scss             #
+|     _login.scss             #
+|     _profile.scss           #
+|     _storefront.scss        #
 |
 +---`themes/`
-|       _dark.scss
-|       _light.scss
-|       _midnight.scss
+|     _dark.scss              #
+|     _light.scss             #
+|     _midnight.scss          #
 |
-\---`vendors/`
-        _buefy.scss
-        _bulma.scss
++---`vendors/`
+|     _buefy.scss             #
+|     _bulma.scss             #
+|     _reboot.scss             #
+|
+\– main.scss                  # Main Scss file
 
 
 ```
