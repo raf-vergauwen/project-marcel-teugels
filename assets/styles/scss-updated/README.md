@@ -107,7 +107,7 @@
 |     _midnight.scss          # Midnight OLED theme
 |
 +---`vendors/`
-|     _reboot.scss            # Vanilla Boostrap reset
+|     _reboot.scss            # Vanilla Boostrap reset v5.0.0-beta3
 |     _buefy.scss             # Custom Buefy override
 |     _bulma.scss             # Custom Bulma override
 |
