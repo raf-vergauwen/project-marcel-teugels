@@ -85,25 +85,20 @@ sass/
 ```
 
 ```bash
-|   main.scss
-|   README.md
-|   tree.txt
-|   
-+---abstracts
-|       README.md
+main.scss/
+|
++---abstracts/
 |       _functions.scss
 |       _mixins.scss
 |       _utilities.scss
 |       _variables.scss
-|       
-+---base
-|       README.md
+|
++---base/
 |       _reboot.scss
 |       _typography.scss
-|       
-+---components
-|   |   README.md
-|   |   
+|
++---components/
+|   |
 |   +---forms
 |   |       _checkbox.scss
 |   |       _file.scss
@@ -112,7 +107,7 @@ sass/
 |   |       _radio.scss
 |   |       _select.scss
 |   |       _textarea.scss
-|   |       
+|   |
 |   +---multi-part
 |   |       _breadcrumb.scss
 |   |       _card.scss
@@ -124,8 +119,9 @@ sass/
 |   |       _pagination.scss
 |   |       _panel.scss
 |   |       _tabs.scss
-|   |       
+|   |
 |   \---single-part
+|           README.md
 |           _block.scss
 |           _box.scss
 |           _button.scss
@@ -138,9 +134,8 @@ sass/
 |           _table.scss
 |           _tag.scss
 |           _title.scss
-|           
-+---layout
-|       README.md
+|
++---layout/
 |       _article.scss
 |       _aside.scss
 |       _footer.scss
@@ -149,27 +144,25 @@ sass/
 |       _main.scss
 |       _nav.scss
 |       _section.scss
-|       
-+---pages
-|       README.md
+|
++---pages/
 |       _home.scss
 |       _index.scss
 |       _login.scss
 |       _profile.scss
 |       _storefront.scss
-|       
-+---themes
-|       README.md
+|
++---`themes/`
 |       _dark.scss
 |       _light.scss
 |       _midnight.scss
-|       
-\---vendors
-        README.md
+|
+\---`vendors/`
         _buefy.scss
         _bulma.scss
-```
 
+
+```
 
 <br/>
 <h2 class="heading__subcat-title--placeholder---v01" align="center">
