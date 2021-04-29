@@ -46,7 +46,7 @@
 |     _utilities.scss         # Sass utilities
 |
 +---`base/`
-|     _custom-normalize.scss  # Custom default HTML tags
+|     _reset.scss             # Custom default HTML tags
 |     _typography.scss        # Typography rules (h1-6, p, a, blockquote, etc.)
 |
 +---`components/`
@@ -108,8 +108,8 @@
 |
 +---`vendors/`
 |     _reboot.scss            # Vanilla Boostrap reset v5.0.0-beta3
-|     _buefy.scss             # Custom Buefy override
-|     _bulma.scss             # Custom Bulma override
+|     _buefy.scss             # Buefy Scss
+|     _bulma.scss             # Bulma Scss
 |
 \– main.scss                  # Main Scss file
 
