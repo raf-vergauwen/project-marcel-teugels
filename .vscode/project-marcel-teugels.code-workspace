@@ -199,12 +199,6 @@
     "eslint.codeAction.showDocumentation": {
       "enable": true
     },
-    "eslint.debug": true,
-    "eslint.format.enable": true,
-    "eslint.lintTask.enable": true,
-    "eslint.nodeEnv": "",
-    "eslint.nodePath": "enabled",
-    "eslint.options": {},
     "eslint.run": "onSave",
     "explorer.confirmDelete": true,
     "explorer.confirmDragAndDrop": false,
