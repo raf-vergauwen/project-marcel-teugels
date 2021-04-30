@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   head: {
-    title: 'marcel_teugels',
+    title: 'project_marcel_teugels',
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,7 +16,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['bulma/css/bulma.css', '~/assets/styles/scss/main.css'],
+  css: ['~/assets/styles/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -37,7 +37,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     ['nuxt-buefy', { css: true }, { materialDesignIcons: true }],
-    '@nuxtjs/markdownit',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -47,6 +46,9 @@ export default {
   build: {},
 
   styleResources: {
-    scss: ['~/assets/styles/scss/main.scss'],
+    scss: [
+      './assets/vars/*.scss',
+      './assets/abstracts/_mixins.scss', // use underscore "_" & also file extension ".scss"
+    ],
   },
 };
