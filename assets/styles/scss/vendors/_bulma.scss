@@ -1,3 +1,13 @@
 /*----------------------------------------------------------------------------*\
 // *  _bulma.scss: This partial file contains the 'bulma' theme.
 \*----------------------------------------------------------------------------*/
+
+// Bulma variables
+@import '~bulma/sass/utilities/all';
+
+// @import '/node_modules/bulma/sass/utilities/_all.sass';
+
+// Bulma framework
+@import '~bulma';
+
+// @import '/node_modules/bulma/bulma.sass'
