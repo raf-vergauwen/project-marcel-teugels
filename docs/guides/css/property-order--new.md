@@ -4,6 +4,8 @@
 
 ## **Layout**
 
+---
+
 ### Display
 
 ### Flexbox
@@ -18,9 +20,9 @@
 
 ### Multiple-column layout
 
----
-
 ## **The Box Model**
+
+---
 
 ### Context box
 
