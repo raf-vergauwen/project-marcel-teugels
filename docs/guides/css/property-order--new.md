@@ -20,6 +20,8 @@
 
 ### Multiple-column layout
 
+### Lists
+
 ## **The Box Model**
 
 ---
@@ -31,3 +33,23 @@
 ### Border box
 
 ### Margin box
+
+## **Backgrounds**
+
+---
+
+## **Typography**
+
+---
+
+## **Transitions**
+
+---
+
+## **Animations**
+
+---
+
+## **Misc**
+
+---
