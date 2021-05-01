@@ -16,9 +16,9 @@
 
 ### Positioning
 
-### Table layout
+### Table
 
-### Multiple-column layout
+### Multiple-column
 
 ### Lists
 
