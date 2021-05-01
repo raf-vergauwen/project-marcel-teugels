@@ -22,7 +22,9 @@
 
 ### Lists
 
-## **The Box Model**
+...
+
+## **Box Model**
 
 ---
 
@@ -34,22 +36,26 @@
 
 ### Margin box
 
-## **Backgrounds**
+...
+
+## **Visuals**
 
 ---
 
-## **Typography**
+### Colors
 
----
+### Backgrounds
 
-## **Transitions**
+### Typography
 
----
+### Transitions
 
-## **Animations**
+### Animations
 
----
+...
 
 ## **Misc**
 
 ---
+
+...
