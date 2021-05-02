@@ -126,7 +126,6 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": true,
-    "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
     "editor.formatOnPaste": true,
