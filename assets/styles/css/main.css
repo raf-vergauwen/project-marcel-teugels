@@ -13,6 +13,11 @@
 /*----------------------------------------------------------------------------*\
 // *  _utilities.scss: This partial file contains all Scss 'utilities'.
 \*----------------------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css");
+.test {
+  color: red;
+}
+
 /*----------------------------------------------------------------------------*\
 // *  _animations.scss: This partial file contains all Scss 'animations'.
 \*----------------------------------------------------------------------------*/
@@ -22,7 +27,6 @@
 /*----------------------------------------------------------------------------*\
 // *  _reboot.scss: This partial file contains the bootstrap 'reboot'.
 \*----------------------------------------------------------------------------*/
-@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css");
 *,
 *::before,
 *::after {

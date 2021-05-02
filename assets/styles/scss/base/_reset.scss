@@ -4,10 +4,8 @@
 
 // See '../vendors/reboot';
 
-columns {
-  background-color: blue;
-}
-
-column {
-  background-color: green;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-text;
 }

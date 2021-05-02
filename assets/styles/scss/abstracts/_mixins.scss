@@ -1,3 +1,42 @@
 /*----------------------------------------------------------------------------*\
 // *  _mixins.scss: This partial file contains all Scss 'mixins'.
 \*----------------------------------------------------------------------------*/
+@mixin section {
+  min-width: 400px;
+  padding: $size-4XL;
+
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include title;
+  }
+}
+
+@mixin container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin flex-container($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+@mixin article {
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+@mixin title {
+  margin-bottom: $size-S; // 0.5em
+
+  color: $color-white;
+  font-size: round($font-size-6);
+  font-weight: $font-weight-heading;
+}
+
+@mixin latin-name {
+  font-style: $font-style-italic;
+}
