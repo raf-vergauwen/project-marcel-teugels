@@ -3,7 +3,7 @@
 - Besproken design
 - Besproken kleurenthema
 - Staalblauw zit goed, lichtblauw ook
-- Checkout: https://www.instagram.com/marcelteugelsrestauratie/
+- Checkout: <https://www.instagram.com/marcelteugelsrestauratie/>
 - Nieuwe accentkleur nodig:
 
   - Beige
