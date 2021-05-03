@@ -1,3 +1,12 @@
 /*----------------------------------------------------------------------------*\
 // *  _light.scss: This partial file contains the 'light' theme.
 \*----------------------------------------------------------------------------*/
+
+:root,
+[data-theme='light'] {
+  --foreground-color: hsl(0, 3%, 6%);
+  --background-color: hsl(240, 100%, 99%);
+  --primary-color: hsl(207, 48%, 14%);
+  --secondary-color: hsl(214, 42%, 64%);
+  --accent-color: hsl(50, 100%, 50%);
+}

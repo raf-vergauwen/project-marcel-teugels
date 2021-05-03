@@ -1,3 +1,12 @@
 /*----------------------------------------------------------------------------*\
 // *  _dark.scss: This partial file contains the 'dark' theme.
 \*----------------------------------------------------------------------------*/
+
+:root,
+[data-theme='dark'] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
