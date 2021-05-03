@@ -336,6 +336,7 @@
     "hediet.vscode-drawio.codeLinkActivated": true,
     "editor.formatOnType": true,
     "formattingToggle.affects": ["formatOnSave"],
-    "markdown.preview.breaks": true
+    "markdown.preview.breaks": true,
+    "liveServer.settings.port": 5501
   }
 }
