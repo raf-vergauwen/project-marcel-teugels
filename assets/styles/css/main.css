@@ -648,10 +648,10 @@ progress {
 \*----------------------------------------------------------------------------*/
 :root,
 [data-theme='dark'] {
-  --primary-color: #9a97f3;
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
+  --foreground-color: hsl(0, 3%, 6%);
+  --background-color: hsl(240, 100%, 99%);
+  --primary-color: hsl(207, 48%, 14%);
+  --secondary-color: hsl(214, 42%, 64%);
+  --accent-color: hsl(23, 42%, 64%);
 }
 /*# sourceMappingURL=main.css.map */
