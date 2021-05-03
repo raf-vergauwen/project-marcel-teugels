@@ -1,34 +1,46 @@
 @mixin breakpoint($breakpoint) {
-  // Small - 45em
+  // #  Extra Small - 30em
+  @if $breakpoint == xsm {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  // #  Small - 45em
   @if $breakpoint == sm {
     @media (max-width: 720px) {
       @content;
     }
   }
-  // Medium - 60em
+  // #  Medium - 60em
   @else if $breakpoint == md {
     @media (min-width: 960px) {
       @content;
     }
   }
-  // Large - 75em
+  // #  Large - 75em
   @else if $breakpoint == lg {
     @media (min-width: 1200px) {
       @content;
     }
   }
-  // Extra large - 90em
+  // #  Extra Large - 90em
   @else if $breakpoint == xl {
     @media (min-width: 1440px) {
       @content;
     }
   }
-  // Extra extra large - 105em
+  // #  Extra Large - 105em
   @else if $breakpoint == xxl {
     @media (min-width: 1680px) {
       @content;
     }
+  }
+  // #  Extra Extra Extra Large - 120em
+  @else if $breakpoint == xxxl {
+    @media (min-width: 1920px) {
+      @content;
+    }
   } @else {
-    @warn "Breakpoint mixin supports: sm, md, lg, xl, xxl";
+    @warn "Breakpoint mixin supports: xsm, sm, md, lg, xl, xxl, xxxl";
   }
 }
