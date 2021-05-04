@@ -544,7 +544,7 @@ progress {
   background: #ccc;
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 60rem) {
   .topnav .search-container {
     float: none;
   }
@@ -666,7 +666,7 @@ progress {
 }
 
 /* Media Queries */
-@media (max-width: 45rem) {
+@media (max-width: 60rem) {
   .footer .footer-left,
   .footer .footer-right {
     text-align: center;
