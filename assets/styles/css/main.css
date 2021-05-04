@@ -12,7 +12,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,17 +25,15 @@ body {
   margin: 0;
   background-color: #fff;
   color: #212529;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 hr {
@@ -119,7 +117,7 @@ abbr[title],
 abbr[data-bs-original-title] {
   cursor: help;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   text-decoration-skip-ink: none;
 }
 
@@ -211,8 +209,7 @@ code,
 kbd,
 samp {
   direction: ltr;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 1em;
   unicode-bidi: bidi-override;
 }
@@ -341,8 +338,8 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 button:not(:disabled),
@@ -403,8 +400,8 @@ legend + * {
 
 [type='search'] {
   -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -418,7 +415,7 @@ legend + * {
 */
 ::-webkit-search-decoration {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 ::-webkit-color-swatch-wrapper {
@@ -431,7 +428,7 @@ legend + * {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  appearance: button;
+          appearance: button;
   font: inherit;
 }
 
@@ -462,6 +459,12 @@ progress {
 /* -------------------------------------------------------------------------- *\
 // *  This partial file contains the custom `reset` HTML tags
 \* -------------------------------------------------------------------------- */
+body {
+  margin: 0 auto;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
 /* -------------------------------------------------------------------------- *\
 // *  This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
@@ -515,7 +518,19 @@ progress {
 }
 
 .topnav .search-container {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .topnav input[type='text'] {
@@ -583,11 +598,11 @@ progress {
 .footer {
   width: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 45px 50px;
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   font: normal 16px sans-serif;
   text-align: left;
 }
@@ -654,7 +669,7 @@ progress {
 
 .footer .footer-right a:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer p.footer-links a:hover {
@@ -682,42 +697,107 @@ progress {
 /* -------------------------------------------------------------------------- *\
 // *  Partial SCSS Group 5.1 - `components/single-part/`
 \* -------------------------------------------------------------------------- */
-/*----------------------------------------------------------------------------*\
+/* -------------------------------------------------------------------------- *\
 // *  _block.scss: This partial file contains all 'block' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _box.scss: This partial file contains all 'box' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _button.scss: This partial file contains all 'button' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _content.scss: This partial file contains all 'content' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _delete.scss: This partial file contains all 'delete' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _icon.scss: This partial file contains all 'icon' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _image.scss: This partial file contains all 'image' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _notification.scss: This partial file contains all 'notification' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _progress-bars.scss: This partial file contains all 'progress-bars' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _table.scss: This partial file contains all 'table' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _tag.scss: This partial file contains all 'tag' styles.
-\*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  _title.scss: This partial file contains all 'title' styles.
-\*----------------------------------------------------------------------------*/
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// *  _toggle.scss: This partial file contains all 'toggle' styles.
+\* -------------------------------------------------------------------------- */
+.theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 8px 16px 0 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  content: '';
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
 /* -------------------------------------------------------------------------- *\
 // *  Partial SCSS Group 5.2 - `components/forms/`
 \* -------------------------------------------------------------------------- */

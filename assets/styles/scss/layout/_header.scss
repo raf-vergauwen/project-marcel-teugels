@@ -28,7 +28,11 @@
 }
 
 .topnav .search-container {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
 
 .topnav input[type='text'] {
