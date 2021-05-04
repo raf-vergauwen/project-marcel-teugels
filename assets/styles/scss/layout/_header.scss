@@ -53,7 +53,7 @@
   background: #ccc;
 }
 
-@media screen and (max-width: 600px) {
+@include breakpoint(sm) {
   .topnav .search-container {
     float: none;
   }

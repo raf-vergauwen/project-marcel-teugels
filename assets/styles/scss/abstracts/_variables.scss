@@ -2,5 +2,24 @@
 // *  _variables.scss: This partial file contains all Scss 'variables'.
 \*----------------------------------------------------------------------------*/
 
-$font-style-normal: normal;
-$font-style-italic: italic;
+// # <=======| Font-weight |=======>
+$font-weight-text: 400;
+$font-weight-heading: 700;
+
+// # <=======| Padding and margin sizes |=======>
+$size-XS: 0.25rem; // 4px
+$size-S: 0.5rem; // 8px
+$size-M: 1rem; // 16px
+$size-L: 1.5rem; // 24px
+$size-2XL: 2rem; // 32px
+$size-3XL: 3rem; // 48px
+$size-4XL: 4rem; // 64px
+
+// # <=======| Breakpoints |=======>
+$breakpoint-xsm: 30rem; // 480px
+$breakpoint-sm: 45rem; // 720px
+$breakpoint-md: 60rem; // 960px
+$breakpoint-lg: 75rem; // 1200px
+$breakpoint-xl: 90rem; // 1440px
+$breakpoint-xxl: 105rem; // 1680px
+$breakpoint-xxxl: 120rem; // 1920px
