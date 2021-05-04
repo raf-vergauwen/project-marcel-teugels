@@ -334,9 +334,9 @@
     "markdown.extension.print.absoluteImgPath": false,
     "hediet.vscode-drawio.customFonts": ["Fira Code"],
     "hediet.vscode-drawio.codeLinkActivated": true,
-    "editor.formatOnType": true,
     "formattingToggle.affects": ["formatOnSave"],
     "markdown.preview.breaks": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.formatOnType": true
   }
 }
