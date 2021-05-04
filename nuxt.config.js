@@ -28,6 +28,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
     'nuxt-animejs',
   ],
 
@@ -50,6 +51,7 @@ export default {
       './assets/styles/scss/abstracts/_variables.scss',
       './assets/styles/scss/abstracts/_functions.scss',
       './assets/styles/scss/abstracts/_mixins.scss',
+      './assets/styles/scss/abstracts/_mi.scss',
       './assets/styles/scss/abstracts/_utilities.scss',
       './assets/styles/scss/abstracts/_animations.scss',
     ],

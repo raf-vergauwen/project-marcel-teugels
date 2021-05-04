@@ -5,10 +5,6 @@
 /*----------------------------------------------------------------------------*\
 // *  _variables.scss: This partial file contains all Scss 'variables'.
 \*----------------------------------------------------------------------------*/
-.a > span {
-  color: tomato;
-}
-
 /*----------------------------------------------------------------------------*\
 // *  _functions.scss: This partial file contains all Scss 'functions'.
 \*----------------------------------------------------------------------------*/
@@ -585,19 +581,19 @@ progress {
 /*----------------------------------------------------------------------------*\
 // *  _address.scss: This partial file contains all 'address' styles.
 \*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+/* -------------------------------------------------------------------------- *\
 // *  _footer.scss: This partial file contains all 'footer' styles.
-\*----------------------------------------------------------------------------*/
+\* -------------------------------------------------------------------------- */
 .footer {
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
-  text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+  text-align: left;
+  width: 100%;
 }
 
 .footer .footer-left p {
@@ -608,9 +604,9 @@ progress {
 
 /* Footer links */
 .footer p.footer-links {
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
   margin: 0 0 10px;
   padding: 0;
   -webkit-transition: ease 0.25s;
@@ -618,24 +614,24 @@ progress {
 }
 
 .footer p.footer-links a {
+  color: inherit;
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
-  color: inherit;
   -webkit-transition: ease 0.25s;
   transition: ease 0.25s;
 }
 
-.footer .footer-links a:before {
+.footer .footer-links a::before {
+  color: #fff;
   content: '·';
+  display: inline-block;
   font-size: 20px;
   left: 0;
-  color: #fff;
-  display: inline-block;
   padding-right: 5px;
 }
 
-.footer .footer-links .link-1:before {
+.footer .footer-links .link-1::before {
   content: none;
 }
 
@@ -646,18 +642,18 @@ progress {
 }
 
 .footer .footer-right a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
   background-color: #33383b;
   border-radius: 2px;
+  color: #fff;
+  display: inline-block;
   font-size: 20px;
-  color: #ffffff;
-  text-align: center;
+  height: 35px;
   line-height: 35px;
   margin-left: 3px;
+  text-align: center;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+  width: 35px;
 }
 
 .footer .footer-right a:hover {

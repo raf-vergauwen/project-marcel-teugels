@@ -1,0 +1,11 @@
+// https://dev.to/this-is-learning/incremental-stylesheet-linting-with-stylelint-and-the-nx-toolchain-3f5g
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-idiomatic-order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null
+  }
+}

@@ -3,8 +3,8 @@
 \*----------------------------------------------------------------------------*/
 
 // # <=======| Font-weight |=======>
-$font-weight-text: 400;
-$font-weight-heading: 700;
+$font-weight-text: 400; // Normal
+$font-weight-heading: 700; // Bold
 
 // # <=======| Padding and margin sizes |=======>
 $size-XS: 0.25rem; // 4px
@@ -27,7 +27,3 @@ $dimension-xxl: 140rem; // 2240px
 // # <=======| Other sizes |=======>
 
 $max-width: $dimension-xxl;
-
-.a > span {
-  color: tomato;
-}
