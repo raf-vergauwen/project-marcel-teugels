@@ -3,47 +3,47 @@
 \* -------------------------------------------------------------------------- */
 
 .footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 50px;
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
   text-align: left;
-  width: 100%;
 }
 
 .footer .footer-left p {
+  margin: 0;
   color: #8f9296;
   font-size: 14px;
-  margin: 0;
 }
 
 /* Footer links */
 
 .footer p.footer-links {
+  padding: 0;
+  margin: 0 0 10px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  margin: 0 0 10px;
-  padding: 0;
   transition: ease 0.25s;
 }
 
 .footer p.footer-links a {
-  color: inherit;
   display: inline-block;
+  color: inherit;
   line-height: 1.8;
   text-decoration: none;
   transition: ease 0.25s;
 }
 
 .footer .footer-links a::before {
+  left: 0;
+  display: inline-block;
+  padding-right: 5px;
   color: #fff;
   content: '·';
-  display: inline-block;
   font-size: 20px;
-  left: 0;
-  padding-right: 5px;
 }
 
 .footer .footer-links .link-1::before {
@@ -51,23 +51,23 @@
 }
 
 .footer .footer-right {
-  float: right;
-  margin-top: 6px;
   max-width: 180px;
+  margin-top: 6px;
+  float: right;
 }
 
 .footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 3px;
   background-color: #33383b;
   border-radius: 2px;
   color: #fff;
-  display: inline-block;
   font-size: 20px;
-  height: 35px;
   line-height: 35px;
-  margin-left: 3px;
   text-align: center;
   transition: all 0.25s;
-  width: 35px;
 }
 
 .footer .footer-right a:hover {
@@ -79,15 +79,15 @@
 }
 
 /* Media Queries */
-@include breakpoint(sm) {
+@include breakpoint(xsm) {
   .footer .footer-left,
   .footer .footer-right {
     text-align: center;
   }
 
   .footer .footer-right {
-    float: none;
     margin: 0 auto 20px;
+    float: none;
   }
 
   .footer .footer-left p.footer-links {

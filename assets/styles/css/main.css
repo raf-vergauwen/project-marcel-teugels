@@ -490,22 +490,22 @@ progress {
 /*----------------------------------------------------------------------------*\
 // +  Partial SCSS Group 4 - `layout/`
 \*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*\
+/* ----------------------------------------------------------------------------*\
 // *  _header.scss: This partial file contains all 'header' styles.
-\*----------------------------------------------------------------------------*/
+\*---------------------------------------------------------------------------- */
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
 }
 
 .topnav a {
-  float: left;
   display: block;
-  color: black;
-  text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  color: black;
+  float: left;
   font-size: 17px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .topnav a:hover {
@@ -524,39 +524,39 @@ progress {
 
 .topnav input[type='text'] {
   padding: 6px;
+  border: 0;
   margin-top: 8px;
   font-size: 17px;
-  border: none;
 }
 
 .topnav .search-container button {
-  float: right;
   padding: 6px 10px;
+  border: 0;
   margin-top: 8px;
   margin-right: 16px;
   background: #ddd;
-  font-size: 17px;
-  border: none;
   cursor: pointer;
+  float: right;
+  font-size: 17px;
 }
 
 .topnav .search-container button:hover {
   background: #ccc;
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 40rem) {
   .topnav .search-container {
     float: none;
   }
   .topnav a,
   .topnav input[type='text'],
   .topnav .search-container button {
-    float: none;
     display: block;
-    text-align: left;
     width: 100%;
-    margin: 0;
     padding: 14px;
+    margin: 0;
+    float: none;
+    text-align: left;
   }
   .topnav input[type='text'] {
     border: 1px solid #ccc;
@@ -585,37 +585,37 @@ progress {
 // *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 .footer {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 45px 50px;
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
   text-align: left;
-  width: 100%;
 }
 
 .footer .footer-left p {
+  margin: 0;
   color: #8f9296;
   font-size: 14px;
-  margin: 0;
 }
 
 /* Footer links */
 .footer p.footer-links {
+  padding: 0;
+  margin: 0 0 10px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  margin: 0 0 10px;
-  padding: 0;
   -webkit-transition: ease 0.25s;
   transition: ease 0.25s;
 }
 
 .footer p.footer-links a {
-  color: inherit;
   display: inline-block;
+  color: inherit;
   line-height: 1.8;
   text-decoration: none;
   -webkit-transition: ease 0.25s;
@@ -623,12 +623,12 @@ progress {
 }
 
 .footer .footer-links a::before {
+  left: 0;
+  display: inline-block;
+  padding-right: 5px;
   color: #fff;
   content: '·';
-  display: inline-block;
   font-size: 20px;
-  left: 0;
-  padding-right: 5px;
 }
 
 .footer .footer-links .link-1::before {
@@ -636,24 +636,24 @@ progress {
 }
 
 .footer .footer-right {
-  float: right;
-  margin-top: 6px;
   max-width: 180px;
+  margin-top: 6px;
+  float: right;
 }
 
 .footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 3px;
   background-color: #33383b;
   border-radius: 2px;
   color: #fff;
-  display: inline-block;
   font-size: 20px;
-  height: 35px;
   line-height: 35px;
-  margin-left: 3px;
   text-align: center;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
-  width: 35px;
 }
 
 .footer .footer-right a:hover {
@@ -666,14 +666,14 @@ progress {
 }
 
 /* Media Queries */
-@media (max-width: 60rem) {
+@media (max-width: 40rem) {
   .footer .footer-left,
   .footer .footer-right {
     text-align: center;
   }
   .footer .footer-right {
-    float: none;
     margin: 0 auto 20px;
+    float: none;
   }
   .footer .footer-left p.footer-links {
     line-height: 1.8;

@@ -1,6 +1,6 @@
-/*----------------------------------------------------------------------------*\
+/* -------------------------------------------------------------------------- *\
 // *  _header.scss: This partial file contains all 'header' styles.
-\*----------------------------------------------------------------------------*/
+\* -------------------------------------------------------------------------- */
 
 .topnav {
   overflow: hidden;
@@ -8,13 +8,13 @@
 }
 
 .topnav a {
-  float: left;
   display: block;
-  color: black;
-  text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  color: black;
+  float: left;
   font-size: 17px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .topnav a:hover {
@@ -33,40 +33,42 @@
 
 .topnav input[type='text'] {
   padding: 6px;
+  border: 0;
   margin-top: 8px;
   font-size: 17px;
-  border: none;
 }
 
 .topnav .search-container button {
-  float: right;
   padding: 6px 10px;
+  border: 0;
   margin-top: 8px;
   margin-right: 16px;
   background: #ddd;
-  font-size: 17px;
-  border: none;
   cursor: pointer;
+  float: right;
+  font-size: 17px;
 }
 
 .topnav .search-container button:hover {
   background: #ccc;
 }
 
-@include breakpoint(sm) {
+@include breakpoint(xsm) {
   .topnav .search-container {
     float: none;
   }
+
   .topnav a,
   .topnav input[type='text'],
   .topnav .search-container button {
-    float: none;
     display: block;
-    text-align: left;
     width: 100%;
-    margin: 0;
     padding: 14px;
+    margin: 0;
+    float: none;
+    text-align: left;
   }
+
   .topnav input[type='text'] {
     border: 1px solid #ccc;
   }

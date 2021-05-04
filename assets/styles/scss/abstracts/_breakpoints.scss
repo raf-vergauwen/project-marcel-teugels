@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// *  _breakpoints.scss: This partial file contains all Scss 'breakpoints'.
+// -----------------------------------------------------------------------------
+
 @mixin breakpoint($breakpoint) {
   // #  Extra Extra Small: 20rem / 320px
   @if $breakpoint == xxsm {

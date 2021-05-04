@@ -1,6 +1,6 @@
-/*----------------------------------------------------------------------------*\
+// -----------------------------------------------------------------------------
 // *  _mixins.scss: This partial file contains all Scss 'mixins'.
-\*----------------------------------------------------------------------------*/
+// -----------------------------------------------------------------------------
 
 @mixin section {
   min-width: 400px;
@@ -9,14 +9,15 @@
   &__container {
     @include container;
   }
+
   &__title {
     @include title;
   }
 }
 
 @mixin container {
-  max-width: $max-width;
   width: 100%;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -26,13 +27,12 @@
 }
 
 @mixin article {
-  border-radius: $border-radius;
   overflow: hidden;
+  border-radius: $border-radius;
 }
 
 @mixin title {
   margin-bottom: $size-S; // 0.5em
-
   color: $color-white;
   font-size: round($font-size-6);
   font-weight: $font-weight-heading;
