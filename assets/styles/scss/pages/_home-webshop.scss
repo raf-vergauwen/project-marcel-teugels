@@ -6,6 +6,38 @@
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
 
+.hero {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+      45deg,
+      $linear-gradient-red,
+      $linear-gradient-orange,
+      $linear-gradient-yellow
+    );
+  }
+
+  &__visual {
+    width: $dimension-xxsm;
+  }
+
+  &__subject {
+    @include subject;
+  }
+
+  &__title {
+    @include title;
+  }
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
@@ -14,8 +46,6 @@
 
 .hot-items {
   @include section;
-
-  background-color: greenyellow;
 
   &__container {
     @include container;

@@ -52,3 +52,12 @@ $border-radius: $size-sm; // 16px
 // #  <=======| Font-weight |=======>
 $font-weight-text: 400; // Normal
 $font-weight-heading: 700; // Bold
+
+// #  <=======| Colors |=======>
+$color-grey-ish: hsl(31, 50%, 95%);
+$color-purple: hsl(261, 61.2%, 14.3%);
+$color-white: white;
+
+$linear-gradient-yellow: hsla(45, 100%, 50%, 0.8);
+$linear-gradient-orange: hsla(31, 99.8%, 42.8%, 0.8);
+$linear-gradient-red: hsla(348, 99.8%, 47.1%, 0.8);

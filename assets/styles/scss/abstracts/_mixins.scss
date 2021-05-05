@@ -43,6 +43,7 @@
 
 // #  Typography
 
+// h1
 @mixin subject {
   text-align: center;
 }
@@ -62,6 +63,10 @@
 @mixin text {
   // ...
 }
+
+// #  Helpers
+
+
 
 // -----------------------------------------------------------------------------
 // -  Specific Mixin
