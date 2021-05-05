@@ -6,6 +6,8 @@
 // -  Generic Mixin
 // -----------------------------------------------------------------------------
 
+// #  Layout
+
 @mixin section {
   min-width: $dimension-xxsm;
   padding: $size-xxl;
@@ -39,8 +41,10 @@
   // ...
 }
 
+// #  Typography
+
 @mixin subject {
-  // ...
+  text-align: center;
 }
 
 @mixin title {
