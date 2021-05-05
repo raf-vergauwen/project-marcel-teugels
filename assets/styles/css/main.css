@@ -1,13 +1,14 @@
 @charset "UTF-8";
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 1 - `abstracts/`
++  Partial SCSS Group 1 - `abstracts/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 2 - `vendors/`
++  Partial SCSS Group 2 - `vendors/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _reboot.scss: This partial file contains the bootstrap 'reboot'.
+*  _reboot.scss: This partial file contains the bootstrap 'reboot'.
 \* -------------------------------------------------------------------------- */
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css");
 *,
 *::before,
 *::after {
@@ -454,10 +455,13 @@ progress {
 }
 
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 3 - `base/`
+*  _bulma.scss: This partial file contains the 'bulma' theme.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  This partial file contains the custom `reset` HTML tags
++  Partial SCSS Group 3 - `base/`
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  This partial file contains the custom `reset` HTML tags
 \* -------------------------------------------------------------------------- */
 body {
   margin: 0 auto;
@@ -466,31 +470,31 @@ body {
 }
 
 /* -------------------------------------------------------------------------- *\
-// *  This partial file contains all application-wide 'typography'.
+*  This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
 /*
-  -  Headings
+-  Headings
 */
 /*
-  -  Inline text elements
+-  Inline text elements
 */
 /*
-  -  Abbreviations
+-  Abbreviations
 */
 /*
-  -  Blockquotes
+-  Blockquotes
 */
 /*
-  -  Lists
+-  Lists
 */
 /*
-  - Responsive font sizes
+-  Responsive font sizes
 */
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 4 - `layout/`
++  Partial SCSS Group 4 - `layout/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _header.scss: This partial file contains all 'header' styles.
+*  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
 .topnav {
   overflow: hidden;
@@ -572,25 +576,25 @@ body {
 }
 
 /* -------------------------------------------------------------------------- *\
-// *  _nav.scss: This partial file contains all 'nav' styles.
+*  _nav.scss: This partial file contains all 'nav' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _main.scss: This partial file contains all 'main' styles.
+*  _main.scss: This partial file contains all 'main' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _aside.scss: This partial file contains all 'aside' styles.
+*  _aside.scss: This partial file contains all 'aside' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _section.scss: This partial file contains all 'section' styles.
+*  _section.scss: This partial file contains all 'section' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _article.scss: This partial file contains all 'article' styles.
+*  _article.scss: This partial file contains all 'article' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _address.scss: This partial file contains all 'address' styles.
+*  _address.scss: This partial file contains all 'address' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _footer.scss: This partial file contains all 'footer' styles.
+*  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 .footer {
   width: 100%;
@@ -689,53 +693,53 @@ body {
 }
 
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 5 - `components/`
++  Partial SCSS Group 5 - `components/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  Partial SCSS Group 5.1 - `components/single-part/`
+*  Partial SCSS Group 5.1 - `components/single-part/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _block.scss: This partial file contains all 'block' styles.
+*  _block.scss: This partial file contains all 'block' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _box.scss: This partial file contains all 'box' styles.
+*  _box.scss: This partial file contains all 'box' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _button.scss: This partial file contains all 'button' styles.
+*  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _content.scss: This partial file contains all 'content' styles.
+*  _content.scss: This partial file contains all 'content' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _delete.scss: This partial file contains all 'delete' styles.
+*  _delete.scss: This partial file contains all 'delete' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _icon.scss: This partial file contains all 'icon' styles.
+*  _icon.scss: This partial file contains all 'icon' styles.
 \* -------------------------------------------------------------------------- */
 svg {
   fill: var(--foreground-color);
 }
 
 /* -------------------------------------------------------------------------- *\
-// *  _image.scss: This partial file contains all 'image' styles.
+*  _image.scss: This partial file contains all 'image' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _notification.scss: This partial file contains all 'notification' styles.
+*  _notification.scss: This partial file contains all 'notification' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _progress-bars.scss: This partial file contains all 'progress-bars' styles.
+*  _progress-bars.scss: This partial file contains all 'progress-bars' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _table.scss: This partial file contains all 'table' styles.
+*  _table.scss: This partial file contains all 'table' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _tag.scss: This partial file contains all 'tag' styles.
+*  _tag.scss: This partial file contains all 'tag' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _title.scss: This partial file contains all 'title' styles.
+*  _title.scss: This partial file contains all 'title' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _toggle.scss: This partial file contains all 'toggle' styles.
+*  _toggle.scss: This partial file contains all 'toggle' styles.
 \* -------------------------------------------------------------------------- */
 .theme-switch-wrapper {
   display: -webkit-box;
@@ -800,85 +804,100 @@ input:checked + .slider::before {
 }
 
 /* -------------------------------------------------------------------------- *\
-// *  Partial SCSS Group 5.2 - `components/forms/`
+*  Partial SCSS Group 5.2 - `components/forms/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _general.scss: This partial file contains all 'general' styles.
+*  _general.scss: This partial file contains all 'general' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _input.scss: This partial file contains all 'input' styles.
+*  _input.scss: This partial file contains all 'input' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _textarea.scss: This partial file contains all 'textarea' styles.
+*  _textarea.scss: This partial file contains all 'textarea' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _select.scss: This partial file contains all 'select' styles.
+*  _select.scss: This partial file contains all 'select' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _checkbox.scss: This partial file contains all 'checkbox' styles.
+*  _checkbox.scss: This partial file contains all 'checkbox' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _radio.scss: This partial file contains all 'radio' styles.
+*  _radio.scss: This partial file contains all 'radio' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _file.scss: This partial file contains all 'file' styles.
+*  _file.scss: This partial file contains all 'file' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  Partial SCSS Group 5.3 - `components/multi-part/`
+*  Partial SCSS Group 5.3 - `components/multi-part/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _breadcrumb.scss: This partial file contains all 'breadcrumb' styles.
+*  _breadcrumb.scss: This partial file contains all 'breadcrumb' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _card.scss: This partial file contains all 'card' styles.
+*  _card.scss: This partial file contains all 'card' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _dropdown.scss: This partial file contains all 'dropdown' styles.
+*  _dropdown.scss: This partial file contains all 'dropdown' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _menu.scss: This partial file contains all 'menu' styles.
+*  _menu.scss: This partial file contains all 'menu' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _message.scss: This partial file contains all 'message' styles.
+*  _message.scss: This partial file contains all 'message' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _modal.scss: This partial file contains all 'modal' styles.
+*  _modal.scss: This partial file contains all 'modal' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _navbar.scss: This partial file contains all 'navbar' styles.
+*  _navbar.scss: This partial file contains all 'navbar' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _pagination.scss: This partial file contains all 'pagination' styles.
+*  _pagination.scss: This partial file contains all 'pagination' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _panel.scss: This partial file contains all 'panel' styles.
+*  _panel.scss: This partial file contains all 'panel' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _tabs.scss: This partial file contains all 'tabs' styles.
+*  _tabs.scss: This partial file contains all 'tabs' styles.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 6 - `pages/`
++  Partial SCSS Group 6 - `pages/`
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _index.scss: This partial file contains the styles of the 'index' page.
+*  _index.scss: This partial file contains the styles of the 'index' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _home.scss: This partial file contains the styles of the 'home' page.
+*  _home.scss: This partial file contains the styles of the 'home' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _login.scss: This partial file contains the styles of the 'login' page.
+*  _home-restoration.scss: This partial file contains the styles of the 'home-restoration' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _profile.scss: This partial file contains the styles of the 'profile' page.
+*  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _storefront.scss: This partial file contains the'storefront' page styles.
+-  Section-1: Hero
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// +  Partial SCSS Group 7 - `themes/`
+-  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// *  _light.scss: This partial file contains the 'light' theme.
+-  Section-3: About
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _login.scss: This partial file contains the styles of the 'login' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _profile.scss: This partial file contains the styles of the 'profile' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _storefront.scss: This partial file contains the'storefront' page styles.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
++  Partial SCSS Group 7 - `themes/`
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _light.scss: This partial file contains the 'light' theme.
 \* -------------------------------------------------------------------------- */
 :root,
 [data-theme='light'] {
@@ -890,7 +909,7 @@ input:checked + .slider::before {
 }
 
 /* -------------------------------------------------------------------------- *\
-// *  _dark.scss: This partial file contains the 'dark' theme.
+*  _dark.scss: This partial file contains the 'dark' theme.
 \* -------------------------------------------------------------------------- */
 [data-theme='dark'] {
   --foreground-color: hsl(240, 100%, 99%);
