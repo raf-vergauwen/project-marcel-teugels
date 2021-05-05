@@ -4,9 +4,14 @@
 
 :root,
 [data-theme='light'] {
-  --foreground-color: hsl(0, 3%, 6%);
+  --foreground-color: hsl(0, 3%, 10%);
+  --foreground-color--accent: hsl(0, 3%, 0%);
   --background-color: hsl(240, 100%, 99%);
+  --background-color--accent: hsl(240, 100%, 94%);
   --primary-color: hsl(207, 48%, 14%);
+  --primary-color--accent: hsl(207, 48%, 4%);
   --secondary-color: hsl(214, 42%, 64%);
-  --accent-color: hsl(23, 42%, 64%);
+  --secondary-color--accent: hsl(214, 42%, 54%);
+  --tertiary-color: hsl(23, 42%, 64%);
+  --tertiary-color--accent: hsl(23, 42%, 54%);
 }

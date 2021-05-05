@@ -3,10 +3,8 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// -  Generic Mixin
+// -  Layout
 // -----------------------------------------------------------------------------
-
-// #  Layout
 
 @mixin section {
   min-width: $dimension-xxsm;
@@ -41,33 +39,38 @@
   // ...
 }
 
-// #  Typography
+// -----------------------------------------------------------------------------
+// -  Typography
+// -----------------------------------------------------------------------------
 
-// h1
+// #  <h1>
 @mixin subject {
-  text-align: center;
+  // ...
 }
 
+// #  <h2>
 @mixin title {
-  margin-bottom: $size-sm;
-  color: var(--primary-color);
-  font-size: round($font-size-6);
-  font-weight: $font-weight-heading;
-  text-align: center;
+  // ...
 }
 
+// #  <h3>
 @mixin subtitle {
   // ...
 }
 
+// #  <p>
 @mixin text {
   // ...
 }
 
-// #  Helpers
-
-
-
 // -----------------------------------------------------------------------------
 // -  Specific Mixin
 // -----------------------------------------------------------------------------
+
+// @mixin title {
+//   margin-bottom: $size-sm;
+//   color: var(--primary-color);
+//   font-size: $font-size-5;
+//   font-weight: $font-weight-heading;
+//   text-align: center;
+// }

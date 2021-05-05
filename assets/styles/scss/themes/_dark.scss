@@ -4,8 +4,13 @@
 
 [data-theme='dark'] {
   --foreground-color: hsl(240, 100%, 99%);
-  --background-color: hsl(0, 3%, 6%);
+  --foreground-color--accent: hsl(240, 100%, 100%);
+  --background-color: hsl(0, 3%, 10%);
+  --background-color--accent: hsl(0, 3%, 20%);
   --primary-color: hsl(27, 48%, 86%);
+  --primary-color--accent: hsl(27, 48%, 96%);
   --secondary-color: hsl(34, 42%, 36%);
-  --accent-color: hsl(203, 42%, 36%);
+  --secondary-color--accent: hsl(34, 42%, 46%);
+  --tertiary-color: hsl(203, 42%, 36%);
+  --tertiary-color--accent: hsl(203, 42%, 46%);
 }

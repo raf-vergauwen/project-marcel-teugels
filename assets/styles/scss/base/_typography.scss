@@ -38,10 +38,8 @@ h1 {
 
 h2 {
   font-size: calc(1.325rem + 0.9vw);
-}
 
-@media (min-width: $dimension-md) {
-  h2 {
+  @media (min-width: $dimension-md) {
     font-size: $size-lg;
   }
 }

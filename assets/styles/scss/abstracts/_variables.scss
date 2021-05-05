@@ -2,7 +2,7 @@
 // *  _variables.scss: This partial file contains all Scss 'variables'.
 // -----------------------------------------------------------------------------
 
-// #  <=======| Sizes |=======>
+// -  <=======| Sizes |=======>
 $size-xxsm: 0.25rem; // 4px
 $size-xsm: 0.5rem; // 8px
 $size-sm: 1rem; // 16px
@@ -11,7 +11,7 @@ $size-lg: 2rem; // 32px
 $size-xl: 3rem; // 48px
 $size-xxl: 4rem; // 64px
 
-// #  <=======| Dimensions |=======>
+// -  <=======| Dimensions |=======>
 $dimension-xxsm: 20rem; // 320px
 $dimension-xsm: 40rem; // 640px
 $dimension-sm: 60rem; // 960px
@@ -20,13 +20,15 @@ $dimension-lg: 100rem; // 1600px
 $dimension-xl: 120rem; // 1920px
 $dimension-xxl: 140rem; // 2240px
 
-// #  <=======| Other sizes |=======>
+// -  <=======| Other sizes |=======>
 $max-width: $dimension-xxl;
 
-// #  <=======| Font-size |=======>
+// -  <=======| Font-size |=======>
+
+// #  Generic
 $font-scale: 1.2;
 $font-size: 1rem; // 16px
-$font-size-1: $font-size * $font-scale;
+$font-size-1: $font-size;
 $font-size-2: $font-size-1 * $font-scale;
 $font-size-3: $font-size-2 * $font-scale;
 $font-size-4: $font-size-3 * $font-scale;
@@ -36,24 +38,26 @@ $font-size-7: $font-size-6 * $font-scale;
 $font-size-8: $font-size-7 * $font-scale;
 $font-size-9: $font-size-8 * $font-scale;
 
-$font-size-subject: $font-size-8;
-$font-size-heading: $font-size-5;
-$font-size-text: $font-size-1;
+// #  Specific
+$font-size--subject: $font-size-8;
+$font-size--heading: $font-size-5;
+$font-size--heading: $font-size-5;
+$font-size--text: $font-size-1;
 
-// #  <=======| Box-shadow |=======>
+// -  <=======| Box-shadow |=======>
 $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
-// #  <=======| Text-shadow |=======>
+// -  <=======| Text-shadow |=======>
 $text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
-// #  <=======| Border-radius |=======>
+// -  <=======| Border-radius |=======>
 $border-radius: $size-sm; // 16px
 
-// #  <=======| Font-weight |=======>
+// -  <=======| Font-weight |=======>
 $font-weight-text: 400; // Normal
 $font-weight-heading: 700; // Bold
 
-// #  <=======| Colors |=======>
+// -  <=======| Colors |=======>
 $color-grey-ish: hsl(31, 50%, 95%);
 $color-purple: hsl(261, 61.2%, 14.3%);
 $color-white: white;

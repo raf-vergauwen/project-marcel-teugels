@@ -974,7 +974,7 @@ input:checked + .slider::before {
 .hero__title {
   margin-bottom: 1rem;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.48832rem;
   font-weight: 700;
   text-align: center;
 }
@@ -996,7 +996,7 @@ input:checked + .slider::before {
 .hot-items__title {
   margin-bottom: 1rem;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.48832rem;
   font-weight: 700;
   text-align: center;
 }
@@ -1012,7 +1012,7 @@ input:checked + .slider::before {
 .hot-items__title {
   margin-bottom: 1rem;
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2.48832rem;
   font-weight: 700;
   text-align: center;
 }
