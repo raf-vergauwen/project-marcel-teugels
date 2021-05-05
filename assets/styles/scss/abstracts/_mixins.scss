@@ -2,8 +2,12 @@
 // *  _mixins.scss: This partial file contains all Scss 'mixins'.
 // -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+// -  Generic Mixin
+// -----------------------------------------------------------------------------
+
 @mixin section {
-  min-width: 400px;
+  min-width: $dimension-xxsm;
   padding: $size-xxl;
 
   &__container {
@@ -13,6 +17,11 @@
   &__title {
     @include title;
   }
+}
+
+@mixin article {
+  overflow: hidden;
+  border-radius: $border-radius;
 }
 
 @mixin container {
@@ -26,14 +35,30 @@
   flex-direction: $flex-direction;
 }
 
-@mixin article {
-  overflow: hidden;
-  border-radius: $border-radius;
+@mixin grid-container {
+  // ...
+}
+
+@mixin subject {
+  // ...
 }
 
 @mixin title {
-  margin-bottom: $size-xsm;
+  margin-bottom: $size-sm;
   color: var(--primary-color);
   font-size: round($font-size-6);
   font-weight: $font-weight-heading;
+  text-align: center;
 }
+
+@mixin subtitle {
+  // ...
+}
+
+@mixin text {
+  // ...
+}
+
+// -----------------------------------------------------------------------------
+// -  Specific Mixin
+// -----------------------------------------------------------------------------

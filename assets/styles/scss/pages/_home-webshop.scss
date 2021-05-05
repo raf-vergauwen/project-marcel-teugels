@@ -10,7 +10,7 @@
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
 
-// Main part
+// #  Main part
 
 .hot-items {
   @include section;
@@ -25,6 +25,33 @@
 
   &__title {
     @include title;
+  }
+}
+
+// #  Individual cards
+
+.hot-items-card {
+  @include container;
+
+  min-width: 300px;
+  max-width: 400px;
+  flex-basis: 300px;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  &__visual {
+    background-color: tan;
+  }
+
+  &__title {
+    margin: $size-xsm;
+    font-size: $font-size-text;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: $size-xxsm;
+    text-align: left;
+    text-transform: lowercase;
   }
 }
 

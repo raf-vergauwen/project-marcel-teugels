@@ -3,5 +3,10 @@
 \* -------------------------------------------------------------------------- */
 
 .card {
+  overflow: hidden;
+  align-self: center;
+  margin: $size-sm;
   background-color: aqua;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
