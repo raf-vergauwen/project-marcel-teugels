@@ -88,15 +88,6 @@
       "strikethrough": false,
       "tag": "#",
       "underline": false
-    },
-    {
-      "backgroundColor": "transparent",
-      "bold": false,
-      "color": "#596673",
-      "italic": false,
-      "strikethrough": true,
-      "tag": "//",
-      "underline": false
     }
   ],
   "bracket-pair-colorizer-2.activeScopeCSS": [
