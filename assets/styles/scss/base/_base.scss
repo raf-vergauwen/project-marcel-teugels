@@ -1,12 +1,14 @@
 /* -------------------------------------------------------------------------- *\
-*  This partial file contains the custom `reset` HTML tags
+*  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
-
-// See '../vendors/reboot';
 
 body {
   margin: 0 auto;
   background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  // font-size: calc(1rem + 0.25vh);
+  font-weight: 300;
+  line-height: 1.5;
 }

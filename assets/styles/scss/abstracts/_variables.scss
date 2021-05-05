@@ -1,67 +1,87 @@
 // -----------------------------------------------------------------------------
-// *  _variables.scss: This partial file contains all Scss 'variables'.
+// +  _variables.scss: This partial file contains all Scss 'variables'.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// *  Box Model Variables
 // -----------------------------------------------------------------------------
 
 // -  <=======| Sizes |=======>
-$size-xxsm: 0.25rem; // 4px
-$size-xsm: 0.5rem; // 8px
-$size-sm: 1rem; // 16px
-$size-md: 1.5rem; // 24px
-$size-lg: 2rem; // 32px
-$size-xl: 3rem; // 48px
-$size-xxl: 4rem; // 64px
+$size--xxsm: 0.25rem; // 4px
+$size--xsm: 0.5rem; // 8px
+$size--sm: 1rem; // 16px
+$size--md: 1.5rem; // 24px
+$size--lg: 2rem; // 32px
+$size--xl: 3rem; // 48px
+$size--xxl: 4rem; // 64px
 
 // -  <=======| Dimensions |=======>
-$dimension-xxsm: 20rem; // 320px
-$dimension-xsm: 40rem; // 640px
-$dimension-sm: 60rem; // 960px
-$dimension-md: 80rem; // 1280px
-$dimension-lg: 100rem; // 1600px
-$dimension-xl: 120rem; // 1920px
-$dimension-xxl: 140rem; // 2240px
+$dimension--xxsm: 20rem; // 320px
+$dimension--xsm: 40rem; // 640px
+$dimension--sm: 60rem; // 960px
+$dimension--md: 80rem; // 1280px
+$dimension--lg: 100rem; // 1600px
+$dimension--xl: 120rem; // 1920px
+$dimension--xxl: 140rem; // 2240px
 
 // -  <=======| Other sizes |=======>
-$max-width: $dimension-xxl;
+$max-width: $dimension--xxl;
 
-// -  <=======| Font-size |=======>
+// -----------------------------------------------------------------------------
+// *  Typography Variables
+// -----------------------------------------------------------------------------
 
-// #  Generic
-$font-scale: 1.2;
+// -  <<----------<< Generic Font Related >>---------->>
+
+$font-scale: 1.25;
 $font-size: 1rem; // 16px
-$font-size-1: $font-size;
-$font-size-2: $font-size-1 * $font-scale;
-$font-size-3: $font-size-2 * $font-scale;
-$font-size-4: $font-size-3 * $font-scale;
-$font-size-5: $font-size-4 * $font-scale;
-$font-size-6: $font-size-5 * $font-scale;
-$font-size-7: $font-size-6 * $font-scale;
-$font-size-8: $font-size-7 * $font-scale;
-$font-size-9: $font-size-8 * $font-scale;
+$font-size--1: $font-size; // 16px
+$font-size--2: $font-size--1 * $font-scale; // 20px
+$font-size--3: $font-size--2 * $font-scale; // 25px
+$font-size--4: $font-size--3 * $font-scale; // 31.25px
+$font-size--5: $font-size--4 * $font-scale; // 39.06px
+$font-size--6: $font-size--5 * $font-scale; // 48.83px
+$font-size--7: $font-size--6 * $font-scale; // 61.04px
 
-// #  Specific
-$font-size--subject: $font-size-8;
-$font-size--heading: $font-size-5;
-$font-size--heading: $font-size-5;
-$font-size--text: $font-size-1;
+// -  <<----------<< Specific Font Related >>---------->>
+
+// #  Font-size
+$font-size--subject: $font-size--7;
+$font-size--title: $font-size--5;
+$font-size--subtitle: $font-size--3;
+$font-size--text: $font-size--1;
+
+// #  Font-family
+$font-family--subject: 'Montserrat', sans-serif;
+$font-family--title: 'Montserrat', sans-serif;
+$font-family--subtitle: 'Montserrat', sans-serif;
+$font-family--text: 'Roboto', sans-serif;
+
+// #  Font-weight
+$font-weight--subject: 700;
+$font-weight--title: 400;
+$font-weight--subtitle: 300;
+$font-weight--text: 300;
+
+// -----------------------------------------------------------------------------
+// *  Other Variables
+// -----------------------------------------------------------------------------
 
 // -  <=======| Box-shadow |=======>
 $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
 // -  <=======| Text-shadow |=======>
-$text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+$text-shadow--1: 10px 10px 10px rgba(0, 0, 0, 0.5);
+$text-shadow--2: 1px 1px 2px black;
 
 // -  <=======| Border-radius |=======>
-$border-radius: $size-sm; // 16px
-
-// -  <=======| Font-weight |=======>
-$font-weight-text: 400; // Normal
-$font-weight-heading: 700; // Bold
+$border-radius: $size--sm; // 16px
 
 // -  <=======| Colors |=======>
-$color-grey-ish: hsl(31, 50%, 95%);
-$color-purple: hsl(261, 61.2%, 14.3%);
-$color-white: white;
+$color--grey-ish: hsl(31, 50%, 95%);
+$color--purple: hsl(261, 61.2%, 14.3%);
+$color--white: white;
 
-$linear-gradient-yellow: hsla(45, 100%, 50%, 0.8);
-$linear-gradient-orange: hsla(31, 99.8%, 42.8%, 0.8);
-$linear-gradient-red: hsla(348, 99.8%, 47.1%, 0.8);
+$linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);
+$linear-gradient--orange: hsla(31, 99.8%, 42.8%, 0.8);
+$linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
