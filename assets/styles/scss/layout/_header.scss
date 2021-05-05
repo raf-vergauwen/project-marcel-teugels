@@ -30,9 +30,6 @@
 .topnav .search-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  align-self: center;
-  align-content: center;
 }
 
 .topnav input[type='text'] {
@@ -59,7 +56,13 @@
 
 @include breakpoint(xsm) {
   .topnav .search-container {
-    float: none;
+    display: block;
+    width: 100%;
+    // margin-bottom: 8px;
+  }
+
+  label.theme-switch {
+    margin: 8px;
   }
 
   .topnav a,
