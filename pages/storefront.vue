@@ -13,16 +13,13 @@
           {{ product.name }}
           <ul style="list-style-type: none">
             <li>
-              <img
-                src="http://157.230.126.154/assets/88a546ef-8456-46ae-a887-f378e25ee300"
-                alt=""
-              />
+              <img :src="src + product.images[0].directus_files_id" alt="" />
             </li>
+            <li>{{ product.name }}</li>
             <li>{{ product.id }}</li>
             <li>{{ product.description }}</li>
             <li>Quantity: {{ product.quantity_in_stock }}</li>
             <li>Price: € {{ product.price }}</li>
-            <li>{{ product.name }}</li>
           </ul>
         </li>
       </ul>
@@ -35,9 +32,7 @@ export default {
   data() {
     return {
       productData: {},
-      outside: null,
-      imageCodeList: [],
-      imageUrlList: [],
+      src: 'http://157.230.126.154/assets/',
     };
   },
   computed: {
@@ -60,35 +55,6 @@ export default {
         .then((data) => {
           console.log(data);
           this.productData = data;
-          this.initImageCodeArray();
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    initImageCodeArray() {
-      for (let i = 0; i < this.productData.data.length; i++) {
-        const temp = JSON.parse(
-          JSON.stringify(this.productData.data[i].images[0].directus_files_id),
-        );
-        this.imageCodeList.push(temp);
-        this.fetchImages(this.imageCodeList[i]);
-      }
-      console.log(this.imageCodeList);
-      console.log(this.imageUrlList);
-    },
-    fetchImages(imageCode) {
-      fetch(`http://157.230.126.154/assets/${imageCode}`, {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + this.access_token,
-        },
-      })
-        .then((response) => {
-          return response.blob();
-        })
-        .then((image) => {
-          this.imageUrlList.push(URL.createObjectURL(image));
         })
         .catch((err) => {
           console.error(err);
