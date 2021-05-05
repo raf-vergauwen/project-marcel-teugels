@@ -4,7 +4,7 @@
 
 @mixin section {
   min-width: 400px;
-  padding: $size-4XL;
+  padding: $size-xxl;
 
   &__container {
     @include container;
@@ -32,12 +32,8 @@
 }
 
 @mixin title {
-  margin-bottom: $size-S; // 0.5em
-  color: $color-white;
+  margin-bottom: $size-xsm;
+  color: var(--primary-color);
   font-size: round($font-size-6);
   font-weight: $font-weight-heading;
-}
-
-@mixin latin-name {
-  font-style: $font-style-italic;
 }

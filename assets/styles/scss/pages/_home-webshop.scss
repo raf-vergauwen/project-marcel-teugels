@@ -10,6 +10,24 @@
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
 
+// Main part
+
+.hot-items {
+  @include section;
+
+  background-color: greenyellow;
+
+  &__container {
+    @include container;
+
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    @include title;
+  }
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
