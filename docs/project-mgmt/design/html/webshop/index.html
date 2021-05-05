@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="/assets/styles/css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="topnav">
-        <a class="active" href="#home">Home</a>
+        <a class="active" href="#hero">Home</a>
+        <a href="#hot-items">Hot items</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
         <div class="search-container">
           <form action="/example.js">
             <input type="text" placeholder="Search.." name="search" />
@@ -32,66 +32,59 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="section-1-hero">
-        <p>
-          Fugiat consectetur tempor fugiat deserunt voluptate veniam eiusmod non
-          voluptate nisi cillum reprehenderit magna ad. Culpa do nostrud irure
-          anim Lorem consectetur anim consequat in. Tempor non nulla et sit sunt
-          duis incididunt tempor deserunt velit mollit aliquip nostrud. Et non
-          ipsum Lorem aliqua occaecat nulla. Exercitation proident duis
-          voluptate excepteur. Reprehenderit cupidatat pariatur dolore nisi nisi
-          exercitation eu non voluptate. Non dolore in qui esse esse nostrud
-          sunt do et nisi. Exercitation sint anim magna velit ullamco voluptate
-          anim commodo aute dolor ea. Ad ut exercitation magna proident nisi
-          labore in ad reprehenderit.
-        </p>
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="hero__container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="hero__logo"
+          >
+            <path
+              d="M376.7.1 255.8 121 135 .1h-52.9v343.4h53V219.1h94.3v291.3h52.8V219.1h94.3v124.5h53V.1h-52.8zM135.4 167.4v-94l94 94h-94zm240.9 0h-94l94-94v94z"
+            />
+          </svg>
+          <h1 class="hero__subject">Marcel Teugels</h1>
+          <hr />
+          <h2 class="hero__title">
+            Apprentice blacksmith, conservator, restorer of wood & metal
+          </h2>
+        </div>
       </section>
-      <section class="section-2-placeholder">
-        <p>
-          Tempor sint excepteur laboris dolore excepteur eu proident duis. Minim
-          culpa duis enim aliqua ut labore occaecat qui fugiat minim ad
-          exercitation. Ea do ad quis occaecat. Sint est aliquip labore sint
-          consectetur sint incididunt eiusmod duis labore fugiat exercitation
-          velit ut. Elit veniam dolor fugiat pariatur eiusmod ea eu ipsum esse
-          consequat excepteur in fugiat ullamco. Ullamco officia mollit eiusmod
-          veniam mollit irure. Est nulla do incididunt fugiat aliquip. Pariatur
-          enim quis nulla ipsum sunt sit aliqua excepteur.
-        </p>
+      <section class="hot-items" id="hot-items">
+        <div class="hot-items__container">
+          <p>
+            Tempor sint excepteur laboris dolore excepteur eu proident duis.
+            Minim culpa duis enim aliqua ut labore occaecat qui fugiat minim ad
+            exercitation. Ea do ad quis occaecat. Sint est aliquip labore sint
+            consectetur sint incididunt eiusmod duis labore fugiat exercitation
+            velit ut. Elit veniam dolor fugiat pariatur eiusmod ea eu ipsum esse
+            consequat excepteur in fugiat ullamco. Ullamco officia mollit
+            eiusmod veniam mollit irure. Est nulla do incididunt fugiat aliquip.
+            Pariatur enim quis nulla ipsum sunt sit aliqua excepteur.
+          </p>
+        </div>
       </section>
-      <section class="section-3-placeholder">
-        <p>
-          Cillum amet velit commodo irure aliquip sint consequat culpa
-          incididunt. Consequat et excepteur ad ad aliqua Lorem tempor irure
-          esse duis elit. Veniam Lorem tempor sunt ut elit pariatur consequat eu
-          cillum fugiat non. Ex irure adipisicing laboris labore reprehenderit
-          nisi amet Lorem nisi voluptate ullamco occaecat veniam. Irure est id
-          ut nulla exercitation dolor consequat culpa ut. Id aliqua magna
-          consequat consequat in officia ullamco officia nulla nulla irure id.
-          Occaecat reprehenderit cillum veniam eu minim reprehenderit.
-          Reprehenderit culpa nulla reprehenderit laboris consectetur officia
-          labore ad aliqua sit fugiat exercitation nisi. Ea et dolore irure
-          commodo minim tempor pariatur adipisicing labore do fugiat occaecat.
-          Quis dolor labore dolor et ullamco proident consectetur. Aliquip
-          laboris do in enim adipisicing elit ad irure sint nulla ea pariatur
-          ea. Do esse non reprehenderit aliqua nostrud pariatur commodo aliqua
-          cillum.
-        </p>
-      </section>
-      <section class="section-4-placeholder">
-        <p>
-          Fugiat minim ex et deserunt anim ea qui dolor. Eiusmod dolore ullamco
-          elit nulla enim Lorem ad nulla. Irure sint labore labore excepteur
-          ullamco aliquip enim voluptate nostrud anim. Labore ex do excepteur
-          reprehenderit quis nostrud est eu dolore velit occaecat quis velit. Id
-          do do anim tempor et culpa aute pariatur officia consectetur do
-          cupidatat ad ad. Nisi aliqua sunt exercitation aliquip nostrud duis
-          elit est. Laboris occaecat esse et incididunt fugiat pariatur. Magna
-          adipisicing qui consequat adipisicing. Eiusmod qui consectetur dolore
-          laboris incididunt magna tempor aliqua amet excepteur cillum minim
-          laboris. Sit adipisicing nostrud nisi consectetur laborum deserunt
-          nisi nisi tempor.
-        </p>
+      <section class="about" id="about">
+        <div class="about__container">
+          <p>
+            Cillum amet velit commodo irure aliquip sint consequat culpa
+            incididunt. Consequat et excepteur ad ad aliqua Lorem tempor irure
+            esse duis elit. Veniam Lorem tempor sunt ut elit pariatur consequat
+            eu cillum fugiat non. Ex irure adipisicing laboris labore
+            reprehenderit nisi amet Lorem nisi voluptate ullamco occaecat
+            veniam. Irure est id ut nulla exercitation dolor consequat culpa ut.
+            Id aliqua magna consequat consequat in officia ullamco officia nulla
+            nulla irure id. Occaecat reprehenderit cillum veniam eu minim
+            reprehenderit. Reprehenderit culpa nulla reprehenderit laboris
+            consectetur officia labore ad aliqua sit fugiat exercitation nisi.
+            Ea et dolore irure commodo minim tempor pariatur adipisicing labore
+            do fugiat occaecat. Quis dolor labore dolor et ullamco proident
+            consectetur. Aliquip laboris do in enim adipisicing elit ad irure
+            sint nulla ea pariatur ea. Do esse non reprehenderit aliqua nostrud
+            pariatur commodo aliqua cillum.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="footer">
