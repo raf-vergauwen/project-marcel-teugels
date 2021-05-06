@@ -3,10 +3,12 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// *  Box Model Variables
+// *  Box Model
 // -----------------------------------------------------------------------------
 
 // -  <<----------<< Sizes >>---------->>
+
+// #  Sizes
 $size--xxsm: 0.25rem; // 4px
 $size--xsm: 0.5rem; // 8px
 $size--sm: 1rem; // 16px
@@ -16,6 +18,8 @@ $size--xl: 3rem; // 48px
 $size--xxl: 4rem; // 64px
 
 // -  <<----------<< Dimensions >>---------->>
+
+// #  Dimensions
 $dimension--xxsm: 20rem; // 320px
 $dimension--xsm: 40rem; // 640px
 $dimension--sm: 60rem; // 960px
@@ -24,14 +28,14 @@ $dimension--lg: 100rem; // 1600px
 $dimension--xl: 120rem; // 1920px
 $dimension--xxl: 140rem; // 2240px
 
-// -  <<----------<< Other >>---------->>
+// -  <<----------<< ... >>---------->>
 $max-width: $dimension--xxl;
 
 // -----------------------------------------------------------------------------
-// *  Typography Variables
+// *  Typography
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Generic Font Related >>---------->>
+// -  <<----------<< Generic >>---------->>
 
 // #  Responsive Font Scale
 $font-scale: 1.25;
@@ -44,7 +48,21 @@ $font-size--5: $font-size--4 * $font-scale; // 39.06px
 $font-size--6: $font-size--5 * $font-scale; // 48.83px
 $font-size--7: $font-size--6 * $font-scale; // 61.04px
 
-// -  <<----------<< Specific Font Related >>---------->>
+// -  <<----------<< Color >>---------->>
+
+// #  Color
+$color--subject: var(--primary-color);
+$color--title: var(--secondary-color);
+$color--subtitle: var(--tertiary-color);
+$color--text: var(--foreground-color);
+
+// -  <<----------<< Font >>---------->>
+
+// #  Font-Family
+$font-family--subject: 'Montserrat', sans-serif;
+$font-family--title: 'Montserrat', sans-serif;
+$font-family--subtitle: 'Montserrat', sans-serif;
+$font-family--text: 'Roboto', sans-serif;
 
 // #  Font-Size
 $font-size--subject: $font-size--7;
@@ -52,11 +70,11 @@ $font-size--title: $font-size--5;
 $font-size--subtitle: $font-size--3;
 $font-size--text: $font-size--1;
 
-// #  Font-Family
-$font-family--subject: 'Montserrat', sans-serif;
-$font-family--title: 'Montserrat', sans-serif;
-$font-family--subtitle: 'Montserrat', sans-serif;
-$font-family--text: 'Roboto', sans-serif;
+// #  Font-Style
+$font-style--subject: normal;
+$font-style--title: normal;
+$font-style--subtitle: normal;
+$font-style--text: normal;
 
 // #  Font-Variant
 $font-variant--subject: normal;
@@ -76,8 +94,34 @@ $line-height--title: 1.2;
 $line-height--subtitle: 1.2;
 $line-height--text: 1.5;
 
+// -  <<----------<< Text >>---------->>
+
+// #  Text-Align
+
+// #  Text-Decoration
+
+// #  Text-Indent
+
+// #  Text-Overflow
+
+// #  Text-Shadow
+
+// #  Text-Transform
+
+// -  <<----------<< Word >>---------->>
+
+// #  Word-Break
+
+// #  Word-Spacing
+
+// -  <<----------<< ... >>---------->>
+
+// #  Letter-Spacing
+
+// #  White-Space
+
 // -----------------------------------------------------------------------------
-// *  Other Variables
+// *  Other
 // -----------------------------------------------------------------------------
 
 // -  <<----------<< Generic Font Related >>---------->>
@@ -87,7 +131,7 @@ $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
 // -  <=======| Text-shadow |=======>
 $text-shadow--1: 10px 10px 10px rgba(0, 0, 0, 0.5);
-$text-shadow--2: 1px 1px 2px black;
+$text-shadow--2: 1px 1px 2px hsl(0, 0%, 0%);
 
 // -  <=======| Border-radius |=======>
 $border-radius: $size--sm; // 16px
@@ -95,7 +139,7 @@ $border-radius: $size--sm; // 16px
 // -  <=======| Colors |=======>
 $color--grey-ish: hsl(31, 50%, 95%);
 $color--purple: hsl(261, 61.2%, 14.3%);
-$color--white: white;
+$color--white: hsl(0, 0%, 100%);
 
 $linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);
 $linear-gradient--orange: hsla(31, 99.8%, 42.8%, 0.8);
