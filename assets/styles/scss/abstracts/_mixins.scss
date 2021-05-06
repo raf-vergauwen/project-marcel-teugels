@@ -52,7 +52,10 @@
   font-size: $font-size--subject;
   font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
-  line-height: $line-height--;
+  letter-spacing: $letter-spacing--subject;
+  line-height: $line-height--subject;
+  text-align: $text-align--subject;
+  text-transform: $text-transform--subject;
 }
 
 // #  <h2>
@@ -62,6 +65,10 @@
   font-size: $font-size--title;
   font-variant: $font-variant--title;
   font-weight: $font-weight--title;
+  letter-spacing: $letter-spacing--title;
+  line-height: $line-height--title;
+  text-align: $text-align--title;
+  text-transform: $text-transform--title;
 }
 
 // #  <h3>
@@ -71,6 +78,10 @@
   font-size: $font-size--subtitle;
   font-variant: $font-variant--subtitle;
   font-weight: $font-weight--subtitle;
+  letter-spacing: $letter-spacing--subtitle;
+  line-height: $line-height--subtitle;
+  text-align: $text-align--subtitle;
+  text-transform: $text-transform--subtitle;
 }
 
 // #  <p>
@@ -80,6 +91,10 @@
   font-size: $font-size--text;
   font-variant: $font-variant--text;
   font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
 }
 
 // -----------------------------------------------------------------------------
