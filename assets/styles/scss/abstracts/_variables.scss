@@ -104,51 +104,33 @@ $text-align--text: left;
 
 // #  Text-Overflow ---> Default
 
-// #  Text-Shadow
-$text-shadow--subject: none;
-$text-shadow--title: none;
-$text-shadow--subtitle: none;
-$text-shadow--text: none;
+// #  Text-Shadow ---> Default
 
 // #  Text-Transform
-$text-transform--subject: ;
-$text-transform--title: ;
-$text-transform--subtitle: ;
-$text-transform--text: ;
+$text-transform--subject: uppercase;
+$text-transform--title: capitalize;
+$text-transform--subtitle: none;
+$text-transform--text: none;
 
 // -  <<----------<< Word >>---------->>
 
-// #  Word-Break
-$word-break--subject: ;
-$word-break--title: ;
-$word-break--subtitle: ;
-$word-break--text: ;
+// #  Word-Break ---> Default
 
-// #  Word-Spacing
-$word-spacing--subject: ;
-$word-spacing--title: ;
-$word-spacing--subtitle: ;
-$word-spacing--text: ;
+// #  Word-Spacing ---> Default
 
 // -  <<----------<< ... >>---------->>
 
 // #  Letter-Spacing
-$letter-spacing--subject: ;
-$letter-spacing--title: ;
-$letter-spacing--subtitle: ;
-$letter-spacing--text: ;
+$letter-spacing--subject: 0.05em;
+$letter-spacing--title: 0.05em;
+$letter-spacing--subtitle: 0.1em;
+$letter-spacing--text: normal;
 
-// #  White-Space
-$white-space--subject: ;
-$white-space--title: ;
-$white-space--subtitle: ;
-$white-space--text: ;
+// #  White-Space ---> Default
 
 // -----------------------------------------------------------------------------
 // *  Other
 // -----------------------------------------------------------------------------
-
-// -  <<----------<< Generic Font Related >>---------->>
 
 // -  <=======| Box-shadow |=======>
 $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
