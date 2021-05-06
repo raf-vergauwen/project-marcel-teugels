@@ -26,7 +26,7 @@
 
 @mixin container {
   width: 100%;
-  max-width: $max-width;
+  min-width: $min-width;
   margin: 0 auto;
 }
 
@@ -85,49 +85,49 @@
 
 @mixin breakpoint($breakpoint) {
   // #  Extra Extra Small: 20rem / 320px
-  @if $breakpoint == xxsm {
-    @media (max-width: $dimension-xxs) {
+  @if $breakpoint == xxs {
+    @media (min-width: $dimension-xxs) {
       @content;
     }
   }
   // #  Extra Small: 40rem / 640px
-  @if $breakpoint == xsm {
-    @media (max-width: $dimension-xs) {
+  @if $breakpoint == xs {
+    @media (min-width: $dimension-xs) {
       @content;
     }
   }
   // #  Small: 60rem / 960px
-  @else if $breakpoint == sm {
-    @media (max-width: $dimension-s) {
+  @else if $breakpoint == s {
+    @media (min-width: $dimension-s) {
       @content;
     }
   }
   // #  Medium: 80rem / 1280px
-  @else if $breakpoint == md {
-    @media (max-width: $dimension-m) {
+  @else if $breakpoint == m {
+    @media (min-width: $dimension-m) {
       @content;
     }
   }
   // #  Large: 100rem / 1600px
-  @else if $breakpoint == lg {
-    @media (max-width: $dimension-l) {
+  @else if $breakpoint == l {
+    @media (min-width: $dimension-l) {
       @content;
     }
   }
   // #  Extra Large: 120rem / 1920px
   @else if $breakpoint == xl {
-    @media (max-width: $dimension-xl) {
+    @media (min-width: $dimension-xl) {
       @content;
     }
   }
   // #  Extra Extra Large: 140rem / 2240px
   @else if $breakpoint == xxl {
-    @media (max-width: $dimension-xxl) {
+    @media (min-width: $dimension-xxl) {
       @content;
     }
   }
   // #  Invalid input!
   @else {
-    @warn 'Breakpoint mixin supports: xxsm, xsm, sm, md, lg, xl, xxl';
+    @warn 'Breakpoint mixin supports: xxs, xs, s, m, l, xl, xxl';
   }
 }
