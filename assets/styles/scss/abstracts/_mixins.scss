@@ -45,22 +45,34 @@
 
 // #  <h1>
 @mixin subject {
-  // ...
+  color: var(--primary-color);
+  font-family: $font-family--subject;
+  font-size: $font-size--subject;
+  font-weight: $font-weight--subject;
 }
 
 // #  <h2>
 @mixin title {
-  // ...
+  color: var(--secondary-color);
+  font-family: $font-family--title;
+  font-size: $font-size--title;
+  font-weight: $font-weight--title;
 }
 
 // #  <h3>
 @mixin subtitle {
-  // ...
+  color: var(--tertiary-color);
+  font-family: $font-family--subtitle;
+  font-size: $font-size--subtitle;
+  font-weight: $font-weight--subtitle;
 }
 
 // #  <p>
 @mixin text {
-  // ...
+  color: var(--foreground-color);
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-weight: $font-weight--text;
 }
 
 // -----------------------------------------------------------------------------
