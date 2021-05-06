@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 @mixin section {
-  min-width: $dimension-xxsm;
+  min-width: $dimension-xxs;
   padding: $size-xxl;
 
   &__container {
@@ -45,37 +45,34 @@
 
 // #  <h1>
 @mixin subject {
-  color: var(--primary-color);
+  color: $color--subject;
   font-family: $font-family--subject;
   font-size: $font-size--subject;
   font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
-  text-align: center;
 }
 
 // #  <h2>
 @mixin title {
-  color: var(--secondary-color);
+  color: $color--title;
   font-family: $font-family--title;
   font-size: $font-size--title;
   font-variant: $font-variant--title;
   font-weight: $font-weight--title;
-  text-align: center;
 }
 
 // #  <h3>
 @mixin subtitle {
-  color: var(--tertiary-color);
+  color: $color--subtitle;
   font-family: $font-family--subtitle;
   font-size: $font-size--subtitle;
   font-variant: $font-variant--subtitle;
   font-weight: $font-weight--subtitle;
-  letter-spacing: 0.1em;
 }
 
 // #  <p>
 @mixin text {
-  color: var(--foreground-color);
+  color: $color--text;
   font-family: $font-family--text;
   font-size: $font-size--text;
   font-variant: $font-variant--text;
@@ -89,31 +86,31 @@
 @mixin breakpoint($breakpoint) {
   // #  Extra Extra Small: 20rem / 320px
   @if $breakpoint == xxsm {
-    @media (max-width: $dimension-xxsm) {
+    @media (max-width: $dimension-xxs) {
       @content;
     }
   }
   // #  Extra Small: 40rem / 640px
   @if $breakpoint == xsm {
-    @media (max-width: $dimension-xsm) {
+    @media (max-width: $dimension-xs) {
       @content;
     }
   }
   // #  Small: 60rem / 960px
   @else if $breakpoint == sm {
-    @media (max-width: $dimension-sm) {
+    @media (max-width: $dimension-s) {
       @content;
     }
   }
   // #  Medium: 80rem / 1280px
   @else if $breakpoint == md {
-    @media (max-width: $dimension-md) {
+    @media (max-width: $dimension-m) {
       @content;
     }
   }
   // #  Large: 100rem / 1600px
   @else if $breakpoint == lg {
-    @media (max-width: $dimension-lg) {
+    @media (max-width: $dimension-l) {
       @content;
     }
   }
