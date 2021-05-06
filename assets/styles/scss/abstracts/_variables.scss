@@ -70,11 +70,7 @@ $font-size--title: $font-size--5;
 $font-size--subtitle: $font-size--3;
 $font-size--text: $font-size--1;
 
-// #  Font-Style
-$font-style--subject: normal;
-$font-style--title: normal;
-$font-style--subtitle: normal;
-$font-style--text: normal;
+// #  Font-Style ---> Default
 
 // #  Font-Variant
 $font-variant--subject: normal;
@@ -97,28 +93,56 @@ $line-height--text: 1.5;
 // -  <<----------<< Text >>---------->>
 
 // #  Text-Align
+$text-align--subject: center;
+$text-align--title: center;
+$text-align--subtitle: left;
+$text-align--text: left;
 
-// #  Text-Decoration
+// #  Text-Decoration ---> Default
 
-// #  Text-Indent
+// #  Text-Indent  ---> Default
 
-// #  Text-Overflow
+// #  Text-Overflow ---> Default
 
 // #  Text-Shadow
+$text-shadow--subject: none;
+$text-shadow--title: none;
+$text-shadow--subtitle: none;
+$text-shadow--text: none;
 
 // #  Text-Transform
+$text-transform--subject: ;
+$text-transform--title: ;
+$text-transform--subtitle: ;
+$text-transform--text: ;
 
 // -  <<----------<< Word >>---------->>
 
 // #  Word-Break
+$word-break--subject: ;
+$word-break--title: ;
+$word-break--subtitle: ;
+$word-break--text: ;
 
 // #  Word-Spacing
+$word-spacing--subject: ;
+$word-spacing--title: ;
+$word-spacing--subtitle: ;
+$word-spacing--text: ;
 
 // -  <<----------<< ... >>---------->>
 
 // #  Letter-Spacing
+$letter-spacing--subject: ;
+$letter-spacing--title: ;
+$letter-spacing--subtitle: ;
+$letter-spacing--text: ;
 
 // #  White-Space
+$white-space--subject: ;
+$white-space--title: ;
+$white-space--subtitle: ;
+$white-space--text: ;
 
 // -----------------------------------------------------------------------------
 // *  Other

@@ -9,7 +9,7 @@ html {
 body {
   margin: 0 auto;
   background-color: var(--background-color);
-  color: var(--foreground-color);
+  color: $color--text;
   font-family: $font-family--text;
   font-size: $font-size--text;
   // font-size: calc(1rem + 0.25vh); // ---> Good idea?
