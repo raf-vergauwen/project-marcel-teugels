@@ -2,10 +2,9 @@
 *  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
 
-html {
-  // ...
-}
+// #  <html>
 
+// #  <body>
 body {
   margin: 0 auto;
   background-color: var(--background-color);
@@ -17,6 +16,4 @@ body {
   line-height: $line-height--text;
 }
 
-main {
-  // ...
-}
+// #  <main>
