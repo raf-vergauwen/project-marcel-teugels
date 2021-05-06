@@ -10,11 +10,11 @@ body {
   margin: 0 auto;
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-family--text;
   font-size: $font-size--text;
   // font-size: calc(1rem + 0.25vh); // ---> Good idea?
   font-weight: $font-weight--text;
-  line-height: 1.5;
+  line-height: $line-height--text;
 }
 
 main {

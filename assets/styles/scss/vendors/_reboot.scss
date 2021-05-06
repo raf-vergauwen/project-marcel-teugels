@@ -298,10 +298,6 @@ button {
   border-radius: 0;
 }
 
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-
 input,
 button,
 select,
@@ -346,6 +342,10 @@ button:not(:disabled),
 [type='reset']:not(:disabled),
 [type='submit']:not(:disabled) {
   cursor: pointer;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 ::-moz-focus-inner {

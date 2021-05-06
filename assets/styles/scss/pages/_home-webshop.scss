@@ -17,12 +17,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-      45deg,
-      $linear-gradient-red,
-      $linear-gradient-orange,
-      $linear-gradient-yellow
-    );
+    background-image: linear-gradient
+      (
+        45deg,
+        $linear-gradient-red,
+        $linear-gradient-orange,
+        $linear-gradient-yellow
+      );
   }
 
   &__visual {
@@ -75,13 +76,7 @@
   }
 
   &__title {
-    margin: $size-xsm;
-    font-size: $font-size-text;
-    font-variant: small-caps;
-    font-weight: bold;
-    letter-spacing: $size-xxsm;
-    text-align: left;
-    text-transform: lowercase;
+    // ...
   }
 }
 

@@ -6,7 +6,7 @@
 // *  Box Model Variables
 // -----------------------------------------------------------------------------
 
-// -  <=======| Sizes |=======>
+// -  <<----------<< Sizes >>---------->>
 $size--xxsm: 0.25rem; // 4px
 $size--xsm: 0.5rem; // 8px
 $size--sm: 1rem; // 16px
@@ -15,7 +15,7 @@ $size--lg: 2rem; // 32px
 $size--xl: 3rem; // 48px
 $size--xxl: 4rem; // 64px
 
-// -  <=======| Dimensions |=======>
+// -  <<----------<< Dimensions >>---------->>
 $dimension--xxsm: 20rem; // 320px
 $dimension--xsm: 40rem; // 640px
 $dimension--sm: 60rem; // 960px
@@ -24,7 +24,7 @@ $dimension--lg: 100rem; // 1600px
 $dimension--xl: 120rem; // 1920px
 $dimension--xxl: 140rem; // 2240px
 
-// -  <=======| Other sizes |=======>
+// -  <<----------<< Other >>---------->>
 $max-width: $dimension--xxl;
 
 // -----------------------------------------------------------------------------
@@ -34,7 +34,6 @@ $max-width: $dimension--xxl;
 // -  <<----------<< Generic Font Related >>---------->>
 
 // #  Responsive Font Scale
-
 $font-scale: 1.25;
 $font-size: 1rem; // 16px
 $font-size--1: $font-size; // 16px
@@ -47,23 +46,35 @@ $font-size--7: $font-size--6 * $font-scale; // 61.04px
 
 // -  <<----------<< Specific Font Related >>---------->>
 
-// #  Font-size
+// #  Font-Size
 $font-size--subject: $font-size--7;
 $font-size--title: $font-size--5;
 $font-size--subtitle: $font-size--3;
 $font-size--text: $font-size--1;
 
-// #  Font-family
+// #  Font-Family
 $font-family--subject: 'Montserrat', sans-serif;
 $font-family--title: 'Montserrat', sans-serif;
 $font-family--subtitle: 'Montserrat', sans-serif;
 $font-family--text: 'Roboto', sans-serif;
 
-// #  Font-weight
+// #  Font-Variant
+$font-variant--subject: normal;
+$font-variant--title: normal;
+$font-variant--subtitle: small-caps;
+$font-variant--text: normal;
+
+// #  Font-Weight
 $font-weight--subject: 700;
 $font-weight--title: 400;
 $font-weight--subtitle: 300;
 $font-weight--text: 300;
+
+// #  Line-Height
+$line-height--subject: 1.2;
+$line-height--title: 1.2;
+$line-height--subtitle: 1.2;
+$line-height--text: 1.5;
 
 // -----------------------------------------------------------------------------
 // *  Other Variables

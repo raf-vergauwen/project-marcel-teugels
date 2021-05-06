@@ -48,6 +48,7 @@
   color: var(--primary-color);
   font-family: $font-family--subject;
   font-size: $font-size--subject;
+  font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
   text-align: center;
 }
@@ -57,6 +58,7 @@
   color: var(--secondary-color);
   font-family: $font-family--title;
   font-size: $font-size--title;
+  font-variant: $font-variant--title;
   font-weight: $font-weight--title;
   text-align: center;
 }
@@ -66,6 +68,7 @@
   color: var(--tertiary-color);
   font-family: $font-family--subtitle;
   font-size: $font-size--subtitle;
+  font-variant: $font-variant--subtitle;
   font-weight: $font-weight--subtitle;
   letter-spacing: 0.1em;
 }
@@ -75,6 +78,7 @@
   color: var(--foreground-color);
   font-family: $font-family--text;
   font-size: $font-size--text;
+  font-variant: $font-variant--text;
   font-weight: $font-weight--text;
 }
 
