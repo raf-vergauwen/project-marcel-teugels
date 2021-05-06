@@ -17,7 +17,6 @@
 +  Partial SCSS Group 2 - `vendors/`
 \* -------------------------------------------------------------------------- */
 @import 'vendors/normalize';
-@import 'vendors/bulma';
 
 /* -------------------------------------------------------------------------- *\
 +  Partial SCSS Group 3 - `base/`
@@ -30,7 +29,6 @@
 \* -------------------------------------------------------------------------- */
 @import 'layout/header';
 @import 'layout/nav';
-@import 'layout/main';
 @import 'layout/aside';
 @import 'layout/section';
 @import 'layout/article';
