@@ -33,9 +33,11 @@
 @mixin flex-container($flex-direction) {
   display: flex;
   flex-direction: $flex-direction;
+  // ...
 }
 
 @mixin grid-container {
+  display: grid;
   // ...
 }
 
@@ -50,6 +52,7 @@
   font-size: $font-size--subject;
   font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
+  line-height: $line-height--;
 }
 
 // #  <h2>

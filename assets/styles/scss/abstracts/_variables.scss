@@ -28,14 +28,39 @@ $dimension--l: 100rem; // 1600px
 $dimension--xl: 120rem; // 1920px
 $dimension--xxl: 140rem; // 2240px
 
+// -  <<----------<< Shadow >>---------->>
+
+// -  <<----------<< Border >>---------->>
+$border-radius: $size--s; // 16px
+
 // -  <<----------<< ... >>---------->>
-$max-width: $dimension--xxl;
+$max-width: $dimension--xxl; // 2240px
 
 // -----------------------------------------------------------------------------
 // *  Typography
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Generic >>---------->>
+// -  <<----------<< Temporary >>---------->>
+
+// #  Color
+$color--grey-ish: hsl(31, 50%, 95%);
+$color--purple: hsl(261, 61.2%, 14.3%);
+$color--white: hsl(0, 0%, 100%);
+
+// #  linear-Gradient
+$linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);
+$linear-gradient--orange: hsla(31, 99.8%, 42.8%, 0.8);
+$linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
+
+// -  <<----------<< Color >>---------->>
+
+// #  Color
+$color--subject: var(--primary-color);
+$color--title: var(--secondary-color);
+$color--subtitle: var(--tertiary-color);
+$color--text: var(--foreground-color);
+
+// -  <<----------<< RFS >>---------->>
 
 // #  Responsive Font Scale
 $font-scale: 1.25;
@@ -47,14 +72,6 @@ $font-size--4: $font-size--3 * $font-scale; // 31.25px
 $font-size--5: $font-size--4 * $font-scale; // 39.06px
 $font-size--6: $font-size--5 * $font-scale; // 48.83px
 $font-size--7: $font-size--6 * $font-scale; // 61.04px
-
-// -  <<----------<< Color >>---------->>
-
-// #  Color
-$color--subject: var(--primary-color);
-$color--title: var(--secondary-color);
-$color--subtitle: var(--tertiary-color);
-$color--text: var(--foreground-color);
 
 // -  <<----------<< Font >>---------->>
 
@@ -79,16 +96,16 @@ $font-variant--subtitle: small-caps;
 $font-variant--text: normal;
 
 // #  Font-Weight
-$font-weight--subject: 700;
-$font-weight--title: 400;
-$font-weight--subtitle: 300;
-$font-weight--text: 300;
+$font-weight--subject: 700; // Bold
+$font-weight--title: 400; // Normal
+$font-weight--subtitle: 300; // Light
+$font-weight--text: 300; // Light
 
 // #  Line-Height
-$line-height--subject: 1.2;
-$line-height--title: 1.2;
-$line-height--subtitle: 1.2;
-$line-height--text: 1.5;
+$line-height--subject: 1.2; // 120%
+$line-height--title: 1.2; // 120%
+$line-height--subtitle: 1.2; // 120%
+$line-height--text: 1.5; // 150%
 
 // -  <<----------<< Text >>---------->>
 
@@ -118,35 +135,12 @@ $text-transform--text: none;
 
 // #  Word-Spacing ---> Default
 
-// -  <<----------<< ... >>---------->>
+// -  <<----------<< Spacing >>---------->>
 
 // #  Letter-Spacing
-$letter-spacing--subject: 0.05em;
-$letter-spacing--title: 0.05em;
-$letter-spacing--subtitle: 0.1em;
+$letter-spacing--subject: 0.025rem; // 0.4px
+$letter-spacing--title: 0.05rem; // 0.8px
+$letter-spacing--subtitle: 0.1rem; // 1.6px
 $letter-spacing--text: normal;
 
 // #  White-Space ---> Default
-
-// -----------------------------------------------------------------------------
-// *  Other
-// -----------------------------------------------------------------------------
-
-// -  <=======| Box-shadow |=======>
-$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-
-// -  <=======| Text-shadow |=======>
-$text-shadow--1: 10px 10px 10px rgba(0, 0, 0, 0.5);
-$text-shadow--2: 1px 1px 2px hsl(0, 0%, 0%);
-
-// -  <=======| Border-radius |=======>
-$border-radius: $size--sm; // 16px
-
-// -  <=======| Colors |=======>
-$color--grey-ish: hsl(31, 50%, 95%);
-$color--purple: hsl(261, 61.2%, 14.3%);
-$color--white: hsl(0, 0%, 100%);
-
-$linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);
-$linear-gradient--orange: hsla(31, 99.8%, 42.8%, 0.8);
-$linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
