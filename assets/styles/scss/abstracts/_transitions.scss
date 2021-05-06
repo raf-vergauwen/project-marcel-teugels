@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
 // +  _transitions.scss: This partial file contains all Scss 'transitions'.
 // -----------------------------------------------------------------------------
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}

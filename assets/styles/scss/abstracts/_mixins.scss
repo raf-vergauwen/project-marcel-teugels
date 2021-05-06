@@ -49,6 +49,7 @@
   font-family: $font-family--subject;
   font-size: $font-size--subject;
   font-weight: $font-weight--subject;
+  text-align: center;
 }
 
 // #  <h2>
@@ -57,6 +58,7 @@
   font-family: $font-family--title;
   font-size: $font-size--title;
   font-weight: $font-weight--title;
+  text-align: center;
 }
 
 // #  <h3>
@@ -65,6 +67,7 @@
   font-family: $font-family--subtitle;
   font-size: $font-size--subtitle;
   font-weight: $font-weight--subtitle;
+  letter-spacing: 0.1em;
 }
 
 // #  <p>
@@ -76,13 +79,54 @@
 }
 
 // -----------------------------------------------------------------------------
-// -  Specific Mixin
+// -  Breakpoints
 // -----------------------------------------------------------------------------
 
-// @mixin title {
-//   margin-bottom: $size-sm;
-//   color: var(--primary-color);
-//   font-size: $font-size-5;
-//   font-weight: $font-weight-heading;
-//   text-align: center;
-// }
+@mixin breakpoint($breakpoint) {
+  // #  Extra Extra Small: 20rem / 320px
+  @if $breakpoint == xxsm {
+    @media (max-width: $dimension-xxsm) {
+      @content;
+    }
+  }
+  // #  Extra Small: 40rem / 640px
+  @if $breakpoint == xsm {
+    @media (max-width: $dimension-xsm) {
+      @content;
+    }
+  }
+  // #  Small: 60rem / 960px
+  @else if $breakpoint == sm {
+    @media (max-width: $dimension-sm) {
+      @content;
+    }
+  }
+  // #  Medium: 80rem / 1280px
+  @else if $breakpoint == md {
+    @media (max-width: $dimension-md) {
+      @content;
+    }
+  }
+  // #  Large: 100rem / 1600px
+  @else if $breakpoint == lg {
+    @media (max-width: $dimension-lg) {
+      @content;
+    }
+  }
+  // #  Extra Large: 120rem / 1920px
+  @else if $breakpoint == xl {
+    @media (max-width: $dimension-xl) {
+      @content;
+    }
+  }
+  // #  Extra Extra Large: 140rem / 2240px
+  @else if $breakpoint == xxl {
+    @media (max-width: $dimension-xxl) {
+      @content;
+    }
+  }
+  // #  Invalid input!
+  @else {
+    @warn 'Breakpoint mixin supports: xxsm, xsm, sm, md, lg, xl, xxl';
+  }
+}

@@ -9,14 +9,14 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
-@import 'abstracts/breakpoints';
 @import 'abstracts/utilities';
+@import 'abstracts/transitions';
 @import 'abstracts/animations';
 
 /* -------------------------------------------------------------------------- *\
 +  Partial SCSS Group 2 - `vendors/`
 \* -------------------------------------------------------------------------- */
-@import 'vendors/reboot';
+@import 'vendors/normalize';
 @import 'vendors/bulma';
 
 /* -------------------------------------------------------------------------- *\
