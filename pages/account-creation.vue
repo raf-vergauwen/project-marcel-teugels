@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form action="account-creation">
+    <form @submit.prevent="createAccount" action="account-creation">
       <label
         >First name:
         <input type="text" name="first-name" v-model="firstName" />
@@ -30,9 +30,13 @@ export default {
       lastName: '',
       email: '',
       password: '',
+      role: 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7',
     };
   },
   computed: {
+    accountBody() {
+      return JSON.stringify({ first_name: this.firstName, last_name: this.lastName, email: this.email, password: this.password, role: this.role})
+    },
     access_token() {
       return sessionStorage.getItem('access_token');
     },
@@ -44,11 +48,18 @@ export default {
         headers: {
           'Content-Type': 'application/json',
         },
-        body:
-          '{"first_name":"","last_name":"","email":"","password":"","role":"d4625a28-4f5a-4aaa-970c-f7bf23adceb7"}',
+        body: this.accountBody,
       })
         .then((response) => {
           console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not login');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //sessionStorage.setItem('access_token', body.data.access_token);
         })
         .catch((err) => {
           console.error(err);
