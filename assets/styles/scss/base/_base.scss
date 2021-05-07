@@ -3,11 +3,14 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <html>
+html {
+  //...
+}
 
 // #  <body>
 body {
   margin: 0 auto;
-  background-color: var(--background-color);
+  background-color: $color--background;
   color: $color--text;
   font-family: $font-family--text;
   font-size: $font-size--text;
@@ -17,3 +20,6 @@ body {
 }
 
 // #  <main>
+main {
+  // ...
+}

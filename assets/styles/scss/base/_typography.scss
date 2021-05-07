@@ -20,7 +20,7 @@ h2 {
   background-color: $color--debug-19;
 
   + p::first-letter {
-    // This is purely as a test
+    // This code is purely for testing purposes
     background-color: rgb(0, 255, 0);
     color: rgb(255, 0, 0);
     font-size: $font-size--subtitle;

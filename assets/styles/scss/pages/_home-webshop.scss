@@ -7,79 +7,21 @@
 \* -------------------------------------------------------------------------- */
 
 .hero {
-  background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
-  background-position: center center;
-  background-size: cover;
-
-  &__container {
-    display: flex;
-    height: 85vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient
-      (
-        45deg,
-        $linear-gradient-red,
-        $linear-gradient-orange,
-        $linear-gradient-yellow
-      );
-  }
-
-  &__visual {
-    width: $dimension-xxsm;
-  }
-
-  &__subject {
-    @include subject;
-  }
-
-  &__title {
-    @include title;
-  }
+  // ...
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
 
-// #  Main part
-
 .hot-items {
-  @include section;
-
-  &__container {
-    @include container;
-
-    flex-wrap: wrap;
-  }
-
-  &__title {
-    @include title;
-  }
-}
-
-// #  Individual cards
-
-.hot-items-card {
-  @include container;
-
-  min-width: 300px;
-  max-width: 400px;
-  flex-basis: 300px;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-
-  &__visual {
-    background-color: tan;
-  }
-
-  &__title {
-    // ...
-  }
+  // ...
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
+
+.about {
+  // ...
+}
