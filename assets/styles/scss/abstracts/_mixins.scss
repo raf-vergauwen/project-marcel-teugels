@@ -6,29 +6,57 @@
 // -  Layout
 // -----------------------------------------------------------------------------
 
-// #  <section>
+@mixin header {
+  //...
+}
+
+@mixin nav {
+  //...
+}
+
 @mixin section {
   min-width: $dimension-xxs;
   padding: $size-xxl;
+  // ...
 
   &__container {
     @include container;
+    // ...
   }
 
   &__title {
     @include title;
+    // ...
   }
+}
+
+@mixin aside {
+  //...
 }
 
 @mixin article {
   overflow: hidden;
   border-radius: $border-radius;
+  // ...
 }
+
+@mixin address {
+  //...
+}
+
+@mixin footer {
+  //...
+}
+
+// -----------------------------------------------------------------------------
+// -  Components
+// -----------------------------------------------------------------------------
 
 @mixin container {
   width: 100%;
   min-width: $min-width;
   margin: 0 auto;
+  // ...
 }
 
 @mixin flex-container($flex-direction) {
@@ -46,7 +74,6 @@
 // -  Typography
 // -----------------------------------------------------------------------------
 
-// #  <h1>
 @mixin subject {
   color: $color--subject;
   font-family: $font-family--subject;
@@ -59,7 +86,6 @@
   text-transform: $text-transform--subject;
 }
 
-// #  <h2>
 @mixin title {
   color: $color--title;
   font-family: $font-family--title;
@@ -72,7 +98,6 @@
   text-transform: $text-transform--title;
 }
 
-// #  <h3>
 @mixin subtitle {
   color: $color--subtitle;
   font-family: $font-family--subtitle;
@@ -85,7 +110,6 @@
   text-transform: $text-transform--subtitle;
 }
 
-// #  <p>
 @mixin text {
   color: $color--text;
   font-family: $font-family--text;

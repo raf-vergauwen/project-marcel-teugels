@@ -27,12 +27,13 @@
 /* -------------------------------------------------------------------------- *\
 +  Partial SCSS Group 4 - `layout/`
 \* -------------------------------------------------------------------------- */
+@import 'layout/grid';
+@import 'layout/containers';
 @import 'layout/header';
 @import 'layout/nav';
 @import 'layout/aside';
 @import 'layout/section';
 @import 'layout/article';
-@import 'layout/address';
 @import 'layout/footer';
 
 /* -------------------------------------------------------------------------- *\
@@ -54,7 +55,7 @@
 @import 'components/single-part/table';
 @import 'components/single-part/tag';
 @import 'components/single-part/title';
-@import 'components/single-part/toggle';
+@import 'components/single-part/switch';
 
 /* -------------------------------------------------------------------------- *\
 *  Partial SCSS Group 5.2 - `components/forms/`
