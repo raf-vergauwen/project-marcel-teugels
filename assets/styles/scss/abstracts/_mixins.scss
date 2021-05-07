@@ -6,6 +6,32 @@
 // -  Layout
 // -----------------------------------------------------------------------------
 
+@mixin article {
+  overflow: hidden;
+  border-radius: $border-radius;
+  // ...
+}
+
+@mixin aside {
+  //...
+}
+
+@mixin container {
+  // choose between regular-, flex- or grid-container
+  width: 100%;
+  min-width: $min-width;
+  margin: 0 auto;
+  // ...
+}
+
+@mixin footer {
+  //...
+}
+
+@mixin form {
+  //...
+}
+
 @mixin header {
   //...
 }
@@ -30,21 +56,7 @@
   }
 }
 
-@mixin aside {
-  //...
-}
-
-@mixin article {
-  overflow: hidden;
-  border-radius: $border-radius;
-  // ...
-}
-
-@mixin address {
-  //...
-}
-
-@mixin footer {
+@mixin table {
   //...
 }
 
@@ -52,23 +64,7 @@
 // -  Components
 // -----------------------------------------------------------------------------
 
-@mixin container {
-  width: 100%;
-  min-width: $min-width;
-  margin: 0 auto;
-  // ...
-}
-
-@mixin flex-container($flex-direction) {
-  display: flex;
-  flex-direction: $flex-direction;
-  // ...
-}
-
-@mixin grid-container {
-  display: grid;
-  // ...
-}
+// ...
 
 // -----------------------------------------------------------------------------
 // -  Typography
