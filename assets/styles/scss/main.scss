@@ -3,9 +3,9 @@
 
 @charset "UTF-8";
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 1 - `abstracts/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 1 - `abstracts/`
+\* ========================================================================== */
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
@@ -13,78 +13,39 @@
 @import 'abstracts/transitions';
 @import 'abstracts/animations';
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 2 - `vendors/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 2 - `vendors/`
+\* ========================================================================== */
 @import 'vendors/normalize';
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 3 - `base/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `base/`
+\* ========================================================================== */
 @import 'base/base';
 @import 'base/typography';
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 4 - `layout/`
-\* -------------------------------------------------------------------------- */
-@import 'layout/grid';
-@import 'layout/containers';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 4 - `layout/`
+\* ========================================================================== */
 @import 'layout/header';
 @import 'layout/nav';
 @import 'layout/aside';
 @import 'layout/section';
 @import 'layout/article';
+@import 'layout/forms';
+@import 'layout/table';
 @import 'layout/footer';
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 5 - `components/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 5 - `components/`
+\* ========================================================================== */
+@import 'components/card';
+@import 'components/icon';
+@import 'components/switch';
 
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.1 - `components/single-part/`
-\* -------------------------------------------------------------------------- */
-@import 'components/single-part/block';
-@import 'components/single-part/box';
-@import 'components/single-part/button';
-@import 'components/single-part/content';
-@import 'components/single-part/delete';
-@import 'components/single-part/icon';
-@import 'components/single-part/image';
-@import 'components/single-part/notification';
-@import 'components/single-part/progress-bars';
-@import 'components/single-part/table';
-@import 'components/single-part/tag';
-@import 'components/single-part/title';
-@import 'components/single-part/switch';
-
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.2 - `components/forms/`
-\* -------------------------------------------------------------------------- */
-@import 'components/forms/general';
-@import 'components/forms/input';
-@import 'components/forms/textarea';
-@import 'components/forms/select';
-@import 'components/forms/checkbox';
-@import 'components/forms/radio';
-@import 'components/forms/file';
-
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.3 - `components/multi-part/`
-\* -------------------------------------------------------------------------- */
-@import 'components/multi-part/breadcrumb';
-@import 'components/multi-part/card';
-@import 'components/multi-part/dropdown';
-@import 'components/multi-part/menu';
-@import 'components/multi-part/message';
-@import 'components/multi-part/modal';
-@import 'components/multi-part/navbar';
-@import 'components/multi-part/pagination';
-@import 'components/multi-part/panel';
-@import 'components/multi-part/tabs';
-
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 6 - `pages/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 6 - `pages/`
+\* ========================================================================== */
 @import 'pages/index';
 @import 'pages/home';
 @import 'pages/home-restoration';
@@ -93,8 +54,8 @@
 @import 'pages/profile';
 @import 'pages/storefront';
 
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 7 - `themes/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 7 - `themes/`
+\* ========================================================================== */
 @import 'themes/light';
 @import 'themes/dark';

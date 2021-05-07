@@ -290,7 +290,7 @@
   }
   // #  Invalid arguments!
   @else {
-    @warn 'Breakpoint mixin supports: xxs, xs, s, m, l, xl, xxl';
+    @warn '#{$type} is an unsupported breakpoint, choose between: xxs, xs, s, m, l, xl, xxl';
   }
 }
 
@@ -322,6 +322,6 @@
   }
   // #  Invalid arguments!
   @else {
-    @warn 'Box-shadow mixin supports: 1,2,3,4,5';
+    @warn '#{$type} is an unsupported box-shadow, choose between: 1,2,3,4,5';
   }
 }
