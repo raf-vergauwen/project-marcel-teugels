@@ -2,6 +2,11 @@
 *  _table.scss: This partial file contains all 'table' styles.
 \* -------------------------------------------------------------------------- */
 
+// -  <<----------<< Generic >>---------->>
+
 table {
   @include table;
+  // ...
 }
+
+// -  <<----------<< Specific >>---------->>

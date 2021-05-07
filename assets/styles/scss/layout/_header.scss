@@ -2,9 +2,14 @@
 *  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
 
+// -  <<----------<< Generic >>---------->>
+
 header {
   @include header;
+  // ...
 }
+
+// -  <<----------<< Specific >>---------->>
 
 .topnav {
   overflow: hidden;

@@ -2,6 +2,11 @@
 *  _aside.scss: This partial file contains all 'aside' styles.
 \* -------------------------------------------------------------------------- */
 
+// -  <<----------<< Generic >>---------->>
+
 aside {
   @include aside;
+  // ...
 }
+
+// -  <<----------<< Specific >>---------->>

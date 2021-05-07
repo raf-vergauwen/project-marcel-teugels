@@ -3,10 +3,8 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// * Layout
+// *  Layout
 // -----------------------------------------------------------------------------
-
-// -  <<----------<< HTML Tags >>---------->>
 
 // #  <article>
 @mixin article {
@@ -60,7 +58,9 @@
   //...
 }
 
-// -  <<----------<< Containers >>---------->>
+// -----------------------------------------------------------------------------
+// *  Containers
+// -----------------------------------------------------------------------------
 
 // #  Block-Container
 @mixin block-container($max-width, $max-height) {
@@ -88,6 +88,10 @@
     align-content: $align;
     justify-content: $justify;
   }
+  // #  Invalid arguments!
+  @else {
+    @error '#{$type} is an unknown wrapper type.';
+  }
 }
 
 // #  Flex-Items ---> Children
@@ -111,40 +115,73 @@
   // ...
 }
 
-// --------------------------------------------------------------------------
-
-// #  Container
-@mixin container($type) {
-  // #  Block-Container
-  @if $type == block {
-    display: block;
-    width: 100%;
-    max-width: $max-width;
-    margin: 0 auto;
-  }
-  // #  Flex-Container
-  @else if $type == flex {
-    display: flex;
-  }
-  // #  Inline-Flex-Container
-  @else if $type == inline-flex {
-    display: inline-flex;
-  }
-  // #  Grid-Container
-  @else if $type == grid {
-    display: grid;
-  }
-  // #  Invalid arguments!
-  @else {
-    @error '#{$type} is an unknown container type.';
-  }
-}
-
 // -----------------------------------------------------------------------------
 // *  Components
 // -----------------------------------------------------------------------------
 
-// ...
+// #  <article>
+@mixin article {
+  // ...
+}
+
+// #  <aside>
+@mixin aside {
+  //...
+}
+
+// #  <footer>
+@mixin footer {
+  //...
+}
+
+// #  <form>
+@mixin form {
+  //...
+}
+
+// #  <header>
+@mixin header {
+  //...
+}
+
+// #  <nav>
+@mixin nav {
+  //...
+}
+
+// -----------------------------------------------------------------------------
+// *  Forms
+// -----------------------------------------------------------------------------
+
+// #  <fieldset>
+@mixin fieldset {
+  // ...
+}
+
+// #  <legend>
+@mixin legend {
+  // ...
+}
+
+// #  <textarea>
+@mixin textarea {
+  // ...
+}
+
+// #  <label>
+@mixin label {
+  // ...
+}
+
+// #  <button>
+@mixin button {
+  // ...
+}
+
+// #  <input>
+@mixin input {
+  // ...
+}
 
 // -----------------------------------------------------------------------------
 // *  Typography
@@ -252,5 +289,27 @@
   // #  Invalid arguments!
   @else {
     @warn 'Breakpoint mixin supports: xxs, xs, s, m, l, xl, xxl';
+  }
+}
+
+// -----------------------------------------------------------------------------
+// *  Box-Shadows
+// -----------------------------------------------------------------------------
+
+@mixin BoxShadowHelper($level: 1) {
+  & when ($level = 1) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  & when ($level = 2) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  & when ($level = 3) {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  & when ($level = 4) {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  & when ($level = 5) {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
 }

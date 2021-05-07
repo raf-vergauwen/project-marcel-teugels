@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------- *\
+*  _forms.scss: This partial file contains all 'forms' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Generic >>---------->>
+
+form {
+  @include form;
+  // ...
+}
+
+fieldset {
+  @include fieldset;
+  // ...
+}
+
+legend {
+  @include legend;
+  // ...
+}
+
+textarea {
+  @include textarea;
+  // ...
+}
+
+label {
+  @include label;
+  // ...
+}
+
+button {
+  @include button;
+  // ...
+}
+
+input {
+  @include input;
+  // ...
+}
+
+// -  <<----------<< Specific >>---------->>

@@ -2,6 +2,11 @@
 *  _section.scss: This partial file contains all 'section' styles.
 \* -------------------------------------------------------------------------- */
 
+// -  <<----------<< Generic >>---------->>
+
 section {
   @include section;
+  // ...
 }
+
+// -  <<----------<< Specific >>---------->>

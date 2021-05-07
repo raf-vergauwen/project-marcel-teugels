@@ -2,9 +2,14 @@
 *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 
+// -  <<----------<< Generic >>---------->>
+
 footer {
   @include footer;
+  // ...
 }
+
+// -  <<----------<< Specific >>---------->>
 
 .footer {
   width: 100%;
