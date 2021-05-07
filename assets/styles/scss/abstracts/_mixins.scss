@@ -3,43 +3,40 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// -  Layout
+// * Layout
 // -----------------------------------------------------------------------------
 
+// #  <article>
 @mixin article {
-  overflow: hidden;
-  border-radius: $border-radius;
   // ...
 }
 
+// #  <aside>
 @mixin aside {
   //...
 }
 
-@mixin container {
-  // choose between regular-, flex- or grid-container
-  width: 100%;
-  min-width: $min-width;
-  margin: 0 auto;
-  // ...
-}
-
+// #  <footer>
 @mixin footer {
   //...
 }
 
+// #  <form>
 @mixin form {
   //...
 }
 
+// #  <header>
 @mixin header {
   //...
 }
 
+// #  <nav>
 @mixin nav {
   //...
 }
 
+// #  <section>
 @mixin section {
   min-width: $dimension-xxs;
   padding: $size-xxl;
@@ -56,20 +53,86 @@
   }
 }
 
+// #  <table>
 @mixin table {
   //...
 }
 
+// #  Block-Container
+@mixin block-container() {
+  display: block;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+// #  Flex-Container
+@mixin flex-container($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// #  Flex-Items
+@mixin flex-items($basis: $dimension--xxs, $grow: 1, $shrink: 1) {
+  flex-basis: $basis;
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+}
+
+// #  Inline-Flex-Container ---> buttons, navigation, vertical lists
+@mixin inline-flex-container() {
+  display: inline-flex;
+  // ...
+}
+
+// #  Grid-Container
+@mixin grid-container() {
+  display: grid;
+  // ...
+}
+
+// --------------------------------------------------------------------------
+
+// #  Container
+@mixin container($type) {
+  // #  Block-Container
+  @if $type == block {
+    display: block;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+  // #  Flex-Container
+  @else if $type == flex {
+    display: flex;
+  }
+  // #  Inline-Flex-Container
+  @else if $type == inline-flex {
+    display: inline-flex;
+  }
+  // #  Grid-Container
+  @else if $type == grid {
+    display: grid;
+  }
+  // #  Invalid arguments!
+  @else {
+    @error '#{$type} is an unknown container type.';
+  }
+}
+
 // -----------------------------------------------------------------------------
-// -  Components
+// *  Components
 // -----------------------------------------------------------------------------
 
 // ...
 
 // -----------------------------------------------------------------------------
-// -  Typography
+// *  Typography
 // -----------------------------------------------------------------------------
 
+// #  Subject
 @mixin subject {
   color: $color--subject;
   font-family: $font-family--subject;
@@ -82,6 +145,7 @@
   text-transform: $text-transform--subject;
 }
 
+// #  Title
 @mixin title {
   color: $color--title;
   font-family: $font-family--title;
@@ -94,6 +158,7 @@
   text-transform: $text-transform--title;
 }
 
+// #  Subtitle
 @mixin subtitle {
   color: $color--subtitle;
   font-family: $font-family--subtitle;
@@ -106,6 +171,7 @@
   text-transform: $text-transform--subtitle;
 }
 
+// #  Text
 @mixin text {
   color: $color--text;
   font-family: $font-family--text;
@@ -119,53 +185,53 @@
 }
 
 // -----------------------------------------------------------------------------
-// -  Breakpoints
+// *  Breakpoints
 // -----------------------------------------------------------------------------
 
 @mixin breakpoint($breakpoint) {
-  // #  Extra Extra Small: 20rem / 320px
+  // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
     @media (min-width: $dimension-xxs) {
       @content;
     }
   }
-  // #  Extra Small: 40rem / 640px
+  // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @if $breakpoint == xs {
     @media (min-width: $dimension-xs) {
       @content;
     }
   }
-  // #  Small: 60rem / 960px
+  // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
     @media (min-width: $dimension-s) {
       @content;
     }
   }
-  // #  Medium: 80rem / 1280px
+  // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
     @media (min-width: $dimension-m) {
       @content;
     }
   }
-  // #  Large: 100rem / 1600px
+  // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
     @media (min-width: $dimension-l) {
       @content;
     }
   }
-  // #  Extra Large: 120rem / 1920px
+  // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
     @media (min-width: $dimension-xl) {
       @content;
     }
   }
-  // #  Extra Extra Large: 140rem / 2240px
+  // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
     @media (min-width: $dimension-xxl) {
       @content;
     }
   }
-  // #  Invalid input!
+  // #  Invalid arguments!
   @else {
     @warn 'Breakpoint mixin supports: xxs, xs, s, m, l, xl, xxl';
   }

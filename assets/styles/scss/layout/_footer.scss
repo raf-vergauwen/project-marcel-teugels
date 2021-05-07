@@ -2,6 +2,10 @@
 *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 
+footer {
+  @include footer;
+}
+
 .footer {
   width: 100%;
   box-sizing: border-box;

@@ -1,3 +1,23 @@
 /* -------------------------------------------------------------------------- *\
 *  _container.scss: This partial file contains all 'container' styles.
 \* -------------------------------------------------------------------------- */
+
+// #  Block-Container
+.block-container {
+  @include block-container();
+}
+
+// #  Flex-Container
+.flex-container {
+  @include flex-container();
+}
+
+// #  Inline-Flex-Container
+.inline-flex-container {
+  @include inline-flex-container();
+}
+
+// #  Grid-Container
+.grid-container {
+  @include grid-container();
+}
