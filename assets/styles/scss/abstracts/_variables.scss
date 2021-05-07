@@ -41,7 +41,13 @@ $box-shadow--level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
 // -  <<----------<< Border >>---------->>
-$border-radius: $size--s; // 16px
+$border-radius--xxs: $size--xxs; // 4px
+$border-radius--xs: $size--xs; // 8px
+$border-radius--s: $size--s; // 16px
+$border-radius--m: $size--m; // 24px
+$border-radius--l: $size--m; // 32px
+$border-radius--xl: $size--xl; // 48px
+$border-radius--xxl: $size--xxl; // 64px
 
 // -----------------------------------------------------------------------------
 // *  Typography
@@ -160,6 +166,7 @@ $letter-spacing--text: normal;
 
 // -  <<----------<< Debug Colors >>---------->>
 
+// #  Color
 $color--debug-1: #f00;
 $color--debug-2: #800000;
 $color--debug-3: #a52a2a;
@@ -179,5 +186,7 @@ $color--debug-16: #f0f;
 $color--debug-17: #ffc0cb;
 $color--debug-18: #808080;
 $color--debug-19: #c0c0c0;
-$color--debug-20: #fff;
-$color--debug-21: #000;
+$color--debug-20: #838996;
+$color--debug-21: #c4aead;
+$color--debug-22: #fff;
+$color--debug-23: #000;

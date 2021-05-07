@@ -9,11 +9,15 @@
 // #  <h1>
 h1 {
   @include subject;
+
+  background-color: $color--debug-18;
 }
 
 // #  <h2>
 h2 {
   @include title;
+
+  background-color: $color--debug-19;
 
   + p::first-letter {
     // This is purely as a test
@@ -26,6 +30,8 @@ h2 {
 // #  <h3>
 h3 {
   @include subtitle;
+
+  background-color: $color--debug-20;
 }
 
 // #  <h4>
@@ -55,6 +61,8 @@ h3 {
 // #  <p>
 p {
   @include text;
+
+  background-color: $color--debug-21;
 }
 
 /* -------------------------------------------------------------------------- *\

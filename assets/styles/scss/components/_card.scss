@@ -2,20 +2,24 @@
 *  _card.scss: This partial file contains all 'card' styles.
 \* -------------------------------------------------------------------------- */
 
-.card {
-  overflow: hidden;
-  align-self: center;
-  margin: $size-s;
-  background-color: aqua;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-}
-
 // -  <<----------<< Generic >>---------->>
 
-article {
-  @include article;
-  // ...
-}
+// ...
 
 // -  <<----------<< Specific >>---------->>
+
+.card {
+  @include material-shadow();
+
+  overflow: hidden;
+  margin: $size-s;
+
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+  background-color: $color--debug-8;
+  border-radius: $border-radius--s;
+
+  &:hover {
+    @include material-shadow(2);
+  }
+}
