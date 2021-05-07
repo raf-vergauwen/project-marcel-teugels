@@ -129,6 +129,12 @@ $text-align--text: left;
 // #  Text-Overflow ---> Default
 
 // #  Text-Shadow ---> Default
+$text-shadow--variant-1: 6px 6px 0 rgba(0, 0, 0, 0.2);
+$text-shadow--variant-2: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+$text-shadow--variant-3: 0px 4px 3px rgba(0, 0, 0, 0.4),
+  0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+$text-shadow--variant-4: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+$text-shadow--variant-5: -1px -1px 1px #111, 2px 2px 1px #363636;
 
 // #  Text-Transform
 $text-transform--subject: uppercase;
@@ -151,3 +157,5 @@ $letter-spacing--subtitle: 0.1rem; // 1.6px
 $letter-spacing--text: normal;
 
 // #  White-Space ---> Default
+
+// -  <<----------<< Debug Colors >>---------->>
