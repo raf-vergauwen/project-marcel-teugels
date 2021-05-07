@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>Profile</h1>
     <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
   </div>
 </template>
@@ -28,9 +29,10 @@ export default {
         if (!response.ok) {
           throw new Error('Could not get user info');
         }
-        return response.blob();
+        return response.json();
       })
       .then((body) => {
+        console.log(body);
         this.userInfo = body.data;
       })
       .catch((err) => {
@@ -47,6 +49,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;

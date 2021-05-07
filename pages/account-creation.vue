@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>Account creation</h1>
     <form @submit.prevent="createAccount" action="account-creation">
       <label
         >First name:
@@ -35,7 +36,13 @@ export default {
   },
   computed: {
     accountBody() {
-      return JSON.stringify({ first_name: this.firstName, last_name: this.lastName, email: this.email, password: this.password, role: this.role})
+      return JSON.stringify({
+        first_name: this.firstName,
+        last_name: this.lastName,
+        email: this.email,
+        password: this.password,
+        role: this.role,
+      });
     },
     access_token() {
       return sessionStorage.getItem('access_token');
@@ -74,6 +81,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -99,5 +107,15 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  padding: 1em;
 }
 </style>
