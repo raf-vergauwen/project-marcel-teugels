@@ -6,6 +6,8 @@
 // * Layout
 // -----------------------------------------------------------------------------
 
+// -  <<----------<< HTML Tags >>---------->>
+
 // #  <article>
 @mixin article {
   // ...
@@ -58,23 +60,37 @@
   //...
 }
 
+// -  <<----------<< Containers >>---------->>
+
 // #  Block-Container
-@mixin block-container() {
+@mixin block-container($max-width, $max-height) {
   display: block;
   width: 100%;
   max-width: $max-width;
+  height: 100%;
+  max-height: $max-height;
   margin: 0 auto;
 }
 
-// #  Flex-Container
-@mixin flex-container($direction: row, $justify: center, $align: center) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align;
-  justify-content: $justify;
+// #  Flex-Container ---> Parent
+@mixin flex-container($direction, $justify, $align, $type: nowrap) {
+  // #  Flex-Container--Nowrap
+  @if $type == nowrap {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+  }
+  // #  Flex-Container--Wrap
+  @else if $type == wrap {
+    display: flex;
+    flex-direction: $direction;
+    align-content: $align;
+    justify-content: $justify;
+  }
 }
 
-// #  Flex-Items
+// #  Flex-Items ---> Children
 @mixin flex-items($basis: $dimension--xxs, $grow: 1, $shrink: 1) {
   flex-basis: $basis;
   flex-grow: $grow;
@@ -82,9 +98,11 @@
 }
 
 // #  Inline-Flex-Container ---> buttons, navigation, vertical lists
-@mixin inline-flex-container() {
+@mixin inline-flex-container($direction, $justify, $align) {
   display: inline-flex;
-  // ...
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
 }
 
 // #  Grid-Container
