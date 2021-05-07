@@ -88,7 +88,7 @@ footer {
 }
 
 /* Media Queries */
-@include breakpoint(xsm) {
+@include breakpoint(xs) {
   .footer .footer-left,
   .footer .footer-right {
     text-align: center;

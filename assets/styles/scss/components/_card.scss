@@ -9,10 +9,10 @@
 // -  <<----------<< Specific >>---------->>
 
 .card {
-  @include material-shadow();
+  @include box-shadow(1);
 
   overflow: hidden;
-  margin: $size-s;
+  margin: $size--s;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
@@ -20,6 +20,6 @@
   border-radius: $border-radius--s;
 
   &:hover {
-    @include material-shadow(2);
+    @include box-shadow(3);
   }
 }

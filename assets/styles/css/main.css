@@ -1,19 +1,15 @@
 @charset "UTF-8";
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 1 - `abstracts/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 2 - `vendors/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _reboot.scss: This partial file contains the bootstrap 'reboot'.
-\* -------------------------------------------------------------------------- */
-@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css");
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 1 - `abstracts/`
+\* ========================================================================== */
+@import url(C:\Users\Verga\OneDrive\Github-Projects\.Repositories\Project-Marcel-Teugels\node_modules\modern-normalize\modern-normalize.css);
+.full-width {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,629 +18,498 @@
   }
 }
 
-body {
-  margin: 0;
-  background-color: #fff;
-  color: #212529;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-}
-
-hr {
-  border: 0;
-  margin: 1rem 0;
-  background-color: currentColor;
-  color: inherit;
-  opacity: 0.25;
-}
-
-hr:not([size]) {
-  height: 1px;
-}
-
-h6,
-h5,
-h4,
-h3,
-h2,
-h1 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-
-h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 1.75rem;
-  }
-}
-
-h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 1.5rem;
-  }
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-abbr[title],
-abbr[data-bs-original-title] {
-  cursor: help;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  text-decoration-skip-ink: none;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
-ol,
-ul {
-  padding-left: 2rem;
-}
-
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-small {
-  font-size: 0.875em;
-}
-
-mark {
-  padding: 0.2em;
-  background-color: #fcf8e3;
-}
-
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #0a58ca;
-}
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-pre,
-code,
-kbd,
-samp {
-  direction: ltr;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  font-size: 1em;
-  unicode-bidi: bidi-override;
-}
-
-pre {
-  display: block;
-  overflow: auto;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 0.875em;
-}
-
-code {
-  color: #d63384;
-  font-size: 0.875em;
-  word-wrap: break-word;
-}
-
-pre code {
-  color: inherit;
-  font-size: inherit;
-  word-break: normal;
-}
-
-a > code {
-  color: inherit;
-}
-
-kbd {
-  padding: 0.2rem 0.4rem;
-  background-color: #212529;
-  border-radius: 0.2rem;
-  color: #fff;
-  font-size: 0.875em;
-}
-
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
-}
-
-figure {
-  margin: 0 0 1rem;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
-table {
-  border-collapse: collapse;
-  caption-side: bottom;
-}
-
-caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #6c757d;
-  text-align: left;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-  border-width: 0;
-  border-style: solid;
-  border-color: inherit;
-}
-
-label {
-  display: inline-block;
-}
-
-button {
-  border-radius: 0;
-}
-
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-[role='button'] {
-  cursor: pointer;
-}
-
-select {
-  word-wrap: normal;
-}
-
-select:disabled {
-  opacity: 1;
-}
-
-[list]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-}
-
-button:not(:disabled),
-[type='button']:not(:disabled),
-[type='reset']:not(:disabled),
-[type='submit']:not(:disabled) {
-  cursor: pointer;
-}
-
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-fieldset {
-  min-width: 0;
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-
-legend {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 0.5rem;
-  float: left;
-  font-size: calc(1.275rem + 0.3vw);
-  line-height: inherit;
-}
-
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
-
-legend + * {
-  clear: left;
-}
-
-::-webkit-datetime-edit-fields-wrapper,
-::-webkit-datetime-edit-text,
-::-webkit-datetime-edit-minute,
-::-webkit-datetime-edit-hour-field,
-::-webkit-datetime-edit-day-field,
-::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field {
-  padding: 0;
-}
-
-::-webkit-inner-spin-button {
-  height: auto;
-}
-
-[type='search'] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
-  outline-offset: -2px;
-}
-
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-          appearance: none;
-}
-
-::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-::file-selector-button {
-  font: inherit;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-          appearance: button;
-  font: inherit;
-}
-
-output {
-  display: inline-block;
-}
-
-iframe {
-  border: 0;
-}
-
-summary {
-  display: list-item;
-  cursor: pointer;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-[hidden] {
-  display: none !important;
-}
-
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 2 - `vendors/`
+\* ========================================================================== */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `base/`
+\* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-*  _bulma.scss: This partial file contains the 'bulma' theme.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 3 - `base/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  This partial file contains the custom `reset` HTML tags
+*  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
 body {
   margin: 0 auto;
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
-*  This partial file contains all application-wide 'typography'.
+*  _typography.scss: This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
-/*
+/* -------------------------------------------------------------------------- *\
 -  Headings
-*/
-/*
--  Inline text elements
-*/
-/*
--  Abbreviations
-*/
-/*
--  Blockquotes
-*/
-/*
--  Lists
-*/
-/*
--  Responsive font sizes
-*/
+\* -------------------------------------------------------------------------- */
 h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
-
-@media (min-width: 80rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8147rem;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #808080;
 }
 
 h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #c0c0c0;
 }
 
-@media (min-width: 80rem) {
-  h2 {
-    font-size: 2rem;
-  }
+h2 + p::first-letter {
+  background-color: lime;
+  color: red;
+  font-size: 1.5625rem;
 }
 
 h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-
-@media (min-width: 80rem) {
-  h3 {
-    font-size: 1.75rem;
-  }
-}
-
-h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 80rem) {
-  h4 {
-    font-size: 1.5rem;
-  }
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
+  color: var(--tertiary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: none;
+  background-color: #838996;
 }
 
 /* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 4 - `layout/`
+-  Block Text Content
 \* -------------------------------------------------------------------------- */
+p {
+  color: var(--foreground-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+  background-color: #c4aead;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Inline Text Semantics
+\* -------------------------------------------------------------------------- */
+a {
+  text-align: center;
+}
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 4 - `layout/`
+\* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-
-.topnav a {
-  display: block;
-  padding: 14px 16px;
-  color: black;
-  float: left;
-  font-size: 17px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196f3;
-  color: white;
-}
-
-.topnav .search-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.topnav input[type='text'] {
-  padding: 6px;
-  border: 0;
-  margin-top: 8px;
-  font-size: 17px;
-}
-
-.topnav .search-container button {
-  padding: 6px 10px;
-  border: 0;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  cursor: pointer;
-  float: right;
-  font-size: 17px;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media (max-width: 40rem) {
-  .topnav .search-container {
-    display: block;
-    width: 100%;
-  }
-  label.theme-switch {
-    margin: 8px;
-  }
-  .topnav a,
-  .topnav input[type='text'],
-  .topnav .search-container button {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    margin: 0;
-    float: none;
-    text-align: left;
-  }
-  .topnav input[type='text'] {
-    border: 1px solid #ccc;
-  }
+header {
+  background-color: #ffa500;
 }
 
 /* -------------------------------------------------------------------------- *\
 *  _nav.scss: This partial file contains all 'nav' styles.
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _main.scss: This partial file contains all 'main' styles.
-\* -------------------------------------------------------------------------- */
+nav {
+  background-color: #ffd700;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 0) {
+  .container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+a {
+  color: rgba(34, 34, 34, 0.8);
+  text-decoration: none;
+}
+
+a:hover,
+a :focus {
+  color: black;
+}
+
+.menu-left a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+}
+
+.menu-left a::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: '';
+  -webkit-transition: width 0s ease, background 0.35s ease;
+  transition: width 0s ease, background 0.35s ease;
+}
+
+.menu-left a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  content: '';
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover::before {
+  width: 100%;
+  background: #000;
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover::after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
+}
+
+header nav .logo {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 1rem;
+  color: black;
+  float: left;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: inherit;
+}
+
+header nav .logo::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+header nav ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 0;
+  float: none;
+}
+
+@media (min-width: 768px) {
+  header nav ul li {
+    margin-left: 1rem;
+    float: left;
+  }
+}
+
+header nav ul li a {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  header nav ul li a {
+    display: block;
+    padding: 0.425rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    clear: both;
+  }
+  ul li {
+    padding: 0.5em 0;
+  }
+}
+
+.hide-nav {
+  -webkit-transform: translateY(-120% !important);
+          transform: translateY(-120% !important);
+}
+
+ul.menu-left {
+  z-index: 10;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+  ul.menu-left {
+    display: block !important;
+    max-height: none;
+    float: right;
+  }
+}
+
+ul.menu-left::before {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+ul.menu-left.collapse {
+  max-height: 15em !important;
+}
+
+.nav-toggle {
+  display: block;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.nav-toggle.open span:first-child {
+  -webkit-transform: rotate(45deg) translate(4.4px, 4.4px);
+          transform: rotate(45deg) translate(4.4px, 4.4px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-toggle.open span:last-child {
+  -webkit-transform: rotate(-45deg) translate(4.4px, -4.4px);
+          transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 4px;
+  background-color: #000;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.signature {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100vw;
+  color: #000;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _aside.scss: This partial file contains all 'aside' styles.
 \* -------------------------------------------------------------------------- */
+aside {
+  background-color: #800000;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _section.scss: This partial file contains all 'section' styles.
 \* -------------------------------------------------------------------------- */
+section {
+  min-width: 20rem;
+  padding: 4rem;
+  background-color: #ff0;
+}
+
+section__container {
+  display: block;
+  width: 100%;
+  max-width: 100rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section__title {
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _article.scss: This partial file contains all 'article' styles.
 \* -------------------------------------------------------------------------- */
+article {
+  background-color: #f00;
+}
+
 /* -------------------------------------------------------------------------- *\
-*  _address.scss: This partial file contains all 'address' styles.
+*  _forms.scss: This partial file contains all 'forms' styles.
 \* -------------------------------------------------------------------------- */
+form {
+  background-color: #d2b48c;
+}
+
+fieldset {
+  background-color: #0ff;
+}
+
+legend {
+  background-color: #00f;
+}
+
+textarea {
+  background-color: #000080;
+}
+
+label {
+  background-color: #800080;
+}
+
+button {
+  background-color: #f0f;
+}
+
+input {
+  background-color: #ffc0cb;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _table.scss: This partial file contains all 'table' styles.
+\* -------------------------------------------------------------------------- */
+table {
+  background-color: #0f0;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
+footer {
+  background-color: #a52a2a;
+}
+
 .footer {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -727,7 +592,7 @@ h6 {
 }
 
 /* Media Queries */
-@media (max-width: 40rem) {
+@media (min-width: 40rem) {
   .footer .footer-left,
   .footer .footer-right {
     text-align: center;
@@ -741,27 +606,28 @@ h6 {
   }
 }
 
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 5 - `components/`
+\* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 5 - `components/`
+*  _card.scss: This partial file contains all 'card' styles.
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.1 - `components/single-part/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _block.scss: This partial file contains all 'block' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _box.scss: This partial file contains all 'box' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _button.scss: This partial file contains all 'button' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _content.scss: This partial file contains all 'content' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _delete.scss: This partial file contains all 'delete' styles.
-\* -------------------------------------------------------------------------- */
+.card {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  margin: 1rem;
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+  background-color: #0f0;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _icon.scss: This partial file contains all 'icon' styles.
 \* -------------------------------------------------------------------------- */
@@ -769,24 +635,6 @@ svg {
   fill: var(--foreground-color);
 }
 
-/* -------------------------------------------------------------------------- *\
-*  _image.scss: This partial file contains all 'image' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _notification.scss: This partial file contains all 'notification' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _progress-bars.scss: This partial file contains all 'progress-bars' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _table.scss: This partial file contains all 'table' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _tag.scss: This partial file contains all 'tag' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _title.scss: This partial file contains all 'title' styles.
-\* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 *  _toggle.scss: This partial file contains all 'toggle' styles.
 \* -------------------------------------------------------------------------- */
@@ -852,78 +700,9 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.2 - `components/forms/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _general.scss: This partial file contains all 'general' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _input.scss: This partial file contains all 'input' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _textarea.scss: This partial file contains all 'textarea' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _select.scss: This partial file contains all 'select' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _checkbox.scss: This partial file contains all 'checkbox' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _radio.scss: This partial file contains all 'radio' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _file.scss: This partial file contains all 'file' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  Partial SCSS Group 5.3 - `components/multi-part/`
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _breadcrumb.scss: This partial file contains all 'breadcrumb' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _card.scss: This partial file contains all 'card' styles.
-\* -------------------------------------------------------------------------- */
-.card {
-  overflow: hidden;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 1rem;
-  background-color: aqua;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _dropdown.scss: This partial file contains all 'dropdown' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _menu.scss: This partial file contains all 'menu' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _message.scss: This partial file contains all 'message' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _modal.scss: This partial file contains all 'modal' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _navbar.scss: This partial file contains all 'navbar' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _pagination.scss: This partial file contains all 'pagination' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _panel.scss: This partial file contains all 'panel' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _tabs.scss: This partial file contains all 'tabs' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 6 - `pages/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 6 - `pages/`
+\* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _index.scss: This partial file contains the styles of the 'index' page.
 \* -------------------------------------------------------------------------- */
@@ -939,117 +718,9 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
-.hero {
-  background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 85vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: linear-gradient(45deg, rgba(240, 0, 48, 0.8), rgba(218, 113, 0, 0.8), rgba(255, 191, 0, 0.8));
-}
-
-.hero__visual {
-  width: 20rem;
-}
-
-.hero__subject {
-  text-align: center;
-}
-
-.hero__title {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  font-size: 2.48832rem;
-  font-weight: 700;
-  text-align: center;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items {
-  min-width: 20rem;
-  padding: 4rem;
-}
-
-.hot-items__container {
-  width: 100%;
-  max-width: 140rem;
-  margin: 0 auto;
-}
-
-.hot-items__title {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  font-size: 2.48832rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.hot-items__container {
-  width: 100%;
-  max-width: 140rem;
-  margin: 0 auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.hot-items__title {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  font-size: 2.48832rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.hot-items-card {
-  width: 100%;
-  max-width: 140rem;
-  margin: 0 auto;
-  min-width: 300px;
-  max-width: 400px;
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-}
-
-.hot-items-card__visual {
-  background-color: tan;
-}
-
-.hot-items-card__title {
-  margin: 0.5rem;
-  font-size: 1.2rem;
-  font-variant: small-caps;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
-  text-align: left;
-  text-transform: lowercase;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
@@ -1062,19 +733,19 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _storefront.scss: This partial file contains the'storefront' page styles.
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-+  Partial SCSS Group 7 - `themes/`
-\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 7 - `themes/`
+\* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _light.scss: This partial file contains the 'light' theme.
 \* -------------------------------------------------------------------------- */
 :root,
 [data-theme='light'] {
-  --foreground-color: hsl(0, 3%, 6%);
+  --foreground-color: hsl(0, 3%, 10%);
   --background-color: hsl(240, 100%, 99%);
   --primary-color: hsl(207, 48%, 14%);
   --secondary-color: hsl(214, 42%, 64%);
-  --accent-color: hsl(23, 42%, 64%);
+  --tertiary-color: hsl(23, 42%, 64%);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1082,9 +753,9 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 [data-theme='dark'] {
   --foreground-color: hsl(240, 100%, 99%);
-  --background-color: hsl(0, 3%, 6%);
+  --background-color: hsl(0, 3%, 10%);
   --primary-color: hsl(27, 48%, 86%);
   --secondary-color: hsl(34, 42%, 36%);
-  --accent-color: hsl(203, 42%, 36%);
+  --tertiary-color: hsl(203, 42%, 36%);
 }
 /*# sourceMappingURL=main.css.map */

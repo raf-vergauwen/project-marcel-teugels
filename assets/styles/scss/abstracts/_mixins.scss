@@ -44,8 +44,8 @@
 
 // #  <section>
 @mixin section {
-  min-width: $dimension-xxs;
-  padding: $size-xxl;
+  min-width: $dimension--xxs;
+  padding: $size--xxl;
   background-color: $color--debug-7;
   // ...
 
@@ -81,16 +81,16 @@
 }
 
 // #  Flex-Container ---> Parent
-@mixin flex-container($direction, $justify, $align, $type: nowrap) {
+@mixin flex-container($direction, $justify, $align, $wrap-type: nowrap) {
   // #  Flex-Container--Nowrap
-  @if $type == nowrap {
+  @if $wrap-type == nowrap {
     display: flex;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
   }
   // #  Flex-Container--Wrap
-  @else if $type == wrap {
+  @else if $wrap-type == wrap {
     display: flex;
     flex-direction: $direction;
     align-content: $align;
@@ -98,7 +98,7 @@
   }
   // #  Invalid arguments!
   @else {
-    @error '#{$type} is an unknown wrapper type.';
+    @error '#{$wrap-type} is an unsupported breakpoint, choose between: wrap, nowrap.';
   }
 }
 
@@ -245,52 +245,52 @@
 // *  Breakpoints
 // -----------------------------------------------------------------------------
 
-@mixin breakpoint($breakpoint) {
+@mixin breakpoint($breakpoint: xxs) {
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
-    @media (min-width: $dimension-xxs) {
+    @media (min-width: $dimension--xxs) {
       @content;
     }
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
-  @if $breakpoint == xs {
-    @media (min-width: $dimension-xs) {
+  @else if $breakpoint == xs {
+    @media (min-width: $dimension--xs) {
       @content;
     }
   }
   // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
-    @media (min-width: $dimension-s) {
+    @media (min-width: $dimension--s) {
       @content;
     }
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
-    @media (min-width: $dimension-m) {
+    @media (min-width: $dimension--m) {
       @content;
     }
   }
   // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
-    @media (min-width: $dimension-l) {
+    @media (min-width: $dimension--l) {
       @content;
     }
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
-    @media (min-width: $dimension-xl) {
+    @media (min-width: $dimension--xl) {
       @content;
     }
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
-    @media (min-width: $dimension-xxl) {
+    @media (min-width: $dimension--xxl) {
       @content;
     }
   }
   // #  Invalid arguments!
   @else {
-    @warn '#{$type} is an unsupported breakpoint, choose between: xxs, xs, s, m, l, xl, xxl';
+    @error '#{$breakpoint} is an unsupported breakpoint, choose betweens: xxs, xs, s, m, l, xl, xxl.';
   }
 }
 
@@ -299,29 +299,29 @@
 // -----------------------------------------------------------------------------
 
 // #  Material Design Box-Shadow
-@mixin box-shadow($level: 1) {
+@mixin box-shadow($box-shadow--level: 1) {
   // #  Box-Shadow Level 1
-  @if $level == 1 {
+  @if $box-shadow--level == 1 {
     box-shadow: $box-shadow--level-1;
   }
   // #  Box-Shadow Level 2
-  @else if $level == 2 {
+  @else if $box-shadow--level == 2 {
     box-shadow: $box-shadow--level-2;
   }
   // #  Box-Shadow Level 3
-  @else if $level == 3 {
+  @else if $box-shadow--level == 3 {
     box-shadow: $box-shadow--level-3;
   }
   // #  Box-Shadow Level 4
-  @else if $level == 4 {
+  @else if $box-shadow--level == 4 {
     box-shadow: $box-shadow--level-4;
   }
   // #  Box-Shadow Level 5
-  @else if $level == 5 {
+  @else if $box-shadow--level == 5 {
     box-shadow: $box-shadow--level-5;
   }
   // #  Invalid arguments!
   @else {
-    @warn '#{$type} is an unsupported box-shadow, choose between: 1,2,3,4,5';
+    @error '#{$box-shadow--level} is an unsupported box-shadow, choose between: 1,2,3,4,5.';
   }
 }
