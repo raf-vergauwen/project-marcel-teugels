@@ -8,31 +8,37 @@
 
 // #  <article>
 @mixin article {
+  background-color: $color--debug-1;
   // ...
 }
 
 // #  <aside>
 @mixin aside {
+  background-color: $color--debug-2;
   //...
 }
 
 // #  <footer>
 @mixin footer {
+  background-color: $color--debug-3;
   //...
 }
 
 // #  <form>
 @mixin form {
+  background-color: $color--debug-4;
   //...
 }
 
 // #  <header>
 @mixin header {
+  background-color: $color--debug-5;
   //...
 }
 
 // #  <nav>
 @mixin nav {
+  background-color: $color--debug-6;
   //...
 }
 
@@ -40,10 +46,11 @@
 @mixin section {
   min-width: $dimension-xxs;
   padding: $size-xxl;
+  background-color: $color--debug-7;
   // ...
 
   &__container {
-    @include container;
+    @include block-container($dimension--l, fit-content);
     // ...
   }
 
@@ -55,6 +62,7 @@
 
 // #  <table>
 @mixin table {
+  background-color: $color--debug-8;
   //...
 }
 
@@ -67,7 +75,6 @@
   display: block;
   width: 100%;
   max-width: $max-width;
-  height: 100%;
   max-height: $max-height;
   padding: 0;
   margin: 0 auto;
@@ -120,34 +127,22 @@
 // *  Components
 // -----------------------------------------------------------------------------
 
-// #  <article>
-@mixin article {
+// #  Card
+@mixin card {
+  background-color: $color--debug-9;
   // ...
 }
 
-// #  <aside>
-@mixin aside {
-  //...
+// #  Icon
+@mixin icon {
+  background-color: $color--debug-10;
+  // ...
 }
 
-// #  <footer>
-@mixin footer {
-  //...
-}
-
-// #  <form>
-@mixin form {
-  //...
-}
-
-// #  <header>
-@mixin header {
-  //...
-}
-
-// #  <nav>
-@mixin nav {
-  //...
+// #  Switch
+@mixin switch {
+  background-color: $color--debug-11;
+  // ...
 }
 
 // -----------------------------------------------------------------------------
@@ -156,31 +151,37 @@
 
 // #  <fieldset>
 @mixin fieldset {
+  background-color: $color--debug-12;
   // ...
 }
 
 // #  <legend>
 @mixin legend {
+  background-color: $color--debug-13;
   // ...
 }
 
 // #  <textarea>
 @mixin textarea {
+  background-color: $color--debug-14;
   // ...
 }
 
 // #  <label>
 @mixin label {
+  background-color: $color--debug-15;
   // ...
 }
 
 // #  <button>
 @mixin button {
+  background-color: $color--debug-16;
   // ...
 }
 
 // #  <input>
 @mixin input {
+  background-color: $color--debug-17;
   // ...
 }
 

@@ -130,10 +130,10 @@ $text-align--text: left;
 
 // #  Text-Shadow ---> Default
 $text-shadow--variant-1: 6px 6px 0 rgba(0, 0, 0, 0.2);
-$text-shadow--variant-2: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-$text-shadow--variant-3: 0px 4px 3px rgba(0, 0, 0, 0.4),
-  0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-$text-shadow--variant-4: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+$text-shadow--variant-2: 4px 3px 0 #fff, 9px 8px 0 rgba(0, 0, 0, 0.15);
+$text-shadow--variant-3: 0 4px 3px rgba(0, 0, 0, 0.4),
+  0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+$text-shadow--variant-4: 4px 4px 0 #d5d5d5, 7px 7px 0 rgba(0, 0, 0, 0.2);
 $text-shadow--variant-5: -1px -1px 1px #111, 2px 2px 1px #363636;
 
 // #  Text-Transform
@@ -159,3 +159,25 @@ $letter-spacing--text: normal;
 // #  White-Space ---> Default
 
 // -  <<----------<< Debug Colors >>---------->>
+
+$color--debug-1: #f00;
+$color--debug-2: #800000;
+$color--debug-3: #a52a2a;
+$color--debug-4: #d2b48c;
+$color--debug-5: #ffa500;
+$color--debug-6: #ffd700;
+$color--debug-7: #ff0;
+$color--debug-8: #0f0;
+$color--debug-9: #808000;
+$color--debug-10: #008000;
+$color--debug-11: #008080;
+$color--debug-12: #0ff;
+$color--debug-13: #00f;
+$color--debug-14: #000080;
+$color--debug-15: #800080;
+$color--debug-16: #f0f;
+$color--debug-17: #ffc0cb;
+$color--debug-18: #808080;
+$color--debug-19: #c0c0c0;
+$color--debug-20: #fff;
+$color--debug-21: #000;
