@@ -8,30 +8,55 @@
 
 // #  <h1>
 h1 {
-  @include subject;
-
-  background-color: $color--debug-18;
+  color: $color--subject;
+  font-family: $font-family--subject;
+  font-size: $font-size--subject;
+  font-variant: $font-variant--subject;
+  font-weight: $font-weight--subject;
+  letter-spacing: $letter-spacing--subject;
+  line-height: $line-height--subject;
+  text-align: $text-align--subject;
+  text-transform: $text-transform--subject;
 }
 
 // #  <h2>
 h2 {
-  @include title;
-
-  background-color: $color--debug-19;
+  color: $color--section-title;
+  font-family: $font-family--section-title;
+  font-size: $font-size--section-title;
+  font-variant: $font-variant--section-title;
+  font-weight: $font-weight--section-title;
+  letter-spacing: $letter-spacing--section-title;
+  line-height: $line-height--section-title;
+  text-align: $text-align--section-title;
+  text-transform: $text-transform--section-title;
 
   + p::first-letter {
     // This code is purely for testing purposes
     background-color: rgb(0, 255, 0);
     color: rgb(255, 0, 0);
-    font-size: $font-size--subtitle;
+    font-size: $font-size--article-title;
   }
 }
 
 // #  <h3>
 h3 {
-  @include subtitle;
+  color: $color--article-title;
+  font-family: $font-family--article-title;
+  font-size: $font-size--article-title;
+  font-variant: $font-variant--article-title;
+  font-weight: $font-weight--article-title;
+  letter-spacing: $letter-spacing--article-title;
+  line-height: $line-height--article-title;
+  text-align: $text-align--article-title;
+  text-transform: $text-transform--article-title;
 
-  background-color: $color--debug-20;
+  + p::first-letter {
+    // This code is purely for testing purposes
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 0);
+    font-size: $font-size--article-title;
+  }
 }
 
 // #  <h4>
@@ -60,9 +85,15 @@ h3 {
 
 // #  <p>
 p {
-  @include text;
-
-  background-color: $color--debug-21;
+  color: $color--text;
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
 }
 
 /* -------------------------------------------------------------------------- *\

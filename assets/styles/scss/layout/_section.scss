@@ -1,12 +1,9 @@
 /* -------------------------------------------------------------------------- *\
-*  _section.scss: This partial file contains all 'section' styles.
+*  _section.scss: This partial file contains all default 'section' styles.
 \* -------------------------------------------------------------------------- */
 
-// -  <<----------<< Generic >>---------->>
-
 section {
-  @include section;
+  min-width: $dimension--xxs;
+  padding: $size--xxl;
   // ...
 }
-
-// -  <<----------<< Specific >>---------->>

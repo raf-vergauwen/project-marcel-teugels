@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// *  Breakpoints
+// -----------------------------------------------------------------------------
+
+// #  Breakpoints
+@mixin breakpoint($breakpoint: xxs) {
+  // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
+  @if $breakpoint == xxs {
+    @media (min-width: $dimension--xxs) {
+      @content;
+    }
+  }
+  // #  Breakpoint 2 - Extra Small - 40rem / 640px
+  @else if $breakpoint == xs {
+    @media (min-width: $dimension--xs) {
+      @content;
+    }
+  }
+  // #  Breakpoint 3 - Small - 60rem / 960px
+  @else if $breakpoint == s {
+    @media (min-width: $dimension--s) {
+      @content;
+    }
+  }
+  // #  Breakpoint 4 - Medium - 80rem / 1280px
+  @else if $breakpoint == m {
+    @media (min-width: $dimension--m) {
+      @content;
+    }
+  }
+  // #  Breakpoint 5 - Large - 100rem / 1600px
+  @else if $breakpoint == l {
+    @media (min-width: $dimension--l) {
+      @content;
+    }
+  }
+  // #  Breakpoint 6 - Extra Large - 120rem / 1920px
+  @else if $breakpoint == xl {
+    @media (min-width: $dimension--xl) {
+      @content;
+    }
+  }
+  // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
+  @else if $breakpoint == xxl {
+    @media (min-width: $dimension--xxl) {
+      @content;
+    }
+  }
+  // #  Invalid arguments!
+  @else {
+    @error '#{$breakpoint} is an unsupported breakpoint, choose betweens: xxs, xs, s, m, l, xl, xxl.';
+  }
+}

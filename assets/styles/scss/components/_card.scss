@@ -16,7 +16,7 @@
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  background-color: $color--debug-8;
+  background-color: #a52a2a;
   border-radius: $border-radius--s;
 
   &:hover {

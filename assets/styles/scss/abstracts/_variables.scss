@@ -69,8 +69,8 @@ $linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
 
 // #  Color
 $color--subject: var(--primary-color);
-$color--title: var(--secondary-color);
-$color--subtitle: var(--tertiary-color);
+$color--section-title: var(--secondary-color);
+$color--article-title: var(--tertiary-color);
 $color--text: var(--foreground-color);
 $color--background: var(--background-color);
 
@@ -91,42 +91,42 @@ $font-size--7: $font-size--6 * $font-scale; // 61.04px
 
 // #  Font-Family
 $font-family--subject: 'Montserrat', sans-serif;
-$font-family--title: 'Montserrat', sans-serif;
-$font-family--subtitle: 'Montserrat', sans-serif;
+$font-family--section-title: 'Montserrat', sans-serif;
+$font-family--article-title: 'Montserrat', sans-serif;
 $font-family--text: 'Roboto', sans-serif;
 
 // #  Font-Size
 $font-size--subject: $font-size--7;
-$font-size--title: $font-size--5;
-$font-size--subtitle: $font-size--3;
+$font-size--section-title: $font-size--5;
+$font-size--article-title: $font-size--3;
 $font-size--text: $font-size--1;
 
 // #  Font-Style ---> Default
 
 // #  Font-Variant
 $font-variant--subject: normal;
-$font-variant--title: normal;
-$font-variant--subtitle: small-caps;
+$font-variant--section-title: normal;
+$font-variant--article-title: small-caps;
 $font-variant--text: normal;
 
 // #  Font-Weight
 $font-weight--subject: 700; // Bold
-$font-weight--title: 400; // Normal
-$font-weight--subtitle: 300; // Light
+$font-weight--section-title: 400; // Normal
+$font-weight--article-title: 300; // Light
 $font-weight--text: 300; // Light
 
 // #  Line-Height
 $line-height--subject: 1.2; // 120%
-$line-height--title: 1.2; // 120%
-$line-height--subtitle: 1.2; // 120%
+$line-height--section-title: 1.2; // 120%
+$line-height--article-title: 1.2; // 120%
 $line-height--text: 1.5; // 150%
 
 // -  <<----------<< Text >>---------->>
 
 // #  Text-Align
 $text-align--subject: center;
-$text-align--title: center;
-$text-align--subtitle: left;
+$text-align--section-title: center;
+$text-align--article-title: left;
 $text-align--text: left;
 
 // #  Text-Decoration ---> Default
@@ -145,8 +145,8 @@ $text-shadow--variant-5: -1px -1px 1px #111, 2px 2px 1px #363636;
 
 // #  Text-Transform
 $text-transform--subject: uppercase;
-$text-transform--title: capitalize;
-$text-transform--subtitle: none;
+$text-transform--section-title: capitalize;
+$text-transform--article-title: none;
 $text-transform--text: none;
 
 // -  <<----------<< Word >>---------->>
@@ -159,37 +159,10 @@ $text-transform--text: none;
 
 // #  Letter-Spacing
 $letter-spacing--subject: 0.025rem; // 0.4px
-$letter-spacing--title: 0.05rem; // 0.8px
-$letter-spacing--subtitle: 0.1rem; // 1.6px
+$letter-spacing--section-title: 0.05rem; // 0.8px
+$letter-spacing--article-title: 0.1rem; // 1.6px
 $letter-spacing--text: normal;
 
 // #  White-Space ---> Default
 
 // -  <<----------<< Debug >>---------->>
-
-// #  Color
-$color--debug-1: #f00;
-$color--debug-2: #800000;
-$color--debug-3: #a52a2a;
-$color--debug-4: #d2b48c;
-$color--debug-5: #ffa500;
-$color--debug-6: #ffd700;
-$color--debug-7: #ff0;
-$color--debug-8: #0f0;
-$color--debug-9: #808000;
-$color--debug-10: #008000;
-$color--debug-11: #008080;
-$color--debug-12: #0ff;
-$color--debug-13: #00f;
-$color--debug-14: #000080;
-$color--debug-15: #800080;
-$color--debug-16: #f0f;
-$color--debug-17: #ffc0cb;
-$color--debug-18: #808080;
-$color--debug-19: #c0c0c0;
-$color--debug-20: #838996;
-$color--debug-21: #c4aead;
-$color--debug-22: #fff;
-$color--debug-23: #000;
-
-// -  <<----------<< Other >>---------->>

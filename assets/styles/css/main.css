@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
-@import url(C:\Users\Verga\OneDrive\Github-Projects\.Repositories\Project-Marcel-Teugels\node_modules\modern-normalize\modern-normalize.css);
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css");
 .full-width {
   position: relative;
   right: 50%;
@@ -21,6 +20,9 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
+\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
@@ -53,7 +55,6 @@ h1 {
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  background-color: #808080;
 }
 
 h2 {
@@ -66,7 +67,6 @@ h2 {
   line-height: 1.2;
   text-align: center;
   text-transform: capitalize;
-  background-color: #c0c0c0;
 }
 
 h2 + p::first-letter {
@@ -85,7 +85,12 @@ h3 {
   line-height: 1.2;
   text-align: left;
   text-transform: none;
-  background-color: #838996;
+}
+
+h3 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -101,7 +106,6 @@ p {
   line-height: 1.5;
   text-align: left;
   text-transform: none;
-  background-color: #c4aead;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -115,497 +119,34 @@ a {
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-*  _header.scss: This partial file contains all 'header' styles.
+*  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
-header {
-  background-color: #ffa500;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _nav.scss: This partial file contains all 'nav' styles.
+*  _nav.scss: This partial file contains all default 'nav' styles.
 \* -------------------------------------------------------------------------- */
-nav {
-  background-color: #ffd700;
-}
-
-section {
-  height: 100vh;
-}
-
-.container {
-  padding: 0 15px;
-}
-
-@media (min-width: 0) {
-  .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-a {
-  color: rgba(34, 34, 34, 0.8);
-  text-decoration: none;
-}
-
-a:hover,
-a :focus {
-  color: black;
-}
-
-.menu-left a {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0;
-  -webkit-transition: color 0.35s ease;
-  transition: color 0.35s ease;
-}
-
-.menu-left a::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 0;
-  height: 2px;
-  content: '';
-  -webkit-transition: width 0s ease, background 0.35s ease;
-  transition: width 0s ease, background 0.35s ease;
-}
-
-.menu-left a::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  content: '';
-  -webkit-transition: width 0.35s ease;
-  transition: width 0.35s ease;
-}
-
-.menu-left a:hover::before {
-  width: 100%;
-  background: #000;
-  -webkit-transition: width 0.35s ease;
-  transition: width 0.35s ease;
-}
-
-.menu-left a:hover::after {
-  width: 100%;
-  background: transparent;
-  -webkit-transition: all 0s ease;
-  transition: all 0s ease;
-}
-
-header {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem 0;
-  background: rgba(255, 255, 255, 0.92);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  will-change: transform;
-}
-
-header nav .logo {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-right: 1rem;
-  color: black;
-  float: left;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
-}
-
-header nav .logo::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-header nav ul {
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-}
-
-header nav ul li {
-  margin-left: 0;
-  float: none;
-}
-
-@media (min-width: 768px) {
-  header nav ul li {
-    margin-left: 1rem;
-    float: left;
-  }
-}
-
-header nav ul li a {
-  display: block;
-}
-
-@media (min-width: 576px) {
-  header nav ul li a {
-    display: block;
-    padding: 0.425rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  ul {
-    clear: both;
-  }
-  ul li {
-    padding: 0.5em 0;
-  }
-}
-
-.hide-nav {
-  -webkit-transform: translateY(-120% !important);
-          transform: translateY(-120% !important);
-}
-
-ul.menu-left {
-  z-index: 10;
-  display: block;
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-@media (min-width: 768px) {
-  ul.menu-left {
-    display: block !important;
-    max-height: none;
-    float: right;
-  }
-}
-
-ul.menu-left::before {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-ul.menu-left.collapse {
-  max-height: 15em !important;
-}
-
-.nav-toggle {
-  display: block;
-  width: 38px;
-  height: 38px;
-  padding: 8px;
-  background-color: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right;
-}
-
-.nav-toggle.open span:first-child {
-  -webkit-transform: rotate(45deg) translate(4.4px, 4.4px);
-          transform: rotate(45deg) translate(4.4px, 4.4px);
-}
-
-.nav-toggle.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-.nav-toggle.open span:last-child {
-  -webkit-transform: rotate(-45deg) translate(4.4px, -4.4px);
-          transform: rotate(-45deg) translate(4.4px, -4.4px);
-}
-
-@media (min-width: 768px) {
-  .nav-toggle {
-    display: none;
-  }
-}
-
-.nav-toggle span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 4px;
-  background-color: #000;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.signature {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100vw;
-  color: #000;
-  font-size: 10px;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _aside.scss: This partial file contains all 'aside' styles.
+*  _aside.scss: This partial file contains all default 'aside' styles.
 \* -------------------------------------------------------------------------- */
-aside {
-  background-color: #800000;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _section.scss: This partial file contains all 'section' styles.
+*  _section.scss: This partial file contains all default 'section' styles.
 \* -------------------------------------------------------------------------- */
 section {
   min-width: 20rem;
   padding: 4rem;
-  background-color: #ff0;
-}
-
-section__container {
-  display: block;
-  width: 100%;
-  max-width: 100rem;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  padding: 0;
-  margin: 0 auto;
-}
-
-section__title {
-  color: var(--secondary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.44141rem;
-  font-variant: normal;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 /* -------------------------------------------------------------------------- *\
-*  _article.scss: This partial file contains all 'article' styles.
+*  _article.scss: This partial file contains all default 'article' styles.
 \* -------------------------------------------------------------------------- */
-article {
-  background-color: #f00;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _forms.scss: This partial file contains all 'forms' styles.
+*  _forms.scss: This partial file contains all default 'forms' styles.
 \* -------------------------------------------------------------------------- */
-form {
-  background-color: #d2b48c;
-}
-
-fieldset {
-  background-color: #0ff;
-}
-
-legend {
-  background-color: #00f;
-}
-
-textarea {
-  background-color: #000080;
-}
-
-label {
-  background-color: #800080;
-}
-
-button {
-  background-color: #f0f;
-}
-
-input {
-  background-color: #ffc0cb;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _table.scss: This partial file contains all 'table' styles.
+*  _table.scss: This partial file contains default 'table' styles.
 \* -------------------------------------------------------------------------- */
-table {
-  background-color: #0f0;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _footer.scss: This partial file contains all 'footer' styles.
+*  _footer.scss: This partial file contains all default 'footer' styles.
 \* -------------------------------------------------------------------------- */
-footer {
-  background-color: #a52a2a;
-}
-
-.footer {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 45px 50px;
-  background-color: #292c2f;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  font: normal 16px sans-serif;
-  text-align: left;
-}
-
-.footer .footer-left p {
-  margin: 0;
-  color: #8f9296;
-  font-size: 14px;
-}
-
-/* Footer links */
-.footer p.footer-links {
-  padding: 0;
-  margin: 0 0 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  -webkit-transition: ease 0.25s;
-  transition: ease 0.25s;
-}
-
-.footer p.footer-links a {
-  display: inline-block;
-  color: inherit;
-  line-height: 1.8;
-  text-decoration: none;
-  -webkit-transition: ease 0.25s;
-  transition: ease 0.25s;
-}
-
-.footer .footer-links a::before {
-  left: 0;
-  display: inline-block;
-  padding-right: 5px;
-  color: #fff;
-  content: '·';
-  font-size: 20px;
-}
-
-.footer .footer-links .link-1::before {
-  content: none;
-}
-
-.footer .footer-right {
-  max-width: 180px;
-  margin-top: 6px;
-  float: right;
-}
-
-.footer .footer-right a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  margin-left: 3px;
-  background-color: #33383b;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 35px;
-  text-align: center;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.footer .footer-right a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.footer p.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-@media (min-width: 40rem) {
-  .footer .footer-left,
-  .footer .footer-right {
-    text-align: center;
-  }
-  .footer .footer-right {
-    margin: 0 auto 20px;
-    float: none;
-  }
-  .footer .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
@@ -619,7 +160,7 @@ footer {
   margin: 1rem;
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  background-color: #0f0;
+  background-color: #a52a2a;
   border-radius: 1rem;
 }
 
@@ -716,6 +257,9 @@ input:checked + .slider::before {
 *  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
+-  Header-Main: Header
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
@@ -723,6 +267,9 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Footer-Main: Footer
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 *  _login.scss: This partial file contains the styles of the 'login' page.
