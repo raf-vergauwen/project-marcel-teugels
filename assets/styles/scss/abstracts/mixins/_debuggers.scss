@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// *  Debuggers
+// -----------------------------------------------------------------------------
+
+// #  Wireframe Debugger Manual
+@mixin wireframe($wireframe-type: generic) {
+  // #  Wireframe 1 - Generic
+  @if $wireframe-type == generic {
+    background-color: #f08080; // LightCoral - Red
+    outline: $size--xxs solid #f00;
+  }
+  // #  Wireframe 1 - Container
+  @else if $wireframe-type == container {
+    background-color: #ffe4c4;
+  }
+  // #  Invalid arguments!
+  @else {
+    @error '#{$wireframe-type} is an unsupported wireframe, choose between: generic, container.';
+  }
+}
+
+// #  Wireframe Debugger Manual Automatic

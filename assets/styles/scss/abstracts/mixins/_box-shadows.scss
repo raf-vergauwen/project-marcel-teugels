@@ -4,23 +4,23 @@
 
 // #  Material Design Box-Shadow
 @mixin box-shadow($box-shadow--level: 1) {
-  // #  Box-Shadow Level 1
+  // #  Box-Shadow - Level 1
   @if $box-shadow--level == 1 {
     box-shadow: $box-shadow--level-1;
   }
-  // #  Box-Shadow Level 2
+  // #  Box-Shadow - Level 2
   @else if $box-shadow--level == 2 {
     box-shadow: $box-shadow--level-2;
   }
-  // #  Box-Shadow Level 3
+  // #  Box-Shadow - Level 3
   @else if $box-shadow--level == 3 {
     box-shadow: $box-shadow--level-3;
   }
-  // #  Box-Shadow Level 4
+  // #  Box-Shadow - Level 4
   @else if $box-shadow--level == 4 {
     box-shadow: $box-shadow--level-4;
   }
-  // #  Box-Shadow Level 5
+  // #  Box-Shadow - Level 5
   @else if $box-shadow--level == 5 {
     box-shadow: $box-shadow--level-5;
   }

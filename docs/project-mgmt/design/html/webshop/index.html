@@ -18,18 +18,35 @@
   <body>
     <!-- + ---------------------<< HEADER: .header >>-------------------------->
     <header class="header">
-      <div class="container">
-        <nav id="navigation">
-          <a href="#" class="logo">Marcel Teugels</a>
-          <a aria-label="mobile menu" class="nav-toggle">
+      <div class="header__container">
+        <span class="header__logo-name">
+          <img
+            class="icon header__logo-image"
+            src="/assets/media/icons/marcel-teugels/icons__marcel-teugels-logo--improved.svg"
+          />Marcel Teugels
+        </span>
+        <nav class="header__nav main-nav">
+          <a aria-label="mobile menu" class="main-nav__menu-button">
             <span></span>
             <span></span>
             <span></span>
           </a>
-          <ul class="menu-left">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#hero-items">Hot Items</a></li>
-            <li><a href="#about">About</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#hero" class="main-nav__link">
+                <i class="icon fas fa-home"></i>Home
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#hero-items" class="main-nav__link">
+                <i class="icon fas fa-burn"></i>Hot Items
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link">
+                <i class="icon fas fa-question"></i>About
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -55,6 +72,7 @@
     <!-- + ---------------------<< FOOTER: .footer >>-------------------------->
     <footer class="footer">
       <div class="footer__container"></div>
+      <img />
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

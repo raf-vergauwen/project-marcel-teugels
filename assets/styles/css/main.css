@@ -39,6 +39,10 @@ body {
   line-height: 1.5;
 }
 
+div {
+  background: yellow;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _typography.scss: This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
@@ -58,7 +62,7 @@ h1 {
 }
 
 h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
@@ -76,7 +80,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.5625rem;
   font-variant: small-caps;
@@ -176,6 +180,12 @@ svg {
   fill: var(--foreground-color);
 }
 
+.icon {
+  width: 1rem;
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _toggle.scss: This partial file contains all 'toggle' styles.
 \* -------------------------------------------------------------------------- */
@@ -259,6 +269,11 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Header-Main: Header
 \* -------------------------------------------------------------------------- */
+.header__container {
+  background-color: #f08080;
+  outline: 0.25rem solid #f00;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */

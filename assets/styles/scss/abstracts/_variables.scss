@@ -69,8 +69,8 @@ $linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
 
 // #  Color
 $color--subject: var(--primary-color);
-$color--section-title: var(--secondary-color);
-$color--article-title: var(--tertiary-color);
+$color--section-title: var(--primary-color);
+$color--article-title: var(--secondary-color);
 $color--text: var(--foreground-color);
 $color--background: var(--background-color);
 
