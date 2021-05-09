@@ -1,0 +1,111 @@
+// -----------------------------------------------------------------------------
+// *  Wireframes
+// -----------------------------------------------------------------------------
+
+// - With HTML data attributes
+
+html {
+  --fill: hsla(0, 0%, 0%, 0.5);
+  --wire: #ff0000;
+}
+
+[data-wf] {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--wire);
+}
+
+[data-wf]::before {
+  position: absolute;
+  z-index: 8675309;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      transparent calc(50% - 1px),
+      var(--wire) calc(50% - 1px),
+      var(--wire) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent calc(50% - 1px),
+      var(--wire) calc(50% - 1px),
+      var(--wire) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    var(--fill);
+  color: var(--wire);
+  content: attr(data-wf);
+  font: bold 2em Jubilat, Georgia, serif;
+  text-shadow: 0 0 0.25em var(--fill), 0 0 0.25em var(--fill),
+    0 0 0.25em var(--fill), 0 0 0.25em var(--fill), 0 0 0.25em var(--fill);
+}
+
+// -  Automatic
+
+// #  Content Sectioning
+address,
+article,
+aside,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main,
+nav,
+section {
+  outline: calc(#{$size--xxs} / 2) $color--text dashed;
+}
+
+// #  Text Content
+blockquote,
+dd,
+dl,
+dt,
+figcaption,
+figure,
+hr,
+li,
+ol,
+p,
+pre,
+ul {
+  outline: calc(#{$size--xxs} / 3) $color--article-title dashed;
+}
+
+// #  Inline elements
+a,
+br,
+button,
+cite,
+code,
+datalist,
+em,
+i,
+input,
+img,
+label,
+mark,
+meter,
+output,
+progress,
+q,
+select,
+svg,
+textarea,
+u,
+video,
+time,
+span {
+  outline: calc(#{$size--xxs} / 4) $color--article-title dashed;
+}

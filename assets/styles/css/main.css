@@ -1,7 +1,118 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
+/* stylelint-disable */
+/* stylelint-enable */
+/*
+(c) Jan Ingemansen 2015
+This file is part of Wireframes with HTML and CSS.
+    Wireframes with HTML and CSS is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    Wireframes with HTML and CSS is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with Wireframes with HTML and CSS.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* WIREFRAME
+We use a dashed outline to make the wires and a transparent grey background that will make elements darker when they are on top of eachother.
+*/
 @import url("https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css");
+html {
+  --fill: hsla(0, 0%, 0%, 0.5);
+  --wire: #ff0000;
+}
+
+[data-wf] {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--wire);
+}
+
+[data-wf]::before {
+  position: absolute;
+  z-index: 8675309;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(to top right, transparent calc(50% - 1px), var(--wire) calc(50% - 1px), var(--wire) calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to bottom right, transparent calc(50% - 1px), var(--wire) calc(50% - 1px), var(--wire) calc(50% + 1px), transparent calc(50% + 1px)), var(--fill);
+  color: var(--wire);
+  content: attr(data-wf);
+  font: bold 2em Jubilat, Georgia, serif;
+  text-shadow: 0 0 0.25em var(--fill), 0 0 0.25em var(--fill), 0 0 0.25em var(--fill), 0 0 0.25em var(--fill), 0 0 0.25em var(--fill);
+}
+
+address,
+article,
+aside,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main,
+nav,
+section {
+  outline: calc(0.25rem / 2) var(--foreground-color) dashed;
+}
+
+blockquote,
+dd,
+dl,
+dt,
+figcaption,
+figure,
+hr,
+li,
+ol,
+p,
+pre,
+ul {
+  outline: calc(0.25rem / 3) var(--tertiary-color) dashed;
+}
+
+a,
+br,
+button,
+cite,
+code,
+datalist,
+em,
+i,
+input,
+img,
+label,
+mark,
+meter,
+output,
+progress,
+q,
+select,
+svg,
+textarea,
+u,
+video,
+time,
+span {
+  outline: calc(0.25rem / 4) var(--tertiary-color) dashed;
+}
+
 .full-width {
   position: relative;
   right: 50%;
@@ -31,16 +142,12 @@
 \* -------------------------------------------------------------------------- */
 body {
   margin: 0 auto;
-  background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-}
-
-div {
-  background: yellow;
+  line-height: normal;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -68,7 +175,7 @@ h2 {
   font-variant: normal;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  line-height: 1.2;
+  line-height: -1;
   text-align: center;
   text-transform: capitalize;
 }
@@ -80,7 +187,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.5625rem;
   font-variant: small-caps;
@@ -117,6 +224,7 @@ p {
 \* -------------------------------------------------------------------------- */
 a {
   text-align: center;
+  text-decoration: none;
 }
 
 /* ========================================================================== *\
@@ -136,7 +244,11 @@ a {
 \* -------------------------------------------------------------------------- */
 section {
   min-width: 20rem;
-  padding: 4rem;
+  padding: 1rem;
+}
+
+section:first-of-type {
+  height: 100vh;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -269,14 +381,17 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Header-Main: Header
 \* -------------------------------------------------------------------------- */
-.header__container {
-  background-color: #f08080;
-  outline: 0.25rem solid #f00;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
+.hero {
+  background-color: red;
+}
+
+.hero__container {
+  background-color: red;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */

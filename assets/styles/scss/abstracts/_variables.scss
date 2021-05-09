@@ -70,7 +70,7 @@ $linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
 // #  Color
 $color--subject: var(--primary-color);
 $color--section-title: var(--primary-color);
-$color--article-title: var(--secondary-color);
+$color--article-title: var(--tertiary-color);
 $color--text: var(--foreground-color);
 $color--background: var(--background-color);
 
@@ -117,7 +117,7 @@ $font-weight--text: 300; // Light
 
 // #  Line-Height
 $line-height--subject: 1.2; // 120%
-$line-height--section-title: 1.2; // 120%
+$line-height--section-title: -1; // 120%
 $line-height--article-title: 1.2; // 120%
 $line-height--text: 1.5; // 150%
 
@@ -165,4 +165,12 @@ $letter-spacing--text: normal;
 
 // #  White-Space ---> Default
 
-// -  <<----------<< Debug >>---------->>
+// -  <<----------<< Wireframes >>---------->>
+// #  Color
+
+html {
+  $color--wireframes-wires: hsl(0, 100%, 50%);
+  $color--wireframes-background: hsla(0, 0%, 0%, 0.5);
+}
+$color--wireframes-wires: hsl(0, 100%, 50%);
+$color--wireframes-background: hsla(0, 0%, 0%, 0.5);

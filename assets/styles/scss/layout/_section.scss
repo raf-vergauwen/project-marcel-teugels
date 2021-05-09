@@ -4,6 +4,10 @@
 
 section {
   min-width: $dimension--xxs;
-  padding: $size--xxl;
+  padding: $size--s;
+
+  &:first-of-type {
+    height: 100vh;
+  }
   // ...
 }
