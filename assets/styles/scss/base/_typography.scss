@@ -105,6 +105,17 @@ p {
 a {
   text-align: center;
   text-decoration: none;
+  color: $color--text;
+
+  &:hover {
+    color: $color--section-title;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $color--section-title;
+    text-decoration: underline;
+  }
 }
 
 // #  <abbr>

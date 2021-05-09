@@ -10,7 +10,7 @@ html {
 [data-wf] {
   position: relative;
   z-index: 1;
-  outline: 2px solid var(--wire);
+  outline: calc(0.25rem / 2) solid var(--wire);
 }
 
 [data-wf]::before {
@@ -50,7 +50,7 @@ h6,
 main,
 nav,
 section {
-  outline: calc(0.25rem / 2) var(--foreground-color) dashed;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 blockquote,
@@ -65,7 +65,7 @@ ol,
 p,
 pre,
 ul {
-  outline: calc(0.25rem / 3) var(--tertiary-color) dashed;
+  outline: calc(0.25rem / 3) green dashed;
 }
 
 a,
@@ -91,7 +91,7 @@ u,
 video,
 time,
 span {
-  outline: calc(0.25rem / 4) var(--tertiary-color) dashed;
+  outline: calc(0.25rem / 4) blue dashed;
 }
 
 .full-width {
@@ -150,7 +150,7 @@ h1 {
 }
 
 h2 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
@@ -206,6 +206,17 @@ p {
 a {
   text-align: center;
   text-decoration: none;
+  color: var(--foreground-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+a:focus {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 /* ========================================================================== *\
@@ -214,9 +225,32 @@ a {
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--background-color);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _nav.scss: This partial file contains all default 'nav' styles.
 \* -------------------------------------------------------------------------- */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _aside.scss: This partial file contains all default 'aside' styles.
 \* -------------------------------------------------------------------------- */
@@ -362,17 +396,13 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Header-Main: Header
 \* -------------------------------------------------------------------------- */
+.header {
+  background-color: rgba(240, 127, 127, 0.5);
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
-.hero {
-  background-color: red;
-}
-
-.hero__container {
-  background-color: red;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
