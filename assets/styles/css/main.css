@@ -274,105 +274,66 @@ section div {
 
 @media (min-width: 20rem) {
   .box__container {
+    color: purple;
+    background-color: purple;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media (min-width: 20rem) and (min-width: 20rem) {
-  .box__container {
-    max-width: calc((20rem * 2) - 1px);
+    max-width: 40rem;
     padding: 0.25rem;
   }
 }
 
 @media (min-width: 40rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 40rem) and (min-width: 40rem) {
-  .box__container {
-    max-width: calc((40rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 60rem;
     padding: 0.5rem;
   }
 }
 
 @media (min-width: 60rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 60rem) and (min-width: 60rem) {
-  .box__container {
-    max-width: calc((60rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 80rem;
     padding: 1rem;
   }
 }
 
 @media (min-width: 80rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 80rem) and (min-width: 80rem) {
-  .box__container {
-    max-width: calc((80rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 60rem;
     padding: 1.5rem;
   }
 }
 
 @media (min-width: 100rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 100rem) and (min-width: 100rem) {
-  .box__container {
-    max-width: calc((100rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 80rem;
     padding: 2rem;
   }
 }
 
 @media (min-width: 120rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 120rem) and (min-width: 120rem) {
-  .box__container {
-    max-width: calc((120rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 80rem;
     padding: 3rem;
   }
 }
 
 @media (min-width: 140rem) {
   .box__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 140rem) and (min-width: 140rem) {
-  .box__container {
-    max-width: calc((140rem * 2) - 1px);
+    color: purple;
+    background-color: purple;
+    max-width: 120rem;
     padding: 4rem;
   }
 }
@@ -382,7 +343,6 @@ section div {
 \* -------------------------------------------------------------------------- */
 img {
   width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center center;
@@ -514,8 +474,6 @@ input:checked + .slider::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5rem;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -557,8 +515,6 @@ input:checked + .slider::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5rem;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
