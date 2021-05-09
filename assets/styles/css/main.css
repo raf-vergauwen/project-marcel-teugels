@@ -241,7 +241,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.25rem 0;
   background-color: rgba(70, 130, 180, 0.5);
 }
 
@@ -256,6 +255,10 @@ nav {
 nav ul {
   width: 100%;
   list-style: none;
+}
+
+nav a {
+  display: inline-block;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -367,6 +370,22 @@ svg {
   width: 1rem;
   color: var(--foreground-color);
   fill: var(--foreground-color);
+}
+
+.logo-name {
+  display: inline-block;
+  color: red;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: inherit;
+}
+
+.logo-image {
+  display: inline-block;
+  fill: red;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: inherit;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -575,18 +594,7 @@ input:checked + .slider::before {
   transition: all 0s ease;
 }
 
-nav .logo {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-right: 1rem;
-  color: black;
-  float: left;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
-}
-
-nav .logo::after {
+nav .logo-name::after {
   display: table;
   clear: both;
   content: '';
@@ -596,11 +604,6 @@ nav ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
-}
-
-nav ul li {
-  margin-left: 0;
-  float: none;
 }
 
 @media (min-width: 768px) {
