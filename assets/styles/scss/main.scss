@@ -10,8 +10,6 @@
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/utilities';
-@import 'abstracts/transitions';
-@import 'abstracts/animations';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
@@ -55,7 +53,6 @@
 @import 'pages/login';
 @import 'pages/profile';
 @import 'pages/storefront';
-
 @import 'components/burger-menu';
 
 /* ========================================================================== *\

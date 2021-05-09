@@ -94,6 +94,12 @@ span {
   outline: calc(0.25rem / 4) blue dashed;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 .full-width {
   position: relative;
   right: 50%;
@@ -101,12 +107,6 @@ span {
   width: 100vw;
   margin-right: -50vw;
   margin-left: -50vw;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
 }
 
 /* ========================================================================== *\
@@ -229,6 +229,19 @@ a:hover {
 *  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
 header {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
   background-color: rgba(70, 130, 180, 0.5);
 }
 
@@ -245,7 +258,7 @@ nav ul {
 /* -------------------------------------------------------------------------- *\
 *  _section.scss: This partial file contains all default 'section' styles.
 \* -------------------------------------------------------------------------- */
-section div.box__container {
+section div.box-container {
   height: 100vh;
 }
 
@@ -512,180 +525,153 @@ input:checked + .slider::before {
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
 .container {
-  padding: 0px 15px 0px 15px;
+  padding: 0 15px;
 }
 
 @media (min-width: 0) {
   .container {
     max-width: 100%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  .container:after {
-    content: ' ';
+  .container::after {
     display: block;
     clear: both;
+    content: ' ';
   }
 }
 
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  .container:after {
-    content: ' ';
+  .container::after {
     display: block;
     clear: both;
+    content: ' ';
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  .container:after {
-    content: ' ';
+  .container::after {
     display: block;
     clear: both;
+    content: ' ';
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  .container:after {
-    content: ' ';
+  .container::after {
     display: block;
     clear: both;
+    content: ' ';
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  .container:after {
-    content: ' ';
+  .container::after {
     display: block;
     clear: both;
+    content: ' ';
   }
-}
-
-a {
-  text-decoration: none;
-  color: rgba(34, 34, 34, 0.8);
-}
-
-a:hover,
-a :focus {
-  color: black;
 }
 
 .menu-left a {
-  display: inline-block;
   position: relative;
-  padding-bottom: 0px;
+  display: inline-block;
+  padding-bottom: 0;
   -webkit-transition: color 0.35s ease;
   transition: color 0.35s ease;
 }
 
-.menu-left a:before {
-  content: '';
-  display: block;
+.menu-left a::before {
   position: absolute;
-  left: 0;
   bottom: 0;
-  height: 2px;
+  left: 0;
+  display: block;
   width: 0;
+  height: 2px;
+  content: '';
   -webkit-transition: width 0s ease, background 0.35s ease;
   transition: width 0s ease, background 0.35s ease;
 }
 
-.menu-left a:after {
-  content: '';
-  display: block;
+.menu-left a::after {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 2px;
+  display: block;
   width: 0;
+  height: 2px;
   background: #000;
+  content: '';
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
 }
 
-.menu-left a:hover:before {
+.menu-left a:hover::before {
   width: 100%;
   background: #000;
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
 }
 
-.menu-left a:hover:after {
+.menu-left a:hover::after {
   width: 100%;
   background: transparent;
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem 0;
-  background: rgba(255, 255, 255, 0.92);
-  z-index: 3;
-  will-change: transform;
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-}
-
 header nav .logo {
-  float: left;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  font-weight: 500;
   color: black;
+  float: left;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: inherit;
 }
 
-header nav .logo:after {
-  content: '';
+header nav .logo::after {
   display: table;
   clear: both;
+  content: '';
 }
 
 header nav ul {
-  list-style: none;
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 
 header nav ul li {
-  float: none;
   margin-left: 0;
+  float: none;
 }
 
 @media (min-width: 768px) {
   header nav ul li {
-    float: left;
     margin-left: 1rem;
+    float: left;
   }
 }
 
@@ -696,7 +682,7 @@ header nav ul li a {
 @media (min-width: 576px) {
   header nav ul li a {
     display: block;
-    padding: 0.425rem 0rem;
+    padding: 0.425rem 0;
   }
 }
 
@@ -710,31 +696,37 @@ header nav ul li a {
 }
 
 .hide-nav {
-  transform: translateY(-120% !important);
   -webkit-transform: translateY(-120%) !important;
+          transform: translateY(-120%) !important;
+  -webkit-transform: translateY(-120% !important);
+          transform: translateY(-120% !important);
 }
 
 ul.menu-left {
+  z-index: 10;
   display: block;
-  max-height: 0;
   overflow: hidden;
+  max-height: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  z-index: 10;
+  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 @media (min-width: 768px) {
   ul.menu-left {
     display: block !important;
-    float: right;
     max-height: none;
+    float: right;
   }
 }
 
-ul.menu-left:before {
-  content: '';
+ul.menu-left::before {
   display: table;
   clear: both;
+  content: '';
 }
 
 ul.menu-left.collapse {
@@ -743,13 +735,13 @@ ul.menu-left.collapse {
 
 .nav-toggle {
   display: block;
-  border-radius: 5px;
-  background-color: transparent;
-  float: right;
-  height: 38px;
   width: 38px;
+  height: 38px;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 5px;
   cursor: pointer;
-  padding: 8px 8px;
+  float: right;
 }
 
 .nav-toggle.open span:first-child {
@@ -776,8 +768,8 @@ ul.menu-left.collapse {
 .nav-toggle span {
   position: relative;
   display: block;
-  height: 2px;
   width: 100%;
+  height: 2px;
   margin-top: 4px;
   background-color: #000;
   -webkit-transition: all 0.25s;
@@ -786,16 +778,16 @@ ul.menu-left.collapse {
 
 .signature {
   position: fixed;
-  font-weight: 100;
   bottom: 10px;
-  color: #000;
   left: 0;
-  letter-spacing: 4px;
-  font-size: 10px;
   width: 100vw;
+  color: #000;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 4px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* ========================================================================== *\

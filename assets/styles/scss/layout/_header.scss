@@ -3,6 +3,13 @@
 \* -------------------------------------------------------------------------- */
 
 header {
+  @include transition-header--slidedown;
+
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
   background-color: rgba(70, 130, 180, 0.5);
-  // ...
 }
