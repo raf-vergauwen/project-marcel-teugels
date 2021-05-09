@@ -9,7 +9,7 @@
 .header {
   // ...
   &__container {
-    @include flex-container(nowrap, column, center, flex-start);
+    // @include flex-container(nowrap, column, center, flex-start);
 
     background-color: hsla(0, 50%, 50%, 0.5);
   }

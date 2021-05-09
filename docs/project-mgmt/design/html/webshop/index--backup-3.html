@@ -17,21 +17,36 @@
   </head>
   <body>
     <!-- + ---------------------<< HEADER: .header >>-------------------------->
-    <header>
-      <div class="container">
-        <nav id="navigation">
-          <a href="#" class="logo">Jan Czizikow</a>
-          <a aria-label="mobile menu" class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header class="header">
+      <div class="header__container box-container container">
+        <span class="header__logo-name">
+          <img
+            class="icon header__logo-image"
+            src="/assets/media/icons/marcel-teugels/icons__marcel-teugels-logo--improved.svg"
+          />Marcel Teugels
+        </span>
+        <nav class="header__nav main-nav">
+          <a aria-label="mobile menu" class="main-nav__menu-button nav-toggle">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
           </a>
-          <ul class="menu-left">
-            <li><a href="#about">About</a></li>
-            <li><a href="#exp">Resume</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="main-nav__list menu-left">
+            <li class="main-nav__item">
+              <a href="#hero" class="main-nav__link">
+                <i class="icon fas fa-home"></i>Home
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#hero-items" class="main-nav__link">
+                <i class="icon fas fa-burn"></i>Hot Items
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link">
+                <i class="icon fas fa-question"></i>About
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

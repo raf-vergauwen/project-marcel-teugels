@@ -44,7 +44,6 @@
 @import 'components/icon';
 @import 'components/card';
 @import 'components/switch';
-@import 'components/burger-menu';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
@@ -56,6 +55,8 @@
 @import 'pages/login';
 @import 'pages/profile';
 @import 'pages/storefront';
+
+@import 'components/burger-menu';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`

@@ -4,41 +4,37 @@
 
 // -  <<----------<< Generic >>---------->>
 
-.box {
-  // ...
+.box-container {
+  width: 90%;
+  margin: 0 auto;
 
-  &__container {
-    width: 90%;
-    margin: 0 auto;
-
-    // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
-    @include breakpoint(xxs) {
-      @include box-container(xxs);
-    }
-    // #  Breakpoint 2 - Extra Small - 40rem / 640px
-    @include breakpoint(xs) {
-      @include box-container(xs);
-    }
-    // #  Breakpoint 3 - Small - 60rem / 960px
-    @include breakpoint(s) {
-      @include box-container(s);
-    }
-    // #  Breakpoint 4 - Medium - 80rem / 1280px
-    @include breakpoint(m) {
-      @include box-container(m);
-    }
-    // #  Breakpoint 5 - Large - 100rem / 1600px
-    @include breakpoint(l) {
-      @include box-container(l);
-    }
-    // #  Breakpoint 6 - Extra Large - 120rem / 1920px
-    @include breakpoint(xl) {
-      @include box-container(xl);
-    }
-    // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
-    @include breakpoint(xxl) {
-      @include box-container(xxl);
-    }
+  // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
+  @include breakpoint(xxs) {
+    @include box-container(xxs);
+  }
+  // #  Breakpoint 2 - Extra Small - 40rem / 640px
+  @include breakpoint(xs) {
+    @include box-container(xs);
+  }
+  // #  Breakpoint 3 - Small - 60rem / 960px
+  @include breakpoint(s) {
+    @include box-container(s);
+  }
+  // #  Breakpoint 4 - Medium - 80rem / 1280px
+  @include breakpoint(m) {
+    @include box-container(m);
+  }
+  // #  Breakpoint 5 - Large - 100rem / 1600px
+  @include breakpoint(l) {
+    @include box-container(l);
+  }
+  // #  Breakpoint 6 - Extra Large - 120rem / 1920px
+  @include breakpoint(xl) {
+    @include box-container(xl);
+  }
+  // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
+  @include breakpoint(xxl) {
+    @include box-container(xxl);
   }
 }
 
