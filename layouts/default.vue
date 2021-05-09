@@ -2,8 +2,9 @@
   <div>
     <header>
       <nuxt-link to="/">home</nuxt-link>
-      <nuxt-link to="/test">link</nuxt-link>
-      <nuxt-link to="/blog/test">blog</nuxt-link>
+      <nuxt-link to="/login">link</nuxt-link>
+      <nuxt-link to="/profile">blog</nuxt-link>
+      <nuxt-link to="/storefront">blog</nuxt-link>
     </header>
     <Nuxt />
   </div>
