@@ -2,6 +2,11 @@
 *  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 // #  <html>
 html {
   //...
@@ -9,6 +14,7 @@ html {
 
 // #  <body>
 body {
+  min-width: calc(#{$dimension--xxs} - 1px);
   margin: 0 auto;
   color: $color--text;
   font-family: $font-family--text;
@@ -17,9 +23,43 @@ body {
   font-weight: $font-weight--text;
   line-height: $line-height--text;
   line-height: normal;
+
+  @include breakpoint(xxs) {
+    padding: 0 $size--xxs;
+  }
+
+  @include breakpoint(xs) {
+    padding: 0 $size--xs;
+  }
+
+  @include breakpoint(s) {
+    padding: 0 $size--s;
+  }
+
+  @include breakpoint(m) {
+    padding: 0 $size--m;
+  }
+
+  @include breakpoint(l) {
+    padding: 0 $size--l;
+  }
+
+  @include breakpoint(xl) {
+    padding: 0 $size--xl;
+  }
+
+  @include breakpoint(xxl) {
+    padding: 0 $size--xxl;
+  }
 }
 
 // #  <main>
 main {
-  // ...
+  // min-width: calc(#{$dimension--xxs} - 1px);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

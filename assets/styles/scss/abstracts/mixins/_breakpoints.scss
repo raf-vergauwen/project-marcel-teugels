@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // #  Breakpoints
-@mixin breakpoint($breakpoint: xxs) {
+@mixin breakpoint($breakpoint) {
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
     @media (min-width: $dimension--xxs) {
