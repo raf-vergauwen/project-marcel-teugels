@@ -1,7 +1,13 @@
 <template>
   <div class="container">
     <h1>Profile</h1>
+    <label
+      >First name:
+      <input type="text" name="first-name" placeholder="" v-model="firstName" />
+    </label>
     <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
+    <p v-if="userInfo">{{ userInfo.email }}</p>
+    <p v-if="userInfo">{{ userInfo.orders }}</p>
   </div>
 </template>
 
@@ -11,6 +17,7 @@ export default {
   data() {
     return {
       userInfo: null,
+      firstName: 'Emiel',
     };
   },
   computed: {
