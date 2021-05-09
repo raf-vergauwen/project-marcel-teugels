@@ -3,30 +3,41 @@
 // -----------------------------------------------------------------------------
 
 // #  Block-Container
-@mixin block-container($max-width, $max-height) {
+@mixin block-container($max-width: fit-content, $max-height: fit-content) {
   display: block;
   width: 100%;
   max-width: $max-width;
+  height: 100%;
   max-height: $max-height;
   padding: $size--xs;
   margin: 0 auto;
 }
 
 // #  Flex-Container ---> Parent
-@mixin flex-container($direction, $justify, $align, $wrap-type: nowrap) {
+@mixin flex-container(
+  $direction,
+  $justify,
+  $align,
+  $wrap-type: nowrap,
+  $max-width: fit-content,
+  $max-height: fit-content
+) {
+  display: flex;
+  width: 100%;
+  max-width: $max-width;
+  height: 100%;
+  max-height: $max-height;
+  align-items: $align;
+  justify-content: $justify;
+  padding: $size--xs;
+  margin: 0 auto;
   // #  Flex-Container--Nowrap
   @if $wrap-type == nowrap {
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+    flex-flow: $direction nowrap;
   }
   // #  Flex-Container--Wrap
   @else if $wrap-type == wrap {
-    display: flex;
-    flex-direction: $direction;
-    align-content: $align;
-    justify-content: $justify;
+    flex-flow: $direction wrap;
   }
   // #  Invalid arguments!
   @else {
