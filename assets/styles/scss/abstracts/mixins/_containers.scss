@@ -2,60 +2,65 @@
 // +  Containers
 // -----------------------------------------------------------------------------
 
-// display: flex;
-// width: 100%;
-// max-width: calc(($dimension--#{$breakpoint}) - ($size--#{$breakpoint} * 2));
-// padding: ($size--#{$breakpoint});
-// margin: 0 auto;
-
 // *  <<----------<< Section-Container >>---------->>
 
 // #  Breakpoints
-@mixin section-container($breakpoint) {
+@mixin box-container($breakpoint, $box-type: flex) {
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
+  display: $box-type;
+
   @if $breakpoint == xxs {
     @media (min-width: $dimension--xxs) {
-      display: flex;
-      width: 100%;
-      // max-width: 312px;
+      max-width: calc((#{$dimension--xxs} * 2) - 1px);
       padding: $size--xxs;
-      margin: 0 auto;
       @content;
     }
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @else if $breakpoint == xs {
     @media (min-width: $dimension--xs) {
+      max-width: calc((#{$dimension--xs} * 2) - 1px);
+      padding: $size--xs;
       @content;
     }
   }
   // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
     @media (min-width: $dimension--s) {
+      max-width: calc((#{$dimension--s} * 2) - 1px);
+      padding: $size--s;
       @content;
     }
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
     @media (min-width: $dimension--m) {
+      max-width: calc((#{$dimension--m} * 2) - 1px);
+      padding: $size--m;
       @content;
     }
   }
   // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
     @media (min-width: $dimension--l) {
+      max-width: calc((#{$dimension--l} * 2) - 1px);
+      padding: $size--l;
       @content;
     }
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
     @media (min-width: $dimension--xl) {
+      max-width: calc((#{$dimension--xl} * 2) - 1px);
+      padding: $size--xl;
       @content;
     }
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
     @media (min-width: $dimension--xxl) {
+      max-width: calc((#{$dimension--xxl} * 2) - 1px);
+      padding: $size--xxl;
       @content;
     }
   }

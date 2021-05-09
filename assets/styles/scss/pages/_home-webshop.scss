@@ -7,18 +7,11 @@
 \* -------------------------------------------------------------------------- */
 
 .header {
-  min-width: 320px;
-  background-color: hsla(0, 50%, 50%, 0.5);
-
+  // ...
   &__container {
-    background-color: hsla(100, 50%, 50%, 0.5);
+    @include flex-container();
 
-    @include section-container(xxs) {
-      @include flex-container();
-
-      background-color: yellow;
-    }
-    // ...
+    background-color: hsla(0, 50%, 50%, 0.5);
   }
   // ...
 }
@@ -28,10 +21,10 @@
 \* -------------------------------------------------------------------------- */
 
 .hero {
-  background-color: hsla(120, 73%, 75%, 0.5);
+  // ...
 
   &__container {
-    // ...
+    background-color: hsla(120, 73%, 75%, 0.5);
   }
   // ...
 }
@@ -41,10 +34,10 @@
 \* -------------------------------------------------------------------------- */
 
 .hot-items {
-  background-color: hsla(351, 100%, 86%, 0.5);
+  // ...
 
   &__container {
-    // ...
+    background-color: hsla(351, 100%, 86%, 0.5);
   }
   // ...
 }
@@ -54,10 +47,10 @@
 \* -------------------------------------------------------------------------- */
 
 .about {
-  background-color: hsla(195, 53%, 79%, 0.5);
+  // ...
 
   &__container {
-    // ...
+    background-color: hsla(195, 53%, 79%, 0.5);
   }
   // ...
 }
@@ -67,18 +60,12 @@
 \* -------------------------------------------------------------------------- */
 
 .footer {
-  background-color: hsla(60, 100%, 94%, 0.5);
+  // ...
 
   &__container {
-    min-width: calc(#{$dimension--xxs} - 1px);
+    @include flex-container();
+
     background-color: hsla(100, 50%, 50%, 0.5);
-
-    @include section-container(xxs) {
-      @include flex-container();
-
-      background-color: yellow;
-    }
-    // ...
   }
   // ...
 }

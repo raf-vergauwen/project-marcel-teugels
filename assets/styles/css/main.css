@@ -133,57 +133,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5;
   line-height: normal;
-}
-
-@media (min-width: 20rem) {
-  body {
-    padding: 0 0.25rem;
-  }
-}
-
-@media (min-width: 40rem) {
-  body {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width: 60rem) {
-  body {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 80rem) {
-  body {
-    padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 100rem) {
-  body {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 120rem) {
-  body {
-    padding: 0 3rem;
-  }
-}
-
-@media (min-width: 140rem) {
-  body {
-    padding: 0 4rem;
-  }
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -295,7 +245,7 @@ nav ul {
 /* -------------------------------------------------------------------------- *\
 *  _section.scss: This partial file contains all default 'section' styles.
 \* -------------------------------------------------------------------------- */
-section:first-of-type {
+section div {
   height: 100vh;
 }
 
@@ -315,6 +265,144 @@ section:first-of-type {
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
+*  _box.scss: This partial file contains all 'box' styles.
+\* -------------------------------------------------------------------------- */
+.box__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 20rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 20rem) and (min-width: 20rem) {
+  .box__container {
+    max-width: calc((20rem * 2) - 1px);
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 40rem) and (min-width: 40rem) {
+  .box__container {
+    max-width: calc((40rem * 2) - 1px);
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 60rem) and (min-width: 60rem) {
+  .box__container {
+    max-width: calc((60rem * 2) - 1px);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 80rem) and (min-width: 80rem) {
+  .box__container {
+    max-width: calc((80rem * 2) - 1px);
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 100rem) and (min-width: 100rem) {
+  .box__container {
+    max-width: calc((100rem * 2) - 1px);
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 120rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 120rem) and (min-width: 120rem) {
+  .box__container {
+    max-width: calc((120rem * 2) - 1px);
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 140rem) {
+  .box__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 140rem) and (min-width: 140rem) {
+  .box__container {
+    max-width: calc((140rem * 2) - 1px);
+    padding: 4rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _img.scss: This partial file contains all 'img' styles.
+\* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _icon.scss: This partial file contains all 'icon' styles.
+\* -------------------------------------------------------------------------- */
+svg {
+  fill: var(--foreground-color);
+}
+
+.icon {
+  width: 1rem;
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
+/* -------------------------------------------------------------------------- *\
 *  _card.scss: This partial file contains all 'card' styles.
 \* -------------------------------------------------------------------------- */
 .card {
@@ -331,19 +419,6 @@ section:first-of-type {
 .card:hover {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _icon.scss: This partial file contains all 'icon' styles.
-\* -------------------------------------------------------------------------- */
-svg {
-  fill: var(--foreground-color);
-}
-
-.icon {
-  width: 1rem;
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -429,96 +504,66 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Header-Main: Header
 \* -------------------------------------------------------------------------- */
-.header {
-  min-width: 320px;
-  background-color: rgba(191, 64, 64, 0.5);
-}
-
 .header__container {
-  background-color: rgba(106, 191, 64, 0.5);
-}
-
-@media (min-width: 20rem) {
-  .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 0.25rem;
-    margin: 0 auto;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem;
-    margin: 0 auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    background-color: yellow;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background-color: rgba(191, 64, 64, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
-.hero {
+.hero__container {
   background-color: rgba(145, 238, 145, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items {
+.hot-items__container {
   background-color: rgba(255, 184, 194, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
-.about {
+.about__container {
   background-color: rgba(173, 216, 230, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Footer-Main: Footer
 \* -------------------------------------------------------------------------- */
-.footer {
-  background-color: rgba(255, 255, 224, 0.5);
-}
-
 .footer__container {
-  min-width: calc(20rem - 1px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   background-color: rgba(106, 191, 64, 0.5);
-}
-
-@media (min-width: 20rem) {
-  .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 0.25rem;
-    margin: 0 auto;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem;
-    margin: 0 auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    background-color: yellow;
-  }
 }
 
 /* -------------------------------------------------------------------------- *\

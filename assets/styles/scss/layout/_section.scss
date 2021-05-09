@@ -2,9 +2,6 @@
 *  _section.scss: This partial file contains all default 'section' styles.
 \* -------------------------------------------------------------------------- */
 
-section {
-  &:first-of-type {
-    height: 100vh;
-  }
-  // ...
+section div {
+  height: 100vh;
 }

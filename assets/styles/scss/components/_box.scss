@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- *\
+*  _box.scss: This partial file contains all 'box' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Generic >>---------->>
+
+.box {
+  // ...
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+
+    @include breakpoint(xxs) {
+      @include box-container(xxs);
+    }
+
+    @include breakpoint(xs) {
+      @include box-container(xs);
+    }
+
+    @include breakpoint(s) {
+      @include box-container(s);
+    }
+
+    @include breakpoint(m) {
+      @include box-container(m);
+    }
+
+    @include breakpoint(l) {
+      @include box-container(l);
+    }
+
+    @include breakpoint(xl) {
+      @include box-container(xl);
+    }
+
+    @include breakpoint(xxl) {
+      @include box-container(xxl);
+    }
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+// ...
