@@ -9,7 +9,7 @@
 .header {
   // ...
   &__container {
-    @include flex-container();
+    @include flex-container(nowrap, column, center, flex-start);
 
     background-color: hsla(0, 50%, 50%, 0.5);
   }
@@ -63,7 +63,7 @@
   // ...
 
   &__container {
-    @include flex-container();
+    @include flex-container(nowrap, column, flex-start, center);
 
     background-color: hsla(100, 50%, 50%, 0.5);
   }

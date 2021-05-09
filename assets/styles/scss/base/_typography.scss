@@ -108,12 +108,7 @@ a {
   color: $color--text;
 
   &:hover {
-    color: $color--section-title;
-    text-decoration: underline;
-  }
-
-  &:focus {
-    color: $color--section-title;
+    color: $color--subject;
     text-decoration: underline;
   }
 }

@@ -103,6 +103,293 @@ span {
   margin-left: -50vw;
 }
 
+.container {
+  padding: 0px 15px 0px 15px;
+}
+
+@media (min-width: 0) {
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.8);
+}
+
+a:hover,
+a :focus {
+  color: black;
+}
+
+.menu-left a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0px;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+}
+
+.menu-left a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  -webkit-transition: width 0s ease, background 0.35s ease;
+  transition: width 0s ease, background 0.35s ease;
+}
+
+.menu-left a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #000;
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover:before {
+  width: 100%;
+  background: #000;
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover:after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 3;
+  will-change: transform;
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+header nav .logo {
+  float: left;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  font-weight: 500;
+  color: black;
+}
+
+header nav .logo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  float: none;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  header nav ul li {
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+header nav ul li a {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  header nav ul li a {
+    display: block;
+    padding: 0.425rem 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    clear: both;
+  }
+  ul li {
+    padding: 0.5em 0;
+  }
+}
+
+.hide-nav {
+  transform: translateY(-120% !important);
+  -webkit-transform: translateY(-120%) !important;
+}
+
+ul.menu-left {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  ul.menu-left {
+    display: block !important;
+    float: right;
+    max-height: none;
+  }
+}
+
+ul.menu-left:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul.menu-left.collapse {
+  max-height: 15em !important;
+}
+
+.nav-toggle {
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  float: right;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  padding: 8px 8px;
+}
+
+.nav-toggle.open span:first-child {
+  -webkit-transform: rotate(45deg) translate(4.4px, 4.4px);
+          transform: rotate(45deg) translate(4.4px, 4.4px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-toggle.open span:last-child {
+  -webkit-transform: rotate(-45deg) translate(4.4px, -4.4px);
+          transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  background-color: #000;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.signature {
+  position: fixed;
+  font-weight: 100;
+  bottom: 10px;
+  color: #000;
+  left: 0;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -126,12 +413,15 @@ span {
   margin: 0;
 }
 
+html {
+  font-size: calc(1rem + 0.25vw);
+}
+
 body {
   min-width: calc(20rem - 1px);
   margin: 0 auto;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
   font-weight: 300;
   line-height: normal;
 }
@@ -215,12 +505,7 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-a:focus {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -230,12 +515,14 @@ a:focus {
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
+header {
+  background-color: rgba(70, 130, 180, 0.5);
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _nav.scss: This partial file contains all default 'nav' styles.
 \* -------------------------------------------------------------------------- */
 nav ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -261,6 +548,10 @@ section div {
 /* -------------------------------------------------------------------------- *\
 *  _footer.scss: This partial file contains all default 'footer' styles.
 \* -------------------------------------------------------------------------- */
+footer {
+  background-color: rgba(70, 130, 180, 0.5);
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
@@ -274,8 +565,6 @@ section div {
 
 @media (min-width: 20rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -286,8 +575,6 @@ section div {
 
 @media (min-width: 40rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 60rem;
     padding: 0.5rem;
   }
@@ -295,8 +582,6 @@ section div {
 
 @media (min-width: 60rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 80rem;
     padding: 1rem;
   }
@@ -304,8 +589,6 @@ section div {
 
 @media (min-width: 80rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 60rem;
     padding: 1.5rem;
   }
@@ -313,8 +596,6 @@ section div {
 
 @media (min-width: 100rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 80rem;
     padding: 2rem;
   }
@@ -322,8 +603,6 @@ section div {
 
 @media (min-width: 120rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 80rem;
     padding: 3rem;
   }
@@ -331,8 +610,6 @@ section div {
 
 @media (min-width: 140rem) {
   .box__container {
-    color: purple;
-    background-color: purple;
     max-width: 120rem;
     padding: 4rem;
   }
@@ -446,6 +723,52 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
+/* -------------------------------------------------------------------------- *\
+*  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
+\* -------------------------------------------------------------------------- */
+.burger-menu {
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  float: right;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  padding: 8px 8px;
+}
+
+.burger-menu.open span:first-child {
+  -webkit-transform: rotate(45deg) translate(4.4px, 4.4px);
+          transform: rotate(45deg) translate(4.4px, 4.4px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger-menu.open span:last-child {
+  -webkit-transform: rotate(-45deg) translate(4.4px, -4.4px);
+          transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
+
+@media (min-width: 40rem) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.burger-menu span {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  background-color: var(--foreground-color);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
@@ -468,16 +791,16 @@ input:checked + .slider::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: rgba(191, 64, 64, 0.5);
 }
 
@@ -509,16 +832,16 @@ input:checked + .slider::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
   background-color: rgba(106, 191, 64, 0.5);
 }
 

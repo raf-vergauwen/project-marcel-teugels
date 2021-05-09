@@ -7,8 +7,6 @@
 // #  Breakpoints
 @mixin box-container($breakpoint, $box-type: flex) {
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
-  color: purple;
-  background-color: purple;
   @if $breakpoint == xxs {
     display: $box-type;
     max-width: $dimension--xs;
@@ -62,30 +60,28 @@
 // #  Block-Container
 @mixin block-container($max-width: fit-content) {
   display: block;
-
   max-width: $max-width;
   padding: $size--xs;
-
 }
 
 // #  Flex-Container ---> Parent
 @mixin flex-container(
+  $wrap-type: nowrap,
   $direction: column,
   $justify: center,
-  $align: center,
-  $wrap-type: nowrap,
-  $max-width: fit-content
+  $align: center
 ) {
   display: flex;
-  align-items: $align;
   justify-content: $justify;
   // #  Flex-Container--Nowrap
   @if $wrap-type == nowrap {
-    flex-flow: $direction nowrap;
+    flex-direction: $direction;
+    align-items: $align;
   }
   // #  Flex-Container--Wrap
   @else if $wrap-type == wrap {
-    flex-flow: $direction wrap;
+    flex-direction: $direction;
+    align-content: $align;
   }
   // #  Invalid arguments!
   @else {
