@@ -2,80 +2,6 @@
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
 
-.container {
-  padding: 0 15px;
-}
-
-@media (min-width: 0) {
-  .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
 .menu-left a {
   position: relative;
   display: inline-block;
@@ -118,9 +44,7 @@
   transition: all 0s ease;
 }
 
-
-
-header nav .logo {
+nav .logo {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
@@ -131,36 +55,36 @@ header nav .logo {
   line-height: inherit;
 }
 
-header nav .logo::after {
+nav .logo::after {
   display: table;
   clear: both;
   content: '';
 }
 
-header nav ul {
+nav ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
-header nav ul li {
+nav ul li {
   margin-left: 0;
   float: none;
 }
 
 @media (min-width: 768px) {
-  header nav ul li {
+  nav ul li {
     margin-left: 1rem;
     float: left;
   }
 }
 
-header nav ul li a {
+nav ul li a {
   display: block;
 }
 
 @media (min-width: 576px) {
-  header nav ul li a {
+  nav ul li a {
     display: block;
     padding: 0.425rem 0;
   }
@@ -248,19 +172,6 @@ ul.menu-left.collapse {
   height: 2px;
   margin-top: 4px;
   background-color: #000;
+  background-color: yellow;
   transition: all 0.25s;
-}
-
-.signature {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100vw;
-  color: #000;
-  font-size: 10px;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }

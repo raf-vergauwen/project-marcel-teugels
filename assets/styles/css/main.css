@@ -241,14 +241,20 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   background-color: rgba(70, 130, 180, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\
 *  _nav.scss: This partial file contains all default 'nav' styles.
 \* -------------------------------------------------------------------------- */
+nav {
+  width: 100%;
+  list-style: none;
+}
+
 nav ul {
+  width: 100%;
   list-style: none;
 }
 
@@ -285,7 +291,7 @@ footer {
 *  _box.scss: This partial file contains all 'box' styles.
 \* -------------------------------------------------------------------------- */
 .box-container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -294,49 +300,47 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 40rem;
+    max-width: calc(40rem - 0.1px);
     padding: 0.25rem;
   }
 }
 
 @media (min-width: 40rem) {
   .box-container {
-    max-width: 60rem;
+    max-width: calc(60rem - 0.1px);
     padding: 0.5rem;
   }
 }
 
 @media (min-width: 60rem) {
   .box-container {
-    max-width: 80rem;
+    max-width: calc(80rem - 0.1px);
     padding: 1rem;
   }
 }
 
 @media (min-width: 80rem) {
   .box-container {
-    max-width: 60rem;
+    max-width: calc(100rem - 0.1px);
     padding: 1.5rem;
   }
 }
 
 @media (min-width: 100rem) {
   .box-container {
-    max-width: 80rem;
+    max-width: calc(120rem - 0.1px);
     padding: 2rem;
   }
 }
 
 @media (min-width: 120rem) {
   .box-container {
-    max-width: 80rem;
     padding: 3rem;
   }
 }
 
 @media (min-width: 140rem) {
   .box-container {
-    max-width: 120rem;
     padding: 4rem;
   }
 }
@@ -524,75 +528,6 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
-.container {
-  padding: 0 15px;
-}
-
-@media (min-width: 0) {
-  .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
 .menu-left a {
   position: relative;
   display: inline-block;
@@ -640,7 +575,7 @@ input:checked + .slider::before {
   transition: all 0s ease;
 }
 
-header nav .logo {
+nav .logo {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
@@ -651,36 +586,36 @@ header nav .logo {
   line-height: inherit;
 }
 
-header nav .logo::after {
+nav .logo::after {
   display: table;
   clear: both;
   content: '';
 }
 
-header nav ul {
+nav ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
-header nav ul li {
+nav ul li {
   margin-left: 0;
   float: none;
 }
 
 @media (min-width: 768px) {
-  header nav ul li {
+  nav ul li {
     margin-left: 1rem;
     float: left;
   }
 }
 
-header nav ul li a {
+nav ul li a {
   display: block;
 }
 
 @media (min-width: 576px) {
-  header nav ul li a {
+  nav ul li a {
     display: block;
     padding: 0.425rem 0;
   }
@@ -772,22 +707,9 @@ ul.menu-left.collapse {
   height: 2px;
   margin-top: 4px;
   background-color: #000;
+  background-color: yellow;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
-}
-
-.signature {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100vw;
-  color: #000;
-  font-size: 10px;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* ========================================================================== *\

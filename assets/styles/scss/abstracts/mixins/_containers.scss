@@ -9,43 +9,41 @@
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
     display: $box-type;
-    max-width: $dimension--xs;
+    max-width: calc(#{$dimension--xs} - 0.1px);
     padding: $size--xxs;
     @content;
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @else if $breakpoint == xs {
-    max-width: $dimension--s;
+    max-width: calc(#{$dimension--s} - 0.1px);
     padding: $size--xs;
     @content;
   }
   // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
-    max-width: $dimension--m;
+    max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--s;
     @content;
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
-    max-width: $dimension--s;
+    max-width: calc(#{$dimension--l} - 0.1px);
     padding: $size--m;
     @content;
   }
   // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
-    max-width: $dimension--m;
+    max-width: calc(#{$dimension--xl} - 0.1px);
     padding: $size--l;
     @content;
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
-    max-width: $dimension--m;
     padding: $size--xl;
     @content;
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
-    max-width: $dimension--xl;
     padding: $size--xxl;
     @content;
   }
