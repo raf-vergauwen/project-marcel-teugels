@@ -19,19 +19,25 @@
     <!-- + ---------------------<< HEADER: .header >>-------------------------->
     <header class="header">
       <div class="header__container box-container">
-        <nav id="navigation">
-          <a href="#" class="logo">Marcel Teugels</a>
-          <a aria-label="mobile menu" class="nav-toggle">
+        <nav class="header__nav main-nav">
+          <a href="#" class="main-nav__logo logo">
+            <i class="fas fa-home main-icon"></i>Marcel Teugels
+          </a>
+          <a aria-label="mobile menu" class="main-nav__menu nav-toggle">
             <span></span>
             <span></span>
             <span></span>
           </a>
-          <ul class="menu-left">
-            <li><a href="#about">About</a></li>
-            <li><a href="#exp">Resume</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="main-nav__list link-list menu-left">
+            <li class="main-nav__item">
+              <a href="#hero"> <i class="fas fa-home icon"></i>Home </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#hot-items"><i class="fas fa-burn icon"></i>Hot Items</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about"> <i class="fas fa-question icon"></i>About </a>
+            </li>
           </ul>
         </nav>
       </div>

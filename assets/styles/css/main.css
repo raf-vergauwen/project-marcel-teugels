@@ -196,6 +196,12 @@ h3 + p::first-letter {
 /* -------------------------------------------------------------------------- *\
 -  Block Text Content
 \* -------------------------------------------------------------------------- */
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 p {
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
@@ -228,325 +234,85 @@ a:hover {
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
-header {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  will-change: transform;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(70, 130, 180, 0.5);
+.container {
+  padding: 0 15px;
 }
 
-/* -------------------------------------------------------------------------- *\
-*  _nav.scss: This partial file contains all default 'nav' styles.
-\* -------------------------------------------------------------------------- */
-nav {
-  width: 100%;
-  list-style: none;
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
-}
-
-nav a {
-  display: inline-block;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _aside.scss: This partial file contains all default 'aside' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _section.scss: This partial file contains all default 'section' styles.
-\* -------------------------------------------------------------------------- */
-section div.box-container {
-  height: 100vh;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _article.scss: This partial file contains all default 'article' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _forms.scss: This partial file contains all default 'forms' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _table.scss: This partial file contains default 'table' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _footer.scss: This partial file contains all default 'footer' styles.
-\* -------------------------------------------------------------------------- */
-footer {
-  background-color: rgba(70, 130, 180, 0.5);
-}
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 5 - `components/`
-\* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _box.scss: This partial file contains all 'box' styles.
-\* -------------------------------------------------------------------------- */
-.box-container {
-  width: 95%;
-  margin: 0 auto;
-}
-
-@media (min-width: 20rem) {
-  .box-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: calc(40rem - 0.1px);
-    padding: 0.25rem;
+@media (min-width: 0) {
+  .container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
   }
 }
 
-@media (min-width: 40rem) {
-  .box-container {
-    max-width: calc(60rem - 0.1px);
-    padding: 0.5rem;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
   }
 }
 
-@media (min-width: 60rem) {
-  .box-container {
-    max-width: calc(80rem - 0.1px);
-    padding: 1rem;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
   }
 }
 
-@media (min-width: 80rem) {
-  .box-container {
-    max-width: calc(100rem - 0.1px);
-    padding: 1.5rem;
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
   }
 }
 
-@media (min-width: 100rem) {
-  .box-container {
-    max-width: calc(120rem - 0.1px);
-    padding: 2rem;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container::after {
+    display: block;
+    clear: both;
+    content: ' ';
   }
 }
 
-@media (min-width: 120rem) {
-  .box-container {
-    padding: 3rem;
-  }
+a {
+  color: rgba(34, 34, 34, 0.8);
+  text-decoration: none;
 }
 
-@media (min-width: 140rem) {
-  .box-container {
-    padding: 4rem;
-  }
+a:hover,
+a :focus {
+  color: black;
 }
 
-/* -------------------------------------------------------------------------- *\
-*  _img.scss: This partial file contains all 'img' styles.
-\* -------------------------------------------------------------------------- */
-img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _icon.scss: This partial file contains all 'icon' styles.
-\* -------------------------------------------------------------------------- */
-svg {
-  fill: var(--foreground-color);
-}
-
-.icon {
-  width: 1rem;
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
-}
-
-.logo-name {
-  display: inline-block;
-  color: red;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
-}
-
-.logo-image {
-  display: inline-block;
-  fill: red;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _card.scss: This partial file contains all 'card' styles.
-\* -------------------------------------------------------------------------- */
-.card {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  overflow: hidden;
-  margin: 1rem;
-  /* Prevent background color leak outs */
-  background-clip: padding-box;
-  background-color: #a52a2a;
-  border-radius: 1rem;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _toggle.scss: This partial file contains all 'toggle' styles.
-\* -------------------------------------------------------------------------- */
-.theme-switch-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.theme-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 8px 16px 0 0;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #ccc;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider::before {
-  position: absolute;
-  bottom: 4px;
-  left: 4px;
-  width: 26px;
-  height: 26px;
-  background-color: #fff;
-  content: '';
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-input:checked + .slider::before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round::before {
-  border-radius: 50%;
-}
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 6 - `pages/`
-\* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _index.scss: This partial file contains the styles of the 'index' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _home.scss: This partial file contains the styles of the 'home' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _home-restoration.scss: This partial file contains the styles of the 'home-restoration' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Header-Main: Header
-\* -------------------------------------------------------------------------- */
-.header__container {
-  background-color: rgba(191, 64, 64, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Section-1: Hero
-\* -------------------------------------------------------------------------- */
-.hero__container {
-  background-color: rgba(145, 238, 145, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Section-2: Hot Items
-\* -------------------------------------------------------------------------- */
-.hot-items__container {
-  background-color: rgba(255, 184, 194, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Section-3: About
-\* -------------------------------------------------------------------------- */
-.about__container {
-  background-color: rgba(173, 216, 230, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Footer-Main: Footer
-\* -------------------------------------------------------------------------- */
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(106, 191, 64, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _login.scss: This partial file contains the styles of the 'login' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _profile.scss: This partial file contains the styles of the 'profile' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _storefront.scss: This partial file contains the'storefront' page styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
-\* -------------------------------------------------------------------------- */
 .menu-left a {
   position: relative;
   display: inline-block;
@@ -594,31 +360,65 @@ input:checked + .slider::before {
   transition: all 0s ease;
 }
 
-nav .logo-name::after {
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transform: translateY(0);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
+}
+
+header nav .logo {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 1rem;
+  color: black;
+  float: left;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: inherit;
+}
+
+header nav .logo::after {
   display: table;
   clear: both;
   content: '';
 }
 
-nav ul {
+header nav ul {
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
+header nav ul li {
+  margin-left: 0;
+  float: none;
+}
+
 @media (min-width: 768px) {
-  nav ul li {
+  header nav ul li {
     margin-left: 1rem;
     float: left;
   }
 }
 
-nav ul li a {
+header nav ul li a {
   display: block;
 }
 
 @media (min-width: 576px) {
-  nav ul li a {
+  header nav ul li a {
     display: block;
     padding: 0.425rem 0;
   }
@@ -710,11 +510,310 @@ ul.menu-left.collapse {
   height: 2px;
   margin-top: 4px;
   background-color: #000;
-  background-color: yellow;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
+.signature {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100vw;
+  color: #000;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _nav.scss: This partial file contains all default 'nav' styles.
+\* -------------------------------------------------------------------------- */
+nav {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _aside.scss: This partial file contains all default 'aside' styles.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _section.scss: This partial file contains all default 'section' styles.
+\* -------------------------------------------------------------------------- */
+section div.box-container {
+  height: 100vh;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _article.scss: This partial file contains all default 'article' styles.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _forms.scss: This partial file contains all default 'forms' styles.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _table.scss: This partial file contains default 'table' styles.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _footer.scss: This partial file contains all default 'footer' styles.
+\* -------------------------------------------------------------------------- */
+footer {
+  background-color: rgba(70, 130, 180, 0.5);
+}
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 5 - `components/`
+\* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  _box.scss: This partial file contains all 'box' styles.
+\* -------------------------------------------------------------------------- */
+.box-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 20rem) {
+  .box-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: calc(40rem - 0.1px);
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .box-container {
+    max-width: calc(60rem - 0.1px);
+    padding: 0.5rem;
+  }
+  .box-container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 60rem) {
+  .box-container {
+    max-width: calc(80rem - 0.1px);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .box-container {
+    max-width: calc(100rem - 0.1px);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .box-container {
+    max-width: calc(120rem - 0.1px);
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 120rem) {
+  .box-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 140rem) {
+  .box-container {
+    padding: 2rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _img.scss: This partial file contains all 'img' styles.
+\* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _icon.scss: This partial file contains all 'icon' styles.
+\* -------------------------------------------------------------------------- */
+svg {
+  fill: var(--foreground-color);
+}
+
+.icon {
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
+.logo {
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _card.scss: This partial file contains all 'card' styles.
+\* -------------------------------------------------------------------------- */
+.card {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  margin: 1rem;
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+  background-color: #a52a2a;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _toggle.scss: This partial file contains all 'toggle' styles.
+\* -------------------------------------------------------------------------- */
+.theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 8px 16px 0 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  content: '';
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
+\* -------------------------------------------------------------------------- */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 6 - `pages/`
+\* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  _index.scss: This partial file contains the styles of the 'index' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _home.scss: This partial file contains the styles of the 'home' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _home-restoration.scss: This partial file contains the styles of the 'home-restoration' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Header-Main: Header
+\* -------------------------------------------------------------------------- */
+.header__container {
+  background-color: rgba(191, 64, 64, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Section-1: Hero
+\* -------------------------------------------------------------------------- */
+.hero__container {
+  background-color: rgba(145, 238, 145, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Section-2: Hot Items
+\* -------------------------------------------------------------------------- */
+.hot-items__container {
+  background-color: rgba(255, 184, 194, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Section-3: About
+\* -------------------------------------------------------------------------- */
+.about__container {
+  background-color: rgba(173, 216, 230, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Footer-Main: Footer
+\* -------------------------------------------------------------------------- */
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(106, 191, 64, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _login.scss: This partial file contains the styles of the 'login' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _profile.scss: This partial file contains the styles of the 'profile' page.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _storefront.scss: This partial file contains the'storefront' page styles.
+\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`
 \* ========================================================================== */

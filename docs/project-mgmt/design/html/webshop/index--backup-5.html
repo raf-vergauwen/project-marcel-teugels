@@ -19,20 +19,26 @@
     <!-- + ---------------------<< HEADER: .header >>-------------------------->
     <header class="header">
       <div class="header__container box-container">
-        <nav id="navigation">
-          <a href="#" class="logo">Marcel Teugels</a>
-          <a aria-label="mobile menu" class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <ul class="menu-left">
-            <li><a href="#about">About</a></li>
-            <li><a href="#exp">Resume</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list link-list menu-left">
+            <li class="main-nav__main-item">
+              <a href="#hero"><i class="fas fa-home logo"></i>Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#hot-items"><i class="fas fa-burn icon"></i>Hot Items</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about"><i class="fas fa-question icon"></i>About</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contact"><i class="fas fa-address-book"></i>Contact</a>
+            </li>
           </ul>
+          <a aria-label="mobile menu" class="main-nav__menu nav-toggle">
+            <span class="nav-toggle__slice"></span>
+            <span class="nav-toggle__slice"></span>
+            <span class="nav-toggle__slice"></span>
+          </a>
         </nav>
       </div>
     </header>

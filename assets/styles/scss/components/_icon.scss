@@ -11,23 +11,11 @@ svg {
 // -  <<----------<< Specific >>---------->>
 
 .icon {
-  width: $font-size--1;
   color: $color--text;
   fill: $color--text;
 }
 
-.logo-name {
-  display: inline-block;
-  color: red;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
-}
-
-.logo-image {
-  display: inline-block;
-  fill: red;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: inherit;
+.logo {
+  color: $color--text;
+  fill: $color--text;
 }
