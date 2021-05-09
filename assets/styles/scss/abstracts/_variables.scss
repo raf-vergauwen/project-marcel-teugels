@@ -45,7 +45,7 @@ $border-radius--xxs: $size--xxs; // 4px
 $border-radius--xs: $size--xs; // 8px
 $border-radius--s: $size--s; // 16px
 $border-radius--m: $size--m; // 24px
-$border-radius--l: $size--m; // 32px
+$border-radius--l: $size--l; // 32px
 $border-radius--xl: $size--xl; // 48px
 $border-radius--xxl: $size--xxl; // 64px
 
@@ -54,18 +54,6 @@ $border-radius--xxl: $size--xxl; // 64px
 // -----------------------------------------------------------------------------
 
 // -  <<----------<< Flexbox styles >>---------->>
-
-// $style1: 100%, 70px, #fo6d06;
-
-// @mixin box($width, $height, $background) {
-//   width: $width;
-//   height: $height;
-//   background-color: $background;
-// }
-
-// .fogdog {
-//   @include box($style1...);
-// }
 
 // -----------------------------------------------------------------------------
 // *  Typography

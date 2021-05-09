@@ -2,101 +2,11 @@
 *  _header.scss: This partial file contains all default 'header' styles.
 \* -------------------------------------------------------------------------- */
 
-// header {
-//   @include transition-header--slidedown;
+// -  <<----------<< Generic >>---------->>
 
-//   position: fixed;
-//   z-index: 3;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   // padding: 0.25rem 0;
-//   background-color: rgba(70, 130, 180, 0.5);
-// }
+// ...
 
-.container {
-  padding: 0 15px;
-}
-
-@media (min-width: 0) {
-  .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-a {
-  color: rgba(34, 34, 34, 0.8);
-  text-decoration: none;
-}
-
-a:hover,
-a :focus {
-  color: black;
-}
+// -  <<----------<< Specific >>---------->>
 
 .menu-left a {
   position: relative;
@@ -149,17 +59,12 @@ header {
   padding: 0.5rem 0;
   background: rgba(255, 255, 255, 0.92);
   transform: translateY(0);
-  transform: translateY(0);
-  transition:
-    background 0.3s,
+  transition: background 0.3s,
     -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition:
-    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
-  transition:
-    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
-    background 0.3s,
-    -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   will-change: transform;
 }
 
@@ -292,18 +197,4 @@ ul.menu-left.collapse {
   margin-top: 4px;
   background-color: #000;
   transition: all 0.25s;
-}
-
-.signature {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100vw;
-  color: #000;
-  font-size: 10px;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }

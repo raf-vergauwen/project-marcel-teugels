@@ -2,12 +2,22 @@
 // +  Containers
 // -----------------------------------------------------------------------------
 
+@mixin old-float-fix {
+  &::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
 // *  <<----------<< Box-container>>---------->>
 
 // #  Breakpoints
 @mixin box-container($breakpoint, $box-type: flex) {
   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
+    @include old-float-fix;
+
     display: $box-type;
     max-width: calc(#{$dimension--xs} - 0.1px);
     padding: $size--xs;
@@ -15,41 +25,48 @@
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @else if $breakpoint == xs {
+    @include old-float-fix;
+
     max-width: calc(#{$dimension--s} - 0.1px);
     padding: $size--xs;
 
-    &::after {
-      display: block;
-      clear: both;
-      content: ' ';
-    }
     @content;
   }
   // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
+    @include old-float-fix;
+
     max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--s;
     @content;
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
+    @include old-float-fix;
+
     max-width: calc(#{$dimension--l} - 0.1px);
     padding: $size--s;
     @content;
   }
   // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
+    @include old-float-fix;
+
     max-width: calc(#{$dimension--xl} - 0.1px);
     padding: $size--m;
     @content;
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
+    @include old-float-fix;
+
     padding: $size--m;
     @content;
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
+    @include old-float-fix;
+
     padding: $size--l;
     @content;
   }
