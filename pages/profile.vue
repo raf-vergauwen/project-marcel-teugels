@@ -7,7 +7,7 @@
     </label>
     <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
     <p v-if="userInfo">{{ userInfo.email }}</p>
-    <p v-if="userInfo">{{ userInfo.orders }}</p>
+    <p v-if="userInfo">{{ userInfo.orders[0].ordered_items[0].products[0] }}</p>
   </div>
 </template>
 
@@ -26,12 +26,15 @@ export default {
     },
   },
   created() {
-    fetch('http://157.230.126.154/users/me', {
-      method: 'GET',
-      headers: {
-        Authorization: 'Bearer ' + this.access_token,
+    fetch(
+      'http://157.230.126.154/users/me?fields=*,orders.ordered_items.products.*',
+      {
+        method: 'GET',
+        headers: {
+          Authorization: 'Bearer ' + this.access_token,
+        },
       },
-    })
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not get user info');
