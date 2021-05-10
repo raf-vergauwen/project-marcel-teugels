@@ -46,12 +46,6 @@ export default {
   build: {},
 
   styleResources: {
-    scss: [
-      './assets/styles/scss/abstracts/_variables.scss',
-      './assets/styles/scss/abstracts/_functions.scss',
-      './assets/styles/scss/abstracts/_mixins.scss',
-      './assets/styles/scss/abstracts/_utilities.scss',
-      './assets/styles/scss/abstracts/_animations.scss',
-    ],
+    scss: ['./assets/styles/scss/resources.scss'],
   },
 };
