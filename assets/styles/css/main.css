@@ -472,10 +472,28 @@ a:hover {
 *  _media.scss: This partial file contains all application-wide 'media'.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  Basics
+-  Svg
 \* -------------------------------------------------------------------------- */
-img,
 svg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  fill: var(--foreground-color);
+  color: var(--foreground-color);
+}
+
+.icon {
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Img
+\* -------------------------------------------------------------------------- */
+img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -604,6 +622,7 @@ img {
 \* -------------------------------------------------------------------------- */
 svg {
   fill: var(--foreground-color);
+  color: var(--foreground-color);
 }
 
 .icon {
