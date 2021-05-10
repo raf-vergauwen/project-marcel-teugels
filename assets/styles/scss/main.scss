@@ -7,21 +7,18 @@
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
 @import 'abstracts/variables';
+@import 'abstracts/configurations';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/utilities';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 2 - `config/`
-\* ========================================================================== */
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 3 - `vendors/`
++  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
 @import 'vendors/modern-normalize';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `base/`
++  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
 @import 'base/base';
 @import 'base/layout';
@@ -29,7 +26,7 @@
 @import 'base/media';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 5 - `components/`
++  PARTIAL SCSS GROUP 4 - `components/`
 \* ========================================================================== */
 @import 'components/box';
 @import 'components/card';
@@ -37,7 +34,7 @@
 @import 'components/mobile-menu';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 6 - `pages/`
++  PARTIAL SCSS GROUP 5 - `pages/`
 \* ========================================================================== */
 @import 'pages/index';
 @import 'pages/home';
@@ -48,7 +45,7 @@
 @import 'pages/storefront';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 7 - `themes/`
++  PARTIAL SCSS GROUP 6 - `themes/`
 \* ========================================================================== */
 @import 'themes/light';
 @import 'themes/dark';

@@ -14,18 +14,11 @@
 
 // #  <html>
 html {
-  @include fluid-type(40rem, 80rem, 1rem, 2rem);
-
+  @include fluid-type(40rem, 80rem, 1rem, 1.5rem);
 }
-
-
 
 // #  <body>
 body {
-  // @include fluid-type(40rem, 80rem, 1rem, 2rem);
-
-  // font-size: 200%;
-
   min-width: calc(#{$dimension--xxs} - #{$size--xl});
   margin: 0 auto;
   color: var(--foreground-color);

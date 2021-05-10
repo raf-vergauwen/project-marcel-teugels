@@ -6,9 +6,9 @@
 // *  Box Model
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Sizes >>---------->>
+// -  <<----------<< Whitespace Sizes >>---------->>
 
-// #  Sizes
+// #  Whitespace
 $size--xxs: 0.25rem; // 4px
 $size--xs: 0.5rem; // 8px
 $size--s: 1rem; // 16px
@@ -17,7 +17,7 @@ $size--l: 2rem; // 32px
 $size--xl: 3rem; // 48px
 $size--xxl: 4rem; // 64px
 
-// -  <<----------<< Dimensions >>---------->>
+// -  <<----------<< Box Dimension Sizes >>---------->>
 
 // #  Dimensions
 $dimension--xxs: 320px;
@@ -28,7 +28,7 @@ $dimension--l: 1600px;
 $dimension--xl: 1920px;
 $dimension--xxl: 2240px;
 
-// -  <<----------<< Shadow >>---------->>
+// -  <<----------<< Shadows Colors >>---------->>
 $box-shadow--level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
   0 1px 2px rgba(0, 0, 0, 0.24);
 $box-shadow--level-2: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -40,14 +40,14 @@ $box-shadow--level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
 $box-shadow--level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
-// -  <<----------<< Border >>---------->>
-$border-radius--xxs: $size--xxs; // 4px
-$border-radius--xs: $size--xs; // 8px
-$border-radius--s: $size--s; // 16px
-$border-radius--m: $size--m; // 24px
-$border-radius--l: $size--l; // 32px
-$border-radius--xl: $size--xl; // 48px
-$border-radius--xxl: $size--xxl; // 64px
+// -  <<----------<< Borders Sizes>>---------->>
+$border-radius--xxs: 4px;
+$border-radius--xs: 8px;
+$border-radius--s: 16px;
+$border-radius--m: 24px;
+$border-radius--l: 32px;
+$border-radius--xl: 48px;
+$border-radius--xxl: 64px;
 
 // -----------------------------------------------------------------------------
 // *  Containers

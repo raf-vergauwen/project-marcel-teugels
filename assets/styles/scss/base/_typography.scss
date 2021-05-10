@@ -11,7 +11,6 @@ h1 {
   color: var(--primary-color);
   font-family: $font-family--subject;
   font-size: $font-size--subject;
-  font-size: 3rem;
   font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
   letter-spacing: $letter-spacing--subject;
@@ -70,6 +69,8 @@ h3 {
 -  Block Text Content
 \* -------------------------------------------------------------------------- */
 
+// #  Common Properties
+
 // #  <blockquote>
 
 // #  <figcaption>
@@ -83,6 +84,7 @@ h3 {
 // #  <ul>
 
 // #  <li>
+
 
 // #  <p>
 p {

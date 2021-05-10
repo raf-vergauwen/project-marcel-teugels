@@ -110,16 +110,13 @@ span {
 }
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 2 - `config/`
-\* ========================================================================== */
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 3 - `vendors/`
++  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `base/`
++  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _base.scss: This partial file contains the custom `base` HTML tags
@@ -134,7 +131,7 @@ span {
 
 html {
   font-size: 1rem;
-  font-size: clamp(1rem, 0rem + 2.5vw, 2rem);
+  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.5rem);
 }
 
 body {
@@ -388,7 +385,6 @@ h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
-  font-size: 3rem;
   font-variant: normal;
   font-weight: 700;
   letter-spacing: 0.025rem;
@@ -501,7 +497,7 @@ img {
 }
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 5 - `components/`
++  PARTIAL SCSS GROUP 4 - `components/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _box.scss: This partial file contains all 'box' styles.
@@ -609,7 +605,7 @@ img {
   /* Prevent background color leak outs */
   background-clip: padding-box;
   background-color: #a52a2a;
-  border-radius: 1rem;
+  border-radius: 16px;
 }
 
 .card:hover {
@@ -686,7 +682,7 @@ input:checked + .slider::before {
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 6 - `pages/`
++  PARTIAL SCSS GROUP 5 - `pages/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _index.scss: This partial file contains the styles of the 'index' page.
@@ -807,7 +803,7 @@ input:checked + .slider::before {
 *  _storefront.scss: This partial file contains the'storefront' page styles.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 7 - `themes/`
++  PARTIAL SCSS GROUP 6 - `themes/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _light.scss: This partial file contains the 'light' theme.
