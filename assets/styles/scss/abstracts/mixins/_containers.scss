@@ -24,56 +24,42 @@
     height: 100%;
     flex-direction: column;
     padding: $size--xs;
-    @content;
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @else if $breakpoint == xs {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--s} - 0.1px);
-    padding: $size--xs;
-
-    @content;
   }
   // #  Breakpoint 3 - Small - 60rem / 960px
   @else if $breakpoint == s {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--xs;
-    @content;
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
   @else if $breakpoint == m {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--s;
-    @content;
   }
   // #  Breakpoint 5 - Large - 100rem / 1600px
   @else if $breakpoint == l {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--s;
-    @content;
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--s;
-    @content;
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
   @else if $breakpoint == xxl {
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--s;
-    @content;
   }
   // #  Invalid arguments!
   @else {
@@ -87,7 +73,6 @@
 @mixin block-container($max-width: fit-content) {
   display: block;
   max-width: $max-width;
-  padding: $size--xs;
 }
 
 // #  Flex-Container ---> Parent

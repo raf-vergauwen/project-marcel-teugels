@@ -70,17 +70,15 @@ $color-white: white;
 $theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
   url('../img/hero-bg.png') 0% 0% / cover;
 
-$support-bg: linear-gradient(
-    110deg,
-    rgba(black, 0.5) 400px,
-    rgba(black, 0.1) 800px
-  ),
+$support-bg: linear-gradient(110deg,
+rgba(black, 0.5) 400px,
+rgba(black, 0.1) 800px),
   url('../img/support-bg.jpg') center center / cover;
 
 // #  linear-Gradient
-$linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);
-$linear-gradient--orange: hsla(31, 99.8%, 42.8%, 0.8);
-$linear-gradient--red: hsla(348, 99.8%, 47.1%, 0.8);
+$linear-gradient--yellow: hsla(23, 42%, 64%, 0.8);
+$linear-gradient--orange: hsla(214, 42%, 64%, 0.8);
+$linear-gradient--red: hsla(207, 48%, 14%, 0.8);
 
 // -  <<----------<< Color >>---------->>
 
@@ -184,6 +182,7 @@ $letter-spacing--text: normal;
 
 // -  <<----------<< Wireframes >>---------->>
 // #  Color
+
 
 $color--wireframes-wires: hsl(0, 100%, 50%);
 $color--wireframes-background: hsla(0, 0%, 0%, 0.5);

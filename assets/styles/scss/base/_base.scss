@@ -14,16 +14,21 @@
 
 // #  <html>
 html {
-  // font-size: calc(1rem + 0.25vw);
+  @include fluid-type(40rem, 80rem, 1rem, 2rem);
+
 }
+
+
 
 // #  <body>
 body {
-  @include fluid-type(40rem, 80rem, 1rem, 2rem);
+  // @include fluid-type(40rem, 80rem, 1rem, 2rem);
+
+  // font-size: 200%;
 
   min-width: calc(#{$dimension--xxs} - #{$size--xl});
   margin: 0 auto;
-  color: $color--text;
+  color: var(--foreground-color);
   font-family: $font-family--text;
   font-weight: $font-weight--text;
   line-height: normal;

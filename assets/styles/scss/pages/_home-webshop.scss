@@ -63,17 +63,18 @@
 
   &__container {
     height: 100%;
-    align-items: center;
     justify-content: center;
-    background-image:
-      linear-gradient(45deg,
+    background-image: linear-gradient(
+      45deg,
       $linear-gradient--red,
       $linear-gradient--orange,
-      $linear-gradient--yellow);
+      $linear-gradient--yellow
+    );
+    // background-color: rgba(0, 0, 0, 0.4);
   }
 
+
   &__visual {
-    // width: auto;
     max-height: 50vh;
   }
 

@@ -8,9 +8,10 @@
 
 // #  <h1>
 h1 {
-  color: $color--subject;
+  color: var(--primary-color);
   font-family: $font-family--subject;
   font-size: $font-size--subject;
+  font-size: 3rem;
   font-variant: $font-variant--subject;
   font-weight: $font-weight--subject;
   letter-spacing: $letter-spacing--subject;
@@ -21,7 +22,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  color: $color--section-title;
+  color: var(--secondary-color);
   font-family: $font-family--section-title;
   font-size: $font-size--section-title;
   font-variant: $font-variant--section-title;
@@ -41,7 +42,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  color: $color--article-title;
+  color: var(--tertiary-color);
   font-family: $font-family--article-title;
   font-size: $font-size--article-title;
   font-variant: $font-variant--article-title;
@@ -85,7 +86,7 @@ h3 {
 
 // #  <p>
 p {
-  color: $color--text;
+  color: var(--foreground-color);
   font-family: $font-family--text;
   font-size: $font-size--text;
   font-variant: $font-variant--text;
@@ -103,7 +104,7 @@ p {
 // #  <a>
 
 a {
-  color: $color--subject;
+  color: var(--primary-color);
   text-align: center;
   text-decoration: none;
 
@@ -112,7 +113,7 @@ a {
   }
 
   &:hover {
-    color: $color--section-title;
+    color: var(--secondary-color);
     text-decoration: underline;
   }
 }

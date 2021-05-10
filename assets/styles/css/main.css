@@ -132,9 +132,12 @@ span {
   margin: 0;
 }
 
-body {
+html {
   font-size: 1rem;
   font-size: clamp(1rem, 0rem + 2.5vw, 2rem);
+}
+
+body {
   min-width: calc(320px - 3rem);
   margin: 0 auto;
   color: var(--foreground-color);
@@ -385,6 +388,7 @@ h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
+  font-size: 3rem;
   font-variant: normal;
   font-weight: 700;
   letter-spacing: 0.025rem;
@@ -490,8 +494,8 @@ svg {
 img {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
 }
@@ -531,7 +535,6 @@ img {
 @media (min-width: 640px) {
   .box-container {
     max-width: calc(960px - 0.1px);
-    padding: 0.5rem;
   }
   .box-container::after {
     display: block;
@@ -543,7 +546,6 @@ img {
 @media (min-width: 960px) {
   .box-container {
     max-width: calc(1280px - 0.1px);
-    padding: 0.5rem;
   }
   .box-container::after {
     display: block;
@@ -555,7 +557,6 @@ img {
 @media (min-width: 1280px) {
   .box-container {
     max-width: calc(1280px - 0.1px);
-    padding: 1rem;
   }
   .box-container::after {
     display: block;
@@ -567,7 +568,6 @@ img {
 @media (min-width: 1600px) {
   .box-container {
     max-width: calc(1280px - 0.1px);
-    padding: 1rem;
   }
   .box-container::after {
     display: block;
@@ -579,7 +579,6 @@ img {
 @media (min-width: 1920px) {
   .box-container {
     max-width: calc(1280px - 0.1px);
-    padding: 1rem;
   }
   .box-container::after {
     display: block;
@@ -591,7 +590,6 @@ img {
 @media (min-width: 2240px) {
   .box-container {
     max-width: calc(1280px - 0.1px);
-    padding: 1rem;
   }
   .box-container::after {
     display: block;
@@ -751,13 +749,10 @@ input:checked + .slider::before {
 
 .hero__container {
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: linear-gradient(45deg, rgba(240, 0, 48, 0.8), rgba(218, 113, 0, 0.8), rgba(255, 191, 0, 0.8));
+  background-image: linear-gradient(45deg, rgba(19, 37, 53, 0.8), rgba(125, 158, 202, 0.8), rgba(202, 154, 125, 0.8));
 }
 
 .hero__visual {
