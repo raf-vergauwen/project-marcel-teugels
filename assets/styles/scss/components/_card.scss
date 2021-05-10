@@ -4,10 +4,6 @@
 
 // -  <<----------<< Generic >>---------->>
 
-// ...
-
-// -  <<----------<< Specific >>---------->>
-
 .card {
   @include box-shadow(1);
 
@@ -21,5 +17,88 @@
 
   &:hover {
     @include box-shadow(3);
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+figure {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 375px;
+  height: 667px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    img {
+      transform: scale(1.25);
+    }
+
+    figcaption {
+      bottom: 0;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  img {
+    height: 100%;
+    transition: 0.25s;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: -33%;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    //height: 50%;
+    margin: 0;
+    background-color: rgba(black, 0.85);
+    box-shadow: 0 0 20px rgba(black, 0.4);
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+
+    h4 {
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 30px;
+      border: none;
+      margin: 10px 0 0;
+      background-color: #1abc9c;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+    }
   }
 }
