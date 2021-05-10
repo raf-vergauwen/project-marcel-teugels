@@ -1,0 +1,95 @@
+// #  main.scss : This is the main scss file which imports the rest of the scss
+// #  files and compiles it into one css file in `css/main.css`.
+
+@charset "UTF-8";
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 1 - `abstracts/`
+\*----------------------------------------------------------------------------*/
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/utilities';
+@import 'abstracts/animations';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 2 - `vendors/`
+\*----------------------------------------------------------------------------*/
+@import 'vendors/reboot';
+@import 'vendors/bulma';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 3 - `base/`
+\*----------------------------------------------------------------------------*/
+@import 'base/reset';
+@import 'base/typography';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 4 - `layout/`
+\*----------------------------------------------------------------------------*/
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/aside';
+@import 'layout/section';
+@import 'layout/article';
+@import 'layout/footer';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 5 - `components/`
+\*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*\
+// *  Partial SCSS Group 5.1 - `components/single-part/`
+\*----------------------------------------------------------------------------*/
+@import 'components/single-part/block';
+@import 'components/single-part/box';
+@import 'components/single-part/button';
+@import 'components/single-part/content';
+@import 'components/single-part/delete';
+@import 'components/single-part/icon';
+@import 'components/single-part/image';
+@import 'components/single-part/notification';
+@import 'components/single-part/progress-bars';
+@import 'components/single-part/table';
+@import 'components/single-part/tag';
+@import 'components/single-part/title';
+
+/*----------------------------------------------------------------------------*\
+// *  Partial SCSS Group 5.2 - `components/forms/`
+\*----------------------------------------------------------------------------*/
+@import 'components/forms/general';
+@import 'components/forms/input';
+@import 'components/forms/textarea';
+@import 'components/forms/select';
+@import 'components/forms/checkbox';
+@import 'components/forms/radio';
+@import 'components/forms/file';
+
+/*----------------------------------------------------------------------------*\
+// *  Partial SCSS Group 5.3 - `components/multi-part/`
+\*----------------------------------------------------------------------------*/
+@import 'components/multi-part/breadcrumb';
+@import 'components/multi-part/card';
+@import 'components/multi-part/dropdown';
+@import 'components/multi-part/menu';
+@import 'components/multi-part/message';
+@import 'components/multi-part/modal';
+@import 'components/multi-part/navbar';
+@import 'components/multi-part/pagination';
+@import 'components/multi-part/panel';
+@import 'components/multi-part/tabs';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 6 - `pages/`
+\*----------------------------------------------------------------------------*/
+@import 'pages/index';
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/profile';
+@import 'pages/storefront';
+
+/*----------------------------------------------------------------------------*\
+// +  Partial SCSS Group 7 - `themes/`
+\*----------------------------------------------------------------------------*/
+@import 'themes/light';
+@import 'themes/dark';
+@import 'themes/midnight';
