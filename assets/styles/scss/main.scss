@@ -12,27 +12,21 @@
 @import 'abstracts/utilities';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 2 - `vendors/`
++  PARTIAL SCSS GROUP 2 - `config/`
+\* ========================================================================== */
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `vendors/`
 \* ========================================================================== */
 @import 'vendors/modern-normalize';
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 3 - `base/`
++  PARTIAL SCSS GROUP 4 - `base/`
 \* ========================================================================== */
 @import 'base/base';
+@import 'base/layout';
 @import 'base/typography';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `layout/`
-\* ========================================================================== */
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/aside';
-@import 'layout/section';
-@import 'layout/article';
-@import 'layout/forms';
-@import 'layout/table';
-@import 'layout/footer';
+@import 'base/media';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
@@ -60,5 +54,3 @@
 \* ========================================================================== */
 @import 'themes/light';
 @import 'themes/dark';
-
-// @import 'layout/hero';

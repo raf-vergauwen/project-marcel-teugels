@@ -19,7 +19,9 @@
     @include old-float-fix;
 
     display: $box-type;
+    width: 100%;
     max-width: calc(#{$dimension--xs} - 0.1px);
+    height: 100%;
     flex-direction: column;
     padding: $size--xs;
     @content;
@@ -45,7 +47,7 @@
   @else if $breakpoint == m {
     @include old-float-fix;
 
-    max-width: calc(#{$dimension--l} - 0.1px);
+    max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--s;
     @content;
   }
@@ -53,7 +55,7 @@
   @else if $breakpoint == l {
     @include old-float-fix;
 
-    max-width: calc(#{$dimension--xl} - 0.1px);
+    max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--m;
     @content;
   }
@@ -61,6 +63,7 @@
   @else if $breakpoint == xl {
     @include old-float-fix;
 
+    max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--m;
     @content;
   }
@@ -68,6 +71,7 @@
   @else if $breakpoint == xxl {
     @include old-float-fix;
 
+    max-width: calc(#{$dimension--m} - 0.1px);
     padding: $size--l;
     @content;
   }

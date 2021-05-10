@@ -110,24 +110,26 @@ span {
 }
 
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 2 - `vendors/`
++  PARTIAL SCSS GROUP 2 - `config/`
+\* ========================================================================== */
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `vendors/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 3 - `base/`
++  PARTIAL SCSS GROUP 4 - `base/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Core
+\* -------------------------------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
-}
-
-html {
-  font-size: calc(1rem + 0.25vw);
 }
 
 body {
@@ -140,97 +142,13 @@ body {
 }
 
 /* -------------------------------------------------------------------------- *\
-*  _typography.scss: This partial file contains all application-wide 'typography'.
+-  Media
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  Headings
+*  _layout.scss: This partial file contains all the default 'layout'.
 \* -------------------------------------------------------------------------- */
-h1 {
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.8147rem;
-  font-variant: normal;
-  font-weight: 700;
-  letter-spacing: 0.025rem;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: var(--secondary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.44141rem;
-  font-variant: normal;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  line-height: 1;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-h2 + p::first-letter {
-  background-color: lime;
-  color: red;
-  font-size: 1.5625rem;
-}
-
-h3 {
-  color: var(--tertiary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5625rem;
-  font-variant: small-caps;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
-  text-align: left;
-  text-transform: none;
-}
-
-h3 + p::first-letter {
-  background-color: blue;
-  color: yellow;
-  font-size: 1.5625rem;
-}
-
 /* -------------------------------------------------------------------------- *\
--  Block Text Content
-\* -------------------------------------------------------------------------- */
-p {
-  color: var(--foreground-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-variant: normal;
-  font-weight: 300;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
-}
-
-/* -------------------------------------------------------------------------- *\
--  Inline Text Semantics
-\* -------------------------------------------------------------------------- */
-a {
-  color: var(--primary-color);
-  text-align: center;
-  text-decoration: none;
-}
-
-a i {
-  margin-left: 0.5rem;
-}
-
-a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `layout/`
-\* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _header.scss: This partial file contains all default 'header' styles.
+-  Header
 \* -------------------------------------------------------------------------- */
 .menu-left a {
   position: relative;
@@ -429,7 +347,7 @@ ul.menu-left.collapse {
 }
 
 /* -------------------------------------------------------------------------- *\
-*  _nav.scss: This partial file contains all default 'nav' styles.
+-  Nav
 \* -------------------------------------------------------------------------- */
 nav {
   width: 100%;
@@ -442,34 +360,128 @@ nav ul {
 }
 
 /* -------------------------------------------------------------------------- *\
-*  _aside.scss: This partial file contains all default 'aside' styles.
+-  Aside
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-*  _section.scss: This partial file contains all default 'section' styles.
-\* -------------------------------------------------------------------------- */
-section div.box-container {
-  height: 100vh;
-}
-
-#hero .box-container {
-  height: 100%;
-  min-height: 50vh;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _article.scss: This partial file contains all default 'article' styles.
+-  Section
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-*  _forms.scss: This partial file contains all default 'forms' styles.
+-  Article
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-*  _table.scss: This partial file contains default 'table' styles.
+-  Forms
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-*  _footer.scss: This partial file contains all default 'footer' styles.
+-  Table
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Footer
 \* -------------------------------------------------------------------------- */
 footer {
   background-color: rgba(70, 130, 180, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _typography.scss: This partial file contains all application-wide 'typography'.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Headings
+\* -------------------------------------------------------------------------- */
+h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.05176rem;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2 + p::first-letter {
+  background-color: lime;
+  color: red;
+  font-size: 1.5625rem;
+}
+
+h3 {
+  color: var(--tertiary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: none;
+}
+
+h3 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Block Text Content
+\* -------------------------------------------------------------------------- */
+p {
+  color: var(--foreground-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Inline Text Semantics
+\* -------------------------------------------------------------------------- */
+a {
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+a i {
+  margin-left: 0.5rem;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _media.scss: This partial file contains all application-wide 'media'.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Basics
+\* -------------------------------------------------------------------------- */
+img,
+svg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 /* ========================================================================== *\
@@ -488,7 +500,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     max-width: calc(40rem - 0.1px);
+    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -528,7 +542,7 @@ footer {
 
 @media (min-width: 80rem) {
   .box-container {
-    max-width: calc(100rem - 0.1px);
+    max-width: calc(80rem - 0.1px);
     padding: 1rem;
   }
   .box-container::after {
@@ -540,7 +554,7 @@ footer {
 
 @media (min-width: 100rem) {
   .box-container {
-    max-width: calc(120rem - 0.1px);
+    max-width: calc(80rem - 0.1px);
     padding: 1.5rem;
   }
   .box-container::after {
@@ -552,6 +566,7 @@ footer {
 
 @media (min-width: 120rem) {
   .box-container {
+    max-width: calc(80rem - 0.1px);
     padding: 1.5rem;
   }
   .box-container::after {
@@ -563,6 +578,7 @@ footer {
 
 @media (min-width: 140rem) {
   .box-container {
+    max-width: calc(80rem - 0.1px);
     padding: 2rem;
   }
   .box-container::after {
@@ -708,20 +724,17 @@ input:checked + .slider::before {
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
 .hero {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 85vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -732,14 +745,11 @@ input:checked + .slider::before {
 }
 
 .hero__visual {
-  width: 50vw;
+  width: 50%;
+  height: auto;
 }
 
-.hero__subject {
-  font-size: 2.44141rem;
-}
-
-.hero__title {
+.hero__sub-title {
   font-size: 1.25rem;
 }
 
