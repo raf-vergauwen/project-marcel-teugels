@@ -131,7 +131,7 @@ html {
 }
 
 body {
-  min-width: calc(20rem - 1px);
+  min-width: calc(20rem - 3rem);
   margin: 0 auto;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
@@ -289,14 +289,14 @@ header {
   background: rgba(255, 255, 255, 0.92);
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   will-change: transform;
 }
 
-header nav .logo {
+header nav .nav-logo {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
@@ -307,7 +307,7 @@ header nav .logo {
   line-height: inherit;
 }
 
-header nav .logo::after {
+header nav .nav-logo::after {
   display: table;
   clear: both;
   content: '';
@@ -364,10 +364,6 @@ ul.menu-left {
   overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -455,6 +451,11 @@ section div.box-container {
   height: 100vh;
 }
 
+#hero .box-container {
+  height: 100%;
+  min-height: 50vh;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _article.scss: This partial file contains all default 'article' styles.
 \* -------------------------------------------------------------------------- */
@@ -488,6 +489,10 @@ footer {
     display: -ms-flexbox;
     display: flex;
     max-width: calc(40rem - 0.1px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0.5rem;
   }
   .box-container::after {
@@ -586,11 +591,6 @@ svg {
 }
 
 .icon {
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
-}
-
-.logo {
   color: var(--foreground-color);
   fill: var(--foreground-color);
 }
@@ -707,8 +707,40 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
+.hero {
+  background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .hero__container {
-  background-color: rgba(145, 238, 145, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: linear-gradient(45deg, rgba(240, 0, 48, 0.8), rgba(218, 113, 0, 0.8), rgba(255, 191, 0, 0.8));
+}
+
+.hero__visual {
+  width: 50vw;
+}
+
+.hero__subject {
+  font-size: 2.44141rem;
+}
+
+.hero__title {
+  font-size: 1.25rem;
 }
 
 /* -------------------------------------------------------------------------- *\

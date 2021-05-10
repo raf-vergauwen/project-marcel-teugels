@@ -20,6 +20,7 @@
 
     display: $box-type;
     max-width: calc(#{$dimension--xs} - 0.1px);
+    flex-direction: column;
     padding: $size--xs;
     @content;
   }

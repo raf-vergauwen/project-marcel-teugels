@@ -62,9 +62,18 @@ $border-radius--xxl: $size--xxl; // 64px
 // -  <<----------<< Temporary >>---------->>
 
 // #  Color
-$color--grey-ish: hsl(31, 50%, 95%);
-$color--purple: hsl(261, 61.2%, 14.3%);
-$color--white: hsl(0, 0%, 100%);
+$color-grey-light: #e7e7e7;
+$color-gold: hsl(44, 32.4%, 39%);
+$color-green: hsl(177, 87.7%, 27%);
+$color-white: white;
+
+$theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
+  url('../img/hero-bg.png') 0% 0% / cover;
+
+$support-bg: linear-gradient(110deg,
+rgba(black, 0.5) 400px,
+rgba(black, 0.1) 800px),
+  url('../img/support-bg.jpg') center center / cover;
 
 // #  linear-Gradient
 $linear-gradient--yellow: hsla(45, 100%, 50%, 0.8);

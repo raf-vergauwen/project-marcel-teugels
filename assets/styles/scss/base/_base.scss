@@ -15,7 +15,7 @@ html {
 
 // #  <body>
 body {
-  min-width: calc(#{$dimension--xxs} - 1px);
+  min-width: calc(#{$dimension--xxs} - #{$size--xl});
   margin: 0 auto;
   color: $color--text;
   font-family: $font-family--text;

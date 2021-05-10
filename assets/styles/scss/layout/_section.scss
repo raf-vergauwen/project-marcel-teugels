@@ -6,6 +6,13 @@
 
 section div.box-container {
   height: 100vh;
+  // background-color: red;
+}
+
+#hero .box-container {
+  height: 100%;
+  min-height: 50vh;
+  // background-color: blue;
 }
 
 // -  <<----------<< Specific >>---------->>
