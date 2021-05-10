@@ -70,6 +70,20 @@ h3 {
 \* -------------------------------------------------------------------------- */
 
 // #  Common Properties
+p,
+li,
+blockquote,
+figcaption {
+  color: var(--foreground-color);
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+}
 
 // #  <blockquote>
 
@@ -85,26 +99,13 @@ h3 {
 
 // #  <li>
 
-
 // #  <p>
-p {
-  color: var(--foreground-color);
-  font-family: $font-family--text;
-  font-size: $font-size--text;
-  font-variant: $font-variant--text;
-  font-weight: $font-weight--text;
-  letter-spacing: $letter-spacing--text;
-  line-height: $line-height--text;
-  text-align: $text-align--text;
-  text-transform: $text-transform--text;
-}
 
 /* -------------------------------------------------------------------------- *\
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
 
 // #  <a>
-
 a {
   color: var(--primary-color);
   text-align: center;

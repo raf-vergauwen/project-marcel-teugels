@@ -435,7 +435,10 @@ h3 + p::first-letter {
 /* -------------------------------------------------------------------------- *\
 -  Block Text Content
 \* -------------------------------------------------------------------------- */
-p {
+p,
+li,
+blockquote,
+figcaption {
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
