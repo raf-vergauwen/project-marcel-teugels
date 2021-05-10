@@ -40,7 +40,7 @@
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--s;
+    padding: $size--xs;
     @content;
   }
   // #  Breakpoint 4 - Medium - 80rem / 1280px
@@ -56,7 +56,7 @@
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--m;
+    padding: $size--s;
     @content;
   }
   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
@@ -64,7 +64,7 @@
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--m;
+    padding: $size--s;
     @content;
   }
   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
@@ -72,7 +72,7 @@
     @include old-float-fix;
 
     max-width: calc(#{$dimension--m} - 0.1px);
-    padding: $size--l;
+    padding: $size--s;
     @content;
   }
   // #  Invalid arguments!

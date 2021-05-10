@@ -20,13 +20,13 @@ $size--xxl: 4rem; // 64px
 // -  <<----------<< Dimensions >>---------->>
 
 // #  Dimensions
-$dimension--xxs: 20rem; // 320px
-$dimension--xs: 40rem; // 640px
-$dimension--s: 60rem; // 960px
-$dimension--m: 80rem; // 1280px
-$dimension--l: 100rem; // 1600px
-$dimension--xl: 120rem; // 1920px
-$dimension--xxl: 140rem; // 2240px
+$dimension--xxs: 320px;
+$dimension--xs: 640px;
+$dimension--s: 960px;
+$dimension--m: 1280px;
+$dimension--l: 1600px;
+$dimension--xl: 1920px;
+$dimension--xxl: 2240px;
 
 // -  <<----------<< Shadow >>---------->>
 $box-shadow--level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -70,9 +70,11 @@ $color-white: white;
 $theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
   url('../img/hero-bg.png') 0% 0% / cover;
 
-$support-bg: linear-gradient(110deg,
-rgba(black, 0.5) 400px,
-rgba(black, 0.1) 800px),
+$support-bg: linear-gradient(
+    110deg,
+    rgba(black, 0.5) 400px,
+    rgba(black, 0.1) 800px
+  ),
   url('../img/support-bg.jpg') center center / cover;
 
 // #  linear-Gradient
@@ -183,9 +185,5 @@ $letter-spacing--text: normal;
 // -  <<----------<< Wireframes >>---------->>
 // #  Color
 
-html {
-  $color--wireframes-wires: hsl(0, 100%, 50%);
-  $color--wireframes-background: hsla(0, 0%, 0%, 0.5);
-}
 $color--wireframes-wires: hsl(0, 100%, 50%);
 $color--wireframes-background: hsla(0, 0%, 0%, 0.5);

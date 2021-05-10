@@ -62,7 +62,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 0;
   background: rgba(255, 255, 255, 0.92);
   transform: translateY(0);
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
@@ -204,8 +203,7 @@ ul.menu-left.collapse {
 // # <<----------<< Generic >>---------->>
 
 nav {
-  width: 100%;
-
+  // ...
   & ul {
     display: flex;
 

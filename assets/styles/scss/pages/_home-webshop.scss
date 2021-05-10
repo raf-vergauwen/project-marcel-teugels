@@ -11,45 +11,46 @@
   &__container {
     background-color: hsla(0, 50%, 50%, 0.5);
   }
+
+  &__nav {
+    background-color: hsla(0, 50%, 50%, 0.5);
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Nav-Main: Nav
+\* -------------------------------------------------------------------------- */
+
+.main-nav {
   // ...
+  &__nav-logo {
+    background-color: hsla(24, 90%, 40%, 0.5);
+  }
+
+  &__mobile-menu {
+    background-color: hsla(30, 20%, 70%, 0.5);
+    //...
+  }
+
+  &__nav-toggle-slice {
+    background-color: hsla(0, 50%, 70%, 0.5);
+    //...
+  }
+
+  &__list {
+    background-color: hsla(0, 70%, 70%, 0.5);
+    //...
+  }
+
+  &__item {
+    background-color: hsla(50, 70%, 70%, 0.5);
+    //...
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
-
-// .hero {
-//   position: relative;
-//   min-height: 500px;
-//   padding-top: 110px;
-//   background-attachment: fixed;
-//   background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   &__container {
-//     align-items: center;
-//     justify-content: center;
-//     background-image:
-//       linear-gradient(45deg,
-//       $linear-gradient--red,
-//       $linear-gradient--orange,
-//       $linear-gradient--yellow);
-//   }
-
-//   &__visual {
-//     max-height: 25vh;
-//   }
-
-//   &__subject {
-//     // ...
-//   }
-
-//   &__title {
-//     // ...
-//   }
-// }
 
 .hero {
   position: relative;
@@ -64,17 +65,16 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-      45deg,
+    background-image:
+      linear-gradient(45deg,
       $linear-gradient--red,
       $linear-gradient--orange,
-      $linear-gradient--yellow
-    );
+      $linear-gradient--yellow);
   }
 
   &__visual {
-    width: 50%;
-    height: auto;
+    // width: auto;
+    max-height: 50vh;
   }
 
   &__subject {

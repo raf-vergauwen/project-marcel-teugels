@@ -133,7 +133,9 @@ span {
 }
 
 body {
-  min-width: calc(20rem - 3rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 0rem + 2.5vw, 2rem);
+  min-width: calc(320px - 3rem);
   margin: 0 auto;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
@@ -141,9 +143,6 @@ body {
   line-height: normal;
 }
 
-/* -------------------------------------------------------------------------- *\
--  Media
-\* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 *  _layout.scss: This partial file contains all the default 'layout'.
 \* -------------------------------------------------------------------------- */
@@ -203,7 +202,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 0;
   background: rgba(255, 255, 255, 0.92);
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -349,10 +347,6 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 -  Nav
 \* -------------------------------------------------------------------------- */
-nav {
-  width: 100%;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,12 +471,12 @@ a:hover {
 svg {
   width: 100%;
   height: auto;
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  fill: var(--foreground-color);
-  color: var(--foreground-color);
 }
 
 .icon {
@@ -496,8 +490,8 @@ svg {
 img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center center;
      object-position: center center;
 }
@@ -513,13 +507,13 @@ img {
   margin: 0 auto;
 }
 
-@media (min-width: 20rem) {
+@media (min-width: 320px) {
   .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: calc(40rem - 0.1px);
+    max-width: calc(640px - 0.1px);
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -534,9 +528,9 @@ img {
   }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .box-container {
-    max-width: calc(60rem - 0.1px);
+    max-width: calc(960px - 0.1px);
     padding: 0.5rem;
   }
   .box-container::after {
@@ -546,9 +540,21 @@ img {
   }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 960px) {
   .box-container {
-    max-width: calc(80rem - 0.1px);
+    max-width: calc(1280px - 0.1px);
+    padding: 0.5rem;
+  }
+  .box-container::after {
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+}
+
+@media (min-width: 1280px) {
+  .box-container {
+    max-width: calc(1280px - 0.1px);
     padding: 1rem;
   }
   .box-container::after {
@@ -558,9 +564,9 @@ img {
   }
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 1600px) {
   .box-container {
-    max-width: calc(80rem - 0.1px);
+    max-width: calc(1280px - 0.1px);
     padding: 1rem;
   }
   .box-container::after {
@@ -570,10 +576,10 @@ img {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 1920px) {
   .box-container {
-    max-width: calc(80rem - 0.1px);
-    padding: 1.5rem;
+    max-width: calc(1280px - 0.1px);
+    padding: 1rem;
   }
   .box-container::after {
     display: block;
@@ -582,52 +588,16 @@ img {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 2240px) {
   .box-container {
-    max-width: calc(80rem - 0.1px);
-    padding: 1.5rem;
+    max-width: calc(1280px - 0.1px);
+    padding: 1rem;
   }
   .box-container::after {
     display: block;
     clear: both;
     content: ' ';
   }
-}
-
-@media (min-width: 140rem) {
-  .box-container {
-    max-width: calc(80rem - 0.1px);
-    padding: 2rem;
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _img.scss: This partial file contains all 'img' styles.
-\* -------------------------------------------------------------------------- */
-img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _icon.scss: This partial file contains all 'icon' styles.
-\* -------------------------------------------------------------------------- */
-svg {
-  fill: var(--foreground-color);
-  color: var(--foreground-color);
-}
-
-.icon {
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -739,6 +709,33 @@ input:checked + .slider::before {
   background-color: rgba(191, 64, 64, 0.5);
 }
 
+.header__nav {
+  background-color: rgba(191, 64, 64, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Nav-Main: Nav
+\* -------------------------------------------------------------------------- */
+.main-nav__nav-logo {
+  background-color: rgba(194, 84, 10, 0.5);
+}
+
+.main-nav__mobile-menu {
+  background-color: rgba(194, 179, 163, 0.5);
+}
+
+.main-nav__nav-toggle-slice {
+  background-color: rgba(217, 140, 140, 0.5);
+}
+
+.main-nav__list {
+  background-color: rgba(232, 125, 125, 0.5);
+}
+
+.main-nav__item {
+  background-color: rgba(232, 214, 125, 0.5);
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
@@ -764,8 +761,7 @@ input:checked + .slider::before {
 }
 
 .hero__visual {
-  width: 50%;
-  height: auto;
+  max-height: 50vh;
 }
 
 .hero__sub-title {
