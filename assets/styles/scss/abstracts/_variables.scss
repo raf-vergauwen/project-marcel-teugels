@@ -3,6 +3,15 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
+// *  Root
+// -----------------------------------------------------------------------------
+
+html {
+  --wireframe--bg-color: hsla(0, 0%, 0%, 0.5);
+  --wireframe--wire: #f00;
+}
+
+// -----------------------------------------------------------------------------
 // *  Box Model
 // -----------------------------------------------------------------------------
 
@@ -58,27 +67,6 @@ $border-radius--xxl: 64px;
 // -----------------------------------------------------------------------------
 // *  Typography
 // -----------------------------------------------------------------------------
-
-// -  <<----------<< Temporary >>---------->>
-
-// #  Color
-$color-grey-light: #e7e7e7;
-$color-gold: hsl(44, 32.4%, 39%);
-$color-green: hsl(177, 87.7%, 27%);
-$color-white: white;
-
-$theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
-  url('../img/hero-bg.png') 0% 0% / cover;
-
-$support-bg: linear-gradient(110deg,
-rgba(black, 0.5) 400px,
-rgba(black, 0.1) 800px),
-  url('../img/support-bg.jpg') center center / cover;
-
-// #  linear-Gradient
-$linear-gradient--yellow: hsla(23, 42%, 64%, 0.8);
-$linear-gradient--orange: hsla(214, 42%, 64%, 0.8);
-$linear-gradient--red: hsla(207, 48%, 14%, 0.8);
 
 // -  <<----------<< Color >>---------->>
 
@@ -180,9 +168,27 @@ $letter-spacing--text: normal;
 
 // #  White-Space ---> Default
 
-// -  <<----------<< Wireframes >>---------->>
+// -----------------------------------------------------------------------------
+// *  Temporary
+// -----------------------------------------------------------------------------
+
+// -  <<----------<< Temporary >>---------->>
+
 // #  Color
+$color-grey-light: #e7e7e7;
+$color-gold: hsl(44, 32.4%, 39%);
+$color-green: hsl(177, 87.7%, 27%);
+$color-white: white;
 
+$theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
+  url('../img/hero-bg.png') 0% 0% / cover;
 
-$color--wireframes-wires: hsl(0, 100%, 50%);
-$color--wireframes-background: hsla(0, 0%, 0%, 0.5);
+$support-bg: linear-gradient(110deg,
+rgba(black, 0.5) 400px,
+rgba(black, 0.1) 800px),
+  url('../img/support-bg.jpg') center center / cover;
+
+// #  linear-Gradient
+$linear-gradient--yellow: hsla(23, 42%, 64%, 0.8);
+$linear-gradient--orange: hsla(214, 42%, 64%, 0.8);
+$linear-gradient--red: hsla(207, 48%, 14%, 0.8);
