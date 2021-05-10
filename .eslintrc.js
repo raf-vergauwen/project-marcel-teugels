@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/recommended',
+    'eslint:recommended',
     'plugin:prettier/recommended',
   ],
   parserOptions: {
@@ -14,7 +15,4 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['vue', 'prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
 };
