@@ -25,9 +25,12 @@ export default {
     return {
       navItems: [
         { path: '/', label: 'home' },
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profile' },
         { path: '/storefront', label: 'store' },
+        { path: '/costumwork', label: 'costum' },
+        { path: '/login', label: 'login' },
+        { path: '/profile', label: 'profiel' },
+        { path: '/account-creation', label: 'sign up' },
+        { path: '/home-restauratie', label: 'restauratie' },
       ],
     };
   },

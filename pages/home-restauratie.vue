@@ -1,5 +1,6 @@
 <template>
   <main>
+    <restauration-header />
     <header class="navigation">
       <div class="navigation__container">
         <img class="navigation__logo" src="" alt="" />
@@ -182,7 +183,12 @@
   </main>
 </template>
 
-<script></script>
+<script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+export default {
+  components: { RestaurationHeader },
+};
+</script>
 
 <style>
 body {
@@ -354,25 +360,24 @@ a {
   border: 0px;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    background-color: #0F0E0E;
-    color: #F7F5F5;
-    padding: 1em 0em;
-
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: #0f0e0e;
+  color: #f7f5f5;
+  padding: 1em 0em;
 }
 
-.footer__container{
-    display: flex;
+.footer__container {
+  display: flex;
 }
 
-.footer p{
-text-align: end;
+.footer p {
+  text-align: end;
 }
 
-.navigatie{
-    margin: 0em 3em;
+.navigatie {
+  margin: 0em 3em;
 }
 </style>
