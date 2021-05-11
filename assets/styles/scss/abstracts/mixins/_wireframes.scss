@@ -2,54 +2,130 @@
 // +  Wireframes
 // -----------------------------------------------------------------------------
 
-// - With HTML data attributes
-
 // -----------------------------------------------------------------------------
 // *  Wireframes with HTML data attributes
 // -----------------------------------------------------------------------------
 
-[data-wf] {
-  position: relative;
-  z-index: 1;
-  outline: calc(#{$whitespace--xxs} / 2) solid var(--wireframe--wire);
+@mixin manual-wireframes($wireframe--manual) {
+  @if $wireframe--manual {
+    [data-wf] {
+      position: relative;
+      z-index: 1;
+      outline: calc(#{$whitespace--xxs} / 2) solid var(--wireframe--wire);
+    }
+
+    [data-wf]::before {
+      position: absolute;
+      z-index: 99;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+          to top right,
+          transparent calc(50% - 1px),
+          var(--wireframe--wire) calc(50% - 1px),
+          var(--wireframe--wire) calc(50% + 1px),
+          transparent calc(50% + 1px)
+        ),
+        linear-gradient(
+          to bottom right,
+          transparent calc(50% - 1px),
+          var(--wireframe--wire) calc(50% - 1px),
+          var(--wireframe--wire) calc(50% + 1px),
+          transparent calc(50% + 1px)
+        ),
+        var(--wireframe--bg-color);
+      color: var(--wireframe--wire);
+      content: attr(data-wf);
+      font: bold 2em Jubilat, Georgia, serif;
+      text-shadow: 0 0 0.25em var(--wireframe--bg-color),
+        0 0 0.25em var(--wireframe--bg-color),
+        0 0 0.25em var(--wireframe--bg-color),
+        0 0 0.25em var(--wireframe--bg-color),
+        0 0 0.25em var(--wireframe--bg-color);
+    }
+  }
 }
 
-[data-wf]::before {
-  position: absolute;
-  z-index: 99;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    linear-gradient(to top right,
-    transparent calc(50% - 1px),
-    var(--wireframe--wire) calc(50% - 1px),
-    var(--wireframe--wire) calc(50% + 1px),
-    transparent calc(50% + 1px)),
-    linear-gradient(to bottom right,
-    transparent calc(50% - 1px),
-    var(--wireframe--wire) calc(50% - 1px),
-    var(--wireframe--wire) calc(50% + 1px),
-    transparent calc(50% + 1px)),
-    var(--wireframe--bg-color);
-  color: var(--wireframe--wire);
-  content: attr(data-wf);
-  font: bold 2em Jubilat, Georgia, serif;
-  text-shadow:
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color);
+// -----------------------------------------------------------------------------
+// *  Automatic Wireframe
+// -----------------------------------------------------------------------------
+
+@mixin automatic-wireframes($wireframe--automatic) {
+  @if $wireframe--automatic {
+    // #  Content Sectioning
+    article,
+    aside,
+    footer,
+    header,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    main,
+    nav,
+    section,
+    div {
+      outline: calc(#{$whitespace--xs} / 8) red ridge;
+    }
+
+    // #  Text Content
+    blockquote,
+    dd,
+    dl,
+    dt,
+    figcaption,
+    figure,
+    hr,
+    li,
+    ol,
+    p,
+    pre,
+    ul {
+      outline: calc(#{$whitespace--xxs} / 3) green dashed;
+    }
+
+    // #  Inline elements
+    a,
+    br,
+    button,
+    cite,
+    code,
+    datalist,
+    em,
+    i,
+    input,
+    img,
+    label,
+    mark,
+    meter,
+    output,
+    progress,
+    q,
+    select,
+    svg,
+    textarea,
+    u,
+    video,
+    time,
+    span {
+      outline: calc(#{$whitespace--xxs} / 4) blue dashed;
+    }
+  }
 }
 
-// -  Automatic
+// ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
 
-// #  Content Sectioning
+/* -------------------------------------------------------------------------- *\
+-  (1) Content Sectioning
+\* -------------------------------------------------------------------------- */
+
 address,
 article,
 aside,
@@ -63,50 +139,49 @@ h5,
 h6,
 main,
 nav,
-section,
-div {
-  outline: calc(#{$whitespace--xxs} / 2) red dashed;
+section {
 }
 
-// #  Text Content
-blockquote,
-dd,
-dl,
-dt,
-figcaption,
-figure,
-hr,
-li,
-ol,
-p,
-pre,
-ul {
-  outline: calc(#{$whitespace--xxs} / 3) green dashed;
-}
+/* -------------------------------------------------------------------------- *\
+-  (2) Text Content
+\* -------------------------------------------------------------------------- */
 
-// #  Inline elements
-a,
-br,
-button,
-cite,
-code,
-datalist,
-em,
-i,
-input,
-img,
-label,
-mark,
-meter,
-output,
-progress,
-q,
-select,
-svg,
-textarea,
-u,
-video,
-time,
-span {
-  outline: calc(#{$whitespace--xxs} / 4) blue dashed;
-}
+/* -------------------------------------------------------------------------- *\
+-  (3) Inline text Semantics
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (4) Image and Multimedia
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (5) Embedded Content
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (6) SVG and MathML
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (7) Scripting
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (8) Demarcating Edits
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (9) Table Content
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (10) Forms
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (11) Interactive Elements
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  (12) Web Components
+\* -------------------------------------------------------------------------- */
