@@ -508,95 +508,52 @@ img {
 /* -------------------------------------------------------------------------- *\
 *  _box.scss: This partial file contains all 'box' styles.
 \* -------------------------------------------------------------------------- */
-.box-container {
-  width: 95%;
-  margin: 0 auto;
+@media (min-width: 320px) {
+  .block-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
 }
 
+/* -------------------------------------------------------------------------- *\
+*  _flex-container.scss: This partial file contains all 'flex-container' styles.
+\* -------------------------------------------------------------------------- */
 @media (min-width: 320px) {
-  .box-container {
+  .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: calc(640px - 0.1px);
     height: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _grid-container.scss: This partial file contains all 'grid-container' styles.
+\* -------------------------------------------------------------------------- */
+@media (min-width: 320px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100%;
     padding: 0.5rem;
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 640px) {
-  .box-container {
-    max-width: calc(960px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 960px) {
-  .box-container {
-    max-width: calc(1280px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1280px) {
-  .box-container {
-    max-width: calc(1280px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1600px) {
-  .box-container {
-    max-width: calc(1280px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 1920px) {
-  .box-container {
-    max-width: calc(1280px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
-  }
-}
-
-@media (min-width: 2240px) {
-  .box-container {
-    max-width: calc(1280px - 0.1px);
-  }
-  .box-container::after {
-    display: block;
-    clear: both;
-    content: ' ';
+    margin: 0 auto;
   }
 }
 
@@ -721,8 +678,7 @@ input:checked + .slider::before {
   background-size: cover;
 }
 
-.hero__container {
-  height: 100%;
+.hero__flex-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -741,28 +697,21 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
+.hot-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  place-self: center;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 -  Footer-Main: Footer
 \* -------------------------------------------------------------------------- */
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* -------------------------------------------------------------------------- *\
 *  _login.scss: This partial file contains the styles of the 'login' page.
 \* -------------------------------------------------------------------------- */

@@ -1,0 +1,15 @@
+/* -------------------------------------------------------------------------- *\
+*  _grid-container.scss: This partial file contains all 'grid-container' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+
+.grid-container {
+  @include breakpoint(xxs) {
+    @include container(grid);
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+// ...

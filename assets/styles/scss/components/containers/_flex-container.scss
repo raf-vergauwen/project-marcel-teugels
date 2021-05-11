@@ -1,0 +1,15 @@
+/* -------------------------------------------------------------------------- *\
+*  _flex-container.scss: This partial file contains all 'flex-container' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+
+.flex-container {
+  @include breakpoint(xxs) {
+    @include container(flex);
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+// ...
