@@ -18,7 +18,7 @@ html {
 
 [data-wf]::before {
   position: absolute;
-  z-index: 8675309;
+  z-index: 99;
   top: 0;
   right: 0;
   bottom: 0;
@@ -151,7 +151,170 @@ body {
 *  _layout.scss: This partial file contains all the default 'layout'.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  Header
+-  Nav
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Aside
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Section
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Article
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Forms
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Table
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Footer
+\* -------------------------------------------------------------------------- */
+footer {
+  background-color: rgba(70, 130, 180, 0.5);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _typography.scss: This partial file contains all application-wide 'typography'.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Headings
+\* -------------------------------------------------------------------------- */
+h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8147rem;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2 + p::first-letter {
+  background-color: lime;
+  color: red;
+  font-size: 1.5625rem;
+}
+
+h3 {
+  color: var(--tertiary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: none;
+}
+
+h3 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Block Text Content
+\* -------------------------------------------------------------------------- */
+p,
+li,
+blockquote,
+figcaption {
+  color: var(--foreground-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Inline Text Semantics
+\* -------------------------------------------------------------------------- */
+a {
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+a i {
+  margin-left: 0.5rem;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _media.scss: This partial file contains all application-wide 'media'.
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  Svg
+\* -------------------------------------------------------------------------- */
+svg {
+  width: 100%;
+  height: auto;
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.icon {
+  color: var(--foreground-color);
+  fill: var(--foreground-color);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Img
+\* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  /* The height is 400 pixels */
+  width: 100%;
+  height: 400px;
+  /* The width is the width of the web page */
+}
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 4 - `layout/`
+\* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
 .menu-left a {
   position: relative;
@@ -348,165 +511,10 @@ ul.menu-left.collapse {
 }
 
 /* -------------------------------------------------------------------------- *\
--  Nav
+*  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* -------------------------------------------------------------------------- *\
--  Aside
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Section
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Article
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Forms
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Table
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Footer
-\* -------------------------------------------------------------------------- */
-footer {
-  background-color: rgba(70, 130, 180, 0.5);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _typography.scss: This partial file contains all application-wide 'typography'.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Headings
-\* -------------------------------------------------------------------------- */
-h1 {
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.8147rem;
-  font-variant: normal;
-  font-weight: 700;
-  letter-spacing: 0.025rem;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: var(--secondary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.44141rem;
-  font-variant: normal;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  line-height: 1;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-h2 + p::first-letter {
-  background-color: lime;
-  color: red;
-  font-size: 1.5625rem;
-}
-
-h3 {
-  color: var(--tertiary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5625rem;
-  font-variant: small-caps;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
-  text-align: left;
-  text-transform: none;
-}
-
-h3 + p::first-letter {
-  background-color: blue;
-  color: yellow;
-  font-size: 1.5625rem;
-}
-
-/* -------------------------------------------------------------------------- *\
--  Block Text Content
-\* -------------------------------------------------------------------------- */
-p,
-li,
-blockquote,
-figcaption {
-  color: var(--foreground-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-variant: normal;
-  font-weight: 300;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-/* -------------------------------------------------------------------------- *\
--  Inline Text Semantics
-\* -------------------------------------------------------------------------- */
-a {
-  color: var(--primary-color);
-  text-align: center;
-  text-decoration: none;
-}
-
-a i {
-  margin-left: 0.5rem;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _media.scss: This partial file contains all application-wide 'media'.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Svg
-\* -------------------------------------------------------------------------- */
-svg {
-  width: 100%;
-  height: auto;
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-.icon {
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Img
-\* -------------------------------------------------------------------------- */
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `components/`
++  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _block-container.scss: This partial file contains all 'block-container' styles.
@@ -648,7 +656,7 @@ input:checked + .slider::before {
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 5 - `pages/`
++  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _index.scss: This partial file contains the styles of the 'index' page.
@@ -725,7 +733,7 @@ input:checked + .slider::before {
 *  _storefront.scss: This partial file contains the'storefront' page styles.
 \* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
-+  PARTIAL SCSS GROUP 6 - `themes/`
++  PARTIAL SCSS GROUP 7 - `themes/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
 *  _light.scss: This partial file contains the 'light' theme.
