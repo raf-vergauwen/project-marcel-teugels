@@ -57,7 +57,11 @@
 
 @mixin automatic-wireframes($wireframe--automatic) {
   @if $wireframe--automatic {
-    // #  Content Sectioning
+    // ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
+
+    // -  <<----------<< (1) Content Sectioning >>---------->>
+
+    address,
     article,
     aside,
     footer,
@@ -70,12 +74,12 @@
     h6,
     main,
     nav,
-    section,
-    div {
-      outline: calc(#{$whitespace--xs} / 8) red ridge;
+    section {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
     }
 
-    // #  Text Content
+    // -  <<----------<< (2) Text Content >>---------->>
+
     blockquote,
     dd,
     dl,
@@ -88,100 +92,134 @@
     p,
     pre,
     ul {
-      outline: calc(#{$whitespace--xxs} / 3) green dashed;
+      outline: calc(#{$whitespace--xs} / 1) red solid;
     }
 
-    // #  Inline elements
+    // -  <<----------<< (3) Inline Text Semantics >>---------->>
+
     a,
+    abbr,
+    b,
+    bdi,
+    bdo,
     br,
-    button,
     cite,
     code,
-    datalist,
+    data,
+    dfn,
     em,
     i,
-    input,
-    img,
-    label,
+    kbd,
     mark,
+    q,
+    rb,
+    rp,
+    rt,
+    rtc,
+    ruby,
+    s,
+    samp,
+    small,
+    strong,
+    sub,
+    sup,
+    time,
+    ul,
+    var,
+    wbr {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (4) Image and Multimedia >>---------->>
+
+    area,
+    audio,
+    img,
+    map,
+    track,
+    video {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (5) Embedded Content >>---------->>
+
+    embed,
+    iframe,
+    object,
+    param,
+    picture,
+    source {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (6) SVG and MathML >>---------->>
+
+    svg,
+    math {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (7) Scripting >>---------->>
+
+    canvas {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (8) Demarcating Edits >>---------->>
+
+    del,
+    ins {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (9) Table Content >>---------->>
+
+    caption,
+    col,
+    colgroup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (10) Forms >>---------->>
+
+    button,
+    datalist,
+    fieldset,
+    form,
+    input,
+    label,
+    legend,
     meter,
+    optgroup,
+    option,
     output,
     progress,
-    q,
     select,
-    svg,
-    textarea,
-    u,
-    video,
-    time,
-    span {
-      outline: calc(#{$whitespace--xxs} / 4) blue dashed;
+    textarea {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (11) Interactive Elements >>---------->>
+
+    details,
+    dialog,
+    menu,
+    summary {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
+    }
+
+    // -  <<----------<< (12) Web Components >>---------->>
+
+    slot,
+    template {
+      outline: calc(#{$whitespace--xs} / 1) red solid;
     }
   }
 }
-
-// ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
-
-/* -------------------------------------------------------------------------- *\
--  (1) Content Sectioning
-\* -------------------------------------------------------------------------- */
-
-address,
-article,
-aside,
-footer,
-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-main,
-nav,
-section {
-}
-
-/* -------------------------------------------------------------------------- *\
--  (2) Text Content
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (3) Inline text Semantics
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (4) Image and Multimedia
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (5) Embedded Content
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (6) SVG and MathML
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (7) Scripting
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (8) Demarcating Edits
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (9) Table Content
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (10) Forms
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (11) Interactive Elements
-\* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- *\
--  (12) Web Components
-\* -------------------------------------------------------------------------- */
