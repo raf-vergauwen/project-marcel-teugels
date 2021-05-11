@@ -39,7 +39,7 @@ h6,
 main,
 nav,
 section {
-  outline: 1px maroon solid;
+  outline: 2px rgba(0, 255, 0, 0.75) dashed;
 }
 
 blockquote,
@@ -50,7 +50,7 @@ li,
 ol,
 p,
 ul {
-  outline: 1px brown solid;
+  outline: 1.5px rgba(0, 0, 255, 0.75) dashed;
 }
 
 a,
@@ -83,7 +83,7 @@ time,
 ul,
 var,
 wbr {
-  outline: 1px red solid;
+  outline: 1px rgba(255, 215, 0, 0.75) dotted;
 }
 
 area,
@@ -92,7 +92,7 @@ img,
 map,
 track,
 video {
-  outline: 1px red solid;
+  outline: 1px rgba(0, 0, 128, 0.75) dashed;
 }
 
 embed,
@@ -101,21 +101,21 @@ object,
 param,
 picture,
 source {
-  outline: 1px red solid;
+  outline: 1px rgba(173, 255, 47, 0.75) dashed;
 }
 
 svg,
 math {
-  outline: 1px red solid;
+  outline: 1px rgba(0, 128, 128, 0.75) dashed;
 }
 
 canvas {
-  outline: 1px red solid;
+  outline: 1px rgba(188, 143, 143, 0.75) dashed;
 }
 
 del,
 ins {
-  outline: 1px red solid;
+  outline: 1px rgba(0, 255, 255, 0.75) dashed;
 }
 
 caption,
@@ -128,7 +128,7 @@ tfoot,
 th,
 thead,
 tr {
-  outline: 1px red solid;
+  outline: 1px rgba(128, 128, 0, 0.75) dashed;
 }
 
 button,
@@ -145,18 +145,18 @@ output,
 progress,
 select,
 textarea {
-  outline: 1px red solid;
+  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
 }
 
 details,
 dialog,
 menu {
-  outline: 1px red solid;
+  outline: 1px rgba(188, 143, 143, 0.75) dashed;
 }
 
 slot,
 template {
-  outline: 1px red solid;
+  outline: 1px rgba(127, 255, 212, 0.75) dashed;
 }
 
 [data-wf] {
@@ -591,7 +591,7 @@ ul.menu-left.collapse {
     height: 100%;
     padding: 0.5rem;
     margin: 0 auto;
-    outline: 2.5px rgba(128, 0, 0, 0.5) solid;
+    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
   }
 }
 
@@ -617,7 +617,7 @@ ul.menu-left.collapse {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    outline: 2.5px rgba(255, 0, 0, 0.5) solid;
+    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
   }
 }
 
@@ -632,7 +632,7 @@ ul.menu-left.collapse {
     height: 100%;
     padding: 0.5rem;
     margin: 0 auto;
-    outline: 2.5px rgba(165, 42, 42, 0.5) solid;
+    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
   }
 }
 

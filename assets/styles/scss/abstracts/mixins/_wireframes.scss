@@ -75,7 +75,7 @@
     main,
     nav,
     section {
-      outline: 1px rgb(128, 0, 0) solid;
+      outline: 2px rgba(0, 255, 0, 0.75) dashed;
     }
 
     // -  <<----------<< (2) Text Content: Block >>---------->>
@@ -88,7 +88,7 @@
     ol,
     p,
     ul {
-      outline: 1px rgb(165, 42, 42) solid;
+      outline: 1.5px rgba(0, 0, 255, 0.75) dashed;
     }
 
     // -  <<----------<< (3) Inline Text Semantics >>---------->>
@@ -123,7 +123,7 @@
     ul,
     var,
     wbr {
-      outline: 1px red solid;
+      outline: 1px rgba(255, 215, 0, 0.75) dotted;
     }
 
     // -  <<----------<< (4) Image and Multimedia >>---------->>
@@ -134,7 +134,7 @@
     map,
     track,
     video {
-      outline: 1px red solid;
+      outline: 1px rgba(0, 0, 128, 0.75) dashed;
     }
 
     // -  <<----------<< (5) Embedded Content >>---------->>
@@ -145,27 +145,27 @@
     param,
     picture,
     source {
-      outline: 1px red solid;
+      outline: 1px rgba(173, 255, 47, 0.75) dashed;
     }
 
     // -  <<----------<< (6) SVG and MathML >>---------->>
 
     svg,
     math {
-      outline: 1px red solid;
+      outline: 1px rgba(0, 128, 128, 0.75) dashed;
     }
 
     // -  <<----------<< (7) Scripting >>---------->>
 
     canvas {
-      outline: 1px red solid;
+      outline: 1px rgba(188, 143, 143, 0.75) dashed;
     }
 
     // -  <<----------<< (8) Demarcating Edits >>---------->>
 
     del,
     ins {
-      outline: 1px red solid;
+      outline: 1px rgba(0, 255, 255, 0.75) dashed;
     }
 
     // -  <<----------<< (9) Table Content >>---------->>
@@ -180,7 +180,7 @@
     th,
     thead,
     tr {
-      outline: 1px red solid;
+      outline: 1px rgba(128, 128, 0, 0.75) dashed;
     }
 
     // -  <<----------<< (10) Forms >>---------->>
@@ -199,7 +199,7 @@
     progress,
     select,
     textarea {
-      outline: 1px red solid;
+      outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
     }
 
     // -  <<----------<< (11) Interactive Elements: Block >>---------->>
@@ -207,7 +207,7 @@
     details, // Block
     dialog, // Block
     menu {
-      outline: 1px red solid;
+      outline: 1px rgba(188, 143, 143, 0.75) dashed;
     }
 
     // -  <<----------<< (12) Web Components >>---------->>
@@ -215,7 +215,7 @@
     slot, // Inline
     template {
       // Block
-      outline: 1px red solid;
+      outline: 1px rgba(127, 255, 212, 0.75) dashed;
     }
   }
 }
