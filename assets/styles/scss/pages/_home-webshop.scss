@@ -9,11 +9,11 @@
 .header {
   // ...
   &__container {
-    background-color: hsla(0, 50%, 50%, 0.5);
+    // ...
   }
 
   &__nav {
-    background-color: hsla(0, 50%, 50%, 0.5);
+    // ...
   }
 }
 
@@ -24,26 +24,22 @@
 .main-nav {
   // ...
   &__nav-logo {
-    background-color: hsla(24, 90%, 40%, 0.5);
+    // ...
   }
 
   &__mobile-menu {
-    background-color: hsla(30, 20%, 70%, 0.5);
     //...
   }
 
   &__nav-toggle-slice {
-    background-color: hsla(0, 50%, 70%, 0.5);
     //...
   }
 
   &__list {
-    background-color: hsla(0, 70%, 70%, 0.5);
     //...
   }
 
   &__item {
-    background-color: hsla(50, 70%, 70%, 0.5);
     //...
   }
 }
@@ -70,12 +66,11 @@
       $linear-gradient--orange,
       $linear-gradient--yellow
     );
-    // background-color: rgba(0, 0, 0, 0.4);
   }
-
 
   &__visual {
     max-height: 50vh;
+    // ...
   }
 
   &__subject {
@@ -83,7 +78,9 @@
   }
 
   &__sub-title {
+    color: var(--tertiary-color);
     font-size: $font-size--2;
+    // ...
   }
 }
 
@@ -94,10 +91,41 @@
 .hot-items {
   // ...
 
-  &__container {
-    background-color: hsla(351, 100%, 86%, 0.5);
+  &__title {
+    // ...
   }
-  // ...
+
+  &__container {
+    // ...
+  }
+
+  &__card-container {
+    // ...
+  }
+
+  &__card-title {
+    // ...
+  }
+
+  &__card-visual {
+    // ...
+  }
+
+  &__card-caption {
+    // ...
+  }
+
+  &__card-caption-title {
+    // ...
+  }
+
+  &__card-caption-text {
+    // ...
+  }
+
+  &__card-caption-btn {
+    // ...
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -108,9 +136,8 @@
   // ...
 
   &__container {
-    background-color: hsla(195, 53%, 79%, 0.5);
+    // ...
   }
-  // ...
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -123,7 +150,6 @@
   &__container {
     @include flex-container(nowrap, column, flex-start, center);
 
-    background-color: hsla(100, 50%, 50%, 0.5);
+    // ...
   }
-  // ...
 }

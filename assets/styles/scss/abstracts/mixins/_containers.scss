@@ -23,7 +23,7 @@
     max-width: calc(#{$dimension--xs} - 0.1px);
     height: 100%;
     flex-direction: column;
-    padding: $size--xs;
+    padding: $whitespace--xs;
   }
   // #  Breakpoint 2 - Extra Small - 40rem / 640px
   @else if $breakpoint == xs {

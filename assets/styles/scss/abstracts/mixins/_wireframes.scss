@@ -7,7 +7,7 @@
 [data-wf] {
   position: relative;
   z-index: 1;
-  outline: calc(#{$size--xxs} / 2) solid var(--wireframe--wire);
+  outline: calc(#{$whitespace--xxs} / 2) solid var(--wireframe--wire);
 }
 
 [data-wf]::before {
@@ -60,7 +60,7 @@ h6,
 main,
 nav,
 section {
-  outline: calc(#{$size--xxs} / 2) red dashed;
+  outline: calc(#{$whitespace--xxs} / 2) red dashed;
 }
 
 // #  Text Content
@@ -76,7 +76,7 @@ ol,
 p,
 pre,
 ul {
-  outline: calc(#{$size--xxs} / 3) green dashed;
+  outline: calc(#{$whitespace--xxs} / 3) green dashed;
 }
 
 // #  Inline elements
@@ -103,5 +103,5 @@ u,
 video,
 time,
 span {
-  outline: calc(#{$size--xxs} / 4) blue dashed;
+  outline: calc(#{$whitespace--xxs} / 4) blue dashed;
 }

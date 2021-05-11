@@ -23,7 +23,7 @@
           <a href="#" class="main-nav__nav-logo nav-logo">
             <i class="fas fa-globe icon"></i>Marcel Teugels
           </a>
-          <a aria-label="mobile menu" class="main-nav__mobile-menu nav-toggle">
+          <a class="main-nav__mobile-menu nav-toggle">
             <span class="main-nav__nav-toggle-slice"></span>
             <span class="main-nav__nav-toggle-slice"></span>
             <span class="main-nav__nav-toggle-slice"></span>
@@ -48,17 +48,17 @@
         <!-- + -----------------<< SECTION-1: .hero >>------------------------->
         <section class="hero" id="hero">
           <div class="hero__container box-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="hero__visual"
-          >
-            <path
-              d="M376.7.1 255.8 121 135 .1h-52.9v343.4h53V219.1h94.3v291.3h52.8V219.1h94.3v124.5h53V.1h-52.8zM135.4 167.4v-94l94 94h-94zm240.9 0h-94l94-94v94z"
-            />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="hero__visual"
+            >
+              <path
+                d="M376.7.1 255.8 121 135 .1h-52.9v343.4h53V219.1h94.3v291.3h52.8V219.1h94.3v124.5h53V.1h-52.8zM135.4 167.4v-94l94 94h-94zm240.9 0h-94l94-94v94z"
+              />
+            </svg>
             <h1 class="hero__subject">Marcel Teugels</h1>
-            
+
             <h2 class="hero__sub-title">
               Apprentice blacksmith, conservator and restorer of wood & metal
             </h2>
@@ -68,29 +68,77 @@
         <section class="hot-items" id="hot-items">
           <h2 class="hot-items__title">Hot Items</h2>
           <div class="hot-items__container box-container">
-            <figure class="hot-items__figure-container image-block">
-              <h3>The Beach</h3>
+            <figure class="hot-items__card-container image-block">
+              <h3 class="hot-items__card-title">The Beach</h3>
               <img
                 src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                alt=""
+                alt="..."
+                class="hot-items__card-visual"
               />
-              <figcaption>
-                <h4>More Info</h4>
-                <p>
+              <figcaption class="hot-items__card-caption">
+                <h4 class="hot-items__card-caption-title">More Info</h4>
+                <p class="hot-items__card-caption-text">
                   Pellentesque habitant morbi tristique senectus et netus et
                   malesuada fames ac turpis egestas. Vestibulum tortor quam,
                   feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
                   libero sit amet quam egestas semper. Aenean ultricies mi vitae
                   est. Mauris placerat eleifend leo.
                 </p>
-                <button>More Info</button>
+                <button class="hot-items__card-caption-btn">More Info</button>
+              </figcaption>
+            </figure>
+            <figure class="hot-items__card-container image-block">
+              <h3 class="hot-items__card-title">The Beach</h3>
+              <img
+                src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="..."
+                class="hot-items__card-visual"
+              />
+              <figcaption class="hot-items__card-caption">
+                <h4 class="hot-items__card-caption-title">More Info</h4>
+                <p class="hot-items__card-caption-text">
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo.
+                </p>
+                <button class="hot-items__card-caption-btn">More Info</button>
+              </figcaption>
+            </figure>
+            <figure class="hot-items__card-container image-block">
+              <h3 class="hot-items__card-title">The Beach</h3>
+              <img
+                src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="..."
+                class="hot-items__card-visual"
+              />
+              <figcaption class="hot-items__card-caption">
+                <h4 class="hot-items__card-caption-title">More Info</h4>
+                <p class="hot-items__card-caption-text">
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo.
+                </p>
+                <button class="hot-items__card-caption-btn">More Info</button>
               </figcaption>
             </figure>
           </div>
         </section>
         <!-- + -----------------<< SECTION-3: .about >>------------------------>
         <section class="about" id="about">
-          <div class="about__container box-container"></div>
+          <div class="about__container box-container">
+            <img
+              src="/assets/media/images/marcel-teugels/favorites/furniture--03-upscaled.jpg"
+              alt="..."
+              class="about__card-visual"
+            />
+            <div class="about__container box-container">
+
+            </div>
+          </div>
         </section>
       </div>
     </main>

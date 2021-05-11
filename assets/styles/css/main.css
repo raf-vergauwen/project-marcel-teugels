@@ -387,7 +387,7 @@ footer {
 h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 3.05176rem;
+  font-size: 3.8147rem;
   font-variant: normal;
   font-weight: 700;
   letter-spacing: 0.025rem;
@@ -705,37 +705,9 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  Header-Main: Header
 \* -------------------------------------------------------------------------- */
-.header__container {
-  background-color: rgba(191, 64, 64, 0.5);
-}
-
-.header__nav {
-  background-color: rgba(191, 64, 64, 0.5);
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Nav-Main: Nav
 \* -------------------------------------------------------------------------- */
-.main-nav__nav-logo {
-  background-color: rgba(194, 84, 10, 0.5);
-}
-
-.main-nav__mobile-menu {
-  background-color: rgba(194, 179, 163, 0.5);
-}
-
-.main-nav__nav-toggle-slice {
-  background-color: rgba(217, 140, 140, 0.5);
-}
-
-.main-nav__list {
-  background-color: rgba(232, 125, 125, 0.5);
-}
-
-.main-nav__item {
-  background-color: rgba(232, 214, 125, 0.5);
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-1: Hero
 \* -------------------------------------------------------------------------- */
@@ -762,23 +734,16 @@ input:checked + .slider::before {
 }
 
 .hero__sub-title {
+  color: var(--tertiary-color);
   font-size: 1.25rem;
 }
 
 /* -------------------------------------------------------------------------- *\
 -  Section-2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items__container {
-  background-color: rgba(255, 184, 194, 0.5);
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Section-3: About
 \* -------------------------------------------------------------------------- */
-.about__container {
-  background-color: rgba(173, 216, 230, 0.5);
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Footer-Main: Footer
 \* -------------------------------------------------------------------------- */
@@ -796,7 +761,6 @@ input:checked + .slider::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(106, 191, 64, 0.5);
 }
 
 /* -------------------------------------------------------------------------- *\

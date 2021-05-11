@@ -8,7 +8,7 @@
   @include box-shadow(1);
 
   overflow: hidden;
-  margin: $size--s;
+  margin: $whitespace--s;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
