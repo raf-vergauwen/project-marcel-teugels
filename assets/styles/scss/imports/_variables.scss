@@ -1,0 +1,28 @@
+//Colors
+
+$title-blue: #35495e;
+$subtitle-blue: #526488;
+$bg-blue: #ADD8E6FF;
+$bg-blue--dark: #7d9ea8;
+
+
+//Media Queries
+
+$mq-xxs: 320px;
+$mq-xs: 390px;
+$mq-sm: 570px;
+$mq-md: 770px;
+$mq-lg: 1040px;
+$mq-xl: 1260px;
+$mq-xxl: 1460px;
+$mq-xxxl: 1900px;
+
+// Widths
+
+$l-site-padding: 80px;
+$site-padding: 60px;
+$m-site-padding: 40px;
+$s-site-padding: 20px;
+
+$site-width: 1300px;
+$site-width-with-padding: $site-width + $m-site-padding + $m-site-padding;

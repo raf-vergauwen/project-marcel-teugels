@@ -1,44 +1,30 @@
 <template>
-  <div class="container">
-    <h1 class="title">Store</h1>
-    <button @click="fetchItems">Fetch</button>
-    <div class="product-container">
-      <ul class="product-list">
-        <li
-          class="product-item"
-          v-for="product in productData.data"
-          :key="product.name"
-          style="list-style-type: none"
-        >
-          {{ product.name }}
-          <ul style="list-style-type: none">
-            <li>
-              <img
-                src="http://157.230.126.154/assets/88a546ef-8456-46ae-a887-f378e25ee300"
-                alt=""
-              />
-            </li>
-            <li>{{ product.id }}</li>
-            <li>{{ product.description }}</li>
-            <li>Quantity: {{ product.quantity_in_stock }}</li>
-            <li>Price: € {{ product.price }}</li>
-            <li>{{ product.name }}</li>
-          </ul>
-        </li>
-      </ul>
+  <main class="p-storefront">
+    <h1 class="p-storefront__title">Store</h1>
+    <div class="p-storefront__product-list">
+      <ProductItem
+        v-for="product in productData"
+        :key="product.id"
+        class="p-storefront__product-list__item"
+        :product="product"
+      />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
+import ProductItem from '~/components/ProductItem';
+
 export default {
+  components: { ProductItem },
   data() {
     return {
       productData: {},
-      outside: null,
-      imageCodeList: [],
-      imageUrlList: [],
+      src: 'http://157.230.126.154/assets/',
     };
+  },
+  fetch() {
+    return this.fetchItems();
   },
   computed: {
     access_token() {
@@ -47,7 +33,7 @@ export default {
   },
   methods: {
     fetchItems() {
-      fetch('http://157.230.126.154/items/products?fields=*.*', {
+      return fetch('http://157.230.126.154/items/products?fields=*.*', {
         method: 'GET',
         headers: {},
       })
@@ -59,36 +45,7 @@ export default {
         })
         .then((data) => {
           console.log(data);
-          this.productData = data;
-          this.initImageCodeArray();
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    initImageCodeArray() {
-      for (let i = 0; i < this.productData.data.length; i++) {
-        const temp = JSON.parse(
-          JSON.stringify(this.productData.data[i].images[0].directus_files_id),
-        );
-        this.imageCodeList.push(temp);
-        this.fetchImages(this.imageCodeList[i]);
-      }
-      console.log(this.imageCodeList);
-      console.log(this.imageUrlList);
-    },
-    fetchImages(imageCode) {
-      fetch(`http://157.230.126.154/assets/${imageCode}`, {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + this.access_token,
-        },
-      })
-        .then((response) => {
-          return response.blob();
-        })
-        .then((image) => {
-          this.imageUrlList.push(URL.createObjectURL(image));
+          this.productData = data.data;
         })
         .catch((err) => {
           console.error(err);
@@ -98,65 +55,28 @@ export default {
 };
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss">
+.p-storefront {
+  @extend .container;
 
-.product-container {
-  margin: 1em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1em;
-}
+  &__title {
+  }
 
-.product-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+  &__product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $s-site-padding;
 
-.product-item {
-  margin: 1em;
-  background-color: lightblue;
-  width: 45%;
-  height: 500px;
-  text-align: left;
-  padding: 0.5em;
-}
+    @include md() {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-img {
-  width: 200px;
-}
+    @include sm() {
+      grid-template-columns: 1fr;
+    }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+    &__item {
+    }
+  }
 }
 </style>
