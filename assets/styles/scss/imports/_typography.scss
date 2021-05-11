@@ -2,26 +2,11 @@
 // *  This partial file contains all application-wide 'typography'.
 \*----------------------------------------------------------------------------*/
 
-/*
-  #  Headings
-*/
+body {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
 
-/*
-  #  Inline text elements
-*/
-
-/*
-  #  Abbreviations
-*/
-
-/*
-  #  Blockquotes
-*/
-
-/*
-  #  Lists
-*/
-
-/*
-  # Responsive font sizes
-*/
+h1 {
+  @extend %font-size-1;
+}
