@@ -20,27 +20,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    linear-gradient(to top right,
-    transparent calc(50% - 1px),
-    var(--wireframe--wire) calc(50% - 1px),
-    var(--wireframe--wire) calc(50% + 1px),
-    transparent calc(50% + 1px)),
-    linear-gradient(to bottom right,
-    transparent calc(50% - 1px),
-    var(--wireframe--wire) calc(50% - 1px),
-    var(--wireframe--wire) calc(50% + 1px),
-    transparent calc(50% + 1px)),
+  background: linear-gradient(
+      to top right,
+      transparent calc(50% - 1px),
+      var(--wireframe--wire) calc(50% - 1px),
+      var(--wireframe--wire) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent calc(50% - 1px),
+      var(--wireframe--wire) calc(50% - 1px),
+      var(--wireframe--wire) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
     var(--wireframe--bg-color);
   color: var(--wireframe--wire);
   content: attr(data-wf);
   font: bold 2em Jubilat, Georgia, serif;
-  text-shadow:
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color),
-    0 0 0.25em var(--wireframe--bg-color);
+  text-shadow: 0 0 0.25em var(--wireframe--bg-color),
+    0 0 0.25em var(--wireframe--bg-color), 0 0 0.25em var(--wireframe--bg-color),
+    0 0 0.25em var(--wireframe--bg-color), 0 0 0.25em var(--wireframe--bg-color);
 }
 
 // -  Automatic
@@ -59,7 +59,8 @@ h5,
 h6,
 main,
 nav,
-section {
+section,
+div {
   outline: calc(#{$whitespace--xxs} / 2) red dashed;
 }
 
