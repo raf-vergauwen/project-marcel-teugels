@@ -2,6 +2,10 @@
 // +  Containers
 // -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+// *  Containers
+// -----------------------------------------------------------------------------
+
 @mixin container(
   $container-type: block,
   $wrap-type: nowrap,
@@ -51,86 +55,6 @@
 }
 
 // -----------------------------------------------------------------------------
-
-// // #  Breakpoints
-// @mixin box-container($breakpoint, $box-type: flex) {
-//   // #  Breakpoint 1 - Extra Extra Small - 20rem / 320px
-//   @if $breakpoint == xxs {
-//     display: $box-type;
-//     width: 100%;
-//     max-width: calc(#{$dimension--xs} - 0.1px);
-//     height: auto;
-//     flex-direction: column;
-//     padding: $whitespace--xs;
-//   }
-//   // #  Breakpoint 2 - Extra Small - 40rem / 640px
-//   @else if $breakpoint == xs {
-//     max-width: calc(#{$dimension--s} - 0.1px);
-//     @content;
-//   }
-//   // #  Breakpoint 3 - Small - 60rem / 960px
-//   @else if $breakpoint == s {
-//     max-width: calc(#{$dimension--m} - 0.1px);
-//     @content;
-//   }
-//   // #  Breakpoint 4 - Medium - 80rem / 1280px
-//   @else if $breakpoint == m {
-//     max-width: calc(#{$dimension--m} - 0.1px);
-//     @content;
-//   }
-//   // #  Breakpoint 5 - Large - 100rem / 1600px
-//   @else if $breakpoint == l {
-//     max-width: calc(#{$dimension--m} - 0.1px);
-//     @content;
-//   }
-//   // #  Breakpoint 6 - Extra Large - 120rem / 1920px
-//   @else if $breakpoint == xl {
-//     max-width: calc(#{$dimension--m} - 0.1px);
-//     @content;
-//   }
-//   // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
-//   @else if $breakpoint == xxl {
-//     max-width: calc(#{$dimension--m} - 0.1px);
-//     @content;
-//   }
-//   // #  Invalid arguments!
-//   @else {
-//     @error '#{$breakpoint} is an unsupported breakpoint, choose betweens: xxs, xs, s, m, l, xl, xxl.';
-//   }
-// // }
-
-// // *  <<----------<< Specific >>---------->>
-
-// // #  Block-Container
-// @mixin block-container($max-width: fit-content) {
-//   display: block;
-//   max-width: $max-width;
-// }
-
-// // #  Flex-Container ---> Parent
-// @mixin flex-container(
-//   $wrap-type: nowrap,
-//   $direction: column,
-//   $justify: center,
-//   $align: center
-// ) {
-//   display: flex;
-//   justify-content: $justify;
-//   // #  Flex-Container--Nowrap
-//   @if $wrap-type == nowrap {
-//     flex-direction: $direction;
-//     align-items: $align;
-//   }
-//   // #  Flex-Container--Wrap
-//   @else if $wrap-type == wrap {
-//     flex-direction: $direction;
-//     align-content: $align;
-//   }
-//   // #  Invalid arguments!
-//   @else {
-//     @error '#{$wrap-type} is an unsupported breakpoint, choose between: wrap, nowrap.';
-//   }
-// }
 
 // #  Flex-Items ---> Children
 @mixin flex-items($basis: $dimension--xxs, $grow: 1, $shrink: 1) {

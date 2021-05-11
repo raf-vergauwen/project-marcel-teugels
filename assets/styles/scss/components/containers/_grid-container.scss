@@ -5,11 +5,9 @@
 // -  <<----------<< General >>---------->>
 
 .grid-container {
-  @include breakpoint(xxs) {
-    @include container(grid);
+  @include container(grid);
 
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 // -  <<----------<< Specific >>---------->>

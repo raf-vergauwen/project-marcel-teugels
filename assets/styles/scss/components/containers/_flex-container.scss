@@ -5,11 +5,9 @@
 // -  <<----------<< General >>---------->>
 
 .flex-container {
-  @include breakpoint(xxs) {
-    @include container(flex);
+  @include container(flex);
 
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 // -  <<----------<< Specific >>---------->>

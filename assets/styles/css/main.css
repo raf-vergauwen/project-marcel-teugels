@@ -350,9 +350,20 @@ svg {
      object-position: center center;
 }
 
-.icon {
-  color: var(--foreground-color);
+.fas {
+  width: 1.25rem;
+  height: 100%;
+  margin: 0 0.5rem 0 0;
   fill: var(--foreground-color);
+  font-size: 1rem;
+}
+
+.fab {
+  width: 1.5625rem;
+  height: 100%;
+  margin: 0 0.5rem 0 0;
+  fill: var(--foreground-color);
+  font-size: 1.5625rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -365,14 +376,6 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-}
-
-/* Set the size of the div element that contains the map */
-#map {
-  /* The height is 400 pixels */
-  width: 100%;
-  height: 400px;
-  /* The width is the width of the web page */
 }
 
 /* ========================================================================== *\
@@ -584,56 +587,50 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
-@media (min-width: 320px) {
-  .block-container {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
-    margin: 0 auto;
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+.block-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\
 *  _flex-container.scss: This partial file contains all 'flex-container' styles.
 \* -------------------------------------------------------------------------- */
-@media (min-width: 320px) {
-  .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
-    margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\
 *  _grid-container.scss: This partial file contains all 'grid-container' styles.
 \* -------------------------------------------------------------------------- */
-@media (min-width: 320px) {
-  .grid-container {
-    display: -ms-grid;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
-    margin: 0 auto;
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\

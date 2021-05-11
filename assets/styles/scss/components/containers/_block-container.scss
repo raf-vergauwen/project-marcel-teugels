@@ -5,11 +5,9 @@
 // -  <<----------<< General >>---------->>
 
 .block-container {
-  @include breakpoint(xxs) {
-    @include container(block);
+  @include container(block);
 
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-  }
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 // -  <<----------<< Specific >>---------->>
