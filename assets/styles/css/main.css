@@ -236,7 +236,6 @@ header nav .nav-logo::after {
 header nav ul {
   padding-left: 0;
   margin: 0;
-  list-style: none;
 }
 
 header nav ul li {
@@ -451,6 +450,10 @@ figcaption {
   text-transform: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
@@ -466,7 +469,6 @@ a i {
 
 a:hover {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -507,7 +509,7 @@ img {
 +  PARTIAL SCSS GROUP 4 - `components/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-*  _box.scss: This partial file contains all 'box' styles.
+*  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
 @media (min-width: 320px) {
   .block-container {
@@ -679,7 +681,7 @@ input:checked + .slider::before {
   background-size: cover;
 }
 
-.hero__flex-container {
+.hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

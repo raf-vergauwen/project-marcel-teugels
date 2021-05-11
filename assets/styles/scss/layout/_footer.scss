@@ -1,14 +1,10 @@
 /* -------------------------------------------------------------------------- *\
-*  _block-container.scss: This partial file contains all 'block-container' styles.
+*  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 
 // -  <<----------<< General >>---------->>
 
-.block-container {
-  @include breakpoint(xxs) {
-    @include container(block);
-  }
-}
+// ...
 
 // -  <<----------<< Specific >>---------->>
 
