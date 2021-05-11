@@ -7,6 +7,8 @@
 .block-container {
   @include breakpoint(xxs) {
     @include container(block);
+
+    outline: 2.5px rgba(128, 0, 0, 0.5) solid;
   }
 }
 

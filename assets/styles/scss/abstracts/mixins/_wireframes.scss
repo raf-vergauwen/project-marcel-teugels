@@ -59,7 +59,7 @@
   @if $wireframe--automatic {
     // ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
 
-    // -  <<----------<< (1) Content Sectioning >>---------->>
+    // -  <<----------<< (1) Content Sectioning: Block >>---------->>
 
     address,
     article,
@@ -75,24 +75,20 @@
     main,
     nav,
     section {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px rgb(128, 0, 0) solid;
     }
 
-    // -  <<----------<< (2) Text Content >>---------->>
+    // -  <<----------<< (2) Text Content: Block >>---------->>
 
     blockquote,
-    dd,
-    dl,
-    dt,
     figcaption,
     figure,
-    hr,
-    li,
+    hr,  // Self Closing
+    li, // Listitem
     ol,
     p,
-    pre,
     ul {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px rgb(165, 42, 42) solid;
     }
 
     // -  <<----------<< (3) Inline Text Semantics >>---------->>
@@ -127,7 +123,7 @@
     ul,
     var,
     wbr {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (4) Image and Multimedia >>---------->>
@@ -138,7 +134,7 @@
     map,
     track,
     video {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (5) Embedded Content >>---------->>
@@ -149,27 +145,27 @@
     param,
     picture,
     source {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (6) SVG and MathML >>---------->>
 
     svg,
     math {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (7) Scripting >>---------->>
 
     canvas {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (8) Demarcating Edits >>---------->>
 
     del,
     ins {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (9) Table Content >>---------->>
@@ -184,7 +180,7 @@
     th,
     thead,
     tr {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (10) Forms >>---------->>
@@ -203,23 +199,23 @@
     progress,
     select,
     textarea {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      outline: 1px red solid;
     }
 
-    // -  <<----------<< (11) Interactive Elements >>---------->>
+    // -  <<----------<< (11) Interactive Elements: Block >>---------->>
 
-    details,
-    dialog,
-    menu,
-    summary {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+    details, // Block
+    dialog, // Block
+    menu {
+      outline: 1px red solid;
     }
 
     // -  <<----------<< (12) Web Components >>---------->>
 
-    slot,
+    slot, // Inline
     template {
-      outline: calc(#{$whitespace--xs} / 1) red solid;
+      // Block
+      outline: 1px red solid;
     }
   }
 }
