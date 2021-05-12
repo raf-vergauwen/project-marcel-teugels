@@ -732,6 +732,10 @@ input:checked + .slider::before {
   background-size: cover;
 }
 
+.hero__title {
+  color: var(--tertiary-color);
+}
+
 .hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -741,11 +745,6 @@ input:checked + .slider::before {
 
 .hero__visual {
   max-height: 35vh;
-}
-
-.hero__title {
-  color: var(--tertiary-color);
-  font-size: 1.25rem;
 }
 
 /* -------------------------------------------------------------------------- *\
