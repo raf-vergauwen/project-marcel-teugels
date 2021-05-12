@@ -1,5 +1,6 @@
 <template>
   <main class="p-storefront">
+    <store-header />
     <h1 class="p-storefront__title">Store</h1>
     <div class="p-storefront__product-list">
       <ProductItem
@@ -14,9 +15,11 @@
 
 <script>
 import ProductItem from '~/components/ProductItem';
+import StoreHeader from '~/components/StoreHeader';
 
 export default {
-  components: { ProductItem },
+  components: { ProductItem, StoreHeader },
+
   data() {
     return {
       productData: {},
