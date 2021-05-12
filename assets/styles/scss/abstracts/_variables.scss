@@ -68,15 +68,6 @@ $border-radius--xxl: 64px;
 // *  Typography
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Color >>---------->>
-
-// #  Color
-$color--subject: var(--primary-color);
-$color--section-title: var(--secondary-color);
-$color--article-title: var(--tertiary-color);
-$color--text: var(--foreground-color);
-$color--background: var(--background-color);
-
 // -  <<----------<< RFS >>---------->>
 
 // #  Responsive Font Scale
@@ -183,9 +174,11 @@ $color-white: white;
 $theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
   url('../img/hero-bg.png') 0% 0% / cover;
 
-$support-bg: linear-gradient(110deg,
-rgba(black, 0.5) 400px,
-rgba(black, 0.1) 800px),
+$support-bg: linear-gradient(
+    110deg,
+    rgba(black, 0.5) 400px,
+    rgba(black, 0.1) 800px
+  ),
   url('../img/support-bg.jpg') center center / cover;
 
 // #  linear-Gradient

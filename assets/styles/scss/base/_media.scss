@@ -9,8 +9,8 @@
 // -  <<----------<< General >>---------->>
 
 svg {
-  width: 100%;
-  height: auto;
+  @include dimensions;
+
   color: var(--foreground-color);
   fill: var(--foreground-color);
   object-fit: cover;
@@ -20,18 +20,14 @@ svg {
 // -  <<----------<< Specific >>---------->>
 
 .fas {
-  width: $font-size--2;
-  height: 100%;
-  margin: 0 $whitespace--xs 0 0;
-  fill: var(--foreground-color);
+  @include dimensions($font-size--2);
+
   font-size: $font-size--1;
 }
 
 .fab {
-  width: $font-size--5;
-  height: 100%;
-  margin: 0 $whitespace--xs 0 0;
-  fill: var(--foreground-color);
+  @include dimensions($font-size--5);
+
   font-size: $font-size--5;
 }
 

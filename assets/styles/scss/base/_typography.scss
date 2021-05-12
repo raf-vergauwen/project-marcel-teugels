@@ -110,19 +110,46 @@ li {
 \* -------------------------------------------------------------------------- */
 
 // #  <a>
+// a {
+//   color: var(--primary-color);
+//   text-align: center;
+//   text-decoration: none;
+
+//   i {
+//     margin: 0 $whitespace--xs 0 0;
+//     color: var(--foreground-color);
+
+//     &:hover {
+//       color: var(--secondary-color);
+//     }
+//   }
+
+//   &:hover {
+//     color: var(--secondary-color);
+//   }
+// }
+
 a {
   color: var(--primary-color);
   text-align: center;
   text-decoration: none;
 
-  & i {
-    margin-left: $whitespace--xs;
-  }
-
   &:hover {
     color: var(--secondary-color);
   }
 }
+
+a > i {
+  margin: 0 0.5rem 0 0;
+}
+
+// a i:hover {
+//   color: var(--secondary-color);
+// }
+
+// a:hover {
+//   color: var(--secondary-color);
+// }
 
 // #  <abbr>
 
