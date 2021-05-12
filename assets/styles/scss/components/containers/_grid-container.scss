@@ -6,8 +6,6 @@
 
 .grid-container {
   @include container(grid);
-
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 // -  <<----------<< Specific >>---------->>

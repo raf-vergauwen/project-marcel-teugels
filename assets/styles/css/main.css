@@ -50,7 +50,7 @@ li,
 ol,
 p,
 ul {
-  outline: 1.5px rgba(0, 0, 255, 0.75) dashed;
+  outline: 2px rgba(0, 0, 255, 0.75) dashed;
 }
 
 a,
@@ -83,7 +83,7 @@ time,
 ul,
 var,
 wbr {
-  outline: 1px rgba(255, 215, 0, 0.75) dotted;
+  outline: 2px darkorange dotted;
 }
 
 area,
@@ -92,7 +92,7 @@ img,
 map,
 track,
 video {
-  outline: 1px rgba(0, 0, 128, 0.75) dashed;
+  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
 }
 
 embed,
@@ -101,21 +101,21 @@ object,
 param,
 picture,
 source {
-  outline: 1px rgba(173, 255, 47, 0.75) dashed;
+  outline: 1.5px rgba(173, 255, 47, 0.75) dashed;
 }
 
 svg,
 math {
-  outline: 1px rgba(0, 128, 128, 0.75) dashed;
+  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
 }
 
 canvas {
-  outline: 1px rgba(188, 143, 143, 0.75) dashed;
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
 }
 
 del,
 ins {
-  outline: 1px rgba(0, 255, 255, 0.75) dashed;
+  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
 }
 
 caption,
@@ -128,7 +128,7 @@ tfoot,
 th,
 thead,
 tr {
-  outline: 1px rgba(128, 128, 0, 0.75) dashed;
+  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
 }
 
 button,
@@ -151,12 +151,24 @@ textarea {
 details,
 dialog,
 menu {
-  outline: 1px rgba(188, 143, 143, 0.75) dashed;
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
 }
 
 slot,
 template {
-  outline: 1px rgba(127, 255, 212, 0.75) dashed;
+  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
+}
+
+.block-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+}
+
+.flex-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+}
+
+.grid-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 [data-wf] {
@@ -359,11 +371,11 @@ svg {
 }
 
 .fab {
-  width: 1.5625rem;
+  width: 2.44141rem;
   height: 100%;
   margin: 0 0.5rem 0 0;
   fill: var(--foreground-color);
-  font-size: 1.5625rem;
+  font-size: 2.44141rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -593,7 +605,6 @@ ul.menu-left.collapse {
   height: 100%;
   padding: 0.5rem;
   margin: 0 auto;
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -617,7 +628,6 @@ ul.menu-left.collapse {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -630,7 +640,6 @@ ul.menu-left.collapse {
   height: 100%;
   padding: 0.5rem;
   margin: 0 auto;
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* -------------------------------------------------------------------------- *\
