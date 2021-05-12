@@ -60,12 +60,11 @@
     // height: 100%;
     // max-height: 100vh;
     justify-content: center;
-    background-image: linear-gradient(
-      45deg,
+    background-image:
+      linear-gradient(45deg,
       $linear-gradient--red,
       $linear-gradient--orange,
-      $linear-gradient--yellow
-    );
+      $linear-gradient--yellow);
   }
 
   &__visual {
@@ -97,32 +96,38 @@
     // ...
   }
 
-  &__card-container {
-    // ...
-  }
+  .hot-item {
+    &__title {
+      // ...
+    }
 
-  &__card-title {
-    // ...
-  }
+    &__container {
+      // ...
+    }
 
-  &__card-visual {
-    // ...
-  }
+    &__title {
+      // ...
+    }
 
-  &__card-caption {
-    // ...
-  }
+    &__visual {
+      // ...
+    }
 
-  &__card-caption-title {
-    // ...
-  }
+    &__caption {
+      // ...
+    }
 
-  &__card-caption-text {
-    // ...
-  }
+    &__caption-title {
+      // ...
+    }
 
-  &__card-caption-btn {
-    // ...
+    &__caption-text {
+      // ...
+    }
+
+    &__caption-btn {
+      // ...
+    }
   }
 }
 
