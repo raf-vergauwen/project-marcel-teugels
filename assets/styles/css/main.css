@@ -569,7 +569,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
-.block-container {
+.block {
   display: block;
   width: 100%;
   height: 100%;
@@ -580,7 +580,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _flex-container.scss: This partial file contains all 'flex-container' styles.
 \* -------------------------------------------------------------------------- */
-.flex-container {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +603,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _grid-container.scss: This partial file contains all 'grid-container' styles.
 \* -------------------------------------------------------------------------- */
-.grid-container {
+.grid {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -756,6 +756,34 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  FOOTER-MAIN: Footer
 \* -------------------------------------------------------------------------- */
+.main-footer__container-main {
+  background-color: purple;
+}
+
+.main-footer__container-nav {
+  background-color: midnightblue;
+}
+
+.main-footer__container-nav--text {
+  background-color: mediumblue;
+}
+
+.main-footer__container-nav--links {
+  background-color: blue;
+}
+
+.main-footer__container-contact {
+  background-color: darkgreen;
+}
+
+.main-footer__container-contact--copyright {
+  background-color: teal;
+}
+
+.main-footer__container-contact--social-media {
+  background-color: darkolivegreen;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _login.scss: This partial file contains the styles of the 'login' page.
 \* -------------------------------------------------------------------------- */

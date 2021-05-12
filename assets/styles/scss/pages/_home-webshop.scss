@@ -190,41 +190,40 @@
 \* -------------------------------------------------------------------------- */
 
 .main-footer {
-  // background-color: orange;
   // ...
 
-  &__container {
-    // background-color: orange;
+  &__container-main {
+    background-color: purple;
     // ...
   }
 
-  .foot-nav {
-    // background-color: orange;
+  &__container-nav {
+    background-color: midnightblue;
     // ...
-
-    &__container {
-      // background-color: coral;
-      // ...
-    }
   }
 
-  .foot-contact {
-    // background-color: orange;
+  &__container-nav--text {
+    background-color: mediumblue;
     // ...
+  }
 
-    &__container {
-      // background-color: darkred;
-      // ...
-    }
+  &__container-nav--links {
+    background-color: blue;
+    // ...
+  }
+
+  &__container-contact {
+    background-color: darkgreen;
+    // ...
+  }
+
+  &__container-contact--copyright {
+    background-color: teal;
+    // ...
+  }
+
+  &__container-contact--social-media {
+    background-color: darkolivegreen;
+    // ...
   }
 }
-
-// .foot-nav {
-//   background-color: orange;
-//   // ...
-
-//   &__container {
-//     background-color: orange;
-//     // ...
-//   }
-// }
