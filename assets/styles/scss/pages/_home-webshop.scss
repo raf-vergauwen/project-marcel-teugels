@@ -213,6 +213,45 @@
 -  FOOTER-MAIN: Footer
 \* -------------------------------------------------------------------------- */
 
+// .main-footer {
+//   // ...
+
+//   &__container {
+//     background-color: purple;
+//     // ...
+//   }
+
+//   &__container--nav {
+//     background-color: midnightblue;
+//     // ...
+//   }
+
+//   &__container--nav-text {
+//     background-color: mediumblue;
+//     // ...
+//   }
+
+//   &__container--nav-links {
+//     background-color: blue;
+//     // ...
+//   }
+
+//   &__container--contact {
+//     background-color: darkgreen;
+//     // ...
+//   }
+
+//   &__container--contact-copyright {
+//     background-color: teal;
+//     // ...
+//   }
+
+//   &__container--contact-social-media {
+//     background-color: darkolivegreen;
+//     // ...
+//   }
+// }
+
 .main-footer {
   // ...
 
@@ -224,49 +263,81 @@
   &__container--nav {
     background-color: midnightblue;
     // ...
-  }
 
-  &__container--nav-text {
-    background-color: mediumblue;
-    // ...
-  }
+    .foot-nav-text {
+      // ...
+      &__container {
+        background-color: Blue;
+        // ...
+      }
 
-  &__container--nav-links {
-    background-color: blue;
-    // ...
+      &__title {
+        background-color: Aqua;
+        // ...
+      }
+
+      &__paragraph {
+        background-color: PaleTurquoise;
+        // ...
+      }
+    }
+
+    .foot-nav-links {
+      // ...
+      &__container {
+        background-color: RoyalBlue;
+        // ...
+      }
+
+      &__title {
+        background-color: Aquamarine;
+        // ...
+      }
+
+      &__list {
+        background-color: Turquoise;
+        // ...
+      }
+      &__link {
+        background-color: LightSkyBlue;
+        // ...
+      }
+    }
   }
 
   &__container--contact {
     background-color: darkgreen;
     // ...
-  }
+    .foot-copyright {
+      // ...
+      &__container {
+        background-color: DarkOliveGreen;
+        // ...
+      }
 
-  &__container--contact-copyright {
-    background-color: teal;
-    // ...
-  }
+      &__link {
+        background-color: LightGreen;
+        // ...
+      }
+    }
 
-  &__container--contact-social-media {
-    background-color: darkolivegreen;
-    // ...
-  }
-}
+    .foot-social-media {
+      // ...
+      &__container {
+        background-color: SeaGreen;
+        // ...
+      }
 
-.main-footer {
-  // ...
-
-  &__container {
-    background-color: purple;
-    // ...
-  }
-
-  &__container--nav {
-    background-color: midnightblue;
-    // ...
-  }
-
-  &__container--contact {
-    background-color: darkgreen;
-    // ...
+      &__link {
+        background-color: Lime;
+        // ...
+      }
+    }
   }
 }
+
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------

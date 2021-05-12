@@ -764,36 +764,52 @@ input:checked + .slider::before {
   background-color: midnightblue;
 }
 
-.main-footer__container--nav-text {
-  background-color: mediumblue;
+.main-footer__container--nav .foot-nav-text__container {
+  background-color: Blue;
 }
 
-.main-footer__container--nav-links {
-  background-color: blue;
+.main-footer__container--nav .foot-nav-text__title {
+  background-color: Aqua;
+}
+
+.main-footer__container--nav .foot-nav-text__paragraph {
+  background-color: PaleTurquoise;
+}
+
+.main-footer__container--nav .foot-nav-links__container {
+  background-color: RoyalBlue;
+}
+
+.main-footer__container--nav .foot-nav-links__title {
+  background-color: Aquamarine;
+}
+
+.main-footer__container--nav .foot-nav-links__list {
+  background-color: Turquoise;
+}
+
+.main-footer__container--nav .foot-nav-links__link {
+  background-color: LightSkyBlue;
 }
 
 .main-footer__container--contact {
   background-color: darkgreen;
 }
 
-.main-footer__container--contact-copyright {
-  background-color: teal;
+.main-footer__container--contact .foot-copyright__container {
+  background-color: DarkOliveGreen;
 }
 
-.main-footer__container--contact-social-media {
-  background-color: darkolivegreen;
+.main-footer__container--contact .foot-copyright__link {
+  background-color: LightGreen;
 }
 
-.main-footer__container {
-  background-color: purple;
+.main-footer__container--contact .foot-social-media__container {
+  background-color: SeaGreen;
 }
 
-.main-footer__container--nav {
-  background-color: midnightblue;
-}
-
-.main-footer__container--contact {
-  background-color: darkgreen;
+.main-footer__container--contact .foot-social-media__link {
+  background-color: Lime;
 }
 
 /* -------------------------------------------------------------------------- *\
