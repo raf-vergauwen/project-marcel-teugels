@@ -575,31 +575,31 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--nav .foot-nav-text__container {
-  background-color: Blue;
+  background-color: blue;
 }
 
 .main-footer__container--nav .foot-nav-text__title {
-  background-color: Aqua;
+  background-color: aqua;
 }
 
 .main-footer__container--nav .foot-nav-text__paragraph {
-  background-color: PaleTurquoise;
+  background-color: paleturquoise;
 }
 
 .main-footer__container--nav .foot-nav-links__container {
-  background-color: RoyalBlue;
+  background-color: royalblue;
 }
 
 .main-footer__container--nav .foot-nav-links__title {
-  background-color: Aquamarine;
+  background-color: aquamarine;
 }
 
 .main-footer__container--nav .foot-nav-links__list {
-  background-color: Turquoise;
+  background-color: turquoise;
 }
 
 .main-footer__container--nav .foot-nav-links__link {
-  background-color: LightSkyBlue;
+  background-color: lightskyblue;
 }
 
 .main-footer__container--contact {
@@ -607,19 +607,23 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--contact .foot-copyright__container {
-  background-color: DarkOliveGreen;
+  background-color: darkolivegreen;
 }
 
 .main-footer__container--contact .foot-copyright__link {
-  background-color: LightGreen;
+  background-color: lightgreen;
 }
 
 .main-footer__container--contact .foot-social-media__container {
-  background-color: SeaGreen;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: seagreen;
 }
 
 .main-footer__container--contact .foot-social-media__link {
-  background-color: Lime;
+  background-color: lime;
 }
 
 /* ========================================================================== *\
@@ -628,25 +632,54 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
-.block {
-  display: block;
+.inner-block {
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
   margin: 0 auto;
+  display: block;
+  padding: 0;
+}
+
+.outer-block {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
 *  _flex-container.scss: This partial file contains all 'flex-container' styles.
 \* -------------------------------------------------------------------------- */
-.flex {
+.inner-flex {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outer-flex {
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -662,13 +695,22 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _grid-container.scss: This partial file contains all 'grid-container' styles.
 \* -------------------------------------------------------------------------- */
-.grid {
-  display: -ms-grid;
-  display: grid;
+.inner-grid {
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
   margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+}
+
+.outer-grid {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -777,34 +819,34 @@ input:checked + .slider::before {
 -  HEADER: main-header
 \* -------------------------------------------------------------------------- */
 .main-header__container {
-  background-color: Gainsboro;
+  background-color: gainsboro;
 }
 
 /* -------------------------------------------------------------------------- *\
 -  NAV: main-nav
 \* -------------------------------------------------------------------------- */
 .main-nav__container {
-  background-color: LightPink;
+  background-color: lightpink;
 }
 
 .main-nav__nav-logo {
-  background-color: HotPink;
+  background-color: hotpink;
 }
 
 .main-nav__mobile-menu {
-  background-color: DeepPink;
+  background-color: deeppink;
 }
 
 .main-nav__mobile-menu-slice {
-  background-color: PaleVioletRed;
+  background-color: palevioletred;
 }
 
 .main-nav__list {
-  background-color: MediumVioletRed;
+  background-color: mediumvioletred;
 }
 
 .main-nav__item {
-  background-color: Lavender;
+  background-color: lavender;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -828,122 +870,123 @@ input:checked + .slider::before {
 
 .hero__visual {
   max-height: 35vh;
-  background-color: LightSalmon;
+  background-color: lightsalmon;
 }
 
 .hero__subject {
-  background-color: IndianRed;
+  background-color: indianred;
 }
 
 .hero__title {
+  background-color: salmon;
   color: var(--tertiary-color);
-  background-color: Salmon;
 }
 
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
 .hot-items__container {
-  background-color: Lavender;
+  background-color: lavender;
 }
 
 .hot-items__title {
-  background-color: Thistle;
+  background-color: thistle;
 }
 
 .hot-items .hot-item {
-  background-color: Plum;
+  background-color: plum;
+  margin-top: 1rem;
 }
 
 .hot-items .hot-item__title {
-  background-color: Orchid;
+  background-color: orchid;
 }
 
 .hot-items .hot-item__container {
-  background-color: Violet;
+  background-color: violet;
 }
 
 .hot-items .hot-item__title {
-  background-color: Fuchsia;
+  background-color: fuchsia;
 }
 
 .hot-items .hot-item__visual {
-  background-color: Magenta;
+  background-color: magenta;
 }
 
 .hot-items .hot-item__caption {
-  background-color: MediumOrchid;
+  background-color: mediumorchid;
 }
 
 .hot-items .hot-item__caption-title {
-  background-color: DarkOrchid;
+  background-color: darkorchid;
 }
 
 .hot-items .hot-item__caption-text {
-  background-color: DarkViolet;
+  background-color: darkviolet;
 }
 
 .hot-items .hot-item__caption-btn {
-  background-color: BlueViolet;
+  background-color: blueviolet;
 }
 
 /* -------------------------------------------------------------------------- *\
 -  SECTION 3: About
 \* -------------------------------------------------------------------------- */
 .about__container {
-  background-color: Cornsilk;
+  background-color: cornsilk;
 }
 
 .about__title {
-  background-color: SaddleBrown;
+  background-color: saddlebrown;
 }
 
 .about__container--visual {
-  background-color: Bisque;
+  background-color: bisque;
 }
 
 .about__image {
-  background-color: NavajoWhite;
+  background-color: navajowhite;
 }
 
 .about__container--text {
-  background-color: Sienna;
+  background-color: sienna;
 }
 
 .about__title--text {
-  background-color: BurlyWood;
+  background-color: burlywood;
 }
 
 .about__sub-title {
-  background-color: Brown;
+  background-color: brown;
 }
 
 .about__paragraph {
-  background-color: RosyBrown;
+  background-color: rosybrown;
 }
 
 .about-visual__container {
-  background-color: SandyBrown;
+  background-color: sandybrown;
 }
 
 .about-visual__image {
-  background-color: GoldenRod;
+  background-color: goldenrod;
 }
 
 .about-text__container {
-  background-color: DarkGoldenRod;
+  background-color: darkgoldenrod;
 }
 
 .about-text__title {
-  background-color: Peru;
+  background-color: peru;
 }
 
 .about-text__sub-title {
-  background-color: Chocolate;
+  background-color: chocolate;
 }
 
 .about-text__paragraph {
-  background-color: Olive;
+  background-color: olive;
 }
 
 /* -------------------------------------------------------------------------- *\

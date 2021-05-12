@@ -2,13 +2,13 @@
 *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
 
-// -  <<----------<< General >>---------->>
+// -  <<----------<< General Tags >>---------->>
 
 footer {
   // ...
 }
 
-// -  <<----------<< Specific >>---------->>
+// -  <<----------<< Specific Classes >>---------->>
 
 /* -------------------------------------------------------------------------- *\
 -  FOOTER-MAIN: Footer
@@ -24,44 +24,46 @@ footer {
 
   &__container--nav {
     background-color: midnightblue;
-    // ...
 
     .foot-nav-text {
       // ...
+
       &__container {
-        background-color: Blue;
+        background-color: blue;
         // ...
       }
 
       &__title {
-        background-color: Aqua;
+        background-color: aqua;
         // ...
       }
 
       &__paragraph {
-        background-color: PaleTurquoise;
+        background-color: paleturquoise;
         // ...
       }
     }
 
     .foot-nav-links {
       // ...
+
       &__container {
-        background-color: RoyalBlue;
+        background-color: royalblue;
         // ...
       }
 
       &__title {
-        background-color: Aquamarine;
+        background-color: aquamarine;
         // ...
       }
 
       &__list {
-        background-color: Turquoise;
+        background-color: turquoise;
         // ...
       }
+
       &__link {
-        background-color: LightSkyBlue;
+        background-color: lightskyblue;
         // ...
       }
     }
@@ -69,30 +71,30 @@ footer {
 
   &__container--contact {
     background-color: darkgreen;
-    // ...
+
     .foot-copyright {
       // ...
       &__container {
-        background-color: DarkOliveGreen;
+        background-color: darkolivegreen;
         // ...
       }
 
       &__link {
-        background-color: LightGreen;
+        background-color: lightgreen;
         // ...
       }
     }
 
     .foot-social-media {
       // ...
+
       &__container {
-        background-color: SeaGreen;
-        // ...
+        flex-direction: row;
+        background-color: seagreen;
       }
 
       &__link {
-        background-color: Lime;
-        // ...
+        background-color: lime;
       }
     }
   }

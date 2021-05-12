@@ -8,7 +8,7 @@
 
 .main-header {
   &__container {
-    background-color: Gainsboro;
+    background-color: gainsboro;
   }
 }
 
@@ -18,27 +18,27 @@
 
 .main-nav {
   &__container {
-    background-color: LightPink;
+    background-color: lightpink;
   }
 
   &__nav-logo {
-    background-color: HotPink;
+    background-color: hotpink;
   }
 
   &__mobile-menu {
-    background-color: DeepPink;
+    background-color: deeppink;
   }
 
   &__mobile-menu-slice {
-    background-color: PaleVioletRed;
+    background-color: palevioletred;
   }
 
   &__list {
-    background-color: MediumVioletRed;
+    background-color: mediumvioletred;
   }
 
   &__item {
-    background-color: Lavender;
+    background-color: lavender;
   }
 }
 
@@ -68,16 +68,16 @@
 
   &__visual {
     max-height: 35vh;
-    background-color: LightSalmon;
+    background-color: lightsalmon;
   }
 
   &__subject {
-    background-color: IndianRed;
+    background-color: indianred;
   }
 
   &__title {
+    background-color: salmon;
     color: var(--tertiary-color);
-    background-color: Salmon;
   }
 }
 
@@ -87,46 +87,47 @@
 
 .hot-items {
   &__container {
-    background-color: Lavender;
+    background-color: lavender;
   }
 
   &__title {
-    background-color: Thistle;
+    background-color: thistle;
   }
 
   .hot-item {
-    background-color: Plum;
+    background-color: plum;
+    margin-top: $whitespace--s;
 
     &__title {
-      background-color: Orchid;
+      background-color: orchid;
     }
 
     &__container {
-      background-color: Violet;
+      background-color: violet;
     }
 
     &__title {
-      background-color: Fuchsia;
+      background-color: fuchsia;
     }
 
     &__visual {
-      background-color: Magenta;
+      background-color: magenta;
     }
 
     &__caption {
-      background-color: MediumOrchid;
+      background-color: mediumorchid;
     }
 
     &__caption-title {
-      background-color: DarkOrchid;
+      background-color: darkorchid;
     }
 
     &__caption-text {
-      background-color: DarkViolet;
+      background-color: darkviolet;
     }
 
     &__caption-btn {
-      background-color: BlueViolet;
+      background-color: blueviolet;
     }
   }
 }
@@ -137,62 +138,62 @@
 
 .about {
   &__container {
-    background-color: Cornsilk;
+    background-color: cornsilk;
   }
 
   &__title {
-    background-color: SaddleBrown;
+    background-color: saddlebrown;
   }
 
   &__container--visual {
-    background-color: Bisque;
+    background-color: bisque;
   }
 
   &__image {
-    background-color: NavajoWhite;
+    background-color: navajowhite;
   }
 
   &__container--text {
-    background-color: Sienna;
+    background-color: sienna;
   }
 
   &__title--text {
-    background-color: BurlyWood;
+    background-color: burlywood;
   }
 
   &__sub-title {
-    background-color: Brown;
+    background-color: brown;
   }
 
   &__paragraph {
-    background-color: RosyBrown;
+    background-color: rosybrown;
   }
 }
 
 .about-visual {
   &__container {
-    background-color: SandyBrown;
+    background-color: sandybrown;
   }
 
   &__image {
-    background-color: GoldenRod;
+    background-color: goldenrod;
   }
 }
 
 .about-text {
   &__container {
-    background-color: DarkGoldenRod;
+    background-color: darkgoldenrod;
   }
 
   &__title {
-    background-color: Peru;
+    background-color: peru;
   }
 
   &__sub-title {
-    background-color: Chocolate;
+    background-color: chocolate;
   }
 
   &__paragraph {
-    background-color: Olive;
+    background-color: olive;
   }
 }

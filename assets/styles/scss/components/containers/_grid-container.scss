@@ -4,8 +4,12 @@
 
 // -  <<----------<< General >>---------->>
 
-.grid {
-  @include container(grid);
+.inner-grid {
+  @include container(inner-grid);
+}
+
+.outer-grid {
+  @include container(outer-grid);
 }
 
 // -  <<----------<< Specific >>---------->>

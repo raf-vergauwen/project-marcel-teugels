@@ -4,8 +4,12 @@
 
 // -  <<----------<< General >>---------->>
 
-.flex {
-  @include container(flex);
+.inner-flex {
+  @include container(inner-flex);
+}
+
+.outer-flex {
+  @include container(outer-flex);
 }
 
 // -  <<----------<< Specific >>---------->>

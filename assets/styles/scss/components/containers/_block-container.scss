@@ -4,8 +4,12 @@
 
 // -  <<----------<< General >>---------->>
 
-.block {
-  @include container(block);
+.inner-block {
+  @include container(inner-block);
+}
+
+.outer-block {
+  @include container(outer-block);
 }
 
 // -  <<----------<< Specific >>---------->>

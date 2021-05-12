@@ -7,32 +7,65 @@
 // -----------------------------------------------------------------------------
 
 @mixin container(
-  $container-type: block,
+  $container-type: inner-block,
   $wrap-type: nowrap,
   $direction: column,
   $justify: center,
   $align: center
 ) {
-  display: $container-type;
   width: 100%;
   height: 100%;
-  padding: $whitespace--xs;
   margin: 0 auto;
 
-  // #  Block-Container
-  @if $container-type == block {
-    //...
+  // #  Inner-Block Container
+  @if $container-type == inner-block {
+    display: block;
+    padding: 0;
   }
 
-  // #  Flex-Container
-  @else if $container-type == flex {
+  // #  Inner-Flex Container
+  @if $container-type == inner-flex {
+    display: flex;
+    padding: 0;
+  }
+
+  // #  Inner-Grid Container
+  @if $container-type == inner-grid {
+    display: grid;
+    padding: 0;
+  }
+
+  // #  Outer-Block Container
+  @if $container-type == outer-block {
+    display: block;
+    padding: $whitespace--xs;
+  }
+
+  // #  Outer-Flex Container
+  @if $container-type == outer-flex {
+    display: flex;
+    padding: $whitespace--xs;
+  }
+
+  // #  Outer-Grid Container
+  @if $container-type == outer-grid {
+    display: grid;
+    padding: $whitespace--xs;
+  }
+
+  // -  <---------------------------------------------------------------------->
+
+  // #  Inner-Flex Container
+  @if $container-type == inner-flex {
     justify-content: $justify;
-    // #  Flex-Container--Nowrap
+
+    // #  Inner-Flex Container Nowrap
     @if $wrap-type == nowrap {
       flex-direction: $direction;
+      flex-direction: column;
       align-items: $align;
     }
-    // #  Flex-Container--Wrap
+    // #  Inner-Flex Container Wrap
     @else if $wrap-type == wrap {
       flex-direction: $direction;
       align-content: $align;
@@ -44,13 +77,25 @@
     //...
   }
 
-  // #  Grid-Container
-  @else if $container-type == grid {
+  // #  Outer-Flex Container
+  @if $container-type == outer-flex {
+    justify-content: $justify;
+
+    // #  Outer-Flex Container Nowrap
+    @if $wrap-type == nowrap {
+      flex-direction: $direction;
+      align-items: $align;
+    }
+    // #  Outer-Flex Container Wrap
+    @else if $wrap-type == wrap {
+      flex-direction: $direction;
+      align-content: $align;
+    }
+    // #  Invalid arguments!
+    @else {
+      @error 'Invalid SCSS argument detected!';
+    }
     //...
-  }
-  // #  Invalid arguments!
-  @else {
-    @error 'Invalid SCSS argument detected!';
   }
 }
 
