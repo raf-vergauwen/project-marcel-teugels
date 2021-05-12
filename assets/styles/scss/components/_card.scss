@@ -6,6 +6,7 @@
 
 .card {
   @include box-shadow(1);
+  @include box-transition;
 
   overflow: hidden;
   margin: $whitespace--s;
@@ -16,7 +17,7 @@
   border-radius: $border-radius--s;
 
   &:hover {
-    @include box-shadow(3);
+    @include box-shadow(5);
   }
 }
 
