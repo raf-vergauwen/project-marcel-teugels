@@ -732,10 +732,6 @@ input:checked + .slider::before {
   background-size: cover;
 }
 
-.hero__title {
-  color: var(--tertiary-color);
-}
-
 .hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -747,6 +743,10 @@ input:checked + .slider::before {
   max-height: 35vh;
 }
 
+.hero__title {
+  color: var(--tertiary-color);
+}
+
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
@@ -756,32 +756,44 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  FOOTER-MAIN: Footer
 \* -------------------------------------------------------------------------- */
-.main-footer__container-main {
+.main-footer__container {
   background-color: purple;
 }
 
-.main-footer__container-nav {
+.main-footer__container--nav {
   background-color: midnightblue;
 }
 
-.main-footer__container-nav--text {
+.main-footer__container--nav-text {
   background-color: mediumblue;
 }
 
-.main-footer__container-nav--links {
+.main-footer__container--nav-links {
   background-color: blue;
 }
 
-.main-footer__container-contact {
+.main-footer__container--contact {
   background-color: darkgreen;
 }
 
-.main-footer__container-contact--copyright {
+.main-footer__container--contact-copyright {
   background-color: teal;
 }
 
-.main-footer__container-contact--social-media {
+.main-footer__container--contact-social-media {
   background-color: darkolivegreen;
+}
+
+.main-footer__container {
+  background-color: purple;
+}
+
+.main-footer__container--nav {
+  background-color: midnightblue;
+}
+
+.main-footer__container--contact {
+  background-color: darkgreen;
 }
 
 /* -------------------------------------------------------------------------- *\

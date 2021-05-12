@@ -58,11 +58,6 @@
   background-position: center center;
   background-size: cover;
 
-  &__title {
-    color: var(--tertiary-color);
-    // ...
-  }
-
   &__container {
     // height: 100%;
     // max-height: 100vh;
@@ -83,6 +78,11 @@
   &__subject {
     // ...
   }
+
+  &__title {
+    color: var(--tertiary-color);
+    // ...
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -92,11 +92,11 @@
 .hot-items {
   // ...
 
-  &__title {
+  &__container {
     // ...
   }
 
-  &__container {
+  &__title {
     // ...
   }
 
@@ -144,11 +144,35 @@
 .about {
   // ...
 
+  &__container {
+    // ...
+  }
+
   &__title {
     // ...
   }
 
-  &__container {
+  &__container--visual {
+    // ...
+  }
+
+  &__image {
+    // ...
+  }
+
+  &__container--text {
+    // ...
+  }
+
+  &__title--text {
+    // ...
+  }
+
+  &__sub-title {
+    // ...
+  }
+
+  &__paragraph {
     // ...
   }
 }
@@ -192,38 +216,57 @@
 .main-footer {
   // ...
 
-  &__container-main {
+  &__container {
     background-color: purple;
     // ...
   }
 
-  &__container-nav {
+  &__container--nav {
     background-color: midnightblue;
     // ...
   }
 
-  &__container-nav--text {
+  &__container--nav-text {
     background-color: mediumblue;
     // ...
   }
 
-  &__container-nav--links {
+  &__container--nav-links {
     background-color: blue;
     // ...
   }
 
-  &__container-contact {
+  &__container--contact {
     background-color: darkgreen;
     // ...
   }
 
-  &__container-contact--copyright {
+  &__container--contact-copyright {
     background-color: teal;
     // ...
   }
 
-  &__container-contact--social-media {
+  &__container--contact-social-media {
     background-color: darkolivegreen;
+    // ...
+  }
+}
+
+.main-footer {
+  // ...
+
+  &__container {
+    background-color: purple;
+    // ...
+  }
+
+  &__container--nav {
+    background-color: midnightblue;
+    // ...
+  }
+
+  &__container--contact {
+    background-color: darkgreen;
     // ...
   }
 }

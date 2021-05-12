@@ -53,7 +53,7 @@
           <!-- * -------------------------------------------------------------->
           <div class="hero__container flex">
             <!-- prettier-ignore -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hero__visual">
+            <svg class="hero__visual" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 d="M376.7.1 255.8 121 135 .1h-52.9v343.4h53V219.1h94.3v291.3h52.8V219.1h94.3v124.5h53V.1h-52.8zM135.4 167.4v-94l94 94h-94zm240.9 0h-94l94-94v94z"
               />
@@ -64,9 +64,9 @@
         </section>
         <!-- + ----------------<< SECTION-2: .hot-items >>--------------------->
         <section data-wf="section" class="hot-items" id="hot-items">
-          <h2 class="hot-items__title">Hot Items</h2>
           <!-- * -------------------------------------------------------------->
           <div class="hot-items__container flex">
+            <h2 class="hot-items__title">Hot Items</h2>
             <!-- - ------------------------------------------------------------>
             <!-- prettier-ignore -->
             <article data-wf="article" class="hot-item">
@@ -140,25 +140,25 @@
         </section>
         <!-- + ----------------<< SECTION-3: .about >>------------------------->
         <section data-wf="section" class="about" id="about">
-          <h2 class="about__title">About</h2>
           <!-- * -------------------------------------------------------------->
           <div class="about__container flex">
+            <h2 class="about__title">About</h2>
             <!-- - ------------------------------------------------------------>
-            <div class="about-visual__container block">
+            <div class="about__container--visual block">
               <img
                 src="/assets/media/images/marcel-teugels/favorites/furniture--03-upscaled.jpg"
                 alt="..."
-                class="about-visual__image"
+                class="about__image"
               />
             </div>
             <!-- - ------------------------------------------------------------>
             <!-- prettier-ignore -->
-            <article data-wf="article" class="about-text__container block">
-              <h3 class="about-text__title">Marcel Teugels</h3>
-              <h4 class="about-text__sub-title">
+            <article data-wf="article" class="about__container--text block">
+              <h3 class="about__title--text">Marcel Teugels</h3>
+              <h4 class="about__sub-title">
                 Apprentice blacksmith, conservator and restorer of wood & metal
               </h4>
-              <p class="about-text__paragraph">
+              <p class="about__paragraph">
                 Sit Lorem id mollit mollit sunt exercitation esse consectetur
                 minim laborum in. Adipisicing irure do quis aute voluptate amet
                 officia voluptate magna minim esse Lorem officia. Velit et Lorem
@@ -189,25 +189,27 @@
     <!-- + --------------------<< FOOTER: .footer >>--------------------------->
     <footer data-wf="main-footer" class="main-footer">
       <!-- * ------------------------------------------------------------------>
-      <div class="main-footer__container-main flex">
+      <div class="main-footer__container flex">
         <!-- - ---------------------------------------------------------------->
-        <nav class="main-footer__container-nav flex">
+        <nav class="main-footer__container--nav flex">
           <!-- # -------------------------------------------------------------->
-          <div class="main-footer__container-nav--text block">
-            <!----------------------------------------------------------------->
-            <h3 class="foot-nav-text__title">About</h3>
-            <p class="foot-nav-text__paragraph">
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
-            </p>
-          </div>
+          <article class="foot-nav-text flex">
+            <div class="foot-nav-text__container block">
+              <!----------------------------------------------------------------->
+              <h3 class="foot-nav-text__title">About</h3>
+              <p class="foot-nav-text__paragraph">
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                est. Mauris placerat eleifend leo.
+              </p>
+            </div>
+          </article>
           <!-- # -------------------------------------------------------------->
-          <div class="main-footer__container-nav--links flex">
+          <div class="foot-nav-links flex">
             <!----------------------------------------------------------------->
-            <div class="foot-nav-links-webshop__container block">
+            <div class="foot-nav-links__container block">
               <h3 class="foot-nav-links-webshop__title">Webshop</h3>
               <ul class="foot-nav-links-webshop__list">
                 <li class="foot-nav-links-webshop__item">
@@ -226,7 +228,7 @@
               </ul>
             </div>
             <!----------------------------------------------------------------->
-            <div class="foot-nav-links-webshop__container block">
+            <div class="foot-nav-links__container block">
               <h3 class="foot-nav-links-webshop__title">Contact Info</h3>
               <ul class="foot-nav-links-webshop__list">
                 <li class="foot-nav-links-webshop__item">
@@ -248,7 +250,7 @@
               </ul>
             </div>
             <!----------------------------------------------------------------->
-            <div class="foot-nav-links-restoration__container block">
+            <div class="foot-nav-links__container block">
               <h3 class="foot-nav-links-restoration__title">Restoration</h3>
               <ul class="foot-nav-links-restoration__list">
                 <li class="foot-nav-links-restoration__item">
@@ -273,15 +275,15 @@
         <!-- - ---------------------------------------------------------------->
         <hr />
         <!-- - ---------------------------------------------------------------->
-        <div class="main-footer__container-contact flex">
+        <div class="main-footer__container--contact flex">
           <!------------------------------------------------------------------->
-          <div class="main-footer__container-contact--copyright block">
+          <div class="main-footer__container--contact-copyright block">
             <p class="foot-copyright__text">
               Copyright &copy; 2021 All Rights Reserved
             </p>
           </div>
           <!------------------------------------------------------------------->
-          <div class="main-footer__container-contact--social-media flex">
+          <div class="main-footer__container--contact-social-media flex">
             <a class="foot-social-media__link" href="#">
               <i class="fab fa-facebook"></i>
             </a>
