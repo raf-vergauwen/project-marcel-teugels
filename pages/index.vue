@@ -26,6 +26,7 @@
 </template>
 
 <script>
+/*
 import Logo from '~/components/Logo';
 
 export default {
@@ -33,6 +34,7 @@ export default {
     Logo,
   },
 };
+*/
 </script>
 
 <style lang="scss">

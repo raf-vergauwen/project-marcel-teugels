@@ -15,6 +15,7 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
+    <button @click="clickCounter">Buy</button>
   </article>
 </template>
 
@@ -30,7 +31,16 @@ export default {
   data() {
     return {
       src: 'http://157.230.126.154/assets/',
+      clickCount: 0,
+      productArray: [],
     };
+  },
+  methods: {
+    clickCounter() {
+      this.clickCount++;
+      this.productArray.push(this.product);
+      console.log(this.productArray);
+    },
   },
 };
 </script>
