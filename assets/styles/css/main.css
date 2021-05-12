@@ -277,6 +277,24 @@ h3 + p::first-letter {
   font-size: 1.5625rem;
 }
 
+h4 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
+}
+
+h5 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
+}
+
+h6 + p::first-letter {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5625rem;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Block Text Content
 \* -------------------------------------------------------------------------- */
@@ -366,6 +384,22 @@ img {
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
+}
+
 .menu-left a {
   position: relative;
   display: inline-block;
@@ -411,22 +445,6 @@ img {
   background: transparent;
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
-}
-
-header {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.92);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  will-change: transform;
 }
 
 header nav .nav-logo {
@@ -632,7 +650,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
-.inner-block {
+.wrapped-block {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -640,7 +658,7 @@ ul.menu-left.collapse {
   padding: 0;
 }
 
-.outer-block {
+.padded-block {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -651,7 +669,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _flex-container.scss: This partial file contains all 'flex-container' styles.
 \* -------------------------------------------------------------------------- */
-.inner-flex {
+.wrapped-flex {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -666,13 +684,12 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.outer-flex {
+.padded-flex {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -695,7 +712,7 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _grid-container.scss: This partial file contains all 'grid-container' styles.
 \* -------------------------------------------------------------------------- */
-.inner-grid {
+.wrapped-grid {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -704,7 +721,7 @@ ul.menu-left.collapse {
   padding: 0;
 }
 
-.outer-grid {
+.padded-grid {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -869,6 +886,9 @@ input:checked + .slider::before {
 }
 
 .hero__visual {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   max-height: 35vh;
   background-color: lightsalmon;
 }
@@ -894,8 +914,8 @@ input:checked + .slider::before {
 }
 
 .hot-items .hot-item {
+  padding: 0.5rem;
   background-color: plum;
-  margin-top: 1rem;
 }
 
 .hot-items .hot-item__title {

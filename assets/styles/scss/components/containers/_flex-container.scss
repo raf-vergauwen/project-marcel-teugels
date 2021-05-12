@@ -4,12 +4,12 @@
 
 // -  <<----------<< General >>---------->>
 
-.inner-flex {
-  @include container(inner-flex);
+.wrapped-flex {
+  @include container(wrapped-flex);
 }
 
-.outer-flex {
-  @include container(outer-flex);
+.padded-flex {
+  @include container(padded-flex);
 }
 
 // -  <<----------<< Specific >>---------->>

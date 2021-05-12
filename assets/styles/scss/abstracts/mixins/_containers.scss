@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 @mixin container(
-  $container-type: inner-block,
+  $container-type: wrapped-block,
   $wrap-type: nowrap,
   $direction: column,
   $justify: center,
@@ -17,55 +17,54 @@
   height: 100%;
   margin: 0 auto;
 
-  // #  Inner-Block Container
-  @if $container-type == inner-block {
+  // #  wrapped-Block Container
+  @if $container-type == wrapped-block {
     display: block;
     padding: 0;
   }
 
-  // #  Inner-Flex Container
-  @if $container-type == inner-flex {
+  // #  wrapped-Flex Container
+  @if $container-type == wrapped-flex {
     display: flex;
     padding: 0;
   }
 
-  // #  Inner-Grid Container
-  @if $container-type == inner-grid {
+  // #  wrapped-Grid Container
+  @if $container-type == wrapped-grid {
     display: grid;
     padding: 0;
   }
 
-  // #  Outer-Block Container
-  @if $container-type == outer-block {
+  // #  padded-Block Container
+  @if $container-type == padded-block {
     display: block;
     padding: $whitespace--xs;
   }
 
-  // #  Outer-Flex Container
-  @if $container-type == outer-flex {
+  // #  padded-Flex Container
+  @if $container-type == padded-flex {
     display: flex;
     padding: $whitespace--xs;
   }
 
-  // #  Outer-Grid Container
-  @if $container-type == outer-grid {
+  // #  padded-Grid Container
+  @if $container-type == padded-grid {
     display: grid;
     padding: $whitespace--xs;
   }
 
   // -  <---------------------------------------------------------------------->
 
-  // #  Inner-Flex Container
-  @if $container-type == inner-flex {
+  // #  wrapped-Flex Container
+  @if $container-type == wrapped-flex {
     justify-content: $justify;
 
-    // #  Inner-Flex Container Nowrap
+    // #  wrapped-Flex Container Nowrap
     @if $wrap-type == nowrap {
       flex-direction: $direction;
-      flex-direction: column;
       align-items: $align;
     }
-    // #  Inner-Flex Container Wrap
+    // #  wrapped-Flex Container Wrap
     @else if $wrap-type == wrap {
       flex-direction: $direction;
       align-content: $align;
@@ -77,16 +76,16 @@
     //...
   }
 
-  // #  Outer-Flex Container
-  @if $container-type == outer-flex {
+  // #  padded-Flex Container
+  @if $container-type == padded-flex {
     justify-content: $justify;
 
-    // #  Outer-Flex Container Nowrap
+    // #  padded-Flex Container Nowrap
     @if $wrap-type == nowrap {
       flex-direction: $direction;
       align-items: $align;
     }
-    // #  Outer-Flex Container Wrap
+    // #  padded-Flex Container Wrap
     @else if $wrap-type == wrap {
       flex-direction: $direction;
       align-content: $align;

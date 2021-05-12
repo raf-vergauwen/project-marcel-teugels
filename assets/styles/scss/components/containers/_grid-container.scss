@@ -4,12 +4,12 @@
 
 // -  <<----------<< General >>---------->>
 
-.inner-grid {
-  @include container(inner-grid);
+.wrapped-grid {
+  @include container(wrapped-grid);
 }
 
-.outer-grid {
-  @include container(outer-grid);
+.padded-grid {
+  @include container(padded-grid);
 }
 
 // -  <<----------<< Specific >>---------->>
