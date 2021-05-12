@@ -15,7 +15,7 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
-    <button @click="clickCounter">Buy</button>
+    <button @click="addToShoppingCart">Buy</button>
   </article>
 </template>
 
@@ -31,15 +31,30 @@ export default {
   data() {
     return {
       src: 'http://157.230.126.154/assets/',
-      clickCount: 0,
-      productArray: [],
     };
   },
   methods: {
-    clickCounter() {
-      this.clickCount++;
-      this.productArray.push(this.product);
-      console.log(this.productArray);
+    addToShoppingCart() {
+      fetch('http://157.230.126.154/items/ordered_items', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not add product to shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
     },
   },
 };
