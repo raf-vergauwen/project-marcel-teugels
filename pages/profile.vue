@@ -1,19 +1,32 @@
 <template>
-  <div class="container">
-    <h1>Profile</h1>
-    <label
-      >First name:
-      <input type="text" name="first-name" placeholder="" v-model="firstName" />
-    </label>
-    <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
-    <p v-if="userInfo">{{ userInfo.email }}</p>
-    <p v-if="userInfo">{{ userInfo.orders[0].ordered_items[0].products[0] }}</p>
-  </div>
+  <main>
+    <restauration-header />
+    <div class="container">
+      <h1>Profile</h1>
+      <label
+        >First name:
+        <input
+          v-model="firstName"
+          type="text"
+          name="first-name"
+          placeholder=""
+        />
+      </label>
+      <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
+      <p v-if="userInfo">{{ userInfo.email }}</p>
+      <p v-if="userInfo">
+        {{ userInfo.orders[0].ordered_items[0].products[0] }}
+      </p>
+    </div>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
   name: 'ProfilePage',
+  components: { RestaurationHeader },
   data() {
     return {
       userInfo: null,

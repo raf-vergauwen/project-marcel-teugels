@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 .c-product-item {
-  background-color: $bg-blue;
+  background-color: $dark-blue;
   padding: $s-site-padding;
 }
 </style>

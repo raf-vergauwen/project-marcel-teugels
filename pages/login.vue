@@ -1,22 +1,29 @@
 <template>
-  <div class="container">
-    <h1>Login</h1>
-    <form @submit.prevent="login">
-      <label
-        >E-mail:
-        <input type="text" name="email" v-model="email" />
-      </label>
-      <label
-        >Password:
-        <input type="password" name="password" v-model="password" />
-      </label>
-      <button type="submit">Log in</button>
-    </form>
-  </div>
+  <main>
+    <restauration-header />
+    <div class="container">
+      <h1>Login</h1>
+      <form @submit.prevent="login">
+        <label
+          >E-mail:
+          <input v-model="email" type="text" name="email" />
+        </label>
+        <label
+          >Password:
+          <input v-model="password" type="password" name="password" />
+        </label>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
+  components: { RestaurationHeader },
+
   data() {
     return {
       email: '',
