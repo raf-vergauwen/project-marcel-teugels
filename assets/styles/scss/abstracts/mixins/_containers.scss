@@ -60,9 +60,20 @@
 
 // -  <<----------<< Block-Box>>---------->>
 
-@mixin dimensions($width: 100%, $height: auto) {
+@mixin dimensions($type: none, $width: 100%, $height: auto) {
   width: $width;
   height: $height;
+
+  // #  Regular Fontawesome Icons
+  @if $type == fas {
+    margin: 0 ($width / 2) 0 0;
+    font-size: $width;
+  }
+  // #  Brand Fontawesome Icons
+  @else if $type == fab {
+    margin: 0 ($width / 2) 0 0;
+    font-size: $width;
+  }
 }
 
 // -  <<----------<< Flex-Box >>---------->>

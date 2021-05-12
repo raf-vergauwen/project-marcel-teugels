@@ -20,15 +20,11 @@ svg {
 // -  <<----------<< Specific >>---------->>
 
 .fas {
-  @include dimensions($font-size--2);
-
-  font-size: $font-size--1;
+  @include dimensions(fas, $font-size--text);
 }
 
 .fab {
-  @include dimensions($font-size--5);
-
-  font-size: $font-size--5;
+  @include dimensions(fab, $font-size--5);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -38,8 +34,8 @@ svg {
 // -  <<----------<< General >>---------->>
 
 img {
-  width: 100%;
-  height: auto;
+  @include dimensions;
+
   object-fit: cover;
   object-position: center center;
 }

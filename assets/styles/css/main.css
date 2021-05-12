@@ -333,6 +333,7 @@ li {
 \* -------------------------------------------------------------------------- */
 a {
   color: var(--primary-color);
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
 }
@@ -363,14 +364,16 @@ svg {
 }
 
 .fas {
-  width: 1.25rem;
+  width: 1rem;
   height: auto;
+  margin: 0 0.5rem 0 0;
   font-size: 1rem;
 }
 
 .fab {
   width: 2.44141rem;
   height: auto;
+  margin: 0 1.2207rem 0 0;
   font-size: 2.44141rem;
 }
 

@@ -131,6 +131,7 @@ li {
 
 a {
   color: var(--primary-color);
+  font-size: $font-size--text;
   text-align: center;
   text-decoration: none;
 
@@ -140,7 +141,7 @@ a {
 }
 
 a > i {
-  margin: 0 0.5rem 0 0;
+  margin: 0 $whitespace--xs 0 0;
 }
 
 // a i:hover {
