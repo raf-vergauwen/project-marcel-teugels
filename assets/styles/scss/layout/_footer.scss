@@ -10,4 +10,90 @@ footer {
 
 // -  <<----------<< Specific >>---------->>
 
-// ...
+/* -------------------------------------------------------------------------- *\
+-  FOOTER-MAIN: Footer
+\* -------------------------------------------------------------------------- */
+
+.main-footer {
+  // ...
+
+  &__container {
+    background-color: purple;
+    // ...
+  }
+
+  &__container--nav {
+    background-color: midnightblue;
+    // ...
+
+    .foot-nav-text {
+      // ...
+      &__container {
+        background-color: Blue;
+        // ...
+      }
+
+      &__title {
+        background-color: Aqua;
+        // ...
+      }
+
+      &__paragraph {
+        background-color: PaleTurquoise;
+        // ...
+      }
+    }
+
+    .foot-nav-links {
+      // ...
+      &__container {
+        background-color: RoyalBlue;
+        // ...
+      }
+
+      &__title {
+        background-color: Aquamarine;
+        // ...
+      }
+
+      &__list {
+        background-color: Turquoise;
+        // ...
+      }
+      &__link {
+        background-color: LightSkyBlue;
+        // ...
+      }
+    }
+  }
+
+  &__container--contact {
+    background-color: darkgreen;
+    // ...
+    .foot-copyright {
+      // ...
+      &__container {
+        background-color: DarkOliveGreen;
+        // ...
+      }
+
+      &__link {
+        background-color: LightGreen;
+        // ...
+      }
+    }
+
+    .foot-social-media {
+      // ...
+      &__container {
+        background-color: SeaGreen;
+        // ...
+      }
+
+      &__link {
+        background-color: Lime;
+        // ...
+      }
+    }
+  }
+}

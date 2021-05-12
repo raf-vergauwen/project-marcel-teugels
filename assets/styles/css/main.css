@@ -563,6 +563,65 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 *  _footer.scss: This partial file contains all 'footer' styles.
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  FOOTER-MAIN: Footer
+\* -------------------------------------------------------------------------- */
+.main-footer__container {
+  background-color: purple;
+}
+
+.main-footer__container--nav {
+  background-color: midnightblue;
+}
+
+.main-footer__container--nav .foot-nav-text__container {
+  background-color: Blue;
+}
+
+.main-footer__container--nav .foot-nav-text__title {
+  background-color: Aqua;
+}
+
+.main-footer__container--nav .foot-nav-text__paragraph {
+  background-color: PaleTurquoise;
+}
+
+.main-footer__container--nav .foot-nav-links__container {
+  background-color: RoyalBlue;
+}
+
+.main-footer__container--nav .foot-nav-links__title {
+  background-color: Aquamarine;
+}
+
+.main-footer__container--nav .foot-nav-links__list {
+  background-color: Turquoise;
+}
+
+.main-footer__container--nav .foot-nav-links__link {
+  background-color: LightSkyBlue;
+}
+
+.main-footer__container--contact {
+  background-color: darkgreen;
+}
+
+.main-footer__container--contact .foot-copyright__container {
+  background-color: DarkOliveGreen;
+}
+
+.main-footer__container--contact .foot-copyright__link {
+  background-color: LightGreen;
+}
+
+.main-footer__container--contact .foot-social-media__container {
+  background-color: SeaGreen;
+}
+
+.main-footer__container--contact .foot-social-media__link {
+  background-color: Lime;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
@@ -717,9 +776,37 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  HEADER: main-header
 \* -------------------------------------------------------------------------- */
+.main-header__container {
+  background-color: Gainsboro;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  NAV: main-nav
 \* -------------------------------------------------------------------------- */
+.main-nav__container {
+  background-color: LightPink;
+}
+
+.main-nav__nav-logo {
+  background-color: HotPink;
+}
+
+.main-nav__mobile-menu {
+  background-color: DeepPink;
+}
+
+.main-nav__mobile-menu-slice {
+  background-color: PaleVioletRed;
+}
+
+.main-nav__list {
+  background-color: MediumVioletRed;
+}
+
+.main-nav__item {
+  background-color: Lavender;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  SECTION 1: hero
 \* -------------------------------------------------------------------------- */
@@ -741,75 +828,122 @@ input:checked + .slider::before {
 
 .hero__visual {
   max-height: 35vh;
+  background-color: LightSalmon;
+}
+
+.hero__subject {
+  background-color: IndianRed;
 }
 
 .hero__title {
   color: var(--tertiary-color);
+  background-color: Salmon;
 }
 
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
+.hot-items__container {
+  background-color: Lavender;
+}
+
+.hot-items__title {
+  background-color: Thistle;
+}
+
+.hot-items .hot-item {
+  background-color: Plum;
+}
+
+.hot-items .hot-item__title {
+  background-color: Orchid;
+}
+
+.hot-items .hot-item__container {
+  background-color: Violet;
+}
+
+.hot-items .hot-item__title {
+  background-color: Fuchsia;
+}
+
+.hot-items .hot-item__visual {
+  background-color: Magenta;
+}
+
+.hot-items .hot-item__caption {
+  background-color: MediumOrchid;
+}
+
+.hot-items .hot-item__caption-title {
+  background-color: DarkOrchid;
+}
+
+.hot-items .hot-item__caption-text {
+  background-color: DarkViolet;
+}
+
+.hot-items .hot-item__caption-btn {
+  background-color: BlueViolet;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  SECTION 3: About
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  FOOTER-MAIN: Footer
-\* -------------------------------------------------------------------------- */
-.main-footer__container {
-  background-color: purple;
+.about__container {
+  background-color: Cornsilk;
 }
 
-.main-footer__container--nav {
-  background-color: midnightblue;
+.about__title {
+  background-color: SaddleBrown;
 }
 
-.main-footer__container--nav .foot-nav-text__container {
-  background-color: Blue;
+.about__container--visual {
+  background-color: Bisque;
 }
 
-.main-footer__container--nav .foot-nav-text__title {
-  background-color: Aqua;
+.about__image {
+  background-color: NavajoWhite;
 }
 
-.main-footer__container--nav .foot-nav-text__paragraph {
-  background-color: PaleTurquoise;
+.about__container--text {
+  background-color: Sienna;
 }
 
-.main-footer__container--nav .foot-nav-links__container {
-  background-color: RoyalBlue;
+.about__title--text {
+  background-color: BurlyWood;
 }
 
-.main-footer__container--nav .foot-nav-links__title {
-  background-color: Aquamarine;
+.about__sub-title {
+  background-color: Brown;
 }
 
-.main-footer__container--nav .foot-nav-links__list {
-  background-color: Turquoise;
+.about__paragraph {
+  background-color: RosyBrown;
 }
 
-.main-footer__container--nav .foot-nav-links__link {
-  background-color: LightSkyBlue;
+.about-visual__container {
+  background-color: SandyBrown;
 }
 
-.main-footer__container--contact {
-  background-color: darkgreen;
+.about-visual__image {
+  background-color: GoldenRod;
 }
 
-.main-footer__container--contact .foot-copyright__container {
-  background-color: DarkOliveGreen;
+.about-text__container {
+  background-color: DarkGoldenRod;
 }
 
-.main-footer__container--contact .foot-copyright__link {
-  background-color: LightGreen;
+.about-text__title {
+  background-color: Peru;
 }
 
-.main-footer__container--contact .foot-social-media__container {
-  background-color: SeaGreen;
+.about-text__sub-title {
+  background-color: Chocolate;
 }
 
-.main-footer__container--contact .foot-social-media__link {
-  background-color: Lime;
+.about-text__paragraph {
+  background-color: Olive;
 }
 
 /* -------------------------------------------------------------------------- *\

@@ -7,10 +7,8 @@
 \* -------------------------------------------------------------------------- */
 
 .main-header {
-  // ...
-
   &__container {
-    // ...
+    background-color: Gainsboro;
   }
 }
 
@@ -19,30 +17,28 @@
 \* -------------------------------------------------------------------------- */
 
 .main-nav {
-  // ...
-
   &__container {
-    // ...
+    background-color: LightPink;
   }
 
   &__nav-logo {
-    // ...
+    background-color: HotPink;
   }
 
   &__mobile-menu {
-    //...
+    background-color: DeepPink;
   }
 
   &__mobile-menu-slice {
-    //...
+    background-color: PaleVioletRed;
   }
 
   &__list {
-    //...
+    background-color: MediumVioletRed;
   }
 
   &__item {
-    //...
+    background-color: Lavender;
   }
 }
 
@@ -72,16 +68,16 @@
 
   &__visual {
     max-height: 35vh;
-    // ...
+    background-color: LightSalmon;
   }
 
   &__subject {
-    // ...
+    background-color: IndianRed;
   }
 
   &__title {
     color: var(--tertiary-color);
-    // ...
+    background-color: Salmon;
   }
 }
 
@@ -90,49 +86,47 @@
 \* -------------------------------------------------------------------------- */
 
 .hot-items {
-  // ...
-
   &__container {
-    // ...
+    background-color: Lavender;
   }
 
   &__title {
-    // ...
+    background-color: Thistle;
   }
 
   .hot-item {
-    // ...
+    background-color: Plum;
 
     &__title {
-      // ...
+      background-color: Orchid;
     }
 
     &__container {
-      // ...
+      background-color: Violet;
     }
 
     &__title {
-      // ...
+      background-color: Fuchsia;
     }
 
     &__visual {
-      // ...
+      background-color: Magenta;
     }
 
     &__caption {
-      // ...
+      background-color: MediumOrchid;
     }
 
     &__caption-title {
-      // ...
+      background-color: DarkOrchid;
     }
 
     &__caption-text {
-      // ...
+      background-color: DarkViolet;
     }
 
     &__caption-btn {
-      // ...
+      background-color: BlueViolet;
     }
   }
 }
@@ -142,202 +136,63 @@
 \* -------------------------------------------------------------------------- */
 
 .about {
-  // ...
-
   &__container {
-    // ...
+    background-color: Cornsilk;
   }
 
   &__title {
-    // ...
+    background-color: SaddleBrown;
   }
 
   &__container--visual {
-    // ...
+    background-color: Bisque;
   }
 
   &__image {
-    // ...
+    background-color: NavajoWhite;
   }
 
   &__container--text {
-    // ...
+    background-color: Sienna;
   }
 
   &__title--text {
-    // ...
+    background-color: BurlyWood;
   }
 
   &__sub-title {
-    // ...
+    background-color: Brown;
   }
 
   &__paragraph {
-    // ...
+    background-color: RosyBrown;
   }
 }
 
 .about-visual {
-  // ...
-
   &__container {
-    // ...
+    background-color: SandyBrown;
   }
 
   &__image {
-    // ...
+    background-color: GoldenRod;
   }
 }
 
 .about-text {
-  // ...
-
   &__container {
-    // ...
+    background-color: DarkGoldenRod;
   }
 
   &__title {
-    // ...
+    background-color: Peru;
   }
 
   &__sub-title {
-    // ...
+    background-color: Chocolate;
   }
 
   &__paragraph {
-    // ...
+    background-color: Olive;
   }
 }
-
-/* -------------------------------------------------------------------------- *\
--  FOOTER-MAIN: Footer
-\* -------------------------------------------------------------------------- */
-
-// .main-footer {
-//   // ...
-
-//   &__container {
-//     background-color: purple;
-//     // ...
-//   }
-
-//   &__container--nav {
-//     background-color: midnightblue;
-//     // ...
-//   }
-
-//   &__container--nav-text {
-//     background-color: mediumblue;
-//     // ...
-//   }
-
-//   &__container--nav-links {
-//     background-color: blue;
-//     // ...
-//   }
-
-//   &__container--contact {
-//     background-color: darkgreen;
-//     // ...
-//   }
-
-//   &__container--contact-copyright {
-//     background-color: teal;
-//     // ...
-//   }
-
-//   &__container--contact-social-media {
-//     background-color: darkolivegreen;
-//     // ...
-//   }
-// }
-
-.main-footer {
-  // ...
-
-  &__container {
-    background-color: purple;
-    // ...
-  }
-
-  &__container--nav {
-    background-color: midnightblue;
-    // ...
-
-    .foot-nav-text {
-      // ...
-      &__container {
-        background-color: Blue;
-        // ...
-      }
-
-      &__title {
-        background-color: Aqua;
-        // ...
-      }
-
-      &__paragraph {
-        background-color: PaleTurquoise;
-        // ...
-      }
-    }
-
-    .foot-nav-links {
-      // ...
-      &__container {
-        background-color: RoyalBlue;
-        // ...
-      }
-
-      &__title {
-        background-color: Aquamarine;
-        // ...
-      }
-
-      &__list {
-        background-color: Turquoise;
-        // ...
-      }
-      &__link {
-        background-color: LightSkyBlue;
-        // ...
-      }
-    }
-  }
-
-  &__container--contact {
-    background-color: darkgreen;
-    // ...
-    .foot-copyright {
-      // ...
-      &__container {
-        background-color: DarkOliveGreen;
-        // ...
-      }
-
-      &__link {
-        background-color: LightGreen;
-        // ...
-      }
-    }
-
-    .foot-social-media {
-      // ...
-      &__container {
-        background-color: SeaGreen;
-        // ...
-      }
-
-      &__link {
-        background-color: Lime;
-        // ...
-      }
-    }
-  }
-}
-
-// --------------------------------------------------------------------
-
-// --------------------------------------------------------------------
-
-// --------------------------------------------------------------------
