@@ -21,7 +21,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: $font-family--section-title;
   font-size: $font-size--section-title;
   font-variant: $font-variant--section-title;
@@ -41,7 +41,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-family: $font-family--article-title;
   font-size: $font-size--article-title;
   font-variant: $font-variant--article-title;
@@ -61,7 +61,16 @@ h3 {
 
 // #  <h4>
 h4 {
-  // ...
+  color: var(--tertiary-color);
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
   + p::first-letter {
     // This code is purely for testing purposes
     background-color: rgb(0, 0, 255);
@@ -73,7 +82,16 @@ h4 {
 // #  <h5>
 
 h5 {
-  // ...
+  color: var(--foreground-color);
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
   + p::first-letter {
     // This code is purely for testing purposes
     background-color: rgb(0, 0, 255);
@@ -85,7 +103,16 @@ h5 {
 // #  <h6>
 
 h6 {
-  // ...
+  color: var(--foreground-color);
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
   + p::first-letter {
     // This code is purely for testing purposes
     background-color: rgb(0, 0, 255);

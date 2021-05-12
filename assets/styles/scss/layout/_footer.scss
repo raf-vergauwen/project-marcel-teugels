@@ -70,6 +70,7 @@ footer {
   }
 
   &__container--contact {
+    flex-direction: column;
     background-color: darkgreen;
 
     .foot-copyright {
