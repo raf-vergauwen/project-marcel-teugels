@@ -1100,9 +1100,9 @@ input:checked + .slider::before {
 }
 
 /* -------------------------------------------------------------------------- *\
-*  _dark.scss: This partial file contains the 'dark' theme.
+*  _raf.scss: This partial file contains the 'raf' theme.
 \* -------------------------------------------------------------------------- */
-[data-theme='dark'] {
+[data-theme='raf'] {
   --foreground-color: hsl(240, 100%, 99%);
   --background-color: hsl(0, 3%, 10%);
   --primary-color: hsl(27, 48%, 86%);

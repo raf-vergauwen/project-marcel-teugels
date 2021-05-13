@@ -4,9 +4,9 @@
 
 :root,
 [data-theme='light'] {
-  --foreground-color: hsl(0, 3%, 10%);
-  --background-color: hsl(240, 100%, 99%);
-  --primary-color: hsl(207, 48%, 14%);
-  --secondary-color: hsl(214, 42%, 64%);
-  --tertiary-color: hsl(23, 42%, 64%);
+  --foreground-color: hsla(240, 100%, 10%, 1); // #003 - deep-dark-blue
+  --background-color: hsla(240, 100%, 99%, 1); // #f8f8ff off-white
+  --primary-color: hsla(207, 95%, 16%, 1); // #022E51 - dark-mid-blue
+  --secondary-color: hsla(215, 44%, 49%, 1); // #4676B9 - light-mid-blue
+  --tertiary-color: hsla(35, 45%, 50%, 1); // #b78846 - mid-goldbrown
 }
