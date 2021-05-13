@@ -55,7 +55,10 @@ export default {
     },
     addProduct(product) {
       this.shoppingCart.push(product);
-      sessionStorage.setItem('shopping_cart', JSON.stringify(product));
+      sessionStorage.setItem(
+        'shopping_cart',
+        JSON.stringify(this.shoppingCart),
+      );
       console.log(this.shoppingCart);
     },
   },
