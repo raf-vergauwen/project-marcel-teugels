@@ -23,11 +23,15 @@ body {
   // min-width: 100px;
   max-width: $dimension--xl;
   margin: 0 auto;
-  background-color: darken(#2c3e50, 4%);
+  background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: $font-family--text;
   font-weight: $font-weight--text;
   line-height: normal;
+
+  @include breakpoint(xs) {
+    background-color: black;
+  }
 }
 
 // # <div>

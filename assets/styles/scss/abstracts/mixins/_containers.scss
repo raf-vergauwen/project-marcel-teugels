@@ -107,6 +107,7 @@
 @mixin dimensions($type: none, $width: 100%, $height: auto) {
   width: $width;
   height: $height;
+  margin: 0 auto;
 
   // #  Regular Fontawesome Icons
   @if $type == fas {
@@ -123,7 +124,12 @@
 // -  <<----------<< Flex-Box >>---------->>
 
 // #  Block-Flex-Container
-@mixin block-flex-container($direction, $justify, $align, $wrap-type) {
+@mixin block-flex-container(
+  $wrap-type: nowrap,
+  $direction: column,
+  $justify: center,
+  $align: center
+) {
   display: flex;
   flex-direction: $direction;
   flex-wrap: $wrap-type;

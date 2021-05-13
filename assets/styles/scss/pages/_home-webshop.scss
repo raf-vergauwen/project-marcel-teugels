@@ -91,9 +91,12 @@
 
 .hot-items {
   &__container {
+    @include dimensions;
+    @include block-flex-container;
   }
 
   &__title {
+    // ...
   }
 }
 
@@ -101,16 +104,24 @@
   padding: $whitespace--s;
   // ...
   &__container {
+    @include dimensions;
+    @include block-flex-container;
+
     position: relative;
     display: flex;
-    width: 375px;
+    max-width: 375px;
     height: 667px;
     align-items: center;
     justify-content: center;
     background-color: lavender;
 
+    // @include dimensions;
+    // @include block-flex-container;
+
     &:hover {
+      // ...
       .hot-item {
+        // ...
         &__visual {
           background-color: orchid;
           transform: scale(1.25);
@@ -120,14 +131,21 @@
           bottom: 0;
           background-color: rgba(black, 0.85);
         }
+
+        &__title {
+          position: absolute;
+          z-index: 0;
+          top: -30%;
+        }
       }
     }
   }
 
   &__title {
     position: absolute;
-    top: 50px;
-    left: 20px;
+    z-index: 1;
+    top: $whitespace--m;
+    left: $whitespace--m;
     padding: 0;
     margin: 0;
     background-color: thistle;
@@ -135,17 +153,20 @@
     font-size: 60px;
     font-weight: 100;
     line-height: 1;
+    transition: 0.25s;
+    transition-timing-function: ease;
   }
 
   &__visual {
     height: 100%;
     background-color: blueviolet;
     transition: 0.25s;
+    transition-timing-function: ease;
   }
 
   &__caption {
     position: absolute;
-    bottom: -33%;
+    bottom: -30%;
     left: 0;
     width: 100%;
     padding: 30px;

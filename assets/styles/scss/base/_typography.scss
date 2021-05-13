@@ -41,6 +41,7 @@ h2 {
 
 // #  <h3>
 h3 {
+  display: block;
   padding: $whitespace--xs 0;
   color: var(--secondary-color);
   font-family: $font-family--article-title;
