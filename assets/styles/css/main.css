@@ -237,7 +237,7 @@ body {
 -  Nav
 \* -------------------------------------------------------------------------- */
 header nav {
-  min-width: 320px;
+  min-width: calc(320px - 1.5rem);
   max-width: 1920px;
 }
 
@@ -815,7 +815,6 @@ ul.menu-left.collapse {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
-  margin: 0.5rem 0;
   /* Prevent background color leak outs */
   background-clip: padding-box;
   background-color: maroon;
@@ -951,7 +950,6 @@ input:checked + .slider::before {
   position: relative;
   height: 100vh;
   background-attachment: fixed;
-  background-color: red;
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
   background-size: cover;
@@ -973,17 +971,23 @@ input:checked + .slider::before {
   max-width: -moz-fit-content;
   max-width: fit-content;
   max-height: 40vh;
+  margin: 1.5rem 0;
   fill: var(--primary-color);
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
 }
 
 .hero__subject {
-  background-color: indianred;
+  color: var(--primary-color);
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
 }
 
 .hero__title {
-  background-color: salmon;
-  color: var(--tertiary-color);
-  color: var(--background-color);
+  color: var(--tertiary);
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
+  font-size: 1.5625rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1035,12 +1039,23 @@ input:checked + .slider::before {
 }
 
 /* -------------------------------------------------------------------------- *\
--  SECTION 3: About
+-  Intermezzo
 \* -------------------------------------------------------------------------- */
-.about__container {
-  background: radial-gradient(#003, #000);
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
+.intermezzo__container {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 3: About
+\* -------------------------------------------------------------------------- */
 .about__title {
   background-color: saddlebrown;
 }

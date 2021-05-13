@@ -161,6 +161,24 @@ $letter-spacing--text: normal;
 
 // -  <<----------<< Color >>---------->>
 
+// -  <<----------<< linear-Gradient>>---------->>
+
+// #  linear-Gradient
+$linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
+$linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
+$linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
+
+$linear-gradient--combo: linear-gradient(
+  -45deg,
+  $linear-gradient--primary,
+  $linear-gradient--secondary,
+  $linear-gradient--tertiary
+);
+
+// -  <<----------<< Radial-Gradient>>---------->>
+
+$radial-gradient--foreground: radial-gradient(#003, #000);
+
 // -  <<----------<< Background-Color >>---------->>
 
 $background-color--photo-text: hsla(0, 0, 0, 0.4);
@@ -182,8 +200,3 @@ $support-bg: linear-gradient(
     rgba(black, 0.1) 800px
   ),
   url('../img/support-bg.jpg') center center / cover;
-
-// #  linear-Gradient
-$linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
-$linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
-$linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);

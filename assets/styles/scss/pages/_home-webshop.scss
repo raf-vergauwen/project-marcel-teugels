@@ -50,7 +50,6 @@
   position: relative;
   height: 100vh;
   background-attachment: fixed;
-  background-color: red;
   background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
   background-position: center center;
   background-size: cover;
@@ -58,11 +57,7 @@
   &__container {
     justify-content: center;
     animation: linear-gradient 15s ease infinite;
-    background:
-      linear-gradient(-45deg,
-      $linear-gradient--primary,
-      $linear-gradient--secondary,
-      $linear-gradient--tertiary);
+    background: $linear-gradient--combo;
     background-color: $background-color--photo-text;
     background-size: 400% 400%;
   }
@@ -70,19 +65,23 @@
   &__visual {
     max-width: fit-content;
     max-height: 40vh;
+    margin: $whitespace--m 0;
     // background-color: lightsalmon;
     fill: var(--primary-color);
+    filter: brightness(0.8) contrast(1.2);
   }
 
   &__subject {
-    background-color: indianred;
-    // color: var(--background-color);
+    // background-color: indianred;
+    color: var(--primary-color);
+    filter: brightness(0.8) contrast(1.2);
   }
 
   &__title {
-    background-color: salmon;
-    color: var(--tertiary-color);
-    color: var(--background-color);
+    color: var(--tertiary);
+    filter: brightness(0.8) contrast(1.2);
+    // background-color: salmon;
+    font-size: $font-size--3;
   }
 }
 
@@ -138,13 +137,28 @@
 }
 
 /* -------------------------------------------------------------------------- *\
+-  Intermezzo
+\* -------------------------------------------------------------------------- */
+
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    background-color: $background-color--photo-text;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
 -  SECTION 3: About
 \* -------------------------------------------------------------------------- */
 
 .about {
   &__container {
     // background-color: cornsilk;
-    background: radial-gradient(#003, #000);
   }
 
   &__title {

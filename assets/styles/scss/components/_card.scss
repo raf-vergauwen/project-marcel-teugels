@@ -9,7 +9,6 @@
   @include box-transition;
 
   overflow: hidden;
-  margin: $whitespace--xs 0;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
