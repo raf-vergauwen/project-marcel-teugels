@@ -414,6 +414,13 @@ img {
      object-position: center center;
 }
 
+@media (prefers-color-scheme: dark) {
+  img img {
+    -webkit-filter: brightness(0.8) contrast(1.2);
+            filter: brightness(0.8) contrast(1.2);
+  }
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */
@@ -922,21 +929,22 @@ input:checked + .slider::before {
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
   background-size: cover;
+  background-color: red;
 }
 
 .hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: linear-gradient(45deg, rgba(19, 37, 53, 0.8), rgba(125, 158, 202, 0.8), rgba(202, 154, 125, 0.8));
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero__visual {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  max-height: 35vh;
-  background-color: lightsalmon;
+  max-height: 40vh;
+  fill: var(--background-color);
 }
 
 .hero__subject {
@@ -946,6 +954,7 @@ input:checked + .slider::before {
 .hero__title {
   background-color: salmon;
   color: var(--tertiary-color);
+  color: var(--background-color);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1077,6 +1086,17 @@ input:checked + .slider::before {
   --primary-color: hsl(207, 48%, 14%);
   --secondary-color: hsl(214, 42%, 64%);
   --tertiary-color: hsl(23, 42%, 64%);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _dark.scss: This partial file contains the 'dark' theme.
+\* -------------------------------------------------------------------------- */
+[data-theme='dark'] {
+  --foreground-color: hsl(240, 100%, 99%);
+  --background-color: hsl(0, 3%, 10%);
+  --primary-color: hsl(27, 48%, 86%);
+  --secondary-color: hsl(34, 42%, 36%);
+  --tertiary-color: hsl(203, 42%, 36%);
 }
 
 /* -------------------------------------------------------------------------- *\

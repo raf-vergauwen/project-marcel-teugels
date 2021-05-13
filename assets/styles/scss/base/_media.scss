@@ -38,6 +38,12 @@ img {
 
   object-fit: cover;
   object-position: center center;
+
+  @media (prefers-color-scheme: dark) {
+    img {
+      filter: brightness(0.8) contrast(1.2);
+    }
+  }
 }
 
 // -  <<----------<< Specific >>---------->>
