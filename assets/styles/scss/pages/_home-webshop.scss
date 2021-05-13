@@ -59,7 +59,7 @@
     justify-content: center;
     animation: linear-gradient 15s ease infinite;
     // background: $linear-gradient--combo;
-    background-color: $background-color--photo-text;
+    background-color: $background-color--transparant-white;
     // background-size: 400% 400%;
   }
 
@@ -67,21 +67,18 @@
     max-width: fit-content;
     max-height: 40vh;
     margin: $whitespace--m 0;
-    // background-color: lightsalmon;
     fill: var(--primary-color);
-    filter: $filter--light;
+    filter: drop-shadow(0 0 0.1rem var(--background-color));
   }
 
   &__subject {
-    // background-color: indianred;
     color: var(--primary-color);
-    // filter: $filter--light;
+    filter: drop-shadow(0 0 0.1rem var(--background-color));
   }
 
   &__title {
-    color: var(--secondary-color);
-    filter: $filter--light;
-    // background-color: salmon;
+    color: var(--forground-color);
+    filter: drop-shadow(0 0 0.1rem var(--background-color));
     font-family: monospace;
     font-size: $font-size--4;
     font-weight: 600;
@@ -200,7 +197,7 @@
   filter: $filter--light;
 
   &__container {
-    background-color: $background-color--photo-text;
+    background-color: $background-color--transparant-white;
   }
 }
 

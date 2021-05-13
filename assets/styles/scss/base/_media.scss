@@ -30,24 +30,32 @@ svg {
 
 .fa-facebook {
   &:hover {
+    @include box-transition;
+
     color: #1877f2;
   }
 }
 
 .fa-instagram {
   &:hover {
+    @include box-transition;
+
     color: #e4405f;
   }
 }
 
 .fa-twitter {
   &:hover {
+    @include box-transition;
+
     color: #1da1f2;
   }
 }
 
 .fa-youtube {
   &:hover {
+    @include box-transition;
+
     color: #f00;
   }
 }
@@ -64,11 +72,13 @@ img {
   object-fit: cover;
   object-position: center center;
 
-  // @media (prefers-color-scheme: dark) {
-  //   img {
-  //     filter: brightness(0.8) contrast(1.2);
-  //   }
-  // }
+  @media (prefers-color-scheme: light) {
+    filter: brightness(3.8) contrast(3.2);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
 }
 
 // -  <<----------<< Specific >>---------->>

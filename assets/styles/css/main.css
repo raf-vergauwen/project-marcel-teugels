@@ -434,18 +434,26 @@ svg {
 }
 
 .fa-facebook:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1877f2;
 }
 
 .fa-instagram:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #e4405f;
 }
 
 .fa-twitter:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1da1f2;
 }
 
 .fa-youtube:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #f00;
 }
 
@@ -459,6 +467,20 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+@media (prefers-color-scheme: light) {
+  img {
+    -webkit-filter: brightness(3.8) contrast(3.2);
+            filter: brightness(3.8) contrast(3.2);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    -webkit-filter: brightness(0.8) contrast(1.2);
+            filter: brightness(0.8) contrast(1.2);
+  }
 }
 
 /* ========================================================================== *\
@@ -714,9 +736,8 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: seagreen;
 }
 
@@ -980,18 +1001,20 @@ input:checked + .slider::before {
   max-height: 40vh;
   margin: 1.5rem 0;
   fill: var(--primary-color);
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
+  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
+          filter: drop-shadow(0 0 0.1rem var(--background-color));
 }
 
 .hero__subject {
   color: var(--primary-color);
+  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
+          filter: drop-shadow(0 0 0.1rem var(--background-color));
 }
 
 .hero__title {
-  color: var(--secondary-color);
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
+  color: var(--forground-color);
+  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
+          filter: drop-shadow(0 0 0.1rem var(--background-color));
   font-family: monospace;
   font-size: 1.95312rem;
   font-weight: 600;

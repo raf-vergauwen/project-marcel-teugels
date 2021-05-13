@@ -168,20 +168,19 @@ $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
 $linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
 $linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
 
-$linear-gradient--combo: linear-gradient(
-  -45deg,
-  $linear-gradient--primary,
-  $linear-gradient--secondary,
-  $linear-gradient--tertiary
-);
+$linear-gradient--combo: linear-gradient(-45deg,
+$linear-gradient--primary,
+$linear-gradient--secondary,
+$linear-gradient--tertiary);
 
 // -  <<----------<< Radial-Gradient>>---------->>
 
 $radial-gradient--foreground: radial-gradient(#003, #000);
 
-// -  <<----------<< Background-Color >>---------->>
+// -  <<----------<< Background-Color--Transparant >>---------->>
 
-$background-color--photo-text: hsla(0, 0%, 100%, 0.3);
+$background-color--transparant-white: hsla(0, 0%, 100%, 0.3);
+$background-color--transparant-black: hsla(0, 0%, 0%, 0.3);
 
 // -  <<----------<< Filter >>---------->>
 $filter--light: brightness(0.8) contrast(1.2);
@@ -197,9 +196,7 @@ $color-white: white;
 $theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
   url('../img/hero-bg.png') 0% 0% / cover;
 
-$support-bg: linear-gradient(
-    110deg,
-    rgba(black, 0.5) 400px,
-    rgba(black, 0.1) 800px
-  ),
+$support-bg: linear-gradient(110deg,
+rgba(black, 0.5) 400px,
+rgba(black, 0.1) 800px),
   url('../img/support-bg.jpg') center center / cover;
