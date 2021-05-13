@@ -725,7 +725,7 @@ ul.menu-left.collapse {
 \* -------------------------------------------------------------------------- */
 .wrapped-block {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
   padding: 0;
@@ -733,7 +733,7 @@ ul.menu-left.collapse {
 
 .padded-block {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
   padding: 0.5rem;
@@ -744,7 +744,7 @@ ul.menu-left.collapse {
 \* -------------------------------------------------------------------------- */
 .wrapped-flex {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +766,7 @@ ul.menu-left.collapse {
 
 .padded-flex {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +791,7 @@ ul.menu-left.collapse {
 \* -------------------------------------------------------------------------- */
 .wrapped-grid {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -800,7 +800,7 @@ ul.menu-left.collapse {
 
 .padded-grid {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -957,6 +957,7 @@ input:checked + .slider::before {
 }
 
 .hero__container {
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -994,17 +995,8 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items__container {
-  background-color: lavender;
-}
-
-.hot-items__title {
-  background-color: thistle;
-}
-
 .hot-items .hot-item {
   padding: 0.5rem;
-  background-color: plum;
 }
 
 .hot-items .hot-item__title {
@@ -1044,25 +1036,15 @@ input:checked + .slider::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 375px;
+  height: 667px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 375px;
-  height: 667px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  overflow: hidden;
-}
-
-.hot-item__container:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: lavender;
 }
 
 .hot-item__container:hover .hot-item__visual {
@@ -1078,8 +1060,9 @@ input:checked + .slider::before {
   position: absolute;
   top: 50px;
   left: 20px;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background-color: thistle;
   color: white;
   font-size: 60px;
   font-weight: 100;
@@ -1097,8 +1080,8 @@ input:checked + .slider::before {
   bottom: -33%;
   left: 0;
   width: 100%;
-  margin: 0;
   padding: 30px;
+  margin: 0;
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -1109,8 +1092,8 @@ input:checked + .slider::before {
 }
 
 .hot-item__caption-title {
-  margin: 0 0 20px;
   padding: 0;
+  margin: 0 0 20px;
 }
 
 .hot-item__caption-text {
@@ -1129,10 +1112,10 @@ input:checked + .slider::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px 0 0;
   padding: 10px 30px;
-  background-color: #1abc9c;
   border: none;
+  margin: 10px 0 0;
+  background-color: #1abc9c;
   border-radius: 5px;
   color: white;
   font-size: 14px;
