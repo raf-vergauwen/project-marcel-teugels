@@ -25,6 +25,22 @@ svg {
 
 .fab {
   @include dimensions(fab, $font-size--5);
+  // color: green;
+}
+
+.fa-facebook {
+}
+
+.fa-twitter {
+}
+
+.fa-youtube {
+  // margin-left: $whitespace--xxs;
+  fill: green;
+  color: red;
+}
+
+.fa-linkedin {
 }
 
 /* -------------------------------------------------------------------------- *\

@@ -165,7 +165,7 @@ li {
 // #  <a>
 
 a {
-  padding: $whitespace--xxs 0;
+  padding: $whitespace--xxs;
   color: var(--primary-color);
   font-family: monospace;
   font-size: $font-size--2;
@@ -175,10 +175,6 @@ a {
   &:hover {
     color: var(--secondary-color);
   }
-}
-
-a > i {
-  // margin: $whitespace--xxs;
 }
 
 // #  <abbr>

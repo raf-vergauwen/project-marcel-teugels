@@ -69,7 +69,7 @@
     margin: $whitespace--m 0;
     // background-color: lightsalmon;
     fill: var(--primary-color);
-    filter: brightness(0.8) contrast(1.2);
+    filter: brightness(0.8) contrast(1.1);
   }
 
   &__subject {
@@ -80,7 +80,7 @@
 
   &__title {
     color: var(--secondary-color);
-    filter: brightness(0.5) contrast(1.2);
+    filter: brightness(0.6) contrast(1.2);
     // background-color: salmon;
     font-family: monospace;
     font-size: $font-size--4;

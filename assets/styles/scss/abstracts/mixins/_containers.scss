@@ -115,7 +115,7 @@
   }
   // #  Brand Fontawesome Icons
   @else if $type == fab {
-    margin-right: $whitespace--xs;
+    margin: 0;
     font-size: $width;
   }
 }
