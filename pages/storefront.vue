@@ -7,6 +7,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
+        v-on:add-product="addProduct($event)"
       />
     </div>
   </main>
@@ -21,7 +22,7 @@ export default {
     return {
       productData: {},
       src: 'http://157.230.126.154/assets/',
-      notReal: null,
+      shoppingCart: [],
     };
   },
   fetch() {
@@ -52,6 +53,10 @@ export default {
           console.error(err);
         });
     },
+    addProduct(product){
+      this.shoppingCart.push(product);
+      console.log(this.shoppingCart);
+    }
   },
 };
 </script>

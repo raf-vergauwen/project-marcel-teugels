@@ -15,7 +15,9 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
-    <button v-if="clickCount == 0" @click="newShoppingCart">Buy</button>
+    <button v-if="clickCount == 0" @click="$emit('add-product', product)">
+      Buy
+    </button>
     <button v-else @click="addToShoppingCart">else</button>
   </article>
 </template>
@@ -62,7 +64,7 @@ export default {
         })
         .then((body) => {
           console.log(body);
-          this.clickCount++;
+          //this.clickCount++;
           console.log('newCart');
         })
         .catch((err) => {
@@ -86,7 +88,7 @@ export default {
         })
         .then((body) => {
           console.log(body);
-          this.clickCount++;
+          //this.clickCount++;
           console.log('addToCart');
         })
         .catch((err) => {
