@@ -58,6 +58,7 @@
   // #  wrapped-Flex Container
   @if $container-type == wrapped-flex {
     flex-direction: $direction;
+    flex-wrap: $wrap-type;
     justify-content: $justify;
 
     // #  wrapped-Flex Container Nowrap
@@ -78,16 +79,15 @@
   // #  padded-Flex Container
   @if $container-type == padded-flex {
     flex-direction: $direction;
+    flex-wrap: $wrap-type;
     justify-content: $justify;
 
     // #  padded-Flex Container Nowrap
     @if $wrap-type == nowrap {
-      flex-direction: $direction;
       align-items: $align;
     }
     // #  padded-Flex Container Wrap
     @else if $wrap-type == wrap {
-      flex-direction: $direction;
       align-content: $align;
     }
     // #  Invalid arguments!
@@ -123,16 +123,17 @@
 // -  <<----------<< Flex-Box >>---------->>
 
 // #  Block-Flex-Container
-@mixin block-flex-container($direction, $justify, $align) {
+@mixin block-flex-container($direction, $justify, $align, $wrap-type) {
   display: flex;
   flex-direction: $direction;
+  flex-wrap: $wrap-type;
   justify-content: $justify;
 
-  // #  wrapped-Flex Container Nowrap
+  // #  Block-Flex-Container Nowrap
   @if $wrap-type == nowrap {
     align-items: $align;
   }
-  // #  wrapped-Flex Container Wrap
+  // #  Block-Flex-Container Wrap
   @else if $wrap-type == wrap {
     align-content: $align;
   }
@@ -143,11 +144,24 @@
 }
 
 // #  Inline-Flex-Container ---> buttons, navigation, vertical lists
-@mixin inline-flex-container($direction, $justify, $align) {
+@mixin inline-flex-container($wrap-type, $direction, $justify, $align) {
   display: inline-flex;
   flex-direction: $direction;
-  align-items: $align;
+  flex-wrap: $wrap-type;
   justify-content: $justify;
+
+  // #  Inline-Flex-Container Nowrap
+  @if $wrap-type == nowrap {
+    align-items: $align;
+  }
+  // #  Inline-Flex-Container Wrap
+  @else if $wrap-type == wrap {
+    align-content: $align;
+  }
+  // #  Invalid arguments!
+  @else {
+    @error 'Invalid SCSS argument detected!';
+  }
 }
 
 // #  Flex-Items ---> Children

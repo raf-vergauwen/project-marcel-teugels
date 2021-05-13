@@ -20,7 +20,7 @@ svg {
 // -  <<----------<< Specific >>---------->>
 
 .fas {
-  @include dimensions(fas, $font-size--text);
+  @include dimensions(fas, $font-size--1);
 }
 
 .fab {

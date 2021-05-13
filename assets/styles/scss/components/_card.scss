@@ -5,15 +5,15 @@
 // -  <<----------<< General >>---------->>
 
 .card {
-  @include box-shadow(1);
+  @include box-shadow(2);
   @include box-transition;
 
   overflow: hidden;
-  margin: $whitespace--s;
+  margin: $whitespace--xs 0;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  background-color: #a52a2a;
+  background-color: maroon;
   border-radius: $border-radius--s;
 
   &:hover {

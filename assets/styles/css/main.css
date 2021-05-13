@@ -232,7 +232,7 @@ body {
 h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 3.8147rem;
+  font-size: 3.05176rem;
   font-variant: normal;
   font-weight: 700;
   letter-spacing: 0.025rem;
@@ -262,7 +262,7 @@ h2 + p::first-letter {
 h3 {
   color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.95312rem;
   font-variant: small-caps;
   font-weight: 300;
   letter-spacing: 0.1rem;
@@ -280,7 +280,7 @@ h3 + p::first-letter {
 h4 {
   color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5625rem;
   font-variant: normal;
   font-weight: 300;
   letter-spacing: normal;
@@ -298,7 +298,7 @@ h4 + p::first-letter {
 h5 {
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-variant: normal;
   font-weight: 300;
   letter-spacing: normal;
@@ -721,6 +721,8 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -741,10 +743,11 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -775,15 +778,15 @@ ul.menu-left.collapse {
 *  _card.scss: This partial file contains all 'card' styles.
 \* -------------------------------------------------------------------------- */
 .card {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
-  margin: 1rem;
+  margin: 0.5rem 0;
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  background-color: #a52a2a;
+  background-color: maroon;
   border-radius: 16px;
 }
 
