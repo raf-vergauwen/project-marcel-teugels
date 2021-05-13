@@ -13,6 +13,30 @@ html {
   }
 }
 
+@-webkit-keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
 .full-width {
   position: relative;
   right: 50%;
@@ -236,6 +260,7 @@ header nav {
 -  Headings
 \* -------------------------------------------------------------------------- */
 h1 {
+  padding: 1.5rem;
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
@@ -248,6 +273,7 @@ h1 {
 }
 
 h2 {
+  padding: 1rem;
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -260,12 +286,12 @@ h2 {
 }
 
 h2 + p::first-letter {
-  background-color: lime;
-  color: red;
+  color: var(--secondary-color);
   font-size: 1.5625rem;
 }
 
 h3 {
+  padding: 0.5rem 0.25rem;
   color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
@@ -283,6 +309,7 @@ h3 + p::first-letter {
 }
 
 h4 {
+  padding: 0.25rem;
   color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
@@ -300,6 +327,7 @@ h4 + p::first-letter {
 }
 
 h5 {
+  padding: 0.25rem;
   color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -317,6 +345,7 @@ h5 + p::first-letter {
 }
 
 h6 {
+  padding: 0.25rem;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -340,6 +369,7 @@ p,
 li,
 blockquote,
 figcaption {
+  padding: 0.25rem;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -921,17 +951,21 @@ input:checked + .slider::before {
   position: relative;
   height: 100vh;
   background-attachment: fixed;
+  background-color: red;
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
   background-size: cover;
-  background-color: red;
 }
 
 .hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: linear-gradient 15s ease infinite;
+          animation: linear-gradient 15s ease infinite;
+  background: linear-gradient(-45deg, rgba(2, 45, 80, 0.5), rgba(70, 116, 180, 0.5), rgba(185, 137, 70, 0.5));
   background-color: rgba(0, 0, 0, 0.4);
+  background-size: 400% 400%;
 }
 
 .hero__visual {
@@ -939,7 +973,7 @@ input:checked + .slider::before {
   max-width: -moz-fit-content;
   max-width: fit-content;
   max-height: 40vh;
-  fill: var(--background-color);
+  fill: var(--primary-color);
 }
 
 .hero__subject {

@@ -50,21 +50,28 @@
   position: relative;
   height: 100vh;
   background-attachment: fixed;
+  background-color: red;
   background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
   background-position: center center;
   background-size: cover;
-  background-color: red;
 
   &__container {
     justify-content: center;
+    animation: linear-gradient 15s ease infinite;
+    background:
+      linear-gradient(-45deg,
+      $linear-gradient--primary,
+      $linear-gradient--secondary,
+      $linear-gradient--tertiary);
     background-color: $background-color--photo-text;
+    background-size: 400% 400%;
   }
 
   &__visual {
     max-width: fit-content;
     max-height: 40vh;
     // background-color: lightsalmon;
-    fill: var(--background-color);
+    fill: var(--primary-color);
   }
 
   &__subject {

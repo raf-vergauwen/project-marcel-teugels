@@ -91,9 +91,6 @@ $font-family--section-title: 'Montserrat', sans-serif;
 $font-family--article-title: 'Montserrat', sans-serif;
 $font-family--text: 'Roboto', sans-serif;
 
-// #  Font-Size
-
-
 // #  Font-Style ---> Default
 
 // #  Font-Variant
@@ -187,6 +184,6 @@ $support-bg: linear-gradient(
   url('../img/support-bg.jpg') center center / cover;
 
 // #  linear-Gradient
-$linear-gradient--yellow: hsla(23, 42%, 64%, 0.8);
-$linear-gradient--orange: hsla(214, 42%, 64%, 0.8);
-$linear-gradient--red: hsla(207, 48%, 14%, 0.8);
+$linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
+$linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
+$linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
