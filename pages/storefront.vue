@@ -21,6 +21,7 @@ export default {
     return {
       productData: {},
       src: 'http://157.230.126.154/assets/',
+      notReal: null,
     };
   },
   fetch() {
