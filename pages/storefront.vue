@@ -53,10 +53,11 @@ export default {
           console.error(err);
         });
     },
-    addProduct(product){
+    addProduct(product) {
       this.shoppingCart.push(product);
+      //bus.$emit()
       console.log(this.shoppingCart);
-    }
+    },
   },
 };
 </script>

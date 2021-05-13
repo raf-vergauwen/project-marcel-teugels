@@ -1,20 +1,24 @@
 <template>
   <div class="container">
     <h1 class="title">Shopping cart</h1>
+    <button @click="printList">print</button>
   </div>
 </template>
 
 <script>
+import { bus } from '~/pages/storefront';
+
 export default {
   data() {
-    return {};
+    return {
+      ShoppingList: bus,
+    };
   },
-  computed: {
-    access_token() {
-      return sessionStorage.getItem('access_token');
+  methods: {
+    printList() {
+      console.log(JSON.stringify(this.ShoppingList));
     },
   },
-  methods: {},
 };
 </script>
 
