@@ -22,6 +22,7 @@ body {
   min-width: $dimension--xxs;
   max-width: $dimension--xl;
   margin: 0 auto;
+  background-color: darken(#2c3e50, 4%);
   color: var(--foreground-color);
   font-family: $font-family--text;
   font-weight: $font-weight--text;
