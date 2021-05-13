@@ -6,17 +6,20 @@
 </template>
 
 <script>
-import { bus } from '~/pages/storefront';
-
 export default {
   data() {
     return {
-      ShoppingList: bus,
+      ShoppingList: null,
     };
+  },
+  computed: {
+    shopping_cart() {
+      return sessionStorage.getItem('shopping_cart');
+    },
   },
   methods: {
     printList() {
-      console.log(JSON.stringify(this.ShoppingList));
+      console.log(JSON.stringify(this.shopping_cart));
     },
   },
 };

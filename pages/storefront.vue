@@ -55,7 +55,7 @@ export default {
     },
     addProduct(product) {
       this.shoppingCart.push(product);
-      //bus.$emit()
+      sessionStorage.setItem('shopping_cart', JSON.stringify(product));
       console.log(this.shoppingCart);
     },
   },
