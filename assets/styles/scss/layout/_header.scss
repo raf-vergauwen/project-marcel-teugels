@@ -12,8 +12,7 @@ header {
   width: 100%;
   background: rgba(255, 255, 255, 0.92);
   transform: translateY(0);
-  transition:
-    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
   will-change: transform;
 }
@@ -100,21 +99,21 @@ header nav ul li a {
   display: block;
 }
 
-@media (min-width: 576px) {
-  header nav ul li a {
-    display: block;
-    padding: 0.425rem 0;
-  }
-}
+// @media (min-width: 576px) {
+//   header nav ul li a {
+//     display: block;
+//     padding: 0.425rem 0;
+//   }
+// }
 
 @media (max-width: 768px) {
   ul {
     clear: both;
   }
 
-  ul li {
-    padding: 0.5em 0;
-  }
+  // ul li {
+  //   padding: 0.5em 0;
+  // }
 }
 
 .hide-nav {

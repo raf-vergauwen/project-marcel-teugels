@@ -165,8 +165,10 @@ li {
 // #  <a>
 
 a {
+  padding: $whitespace--xxs 0;
   color: var(--primary-color);
-  font-size: $font-size--1;
+  font-family: monospace;
+  font-size: $font-size--2;
   text-align: center;
   text-decoration: none;
 
@@ -176,7 +178,7 @@ a {
 }
 
 a > i {
-  margin: 0 $whitespace--xs 0 0;
+  // margin: $whitespace--xxs;
 }
 
 // #  <abbr>

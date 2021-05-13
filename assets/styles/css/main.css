@@ -221,7 +221,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: calc(320px - 1.5rem);
   max-width: 1920px;
   margin: 0 auto;
   background-color: #253443;
@@ -390,18 +390,16 @@ li {
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
 a {
+  padding: 0.25rem 0;
   color: var(--primary-color);
-  font-size: 1rem;
+  font-family: monospace;
+  font-size: 1.25rem;
   text-align: center;
   text-decoration: none;
 }
 
 a:hover {
   color: var(--secondary-color);
-}
-
-a > i {
-  margin: 0 0.5rem 0 0;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -422,16 +420,16 @@ svg {
 }
 
 .fas {
-  width: 1rem;
+  width: 1.25rem;
   height: auto;
-  margin: 0 0.5rem 0 0;
-  font-size: 1rem;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .fab {
   width: 2.44141rem;
   height: auto;
-  margin: 0 1.2207rem 0 0;
+  margin-right: 0.5rem;
   font-size: 2.44141rem;
 }
 
@@ -554,19 +552,9 @@ header nav ul li a {
   display: block;
 }
 
-@media (min-width: 576px) {
-  header nav ul li a {
-    display: block;
-    padding: 0.425rem 0;
-  }
-}
-
 @media (max-width: 768px) {
   ul {
     clear: both;
-  }
-  ul li {
-    padding: 0.5em 0;
   }
 }
 
@@ -963,8 +951,7 @@ input:checked + .slider::before {
           justify-content: center;
   -webkit-animation: linear-gradient 15s ease infinite;
           animation: linear-gradient 15s ease infinite;
-  background: linear-gradient(-45deg, rgba(2, 45, 80, 0.5), rgba(70, 116, 180, 0.5), rgba(185, 137, 70, 0.5));
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   background-size: 400% 400%;
 }
 
@@ -986,10 +973,12 @@ input:checked + .slider::before {
 }
 
 .hero__title {
-  color: var(--tertiary);
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
-  font-size: 1.5625rem;
+  color: var(--secondary-color);
+  -webkit-filter: brightness(0.5) contrast(1.2);
+          filter: brightness(0.5) contrast(1.2);
+  font-family: monospace;
+  font-size: 1.95312rem;
+  font-weight: 600;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1133,7 +1122,7 @@ input:checked + .slider::before {
 }
 
 .intermezzo__container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* -------------------------------------------------------------------------- *\

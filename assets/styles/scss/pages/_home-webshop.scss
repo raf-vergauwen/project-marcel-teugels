@@ -58,7 +58,7 @@
     height: 100%;
     justify-content: center;
     animation: linear-gradient 15s ease infinite;
-    background: $linear-gradient--combo;
+    // background: $linear-gradient--combo;
     background-color: $background-color--photo-text;
     background-size: 400% 400%;
   }
@@ -79,10 +79,12 @@
   }
 
   &__title {
-    color: var(--tertiary);
-    filter: brightness(0.8) contrast(1.2);
+    color: var(--secondary-color);
+    filter: brightness(0.5) contrast(1.2);
     // background-color: salmon;
-    font-size: $font-size--3;
+    font-family: monospace;
+    font-size: $font-size--4;
+    font-weight: 600;
   }
 }
 

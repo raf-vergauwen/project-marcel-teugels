@@ -19,7 +19,8 @@ html {
 
 // #  <body>
 body {
-  min-width: $dimension--xxs;
+  min-width: calc(#{$dimension--xxs} - #{$whitespace--m});
+  // min-width: 100px;
   max-width: $dimension--xl;
   margin: 0 auto;
   background-color: darken(#2c3e50, 4%);
