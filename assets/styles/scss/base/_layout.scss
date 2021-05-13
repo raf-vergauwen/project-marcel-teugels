@@ -8,8 +8,10 @@
 
 // # <<----------<< Generic Tags>>---------->>
 
-nav {
+header nav {
   // ...
+  min-width: $dimension--xxs;
+  max-width: $dimension--xl;
 }
 
 // #  <<----------<< Specific Classes >>---------->>

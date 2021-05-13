@@ -197,7 +197,8 @@ html {
 }
 
 body {
-  min-width: calc(320px - 3rem);
+  min-width: 320px;
+  max-width: 1920px;
   margin: 0 auto;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
@@ -211,6 +212,11 @@ body {
 /* -------------------------------------------------------------------------- *\
 -  Nav
 \* -------------------------------------------------------------------------- */
+header nav {
+  min-width: 320px;
+  max-width: 1920px;
+}
+
 /* -------------------------------------------------------------------------- *\
 -  Aside
 \* -------------------------------------------------------------------------- */
@@ -272,8 +278,7 @@ h3 {
 }
 
 h3 + p::first-letter {
-  background-color: blue;
-  color: yellow;
+  color: var(--secondary-color);
   font-size: 1.5625rem;
 }
 
@@ -290,13 +295,12 @@ h4 {
 }
 
 h4 + p::first-letter {
-  background-color: blue;
-  color: yellow;
+  color: var(--secondary-color);
   font-size: 1.5625rem;
 }
 
 h5 {
-  color: var(--foreground-color);
+  color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   font-variant: normal;
@@ -308,8 +312,7 @@ h5 {
 }
 
 h5 + p::first-letter {
-  background-color: blue;
-  color: yellow;
+  color: var(--secondary-color);
   font-size: 1.5625rem;
 }
 
@@ -326,8 +329,7 @@ h6 {
 }
 
 h6 + p::first-letter {
-  background-color: blue;
-  color: yellow;
+  color: var(--secondary-color);
   font-size: 1.5625rem;
 }
 

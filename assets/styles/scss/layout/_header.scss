@@ -12,7 +12,8 @@ header {
   width: 100%;
   background: rgba(255, 255, 255, 0.92);
   transform: translateY(0);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+  transition:
+    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
   will-change: transform;
 }
@@ -85,7 +86,6 @@ header nav ul {
 
 header nav ul li {
   margin-left: 0;
-
   float: none;
 }
 
