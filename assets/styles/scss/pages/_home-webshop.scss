@@ -60,7 +60,7 @@
     animation: linear-gradient 15s ease infinite;
     // background: $linear-gradient--combo;
     background-color: $background-color--photo-text;
-    background-size: 400% 400%;
+    // background-size: 400% 400%;
   }
 
   &__visual {
@@ -69,18 +69,18 @@
     margin: $whitespace--m 0;
     // background-color: lightsalmon;
     fill: var(--primary-color);
-    filter: brightness(0.8) contrast(1.1);
+    filter: $filter--light;
   }
 
   &__subject {
     // background-color: indianred;
     color: var(--primary-color);
-    filter: brightness(0.8) contrast(1.2);
+    // filter: $filter--light;
   }
 
   &__title {
     color: var(--secondary-color);
-    filter: brightness(0.6) contrast(1.2);
+    filter: $filter--light;
     // background-color: salmon;
     font-family: monospace;
     font-size: $font-size--4;
@@ -98,46 +98,10 @@
 
   &__title {
   }
-
-  .hot-item {
-    padding: $whitespace--xs;
-    // background-color: plum;
-
-    &__title {
-      background-color: orchid;
-    }
-
-    &__container {
-      background-color: violet;
-    }
-
-    &__title {
-      background-color: fuchsia;
-    }
-
-    &__visual {
-      background-color: magenta;
-    }
-
-    &__caption {
-      background-color: mediumorchid;
-    }
-
-    &__caption-title {
-      background-color: darkorchid;
-    }
-
-    &__caption-text {
-      background-color: darkviolet;
-    }
-
-    &__caption-btn {
-      background-color: blueviolet;
-    }
-  }
 }
 
 .hot-item {
+  padding: $whitespace--s;
   // ...
   &__container {
     position: relative;
@@ -151,11 +115,13 @@
     &:hover {
       .hot-item {
         &__visual {
+          background-color: orchid;
           transform: scale(1.25);
         }
 
         &__caption {
           bottom: 0;
+          background-color: rgba(black, 0.85);
         }
       }
     }
@@ -176,6 +142,7 @@
 
   &__visual {
     height: 100%;
+    background-color: blueviolet;
     transition: 0.25s;
   }
 
@@ -196,9 +163,11 @@
   &__caption-title {
     padding: 0;
     margin: 0 0 20px;
+    background-color: darkorchid;
   }
 
   &__caption-text {
+    background-color: magenta;
     font-size: 14px;
     line-height: 1.75;
   }
@@ -211,7 +180,7 @@
     padding: 10px 30px;
     border: none;
     margin: 10px 0 0;
-    background-color: #1abc9c;
+    background-color: var(--tertiary-color);
     border-radius: 5px;
     color: white;
     font-size: 14px;
@@ -228,6 +197,7 @@
   background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
   background-position: center center;
   background-size: cover;
+  filter: $filter--light;
 
   &__container {
     background-color: $background-color--photo-text;

@@ -8,7 +8,7 @@
 
 // #  <h1>
 h1 {
-  padding: $whitespace--m;
+  padding: $whitespace--m 0;
   color: var(--primary-color);
   font-family: $font-family--subject;
   font-size: $font-size--6;
@@ -22,7 +22,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  padding: $whitespace--s;
+  padding: $whitespace--s 0;
   color: var(--primary-color);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
@@ -41,7 +41,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  padding: $whitespace--xs $whitespace--xxs;
+  padding: $whitespace--xs 0;
   color: var(--secondary-color);
   font-family: $font-family--article-title;
   font-size: $font-size--4;
@@ -60,7 +60,7 @@ h3 {
 
 // #  <h4>
 h4 {
-  padding: $whitespace--xxs;
+  padding: $whitespace--xxs 0;
   color: var(--tertiary-color);
   font-family: $font-family--text;
   font-size: $font-size--3;
@@ -80,7 +80,7 @@ h4 {
 // #  <h5>
 
 h5 {
-  padding: $whitespace--xxs;
+  padding: $whitespace--xxs 0;
   color: var(--tertiary-color);
   font-family: $font-family--text;
   font-size: $font-size--2;
@@ -100,7 +100,7 @@ h5 {
 // #  <h6>
 
 h6 {
-  padding: $whitespace--xxs;
+  padding: $whitespace--xxs 0;
   color: var(--foreground-color);
   font-family: $font-family--text;
   font-size: $font-size--1;

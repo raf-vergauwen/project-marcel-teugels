@@ -261,7 +261,7 @@ header nav {
 -  Headings
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
@@ -274,7 +274,7 @@ h1 {
 }
 
 h2 {
-  padding: 1rem;
+  padding: 1rem 0;
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -292,7 +292,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0;
   color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
@@ -310,7 +310,7 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
@@ -328,7 +328,7 @@ h4 + p::first-letter {
 }
 
 h5 {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--tertiary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -346,7 +346,7 @@ h5 + p::first-letter {
 }
 
 h6 {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -433,9 +433,20 @@ svg {
   font-size: 2.44141rem;
 }
 
-.fa-youtube {
-  fill: green;
-  color: red;
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  color: #f00;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -959,8 +970,7 @@ input:checked + .slider::before {
           justify-content: center;
   -webkit-animation: linear-gradient 15s ease infinite;
           animation: linear-gradient 15s ease infinite;
-  background-color: rgba(255, 255, 255, 0.4);
-  background-size: 400% 400%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero__visual {
@@ -970,20 +980,18 @@ input:checked + .slider::before {
   max-height: 40vh;
   margin: 1.5rem 0;
   fill: var(--primary-color);
-  -webkit-filter: brightness(0.8) contrast(1.1);
-          filter: brightness(0.8) contrast(1.1);
-}
-
-.hero__subject {
-  color: var(--primary-color);
   -webkit-filter: brightness(0.8) contrast(1.2);
           filter: brightness(0.8) contrast(1.2);
 }
 
+.hero__subject {
+  color: var(--primary-color);
+}
+
 .hero__title {
   color: var(--secondary-color);
-  -webkit-filter: brightness(0.6) contrast(1.2);
-          filter: brightness(0.6) contrast(1.2);
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
   font-family: monospace;
   font-size: 1.95312rem;
   font-weight: 600;
@@ -992,40 +1000,8 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items .hot-item {
-  padding: 0.5rem;
-}
-
-.hot-items .hot-item__title {
-  background-color: orchid;
-}
-
-.hot-items .hot-item__container {
-  background-color: violet;
-}
-
-.hot-items .hot-item__title {
-  background-color: fuchsia;
-}
-
-.hot-items .hot-item__visual {
-  background-color: magenta;
-}
-
-.hot-items .hot-item__caption {
-  background-color: mediumorchid;
-}
-
-.hot-items .hot-item__caption-title {
-  background-color: darkorchid;
-}
-
-.hot-items .hot-item__caption-text {
-  background-color: darkviolet;
-}
-
-.hot-items .hot-item__caption-btn {
-  background-color: blueviolet;
+.hot-item {
+  padding: 1rem;
 }
 
 .hot-item__container {
@@ -1045,12 +1021,14 @@ input:checked + .slider::before {
 }
 
 .hot-item__container:hover .hot-item__visual {
+  background-color: orchid;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
 
 .hot-item__container:hover .hot-item__caption {
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .hot-item__title {
@@ -1068,6 +1046,7 @@ input:checked + .slider::before {
 
 .hot-item__visual {
   height: 100%;
+  background-color: blueviolet;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -1091,9 +1070,11 @@ input:checked + .slider::before {
 .hot-item__caption-title {
   padding: 0;
   margin: 0 0 20px;
+  background-color: darkorchid;
 }
 
 .hot-item__caption-text {
+  background-color: magenta;
   font-size: 14px;
   line-height: 1.75;
 }
@@ -1112,7 +1093,7 @@ input:checked + .slider::before {
   padding: 10px 30px;
   border: none;
   margin: 10px 0 0;
-  background-color: #1abc9c;
+  background-color: var(--tertiary-color);
   border-radius: 5px;
   color: white;
   font-size: 14px;
@@ -1127,10 +1108,12 @@ input:checked + .slider::before {
   background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
   background-position: center center;
   background-size: cover;
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
 }
 
 .intermezzo__container {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* -------------------------------------------------------------------------- *\

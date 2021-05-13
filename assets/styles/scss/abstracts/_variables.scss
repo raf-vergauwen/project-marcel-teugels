@@ -181,7 +181,10 @@ $radial-gradient--foreground: radial-gradient(#003, #000);
 
 // -  <<----------<< Background-Color >>---------->>
 
-$background-color--photo-text: hsla(0, 0%, 100%, 0.4);
+$background-color--photo-text: hsla(0, 0%, 100%, 0.3);
+
+// -  <<----------<< Filter >>---------->>
+$filter--light: brightness(0.8) contrast(1.2);
 
 // -  <<----------<< Temporary >>---------->>
 

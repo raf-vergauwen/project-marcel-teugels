@@ -29,18 +29,27 @@ svg {
 }
 
 .fa-facebook {
+  &:hover {
+    color: #1877f2;
+  }
+}
+
+.fa-instagram {
+  &:hover {
+    color: #e4405f;
+  }
 }
 
 .fa-twitter {
+  &:hover {
+    color: #1da1f2;
+  }
 }
 
 .fa-youtube {
-  // margin-left: $whitespace--xxs;
-  fill: green;
-  color: red;
-}
-
-.fa-linkedin {
+  &:hover {
+    color: #f00;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
