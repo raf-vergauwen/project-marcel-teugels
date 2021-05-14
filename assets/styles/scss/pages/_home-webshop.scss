@@ -170,6 +170,10 @@
     outline: 1px solid slategrey;
   }
 
+  &__caption-btns {
+    @include inline-flex-container(nowrap, row, space-around, center);
+  }
+
   &__caption-btn {
     // ...
   }

@@ -707,46 +707,6 @@ svg {
      object-position: center center;
 }
 
-.fas {
-  width: 1.25rem;
-  height: auto;
-  margin: 0 auto;
-  margin-right: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.fab {
-  width: 2.44141rem;
-  height: auto;
-  margin: 0 auto;
-  margin: 0;
-  font-size: 2.44141rem;
-}
-
-.fa-facebook:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1877f2;
-}
-
-.fa-instagram:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #e4405f;
-}
-
-.fa-twitter:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1da1f2;
-}
-
-.fa-youtube:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Img
 \* -------------------------------------------------------------------------- */
@@ -1134,6 +1094,61 @@ ul.menu-left.collapse {
 }
 
 /* -------------------------------------------------------------------------- *\
+*  _icon.scss: This partial file contains all 'icon' styles.
+\* -------------------------------------------------------------------------- */
+.fas {
+  width: 1.25rem;
+  height: auto;
+  margin: 0 auto;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.fab {
+  width: 2.44141rem;
+  height: auto;
+  margin: 0 auto;
+  margin: 0;
+  font-size: 2.44141rem;
+}
+
+.fa-facebook:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #1877f2;
+}
+
+.fa-instagram:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #e4405f;
+}
+
+.fa-twitter:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #f00;
+}
+
+.fa-heart:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #f00;
+}
+
+.fa-share-alt:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #1da1f2;
+}
+
+/* -------------------------------------------------------------------------- *\
 *  _toggle.scss: This partial file contains all 'toggle' styles.
 \* -------------------------------------------------------------------------- */
 .theme-switch-wrapper {
@@ -1207,7 +1222,12 @@ input:checked + .slider::before {
 button {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
-  padding: 0.5rem 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem;
   border: 0;
   background-color: var(--tertiary-color);
   border-radius: 8px;
@@ -1226,8 +1246,20 @@ button:active {
           transform: translateY(4px);
 }
 
-button:hover {
+button i {
+  margin: 0;
+}
+
+.btn--text:hover {
   color: var(--background-color);
+}
+
+.btn--icon {
+  margin: 0;
+}
+
+.btn--icon .fa-heart {
+  color: red;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1408,6 +1440,23 @@ button:hover {
 .hot-item__caption-text::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+
+.hot-item__caption-btns {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hot-item__container:hover .hot-item__visual {

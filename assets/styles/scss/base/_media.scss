@@ -19,46 +19,7 @@ svg {
 
 // -  <<----------<< Specific >>---------->>
 
-.fas {
-  @include dimensions(fas, $font-size--2);
-}
-
-.fab {
-  @include dimensions(fab, $font-size--5);
-  // color: green;
-}
-
-.fa-facebook {
-  &:hover {
-    @include box-transition;
-
-    color: #1877f2;
-  }
-}
-
-.fa-instagram {
-  &:hover {
-    @include box-transition;
-
-    color: #e4405f;
-  }
-}
-
-.fa-twitter {
-  &:hover {
-    @include box-transition;
-
-    color: #1da1f2;
-  }
-}
-
-.fa-youtube {
-  &:hover {
-    @include box-transition;
-
-    color: #f00;
-  }
-}
+// ...
 
 /* -------------------------------------------------------------------------- *\
 -  Img

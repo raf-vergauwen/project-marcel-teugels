@@ -6,8 +6,9 @@
 
 button {
   @include transition-general;
+  @include dimensions(none, fit-content, auto);
 
-  padding: $whitespace--xs $whitespace--s;
+  padding: $whitespace--xs;
   border: 0;
   background-color: var(--tertiary-color);
   border-radius: $border-radius--xs;
@@ -22,9 +23,24 @@ button {
     transform: translateY(4px);
   }
 
+  i {
+    margin: 0;
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+.btn--text {
+  //...
   &:hover {
     color: var(--background-color);
   }
 }
 
-// -  <<----------<< Specific >>---------->>
+.btn--icon {
+  margin: 0;
+
+  .fa-heart {
+    color: red;
+  }
+}
