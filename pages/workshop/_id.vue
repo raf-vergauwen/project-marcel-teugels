@@ -3,7 +3,6 @@
     <restauration-header />
     <div class="title__container">
       <h1>Under Construction</h1>
-      <h2>{{ workshopData.title }}</h2>
     </div>
   </main>
 </template>
@@ -20,9 +19,7 @@ export default {
       workshopData: null,
     };
   },
-  created() {
-    this.fetchProduct();
-  },
+
   fetch() {
     console.log(this.$route.params.id);
     return this.fetchProduct();
