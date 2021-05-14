@@ -56,9 +56,9 @@
   &__container {
     justify-content: center;
     animation: linear-gradient 15s ease infinite;
-    // background: $linear-gradient--combo;
-    background-color: $bg-color--transparant-white;
-    // background-size: 400% 400%;
+    background-color: $bg-color--transparant-gray---level-5;
+    background-image: $linear-gradient--combo;
+    background-size: 400% 400%;
   }
 
   &__visual {
@@ -142,7 +142,6 @@
     bottom: 0;
     left: 0;
     padding: $whitespace--s;
-    background-color: $bg-color--transparant-black---light;
     box-shadow: $box-shadow--caption---slide-in;
   }
 
@@ -156,11 +155,11 @@
   }
 
   &__caption-text {
+    overflow: auto;
+    height: 100px;
     margin: $whitespace--s 0;
     // background-color: magenta;
     color: var(--background-color);
-    overflow: auto;
-    height: 100px;
   }
 
   &__caption-text::-webkit-scrollbar-thumb {
@@ -187,7 +186,7 @@
 
       &__caption {
         bottom: 0;
-        background-color: $bg-color--transparant-black---dark;
+        background-color: $bg-color--transparant-black---level-5;
         box-shadow: $box-shadow--caption---slide-out;
       }
 
@@ -218,8 +217,7 @@
 
   &__container {
     height: 100vh;
-    background-color: $bg-color--transparant-black;
-    // background-color: $bg-color--transparant-white;
+    background-color: $bg-color--transparant-black---level-5;
   }
 }
 

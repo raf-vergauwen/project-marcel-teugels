@@ -188,14 +188,26 @@ $radial-gradient--foreground: radial-gradient(#003, #000);
 
 // -  <<----------<< Background-Color--Transparant >>---------->>
 
-$bg-color--transparant-white: hsla(0, 0%, 100%, 0.3);
-$bg-color--transparant-black: hsla(0, 0%, 0%, 0.3);
+// #  White
+$bg-color--transparant-white---level-1: hsla(0, 0%, 100%, 0.25);
+$bg-color--transparant-white---level-2: hsla(0, 0%, 100%, 0.4);
+$bg-color--transparant-white---level-3: hsla(0, 0%, 100%, 0.55);
+$bg-color--transparant-white---level-4: hsla(0, 0%, 100%, 0.7);
+$bg-color--transparant-white---level-5: hsla(0, 0%, 100%, 0.85);
 
-$bg-color--transparant-black---light: hsla(0, 0%, 0%, 0.4);
-$bg-color--transparant-black---dark: hsla(0, 0%, 0%, 0.8);
+// #  Gray
+$bg-color--transparant-gray---level-1: hsla(0, 0%, 50%, 0.25);
+$bg-color--transparant-gray---level-2: hsla(0, 0%, 50%, 0.4);
+$bg-color--transparant-gray---level-3: hsla(0, 0%, 50%, 0.55);
+$bg-color--transparant-gray---level-4: hsla(0, 0%, 50%, 0.7);
+$bg-color--transparant-gray---level-5: hsla(0, 0%, 50%, 0.85);
 
-$bg-color--transparant-white---light: hsla(0, 0%, 100%, 0.4);
-$bg-color--transparant-white---dark: hsla(0, 0%, 100%, 0.8);
+// #  Black
+$bg-color--transparant-black---level-1: hsla(0, 0%, 0%, 0.25);
+$bg-color--transparant-black---level-2: hsla(0, 0%, 0%, 0.4);
+$bg-color--transparant-black---level-3: hsla(0, 0%, 0%, 0.55);
+$bg-color--transparant-black---level-4: hsla(0, 0%, 0%, 0.7);
+$bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 
 // -  <<----------<< Filter >>---------->>
 $filter--light: brightness(0.8) contrast(1.2);

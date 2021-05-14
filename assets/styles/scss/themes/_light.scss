@@ -4,9 +4,23 @@
 
 :root,
 [data-theme='light'] {
+  // -  <<----------<< Foreground Colors >>---------->>
+
+  // #  Main
   --foreground-color: hsla(240, 100%, 10%, 1); // #003 - deep-dark-blue
   --background-color: hsla(240, 100%, 99%, 1); // #f8f8ff off-white
   --primary-color: hsla(207, 95%, 16%, 1); // #022E51 - dark-mid-blue
   --secondary-color: hsla(215, 44%, 49%, 1); // #4676B9 - light-mid-blue
   --tertiary-color: hsla(35, 45%, 50%, 1); // #b78846 - mid-goldbrown
+
+  // -  <<----------<< Background Colors >>---------->>
+
+  // #  Transparant
+  --bg-color--transparant---lightest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---lighter: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---light: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---dark: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---darker: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---darkest: hsla(0, 0%, 100%, 0.95);
 }
