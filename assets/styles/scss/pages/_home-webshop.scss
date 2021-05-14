@@ -91,7 +91,7 @@
 
 .hot-items {
   &__container {
-    @include dimensions;
+    // @include dimensions;
     // @include block-flex-container;
   }
 
@@ -101,12 +101,8 @@
 }
 
 .hot-item {
-  padding: $whitespace--s;
   // ...
   &__container {
-    @include dimensions;
-    // @include block-flex-container;
-
     position: relative;
     // display: flex;
     max-width: 375px;
@@ -114,9 +110,6 @@
     // align-items: center;
     // justify-content: center;
     background-color: lavender;
-
-    // @include dimensions;
-    // @include block-flex-container;
 
     &:hover {
       // ...
@@ -133,8 +126,6 @@
         }
 
         &__title {
-          position: absolute;
-          z-index: 0;
           top: -30%;
         }
       }
@@ -142,29 +133,29 @@
   }
 
   &__title {
+    // color: white;
+    // font-size: 60px;
+    // font-weight: 100;
+    // line-height: 1;
+    @include transition-general;
+
     position: absolute;
     z-index: 1;
     top: $whitespace--m;
     left: $whitespace--m;
-    padding: 0;
-    margin: 0;
     background-color: thistle;
-    color: white;
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 1;
-    transition: 0.25s;
-    transition-timing-function: ease;
   }
 
   &__visual {
+    @include transition-general;
+
     height: 100%;
     background-color: blueviolet;
-    transition: 0.25s;
-    transition-timing-function: ease;
   }
 
   &__caption {
+    @include transition-general;
+
     position: absolute;
     bottom: -30%;
     left: 0;
@@ -175,7 +166,6 @@
     box-shadow: 0 0 20px rgba(black, 0.4);
     color: white;
     line-height: 1;
-    transition: 0.25s;
   }
 
   &__caption-title {

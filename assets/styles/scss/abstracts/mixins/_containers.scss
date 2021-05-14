@@ -13,9 +13,7 @@
   $justify: center,
   $align: center
 ) {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  @include dimensions;
 
   // #  wrapped-Block Container
   @if $container-type == wrapped-block {

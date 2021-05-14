@@ -407,7 +407,7 @@ p,
 li,
 blockquote,
 figcaption {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -427,7 +427,7 @@ li {
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
 a {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--primary-color);
   font-family: monospace;
   font-size: 1.25rem;
@@ -770,8 +770,9 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: seagreen;
 }
 
@@ -1057,20 +1058,7 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
-.hot-items__container {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.hot-item {
-  padding: 1rem;
-}
-
 .hot-item__container {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
   position: relative;
   max-width: 375px;
   height: 667px;
@@ -1089,39 +1077,47 @@ input:checked + .slider::before {
 }
 
 .hot-item__container:hover .hot-item__title {
-  position: absolute;
-  z-index: 0;
   top: -30%;
 }
 
 .hot-item__title {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
   position: absolute;
   z-index: 1;
   top: 1.5rem;
   left: 1.5rem;
-  padding: 0;
-  margin: 0;
   background-color: thistle;
-  color: white;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 1;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
 }
 
 .hot-item__visual {
-  height: 100%;
-  background-color: blueviolet;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
+  height: 100%;
+  background-color: blueviolet;
 }
 
 .hot-item__caption {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
   position: absolute;
   bottom: -30%;
   left: 0;
@@ -1133,8 +1129,6 @@ input:checked + .slider::before {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   color: white;
   line-height: 1;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
 }
 
 .hot-item__caption-title {

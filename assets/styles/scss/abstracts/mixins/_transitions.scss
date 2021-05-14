@@ -9,6 +9,18 @@
   }
 }
 
+@mixin transition-general(
+  $property: all,
+  $delay: 0s,
+  $duration: 0.25s,
+  $timing-function: ease
+) {
+  transition-delay: $delay;
+  transition-duration: $duration;
+  transition-property: $property;
+  transition-timing-function: $timing-function;
+}
+
 // *  <<----------<< Specific >>---------->>
 
 // -  Header

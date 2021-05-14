@@ -127,7 +127,7 @@ p,
 li,
 blockquote,
 figcaption {
-  padding: $whitespace--xxs;
+  padding: $whitespace--xxs 0;
   color: var(--foreground-color);
   font-family: $font-family--text;
   font-size: $font-size--1;
@@ -166,7 +166,7 @@ li {
 // #  <a>
 
 a {
-  padding: $whitespace--xxs;
+  padding: $whitespace--xxs 0;
   color: var(--primary-color);
   font-family: monospace;
   font-size: $font-size--2;
