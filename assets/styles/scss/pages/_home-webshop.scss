@@ -110,40 +110,20 @@
     // align-items: center;
     // justify-content: center;
     background-color: lavender;
-
-    &:hover {
-      // ...
-      .hot-item {
-        // ...
-        &__visual {
-          background-color: orchid;
-          transform: scale(1.25);
-        }
-
-        &__caption {
-          bottom: 0;
-          background-color: rgba(black, 0.85);
-        }
-
-        &__title {
-          top: -30%;
-        }
-      }
-    }
   }
 
   &__title {
-    // color: white;
-    // font-size: 60px;
-    // font-weight: 100;
-    // line-height: 1;
     @include transition-general;
 
     position: absolute;
     z-index: 1;
-    top: $whitespace--m;
-    left: $whitespace--m;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: $whitespace--s;
     background-color: thistle;
+    font-variant: small-caps;
+    font-weight: $font-weight--subject;
   }
 
   &__visual {
@@ -157,27 +137,27 @@
     @include transition-general;
 
     position: absolute;
+    z-index: 1;
+    right: 0;
     bottom: -30%;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 30px;
-    margin: 0;
-    background-color: rgba(black, 0.85);
-    box-shadow: 0 0 20px rgba(black, 0.4);
-    color: white;
-    line-height: 1;
+    padding: $whitespace--s;
+    background-color: $background-color--transparant-black--light;
+    box-shadow: $box-shadow--slide-in;
   }
 
   &__caption-title {
-    padding: 0;
-    margin: 0 0 20px;
     background-color: darkorchid;
+    color: var(--background-color);
+    font-variant: small-caps;
+    font-weight: $font-weight--article-title;
+    text-transform: lowercase;
   }
 
   &__caption-text {
     background-color: magenta;
-    font-size: 14px;
-    line-height: 1.75;
+    color: var(--background-color);
   }
 
   &__caption-btn {
@@ -186,12 +166,47 @@
     align-items: center;
     justify-content: center;
     padding: 10px 30px;
-    border: none;
+    border: 0;
     margin: 10px 0 0;
     background-color: var(--tertiary-color);
     border-radius: 5px;
-    color: white;
-    font-size: 14px;
+    box-shadow: $box-shadow--slide-in;
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--background-color);
+      @include transition-general($duration: 0.15s);
+    }
+
+    &:active {
+      @include transition-general($duration: 0.15s);
+
+      background-color: var(--secondary-color);
+
+      box-shadow: none;
+      transform: translateY(4px);
+    }
+  }
+
+  &__container:hover {
+    // ...
+    .hot-item {
+      // ...
+      &__visual {
+        background-color: orchid;
+        transform: scale(1.25);
+      }
+
+      &__caption {
+        bottom: 0;
+        background-color: $background-color--transparant-black--dark;
+        box-shadow: $box-shadow--slide-out;
+      }
+
+      &__title {
+        top: -30%;
+      }
+    }
   }
 }
 

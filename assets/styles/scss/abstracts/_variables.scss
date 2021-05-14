@@ -49,6 +49,11 @@ $box-shadow--level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
 $box-shadow--level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
+$box-shadow--slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
+  0 1px 2px 5px rgba(0, 0, 0, 0.24);
+$box-shadow--slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
+  0 15px 12px 20px rgba(0, 0, 0, 0.22);
+
 // -  <<----------<< Borders Sizes>>---------->>
 $border-radius--xxs: 4px;
 $border-radius--xs: 8px;
@@ -168,10 +173,12 @@ $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
 $linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
 $linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
 
-$linear-gradient--combo: linear-gradient(-45deg,
-$linear-gradient--primary,
-$linear-gradient--secondary,
-$linear-gradient--tertiary);
+$linear-gradient--combo: linear-gradient(
+  -45deg,
+  $linear-gradient--primary,
+  $linear-gradient--secondary,
+  $linear-gradient--tertiary
+);
 
 // -  <<----------<< Radial-Gradient>>---------->>
 
@@ -181,6 +188,9 @@ $radial-gradient--foreground: radial-gradient(#003, #000);
 
 $background-color--transparant-white: hsla(0, 0%, 100%, 0.3);
 $background-color--transparant-black: hsla(0, 0%, 0%, 0.3);
+
+$background-color--transparant-black--light: hsla(0, 0%, 0%, 0.4);
+$background-color--transparant-black--dark: hsla(0, 0%, 0%, 0.8);
 
 // -  <<----------<< Filter >>---------->>
 $filter--light: brightness(0.8) contrast(1.2);
@@ -196,7 +206,9 @@ $color-white: white;
 $theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
   url('../img/hero-bg.png') 0% 0% / cover;
 
-$support-bg: linear-gradient(110deg,
-rgba(black, 0.5) 400px,
-rgba(black, 0.1) 800px),
+$support-bg: linear-gradient(
+    110deg,
+    rgba(black, 0.5) 400px,
+    rgba(black, 0.1) 800px
+  ),
   url('../img/support-bg.jpg') center center / cover;

@@ -72,9 +72,9 @@ img {
   object-fit: cover;
   object-position: center center;
 
-  @media (prefers-color-scheme: dark) {
-    filter: brightness(0.8) contrast(1.2);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   filter: brightness(0.8) contrast(1.2);
+  // }
 }
 
 // -  <<----------<< Specific >>---------->>
