@@ -7,19 +7,19 @@
 button {
   @include transition-general;
   @include dimensions(none, fit-content, auto);
+  // @include box-shadow(2);
 
-  padding: $whitespace--xs;
+  padding: $filler--xs;
   border: 0;
   background-color: var(--tertiary-color);
   border-radius: $border-radius--xs;
-  box-shadow: $box-shadow--caption---slide-in;
   color: var(--primary-color);
   font-size: $font-size--2;
   font-variant: small-caps;
   text-transform: lowercase;
 
   &:active {
-    box-shadow: none;
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(4px);
   }
 
@@ -33,6 +33,7 @@ button {
 .btn--text {
   //...
   &:hover {
+    // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     color: var(--background-color);
   }
 }

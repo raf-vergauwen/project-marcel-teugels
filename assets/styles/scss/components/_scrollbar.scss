@@ -10,8 +10,8 @@
 
 .simplebar-scrollbar::before {
   position: absolute;
-  right: calc(#{$whitespace--xxs} / 2);
-  left: calc(#{$whitespace--xxs} / 2);
+  right: calc(#{$filler--xxs} / 2);
+  left: calc(#{$filler--xxs} / 2);
   background: var(--tertiary-color);
   border-radius: $border-radius--xs;
   content: '';

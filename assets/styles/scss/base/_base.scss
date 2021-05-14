@@ -21,9 +21,9 @@ html {
 
 // #  <body>
 body {
-  min-width: calc(#{$dimension--xxs} - #{$whitespace--m});
+  min-width: calc(#{$dimension--xxs} - #{$filler--m});
   // min-width: 100px;
-  max-width: $dimension--xl;
+  max-width: $dimension--m;
   margin: 0 auto;
   background-color: var(--background-color);
   color: var(--foreground-color);
@@ -31,28 +31,31 @@ body {
   font-weight: $font-weight--text;
   line-height: normal;
 
+  // # Lifesaving Scrollbar hack!
+  overflow-x: hidden;
+
   @include breakpoint(xxs) {
-    background-color: DarkSlateBlue;
+    background-color: darkslateblue;
   }
 
   @include breakpoint(xs) {
-    background-color: SlateBlue;
+    background-color: slateblue;
   }
 
   @include breakpoint(s) {
-    background-color: Purple;
+    background-color: purple;
   }
 
   @include breakpoint(m) {
-    background-color: BlueViolet;
+    background-color: blueviolet;
   }
 
   @include breakpoint(l) {
-    background-color: Magenta;
+    background-color: magenta;
   }
 
   @include breakpoint(xl) {
-    background-color: Plum;
+    background-color: plum;
   }
 }
 
@@ -64,4 +67,12 @@ body {
   > div {
     min-height: 100vh;
   }
+}
+
+.test-container {
+  background-color: var(--background-color);
+}
+
+body {
+  overflow-y: scroll;
 }

@@ -462,48 +462,49 @@ html {
 
 body {
   min-width: calc(320px - 1.5rem);
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: normal;
+  overflow-x: hidden;
 }
 
 @media (min-width: 320px) {
   body {
-    background-color: DarkSlateBlue;
+    background-color: darkslateblue;
   }
 }
 
 @media (min-width: 640px) {
   body {
-    background-color: SlateBlue;
+    background-color: slateblue;
   }
 }
 
 @media (min-width: 960px) {
   body {
-    background-color: Purple;
+    background-color: purple;
   }
 }
 
 @media (min-width: 1280px) {
   body {
-    background-color: BlueViolet;
+    background-color: blueviolet;
   }
 }
 
 @media (min-width: 1600px) {
   body {
-    background-color: Magenta;
+    background-color: magenta;
   }
 }
 
 @media (min-width: 1920px) {
   body {
-    background-color: Plum;
+    background-color: plum;
   }
 }
 
@@ -513,6 +514,14 @@ body {
 
 .main__container > section > div {
   min-height: 100vh;
+}
+
+.test-container {
+  background-color: var(--background-color);
+}
+
+body {
+  overflow-y: scroll;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1234,8 +1243,6 @@ button {
   border: 0;
   background-color: var(--tertiary-color);
   border-radius: 8px;
-  -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
   color: var(--primary-color);
   font-size: 1.25rem;
   font-variant: small-caps;
@@ -1243,8 +1250,6 @@ button {
 }
 
 button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
@@ -1344,11 +1349,6 @@ button i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: linear-gradient 15s ease infinite;
-          animation: linear-gradient 15s ease infinite;
-  background-color: rgba(128, 128, 128, 0.85);
-  background-image: linear-gradient(-45deg, rgba(2, 45, 80, 0.5), rgba(70, 116, 180, 0.5), rgba(185, 137, 70, 0.5));
-  background-size: 400% 400%;
 }
 
 .hero__visual {
@@ -1358,8 +1358,6 @@ button i {
   max-height: 40vh;
   margin: 1.5rem 0;
   fill: var(--primary-color);
-  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
-          filter: drop-shadow(0 0 0.1rem var(--background-color));
 }
 
 .hero__subject {
@@ -1370,8 +1368,6 @@ button i {
 
 .hero__title {
   color: var(--forground-color);
-  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
-          filter: drop-shadow(0 0 0.1rem var(--background-color));
   font-family: monospace;
   font-size: 1.95312rem;
   font-weight: 600;
@@ -1492,11 +1488,15 @@ button i {
   background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
   background-position: center center;
   background-size: cover;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
 }
 
 .intermezzo__container {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(128, 128, 128, 0.4);
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
 }
 
 /* -------------------------------------------------------------------------- *\

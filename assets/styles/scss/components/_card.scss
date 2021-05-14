@@ -14,7 +14,7 @@
   background-clip: padding-box;
   background-color: maroon;
   border-radius: $border-radius--s;
-  // padding: $whitespace--xs;
+  // padding: $filler--xs;
 
   &:hover {
     @include box-shadow(5);

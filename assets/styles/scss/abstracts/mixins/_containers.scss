@@ -36,19 +36,19 @@
   // #  padded-Block Container
   @if $container-type == padded-block {
     display: block;
-    padding: $whitespace--xs;
+    padding: $filler--xs;
   }
 
   // #  padded-Flex Container
   @if $container-type == padded-flex {
     display: flex;
-    padding: $whitespace--xs;
+    padding: $filler--xs;
   }
 
   // #  padded-Grid Container
   @if $container-type == padded-grid {
     display: grid;
-    padding: $whitespace--xs;
+    padding: $filler--xs;
   }
 
   // -  <---------------------------------------------------------------------->
@@ -109,7 +109,7 @@
 
   // #  Regular Fontawesome Icons
   @if $type == fas {
-    margin-right: $whitespace--xs;
+    margin-right: $filler--xs;
     font-size: $width;
   }
   // #  Brand Fontawesome Icons

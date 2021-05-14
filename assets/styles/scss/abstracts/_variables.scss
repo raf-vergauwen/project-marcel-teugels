@@ -17,14 +17,14 @@ html {
 
 // -  <<----------<< Whitespace Sizes >>---------->>
 
-// #  Whitespace
-$whitespace--xxs: 0.25rem; // 4px
-$whitespace--xs: 0.5rem; // 8px
-$whitespace--s: 1rem; // 16px
-$whitespace--m: 1.5rem; // 24px
-$whitespace--l: 2rem; // 32px
-$whitespace--xl: 3rem; // 48px
-$whitespace--xxl: 4rem; // 64px
+// #  Filler
+$filler--xxs: 0.25rem; // 4px
+$filler--xs: 0.5rem; // 8px
+$filler--s: 1rem; // 16px
+$filler--m: 1.5rem; // 24px
+$filler--l: 2rem; // 32px
+$filler--xl: 3rem; // 48px
+$filler--xxl: 4rem; // 64px
 
 // -  <<----------<< Box Dimension Sizes >>---------->>
 
@@ -51,10 +51,16 @@ $box-shadow--card---level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
 $box-shadow--card---level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
+// #  Caption
 $box-shadow--caption---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
   0 1px 2px 5px rgba(0, 0, 0, 0.24);
 $box-shadow--caption---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
   0 15px 12px 20px rgba(0, 0, 0, 0.22);
+
+// #  Button
+// $box-shadow--button---default: ;
+$box-shadow--button---hover: 0 10px 20px rgba(0, 0, 0, 0.2);
+$box-shadow--button---active: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 // -  <<----------<< Borders Sizes>>---------->>
 $border-radius--xxs: 4px;
@@ -195,12 +201,26 @@ $bg-color--transparant-white---level-3: hsla(0, 0%, 100%, 0.55);
 $bg-color--transparant-white---level-4: hsla(0, 0%, 100%, 0.7);
 $bg-color--transparant-white---level-5: hsla(0, 0%, 100%, 0.85);
 
+// #  Light-Gray
+$bg-color--transparant-light-gray---level-1: hsla(0, 0%, 75%, 0.25);
+$bg-color--transparant-light-gray---level-2: hsla(0, 0%, 75%, 0.4);
+$bg-color--transparant-light-gray---level-3: hsla(0, 0%, 75%, 0.55);
+$bg-color--transparant-light-gray---level-4: hsla(0, 0%, 75%, 0.7);
+$bg-color--transparant-light-gray---level-5: hsla(0, 0%, 75%, 0.85);
+
 // #  Gray
 $bg-color--transparant-gray---level-1: hsla(0, 0%, 50%, 0.25);
 $bg-color--transparant-gray---level-2: hsla(0, 0%, 50%, 0.4);
 $bg-color--transparant-gray---level-3: hsla(0, 0%, 50%, 0.55);
 $bg-color--transparant-gray---level-4: hsla(0, 0%, 50%, 0.7);
 $bg-color--transparant-gray---level-5: hsla(0, 0%, 50%, 0.85);
+
+// #  Dark-Gray
+$bg-color--transparant-dark-gray---level-1: hsla(0, 0%, 25%, 0.25);
+$bg-color--transparant-dark-gray---level-2: hsla(0, 0%, 25%, 0.4);
+$bg-color--transparant-dark-gray---level-3: hsla(0, 0%, 25%, 0.55);
+$bg-color--transparant-dark-gray---level-4: hsla(0, 0%, 25%, 0.7);
+$bg-color--transparant-dark-gray---level-5: hsla(0, 0%, 25%, 0.85);
 
 // #  Black
 $bg-color--transparant-black---level-1: hsla(0, 0%, 0%, 0.25);
