@@ -231,9 +231,39 @@ body {
   line-height: normal;
 }
 
+@media (min-width: 320px) {
+  body {
+    background-color: DarkSlateBlue;
+  }
+}
+
 @media (min-width: 640px) {
   body {
-    background-color: black;
+    background-color: SlateBlue;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background-color: Purple;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-color: BlueViolet;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-color: Magenta;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-color: Plum;
   }
 }
 
@@ -244,7 +274,7 @@ body {
 -  Nav
 \* -------------------------------------------------------------------------- */
 header nav {
-  min-width: calc(320px - 1.5rem);
+  min-width: calc(320px - 3rem);
   max-width: 1920px;
 }
 
@@ -1031,21 +1061,6 @@ input:checked + .slider::before {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hot-item {
@@ -1056,27 +1071,9 @@ input:checked + .slider::before {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  display: flex;
   max-width: 375px;
   height: 667px;
-  align-items: center;
-  justify-content: center;
   background-color: lavender;
 }
 

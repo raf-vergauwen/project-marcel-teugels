@@ -29,11 +29,27 @@ body {
   font-weight: $font-weight--text;
   line-height: normal;
 
+  @include breakpoint(xxs) {
+    background-color: DarkSlateBlue;
+  }
+
   @include breakpoint(xs) {
-    background-color: black;
+    background-color: SlateBlue;
+  }
+
+  @include breakpoint(s) {
+    background-color: Purple;
+  }
+
+  @include breakpoint(m) {
+    background-color: BlueViolet;
+  }
+
+  @include breakpoint(l) {
+    background-color: Magenta;
+  }
+
+  @include breakpoint(xl) {
+    background-color: Plum;
   }
 }
-
-// # <div>
-
-// # <span>

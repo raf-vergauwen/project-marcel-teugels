@@ -92,7 +92,7 @@
 .hot-items {
   &__container {
     @include dimensions;
-    @include block-flex-container;
+    // @include block-flex-container;
   }
 
   &__title {
@@ -105,14 +105,14 @@
   // ...
   &__container {
     @include dimensions;
-    @include block-flex-container;
+    // @include block-flex-container;
 
     position: relative;
-    display: flex;
+    // display: flex;
     max-width: 375px;
     height: 667px;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     background-color: lavender;
 
     // @include dimensions;
@@ -158,7 +158,7 @@
   }
 
   &__visual {
-    height: 100%; 
+    height: 100%;
     background-color: blueviolet;
     transition: 0.25s;
     transition-timing-function: ease;
