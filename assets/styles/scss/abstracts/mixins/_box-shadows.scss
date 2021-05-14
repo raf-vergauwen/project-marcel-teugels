@@ -6,27 +6,27 @@
 @mixin box-shadow($box-shadow--level: 1) {
   // #  Box-Shadow - Level 1
   @if $box-shadow--level == 1 {
-    box-shadow: $box-shadow--level-1;
+    box-shadow: $box-shadow--card---level-1;
     @content;
   }
   // #  Box-Shadow - Level 2
   @else if $box-shadow--level == 2 {
-    box-shadow: $box-shadow--level-2;
+    box-shadow: $box-shadow--card---level-2;
     @content;
   }
   // #  Box-Shadow - Level 3
   @else if $box-shadow--level == 3 {
-    box-shadow: $box-shadow--level-3;
+    box-shadow: $box-shadow--card---level-3;
     @content;
   }
   // #  Box-Shadow - Level 4
   @else if $box-shadow--level == 4 {
-    box-shadow: $box-shadow--level-4;
+    box-shadow: $box-shadow--card---level-4;
     @content;
   }
   // #  Box-Shadow - Level 5
   @else if $box-shadow--level == 5 {
-    box-shadow: $box-shadow--level-5;
+    box-shadow: $box-shadow--card---level-5;
     @content;
   }
   // #  Invalid arguments!

@@ -56,7 +56,12 @@ body {
   }
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: red;
-  outline: 1px solid BLUE;
+// #  <main>
+
+.main__container > section {
+  min-height: 100vh;
+
+  > div {
+    min-height: 100vh;
+  }
 }

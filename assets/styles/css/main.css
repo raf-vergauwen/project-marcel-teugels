@@ -507,9 +507,12 @@ body {
   }
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: red;
-  outline: 1px solid BLUE;
+.main__container > section {
+  min-height: 100vh;
+}
+
+.main__container > section > div {
+  min-height: 100vh;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1331,7 +1334,6 @@ button i {
 \* -------------------------------------------------------------------------- */
 .hero {
   position: relative;
-  height: 100vh;
   background-attachment: fixed;
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
@@ -1339,7 +1341,6 @@ button i {
 }
 
 .hero__container {
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1490,12 +1491,11 @@ button i {
   background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
   background-position: center center;
   background-size: cover;
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
 }
 
 .intermezzo__container {
-  background-color: rgba(255, 255, 255, 0.3);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* -------------------------------------------------------------------------- *\
