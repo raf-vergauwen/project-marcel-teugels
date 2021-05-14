@@ -1,6 +1,15 @@
 <template>
   <div class="container">
     <h1 class="title">Shopping cart</h1>
+    <div class="p-storefront__product-list">
+      <ProductItem
+        v-for="product in ShoppingList"
+        :key="product.id"
+        class="p-storefront__product-list__item"
+        :product="product"
+        v-on:add-product="addProduct($event)"
+      />
+    </div>
     <button @click="printList">print</button>
   </div>
 </template>
@@ -9,7 +18,7 @@
 export default {
   data() {
     return {
-      ShoppingList: null,
+      ShoppingList: this.shopping_cart,
     };
   },
   computed: {
