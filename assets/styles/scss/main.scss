@@ -16,6 +16,7 @@
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
 @import 'vendors/modern-normalize';
+@import 'vendors/scrollbar';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
@@ -38,6 +39,8 @@
 @import 'components/card';
 @import 'components/switch';
 @import 'components/mobile-menu';
+@import 'components/button';
+@import 'components/scrollbar';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`

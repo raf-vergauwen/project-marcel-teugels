@@ -55,3 +55,8 @@ body {
     background-color: Plum;
   }
 }
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid BLUE;
+}

@@ -201,6 +201,246 @@ template {
 /* -------------------------------------------------------------------------- *\
 *  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _scrollbar.scss: This partial file contains all 'scrollbar' styles.
+\* -------------------------------------------------------------------------- */
+[data-simplebar] {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: auto !important;
+  height: auto !important;
+  padding: 0;
+  margin: 0;
+  direction: inherit;
+}
+
+.simplebar-offset {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: inherit !important;
+          box-sizing: inherit !important;
+  padding: 0;
+  margin: 0;
+  direction: inherit !important;
+  -webkit-overflow-scrolling: touch;
+  resize: none !important;
+}
+
+.simplebar-content-wrapper {
+  position: relative;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  /* Not required for horizontal scroll to trigger */
+  height: 100%;
+  /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  max-height: 100%;
+  /* Needed for vertical scroll to trigger */
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  direction: inherit;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simplebar-content::before,
+.simplebar-content::after {
+  display: table;
+  content: ' ';
+}
+
+.simplebar-placeholder {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1px;
+  height: 100%;
+  max-height: 1px;
+  -webkit-box-sizing: inherit !important;
+          box-sizing: inherit !important;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: inherit;
+      -ms-flex-positive: inherit;
+          flex-grow: inherit;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  float: left;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  width: 1000%;
+  min-width: 1px;
+  height: 1000%;
+  min-height: 1px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.simplebar-track {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar::before {
+  position: absolute;
+  right: 2px;
+  left: 2px;
+  background: black;
+  border-radius: 7px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  -webkit-transition: opacity 0s linear;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+  right: 2px;
+  left: 2px;
+  height: 100%;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  top: 2px;
+  right: auto;
+  left: 0;
+  width: auto;
+  min-width: 10px;
+  height: 7px;
+  min-height: 0;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  direction: rtl;
+  opacity: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  visibility: hidden;
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  visibility: hidden;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
@@ -265,6 +505,11 @@ body {
   body {
     background-color: Plum;
   }
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid BLUE;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -956,6 +1201,50 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+*  _button.scss: This partial file contains all 'button' styles.
+\* -------------------------------------------------------------------------- */
+button {
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+button:hover {
+  color: var(--background-color);
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _scrollbar.scss: This partial file contains all 'scrollbar' styles.
+\* -------------------------------------------------------------------------- */
+.simplebar-scrollbar::before {
+  position: absolute;
+  right: calc(0.25rem / 2);
+  left: calc(0.25rem / 2);
+  background: var(--tertiary-color);
+  border-radius: 8px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
@@ -1085,6 +1374,9 @@ input:checked + .slider::before {
 .hot-item__caption {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -1107,35 +1399,15 @@ input:checked + .slider::before {
 }
 
 .hot-item__caption-text {
+  margin: 1rem 0;
   color: var(--background-color);
+  overflow: auto;
+  height: 100px;
 }
 
-.hot-item__caption-btn {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  position: relative;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-top: 1rem;
-  background-color: var(--tertiary-color);
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  font-variant: small-caps;
-  text-transform: lowercase;
-}
-
-.hot-item__caption-btn:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-}
-
-.hot-item__caption-btn:hover {
-  color: var(--background-color);
+.hot-item__caption-text::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 .hot-item__container:hover .hot-item__visual {
