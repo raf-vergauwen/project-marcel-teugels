@@ -11,14 +11,11 @@
 
 @mixin transition-general(
   $property: all,
-  $delay: 0s,
   $duration: 0.25s,
-  $timing-function: ease
+  $timing-function: ease,
+  $delay: 0s
 ) {
-  transition-delay: $delay;
-  transition-duration: $duration;
-  transition-property: $property;
-  transition-timing-function: $timing-function;
+  transition: $property $duration $timing-function $delay;
 }
 
 // *  <<----------<< Specific >>---------->>

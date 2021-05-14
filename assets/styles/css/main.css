@@ -1064,47 +1064,27 @@ input:checked + .slider::before {
 }
 
 .hot-item__title {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   position: absolute;
   z-index: 1;
   top: 0;
   right: 0;
   left: 0;
   padding: 1rem;
-  background-color: thistle;
   font-variant: small-caps;
   font-weight: 700;
 }
 
 .hot-item__visual {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   height: 100%;
-  background-color: blueviolet;
 }
 
 .hot-item__caption {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -1118,69 +1098,47 @@ input:checked + .slider::before {
 }
 
 .hot-item__caption-title {
-  background-color: darkorchid;
+  padding: 0;
+  margin-bottom: 1rem;
   color: var(--background-color);
   font-variant: small-caps;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: lowercase;
 }
 
 .hot-item__caption-text {
-  background-color: magenta;
   color: var(--background-color);
 }
 
 .hot-item__caption-btn {
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 30px;
+  padding: 0.5rem 1rem;
   border: 0;
-  margin: 10px 0 0;
+  margin-top: 1rem;
   background-color: var(--tertiary-color);
-  border-radius: 5px;
+  border-radius: 8px;
   -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
   color: var(--primary-color);
-}
-
-.hot-item__caption-btn:hover {
-  color: var(--background-color);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 .hot-item__caption-btn:active {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  background-color: var(--secondary-color);
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
 
+.hot-item__caption-btn:hover {
+  color: var(--background-color);
+}
+
 .hot-item__container:hover .hot-item__visual {
-  background-color: orchid;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
@@ -1194,6 +1152,12 @@ input:checked + .slider::before {
 
 .hot-item__container:hover .hot-item__title {
   top: -30%;
+}
+
+.hot-item__container:hover .hot-item__caption-title {
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  color: var(--secondary-color);
 }
 
 /* -------------------------------------------------------------------------- *\
