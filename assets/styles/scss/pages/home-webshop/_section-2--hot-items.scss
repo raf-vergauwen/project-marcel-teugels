@@ -63,7 +63,7 @@
   &__caption-title {
     padding: 0;
     margin-bottom: $filler--s;
-    color: var(--background-color);
+    color: var(--color-background--hsl);
     font-variant: small-caps;
     font-weight: $font-weight--subject;
     text-transform: lowercase;
@@ -74,7 +74,7 @@
     height: 100px;
     margin: $filler--s 0;
     // background-color: magenta;
-    color: var(--background-color);
+    color: var(--color-background--hsl);
   }
 
   &__caption-text::-webkit-scrollbar-thumb {
@@ -112,7 +112,7 @@
       &__caption-title {
         @include transition-general;
 
-        color: var(--secondary-color);
+        color: var(--color-secondary--hsl);
       }
     }
   }

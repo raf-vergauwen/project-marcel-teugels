@@ -22,18 +22,18 @@
     max-width: fit-content;
     max-height: 40vh;
     margin: $filler--m 0;
-    fill: var(--primary-color);
-    // filter: drop-shadow(0 0 0.1rem var(--background-color));
+    fill: var(--color-primary--hsl);
+    // filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
   }
 
   &__subject {
-    color: var(--primary-color);
-    filter: drop-shadow(0 0 0.1rem var(--background-color));
+    color: var(--color-primary--hsl);
+    filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
   }
 
   &__title {
     color: var(--forground-color);
-    // filter: drop-shadow(0 0 0.1rem var(--background-color));
+    // filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
     font-family: monospace;
     font-size: $font-size--4;
     font-weight: 600;

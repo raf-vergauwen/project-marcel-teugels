@@ -462,8 +462,8 @@ body {
   min-width: calc(320px - 1.5rem);
   max-width: 1280px;
   margin: 0 auto;
-  background-color: var(--background-color);
-  color: var(--foreground-color);
+  background-color: var(--color-background--hsl);
+  color: var(--color-foreground--hsl);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: normal;
@@ -479,12 +479,12 @@ body {
 }
 
 .test-container {
-  background-color: var(--background-color);
+  background-color: var(--color-background--hsl);
   margin: 0 auto;
 }
 
 .test-container--2 {
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary--hsl);
   margin: 0 auto;
 }
 
@@ -520,7 +520,7 @@ header nav {
 \* -------------------------------------------------------------------------- */
 h1 {
   padding: 1.5rem 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
   font-variant: normal;
@@ -533,7 +533,7 @@ h1 {
 
 h2 {
   padding: 1rem 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
@@ -545,7 +545,7 @@ h2 {
 }
 
 h2 + p::first-letter {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
@@ -553,7 +553,7 @@ h2 + p::first-letter {
 h3 {
   display: block;
   padding: 0.5rem 0;
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
   font-variant: small-caps;
@@ -565,14 +565,14 @@ h3 {
 }
 
 h3 + p::first-letter {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h4 {
   padding: 0.25rem 0;
-  color: var(--tertiary-color);
+  color: var(--color-tertiary--hsl);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
   font-variant: normal;
@@ -584,14 +584,14 @@ h4 {
 }
 
 h4 + p::first-letter {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h5 {
   padding: 0.25rem 0;
-  color: var(--tertiary-color);
+  color: var(--color-tertiary--hsl);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   font-variant: normal;
@@ -603,14 +603,14 @@ h5 {
 }
 
 h5 + p::first-letter {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h6 {
   padding: 0.25rem 0;
-  color: var(--foreground-color);
+  color: var(--color-foreground--hsl);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-variant: normal;
@@ -622,7 +622,7 @@ h6 {
 }
 
 h6 + p::first-letter {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
@@ -635,7 +635,7 @@ li,
 blockquote,
 figcaption {
   padding: 0.25rem 0;
-  color: var(--foreground-color);
+  color: var(--color-foreground--hsl);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-variant: normal;
@@ -656,7 +656,7 @@ li {
 a,
 button {
   padding: 0.25rem 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: monospace;
   font-size: 1.25rem;
   text-align: center;
@@ -665,7 +665,7 @@ button {
 
 a:hover,
 button:hover {
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -678,8 +678,8 @@ svg {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  color: var(--foreground-color);
-  fill: var(--foreground-color);
+  color: var(--color-foreground--hsl);
+  fill: var(--color-foreground--hsl);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -1252,9 +1252,9 @@ input:checked + .slider::before {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 0.5rem;
   border: 0;
-  background-color: var(--tertiary-color);
+  background-color: var(--color-tertiary--hsl);
   border-radius: 8px;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-size: 1.25rem;
   font-variant: small-caps;
   text-transform: lowercase;
@@ -1333,7 +1333,7 @@ input:checked + .slider::before {
   position: absolute;
   right: calc(0.25rem / 2);
   left: calc(0.25rem / 2);
-  background: var(--tertiary-color);
+  background: var(--color-tertiary--hsl);
   border-radius: 8px;
   content: '';
   opacity: 0;
@@ -1379,13 +1379,13 @@ input:checked + .slider::before {
   max-width: fit-content;
   max-height: 40vh;
   margin: 1.5rem 0;
-  fill: var(--primary-color);
+  fill: var(--color-primary--hsl);
 }
 
 .hero__subject {
-  color: var(--primary-color);
-  -webkit-filter: drop-shadow(0 0 0.1rem var(--background-color));
-          filter: drop-shadow(0 0 0.1rem var(--background-color));
+  color: var(--color-primary--hsl);
+  -webkit-filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
+          filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
 }
 
 .hero__title {
@@ -1444,7 +1444,7 @@ input:checked + .slider::before {
 .hot-item__caption-title {
   padding: 0;
   margin-bottom: 1rem;
-  color: var(--background-color);
+  color: var(--color-background--hsl);
   font-variant: small-caps;
   font-weight: 700;
   text-transform: lowercase;
@@ -1454,7 +1454,7 @@ input:checked + .slider::before {
   overflow: auto;
   height: 100px;
   margin: 1rem 0;
-  color: var(--background-color);
+  color: var(--color-background--hsl);
 }
 
 .hot-item__caption-text::-webkit-scrollbar-thumb {
@@ -1499,7 +1499,7 @@ input:checked + .slider::before {
 .hot-item__container:hover .hot-item__caption-title {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1594,12 +1594,6 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 :root,
 [data-theme='light'] {
-  /* #  Main */
-  --foreground-color: #003;
-  --background-color: #f8f8ff;
-  --primary-color: #022e51;
-  --secondary-color: #4676b9;
-  --tertiary-color: #b78846;
   /*  #  Transparant */
   --bg-color--transparant---lightest: hsla(0, 0%, 100%, 0.05);
   --bg-color--transparant---lighter: hsla(0, 0%, 100%, 0.2);
@@ -1665,10 +1659,10 @@ input:checked + .slider::before {
 *  _dark.scss: This partial file contains the 'dark' theme.
 \* -------------------------------------------------------------------------- */
 [data-theme='dark'] {
-  --foreground-color: hsl(240, 100%, 99%);
-  --background-color: hsl(240, 100%, 10%);
-  --primary-color: hsl(27, 48%, 86%);
-  --secondary-color: hsl(34, 42%, 36%);
-  --tertiary-color: hsl(203, 42%, 36%);
+  --color-foreground--hsl: hsl(240, 100%, 99%);
+  --color-background--hsl: hsl(240, 100%, 10%);
+  --color-primary--hsl: hsl(27, 48%, 86%);
+  --color-secondary--hsl: hsl(34, 42%, 36%);
+  --color-tertiary--hsl: hsl(203, 42%, 36%);
 }
 /*# sourceMappingURL=main.css.map */

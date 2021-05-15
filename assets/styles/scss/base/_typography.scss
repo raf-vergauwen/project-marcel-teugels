@@ -9,7 +9,7 @@
 // #  <h1>
 h1 {
   padding: $filler--m 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: $font-family--subject;
   font-size: $font-size--6;
   font-variant: $font-variant--subject;
@@ -23,7 +23,7 @@ h1 {
 // #  <h2>
 h2 {
   padding: $filler--s 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
   font-variant: $font-variant--section-title;
@@ -34,7 +34,7 @@ h2 {
   text-transform: $text-transform--section-title;
 
   + p::first-letter {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
     font-size: $font-size--3;
     line-height: $line-height--article-title;
   }
@@ -44,7 +44,7 @@ h2 {
 h3 {
   display: block;
   padding: $filler--xs 0;
-  color: var(--secondary-color);
+  color: var(--color-secondary--hsl);
   font-family: $font-family--article-title;
   font-size: $font-size--4;
   font-variant: $font-variant--article-title;
@@ -55,7 +55,7 @@ h3 {
   text-transform: $text-transform--article-title;
 
   + p::first-letter {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
     font-size: $font-size--3;
     line-height: $line-height--article-title;
   }
@@ -64,7 +64,7 @@ h3 {
 // #  <h4>
 h4 {
   padding: $filler--xxs 0;
-  color: var(--tertiary-color);
+  color: var(--color-tertiary--hsl);
   font-family: $font-family--text;
   font-size: $font-size--3;
   font-variant: $font-variant--text;
@@ -75,7 +75,7 @@ h4 {
   text-transform: $text-transform--text;
 
   + p::first-letter {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
     font-size: $font-size--3;
     line-height: $line-height--article-title;
   }
@@ -85,7 +85,7 @@ h4 {
 
 h5 {
   padding: $filler--xxs 0;
-  color: var(--tertiary-color);
+  color: var(--color-tertiary--hsl);
   font-family: $font-family--text;
   font-size: $font-size--2;
   font-variant: $font-variant--text;
@@ -96,7 +96,7 @@ h5 {
   text-transform: $text-transform--text;
 
   + p::first-letter {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
     font-size: $font-size--3;
     line-height: $line-height--article-title;
   }
@@ -106,7 +106,7 @@ h5 {
 
 h6 {
   padding: $filler--xxs 0;
-  color: var(--foreground-color);
+  color: var(--color-foreground--hsl);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -117,7 +117,7 @@ h6 {
   text-transform: $text-transform--text;
 
   + p::first-letter {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
     font-size: $font-size--3;
     line-height: $line-height--article-title;
   }
@@ -133,7 +133,7 @@ li,
 blockquote,
 figcaption {
   padding: $filler--xxs 0;
-  color: var(--foreground-color);
+  color: var(--color-foreground--hsl);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -173,14 +173,14 @@ li {
 a,
 button {
   padding: $filler--xxs 0;
-  color: var(--primary-color);
+  color: var(--color-primary--hsl);
   font-family: monospace;
   font-size: $font-size--2;
   text-align: center;
   text-decoration: none;
 
   &:hover {
-    color: var(--secondary-color);
+    color: var(--color-secondary--hsl);
   }
 }
 
