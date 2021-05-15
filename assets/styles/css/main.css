@@ -462,8 +462,8 @@ body {
   min-width: calc(320px - 1.5rem);
   max-width: 1280px;
   margin: 0 auto;
-  background-color: var(--color-background--hsl);
-  color: var(--color-foreground--hsl);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: normal;
@@ -515,12 +515,12 @@ body {
 }
 
 .test-container {
-  background-color: var(--color-background--hsl);
+  background-color: var(--color-background);
   margin: 0 auto;
 }
 
 .test-container--2 {
-  background-color: var(--color-secondary--hsl);
+  background-color: var(--color-secondary);
   margin: 0 auto;
 }
 
@@ -556,7 +556,7 @@ header nav {
 \* -------------------------------------------------------------------------- */
 h1 {
   padding: 1.5rem 0;
-  color: var(--color-primary--hsl);
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
   font-variant: normal;
@@ -569,7 +569,7 @@ h1 {
 
 h2 {
   padding: 1rem 0;
-  color: var(--color-primary--hsl);
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
@@ -581,7 +581,7 @@ h2 {
 }
 
 h2 + p::first-letter {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
@@ -589,7 +589,7 @@ h2 + p::first-letter {
 h3 {
   display: block;
   padding: 0.5rem 0;
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
   font-variant: small-caps;
@@ -601,14 +601,14 @@ h3 {
 }
 
 h3 + p::first-letter {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h4 {
   padding: 0.25rem 0;
-  color: var(--color-tertiary--hsl);
+  color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
   font-variant: normal;
@@ -620,14 +620,14 @@ h4 {
 }
 
 h4 + p::first-letter {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h5 {
   padding: 0.25rem 0;
-  color: var(--color-tertiary--hsl);
+  color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   font-variant: normal;
@@ -639,14 +639,14 @@ h5 {
 }
 
 h5 + p::first-letter {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
 
 h6 {
   padding: 0.25rem 0;
-  color: var(--color-foreground--hsl);
+  color: var(--color-foreground);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-variant: normal;
@@ -658,7 +658,7 @@ h6 {
 }
 
 h6 + p::first-letter {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
   font-size: 1.5625rem;
   line-height: 1.2;
 }
@@ -671,7 +671,7 @@ li,
 blockquote,
 figcaption {
   padding: 0.25rem 0;
-  color: var(--color-foreground--hsl);
+  color: var(--color-foreground);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-variant: normal;
@@ -692,7 +692,7 @@ li {
 a,
 button {
   padding: 0.25rem 0;
-  color: var(--color-primary--hsl);
+  color: var(--color-primary);
   font-family: monospace;
   font-size: 1.25rem;
   text-align: center;
@@ -701,7 +701,7 @@ button {
 
 a:hover,
 button:hover {
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -714,8 +714,8 @@ svg {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  color: var(--color-foreground--hsl);
-  fill: var(--color-foreground--hsl);
+  color: var(--color-foreground);
+  fill: var(--color-foreground);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -1276,73 +1276,37 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
-.test-btn--1 {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  padding: 0.5rem;
-  border: 0;
-  background-color: var(--color-tertiary--hsl);
-  border-radius: 8px;
-  color: var(--color-primary--hsl);
-  font-size: 1.25rem;
-  font-variant: small-caps;
-  text-transform: lowercase;
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #d7702b;
-}
-
-.container {
-  margin: auto;
-}
-
 .button {
-  position: relative;
-  top: 0;
-  display: inline-block;
-  width: auto;
-  height: 65px;
+  zoom: 3;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 32.5px;
-  border-top: 1px solid #c8e2d3;
-  border-bottom: 1px solid #c2dece;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9ceabd), color-stop(26%, #9ddab6), to(#7fbb98));
-  background: linear-gradient(to bottom, #9ceabd 0%, #9ddab6 26%, #7fbb98 100%);
-  border-radius: 5px;
-  color: var(--color-secondary--darken);
-  cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 2em;
-  font-weight: bold;
-  line-height: 65px;
+  font-family: Helvetica, Arial, Sans-Serif;
   text-decoration: none;
-  text-shadow: 0 -2px 0 #4a8a65, 0 1px 1px #c2dece;
+  font-weight: bold;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
+  height: 65px;
+  line-height: 65px;
+  padding: 0 32.5px;
+  display: inline-block;
+  width: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1)) 100%);
+  border-radius: 5px;
+  border-top: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.22));
+  border-bottom: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
+  top: 0;
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
+  position: relative;
 }
 
 .button:visited {
-  color: var(--color-secondary--darken);
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
 }
 
 .button:hover {
@@ -1352,31 +1316,31 @@ body {
 
 .button:active {
   top: 6px;
-  color: white;
   text-shadow: 0 -2px 0 #7fbb98, 0 1px 1px #c2dece, 0 0 4px white;
+  color: white;
 }
 
-.button:active::before {
+.button:active:before {
   top: 0;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
 }
 
-.button::before {
+.button:before {
+  display: inline-block;
+  content: '';
   position: absolute;
+  left: 0;
+  right: 0;
   z-index: -1;
   top: 6px;
-  right: 0;
-  left: 0;
-  display: inline-block;
+  border-radius: 5px;
   height: 65px;
   background: linear-gradient(to top, #1e5033 0%, #378357 6px);
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
-  content: '';
   -webkit-transition: all 0.078s ease-out;
   transition: all 0.078s ease-out;
+  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1386,7 +1350,7 @@ body {
   position: absolute;
   right: calc(0.25rem / 2);
   left: calc(0.25rem / 2);
-  background: var(--color-tertiary--hsl);
+  background: var(--color-tertiary);
   border-radius: 8px;
   content: '';
   opacity: 0;
@@ -1432,13 +1396,13 @@ body {
   max-width: fit-content;
   max-height: 40vh;
   margin: 1.5rem 0;
-  fill: var(--color-primary--hsl);
+  fill: var(--color-primary);
 }
 
 .hero__subject {
-  color: var(--color-primary--hsl);
-  -webkit-filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
-          filter: drop-shadow(0 0 0.1rem var(--color-background--hsl));
+  color: var(--color-primary);
+  -webkit-filter: drop-shadow(0 0 0.1rem var(--color-background));
+          filter: drop-shadow(0 0 0.1rem var(--color-background));
 }
 
 .hero__title {
@@ -1497,7 +1461,7 @@ body {
 .hot-item__caption-title {
   padding: 0;
   margin-bottom: 1rem;
-  color: var(--color-background--hsl);
+  color: var(--color-background);
   font-variant: small-caps;
   font-weight: 700;
   text-transform: lowercase;
@@ -1507,7 +1471,7 @@ body {
   overflow: auto;
   height: 100px;
   margin: 1rem 0;
-  color: var(--color-background--hsl);
+  color: var(--color-background);
 }
 
 .hot-item__caption-text::-webkit-scrollbar-thumb {
@@ -1552,7 +1516,7 @@ body {
 .hot-item__container:hover .hot-item__caption-title {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
-  color: var(--color-secondary--hsl);
+  color: var(--color-secondary);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1656,22 +1620,27 @@ body {
   --bg-color--transparant---darker: hsla(0, 0%, 100%, 0.8);
   --bg-color--transparant---darkest: hsla(0, 0%, 100%, 0.95);
   /* #  Main */
+  /* Color-Group */
   --color-foreground: hsl(240, 100%, 10%);
   --color-foreground-h: 240;
   --color-foreground-s: 100%;
   --color-foreground-l: 10%;
+  /* Color-Group */
   --color-background: hsl(240, 100%, 99%);
   --color-background-h: 240;
   --color-background-s: 100%;
   --color-background-l: 99%;
+  /* Color-Group */
   --color-primary: hsl(207, 95%, 16%);
   --color-primary-h: 207;
   --color-primary-s: 95%;
   --color-primary-l: 16%;
+  /* Color-Group */
   --color-secondary: hsl(215, 45%, 50%);
   --color-secondary-h: 215;
   --color-secondary-s: 45%;
   --color-secondary-l: 50%;
+  /* Color-Group */
   --color-tertiary: hsl(35, 45%, 50%);
   --color-tertiary-h: 35;
   --color-tertiary-s: 45%;
@@ -1682,10 +1651,10 @@ body {
 *  _dark.scss: This partial file contains the 'dark' theme.
 \* -------------------------------------------------------------------------- */
 [data-theme='dark'] {
-  --color-foreground--hsl: hsl(240, 100%, 99%);
-  --color-background--hsl: hsl(240, 100%, 10%);
-  --color-primary--hsl: hsl(27, 48%, 86%);
-  --color-secondary--hsl: hsl(34, 42%, 36%);
-  --color-tertiary--hsl: hsl(203, 42%, 36%);
+  --color-foreground: hsl(240, 100%, 99%);
+  --color-background: hsl(240, 100%, 10%);
+  --color-primary: hsl(27, 48%, 86%);
+  --color-secondary: hsl(34, 42%, 36%);
+  --color-tertiary: hsl(203, 42%, 36%);
 }
 /*# sourceMappingURL=main.css.map */

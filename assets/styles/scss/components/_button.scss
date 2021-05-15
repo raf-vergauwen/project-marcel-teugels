@@ -9,202 +9,94 @@ button {
 
 // -  <<----------<< Specific >>---------->>
 
-.test-btn--1 {
-  @include transition-general;
-  @include dimensions(none, fit-content, auto);
-  @include box-shadow(2);
-
-  padding: $filler--xs;
-  border: 0;
-  background-color: var(--color-tertiary--hsl);
-  border-radius: $border-radius--xs;
-  color: var(--color-primary--hsl);
-  font-size: $font-size--2;
-  font-variant: small-caps;
-  text-transform: lowercase;
-}
-
-// ----------------------------------------------------------------------------
-
-// $height: 65;
-// $depth: 6;
-// $color: #4676b9;
-// $text-color: darken($color, 10%);
-// $lighten-on-hover: 7%;
-// $button-speed: 0.06;
-// $timing-function: ease-out;
-
-// .button {
-//   position: relative;
-//   top: 0;
-//   display: inline-block;
-//   width: auto;
-//   height: $height + px;
-//   box-sizing: border-box;
-//   padding: 0 (($height/2) + px);
-//   border-top: 1px solid lighten($color, 22%);
-//   border-bottom: 1px solid lighten($color, 20%);
-//   margin-bottom: 15px;
-//   margin-left: 5px;
-//   background: linear-gradient(
-//     to bottom,
-//     saturate(lighten($color, 15%), 35%) 0%,
-//     saturate(lighten($color, 12%), 15%) 26%,
-//     $color 100%
-//   );
-//   border-radius: 5px;
-//   color: $text-color;
-//   cursor: pointer;
-//   font-family: Helvetica, Arial, sans-serif;
-//   font-size: 2em;
-//   font-weight: bold;
-//   line-height: $height + px;
-//   text-decoration: none;
-//   text-shadow: 0 -2px 0 darken($color, 20%), 0 1px 1px lighten($color, 20%);
-//   transition: all ($button-speed + s) $timing-function;
-
-//   &:visited {
-//     color: $text-color;
-//   }
-// }
-
-// .button:hover {
-//   background: linear-gradient(
-//     to bottom,
-//     lighten(saturate(lighten($color, 15%), 35%), $lighten-on-hover) 0%,
-//     lighten(saturate(lighten($color, 12%), 15%), $lighten-on-hover) 26%,
-//     lighten($color, $lighten-on-hover) 100%
-//   );
-// }
-
-// .button:active {
-//   top: $depth + px;
-//   color: lighten($color, 45%);
-//   text-shadow: 0 -2px 0 darken($color, 0%), 0 1px 1px lighten($color, 20%),
-//     0 0 4px white;
-
-//   &::before {
-//     top: 0;
-//     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
-//   }
-// }
-
-// .button::before {
-//   position: absolute;
-//   z-index: -1;
-//   top: ($depth) + px;
-//   right: 0;
-//   left: 0;
-//   display: inline-block;
-//   height: ($height) + px;
-//   background: linear-gradient(
-//     to top,
-//     saturate(darken($color, 40%), 15%) 0%,
-//     saturate(darken($color, 25%), 10%) $depth + px
-//   );
-//   border-radius: 5px;
-//   box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3),
-//     0 5px ($depth * 0.4 + px) rgba(0, 0, 0, 0.5),
-//     0 ($depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
-//   content: '';
-//   transition: all (($button-speed * 1.3) + s) $timing-function;
-// }
-
 $height: 65;
 $depth: 6;
 $color: #7fbb98;
-$text-color: darken($color, 10%);
 $lighten-on-hover: 7%;
 $button-speed: 0.06;
 $timing-function: ease-out;
 
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  background: #d7702b;
-}
-
-.container {
-  margin: auto;
-}
-
 .button {
-  position: relative;
-  top: 0;
+  zoom: 3;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  // # Successfully replaced ---> Begin
+  text-shadow: 0 -2px 0 lightness(var(--color-secondary), 0.8),
+    0 1px 1px lightness(var(--color-secondary), 1.2);
+  // # Successfully replaced ---> End
+  box-sizing: border-box;
+  font-size: 2em;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  font-weight: bold;
+  // # Successfully replaced ---> Begin
+  color: lightness(var(--color-secondary), 0.9);
+  // # Successfully replaced ---> End
+  // # Successfully replaced ---> Begin
+  &:visited {
+    color: lightness(var(--color-secondary), 0.9);
+  }
+  // # Successfully replaced ---> End
+  height: $height + px;
+  line-height: $height + px;
+  padding: 0 (($height/2) + px);
   display: inline-block;
   width: auto;
-  height: $height + px;
-  box-sizing: border-box;
-  padding: 0 (($height/2) + px);
-  border-top: 1px solid lighten($color, 22%);
-  border-bottom: 1px solid lighten($color, 20%);
-  margin-bottom: 15px;
-  margin-left: 5px;
-  background:
-    linear-gradient(to bottom,
-    saturate(lighten($color, 15%), 35%) 0%,
-    saturate(lighten($color, 12%), 15%) 26%,
-    $color 100%);
+
+  background: linear-gradient(
+    to bottom,
+    adjust-hsl(var(--color-secondary), 1, 1.35, 1.15) 0%,
+    adjust-hsl(var(--color-secondary), 1, 1.15, 1.12) 26%,
+    adjust-hsl(var(--color-secondary), 1, 1, 1) 100%
+  );
+
   border-radius: 5px;
-  color: var(--color-secondary--darken);
-  cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  line-height: $height + px;
-  text-decoration: none;
-  text-shadow: 0 -2px 0 darken($color, 20%), 0 1px 1px lighten($color, 20%);
+
+  // # Successfully replaced ---> Begin
+  border-top: 1px solid lightness(var(--color-secondary), 1.22);
+  border-bottom: 1px solid lightness(var(--color-secondary), 1.2);
+  // # Successfully replaced ---> End
+
+  top: 0;
   transition: all ($button-speed + s) $timing-function;
-
-  &:visited {
-    color: var(--color-secondary--darken);
-  }
+  position: relative;
 }
-
 .button:hover {
-  background:
-    linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     lighten(saturate(lighten($color, 15%), 35%), $lighten-on-hover) 0%,
     lighten(saturate(lighten($color, 12%), 15%), $lighten-on-hover) 26%,
-    lighten($color, $lighten-on-hover) 100%);
+    lighten($color, $lighten-on-hover) 100%
+  );
 }
-
 .button:active {
   top: $depth + px;
-  color: lighten($color, 45%);
-  text-shadow:
-    0 -2px 0 darken($color, 0%),
-    0 1px 1px lighten($color, 20%),
+  text-shadow: 0 -2px 0 darken($color, 0%), 0 1px 1px lighten($color, 20%),
     0 0 4px white;
-
-  &::before {
+  color: lighten($color, 45%);
+  &:before {
     top: 0;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
   }
 }
-
-.button::before {
+.button:before {
+  display: inline-block;
+  content: '';
   position: absolute;
+  left: 0;
+  right: 0;
   z-index: -1;
   top: ($depth) + px;
-  right: 0;
-  left: 0;
-  display: inline-block;
-  height: ($height) + px;
-  background:
-    linear-gradient(to top,
-    saturate(darken($color, 40%), 15%) 0%,
-    saturate(darken($color, 25%), 10%) $depth + px);
   border-radius: 5px;
-  box-shadow:
-    0 1px 0 2px rgba(0, 0, 0, 0.3),
+  height: ($height) + px;
+  background: linear-gradient(
+    to top,
+    saturate(darken($color, 40%), 15%) 0%,
+    saturate(darken($color, 25%), 10%) $depth + px
+  );
+  transition: all (($button-speed * 1.3) + s) $timing-function;
+  box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3),
     0 5px ($depth * 0.4 + px) rgba(0, 0, 0, 0.5),
     0 ($depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
-  content: '';
-  transition: all (($button-speed * 1.3) + s) $timing-function;
 }

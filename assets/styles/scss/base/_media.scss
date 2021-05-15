@@ -11,8 +11,8 @@
 svg {
   @include dimensions;
 
-  color: var(--color-foreground--hsl);
-  fill: var(--color-foreground--hsl);
+  color: var(--color-foreground);
+  fill: var(--color-foreground);
   object-fit: cover;
   object-position: center center;
 }

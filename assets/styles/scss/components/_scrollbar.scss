@@ -12,7 +12,7 @@
   position: absolute;
   right: calc(#{$filler--xxs} / 2);
   left: calc(#{$filler--xxs} / 2);
-  background: var(--color-tertiary--hsl);
+  background: var(--color-tertiary);
   border-radius: $border-radius--xs;
   content: '';
   opacity: 0;

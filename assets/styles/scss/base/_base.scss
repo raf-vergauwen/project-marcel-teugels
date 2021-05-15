@@ -25,8 +25,8 @@ body {
   // min-width: 100px;
   max-width: $dimension--m;
   margin: 0 auto;
-  background-color: var(--color-background--hsl);
-  color: var(--color-foreground--hsl);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: $font-family--text;
   font-weight: $font-weight--text;
   line-height: normal;
@@ -70,12 +70,12 @@ body {
 }
 
 .test-container {
-  background-color: var(--color-background--hsl);
+  background-color: var(--color-background);
   margin: 0 auto;
 }
 
 .test-container--2 {
-  background-color: var(--color-secondary--hsl);
+  background-color: var(--color-secondary);
   margin: 0 auto;
 }
 
