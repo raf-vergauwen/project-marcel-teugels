@@ -2,6 +2,10 @@
 *  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- *\
+-  HEADER MAIN: .main-header
+\* -------------------------------------------------------------------------- */
+
 // -  <<----------<< General >>---------->>
 
 header {
@@ -18,6 +22,59 @@ header {
 }
 
 // -  <<----------<< Specific >>---------->>
+
+.main-header {
+  // ...
+  &__container {
+    background-color: gainsboro;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  NAV MAIN: .main-nav
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+
+header nav {
+  // ...
+  min-width: calc(#{$dimension--xxs} - #{$filler--xl});
+  max-width: $dimension--xl;
+}
+
+.main-nav {
+  &__container {
+    background-color: lightpink;
+  }
+
+  &__nav-logo {
+    background-color: hotpink;
+  }
+
+  &__mobile-menu {
+    background-color: deeppink;
+  }
+
+  &__mobile-menu-slice {
+    background-color: palevioletred;
+  }
+
+  &__list {
+    background-color: mediumvioletred;
+  }
+
+  &__item {
+    background-color: lavender;
+  }
+}
+
+// -  <<----------<< Specific >>---------->>
+
+// ...
+
+/* -------------------------------------------------------------------------- *\
+-  Other
+\* -------------------------------------------------------------------------- */
 
 .menu-left a {
   position: relative;

@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------- *\
+-  SECTION 2: Hot Items
+\* -------------------------------------------------------------------------- */
+
+.hot-items {
+  &__container {
+    // @include dimensions;
+    // @include block-flex-container;
+  }
+
+  &__title {
+    // ...
+  }
+}
+
+.hot-item {
+  // ...
+  &__container {
+    position: relative;
+    // display: flex;
+    max-width: 375px;
+    height: 667px;
+    // align-items: center;
+    // justify-content: center;
+    background-color: lavender;
+  }
+
+  &__title {
+    @include transition-general;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: $filler--s;
+    // background-color: thistle;
+    font-variant: small-caps;
+    font-weight: $font-weight--subject;
+  }
+
+  &__visual {
+    @include transition-general;
+
+    height: 100%;
+    // background-color: blueviolet;
+  }
+
+  &__caption {
+    @include transition-general;
+    @include dimensions;
+
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -30%;
+    bottom: 0;
+    left: 0;
+    padding: $filler--s;
+    box-shadow: $box-shadow--caption---slide-in;
+  }
+
+  &__caption-title {
+    padding: 0;
+    margin-bottom: $filler--s;
+    color: var(--background-color);
+    font-variant: small-caps;
+    font-weight: $font-weight--subject;
+    text-transform: lowercase;
+  }
+
+  &__caption-text {
+    overflow: auto;
+    height: 100px;
+    margin: $filler--s 0;
+    // background-color: magenta;
+    color: var(--background-color);
+  }
+
+  &__caption-text::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  &__caption-btns {
+    @include inline-flex-container(nowrap, row, space-between, center);
+  }
+
+  &__caption-btn {
+    // ...
+  }
+
+  &__container:hover {
+    // ...
+    .hot-item {
+      // ...
+      &__visual {
+        // background-color: orchid;
+        transform: scale(1.25);
+      }
+
+      &__caption {
+        bottom: 0;
+        background-color: $bg-color--transparant-black---level-5;
+        box-shadow: $box-shadow--caption---slide-out;
+      }
+
+      &__title {
+        top: -30%;
+      }
+
+      &__caption-title {
+        @include transition-general;
+
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Intermezzo
+\* -------------------------------------------------------------------------- */
+
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
+  background-position: center center;
+  background-size: cover;
+  // filter: $filter--light;
+  filter: brightness(0.2);
+
+  &__container {
+    height: 100vh;
+    background-color: $bg-color--transparant-gray---level-2;
+    filter: brightness(0.2);
+  }
+}

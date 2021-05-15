@@ -549,9 +549,6 @@ header nav {
 -  Article
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  Forms
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
 *  _typography.scss: This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
@@ -744,6 +741,9 @@ img {
 /* -------------------------------------------------------------------------- *\
 *  _header.scss: This partial file contains all 'header' styles.
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  HEADER MAIN: .main-header
+\* -------------------------------------------------------------------------- */
 header {
   position: fixed;
   z-index: 3;
@@ -760,6 +760,45 @@ header {
   will-change: transform;
 }
 
+.main-header__container {
+  background-color: gainsboro;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  NAV MAIN: .main-nav
+\* -------------------------------------------------------------------------- */
+header nav {
+  min-width: calc(320px - 3rem);
+  max-width: 1920px;
+}
+
+.main-nav__container {
+  background-color: lightpink;
+}
+
+.main-nav__nav-logo {
+  background-color: hotpink;
+}
+
+.main-nav__mobile-menu {
+  background-color: deeppink;
+}
+
+.main-nav__mobile-menu-slice {
+  background-color: palevioletred;
+}
+
+.main-nav__list {
+  background-color: mediumvioletred;
+}
+
+.main-nav__item {
+  background-color: lavender;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  Other
+\* -------------------------------------------------------------------------- */
 .menu-left a {
   position: relative;
   display: inline-block;
@@ -1237,24 +1276,8 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
-button {
-  margin: 2rem;
-}
-
-button i {
-  margin: 0;
-}
-
 .btn--text:hover {
   color: var(--background-color);
-}
-
-.btn--icon {
-  margin: 0;
-}
-
-.btn--icon .fa-heart {
-  color: red;
 }
 
 .test-btn--1 {
@@ -1388,40 +1411,6 @@ button i {
 *  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  HEADER: main-header
-\* -------------------------------------------------------------------------- */
-.main-header__container {
-  background-color: gainsboro;
-}
-
-/* -------------------------------------------------------------------------- *\
--  NAV: main-nav
-\* -------------------------------------------------------------------------- */
-.main-nav__container {
-  background-color: lightpink;
-}
-
-.main-nav__nav-logo {
-  background-color: hotpink;
-}
-
-.main-nav__mobile-menu {
-  background-color: deeppink;
-}
-
-.main-nav__mobile-menu-slice {
-  background-color: palevioletred;
-}
-
-.main-nav__list {
-  background-color: mediumvioletred;
-}
-
-.main-nav__item {
-  background-color: lavender;
-}
-
-/* -------------------------------------------------------------------------- *\
 -  SECTION 1: hero
 \* -------------------------------------------------------------------------- */
 .hero {
@@ -1537,8 +1526,9 @@ button i {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

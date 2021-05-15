@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------------------- *\
+-  SECTION 1: hero
+\* -------------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  background-attachment: fixed;
+  background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    justify-content: center;
+    // animation: linear-gradient 15s ease infinite;
+    // background-color: $bg-color--transparant-gray---level-2;
+    // background-image: $linear-gradient--combo;
+    // background-size: 400% 400%;
+    // filter: contrast(50%);
+  }
+
+  &__visual {
+    max-width: fit-content;
+    max-height: 40vh;
+    margin: $filler--m 0;
+    fill: var(--primary-color);
+    // filter: drop-shadow(0 0 0.1rem var(--background-color));
+  }
+
+  &__subject {
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 0.1rem var(--background-color));
+  }
+
+  &__title {
+    color: var(--forground-color);
+    // filter: drop-shadow(0 0 0.1rem var(--background-color));
+    font-family: monospace;
+    font-size: $font-size--4;
+    font-weight: 600;
+  }
+}

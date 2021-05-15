@@ -5,34 +5,6 @@
 // -  <<----------<< General >>---------->>
 
 button {
-  // @include transition-general;
-  // @include dimensions(none, fit-content, auto);
-  // @include box-shadow(2);
-
-  // padding: $filler--xs;
-  // border: 0;
-  // background-color: var(--tertiary-color);
-  // border-radius: $border-radius--xs;
-  // color: var(--primary-color);
-  // font-size: $font-size--2;
-  // font-variant: small-caps;
-  // text-transform: lowercase;
-
-  // &:hover {
-  //   @include box-shadow(5);
-  //   transform: translateY(2px);
-  // }
-
-  //   &:active {
-  //   @include box-shadow(3);
-  //   transform: translateY(4px);
-  // }
-
-  margin: $filler--l;
-
-  i {
-    margin: 0;
-  }
 }
 
 // -  <<----------<< Specific >>---------->>
@@ -45,13 +17,7 @@ button {
   }
 }
 
-.btn--icon {
-  margin: 0;
 
-  .fa-heart {
-    color: red;
-  }
-}
 
 .test-btn--1 {
   @include transition-general;
@@ -78,12 +44,6 @@ button {
 
     transform: translateY(4px);
   }
-}
-
-.test-btn--2 {
-}
-
-.test-btn--3 {
 }
 
 // ----------------------------------------------------------------------------

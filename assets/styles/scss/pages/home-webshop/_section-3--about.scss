@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------------------- *\
+-  SECTION 3: About
+\* -------------------------------------------------------------------------- */
+
+.about {
+  &__container {
+    // background-color: cornsilk;
+  }
+
+  &__title {
+    background-color: saddlebrown;
+  }
+
+  &__container--visual {
+    background-color: bisque;
+  }
+
+  &__image {
+    background-color: navajowhite;
+  }
+
+  &__container--text {
+    background-color: sienna;
+  }
+
+  &__title--text {
+    background-color: burlywood;
+  }
+
+  &__sub-title {
+    background-color: brown;
+  }
+
+  &__paragraph {
+    background-color: rosybrown;
+  }
+}
+
+.about-visual {
+  &__container {
+    background-color: sandybrown;
+  }
+
+  &__image {
+    background-color: goldenrod;
+  }
+}
+
+.about-text {
+  &__container {
+    background-color: darkgoldenrod;
+  }
+
+  &__title {
+    background-color: peru;
+  }
+
+  &__sub-title {
+    background-color: chocolate;
+  }
+
+  &__paragraph {
+    background-color: olive;
+  }
+}
