@@ -2,7 +2,8 @@
 // +  _functions.scss: This partial file contains all Scss 'functions'.
 // -----------------------------------------------------------------------------
 
-// return color with different opacity value
+// * Return color with different opacity value
+
 @function alpha($color, $opacity) {
   $color: str-replace($color, 'var(');
   $color: str-replace($color, ')');
@@ -13,7 +14,8 @@
   @return hsla($color-h, $color-s, $color-l, $opacity);
 }
 
-// return color with different lightness value
+// * Return color with different lightness value
+
 @function lightness($color, $lightnessMultiplier) {
   $color: str-replace($color, 'var(');
   $color: str-replace($color, ')');
@@ -24,7 +26,8 @@
   @return hsl($color-h, $color-s, calc(#{$color-l} * #{$lightnessMultiplier}));
 }
 
-// modify color HSLA values
+// * Modify color HSLA values
+
 @function adjustHSLA(
   $color,
   $hueMultiplier: 1,
@@ -46,8 +49,8 @@
   );
 }
 
-// replace substring with another string
-// credits: https://css-tricks.com/snippets/sass/str-replace-function/
+// *  Replace substring with another string
+
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
 
