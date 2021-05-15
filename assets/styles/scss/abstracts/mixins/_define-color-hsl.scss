@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// +  Define-Color-HSL
+// -----------------------------------------------------------------------------
+
+// define HSL color variable
+@mixin define-color-hsl($color, $hue, $saturation, $lightness) {
+  #{$color}--hsl: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
+  #{$color}--h: #{$hue};
+  #{$color}--s: #{$saturation};
+  #{$color}--l: #{$lightness};
+  #{$color}--light: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} + 10%))'
+  );
+  #{$color}--lighter: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} + 20%))'
+  );
+  #{$color}--lightest: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} + 30%))'
+  );
+  #{$color}--dark: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} - 10%))'
+  );
+  #{$color}--darker: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} - 20%))'
+  );
+  #{$color}--darkest: unquote(
+    'hsl(#{$hue}, #{$saturation}, calc(#{$lightness} - 30%))'
+  );
+}

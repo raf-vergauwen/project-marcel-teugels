@@ -470,42 +470,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 320px) {
-  body {
-    background-color: darkslateblue;
-  }
-}
-
-@media (min-width: 640px) {
-  body {
-    background-color: slateblue;
-  }
-}
-
-@media (min-width: 960px) {
-  body {
-    background-color: purple;
-  }
-}
-
-@media (min-width: 1280px) {
-  body {
-    background-color: blueviolet;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    background-color: magenta;
-  }
-}
-
-@media (min-width: 1920px) {
-  body {
-    background-color: plum;
-  }
-}
-
 .main__container > section {
   min-height: 100vh;
 }
@@ -1276,10 +1240,6 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
-.btn--text:hover {
-  color: var(--background-color);
-}
-
 .test-btn--1 {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
@@ -1300,20 +1260,6 @@ input:checked + .slider::before {
   text-transform: lowercase;
 }
 
-.test-btn--1:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-}
-
-.test-btn--1:active {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-}
-
 .button {
   position: relative;
   top: 0;
@@ -1323,38 +1269,38 @@ input:checked + .slider::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 32.5px;
-  border-top: 1px solid #c8e2d3;
-  border-bottom: 1px solid #c2dece;
+  border-top: 1px solid #97b2d8;
+  border-bottom: 1px solid #90add5;
   margin-bottom: 15px;
   margin-left: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9ceabd), color-stop(26%, #9ddab6), to(#7fbb98));
-  background: linear-gradient(to bottom, #9ceabd 0%, #9ddab6 26%, #7fbb98 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#5e9aed), color-stop(26%, #6494d8), to(#4676b9));
+  background: linear-gradient(to bottom, #5e9aed 0%, #6494d8 26%, #4676b9 100%);
   border-radius: 5px;
-  color: #5ea97d;
+  color: #385e94;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: bold;
   line-height: 65px;
   text-decoration: none;
-  text-shadow: 0 -2px 0 #4a8a65, 0 1px 1px #c2dece;
+  text-shadow: 0 -2px 0 #2a476f, 0 1px 1px #90add5;
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
 }
 
 .button:visited {
-  color: #5ea97d;
+  color: #385e94;
 }
 
 .button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#baf1d1), color-stop(26%, #b7e4ca), to(#96c7ab));
-  background: linear-gradient(to bottom, #baf1d1 0%, #b7e4ca 26%, #96c7ab 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7eaef1), color-stop(26%, #80a8df), to(#6089c3));
+  background: linear-gradient(to bottom, #7eaef1 0%, #80a8df 26%, #6089c3 100%);
 }
 
 .button:active {
   top: 6px;
-  color: white;
-  text-shadow: 0 -2px 0 #7fbb98, 0 1px 1px #c2dece, 0 0 4px white;
+  color: #edf1f8;
+  text-shadow: 0 -2px 0 #4676b9, 0 1px 1px #90add5, 0 0 4px white;
 }
 
 .button:active::before {
@@ -1371,7 +1317,7 @@ input:checked + .slider::before {
   left: 0;
   display: inline-block;
   height: 65px;
-  background: linear-gradient(to top, #1e5033 0%, #378357 6px);
+  background: linear-gradient(to top, #0a1729 0%, #1d3a63 6px);
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
@@ -1648,11 +1594,13 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 :root,
 [data-theme='light'] {
-  --foreground-color: hsla(240, 100%, 10%, 1);
-  --background-color: hsla(240, 100%, 99%, 1);
-  --primary-color: hsla(207, 95%, 16%, 1);
-  --secondary-color: hsla(215, 44%, 49%, 1);
-  --tertiary-color: hsla(35, 45%, 50%, 1);
+  /* #  Main */
+  --foreground-color: #003;
+  --background-color: #f8f8ff;
+  --primary-color: #022e51;
+  --secondary-color: #4676b9;
+  --tertiary-color: #b78846;
+  /*  #  Transparant */
   --bg-color--transparant---lightest: hsla(0, 0%, 100%, 0.05);
   --bg-color--transparant---lighter: hsla(0, 0%, 100%, 0.2);
   --bg-color--transparant---light: hsla(0, 0%, 100%, 0.35);
@@ -1660,6 +1608,57 @@ input:checked + .slider::before {
   --bg-color--transparant---dark: hsla(0, 0%, 100%, 0.65);
   --bg-color--transparant---darker: hsla(0, 0%, 100%, 0.8);
   --bg-color--transparant---darkest: hsla(0, 0%, 100%, 0.95);
+  /* #  Main */
+  --color-foreground--hsl: hsl(240, 100%, 10%);
+  --color-foreground--h: 240;
+  --color-foreground--s: 100%;
+  --color-foreground--l: 10%;
+  --color-foreground--light: hsl(240, 100%, calc(10% + 10%));
+  --color-foreground--lighter: hsl(240, 100%, calc(10% + 20%));
+  --color-foreground--lightest: hsl(240, 100%, calc(10% + 30%));
+  --color-foreground--dark: hsl(240, 100%, calc(10% - 10%));
+  --color-foreground--darker: hsl(240, 100%, calc(10% - 20%));
+  --color-foreground--darkest: hsl(240, 100%, calc(10% - 30%));
+  --color-background--hsl: hsl(240, 100%, 99%);
+  --color-background--h: 240;
+  --color-background--s: 100%;
+  --color-background--l: 99%;
+  --color-background--light: hsl(240, 100%, calc(99% + 10%));
+  --color-background--lighter: hsl(240, 100%, calc(99% + 20%));
+  --color-background--lightest: hsl(240, 100%, calc(99% + 30%));
+  --color-background--dark: hsl(240, 100%, calc(99% - 10%));
+  --color-background--darker: hsl(240, 100%, calc(99% - 20%));
+  --color-background--darkest: hsl(240, 100%, calc(99% - 30%));
+  --color-primary--hsl: hsl(207, 95%, 16%);
+  --color-primary--h: 207;
+  --color-primary--s: 95%;
+  --color-primary--l: 16%;
+  --color-primary--light: hsl(207, 95%, calc(16% + 10%));
+  --color-primary--lighter: hsl(207, 95%, calc(16% + 20%));
+  --color-primary--lightest: hsl(207, 95%, calc(16% + 30%));
+  --color-primary--dark: hsl(207, 95%, calc(16% - 10%));
+  --color-primary--darker: hsl(207, 95%, calc(16% - 20%));
+  --color-primary--darkest: hsl(207, 95%, calc(16% - 30%));
+  --color-secondary--hsl: hsl(215, 45%, 50%);
+  --color-secondary--h: 215;
+  --color-secondary--s: 45%;
+  --color-secondary--l: 50%;
+  --color-secondary--light: hsl(215, 45%, calc(50% + 10%));
+  --color-secondary--lighter: hsl(215, 45%, calc(50% + 20%));
+  --color-secondary--lightest: hsl(215, 45%, calc(50% + 30%));
+  --color-secondary--dark: hsl(215, 45%, calc(50% - 10%));
+  --color-secondary--darker: hsl(215, 45%, calc(50% - 20%));
+  --color-secondary--darkest: hsl(215, 45%, calc(50% - 30%));
+  --color-tertiary--hsl: hsl(35, 45%, 50%);
+  --color-tertiary--h: 35;
+  --color-tertiary--s: 45%;
+  --color-tertiary--l: 50%;
+  --color-tertiary--light: hsl(35, 45%, calc(50% + 10%));
+  --color-tertiary--lighter: hsl(35, 45%, calc(50% + 20%));
+  --color-tertiary--lightest: hsl(35, 45%, calc(50% + 30%));
+  --color-tertiary--dark: hsl(35, 45%, calc(50% - 10%));
+  --color-tertiary--darker: hsl(35, 45%, calc(50% - 20%));
+  --color-tertiary--darkest: hsl(35, 45%, calc(50% - 30%));
 }
 
 /* -------------------------------------------------------------------------- *\
