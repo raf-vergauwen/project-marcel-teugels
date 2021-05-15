@@ -77,7 +77,6 @@ ul {
   outline: 2px rgba(0, 0, 255, 0.75) dashed;
 }
 
-a,
 abbr,
 b,
 bdi,
@@ -155,7 +154,6 @@ tr {
   outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
 }
 
-button,
 datalist,
 fieldset,
 form,
@@ -518,6 +516,12 @@ body {
 
 .test-container {
   background-color: var(--background-color);
+  margin: 0 auto;
+}
+
+.test-container--2 {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
 }
 
 body {
@@ -688,7 +692,8 @@ li {
 /* -------------------------------------------------------------------------- *\
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
-a {
+a,
+button {
   padding: 0.25rem 0;
   color: var(--primary-color);
   font-family: monospace;
@@ -697,7 +702,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+button:hover {
   color: var(--secondary-color);
 }
 
@@ -1232,26 +1238,7 @@ input:checked + .slider::before {
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
 button {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
-  margin: 0 auto;
-  padding: 0.5rem;
-  border: 0;
-  background-color: var(--tertiary-color);
-  border-radius: 8px;
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  font-variant: small-caps;
-  text-transform: lowercase;
-}
-
-button:active {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+  margin: 2rem;
 }
 
 button i {
@@ -1268,6 +1255,106 @@ button i {
 
 .btn--icon .fa-heart {
   color: red;
+}
+
+.test-btn--1 {
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0.5rem;
+  border: 0;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+.test-btn--1:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.test-btn--1:active {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.button {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: auto;
+  height: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 32.5px;
+  border-top: 1px solid #c8e2d3;
+  border-bottom: 1px solid #c2dece;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9ceabd), color-stop(26%, #9ddab6), to(#7fbb98));
+  background: linear-gradient(to bottom, #9ceabd 0%, #9ddab6 26%, #7fbb98 100%);
+  border-radius: 5px;
+  color: #5ea97d;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 65px;
+  text-decoration: none;
+  text-shadow: 0 -2px 0 #4a8a65, 0 1px 1px #c2dece;
+  -webkit-transition: all 0.06s ease-out;
+  transition: all 0.06s ease-out;
+}
+
+.button:visited {
+  color: #5ea97d;
+}
+
+.button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#baf1d1), color-stop(26%, #b7e4ca), to(#96c7ab));
+  background: linear-gradient(to bottom, #baf1d1 0%, #b7e4ca 26%, #96c7ab 100%);
+}
+
+.button:active {
+  top: 6px;
+  color: white;
+  text-shadow: 0 -2px 0 #7fbb98, 0 1px 1px #c2dece, 0 0 4px white;
+}
+
+.button:active::before {
+  top: 0;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.button::before {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  height: 65px;
+  background: linear-gradient(to top, #1e5033 0%, #378357 6px);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+  content: '';
+  -webkit-transition: all 0.078s ease-out;
+  transition: all 0.078s ease-out;
 }
 
 /* -------------------------------------------------------------------------- *\

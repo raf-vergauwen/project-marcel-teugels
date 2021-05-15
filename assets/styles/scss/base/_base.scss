@@ -71,6 +71,12 @@ body {
 
 .test-container {
   background-color: var(--background-color);
+  margin: 0 auto;
+}
+
+.test-container--2 {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
 }
 
 body {

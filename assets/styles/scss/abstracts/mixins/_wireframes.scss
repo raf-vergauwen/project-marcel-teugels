@@ -60,7 +60,7 @@
     // ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
 
     // -  <<----------<< (1) Content Sectioning: Block >>---------->>
-
+    // div,
     address,
     article,
     aside,
@@ -93,7 +93,7 @@
 
     // -  <<----------<< (3) Inline Text Semantics >>---------->>
 
-    a,
+    // a,
     abbr,
     b,
     bdi,
@@ -116,6 +116,7 @@
     s,
     samp,
     small,
+    // span,
     strong,
     sub,
     sup,
@@ -185,7 +186,7 @@
 
     // -  <<----------<< (10) Forms >>---------->>
 
-    button,
+    // button,
     datalist,
     fieldset,
     form,
