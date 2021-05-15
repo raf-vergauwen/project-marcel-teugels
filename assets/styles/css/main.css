@@ -1310,14 +1310,14 @@ input:checked + .slider::before {
 }
 
 .button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#baf1d1), color-stop(26%, #b7e4ca), to(#96c7ab));
-  background: linear-gradient(to bottom, #baf1d1 0%, #b7e4ca 26%, #96c7ab 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.22))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.19))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1.07))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.22)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.19)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1.07)) 100%);
 }
 
 .button:active {
   top: 6px;
-  text-shadow: 0 -2px 0 #7fbb98, 0 1px 1px #c2dece, 0 0 4px white;
-  color: white;
+  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2)), 0 0 4px white;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
 }
 
 .button:active:before {
@@ -1327,7 +1327,9 @@ input:checked + .slider::before {
 }
 
 .button:before {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   content: '';
   position: absolute;
   left: 0;
@@ -1336,7 +1338,7 @@ input:checked + .slider::before {
   top: 6px;
   border-radius: 5px;
   height: 65px;
-  background: linear-gradient(to top, #1e5033 0%, #378357 6px);
+  background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
   -webkit-transition: all 0.078s ease-out;
   transition: all 0.078s ease-out;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);

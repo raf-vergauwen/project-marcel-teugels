@@ -39,7 +39,7 @@ $dimension--xxl: 2240px;
 
 // -  <<----------<< Shadows Colors >>---------->>
 
-// #  Card
+// #  Component - Card
 $box-shadow--card---level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
   0 1px 2px rgba(0, 0, 0, 0.24);
 $box-shadow--card---level-2: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -51,16 +51,11 @@ $box-shadow--card---level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
 $box-shadow--card---level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
-// #  Caption
+// #  Component - Caption
 $box-shadow--caption---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
   0 1px 2px 5px rgba(0, 0, 0, 0.24);
 $box-shadow--caption---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
   0 15px 12px 20px rgba(0, 0, 0, 0.22);
-
-// #  Button
-// $box-shadow--button---default: ;
-$box-shadow--button---hover: 0 10px 20px rgba(0, 0, 0, 0.2);
-$box-shadow--button---active: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 // -  <<----------<< Borders Sizes>>---------->>
 $border-radius--xxs: 4px;
@@ -172,8 +167,6 @@ $letter-spacing--text: normal;
 // *  Colors
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Color >>---------->>
-
 // -  <<----------<< linear-Gradient>>---------->>
 
 // #  linear-Gradient
@@ -232,20 +225,27 @@ $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 // -  <<----------<< Filter >>---------->>
 $filter--light: brightness(0.8) contrast(1.2);
 
-// -  <<----------<< Temporary >>---------->>
+// -----------------------------------------------------------------------------
+// *  Forms Components
+// -----------------------------------------------------------------------------
+
+// -  <<----------<< Button >>---------->>
+
+// #  Button
+$button--height: 65;
+$button--depth: 6;
+$button--speed: 0.06;
+$button--timing-function: ease-out;
+
+$box-shadow--button---active: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+$box-shadow--button---before:  0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px ($button--depth * 0.4 + px) rgba(0, 0, 0, 0.5), 0 ($button--depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
+
+
+// -----------------------------------------------------------------------------
+// *  Temporary
+// -----------------------------------------------------------------------------
 
 // #  Color
-$color-grey-light: #e7e7e7;
-$color-gold: hsl(44, 32.4%, 39%);
-$color-green: hsl(177, 87.7%, 27%);
-$color-white: white;
 
-$theme-bg: linear-gradient(110deg, rgba(black, 0.5), rgba(black, 0.1)),
-  url('../img/hero-bg.png') 0% 0% / cover;
-
-$support-bg: linear-gradient(
-    110deg,
-    rgba(black, 0.5) 400px,
-    rgba(black, 0.1) 800px
-  ),
-  url('../img/support-bg.jpg') center center / cover;
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
