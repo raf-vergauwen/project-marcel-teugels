@@ -30,14 +30,15 @@ svg {
 img {
   @include dimensions;
 
-  object-fit: cover;
-  object-position: center center;
-
   // @media (prefers-color-scheme: dark) {
   //   filter: brightness(0.8) contrast(1.2);
   // }
 
-  filter: brightness(0.8) contrast(1.2);
+  // filter: brightness(0.8) contrast(1.2);
+
+  background-color: var(--bg-color--transparant---softest);
+  object-fit: cover;
+  object-position: center center;
 }
 
 // -  <<----------<< Specific >>---------->>

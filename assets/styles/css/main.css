@@ -722,12 +722,11 @@ svg {
 img {
   width: 100%;
   height: auto;
+  background-color: var(--bg-color--transparant---softest);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
 }
 
 /* ========================================================================== *\
@@ -1390,6 +1389,7 @@ input:checked + .slider::before {
 }
 
 .hero__container {
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1401,6 +1401,7 @@ input:checked + .slider::before {
   max-width: fit-content;
   max-height: 40vh;
   margin: 1.5rem 0;
+  background-color: var(--bg-color--transparant---softest);
   fill: var(--color-primary);
   -webkit-filter: drop-shadow(0 0 0.05rem var(--color-background));
           filter: drop-shadow(0 0 0.05rem var(--color-background));
@@ -1489,9 +1490,9 @@ input:checked + .slider::before {
   bottom: -29%;
   left: 0;
   padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .hot-item__caption-title {
@@ -1532,6 +1533,8 @@ input:checked + .slider::before {
 }
 
 .hot-item__container:hover .hot-item__visual {
+  -webkit-filter: blur(0.1rem);
+          filter: blur(0.1rem);
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
@@ -1677,13 +1680,13 @@ input:checked + .slider::before {
 :root,
 [data-theme='light'] {
   /*  #  Transparant */
-  --bg-color--transparant---lightest: hsla(0, 0%, 100%, 0.05);
-  --bg-color--transparant---lighter: hsla(0, 0%, 100%, 0.2);
-  --bg-color--transparant---light: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
   --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
-  --bg-color--transparant---dark: hsla(0, 0%, 100%, 0.65);
-  --bg-color--transparant---darker: hsla(0, 0%, 100%, 0.8);
-  --bg-color--transparant---darkest: hsla(0, 0%, 100%, 0.95);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
   /* #  Main */
   /* Color-Group */
   --color-foreground: hsl(240, 100%, 10%);

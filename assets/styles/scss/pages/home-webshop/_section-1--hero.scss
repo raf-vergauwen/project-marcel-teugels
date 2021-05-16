@@ -10,18 +10,22 @@
   background-size: cover;
 
   &__container {
-    justify-content: center;
     // animation: linear-gradient 15s ease infinite;
     // background-color: $bg-color--transparant-gray---level-2;
     // background-image: $linear-gradient--combo;
     // background-size: 400% 400%;
     // filter: contrast(50%);
+
+    // background-color: var(--bg-color--transparant---soft);
+    height: 100vh;
+    justify-content: center;
   }
 
   &__visual {
     max-width: fit-content;
     max-height: 40vh;
     margin: $filler--m 0;
+    background-color: var(--bg-color--transparant---softest);
     fill: var(--color-primary);
     filter: drop-shadow(0 0 0.05rem var(--color-background));
   }

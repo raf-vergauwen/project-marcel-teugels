@@ -17,11 +17,6 @@
   &__container {
     @include flex-items(1, 1);
 
-    // position: relative;
-    // min-width: calc(#{$dimension--xxs} - #{$filler--l});
-    // max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-    // height: 80vh;
-    // flex: 1 1 auto;
     margin: $filler--m;
   }
 
@@ -57,8 +52,8 @@
     bottom: -29%;
     left: 0;
     padding: $filler--s;
-    box-shadow: $box-shadow--caption---slide-in;
     background-color: $bg-color--transparant-black---level-3;
+    box-shadow: $box-shadow--caption---slide-in;
   }
 
   &__caption-title {
@@ -96,6 +91,7 @@
     .hot-item {
       // ...
       &__visual {
+        filter: blur(0.1rem);
         // background-color: orchid;
         transform: scale(1.25);
       }

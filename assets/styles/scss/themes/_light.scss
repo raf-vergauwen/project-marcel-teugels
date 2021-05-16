@@ -7,13 +7,13 @@
   // -  <<----------<< Background Colors >>---------->>
 
   /*  #  Transparant */
-  --bg-color--transparant---lightest: hsla(0, 0%, 100%, 0.05);
-  --bg-color--transparant---lighter: hsla(0, 0%, 100%, 0.2);
-  --bg-color--transparant---light: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
   --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
-  --bg-color--transparant---dark: hsla(0, 0%, 100%, 0.65);
-  --bg-color--transparant---darker: hsla(0, 0%, 100%, 0.8);
-  --bg-color--transparant---darkest: hsla(0, 0%, 100%, 0.95);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
 
   // -  <<----------<< Foreground Colors >>---------->>
 
@@ -33,7 +33,4 @@
 
   // #b78846 - mid-goldbrown
   @include define-color-hsl(--color-tertiary, 35, 45%, 50%);
-
-
-
 }
