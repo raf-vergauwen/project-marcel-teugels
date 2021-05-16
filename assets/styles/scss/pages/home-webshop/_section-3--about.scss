@@ -4,78 +4,146 @@
 
 .about {
   &__container {
-    @include block-flex-container(nowrap, row, center, center);
+    @include block-flex-container(nowrap, column, center, center);
 
-    background-color: cornsilk;
+    // background-color: cornsilk;
+    background: radial-gradient(#003, #000);
   }
 
   &__title {
-    padding: $filler--s;
-    background-color: saddlebrown;
+    // padding: $filler--m;
+    // background-color: saddlebrown;
   }
 
   &__container--visual {
     flex: 1 1 50%;
-    background-color: bisque;
+    padding: $filler--xs;
+    margin: $filler--m;
+    // background-color: bisque;
   }
 
   &__image {
-    background-color: navajowhite;
+    height: 100%;
+    // background-color: navajowhite;
   }
 
   &__container--text {
     width: 100%;
-    // flex: 1 1 50%;
     height: 80vh;
-    background-color: sienna;
+    flex: 1 1 50%;
+    padding: $filler--xs;
+    margin: $filler--m;
+    // background-color: sienna;
   }
 
   &__title--text {
-    padding-top: 0;
-    background-color: burlywood;
+    // padding-top: 0;
+    // background-color: burlywood;
   }
 
   &__sub-title {
     padding: $filler--xs;
-    background-color: brown;
+    // background-color: brown;
     font-size: $font-size--2;
     font-style: italic;
   }
 
   &__paragraph {
     overflow: auto;
-    // height: 70%;
+    height: 70%;
     height: calc(#{$dimension--xxs} + (#{$dimension--xxs} / 4));
     margin: $filler--s 0;
-    background-color: rosybrown;
+    // background-color: rosybrown;
     color: var(--color-background);
   }
 }
 
 .about-visual {
   &__container {
-    background-color: sandybrown;
+    // background-color: sandybrown;
   }
 
   &__image {
-    background-color: goldenrod;
+    // background-color: goldenrod;
   }
 }
 
 .about-text {
   &__container {
-    background-color: darkgoldenrod;
+    // background-color: darkgoldenrod;
   }
 
   &__title {
-    background-color: peru;
+    // background-color: peru;
   }
 
   &__sub-title {
-    background-color: chocolate;
+    // background-color: chocolate;
   }
 
   &__paragraph {
-    background-color: olive;
+    // background-color: olive;
+  }
+}
+
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+  border: 2px solid var(--color-tertiary);
+  background-color: rgba(#000, 0.5);
+  transform: translate3d(-50%, -50%, 0);
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    content: '•';
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+  }
+
+  &::before {
+    left: 5px;
+  }
+
+  &::after {
+    right: 5px;
+  }
+
+  .box-inner {
+    position: relative;
+    padding: $filler--xs;
+    border: 2px solid var(--color-tertiary);
+
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: -2px;
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--color-tertiary);
+      color: var(--color-tertiary);
+      content: '•';
+      font-size: 14px;
+      line-height: 12px;
+      text-align: center;
+    }
+
+    &::before {
+      left: -2px;
+    }
+
+    &::after {
+      right: -2px;
+    }
   }
 }

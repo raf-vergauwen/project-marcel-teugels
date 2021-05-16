@@ -9,7 +9,6 @@
   @include box-transition;
   // padding: $filler--xs;
 
-  position: relative;
   overflow: hidden;
   min-width: calc(#{$dimension--xxs} - #{$filler--l});
   max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});

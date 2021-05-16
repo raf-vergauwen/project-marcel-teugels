@@ -9,7 +9,7 @@
   }
 
   &__title {
-    padding: $filler--l 0 $filler--xs 0;
+    // padding: $filler--l 0 $filler--xs 0;
   }
 }
 
@@ -17,6 +17,7 @@
   &__container {
     @include flex-items(1, 1);
 
+    position: relative;
     margin: $filler--m;
   }
 
