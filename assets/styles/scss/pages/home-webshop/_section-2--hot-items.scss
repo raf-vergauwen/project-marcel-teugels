@@ -5,15 +5,11 @@
 .hot-items {
   &__container {
     @include dimensions;
-    @include block-flex-container(wrap, row, space-between, center);
+    @include block-flex-container(wrap, row, center, center);
   }
 
   &__title {
     padding: $filler--l 0 $filler--xs 0;
-
-    // height: 10vh;
-
-    // ...
   }
 }
 
@@ -23,9 +19,10 @@
 
     position: relative;
     min-width: calc(#{$dimension--xxs} - #{$filler--l});
-    max-width: calc((#{$dimension--xxs} / 4) + #{$dimension--xxs});
+    max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
     height: 80vh;
-    // flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: $filler--m;
   }
 
   &__title {
@@ -75,8 +72,8 @@
   &__caption-text {
     overflow: auto;
     height: 100px;
+    height: calc(#{$dimension--xxs} / 3);
     margin: $filler--s 0;
-    // background-color: magenta;
     color: var(--color-background);
   }
 

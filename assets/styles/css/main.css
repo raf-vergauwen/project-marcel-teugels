@@ -463,7 +463,7 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: var(--color-background);
   color: var(--color-foreground);
@@ -1424,7 +1424,7 @@ input:checked + .slider::before {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  place-content: space-between;
+  place-content: center;
   place-content: center;
 }
 
@@ -1443,8 +1443,11 @@ input:checked + .slider::before {
   place-self: center;
   position: relative;
   min-width: calc(320px - 2rem);
-  max-width: calc((320px / 4) + 320px);
+  max-width: calc((320px / 3) + 320px);
   height: 80vh;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  margin: 1.5rem;
 }
 
 .hot-item__title {
@@ -1494,6 +1497,7 @@ input:checked + .slider::before {
 .hot-item__caption-text {
   overflow: auto;
   height: 100px;
+  height: calc(320px / 3);
   margin: 1rem 0;
   color: var(--color-background);
 }
