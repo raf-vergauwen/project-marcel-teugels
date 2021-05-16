@@ -105,11 +105,11 @@
 @mixin dimensions($type: none, $width: 100%, $height: auto) {
   width: $width;
   height: $height;
-  margin: $center-me;
 
   // #  Regular Fontawesome Icons
   @if $type == fas {
-    margin-right: $filler--xs;
+    margin: 0;
+    margin-right: 0.5rem;
     font-size: $width;
   }
   // #  Brand Fontawesome Icons
@@ -154,7 +154,12 @@
 }
 
 // #  Inline-Flex-Container ---> buttons, navigation, vertical lists
-@mixin inline-flex-container($wrap-type: nowrap, $direction: row, $justify: center, $align: center) {
+@mixin inline-flex-container(
+  $wrap-type: nowrap,
+  $direction: row,
+  $justify: center,
+  $align: center
+) {
   display: inline-flex;
   flex-direction: $direction;
   flex-wrap: $wrap-type;

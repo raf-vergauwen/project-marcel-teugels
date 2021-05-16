@@ -556,7 +556,7 @@ header nav {
 -  Headings
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
@@ -569,7 +569,7 @@ h1 {
 }
 
 h2 {
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -588,7 +588,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.5rem;
   color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
@@ -607,7 +607,7 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.5rem;
   color: var(--color-secondary);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
@@ -626,7 +626,7 @@ h4 + p::first-letter {
 }
 
 h5 {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -645,7 +645,7 @@ h5 + p::first-letter {
 }
 
 h6 {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -670,7 +670,7 @@ p,
 li,
 blockquote,
 figcaption {
-  padding: 0.25rem 0;
+  padding: 0.5rem;
   color: var(--color-foreground);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -683,7 +683,12 @@ figcaption {
 }
 
 li {
+  padding: 0.5rem 0;
   list-style-type: none;
+}
+
+li a i {
+  margin-right: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -691,7 +696,7 @@ li {
 \* -------------------------------------------------------------------------- */
 a,
 button {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   color: var(--color-primary);
   font-family: "Montserrat", monospace;
   font-size: 1.25rem;
@@ -699,7 +704,6 @@ button {
   font-weight: 400;
   letter-spacing: normal;
   text-align: 1.5;
-  text-align: center;
   text-decoration: none;
   text-transform: none;
 }
@@ -718,7 +722,6 @@ button:hover {
 svg {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   color: var(--color-foreground);
   fill: var(--color-foreground);
   -o-object-fit: cover;
@@ -733,7 +736,6 @@ svg {
 img {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -1054,7 +1056,6 @@ ul.menu-left.collapse {
 .wrapped-block {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: block;
   padding: 0;
 }
@@ -1062,7 +1063,6 @@ ul.menu-left.collapse {
 .padded-block {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: block;
   padding: 0.5rem;
 }
@@ -1073,7 +1073,6 @@ ul.menu-left.collapse {
 .wrapped-flex {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,7 +1090,6 @@ ul.menu-left.collapse {
 .padded-flex {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,7 +1110,6 @@ ul.menu-left.collapse {
 .wrapped-grid {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   padding: 0;
@@ -1121,7 +1118,6 @@ ul.menu-left.collapse {
 .padded-grid {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   padding: 0.5rem;
@@ -1153,7 +1149,7 @@ ul.menu-left.collapse {
 .fas {
   width: 1.25rem;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
   margin-right: 0.5rem;
   font-size: 1.25rem;
 }
@@ -1161,7 +1157,6 @@ ul.menu-left.collapse {
 .fab {
   width: 2.44141rem;
   height: auto;
-  margin: 0 auto;
   margin: 0;
   font-size: 2.44141rem;
 }
@@ -1273,55 +1268,68 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
-.button {
+.btn {
   position: relative;
   top: 0;
+  width: auto;
+  height: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: auto;
-  height: 65px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 32.5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: center;
+  place-items: center;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  place-self: stretch;
   border-top: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.22));
   border-bottom: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
-  margin-bottom: 15px;
-  margin-left: 5px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1))));
   background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1)) 100%);
-  border-radius: 5px;
+  border-radius: 8px;
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
-  line-height: 65px;
   text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
 }
 
-.button:visited {
+.btn:visited {
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
 }
 
-.button:hover {
+.btn:first-of-type {
+  margin-left: 0;
+}
+
+.btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.22))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.19))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1.07))));
   background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.22)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.19)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1.07)) 100%);
 }
 
-.button:active {
+.btn:active {
   top: 6px;
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
 }
 
-.button:active::before {
+.btn:active::before {
   top: 0;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
 }
 
-.button::before {
+.btn::before {
   position: absolute;
   z-index: -1;
   top: 6px;
@@ -1330,14 +1338,25 @@ input:checked + .slider::before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 65px;
+  height: 2rem;
   background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
-  border-radius: 5px;
+  border-radius: 8px;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
   content: '';
   -webkit-transition: all 0.078s ease-out;
   transition: all 0.078s ease-out;
+}
+
+.btn--text {
+  padding: 0 0.5rem;
+}
+
+.btn--icon i {
+  width: 1.5625rem;
+  height: auto;
+  margin: 0;
+  font-size: 1.5625rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1443,7 +1462,6 @@ input:checked + .slider::before {
   transition: all 0.25s ease 0s;
   width: 100%;
   height: auto;
-  margin: 0 auto;
   position: absolute;
   z-index: 1;
   right: 0;
