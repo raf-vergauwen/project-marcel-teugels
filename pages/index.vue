@@ -34,7 +34,6 @@
 <style lang="scss">
 body {
   margin: 0px;
-  color: white;
 }
 
 .home {

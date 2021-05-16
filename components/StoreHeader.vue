@@ -23,6 +23,7 @@ export default {
   name: 'Header',
   data() {
     return {
+      cijfer: 0,
       navItems: [
         { path: '/', label: 'home' },
         { path: '/storefront', label: 'store' },
@@ -30,6 +31,7 @@ export default {
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profiel' },
         { path: '/account-creation', label: 'sign up' },
+        { path: '/shopping-cart', label: `winkelwagen(0)` },
         { path: '/home-restauratie', label: 'restauratie' },
       ],
     };

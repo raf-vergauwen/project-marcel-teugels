@@ -1,13 +1,20 @@
 <template>
-  <div class="container">
-    <h1 class="title">Shopping cart</h1>
-    <button @click="printList">print</button>
-    <p v-for="items in productData" :key="items.name">{{ items.name }}</p>
-  </div>
+  <main>
+    <store-header />
+    <div class="container">
+      <h1 class="title">Shopping cart</h1>
+      <button @click="printList">print</button>
+      <p v-for="items in productData" :key="items.name">{{ items.name }}</p>
+    </div>
+  </main>
 </template>
 
 <script>
+import StoreHeader from '~/components/StoreHeader';
+
 export default {
+  components: { StoreHeader },
+
   data() {
     return {
       shoppingList: sessionStorage.getItem('shopping_cart').split(','),
