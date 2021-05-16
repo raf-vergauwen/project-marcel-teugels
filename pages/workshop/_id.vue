@@ -1,7 +1,7 @@
 <template>
   <main class="p-product-page">
     <restauration-header />
-    <div class="title__container">
+    <div class="container">
       <h1>Under Construction</h1>
     </div>
   </main>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-.title__container {
+.container {
   display: flex;
   height: 90vh;
   width: 100vw;
