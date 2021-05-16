@@ -23,9 +23,8 @@ html {
 // #  <body>
 body {
   min-width: calc(#{$dimension--xxs} - #{$filler--m});
-  // min-width: 100px;
   max-width: $dimension--m;
-  margin: 0 auto;
+  margin: $center-me;
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: $font-family--text;
@@ -71,12 +70,12 @@ body {
 }
 
 .test-container {
-  margin: 0 auto;
+  margin: $center-me;
   background-color: var(--color-background);
 }
 
 .test-container--2 {
-  margin: 0 auto;
+  margin: $center-me;
   background-color: var(--color-secondary);
 }
 

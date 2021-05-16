@@ -698,7 +698,7 @@ button {
   font-variant: normal;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 1.5;
+  text-align: 1.5;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -1084,12 +1084,8 @@ ul.menu-left.collapse {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  place-content: center;
+  place-items: center;
 }
 
 .padded-flex {
@@ -1106,12 +1102,8 @@ ul.menu-left.collapse {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  place-content: center;
+  place-items: center;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1281,16 +1273,17 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
-button {
-  border: 0;
-}
-
 .button {
   position: relative;
   top: 0;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: auto;
   height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 32.5px;
@@ -1306,7 +1299,6 @@ button {
   text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
-  zoom: 2;
 }
 
 .button:visited {
@@ -1335,7 +1327,9 @@ button {
   top: 6px;
   right: 0;
   left: 0;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 65px;
   background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
   border-radius: 5px;
@@ -1492,12 +1486,8 @@ button {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  place-content: space-between;
+  place-items: center;
 }
 
 .hot-item__container:hover .hot-item__visual {
@@ -1520,26 +1510,6 @@ button {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
   color: var(--color-secondary);
-}
-
-/* -------------------------------------------------------------------------- *\
--  Intermezzo
-\* -------------------------------------------------------------------------- */
-.intermezzo {
-  height: 100vh;
-  background-attachment: fixed;
-  background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
-  background-position: center center;
-  background-size: cover;
-  -webkit-filter: brightness(0.2);
-          filter: brightness(0.2);
-}
-
-.intermezzo__container {
-  height: 100vh;
-  background-color: rgba(128, 128, 128, 0.4);
-  -webkit-filter: brightness(0.2);
-          filter: brightness(0.2);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1595,6 +1565,28 @@ button {
 
 .about-text__paragraph {
   background-color: olive;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  INTERMEZZO
+\* -------------------------------------------------------------------------- */
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.intermezzo__container {
+  height: 100vh;
+}
+
+.intermezzo--1 {
+  background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
+}
+
+.intermezzo--2 {
+  background-image: url("/assets/media/images/marcel-teugels/favorites/construction-work--05.jpg");
 }
 
 /* -------------------------------------------------------------------------- *\

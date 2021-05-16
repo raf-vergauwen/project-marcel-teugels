@@ -1,0 +1,25 @@
+/* -------------------------------------------------------------------------- *\
+-  INTERMEZZO
+\* -------------------------------------------------------------------------- */
+
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  // filter: brightness(0.75);
+
+  &__container {
+    height: 100vh;
+    // background-color: $bg-color--transparant-gray---level-2;
+    // filter: brightness(0.2);
+  }
+}
+
+.intermezzo--1 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
+}
+
+.intermezzo--2 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/construction-work--05.jpg');
+}

@@ -5,7 +5,7 @@
 // -  <<----------<< General >>---------->>
 
 button {
-  border: 0;
+  // ...
 }
 
 // -  <<----------<< Specific >>---------->>
@@ -13,28 +13,29 @@ button {
 .button {
   position: relative;
   top: 0;
-  display: inline-block;
+  display: inline-flex;
+
   width: auto;
   height: $button--height + px;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0 (($button--height/2) + px);
   border-top: 1px solid lightness(var(--color-secondary), 1.22);
   border-bottom: 1px solid lightness(var(--color-secondary), 1.2);
   margin-bottom: 15px;
   margin-left: 5px;
-  background:
-    linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     adjust-hsl(var(--color-secondary), 1, 1.35, 1.15) 0%,
     adjust-hsl(var(--color-secondary), 1, 1.15, 1.12) 26%,
-    adjust-hsl(var(--color-secondary), 1, 1, 1) 100%);
+    adjust-hsl(var(--color-secondary), 1, 1, 1) 100%
+  );
   border-radius: 5px;
   color: lightness(var(--color-secondary), 0.9);
   line-height: $button--height + px;
-  text-shadow:
-    0 -2px 0 lightness(var(--color-secondary), 0.8),
+  text-shadow: 0 -2px 0 lightness(var(--color-secondary), 0.8),
     0 1px 1px lightness(var(--color-secondary), 1.2);
   transition: all ($button--speed + s) $button--timing-function;
-  zoom: 2;
 
   &:visited {
     color: lightness(var(--color-secondary), 0.9);
@@ -42,11 +43,12 @@ button {
 }
 
 .button:hover {
-  background:
-    linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     adjust-hsl(var(--color-secondary), 1, 1.35, 1.22) 0%,
     adjust-hsl(var(--color-secondary), 1, 1.15, 1.19) 26%,
-    adjust-hsl(var(--color-secondary), 1, 1, 1.07) 100%);
+    adjust-hsl(var(--color-secondary), 1, 1, 1.07) 100%
+  );
 }
 
 .button:active {
@@ -65,12 +67,13 @@ button {
   top: ($button--depth) + px;
   right: 0;
   left: 0;
-  display: inline-block;
+  display: inline-flex;
   height: ($button--height) + px;
-  background:
-    linear-gradient(to top,
+  background: linear-gradient(
+    to top,
     adjust-hsl(var(--color-secondary), 1, 1.15, 0.6) 0%,
-    adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px);
+    adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px
+  );
   border-radius: 5px;
   box-shadow: $box-shadow--button---before;
   content: '';

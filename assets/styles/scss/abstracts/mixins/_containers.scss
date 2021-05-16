@@ -57,15 +57,15 @@
   @if $container-type == wrapped-flex {
     flex-direction: $direction;
     flex-wrap: $wrap-type;
-    justify-content: $justify;
+    place-content: $justify;
 
     // #  wrapped-Flex Container Nowrap
     @if $wrap-type == nowrap {
-      align-items: $align;
+      place-items: $align;
     }
     // #  wrapped-Flex Container Wrap
     @else if $wrap-type == wrap {
-      align-content: $align;
+      place-content: $align;
     }
     // #  Invalid arguments!
     @else {
@@ -78,15 +78,15 @@
   @if $container-type == padded-flex {
     flex-direction: $direction;
     flex-wrap: $wrap-type;
-    justify-content: $justify;
+    place-content: $justify;
 
     // #  padded-Flex Container Nowrap
     @if $wrap-type == nowrap {
-      align-items: $align;
+      place-items: $align;
     }
     // #  padded-Flex Container Wrap
     @else if $wrap-type == wrap {
-      align-content: $align;
+      place-content: $align;
     }
     // #  Invalid arguments!
     @else {
@@ -105,7 +105,7 @@
 @mixin dimensions($type: none, $width: 100%, $height: auto) {
   width: $width;
   height: $height;
-  margin: 0 auto;
+  margin: $center-me;
 
   // #  Regular Fontawesome Icons
   @if $type == fas {
@@ -137,15 +137,15 @@
   display: flex;
   flex-direction: $direction;
   flex-wrap: $wrap-type;
-  justify-content: $justify;
+  place-content: $justify;
 
   // #  Block-Flex-Container Nowrap
   @if $wrap-type == nowrap {
-    align-items: $align;
+    place-items: $align;
   }
   // #  Block-Flex-Container Wrap
   @else if $wrap-type == wrap {
-    align-content: $align;
+    place-content: $align;
   }
   // #  Invalid arguments!
   @else {
@@ -154,19 +154,19 @@
 }
 
 // #  Inline-Flex-Container ---> buttons, navigation, vertical lists
-@mixin inline-flex-container($wrap-type, $direction, $justify, $align) {
+@mixin inline-flex-container($wrap-type: nowrap, $direction: row, $justify: center, $align: center) {
   display: inline-flex;
   flex-direction: $direction;
   flex-wrap: $wrap-type;
-  justify-content: $justify;
+  place-content: $justify;
 
   // #  Inline-Flex-Container Nowrap
   @if $wrap-type == nowrap {
-    align-items: $align;
+    place-items: $align;
   }
   // #  Inline-Flex-Container Wrap
   @else if $wrap-type == wrap {
-    align-content: $align;
+    place-content: $align;
   }
   // #  Invalid arguments!
   @else {
@@ -175,10 +175,11 @@
 }
 
 // #  Flex-Items ---> Children
-@mixin flex-items($basis: $dimension--xxs, $grow: 1, $shrink: 1) {
+@mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: stretch) {
   flex-basis: $basis;
   flex-grow: $grow;
   flex-shrink: $shrink;
+  place-self: $self;
 }
 
 // -  <<----------<< Grid-Box >>---------->>

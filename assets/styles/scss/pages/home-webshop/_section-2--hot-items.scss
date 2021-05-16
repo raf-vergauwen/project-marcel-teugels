@@ -118,22 +118,3 @@
   }
 }
 
-/* -------------------------------------------------------------------------- *\
--  Intermezzo
-\* -------------------------------------------------------------------------- */
-
-.intermezzo {
-  height: 100vh;
-  background-attachment: fixed;
-  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
-  background-position: center center;
-  background-size: cover;
-  // filter: $filter--light;
-  filter: brightness(0.2);
-
-  &__container {
-    height: 100vh;
-    background-color: $bg-color--transparant-gray---level-2;
-    filter: brightness(0.2);
-  }
-}
