@@ -8,7 +8,7 @@
 
 // #  <h1>
 h1 {
-  padding: $filler--m 0;
+  padding: $filler--l 0;
   color: var(--color-primary);
   font-family: $font-family--subject;
   font-size: $font-size--6;
@@ -22,7 +22,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  padding: $filler--s 0;
+  padding: $filler--m 0;
   color: var(--color-primary);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
@@ -42,8 +42,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  display: block;
-  padding: $filler--xs 0;
+  padding: $filler--s 0;
   color: var(--color-secondary);
   font-family: $font-family--article-title;
   font-size: $font-size--4;
@@ -63,8 +62,8 @@ h3 {
 
 // #  <h4>
 h4 {
-  padding: $filler--xxs 0;
-  color: var(--color-tertiary);
+  padding: $filler--xs 0;
+  color: var(--color-secondary);
   font-family: $font-family--text;
   font-size: $font-size--3;
   font-variant: $font-variant--text;
@@ -82,7 +81,6 @@ h4 {
 }
 
 // #  <h5>
-
 h5 {
   padding: $filler--xxs 0;
   color: var(--color-tertiary);
@@ -103,10 +101,9 @@ h5 {
 }
 
 // #  <h6>
-
 h6 {
   padding: $filler--xxs 0;
-  color: var(--color-foreground);
+  color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -174,9 +171,16 @@ a,
 button {
   padding: $filler--xxs 0;
   color: var(--color-primary);
-  font-family: monospace;
+  cursor: pointer;
+  font-family: $font-family--article-title;
   font-size: $font-size--2;
+  font-weight: $font-weight--section-title;
   text-align: center;
+
+  // text-transform: lowercase;
+  // font-variant: small-caps;
+  // text-transform: uppercase;
+
   text-decoration: none;
 
   &:hover {

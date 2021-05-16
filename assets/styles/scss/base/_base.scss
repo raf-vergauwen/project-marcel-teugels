@@ -9,6 +9,7 @@
 // #  *
 * {
   padding: 0;
+  border: 0;
   margin: 0;
   // width: 100%;
   // height: auto;
@@ -29,7 +30,7 @@ body {
   color: var(--color-foreground);
   font-family: $font-family--text;
   font-weight: $font-weight--text;
-  line-height: normal;
+  line-height: $line-height--text;
 
   // # Lifesaving Scrollbar hack!
   overflow-x: hidden;
@@ -70,13 +71,13 @@ body {
 }
 
 .test-container {
-  background-color: var(--color-background);
   margin: 0 auto;
+  background-color: var(--color-background);
 }
 
 .test-container--2 {
-  background-color: var(--color-secondary);
   margin: 0 auto;
+  background-color: var(--color-secondary);
 }
 
 body {

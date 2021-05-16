@@ -5,106 +5,74 @@
 // -  <<----------<< General >>---------->>
 
 button {
+  border: 0;
 }
 
 // -  <<----------<< Specific >>---------->>
 
 .button {
-  zoom: 3;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  // # Successfully replaced ---> Begin
-  text-shadow: 0 -2px 0 lightness(var(--color-secondary), 0.8), 0 1px 1px lightness(var(--color-secondary), 1.2);
-  // # Successfully replaced ---> End
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: auto;
+  height: $button--height + px;
   box-sizing: border-box;
-  font-size: 2em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  font-weight: bold;
-  // # Successfully replaced ---> Begin
+  padding: 0 (($button--height/2) + px);
+  border-top: 1px solid lightness(var(--color-secondary), 1.22);
+  border-bottom: 1px solid lightness(var(--color-secondary), 1.2);
+  margin-bottom: 15px;
+  margin-left: 5px;
+  background:
+    linear-gradient(to bottom,
+    adjust-hsl(var(--color-secondary), 1, 1.35, 1.15) 0%,
+    adjust-hsl(var(--color-secondary), 1, 1.15, 1.12) 26%,
+    adjust-hsl(var(--color-secondary), 1, 1, 1) 100%);
+  border-radius: 5px;
   color: lightness(var(--color-secondary), 0.9);
-  // # Successfully replaced ---> End
-  // # Successfully replaced ---> Begin
+  line-height: $button--height + px;
+  text-shadow:
+    0 -2px 0 lightness(var(--color-secondary), 0.8),
+    0 1px 1px lightness(var(--color-secondary), 1.2);
+  transition: all ($button--speed + s) $button--timing-function;
+  zoom: 2;
+
   &:visited {
     color: lightness(var(--color-secondary), 0.9);
   }
-  // # Successfully replaced ---> End
-  height: $button--height + px;
-  line-height: $button--height + px;
-  padding: 0 (($button--height/2) + px);
-  display: inline-block;
-  width: auto;
-
-  background: linear-gradient(
-    to bottom,
-    adjust-hsl(var(--color-secondary), 1, 1.35, 1.15) 0%,
-    adjust-hsl(var(--color-secondary), 1, 1.15, 1.12) 26%,
-    adjust-hsl(var(--color-secondary), 1, 1, 1) 100%
-  );
-
-  border-radius: 5px;
-
-  // # Successfully replaced ---> Begin
-  border-top: 1px solid lightness(var(--color-secondary), 1.22);
-  border-bottom: 1px solid lightness(var(--color-secondary), 1.2);
-  // # Successfully replaced ---> End
-
-  top: 0;
-  transition: all ($button-speed + s) $button--timing-function;
-  position: relative;
 }
 
-// # Successfully replaced ---> Begin
 .button:hover {
-  background: linear-gradient(
-    to bottom,
+  background:
+    linear-gradient(to bottom,
     adjust-hsl(var(--color-secondary), 1, 1.35, 1.22) 0%,
     adjust-hsl(var(--color-secondary), 1, 1.15, 1.19) 26%,
-    adjust-hsl(var(--color-secondary), 1, 1, 1.07) 100%
-  );
+    adjust-hsl(var(--color-secondary), 1, 1, 1.07) 100%);
 }
-// # Successfully replaced ---> End
-
 
 .button:active {
   top: $button--depth + px;
-  // # Successfully replaced ---> Begin
-  text-shadow: 0 -2px 0 lightness(var(--color-secondary), 1), 0 1px 1px lightness(var(--color-secondary), 1.2), 0 0 4px $color-white;
   color: lightness(var(--color-secondary), 1.45);
-  // # Successfully replaced ---> End
 
-  &:before {
+  &::before {
     top: 0;
-    // # Successfully replaced ---> Begin
     box-shadow: $box-shadow--button---active;
-    // # Successfully replaced ---> End
   }
 }
 
-
-.button:before {
-  // display: inline-block;
-  display: inline-flex;
-  content: '';
+.button::before {
   position: absolute;
-  left: 0;
-  right: 0;
   z-index: -1;
   top: ($button--depth) + px;
-  border-radius: 5px;
+  right: 0;
+  left: 0;
+  display: inline-block;
   height: ($button--height) + px;
-
-  // # Successfully replaced ---> Begin
-  background: linear-gradient(
-    to top,
-    adjust-hsl(var(--color-secondary), 1, 1.15, 0.60) 0%,
-    adjust-hsl(var(--color-secondary), 1, 1.10, 0.75) $button--depth + px
-  );
-  // # Successfully replaced ---> End
-
-  transition: all (($button-speed * 1.3) + s) $button--timing-function;
-  // # Successfully replaced ---> Begin
+  background:
+    linear-gradient(to top,
+    adjust-hsl(var(--color-secondary), 1, 1.15, 0.6) 0%,
+    adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px);
+  border-radius: 5px;
   box-shadow: $box-shadow--button---before;
-  // # Successfully replaced ---> End
+  content: '';
+  transition: all (($button--speed * 1.3) + s) $button--timing-function;
 }

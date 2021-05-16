@@ -450,6 +450,7 @@ template {
 \* -------------------------------------------------------------------------- */
 * {
   padding: 0;
+  border: 0;
   margin: 0;
 }
 
@@ -466,7 +467,7 @@ body {
   color: var(--color-foreground);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -515,13 +516,13 @@ body {
 }
 
 .test-container {
-  background-color: var(--color-background);
   margin: 0 auto;
+  background-color: var(--color-background);
 }
 
 .test-container--2 {
-  background-color: var(--color-secondary);
   margin: 0 auto;
+  background-color: var(--color-secondary);
 }
 
 body {
@@ -555,7 +556,7 @@ header nav {
 -  Headings
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
@@ -568,7 +569,7 @@ h1 {
 }
 
 h2 {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -587,8 +588,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  display: block;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
@@ -607,8 +607,8 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 0.25rem 0;
-  color: var(--color-tertiary);
+  padding: 0.5rem 0;
+  color: var(--color-secondary);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
   font-variant: normal;
@@ -646,7 +646,7 @@ h5 + p::first-letter {
 
 h6 {
   padding: 0.25rem 0;
-  color: var(--color-foreground);
+  color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-variant: normal;
@@ -693,8 +693,10 @@ a,
 button {
   padding: 0.25rem 0;
   color: var(--color-primary);
-  font-family: monospace;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
 }
@@ -1276,33 +1278,32 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
+button {
+  border: 0;
+}
+
 .button {
-  zoom: 3;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 2em;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
-  height: 65px;
-  line-height: 65px;
-  padding: 0 32.5px;
+  position: relative;
+  top: 0;
   display: inline-block;
   width: auto;
+  height: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 32.5px;
+  border-top: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.22));
+  border-bottom: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
+  margin-bottom: 15px;
+  margin-left: 5px;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1))));
   background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1)) 100%);
   border-radius: 5px;
-  border-top: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.22));
-  border-bottom: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
-  top: 0;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
+  line-height: 65px;
+  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
-  position: relative;
+  zoom: 2;
 }
 
 .button:visited {
@@ -1316,33 +1317,30 @@ input:checked + .slider::before {
 
 .button:active {
   top: 6px;
-  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2)), 0 0 4px white;
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
 }
 
-.button:active:before {
+.button:active::before {
   top: 0;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
 }
 
-.button:before {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  content: '';
+.button::before {
   position: absolute;
-  left: 0;
-  right: 0;
   z-index: -1;
   top: 6px;
-  border-radius: 5px;
+  right: 0;
+  left: 0;
+  display: inline-block;
   height: 65px;
   background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
-  -webkit-transition: all 0.078s ease-out;
-  transition: all 0.078s ease-out;
+  border-radius: 5px;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+  content: '';
+  -webkit-transition: all 0.078s ease-out;
+  transition: all 0.078s ease-out;
 }
 
 /* -------------------------------------------------------------------------- *\

@@ -98,6 +98,7 @@ $font-family--subject: 'Montserrat', sans-serif;
 $font-family--section-title: 'Montserrat', sans-serif;
 $font-family--article-title: 'Montserrat', sans-serif;
 $font-family--text: 'Roboto', sans-serif;
+$font-family--link: 'Montserrat', monospace;
 
 // #  Font-Style ---> Default
 
@@ -106,18 +107,21 @@ $font-variant--subject: normal;
 $font-variant--section-title: normal;
 $font-variant--article-title: small-caps;
 $font-variant--text: normal;
+$font-variant--link: normal;
 
 // #  Font-Weight
 $font-weight--subject: 700; // Bold
 $font-weight--section-title: 400; // Normal
 $font-weight--article-title: 300; // Light
 $font-weight--text: 300; // Light
+$font-weight--link: 400; // Light
 
 // #  Line-Height
 $line-height--subject: 1; // 120%
 $line-height--section-title: 1; // 120%
 $line-height--article-title: 1.2; // 120%
 $line-height--text: 1.5; // 150%
+$line-height--link: 1.5; // 150%
 
 // -  <<----------<< Text >>---------->>
 
@@ -126,6 +130,7 @@ $text-align--subject: center;
 $text-align--section-title: center;
 $text-align--article-title: left;
 $text-align--text: left;
+$text-align--link: center;
 
 // #  Text-Decoration ---> Default
 
@@ -146,6 +151,7 @@ $text-transform--subject: uppercase;
 $text-transform--section-title: capitalize;
 $text-transform--article-title: none;
 $text-transform--text: none;
+$text-transform--link: none;
 
 // -  <<----------<< Word >>---------->>
 
@@ -160,6 +166,7 @@ $letter-spacing--subject: 0.025rem; // 0.4px
 $letter-spacing--section-title: 0.05rem; // 0.8px
 $letter-spacing--article-title: 0.1rem; // 1.6px
 $letter-spacing--text: normal;
+$letter-spacing--link: normal;
 
 // #  White-Space ---> Default
 
@@ -237,9 +244,11 @@ $button--depth: 6;
 $button--speed: 0.06;
 $button--timing-function: ease-out;
 
-$box-shadow--button---active: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
-$box-shadow--button---before:  0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px ($button--depth * 0.4 + px) rgba(0, 0, 0, 0.5), 0 ($button--depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
-
+$box-shadow--button---active: 0 3px 3px rgba(0, 0, 0, 0.7),
+  0 3px 9px rgba(0, 0, 0, 0.2);
+$box-shadow--button---before: 0 1px 0 2px rgba(0, 0, 0, 0.3),
+  0 5px ($button--depth * 0.4 + px) rgba(0, 0, 0, 0.5),
+  0 ($button--depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
 
 // -----------------------------------------------------------------------------
 // *  Temporary
