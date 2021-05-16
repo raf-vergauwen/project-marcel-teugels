@@ -1,7 +1,10 @@
 <template>
   <main>
     <restauration-header />
-    <div v-if="Admin === 'true'" class="title-btn__container">
+    <div
+      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
+      class="title-btn__container"
+    >
       <h1 class="p-workshop__title">Workshops</h1>
       <button class="p-workshop__btn">
         <a href="/add-workshop">+</a>
