@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     fetchItems() {
-      return fetch('http://157.230.126.154/items/products?fields=*.*', {
+      return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
         method: 'GET',
         headers: {},
       })
@@ -55,17 +55,67 @@ export default {
     },
     addProduct(product) {
       this.shoppingCart.push(product.id);
-      sessionStorage.setItem(
-        'shopping_cart',
-        JSON.stringify(this.shoppingCart),
-      );
+      sessionStorage.setItem('shopping_cart', this.shoppingCart);
       console.log(this.shoppingCart);
     },
+    /*
+    newShoppingCart() {
+      fetch('http://157.230.126.154/items/ordered_items', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not create new shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('newCart');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    addToShoppingCart(product) {
+      fetch('http://157.230.126.154/items/ordered_items/21', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not add product to shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('addToCart');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    */
   },
 };
 </script>
 
 <style lang="scss">
+body {
+  color: black;
+}
 .p-storefront {
   @extend .container;
 

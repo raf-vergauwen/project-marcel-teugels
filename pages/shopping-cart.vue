@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <h1 class="title">Shopping cart</h1>
-    <div class="p-storefront__product-list"></div>
-    <button @click="fetchItems">print</button>
+    <button @click="printList">print</button>
+    <p v-for="items in productData" :key="items.name">{{ items.name }}</p>
   </div>
 </template>
 
@@ -10,7 +10,8 @@
 export default {
   data() {
     return {
-      ShoppingList: [],
+      shoppingList: sessionStorage.getItem('shopping_cart').split(','),
+      productData: [],
     };
   },
   computed: {
@@ -20,35 +21,40 @@ export default {
   },
   methods: {
     printList() {
-      console.log(this.shopping_cart);
+      console.log(this.shoppingList);
+      this.fetchItems();
     },
     fetchItems() {
-      return fetch(
-        `http://157.230.126.154/items/products/${this.shopping_cart[0]}`,
-        {
+      for (let i = 0; i < this.shoppingList.length; i++) {
+        fetch(`http://157.230.126.154/items/products/` + this.shoppingList[i], {
           method: 'GET',
           headers: {},
-        },
-      )
-        .then((response) => {
-          if (!response.ok) {
-            console.log('Error');
-          }
-          return response.json();
         })
-        .then((data) => {
-          console.log(data);
-          this.productData = data.data;
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+          .then((response) => {
+            if (!response.ok) {
+              console.log('Error');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            this.productData.push(data.data);
+            console.log(this.productData);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }
     },
   },
 };
 </script>
 
 <style lang="scss">
+body {
+  color: black;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
