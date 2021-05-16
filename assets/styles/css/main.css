@@ -49,6 +49,7 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
+div,
 address,
 article,
 aside,
@@ -99,6 +100,7 @@ ruby,
 s,
 samp,
 small,
+span,
 strong,
 sub,
 sup,
@@ -508,10 +510,6 @@ body {
 }
 
 .main__container > section {
-  min-height: 100vh;
-}
-
-.main__container > section > div {
   min-height: 100vh;
 }
 
@@ -1056,15 +1054,11 @@ ul.menu-left.collapse {
 *  _block-container.scss: This partial file contains all 'block-container' styles.
 \* -------------------------------------------------------------------------- */
 .wrapped-block {
-  width: 100%;
-  height: auto;
   display: block;
   padding: 0;
 }
 
 .padded-block {
-  width: 100%;
-  height: auto;
   display: block;
   padding: 0.5rem;
 }
@@ -1073,8 +1067,6 @@ ul.menu-left.collapse {
 *  _flex-container.scss: This partial file contains all 'flex-container' styles.
 \* -------------------------------------------------------------------------- */
 .wrapped-flex {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1090,8 +1082,6 @@ ul.menu-left.collapse {
 }
 
 .padded-flex {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1110,16 +1100,12 @@ ul.menu-left.collapse {
 *  _grid-container.scss: This partial file contains all 'grid-container' styles.
 \* -------------------------------------------------------------------------- */
 .wrapped-grid {
-  width: 100%;
-  height: auto;
   display: -ms-grid;
   display: grid;
   padding: 0;
 }
 
 .padded-grid {
-  width: 100%;
-  height: auto;
   display: -ms-grid;
   display: grid;
   padding: 0.5rem;
@@ -1438,13 +1424,17 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
+.hot-items__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hot-item__container {
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   min-width: calc(320px - 2rem);
   max-width: calc(640px - 2rem);
-  max-width: 400px;
+  max-width: 375px;
   height: 667px;
 }
 
@@ -1505,6 +1495,8 @@ input:checked + .slider::before {
 }
 
 .hot-item__caption-btns {
+  width: 100%;
+  height: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
