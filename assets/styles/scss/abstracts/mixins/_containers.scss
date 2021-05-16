@@ -118,7 +118,7 @@
     font-size: $width;
   }
 
-  // #  ButtonFontawesome Icons
+  // #  Button Fontawesome Icons
   @else if $type == btn {
     margin: 0;
     font-size: $width;
@@ -180,7 +180,7 @@
 }
 
 // #  Flex-Items ---> Children
-@mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: stretch) {
+@mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: center) {
   flex-basis: $basis;
   flex-grow: $grow;
   flex-shrink: $shrink;
