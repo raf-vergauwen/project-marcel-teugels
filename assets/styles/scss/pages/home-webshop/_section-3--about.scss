@@ -17,7 +17,7 @@
 
   &__container--visual {
     flex: 1 1 50%;
-    padding: $filler--xs;
+    // padding: $filler--xs;
     margin: $filler--m;
     // background-color: bisque;
   }
@@ -29,10 +29,12 @@
 
   &__container--text {
     width: 100%;
+    min-width: calc(#{$dimension--xxs} - #{$filler--l});
+    max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
     height: 80vh;
     flex: 1 1 50%;
-    padding: $filler--xs;
-    margin: $filler--m;
+    // padding: $filler--xs;
+    // margin: $filler--m;
     // background-color: sienna;
   }
 
@@ -50,44 +52,17 @@
 
   &__paragraph {
     overflow: auto;
-    height: 70%;
-    height: calc(#{$dimension--xxs} + (#{$dimension--xxs} / 4));
     margin: $filler--s 0;
     // background-color: rosybrown;
     color: var(--color-background);
   }
 }
 
-.about-visual {
-  &__container {
-    // background-color: sandybrown;
-  }
-
-  &__image {
-    // background-color: goldenrod;
-  }
-}
-
-.about-text {
-  &__container {
-    // background-color: darkgoldenrod;
-  }
-
-  &__title {
-    // background-color: peru;
-  }
-
-  &__sub-title {
-    // background-color: chocolate;
-  }
-
-  &__paragraph {
-    // background-color: olive;
-  }
-}
+// -----------------------------------------------------------------
 
 .box {
   position: relative;
+
   top: 50%;
   left: 50%;
   width: 100%;
