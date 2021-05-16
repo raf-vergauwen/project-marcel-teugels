@@ -15,6 +15,7 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
+    <button @click="$emit('add-product', product)">Buy</button>
   </article>
 </template>
 
@@ -32,12 +33,14 @@ export default {
       src: 'http://157.230.126.154/assets/',
     };
   },
+  computed: {},
+  methods: {},
 };
 </script>
 
 <style lang="scss">
 .c-product-item {
-  background-color: $bg-blue;
+  background-color: $dark-blue;
   padding: $s-site-padding;
 }
 </style>

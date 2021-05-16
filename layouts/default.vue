@@ -1,15 +1,17 @@
 <template>
   <div>
-    <Header />
+    <!--<StoreHeader /> -->
     <Nuxt />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header';
+/*
+import StoreHeader from '~/components/StoreHeader';
 export default {
-  components: { Header },
+  components: { StoreHeader },
 };
+*/
 </script>
 
 <style lang="scss"></style>

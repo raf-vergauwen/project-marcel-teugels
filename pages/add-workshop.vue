@@ -1,23 +1,23 @@
 <template>
-  <main>
+  <main class="p-product-page">
     <restauration-header />
     <section id="app">
       <div>
         <label>
-          voornaam:
-          <input v-model="firstName" type="text" />
+          titel:
+          <input v-model="title" type="text" />
         </label>
         <label>
-          achternaam:
-          <input v-model="lastName" type="text" />
+          datum:
+          <input v-model="date" type="text" />
         </label>
         <label>
-          email:
-          <input v-model="email" type="email" />
+          organisator:
+          <input v-model="organizer" type="email" />
         </label>
         <label>
-          telefoon nummer:
-          <input v-model="telefoonNummer" type="tel" />
+          onderwerp:
+          <input v-model="subject" type="tel" />
         </label>
         <label>
           bio
@@ -25,7 +25,7 @@
         </label>
       </div>
       <div class="container">
-        <button @click="postRequest">Verstuur</button>
+        <button @click="postWorkshop">Verstuur</button>
       </div>
     </section>
   </main>
@@ -38,12 +38,16 @@ export default {
   components: { RestaurationHeader },
   data() {
     return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      telefoonNummer: '',
+      title: '',
+      date: '',
+      organizer: '',
+      subject: '',
       textContent: '',
-      userId: '',
+      images: [
+        {
+          directus_files_id: '79c4d9ef-cd71-41ed-ae19-87af431bdfa5',
+        },
+      ],
     };
   },
   computed: {
@@ -52,18 +56,17 @@ export default {
     },
   },
   methods: {
-    postRequest() {
+    postWorkshop() {
       const body = {
-        done: true,
-        first_name: this.firstName,
-        last_name: this.lastName,
-        email: this.email,
-        telefoon_nummer: this.telefoonNummer,
-        status: 'draft',
+        title: this.title,
+        date: this.date,
+        organizer: this.organizer,
+        subject: this.subject,
         text_content: this.textContent,
+        images: this.images,
       };
 
-      fetch('http://157.230.126.154/items/user_requests/', {
+      fetch('http://157.230.126.154/items/workshops/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,13 +76,13 @@ export default {
       })
         .then((response) => {
           if (!response.ok) {
-            console.log('could not post user requests');
+            console.log('could not post new workshop');
           }
 
           return response.json();
         })
         .then((data) => {
-          this.requestData = data;
+          console.log(data);
         })
         .catch((err) => {
           console.error(err);
@@ -89,4 +92,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.title__container {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+</style>

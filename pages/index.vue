@@ -8,7 +8,9 @@
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <button>webshop</button>
+        <button>
+          <a href="/storefront"> webshop</a>
+        </button>
       </div>
     </div>
     <div class="home__restauratie">
@@ -19,21 +21,15 @@
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <button>restauratie</button>
+        <button>
+          <a href="/home-restauratie"> restauratie</a>
+        </button>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo';
-
-export default {
-  components: {
-    Logo,
-  },
-};
-</script>
+<script></script>
 
 <style lang="scss">
 body {

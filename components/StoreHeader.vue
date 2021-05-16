@@ -25,9 +25,12 @@ export default {
     return {
       navItems: [
         { path: '/', label: 'home' },
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profile' },
         { path: '/storefront', label: 'store' },
+        { path: '/costumwork', label: 'costum' },
+        { path: '/login', label: 'login' },
+        { path: '/profile', label: 'profiel' },
+        { path: '/account-creation', label: 'sign up' },
+        { path: '/home-restauratie', label: 'restauratie' },
       ],
     };
   },
@@ -36,7 +39,7 @@ export default {
 
 <style lang="scss">
 .c-header {
-  background-color: $bg-blue;
+  background-color: $dark-bg;
 
   &__container {
     @extend .container;
@@ -48,12 +51,12 @@ export default {
     &__item {
       padding: $s-site-padding $s-site-padding;
       text-decoration: none;
-      color: $title-blue;
+      color: $light-bg;
 
       &--active,
       &:hover {
-        background-color: $bg-blue--dark;
-        color: $subtitle-blue;
+        background-color: $light-bg;
+        color: $dark-bg;
       }
     }
   }

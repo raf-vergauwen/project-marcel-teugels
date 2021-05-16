@@ -1,26 +1,34 @@
 <template>
-  <div class="container">
-    <h1>Login</h1>
-    <form @submit.prevent="login">
-      <label
-        >E-mail:
-        <input type="text" name="email" v-model="email" />
-      </label>
-      <label
-        >Password:
-        <input type="password" name="password" v-model="password" />
-      </label>
-      <button type="submit">Log in</button>
-    </form>
-  </div>
+  <main>
+    <restauration-header />
+    <div class="container">
+      <h1>Login</h1>
+      <form @submit.prevent="login">
+        <label
+          >E-mail:
+          <input v-model="email" type="text" name="email" />
+        </label>
+        <label
+          >Password:
+          <input v-model="password" type="password" name="password" />
+        </label>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
+  components: { RestaurationHeader },
+
   data() {
     return {
       email: '',
       password: '',
+      admin: false,
     };
   },
   computed: {
@@ -29,6 +37,9 @@ export default {
     },
     access_token() {
       return sessionStorage.getItem('access_token');
+    },
+    user_role() {
+      return sessionStorage.getItem('user_role');
     },
   },
   methods: {
@@ -50,6 +61,36 @@ export default {
         .then((body) => {
           console.log(body);
           sessionStorage.setItem('access_token', body.data.access_token);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+
+      fetch('http://157.230.126.154/users/me', {
+        method: 'GET',
+        headers: {
+          Authorization: 'Bearer ' + this.access_token,
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Could not get user info');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          if (body.data.role === '78b6335f-b448-46d6-8086-65057ba5fae0') {
+            this.admin = true;
+            sessionStorage.setItem('user_role', this.admin);
+          } else if (
+            body.data.role === 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7'
+          ) {
+            this.admin = false;
+            sessionStorage.setItem('user_role', this.admin);
+          } else {
+            console.log('can not asign role');
+          }
         })
         .catch((err) => {
           console.error(err);
