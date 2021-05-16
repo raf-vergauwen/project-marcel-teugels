@@ -22,7 +22,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  padding: $filler--m 0;
+  padding: $filler--l 0;
   color: var(--color-primary);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
@@ -42,7 +42,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  padding: $filler--s 0;
+  padding: $filler--m 0;
   color: var(--color-secondary);
   font-family: $font-family--article-title;
   font-size: $font-size--4;
@@ -62,7 +62,7 @@ h3 {
 
 // #  <h4>
 h4 {
-  padding: $filler--xs 0;
+  padding: $filler--m 0;
   color: var(--color-secondary);
   font-family: $font-family--text;
   font-size: $font-size--3;
@@ -82,7 +82,7 @@ h4 {
 
 // #  <h5>
 h5 {
-  padding: $filler--xxs 0;
+  padding: $filler--s 0;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--2;
@@ -102,7 +102,7 @@ h5 {
 
 // #  <h6>
 h6 {
-  padding: $filler--xxs 0;
+  padding: $filler--s 0;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--1;
@@ -169,19 +169,17 @@ li {
 
 a,
 button {
-  padding: $filler--xxs 0;
+  padding: $filler--xs 0;
   color: var(--color-primary);
-  cursor: pointer;
-  font-family: $font-family--article-title;
+  font-family: $font-family--link;
   font-size: $font-size--2;
-  font-weight: $font-weight--section-title;
-  text-align: center;
-
-  // text-transform: lowercase;
-  // font-variant: small-caps;
-  // text-transform: uppercase;
-
+  font-variant: $font-variant--link;
+  font-weight: $font-weight--link;
+  letter-spacing: $letter-spacing--link;
+  line-height: $line-height--link;
+  text-align: $text-align--link;
   text-decoration: none;
+  text-transform: $text-transform--link;
 
   &:hover {
     color: var(--color-secondary);

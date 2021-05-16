@@ -569,7 +569,7 @@ h1 {
 }
 
 h2 {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -588,7 +588,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
@@ -607,7 +607,7 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
   color: var(--color-secondary);
   font-family: "Roboto", sans-serif;
   font-size: 1.5625rem;
@@ -626,7 +626,7 @@ h4 + p::first-letter {
 }
 
 h5 {
-  padding: 0.25rem 0;
+  padding: 1rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -645,7 +645,7 @@ h5 + p::first-letter {
 }
 
 h6 {
-  padding: 0.25rem 0;
+  padding: 1rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -691,14 +691,17 @@ li {
 \* -------------------------------------------------------------------------- */
 a,
 button {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
   color: var(--color-primary);
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", monospace;
   font-size: 1.25rem;
+  font-variant: normal;
   font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.5;
   text-align: center;
   text-decoration: none;
+  text-transform: none;
 }
 
 a:hover,
