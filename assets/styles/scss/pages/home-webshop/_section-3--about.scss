@@ -4,14 +4,18 @@
 
 .about {
   &__container {
-    // background-color: cornsilk;
+    @include block-flex-container(nowrap, row, center, center);
+
+    background-color: cornsilk;
   }
 
   &__title {
+    padding: $filler--s;
     background-color: saddlebrown;
   }
 
   &__container--visual {
+    flex: 1 1 50%;
     background-color: bisque;
   }
 
@@ -20,19 +24,31 @@
   }
 
   &__container--text {
+    width: 100%;
+    // flex: 1 1 50%;
+    height: 80vh;
     background-color: sienna;
   }
 
   &__title--text {
+    padding-top: 0;
     background-color: burlywood;
   }
 
   &__sub-title {
+    padding: $filler--xs;
     background-color: brown;
+    font-size: $font-size--2;
+    font-style: italic;
   }
 
   &__paragraph {
+    overflow: auto;
+    // height: 70%;
+    height: calc(#{$dimension--xxs} + (#{$dimension--xxs} / 4));
+    margin: $filler--s 0;
     background-color: rosybrown;
+    color: var(--color-background);
   }
 }
 

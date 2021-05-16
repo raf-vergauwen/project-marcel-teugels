@@ -7,14 +7,19 @@
 .card {
   @include box-shadow(2);
   @include box-transition;
+  // padding: $filler--xs;
 
+  position: relative;
   overflow: hidden;
+  min-width: calc(#{$dimension--xxs} - #{$filler--l});
+  max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
+  height: 80vh;
+  flex: 1 1 auto;
+  // margin: $filler--m;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  background-color: maroon;
   border-radius: $border-radius--s;
-  // padding: $filler--xs;
 
   &:hover {
     @include box-shadow(5);

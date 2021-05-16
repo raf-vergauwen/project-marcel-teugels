@@ -17,11 +17,11 @@
   &__container {
     @include flex-items(1, 1);
 
-    position: relative;
-    min-width: calc(#{$dimension--xxs} - #{$filler--l});
-    max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-    height: 80vh;
-    flex: 1 1 auto;
+    // position: relative;
+    // min-width: calc(#{$dimension--xxs} - #{$filler--l});
+    // max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
+    // height: 80vh;
+    // flex: 1 1 auto;
     margin: $filler--m;
   }
 
@@ -34,6 +34,7 @@
     right: 0;
     left: 0;
     padding: $filler--s;
+    filter: drop-shadow(0 0 0.05rem var(--color-background));
     // background-color: thistle;
     font-variant: normal;
     font-weight: $font-weight--subject;
@@ -43,7 +44,6 @@
     @include transition-general;
 
     height: 100%;
-    // background-color: blueviolet;
   }
 
   &__caption {
@@ -53,11 +53,12 @@
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: -30%;
-    bottom: 0;
+    bottom: 0%;
+    bottom: -29%;
     left: 0;
     padding: $filler--s;
     box-shadow: $box-shadow--caption---slide-in;
+    background-color: $bg-color--transparant-black---level-3;
   }
 
   &__caption-title {
@@ -71,7 +72,6 @@
 
   &__caption-text {
     overflow: auto;
-    height: 100px;
     height: calc(#{$dimension--xxs} / 3);
     margin: $filler--s 0;
     color: var(--color-background);
