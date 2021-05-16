@@ -777,6 +777,8 @@ header {
 header nav {
   min-width: calc(320px - 3rem);
   max-width: 1920px;
+  width: 100%;
+  height: auto;
 }
 
 .main-nav__container {
