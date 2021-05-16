@@ -11,36 +11,68 @@
   height: $height;
 }
 
-@mixin container-base($name) {
-  .#{$name} {
-    &__padded--0 {
+@mixin container-base($type, $padding-name, $padding-value) {
+  .#{$type} {
+    &__padded--#{$padding-name} {
       @include box-dimensions;
 
-      padding: 0;
-    }
+      display: $type;
+      padding: $padding-value;
 
-    &__padded--xxs {
-      @include box-dimensions;
+      // #  Flex
+      @if $type == flex {
+        &-column {
+          @include box-dimensions;
 
-      padding: $filler--xxs;
-    }
+          display: $type;
+          flex-direction: column;
+          padding: $padding-value;
+        }
 
-    &__padded--xs {
-      @include box-dimensions;
+        &-row {
+          @include box-dimensions;
 
-      padding: $filler--xs;
-    }
+          display: $type;
+          flex-direction: row;
+          padding: $padding-value;
+        }
 
-    &__padded--s {
-      @include box-dimensions;
+        &-wrap {
+          @include box-dimensions;
 
-      padding: $filler--s;
-    }
+          display: $type;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: $padding-value;
+        }
 
-    &__padded--m {
-      @include box-dimensions;
+        // #  Inline-Flex
+      } @else if $type == inline-flex {
+        &-column {
+          @include box-dimensions;
 
-      padding: $filler--m;
+          display: $type;
+          flex-direction: column;
+          padding: $padding-value;
+        }
+
+        &-row {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          padding: $padding-value;
+        }
+
+        &-wrap {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: $padding-value;
+        }
+      }
     }
   }
 }

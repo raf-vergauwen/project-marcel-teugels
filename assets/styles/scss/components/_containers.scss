@@ -9,10 +9,16 @@
 // -  <<----------<< Block >>---------->>
 
 /* Inline-Block */
-@include container-base(inline-block);
+@include container-base(inline-block, xxs, $filler--xxs);
+@include container-base(inline-block, xs, $filler--xs);
+@include container-base(inline-block, s, $filler--s);
+@include container-base(inline-block, m, $filler--m);
 
 /* Regular-Block */
-@include container-base(regular-block);
+@include container-base(block, xxs, $filler--xxs);
+@include container-base(block, xs, $filler--xs);
+@include container-base(block, s, $filler--s);
+@include container-base(block, m, $filler--m);
 
 /* -------------------------------------------------------------------------- *\
 *  _flex.scss: This partial file contains all 'flex' styles.
@@ -21,10 +27,16 @@
 // -  <<----------<< Flex >>---------->>
 
 /* Inline-Flex */
-@include container-base(inline-flex);
+@include container-base(inline-flex, xxs, $filler--xxs);
+@include container-base(inline-flex, xs, $filler--xs);
+@include container-base(inline-flex, s, $filler--s);
+@include container-base(inline-flex, m, $filler--m);
 
 /* Regular-Flex */
-@include container-base(regular-flex);
+@include container-base(flex, xxs, $filler--xxs);
+@include container-base(flex, xs, $filler--xs);
+@include container-base(flex, s, $filler--s);
+@include container-base(flex, m, $filler--m);
 
 /* -------------------------------------------------------------------------- *\
 *  _grid.scss: This partial file contains all 'grid' styles.
@@ -33,7 +45,7 @@
 // -  <<----------<< Grid >>---------->>
 
 /* Inline-Grid */
-@include container-base(inline-grid);
+// @include container-base(inline-grid);
 
 /* Regular-Grid */
-@include container-base(regular-grid);
+// @include container-base(grid);
