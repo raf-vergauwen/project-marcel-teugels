@@ -18,6 +18,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
+        v-on:add-product="addProduct($event)"
       />
     </div>
   </main>
@@ -35,6 +36,7 @@ export default {
       productData: {},
       src: 'http://157.230.126.154/assets/',
       Admin: false,
+      shoppingCart: [],
     };
   },
   fetch() {
@@ -68,6 +70,14 @@ export default {
         .catch((err) => {
           console.error(err);
         });
+    },
+    addProduct(product) {
+      this.shoppingCart.push(product.id);
+      sessionStorage.setItem(
+        'shopping_cart',
+        JSON.stringify(this.shoppingCart),
+      );
+      console.log(this.shoppingCart);
     },
   },
 };
