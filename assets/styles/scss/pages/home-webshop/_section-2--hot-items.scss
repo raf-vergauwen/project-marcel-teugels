@@ -4,33 +4,27 @@
 
 .hot-items {
   &__container {
-    // @include dimensions;
-    // @include block-flex-container(wrap, );
-
-    display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
+    @include dimensions;
+    @include block-flex-container(wrap, row, space-between, center);
   }
 
   &__title {
+    padding: $filler--l 0 $filler--xs 0;
+
+    // height: 10vh;
+
     // ...
   }
 }
 
 .hot-item {
   &__container {
-    // max-width: 375px;
-
-    // @include dimensions(none, auto, auto);
-
-    // flex: 1 1 auto;
+    @include flex-items(1, 1);
 
     position: relative;
-    // width: auto;
     min-width: calc(#{$dimension--xxs} - #{$filler--l});
-    max-width: calc(#{$dimension--xs} - #{$filler--l});
-    max-width: 375px;
-    height: 667px;
+    max-width: calc((#{$dimension--xxs} / 4) + #{$dimension--xxs});
+    height: 80vh;
     // flex: 1 1 auto;
   }
 

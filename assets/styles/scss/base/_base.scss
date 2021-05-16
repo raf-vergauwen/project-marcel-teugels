@@ -22,8 +22,8 @@ html {
 
 // #  <body>
 body {
-  min-width: calc(#{$dimension--xxs} - #{$filler--m});
-  max-width: $dimension--m;
+  min-width: $dimension--xxs;
+  max-width: $dimension--xl;
   margin: $center-me;
   background-color: var(--color-background);
   color: var(--color-foreground);
@@ -63,22 +63,4 @@ body {
 
 .main__container > section {
   min-height: 100vh;
-
-  // > div {
-  //   min-height: 100vh;
-  // }
-}
-
-.test-container {
-  margin: $center-me;
-  background-color: var(--color-background);
-}
-
-.test-container--2 {
-  margin: $center-me;
-  background-color: var(--color-secondary);
-}
-
-body {
-  overflow-y: scroll;
 }
