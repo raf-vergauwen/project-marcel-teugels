@@ -17,12 +17,12 @@
   // ...
   &__container {
     position: relative;
-    // display: flex;
-    max-width: 375px;
+    // max-width: 375px;
+    flex-wrap: wrap;
+    min-width: calc(#{$dimension--xxs} - #{$filler--l});
+    max-width: calc(#{$dimension--xs} - #{$filler--l});
+    max-width: 400px;
     height: 667px;
-    // align-items: center;
-    // justify-content: center;
-    background-color: lavender;
   }
 
   &__title {
@@ -35,7 +35,7 @@
     left: 0;
     padding: $filler--s;
     // background-color: thistle;
-    font-variant: small-caps;
+    font-variant: normal;
     font-weight: $font-weight--subject;
   }
 
@@ -117,4 +117,3 @@
     }
   }
 }
-
