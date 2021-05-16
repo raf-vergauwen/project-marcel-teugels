@@ -158,10 +158,6 @@ figcaption {
 li {
   padding: $filler--xs 0;
   list-style-type: none;
-
-  a i {
-    margin-right: $filler--xs;
-  }
 }
 
 // #  <p>
@@ -187,6 +183,11 @@ button {
 
   &:hover {
     color: var(--color-secondary);
+  }
+
+  i {
+    margin-right: $filler--xs;
+    text-align: center;
   }
 }
 

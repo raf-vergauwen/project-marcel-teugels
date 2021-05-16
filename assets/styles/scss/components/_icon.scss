@@ -14,19 +14,19 @@
 
 // -  <<----------<< Specific >>---------->>
 
-.fa-facebook {
+.fa-heart {
+  &:hover {
+    @include box-transition;
+
+    color: #f00;
+  }
+}
+
+.fa-facebook-f {
   &:hover {
     @include box-transition;
 
     color: #1877f2;
-  }
-}
-
-.fa-instagram {
-  &:hover {
-    @include box-transition;
-
-    color: #e4405f;
   }
 }
 
@@ -38,15 +38,23 @@
   }
 }
 
-.fa-youtube {
+.fa-instagram {
   &:hover {
     @include box-transition;
 
-    color: #f00;
+    color: #e4405f;
   }
 }
 
-.fa-heart {
+.fa-pinterest-p {
+  &:hover {
+    @include box-transition;
+
+    color: #bd081c;
+  }
+}
+
+.fa-youtube {
   &:hover {
     @include box-transition;
 

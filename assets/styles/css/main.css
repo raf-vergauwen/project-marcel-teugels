@@ -687,10 +687,6 @@ li {
   list-style-type: none;
 }
 
-li a i {
-  margin-right: 0.5rem;
-}
-
 /* -------------------------------------------------------------------------- *\
 -  Inline Text Semantics
 \* -------------------------------------------------------------------------- */
@@ -711,6 +707,12 @@ button {
 a:hover,
 button:hover {
   color: var(--color-secondary);
+}
+
+a i,
+button i {
+  margin-right: 0.5rem;
+  text-align: center;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1161,16 +1163,16 @@ ul.menu-left.collapse {
   font-size: 2.44141rem;
 }
 
-.fa-facebook:hover {
+.fa-heart:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #f00;
+}
+
+.fa-facebook-f:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1877f2;
-}
-
-.fa-instagram:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #e4405f;
 }
 
 .fa-twitter:hover {
@@ -1179,13 +1181,19 @@ ul.menu-left.collapse {
   color: #1da1f2;
 }
 
-.fa-youtube:hover {
+.fa-instagram:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
+  color: #e4405f;
 }
 
-.fa-heart:hover {
+.fa-pinterest-p:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #bd081c;
+}
+
+.fa-youtube:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #f00;
@@ -1269,8 +1277,6 @@ input:checked + .slider::before {
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
 .btn {
-  position: relative;
-  top: 0;
   width: auto;
   height: auto;
   display: -webkit-inline-box;
@@ -1292,13 +1298,14 @@ input:checked + .slider::before {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   place-self: stretch;
+  position: relative;
+  top: 0;
   border-top: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.22));
   border-bottom: 1px solid hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12))), to(hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1))));
   background: linear-gradient(to bottom, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.35), calc(var(--color-secondary-l) * 1.15)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 1.12)) 26%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1), calc(var(--color-secondary-l) * 1)) 100%);
-  border-radius: 8px;
+  border-radius: 4px;
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
   text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-transition: all 0.06s ease-out;
@@ -1340,7 +1347,7 @@ input:checked + .slider::before {
   display: inline-flex;
   height: 2rem;
   background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
   content: '';
