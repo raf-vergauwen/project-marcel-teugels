@@ -2,9 +2,9 @@
   <section id="app">
     <ul class="product-list">
       <li
-        class="product-item"
         v-for="product in productData"
         :key="product.name"
+        class="product-item"
         style="list-style-type: none"
       >
         {{ product.name }}

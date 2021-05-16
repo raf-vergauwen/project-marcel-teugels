@@ -1,19 +1,6 @@
 <template>
   <main>
-    <header class="navigation">
-      <div class="navigation__container">
-        <img class="navigation__logo" src="" alt="" />
-        <nav class="navigation__menu">
-          <a href="#">home</a>
-          <span class="navigation--line">/</span>
-          <a href="#t">foto's</a>
-          <span class="navigation--line">/</span>
-          <a href="#">info</a>
-          <span class="navigation--line">/</span>
-          <a href="#">reviews</a>
-        </nav>
-      </div>
-    </header>
+    <restauration-header />
 
     <section class="hero"></section>
     <section class="diensten">
@@ -182,37 +169,21 @@
   </main>
 </template>
 
-<script></script>
+<script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+export default {
+  components: { RestaurationHeader },
+};
+</script>
 
 <style>
 body {
   margin: 0px;
 }
 
-.navigation {
-  width: 100vw;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0f0e0e;
-}
-
-.navigation__container {
-  width: 60vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 a {
   color: white;
   text-decoration: none;
-}
-
-.navigation__logo {
-  display: flex;
-  height: 60px;
 }
 
 .hero {
@@ -369,9 +340,5 @@ footer {
 
 .footer p {
   text-align: end;
-}
-
-.navigatie {
-  margin: 0em 3em;
 }
 </style>

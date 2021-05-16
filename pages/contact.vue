@@ -1,35 +1,41 @@
 <template>
-  <section id="app">
-    <div>
-      <label>
-        voornaam:
-        <input type="text" v-model="firstName" />
-      </label>
-      <label>
-        achternaam:
-        <input type="text" v-model="lastName" />
-      </label>
-      <label>
-        email:
-        <input type="email" v-model="email" />
-      </label>
-      <label>
-        telefoon nummer:
-        <input type="tel" v-model="telefoonNummer" />
-      </label>
-      <label>
-        bio
-        <textarea v-model="textContent"> </textarea>
-      </label>
-    </div>
-    <div class="container">
-      <button @click="postRequest">Verstuur</button>
-    </div>
-  </section>
+  <main>
+    <restauration-header />
+    <section id="app">
+      <div>
+        <label>
+          voornaam:
+          <input v-model="firstName" type="text" />
+        </label>
+        <label>
+          achternaam:
+          <input v-model="lastName" type="text" />
+        </label>
+        <label>
+          email:
+          <input v-model="email" type="email" />
+        </label>
+        <label>
+          telefoon nummer:
+          <input v-model="telefoonNummer" type="tel" />
+        </label>
+        <label>
+          bio
+          <textarea v-model="textContent"> </textarea>
+        </label>
+      </div>
+      <div class="container">
+        <button @click="postRequest">Verstuur</button>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
+  components: { RestaurationHeader },
   data() {
     return {
       firstName: '',

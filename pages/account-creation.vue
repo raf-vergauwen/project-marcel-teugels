@@ -1,30 +1,36 @@
 <template>
-  <div class="container">
-    <h1>Account creation</h1>
-    <form @submit.prevent="createAccount" action="account-creation">
-      <label
-        >First name:
-        <input type="text" name="first-name" v-model="firstName" />
-      </label>
-      <label
-        >Last name:
-        <input type="text" name="last-name" v-model="lastName" />
-      </label>
-      <label
-        >E-mail:
-        <input type="text" name="email" v-model="email" />
-      </label>
-      <label
-        >Password:
-        <input type="password" name="password" v-model="password" />
-      </label>
-      <button type="submit">Create</button>
-    </form>
-  </div>
+  <main>
+    <restauration-header />
+    <div class="container">
+      <h1>Account creation</h1>
+      <form action="account-creation" @submit.prevent="createAccount">
+        <label
+          >First name:
+          <input v-model="firstName" type="text" name="first-name" />
+        </label>
+        <label
+          >Last name:
+          <input v-model="lastName" type="text" name="last-name" />
+        </label>
+        <label
+          >E-mail:
+          <input v-model="email" type="text" name="email" />
+        </label>
+        <label
+          >Password:
+          <input v-model="password" type="password" name="password" />
+        </label>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
+  components: { RestaurationHeader },
   data() {
     return {
       firstName: '',
