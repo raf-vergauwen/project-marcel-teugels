@@ -1,8 +1,39 @@
-// -----------------------------------------------------------------------------
-// +  _containers.scss: This partial file contains all Scss 'containers'.
-// -----------------------------------------------------------------------------
-
-// #  Import all containers
 @import 'containers/block-container';
 @import 'containers/flex-container';
 @import 'containers/grid-container';
+
+/* -------------------------------------------------------------------------- *\
+*  _block.scss: This partial file contains all 'block' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Block >>---------->>
+
+/* Inline-Block */
+@include container-base(inline-block);
+
+/* Regular-Block */
+@include container-base(regular-block);
+
+/* -------------------------------------------------------------------------- *\
+*  _flex.scss: This partial file contains all 'flex' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Flex >>---------->>
+
+/* Inline-Flex */
+@include container-base(inline-flex);
+
+/* Regular-Flex */
+@include container-base(regular-flex);
+
+/* -------------------------------------------------------------------------- *\
+*  _grid.scss: This partial file contains all 'grid' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Grid >>---------->>
+
+/* Inline-Grid */
+@include container-base(inline-grid);
+
+/* Regular-Grid */
+@include container-base(regular-grid);

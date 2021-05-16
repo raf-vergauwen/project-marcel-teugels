@@ -762,7 +762,6 @@ header {
 -  NAV MAIN: .main-nav
 \* -------------------------------------------------------------------------- */
 header nav {
-  min-width: calc(320px - 3rem);
   max-width: 1920px;
   width: 100%;
   height: auto;
@@ -1098,6 +1097,201 @@ ul.menu-left.collapse {
   display: -ms-grid;
   display: grid;
   padding: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _block.scss: This partial file contains all 'block' styles.
+\* -------------------------------------------------------------------------- */
+/* Inline-Block */
+.inline-block__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.inline-block__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.inline-block__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.inline-block__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.inline-block__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+/* Regular-Block */
+.regular-block__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.regular-block__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.regular-block__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.regular-block__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.regular-block__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _flex.scss: This partial file contains all 'flex' styles.
+\* -------------------------------------------------------------------------- */
+/* Inline-Flex */
+.inline-flex__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.inline-flex__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.inline-flex__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.inline-flex__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.inline-flex__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+/* Regular-Flex */
+.regular-flex__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.regular-flex__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.regular-flex__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.regular-flex__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.regular-flex__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  _grid.scss: This partial file contains all 'grid' styles.
+\* -------------------------------------------------------------------------- */
+/* Inline-Grid */
+.inline-grid__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.inline-grid__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.inline-grid__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.inline-grid__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.inline-grid__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+/* Regular-Grid */
+.regular-grid__padded--0 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.regular-grid__padded--xxs {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+}
+
+.regular-grid__padded--xs {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.regular-grid__padded--s {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.regular-grid__padded--m {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\

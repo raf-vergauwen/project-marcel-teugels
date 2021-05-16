@@ -3,6 +3,49 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
+// *  Experimental Containers
+// -----------------------------------------------------------------------------
+
+@mixin box-dimensions($width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin container-base($name) {
+  .#{$name} {
+    &__padded--0 {
+      @include box-dimensions;
+
+      padding: 0;
+    }
+
+    &__padded--xxs {
+      @include box-dimensions;
+
+      padding: $filler--xxs;
+    }
+
+    &__padded--xs {
+      @include box-dimensions;
+
+      padding: $filler--xs;
+    }
+
+    &__padded--s {
+      @include box-dimensions;
+
+      padding: $filler--s;
+    }
+
+    &__padded--m {
+      @include box-dimensions;
+
+      padding: $filler--m;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
 // *  Universal Containers
 // -----------------------------------------------------------------------------
 

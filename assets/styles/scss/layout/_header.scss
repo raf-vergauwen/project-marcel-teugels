@@ -19,6 +19,8 @@ header {
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
   will-change: transform;
+
+  // width: 100vw;
 }
 
 // -  <<----------<< Specific >>---------->>
@@ -38,7 +40,7 @@ header {
 
 header nav {
   // ...
-  min-width: calc(#{$dimension--xxs} - #{$filler--xl});
+  // min-width: calc(#{$dimension--xxs} - #{$filler--xl});
   max-width: $dimension--xl;
   @include dimensions;
 }
