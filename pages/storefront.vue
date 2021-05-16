@@ -1,7 +1,10 @@
 <template>
   <main class="p-storefront">
     <store-header />
-    <div v-if="Admin === 'true'" class="title-btn__container">
+    <div
+      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
+      class="title-btn__container"
+    >
       <h1 class="p-product__title">Store</h1>
       <button class="p-product__btn">
         <a href="/add-product">+</a>

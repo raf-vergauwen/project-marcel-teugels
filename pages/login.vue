@@ -28,7 +28,7 @@ export default {
     return {
       email: '',
       password: '',
-      admin: false,
+      admin: '',
     };
   },
   computed: {
@@ -80,17 +80,8 @@ export default {
         })
         .then((body) => {
           console.log(body);
-          if (body.data.role === '78b6335f-b448-46d6-8086-65057ba5fae0') {
-            this.admin = true;
-            sessionStorage.setItem('user_role', this.admin);
-          } else if (
-            body.data.role === 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7'
-          ) {
-            this.admin = false;
-            sessionStorage.setItem('user_role', this.admin);
-          } else {
-            console.log('can not asign role');
-          }
+          this.admin = body.data.role;
+          sessionStorage.setItem('user_role', this.admin);
         })
         .catch((err) => {
           console.error(err);
