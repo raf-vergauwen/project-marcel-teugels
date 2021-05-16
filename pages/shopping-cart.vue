@@ -4,16 +4,25 @@
     <div class="container">
       <h1 class="title">Shopping cart</h1>
       <button @click="printList">print</button>
-      <p v-for="items in productData" :key="items.name">{{ items.name }}</p>
+      <div class="cart-card">
+        <shopping-cart-item
+          v-for="product in productData"
+          :key="product.id"
+          class="p-storefront__product-list__item"
+          :product="product"
+          v-on:remove-product="removeProduct($event)"
+        />
+      </div>
     </div>
   </main>
 </template>
 
 <script>
+import shoppingCartItem from '~/components/shoppingCartItem';
 import StoreHeader from '~/components/StoreHeader';
 
 export default {
-  components: { StoreHeader },
+  components: { StoreHeader, shoppingCartItem },
 
   data() {
     return {
@@ -33,10 +42,15 @@ export default {
     },
     fetchItems() {
       for (let i = 0; i < this.shoppingList.length; i++) {
-        fetch(`http://157.230.126.154/items/products/` + this.shoppingList[i], {
-          method: 'GET',
-          headers: {},
-        })
+        fetch(
+          `http://157.230.126.154/items/products/` +
+            this.shoppingList[i] +
+            '?fields=*%2Cimages.*',
+          {
+            method: 'GET',
+            headers: {},
+          },
+        )
           .then((response) => {
             if (!response.ok) {
               console.log('Error');
@@ -52,6 +66,11 @@ export default {
             console.error(err);
           });
       }
+    },
+    removeProduct(product) {
+      console.log(product);
+      let index = this.productData.indexOf(product);
+      this.productData.splice(index, index + 1);
     },
   },
 };
