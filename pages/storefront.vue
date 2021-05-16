@@ -1,7 +1,17 @@
 <template>
   <main class="p-storefront">
     <store-header />
-    <h1 class="p-storefront__title">Store</h1>
+    <div v-if="Admin === 'true'" class="title-btn__container">
+      <h1 class="p-product__title">Store</h1>
+      <button class="p-product__btn">
+        <a href="/add-product">+</a>
+      </button>
+    </div>
+
+    <div v-else class="title-btn__container">
+      <h1 class="p-product__title">Store</h1>
+    </div>
+
     <div class="p-storefront__product-list">
       <ProductItem
         v-for="product in productData"
@@ -25,6 +35,7 @@ export default {
     return {
       productData: {},
       src: 'http://157.230.126.154/assets/',
+      Admin: false,
       shoppingCart: [],
     };
   },
@@ -34,6 +45,9 @@ export default {
   computed: {
     access_token() {
       return sessionStorage.getItem('access_token');
+    },
+    user_role() {
+      return sessionStorage.getItem('user_role');
     },
   },
   methods: {
@@ -51,6 +65,7 @@ export default {
         .then((data) => {
           console.log(data);
           this.productData = data.data;
+          this.Admin = this.user_role;
         })
         .catch((err) => {
           console.error(err);
@@ -72,9 +87,6 @@ export default {
 .p-storefront {
   @extend .container;
 
-  &__title {
-  }
-
   &__product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,9 +99,28 @@ export default {
     @include sm() {
       grid-template-columns: 1fr;
     }
-
-    &__item {
-    }
   }
+}
+
+.title-btn__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.p-product__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: $dark-bg;
+  border: 0px;
+}
+
+.p-product__title {
+  color: $dark-bg;
+}
+
+a {
+  font-size: 20px;
 }
 </style>
