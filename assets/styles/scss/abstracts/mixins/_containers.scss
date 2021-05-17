@@ -6,7 +6,7 @@
 // *  Experimental Containers
 // -----------------------------------------------------------------------------
 
-// -  <<----------<< Support Mixin: Flex-Layout >>---------->>
+// -  <<----------<< Support Mixin >>---------->>
 
 // #  <<-----<< Flex-Layout >>----->>
 @mixin flex-layout($display, $direction, $wrap) {
@@ -16,8 +16,9 @@
   }
 }
 
+// #  <<-----<< Buffer-Layout >>----->>
 @mixin buffer-layout($type, $size) {
-  // -  <<----------<< Outer Layout >>---------->>
+  // #  Outer Layout
   @if $type == outer {
     // #  4px
     @if $size == small {
@@ -32,7 +33,7 @@
       padding: $buffer--s;
     }
   }
-  // -  <<----------<< Inner Layout >>---------->>
+  // #  Inner Layout
   @else if $type == inner {
     // #  4px
     @if $size == small {
@@ -46,10 +47,12 @@
     @else if $size == large {
       margin: $buffer--s;
     }
-  } //
+  }
 }
 
-// -----------------------------------------------------------------------------
+// -  <<----------<< Main Mixin >>---------->>
+
+// #  <<-----<< Block-Container-Structure >>----->>
 @mixin block-container-structure($group, $buffer, $display) {
   .#{$group}__#{$buffer}-#{$display} {
     display: $display;
