@@ -12,6 +12,7 @@
           :to="navItem.path"
         >
           {{ navItem.label }}
+          {{ navItem.path === '/shopping-cart' ? '(' + cijfer + ')' : '' }}
         </nuxt-link>
       </nav>
     </div>
@@ -20,7 +21,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'StoreHeader',
   data() {
     return {
       cijfer: 0,
@@ -31,10 +32,15 @@ export default {
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profiel' },
         { path: '/account-creation', label: 'sign up' },
-        { path: '/shopping-cart', label: `winkelwagen(0)` },
+        { path: '/shopping-cart', label: `winkelwagen` },
         { path: '/home-restauratie', label: 'restauratie' },
       ],
     };
+  },
+  mounted() {
+    this.$root.$on('g-add-product', () => {
+      this.cijfer++;
+    });
   },
 };
 </script>

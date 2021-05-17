@@ -10,7 +10,7 @@
           :key="product.id"
           class="p-storefront__product-list__item"
           :product="product"
-          v-on:remove-product="removeProduct($event)"
+          @remove-product="removeProduct($event)"
         />
       </div>
     </div>
@@ -22,6 +22,7 @@ import shoppingCartItem from '~/components/shoppingCartItem';
 import StoreHeader from '~/components/StoreHeader';
 
 export default {
+  name: 'ShoppingCartPage',
   components: { StoreHeader, shoppingCartItem },
 
   data() {
