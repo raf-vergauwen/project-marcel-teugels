@@ -55,46 +55,24 @@
 // #  <<-----<< Block-Container-Structure >>----->>
 @mixin block-container-structure($group, $buffer, $display) {
   .#{$group}__#{$buffer}-#{$display} {
+    @include buffer-layout($group, $buffer);
+
     display: $display;
     width: 100%;
     height: auto;
-
-    // *  <<----------<< Outer Layout >>---------->>
-    @if $group == outer {
-      @include buffer-layout($group, $buffer);
-    }
-    // *  <<----------<< Wrapper Layout >>---------->>
-    @else if $group == wrapper {
-      @include buffer-layout($group, $buffer);
-    }
-    // *  <<----------<< Inner Layout >>---------->>
-    @else if $group == inner {
-      @include buffer-layout($group, $buffer);
-    }
+    outline: 2.5px rgba(255, 0, 0, 1) solid;
   }
 }
 
 @mixin flex-container-structure($group, $buffer, $display, $direction, $wrap) {
   .#{$group}__#{$buffer}-#{$display}--#{$direction}-#{$wrap} {
+    @include flex-layout($display, $direction, $wrap);
+    @include buffer-layout($group, $buffer);
+
     display: $display;
     width: 100%;
     height: auto;
-
-    // *  <<----------<< Outer Layout >>---------->>
-    @if $group == outer {
-      @include flex-layout($display, $direction, $wrap);
-      @include buffer-layout($group, $buffer);
-    }
-    // *  <<----------<< Wrapper Layout >>---------->>
-    @else if $group == wrapper {
-      @include flex-layout($display, $direction, $wrap);
-      @include buffer-layout($group, $buffer);
-    }
-    // *  <<----------<< Inner Layout >>---------->>
-    @else if $group == inner {
-      @include flex-layout($display, $direction, $wrap);
-      @include buffer-layout($group, $buffer);
-    }
+    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
   }
 }
 

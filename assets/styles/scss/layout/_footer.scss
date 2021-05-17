@@ -70,7 +70,6 @@ footer {
   }
 
   &__container--contact {
-    flex-direction: column;
     background-color: darkgreen;
 
     .foot-copyright {
@@ -90,8 +89,8 @@ footer {
       // ...
 
       &__container {
-        flex-direction: row;
-        justify-content: space-between;
+        // flex-direction: row;
+        // justify-content: space-between;
         background-color: seagreen;
       }
 
