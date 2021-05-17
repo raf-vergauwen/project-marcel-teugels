@@ -184,18 +184,6 @@ template {
   outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
 }
 
-.block-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-}
-
-.flex-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-}
-
-.grid-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -517,22 +505,67 @@ body {
 *  _layout.scss: This partial file contains all the default 'layout'.
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  Nav
+-  GENERIC TAGS
 \* -------------------------------------------------------------------------- */
-header nav {
-  min-width: calc(320px - 3rem);
-  max-width: 1920px;
+article {
+  padding: 1rem;
+}
+
+aside {
+  padding: 0.5rem;
+}
+
+footer {
+  padding: 0.5rem;
+}
+
+header {
+  padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  padding: 0.5rem;
+}
+
+section {
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
--  Aside
+-  CONTAINER CLASSES
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Section
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  Article
-\* -------------------------------------------------------------------------- */
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch stretch;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch stretch;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  _typography.scss: This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
@@ -761,12 +794,6 @@ header {
 /* -------------------------------------------------------------------------- *\
 -  NAV MAIN: .main-nav
 \* -------------------------------------------------------------------------- */
-header nav {
-  max-width: 1920px;
-  width: 100%;
-  height: auto;
-}
-
 .main-nav__container {
   background-color: lightpink;
 }
@@ -2747,7 +2774,6 @@ input:checked + .slider::before {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  margin: 1.5rem;
 }
 
 .about__image {
@@ -2762,7 +2788,6 @@ input:checked + .slider::before {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  margin: 1.5rem;
 }
 
 .about__title--text {

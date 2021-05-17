@@ -38,13 +38,6 @@ header {
 
 // -  <<----------<< General >>---------->>
 
-header nav {
-  // ...
-  // min-width: calc(#{$dimension--xxs} - #{$buffer--xl});
-  max-width: $dimension--xl;
-  @include dimensions;
-}
-
 .main-nav {
   &__container {
     background-color: lightpink;

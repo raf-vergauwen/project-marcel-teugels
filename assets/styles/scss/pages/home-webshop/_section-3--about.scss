@@ -17,7 +17,7 @@
 
   &__container--visual {
     flex: 1 1 50%;
-    margin: $buffer--m;
+    // margin: $buffer--m;
   }
 
   &__image {
@@ -31,7 +31,7 @@
     max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
     height: 80vh;
     flex: 1 1 50%;
-    margin: $buffer--m;
+    // margin: $buffer--m;
   }
 
   &__title--text {
