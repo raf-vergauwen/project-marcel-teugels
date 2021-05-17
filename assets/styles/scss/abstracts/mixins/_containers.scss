@@ -13,13 +13,15 @@
   @if ($display == flex) or ($display == inline-flex) {
     flex-direction: $direction;
     flex-wrap: $wrap;
+    place-content: space-evenly;
+    place-items: stretch;
   }
 }
 
 // #  <<-----<< Buffer-Layout >>----->>
 @mixin buffer-layout($type, $size) {
-  // #  Outer Layout
-  @if $type == outer {
+  // #  Inner Layout
+  @if $type == inner {
     // #  4px
     @if $size == small {
       padding: $buffer--xxs;
@@ -33,8 +35,8 @@
       padding: $buffer--s;
     }
   }
-  // #  Inner Layout
-  @else if $type == inner {
+  // #  Outer Layout
+  @else if $type == outer {
     // #  4px
     @if $size == small {
       margin: $buffer--xxs;
@@ -60,7 +62,7 @@
     display: $display;
     width: 100%;
     height: auto;
-    outline: 2.5px rgba(255, 0, 0, 1) solid;
+    outline: 2.5px rgba(255, 0, 0, 1) dashed;
   }
 }
 
@@ -72,7 +74,7 @@
     display: $display;
     width: 100%;
     height: auto;
-    outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+    outline: 2.5px rgba(255, 0, 0, 1) dashed;
   }
 }
 
