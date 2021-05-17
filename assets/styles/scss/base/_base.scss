@@ -10,6 +10,7 @@
 * {
   padding: 0;
   border: 0;
+  margin: 0 auto;
   margin: 0;
   // width: 100%;
   // height: auto;
@@ -22,7 +23,7 @@ html {
 
 // #  <body>
 body {
-  max-width: $dimension--l;
+  max-width: $limit--max-width;
   margin: $center-me;
   background-color: var(--color-background);
   color: var(--color-foreground);

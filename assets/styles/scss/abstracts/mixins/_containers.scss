@@ -3,177 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// *  Experimental Containers
-// -----------------------------------------------------------------------------
-
-// -  <<----------<< Support Mixin >>---------->>
-
-// #  <<-----<< Flex-Layout >>----->>
-@mixin flex-layout($display, $direction, $wrap) {
-  @if ($display == flex) or ($display == inline-flex) {
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    place-content: space-evenly;
-    place-items: stretch;
-  }
-}
-
-// #  <<-----<< Buffer-Layout >>----->>
-@mixin buffer-layout($type, $size) {
-  // #  Inner Layout
-  @if $type == inner {
-    // #  4px
-    @if $size == small {
-      padding: $buffer--xxs;
-    }
-    // #  8px
-    @else if $size == medium {
-      padding: $buffer--xs;
-    }
-    // #  16px
-    @else if $size == large {
-      padding: $buffer--s;
-    }
-  }
-  // #  Outer Layout
-  @else if $type == outer {
-    // #  4px
-    @if $size == small {
-      margin: $buffer--xxs;
-    }
-    // #  8px
-    @else if $size == medium {
-      margin: $buffer--xs;
-    }
-    // #  16px
-    @else if $size == large {
-      margin: $buffer--s;
-    }
-  }
-}
-
-// -  <<----------<< Main Mixin >>---------->>
-
-// #  <<-----<< Block-Container-Structure >>----->>
-@mixin block-container-structure($group, $buffer, $display) {
-  .#{$group}__#{$buffer}-#{$display} {
-    @include buffer-layout($group, $buffer);
-
-    display: $display;
-    width: 100%;
-    height: auto;
-    outline: 2.5px rgba(255, 0, 0, 1) dashed;
-  }
-}
-
-@mixin flex-container-structure($group, $buffer, $display, $direction, $wrap) {
-  .#{$group}__#{$buffer}-#{$display}--#{$direction}-#{$wrap} {
-    @include flex-layout($display, $direction, $wrap);
-    @include buffer-layout($group, $buffer);
-
-    display: $display;
-    width: 100%;
-    height: auto;
-    outline: 2.5px rgba(255, 0, 0, 1) dashed;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// *  Universal Containers
-// -----------------------------------------------------------------------------
-
-@mixin container(
-  $container-type: wrapped-block,
-  $wrap-type: nowrap,
-  $direction: column,
-  $justify: center,
-  $align: center
-) {
-  // @include dimensions;
-
-  // #  wrapped-Block Container
-  @if $container-type == wrapped-block {
-    display: block;
-    padding: 0;
-  }
-
-  // #  wrapped-Flex Container
-  @if $container-type == wrapped-flex {
-    display: flex;
-    padding: 0;
-  }
-
-  // #  wrapped-Grid Container
-  @if $container-type == wrapped-grid {
-    display: grid;
-    padding: 0;
-  }
-
-  // #  padded-Block Container
-  @if $container-type == padded-block {
-    display: block;
-    padding: $buffer--xs;
-  }
-
-  // #  padded-Flex Container
-  @if $container-type == padded-flex {
-    display: flex;
-    padding: $buffer--xs;
-  }
-
-  // #  padded-Grid Container
-  @if $container-type == padded-grid {
-    display: grid;
-    padding: $buffer--xs;
-  }
-
-  // -  <---------------------------------------------------------------------->
-
-  // #  wrapped-Flex Container
-  @if $container-type == wrapped-flex {
-    flex-direction: $direction;
-    flex-wrap: $wrap-type;
-    place-content: $justify;
-
-    // #  wrapped-Flex Container Nowrap
-    @if $wrap-type == nowrap {
-      place-items: $align;
-    }
-    // #  wrapped-Flex Container Wrap
-    @else if $wrap-type == wrap {
-      place-content: $align;
-    }
-    // #  Invalid arguments!
-    @else {
-      @error 'Invalid SCSS argument detected!';
-    }
-    //...
-  }
-
-  // #  padded-Flex Container
-  @if $container-type == padded-flex {
-    flex-direction: $direction;
-    flex-wrap: $wrap-type;
-    place-content: $justify;
-
-    // #  padded-Flex Container Nowrap
-    @if $wrap-type == nowrap {
-      place-items: $align;
-    }
-    // #  padded-Flex Container Wrap
-    @else if $wrap-type == wrap {
-      place-content: $align;
-    }
-    // #  Invalid arguments!
-    @else {
-      @error 'Invalid SCSS argument detected!';
-    }
-    //...
-  }
-}
-
-// -----------------------------------------------------------------------------
-// *  Specific Containers
+// *  Parents
 // -----------------------------------------------------------------------------
 
 // -  <<----------<< Block-Box>>---------->>
@@ -205,55 +35,35 @@
 
 // #  Block-Flex-Container
 @mixin block-flex-container(
-  $wrap-type: nowrap,
+  $wrap: nowrap,
   $direction: column,
-  $justify: center,
-  $align: center
+  $justify: space-evenly,
+  $align: stretch
 ) {
   display: flex;
   flex-direction: $direction;
-  flex-wrap: $wrap-type;
+  flex-wrap: $wrap;
   place-content: $justify;
-
-  // #  Block-Flex-Container Nowrap
-  @if $wrap-type == nowrap {
-    place-items: $align;
-  }
-  // #  Block-Flex-Container Wrap
-  @else if $wrap-type == wrap {
-    place-content: $align;
-  }
-  // #  Invalid arguments!
-  @else {
-    @error 'Invalid SCSS argument detected!';
-  }
+  place-items: $align;
 }
 
 // #  Inline-Flex-Container ---> buttons, navigation, vertical lists
 @mixin inline-flex-container(
-  $wrap-type: nowrap,
+  $wrap: nowrap,
   $direction: row,
   $justify: center,
   $align: center
 ) {
   display: inline-flex;
   flex-direction: $direction;
-  flex-wrap: $wrap-type;
+  flex-wrap: $wrap;
   place-content: $justify;
-
-  // #  Inline-Flex-Container Nowrap
-  @if $wrap-type == nowrap {
-    place-items: $align;
-  }
-  // #  Inline-Flex-Container Wrap
-  @else if $wrap-type == wrap {
-    place-content: $align;
-  }
-  // #  Invalid arguments!
-  @else {
-    @error 'Invalid SCSS argument detected!';
-  }
+  place-items: $align;
 }
+
+// -----------------------------------------------------------------------------
+// *  Children
+// -----------------------------------------------------------------------------
 
 // #  Flex-Items ---> Children
 @mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: center) {
@@ -261,12 +71,4 @@
   flex-grow: $grow;
   flex-shrink: $shrink;
   place-self: $self;
-}
-
-// -  <<----------<< Grid-Box >>---------->>
-
-// #  Grid-Container
-@mixin grid-container() {
-  display: grid;
-  // ...
 }

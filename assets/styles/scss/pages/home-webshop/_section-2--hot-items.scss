@@ -5,7 +5,7 @@
 .hot-items {
   &__container {
     @include dimensions;
-    @include block-flex-container(wrap, row, center, center);
+    @include block-flex-container(wrap, row, space-evenly, stretch);
   }
 
   &__title {
@@ -15,7 +15,7 @@
 
 .hot-item {
   &__container {
-    @include flex-items(1, 1);
+    @include flex-items(1, 1, auto);
 
     position: relative;
     // margin: $buffer--m;
