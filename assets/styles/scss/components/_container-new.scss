@@ -1,0 +1,16 @@
+/* -------------------------------------------------------------------------- *\
+*  _container-new.scss: This partial file contains all 'container-new' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< OUTER >>---------->>
+
+/* HERE I AM */
+@include block-container-structure(outer, small, block);
+
+// -  <<----------<< WRAPPER >>---------->>
+@include flex-container-structure(wrapper, flat, block, row, wrap);
+
+// -  <<----------<< INNER >>---------->>
+@include flex-container-structure(inner, medium, flex, row, wrap);
+
+// -----------------------------------------------------------------------------

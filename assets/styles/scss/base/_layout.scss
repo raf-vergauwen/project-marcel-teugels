@@ -10,7 +10,7 @@
 
 header nav {
   // ...
-  min-width: calc(#{$dimension--xxs} - #{$filler--xl});
+  min-width: calc(#{$dimension--xxs} - #{$buffer--xl});
   max-width: $dimension--xl;
 }
 

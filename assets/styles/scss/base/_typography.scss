@@ -8,7 +8,7 @@
 
 // #  <h1>
 h1 {
-  padding: $filler--m $filler--xs;
+  padding: $buffer--m $buffer--xs;
   color: var(--color-primary);
   font-family: $font-family--subject;
   font-size: $font-size--6;
@@ -22,7 +22,7 @@ h1 {
 
 // #  <h2>
 h2 {
-  padding: $filler--m $filler--xs;
+  padding: $buffer--m $buffer--xs;
   color: var(--color-primary);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
@@ -42,7 +42,7 @@ h2 {
 
 // #  <h3>
 h3 {
-  padding: $filler--s $filler--xs;
+  padding: $buffer--s $buffer--xs;
   color: var(--color-secondary);
   font-family: $font-family--article-title;
   font-size: $font-size--4;
@@ -62,7 +62,7 @@ h3 {
 
 // #  <h4>
 h4 {
-  padding: $filler--s $filler--xs;
+  padding: $buffer--s $buffer--xs;
   color: var(--color-secondary);
   font-family: $font-family--link;
   font-size: $font-family--link;
@@ -82,7 +82,7 @@ h4 {
 
 // #  <h5>
 h5 {
-  padding: $filler--xs $filler--xs;
+  padding: $buffer--xs $buffer--xs;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--2;
@@ -102,7 +102,7 @@ h5 {
 
 // #  <h6>
 h6 {
-  padding: $filler--xs $filler--xs;
+  padding: $buffer--xs $buffer--xs;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--1;
@@ -129,7 +129,7 @@ p,
 li,
 blockquote,
 figcaption {
-  padding: $filler--xs;
+  padding: $buffer--xs;
   color: var(--color-foreground);
   font-family: $font-family--text;
   font-size: $font-size--1;
@@ -156,7 +156,7 @@ figcaption {
 // #  <li>
 
 li {
-  padding: $filler--xs 0;
+  padding: $buffer--xs 0;
   list-style-type: none;
 }
 
@@ -170,7 +170,7 @@ li {
 
 a,
 button {
-  padding: $filler--xs;
+  padding: $buffer--xs;
   color: var(--color-primary);
   font-family: $font-family--link;
   font-size: $font-size--2;
@@ -186,7 +186,7 @@ button {
   }
 
   i {
-    margin-right: $filler--xs;
+    margin-right: $buffer--xs;
     text-align: center;
   }
 }

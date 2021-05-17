@@ -18,13 +18,13 @@ html {
 // -  <<----------<< Whitespace Sizes >>---------->>
 
 // #  Filler
-$filler--xxs: 0.25rem; // 4px
-$filler--xs: 0.5rem; // 8px
-$filler--s: 1rem; // 16px
-$filler--m: 1.5rem; // 24px
-$filler--l: 2rem; // 32px
-$filler--xl: 3rem; // 48px
-$filler--xxl: 4rem; // 64px
+$buffer--xxs: 0.25rem; // 4px
+$buffer--xs: 0.5rem; // 8px
+$buffer--s: 1rem; // 16px
+$buffer--m: 1.5rem; // 24px
+$buffer--l: 2rem; // 32px
+$buffer--xl: 3rem; // 48px
+$buffer--xxl: 4rem; // 64px
 
 // #  Filler
 $center-me: 0 auto;
@@ -242,7 +242,7 @@ $filter--light: brightness(0.8) contrast(1.2);
 // -  <<----------<< Button >>---------->>
 
 // #  Button
-$button--height: $filler--l;
+$button--height: $buffer--l;
 $button--depth: 6;
 $button--speed: 0.06;
 $button--timing-function: ease-out;

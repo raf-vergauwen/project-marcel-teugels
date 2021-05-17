@@ -11,13 +11,13 @@
   }
 
   &__title {
-    // padding: $filler--m;
+    // padding: $buffer--m;
     // background-color: saddlebrown;
   }
 
   &__container--visual {
     flex: 1 1 50%;
-    margin: $filler--m;
+    margin: $buffer--m;
   }
 
   &__image {
@@ -27,19 +27,19 @@
 
   &__container--text {
     width: 100%;
-    min-width: calc(#{$dimension--xxs} - #{$filler--l});
+    min-width: calc(#{$dimension--xxs} - #{$buffer--l});
     max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
     height: 80vh;
     flex: 1 1 50%;
-    margin: $filler--m;
+    margin: $buffer--m;
   }
 
   &__title--text {
-    padding: $filler--xs;
+    padding: $buffer--xs;
   }
 
   &__sub-title {
-    padding: $filler--xs;
+    padding: $buffer--xs;
     font-size: $font-size--2;
   }
 

@@ -24,7 +24,7 @@
   &__visual {
     max-width: fit-content;
     max-height: 40vh;
-    margin: $filler--m 0;
+    margin: $buffer--m 0;
     background-color: var(--bg-color--transparant---softest);
     fill: var(--color-primary);
     filter: drop-shadow(0 0 0.05rem var(--color-background));

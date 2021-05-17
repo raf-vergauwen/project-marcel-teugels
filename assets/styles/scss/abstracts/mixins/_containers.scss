@@ -6,73 +6,91 @@
 // *  Experimental Containers
 // -----------------------------------------------------------------------------
 
-@mixin box-dimensions($width: 100%, $height: auto) {
-  width: $width;
-  height: $height;
+// -  <<----------<< Support Mixin: Flex-Layout >>---------->>
+
+// #  <<-----<< Flex-Layout >>----->>
+@mixin flex-layout($display, $direction, $wrap) {
+  @if ($display == flex) or ($display == inline-flex) {
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+  }
 }
 
-@mixin container-base($type, $padding-name, $padding-value) {
-  .#{$type} {
-    &__padded--#{$padding-name} {
-      @include box-dimensions;
+@mixin buffer-layout($type, $size) {
+  // -  <<----------<< Outer Layout >>---------->>
+  @if $type == outer {
+    // #  4px
+    @if $size == small {
+      padding: $buffer--xxs;
+    }
+    // #  8px
+    @else if $size == medium {
+      padding: $buffer--xs;
+    }
+    // #  16px
+    @else if $size == large {
+      padding: $buffer--s;
+    }
+  }
+  // -  <<----------<< Inner Layout >>---------->>
+  @else if $type == inner {
+    // #  4px
+    @if $size == small {
+      margin: $buffer--xxs;
+    }
+    // #  8px
+    @else if $size == medium {
+      margin: $buffer--xs;
+    }
+    // #  16px
+    @else if $size == large {
+      margin: $buffer--s;
+    }
+  } //
+}
 
-      display: $type;
-      padding: $padding-value;
+// -----------------------------------------------------------------------------
+@mixin block-container-structure($group, $buffer, $display) {
+  .#{$group}__#{$buffer}-#{$display} {
+    display: $display;
+    width: 100%;
+    height: auto;
 
-      // #  Flex
-      @if $type == flex {
-        &-column {
-          @include box-dimensions;
+    // *  <<----------<< Outer Layout >>---------->>
+    @if $group == outer {
+      @include buffer-layout($group, $buffer);
+    }
+    // *  <<----------<< Wrapper Layout >>---------->>
+    @else if $group == wrapper {
+      @include buffer-layout($group, $buffer);
+    }
+    // *  <<----------<< Inner Layout >>---------->>
+    @else if $group == inner {
+      @include buffer-layout($group, $buffer);
+    }
+  }
+}
 
-          display: $type;
-          flex-direction: column;
-          padding: $padding-value;
-        }
+@mixin flex-container-structure($group, $buffer, $display, $direction, $wrap) {
+  .#{$group}__#{$buffer}-#{$display}--#{$direction}-#{$wrap} {
+    display: $display;
+    width: 100%;
+    height: auto;
 
-        &-row {
-          @include box-dimensions;
-
-          display: $type;
-          flex-direction: row;
-          padding: $padding-value;
-        }
-
-        &-wrap {
-          @include box-dimensions;
-
-          display: $type;
-          flex-direction: row;
-          flex-wrap: wrap;
-          padding: $padding-value;
-        }
-
-        // #  Inline-Flex
-      } @else if $type == inline-flex {
-        &-column {
-          @include box-dimensions;
-
-          display: $type;
-          flex-direction: column;
-          padding: $padding-value;
-        }
-
-        &-row {
-          @include box-dimensions;
-
-          display: $type;
-          flex-direction: row;
-          padding: $padding-value;
-        }
-
-        &-wrap {
-          @include box-dimensions;
-
-          display: $type;
-          flex-direction: row;
-          flex-wrap: wrap;
-          padding: $padding-value;
-        }
-      }
+    // *  <<----------<< Outer Layout >>---------->>
+    @if $group == outer {
+      @include flex-layout($display, $direction, $wrap);
+      @include buffer-layout($group, $buffer);
+    }
+    // *  <<----------<< Wrapper Layout >>---------->>
+    @else if $group == wrapper {
+      @include flex-layout($display, $direction, $wrap);
+      @include buffer-layout($group, $buffer);
+    }
+    // *  <<----------<< Inner Layout >>---------->>
+    @else if $group == inner {
+      @include flex-layout($display, $direction, $wrap);
+      @include buffer-layout($group, $buffer);
     }
   }
 }
@@ -111,19 +129,19 @@
   // #  padded-Block Container
   @if $container-type == padded-block {
     display: block;
-    padding: $filler--xs;
+    padding: $buffer--xs;
   }
 
   // #  padded-Flex Container
   @if $container-type == padded-flex {
     display: flex;
-    padding: $filler--xs;
+    padding: $buffer--xs;
   }
 
   // #  padded-Grid Container
   @if $container-type == padded-grid {
     display: grid;
-    padding: $filler--xs;
+    padding: $buffer--xs;
   }
 
   // -  <---------------------------------------------------------------------->

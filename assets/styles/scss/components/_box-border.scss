@@ -38,7 +38,7 @@
 
   .box-border-inner {
     position: relative;
-    padding: $filler--xs;
+    padding: $buffer--xs;
     border: 2px solid var(--color-tertiary);
 
     &::before,
