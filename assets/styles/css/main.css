@@ -594,8 +594,8 @@ h3 + p::first-letter {
 h4 {
   padding: 1.5rem 0.5rem;
   color: var(--color-secondary);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5625rem;
+  font-family: "Montserrat", monospace;
+  font-size: "Montserrat", monospace;
   font-variant: normal;
   font-weight: 300;
   letter-spacing: normal;
@@ -1832,6 +1832,70 @@ input:checked + .slider::before {
   transition: all 0.25s ease 0s;
 }
 
+/* -------------------------------------------------------------------------- *\
+*  _box-border.scss: This partial file contains all 'box-border' styles.
+\* -------------------------------------------------------------------------- */
+.box-border {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+  border: 2px solid var(--color-tertiary);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.box-border::before, .box-border::after {
+  position: absolute;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.box-border::before {
+  left: 5px;
+}
+
+.box-border::after {
+  right: 5px;
+}
+
+.box-border .box-border-inner {
+  position: relative;
+  padding: 0.5rem;
+  border: 2px solid var(--color-tertiary);
+}
+
+.box-border .box-border-inner::before, .box-border .box-border-inner::after {
+  position: absolute;
+  bottom: -2px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.box-border .box-border-inner::before {
+  left: -2px;
+}
+
+.box-border .box-border-inner::after {
+  right: -2px;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
@@ -1921,7 +1985,6 @@ input:checked + .slider::before {
       flex-shrink: 1;
   place-self: center;
   position: relative;
-  margin: 1.5rem;
 }
 
 .hot-item__title {
@@ -2060,79 +2123,20 @@ input:checked + .slider::before {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  margin: 1.5rem;
+}
+
+.about__title--text {
+  padding: 0.5rem;
 }
 
 .about__sub-title {
   padding: 0.5rem;
   font-size: 1.25rem;
-  font-style: italic;
 }
 
 .about__paragraph {
-  overflow: auto;
-  margin: 1rem 0;
   color: var(--color-background);
-}
-
-.box {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  max-width: 600px;
-  padding: 5px;
-  border: 2px solid var(--color-tertiary);
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-}
-
-.box::before, .box::after {
-  position: absolute;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--color-tertiary);
-  color: var(--color-tertiary);
-  content: '•';
-  font-size: 14px;
-  line-height: 12px;
-  text-align: center;
-}
-
-.box::before {
-  left: 5px;
-}
-
-.box::after {
-  right: 5px;
-}
-
-.box .box-inner {
-  position: relative;
-  padding: 0.5rem;
-  border: 2px solid var(--color-tertiary);
-}
-
-.box .box-inner::before, .box .box-inner::after {
-  position: absolute;
-  bottom: -2px;
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--color-tertiary);
-  color: var(--color-tertiary);
-  content: '•';
-  font-size: 14px;
-  line-height: 12px;
-  text-align: center;
-}
-
-.box .box-inner::before {
-  left: -2px;
-}
-
-.box .box-inner::after {
-  right: -2px;
 }
 
 /* -------------------------------------------------------------------------- *\
