@@ -24,6 +24,7 @@ h1 {
 h2 {
   padding: $buffer--m $buffer--xs;
   color: var(--color-primary);
+  color: var(--color-tertiary);
   font-family: $font-family--section-title;
   font-size: $font-size--5;
   font-variant: $font-variant--section-title;

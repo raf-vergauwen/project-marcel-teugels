@@ -10,24 +10,26 @@
 
 article {
   padding: $buffer--xs;
+  outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
 
 // #  <<<----------<< Aside >>---------->>
 
 aside {
   padding: $buffer--xs;
+  outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
 
 // #  <<<----------<< Footer >>---------->>
 
 footer {
   padding: $buffer--xs;
+  outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
 
 // #  <<<----------<< Header >>---------->>
 
 header {
-  // margin-left: 100px;
   padding: $buffer--xs;
   outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
@@ -39,12 +41,14 @@ nav {
 
   max-width: $limit--max-width;
   padding: $buffer--xs;
+  outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
 
 // #  <<<----------<< Section >>---------->>
 
 section {
   padding: $buffer--xs;
+  outline: calc(#{$buffer--xxs} / 2) rgb(255, 0, 0) dashed;
 }
 
 /* -------------------------------------------------------------------------- *\

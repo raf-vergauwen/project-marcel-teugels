@@ -50,7 +50,6 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
-div,
 address,
 article,
 aside,
@@ -510,14 +509,17 @@ body {
 \* -------------------------------------------------------------------------- */
 article {
   padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 aside {
   padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 footer {
   padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 header {
@@ -530,10 +532,12 @@ nav {
   height: auto;
   max-width: 1600px;
   padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 section {
   padding: 0.5rem;
+  outline: calc(0.25rem / 2) red dashed;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -589,6 +593,7 @@ h1 {
 h2 {
   padding: 1.5rem 0.5rem;
   color: var(--color-primary);
+  color: var(--color-tertiary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
@@ -1412,30 +1417,29 @@ input:checked + .slider::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  place-items: center;
 }
 
 .hero__visual {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   max-height: 40vh;
-  margin: 1.5rem 0;
-  background-color: var(--bg-color--transparant---softest);
-  fill: var(--color-primary);
-  -webkit-filter: drop-shadow(0 0 0.05rem var(--color-background));
-          filter: drop-shadow(0 0 0.05rem var(--color-background));
+  padding-top: 2rem;
+  fill: var(--color-tertiary);
+  -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
+          filter: drop-shadow(0 0 0.1em var(--color-foreground));
 }
 
 .hero__subject {
-  color: var(--color-primary);
-  -webkit-filter: drop-shadow(0 0 0.05rem var(--color-background));
-          filter: drop-shadow(0 0 0.05rem var(--color-background));
+  color: var(--color-secondary);
+  color: var(--color-background);
+  -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
+          filter: drop-shadow(0 0 0.1em var(--color-foreground));
 }
 
 .hero__title {
-  color: var(--forground-color);
-  -webkit-filter: drop-shadow(0 0 0.05rem var(--color-background));
-          filter: drop-shadow(0 0 0.05rem var(--color-background));
+  color: var(--color-secondary);
+  -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
+          filter: drop-shadow(0 0 0.1em var(--color-foreground));
   font-family: monospace;
   font-size: 1.95312rem;
   font-weight: 600;
@@ -1574,19 +1578,22 @@ input:checked + .slider::before {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 3: About
 \* -------------------------------------------------------------------------- */
+.about {
+  background: radial-gradient(#003, #000);
+}
+
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: center;
-  place-items: center;
-  background: radial-gradient(#003, #000);
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  place-content: space-evenly;
+  place-items: stretch;
 }
 
 .about__container--visual {
@@ -1596,7 +1603,7 @@ input:checked + .slider::before {
 }
 
 .about__image {
-  height: 100%;
+  background-color: navajowhite;
 }
 
 .about__container--text {

@@ -3,11 +3,14 @@
 \* -------------------------------------------------------------------------- */
 
 .about {
+  background: radial-gradient(#003, #000);
+
   &__container {
-    @include block-flex-container(nowrap, column, center, center);
+    // @include block-flex-container(nowrap, column, center, center);
+    @include block-flex-container(wrap, row, space-evenly, stretch);
 
     // background-color: cornsilk;
-    background: radial-gradient(#003, #000);
+    // background: radial-gradient(#003, #000);
   }
 
   &__title {
@@ -21,8 +24,8 @@
   }
 
   &__image {
-    height: 100%;
-    // background-color: navajowhite;
+    // height: 100%;
+    background-color: navajowhite;
   }
 
   &__container--text {
