@@ -17,7 +17,7 @@ html {
 
 // -  <<----------<< Whitespace Sizes >>---------->>
 
-// #  Filler
+// #  General Filler
 $buffer--xxs: 0.25rem; // 4px
 $buffer--xs: 0.5rem; // 8px
 $buffer--s: 1rem; // 16px
@@ -26,12 +26,12 @@ $buffer--l: 2rem; // 32px
 $buffer--xl: 3rem; // 48px
 $buffer--xxl: 4rem; // 64px
 
-// #  Filler
+// #  Specific Filler
 $center-me: 0 auto;
 
 // -  <<----------<< Box Dimension Sizes >>---------->>
 
-// #  Dimensions
+// #  General Dimensions
 $dimension--xxs: 320px;
 $dimension--xs: 640px;
 $dimension--s: 960px;
@@ -40,6 +40,7 @@ $dimension--l: 1600px;
 $dimension--xl: 1920px;
 $dimension--xxl: 2240px;
 
+// #  Specific Dimensions
 $limit--max-width: $dimension--l;
 
 // -  <<----------<< Shadows Colors >>---------->>

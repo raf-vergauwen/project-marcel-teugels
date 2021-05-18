@@ -9,10 +9,13 @@
   @include box-transition;
 
   overflow: hidden;
-  min-width: calc(#{$dimension--xxs} - #{$buffer--l});
-  max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-  height: 80vh;
-  flex: 1 1 auto;
+  // width: 100%;
+  min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
+  // max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
+  // height: 80vh;
+
+  // width: 300px;
+  aspect-ratio: auto 9 / 16;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;

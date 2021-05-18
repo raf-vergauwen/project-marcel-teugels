@@ -15,10 +15,7 @@
 
 .hot-item {
   &__container {
-    @include flex-items(1, 1, auto);
-
     position: relative;
-    // margin: $buffer--m;
   }
 
   &__title {
