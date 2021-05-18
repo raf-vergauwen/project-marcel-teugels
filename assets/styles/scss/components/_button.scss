@@ -11,8 +11,7 @@ button {
 // -  <<----------<< Specific >>---------->>
 
 .btn {
-  // @include inline-flex-container;
-  @include flex-items;
+  @include flex-container;
 
   position: relative;
   top: 0;
@@ -86,4 +85,5 @@ button {
 
 .btn--icon {
   @include dimensions(btn, $font-size--3);
+  @include flex-items;
 }

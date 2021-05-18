@@ -5,7 +5,7 @@
 .hot-items {
   &__container {
     @include dimensions;
-    @include block-flex-container(wrap, row, space-evenly, stretch);
+    @include flex-container(wrap, row, space-evenly, stretch);
   }
 
   &__title {
@@ -14,6 +14,8 @@
 }
 
 .hot-item {
+  padding: 0 0 $buffer--xxl 0;
+
   &__container {
     position: relative;
   }
@@ -46,17 +48,10 @@
     z-index: 1;
     right: 0;
     bottom: 0%;
-    // bottom: -30%;
     left: 0;
     padding: $buffer--s;
     background-color: $bg-color--transparant-black---level-3;
     box-shadow: $box-shadow--caption---slide-in;
-    height: 320px;
-
-    @include breakpoint(xs) {
-      bottom: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
-      bottom: 0%;
-    }
   }
 
   &__caption-title {
@@ -69,7 +64,7 @@
 
   &__caption-text {
     overflow: auto;
-    height: calc(#{$dimension--xxs} / 2);
+    height: calc(#{$buffer--xxl} * 2);
     margin: $buffer--s 0;
     color: var(--color-background);
   }
@@ -81,10 +76,10 @@
 
   &__caption-btns {
     flex-direction: row;
-    height: 25%;
   }
 
   &__caption-btn {
+    @include flex-items;
     // ...
   }
 
@@ -99,7 +94,7 @@
       }
 
       &__caption {
-        bottom: 0;
+        bottom: 0%;
         background-color: $bg-color--transparant-black---level-5;
         box-shadow: $box-shadow--caption---slide-out;
       }

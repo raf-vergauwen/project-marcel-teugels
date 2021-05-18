@@ -45,6 +45,8 @@ $limit--max-width: $dimension--l;
 
 $card-width: 400px;
 $card-height: 80vh;
+// $card-caption-height: 40vh;
+// $card-height: calc((#{$card-width} / 9) * 16);
 $card-aspect-ratio: auto 9 / 16;
 
 // -  <<----------<< Shadows Colors >>---------->>
