@@ -447,7 +447,7 @@ template {
 
 html {
   font-size: 1rem;
-  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.5rem);
+  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
 }
 
 body {
@@ -1071,10 +1071,18 @@ ul.menu-left.collapse {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
   min-width: calc(320px - (320px / 10));
-  aspect-ratio: auto 9 / 16;
+  max-width: calc((1600px / 4));
+  aspect-ratio: auto 9/16;
   /* Prevent background color leak outs */
   background-clip: padding-box;
   border-radius: 16px;
+}
+
+@media (min-width: 640px) {
+  .card {
+    min-width: 400px;
+    height: 80vh;
+  }
 }
 
 .card:hover {
@@ -1214,17 +1222,6 @@ input:checked + .slider::before {
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: center;
-  place-items: center;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -webkit-box-flex: 1;
@@ -1493,12 +1490,19 @@ input:checked + .slider::before {
   z-index: 1;
   right: 0;
   bottom: 0%;
-  bottom: -29%;
   left: 0;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
+  height: 320px;
+}
+
+@media (min-width: 640px) {
+  .hot-item__caption {
+    bottom: calc(320px - (320px / 10));
+    bottom: 0%;
+  }
 }
 
 .hot-item__caption-title {
@@ -1511,7 +1515,7 @@ input:checked + .slider::before {
 
 .hot-item__caption-text {
   overflow: auto;
-  height: calc(320px / 3);
+  height: calc(320px / 2);
   margin: 1rem 0;
   color: var(--color-background);
 }
@@ -1522,19 +1526,11 @@ input:checked + .slider::before {
 }
 
 .hot-item__caption-btns {
-  width: 100%;
-  height: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-between;
-  place-items: center;
+  height: 25%;
 }
 
 .hot-item__container:hover .hot-item__visual {

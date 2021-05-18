@@ -51,8 +51,8 @@
 @mixin inline-flex-container(
   $wrap: nowrap,
   $direction: row,
-  $justify: center,
-  $align: center
+  $justify: space-evenly,
+  $align: stretch
 ) {
   display: inline-flex;
   flex-direction: $direction;
