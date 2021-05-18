@@ -6,11 +6,7 @@
   background: radial-gradient(#003, #000);
 
   &__container {
-    // @include flex-container(nowrap, column, center, center);
     @include flex-container(wrap, row, space-evenly, stretch);
-
-    // background-color: cornsilk;
-    // background: radial-gradient(#003, #000);
   }
 
   &__title {
@@ -38,9 +34,20 @@
   }
 
   &__outer-border {
+    min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
+    max-width: calc((#{$dimension--l} / 4));
+    aspect-ratio: $card-aspect-ratio;
+
+    @include breakpoint(xs) {
+      min-width: $card-width;
+      height: $card-height;
+      max-height: $card-height;
+      aspect-ratio: $card-aspect-ratio;
+    }
   }
 
   &__inner-border {
+    // ...
   }
 
   &__title--text {
@@ -54,8 +61,7 @@
 
   &__paragraph {
     overflow: auto;
-    height: calc(#{$dimension--xxs} / 1);
-    // margin: $buffer--s 0;
+    height: calc(#{$card-height} - (#{$buffer--xxl} * 3));
     color: var(--color-background);
   }
 }
