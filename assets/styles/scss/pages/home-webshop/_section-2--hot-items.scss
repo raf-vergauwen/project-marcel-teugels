@@ -14,7 +14,7 @@
 }
 
 .hot-item {
-  padding: 0 0 $buffer--xxl 0;
+  padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
 
   &__container {
     position: relative;
@@ -47,7 +47,7 @@
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: 0%;
+    bottom: calc(-#{$buffer--xxl} * 3 - (#{$buffer--xs}));
     left: 0;
     padding: $buffer--s;
     background-color: $bg-color--transparant-black---level-3;

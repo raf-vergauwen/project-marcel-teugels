@@ -12,14 +12,16 @@
   min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
   max-width: calc((#{$dimension--l} / 4));
   aspect-ratio: $card-aspect-ratio;
+  // height: $card-height;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
   border-radius: $border-radius--s;
 
-  @include breakpoint(custom, $card-width) {
+  @include breakpoint(xs) {
     min-width: $card-width;
     height: $card-height;
+    max-height: $card-height;
     aspect-ratio: $card-aspect-ratio;
   }
 

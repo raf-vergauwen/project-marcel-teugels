@@ -49,7 +49,11 @@
 
   // #  Breakpoint 8: Custom Breakpoints
   @else if $breakpoint == custom {
-    @media (min-width: calc(#{$size} + (#{$buffer--xs} * 4))) {
+    $custom-min-width: calc(#{$size} + (#{$buffer--xs} * 4));
+
+    // padding: $custom-min-width;
+
+    @media (min-width: #{$custom-min-width}) {
       @content;
     }
   }
