@@ -243,6 +243,8 @@ $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 
 // -  <<----------<< Filter >>---------->>
 $filter--dark: brightness(0.8) contrast(1.2);
+$filter--dark-blur: brightness(0.8) contrast(1.2)
+  blur(calc(#{$buffer--xxs / 2}));
 
 // -----------------------------------------------------------------------------
 // *  Forms Components

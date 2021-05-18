@@ -11,7 +11,6 @@
   overflow: hidden;
   min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
   max-width: calc((#{$dimension--l} / 4));
-  // max-height: $card-height;
   aspect-ratio: $card-aspect-ratio;
 
   /* Prevent background color leak outs */

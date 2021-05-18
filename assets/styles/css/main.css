@@ -1552,8 +1552,8 @@ input:checked + .slider::before {
 }
 
 .hot-item__container:hover .hot-item__visual {
-  -webkit-filter: blur(0.1rem);
-          filter: blur(0.1rem);
+  -webkit-filter: brightness(0.8) contrast(1.2) blur(calc(0.125rem));
+          filter: brightness(0.8) contrast(1.2) blur(calc(0.125rem));
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }

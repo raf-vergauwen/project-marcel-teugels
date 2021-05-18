@@ -88,7 +88,7 @@
     .hot-item {
       // ...
       &__visual {
-        filter: blur(0.1rem);
+        filter: $filter--dark-blur;
         // background-color: orchid;
         transform: scale(1.25);
       }
