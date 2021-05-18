@@ -1515,7 +1515,6 @@ input:checked + .slider::before {
 
 .hot-item__caption-title {
   padding: 0;
-  margin-bottom: 1rem;
   color: var(--color-background);
   font-variant: small-caps;
   font-weight: 700;
@@ -1606,25 +1605,26 @@ input:checked + .slider::before {
 }
 
 .about__container--text {
-  width: 100%;
   min-width: calc(320px - 2rem);
   max-width: calc((320px / 3) + 320px);
-  height: 80vh;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  padding: 0;
 }
 
 .about__title--text {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .about__sub-title {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   font-size: 1.25rem;
 }
 
 .about__paragraph {
+  overflow: auto;
+  height: calc(320px / 1);
   color: var(--color-background);
 }
 

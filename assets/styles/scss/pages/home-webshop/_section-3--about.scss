@@ -20,7 +20,6 @@
 
   &__container--visual {
     flex: 1 1 50%;
-    // margin: $buffer--m;
   }
 
   &__image {
@@ -29,25 +28,34 @@
   }
 
   &__container--text {
-    width: 100%;
+    // width: 100%;
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
     max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-    height: 80vh;
+    // height: 80vh;
     flex: 1 1 50%;
     // margin: $buffer--m;
+    padding: 0;
+  }
+
+  &__outer-border {
+  }
+
+  &__inner-border {
   }
 
   &__title--text {
-    padding: $buffer--xs;
+    padding: $buffer--xs 0;
   }
 
   &__sub-title {
-    padding: $buffer--xs;
+    padding: $buffer--xs 0;
     font-size: $font-size--2;
   }
 
   &__paragraph {
-    // overflow: auto;
+    overflow: auto;
+    height: calc(#{$dimension--xxs} / 1);
+    // margin: $buffer--s 0;
     color: var(--color-background);
   }
 }
