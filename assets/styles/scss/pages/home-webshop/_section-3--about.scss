@@ -6,7 +6,13 @@
   background: radial-gradient(#003, #000);
 
   &__container {
-    @include flex-container(wrap, row, space-evenly, stretch);
+    @include flex-container(nowrap, column, space-evenly, stretch);
+
+    // max-width: 500px;
+
+    @include breakpoint(s) {
+      @include flex-container(wrap, row, space-evenly, stretch);
+    }
   }
 
   &__title {
@@ -21,49 +27,79 @@
 
   &__image {
     // height: 100%;
-    background-color: navajowhite;
+    // background-color: navy;
   }
 
   &__container--text {
-    // width: 100%;
+    position: relative;
+    top: 50%;
+
+    // background-color: hotpink;
+    left: 0%;
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
-    max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-    // height: 80vh;
-    // flex: 1 1 50%;
-    // margin: $buffer--m;
+    max-width: calc(#{$card-width} + #{$buffer--s});
+    height: 80vh;
     padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
+
+    @include breakpoint(xs) {
+      min-width: $card-width;
+      height: $card-height;
+      max-height: $card-height;
+      aspect-ratio: $card-aspect-ratio;
+    }
+
+    @include breakpoint(s) {
+      min-width: calc(#{$card-width} + (#{$card-width} / 2));
+      color: red;
+      background-color: red;
+    }
+
+    @include breakpoint(m) {
+      min-width: calc(#{$card-width} * 2);
+      color: green;
+      background-color: green;
+    }
   }
 
   &__outer-border {
-    min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
-    max-width: calc((#{$dimension--l} / 4));
-    aspect-ratio: $card-aspect-ratio;
+    // background-color: purple;
+
+    // min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
+    // max-width: calc((#{$dimension--l} / 4));
+    // aspect-ratio: $card-aspect-ratio;
 
     @include breakpoint(xs) {
       min-width: $card-width;
       // height: calc(#{$card-height} + #{$buffer--l});
       max-height: $card-height;
-      aspect-ratio: $card-aspect-ratio;
     }
   }
 
   &__inner-border {
     // max-height: $card-height;
-    height: 100%;
+    // height: 100%;
+
+    // background-color: deepskyblue;
   }
 
   &__title--text {
-    padding: $buffer--xs 0;
+    padding: $buffer--s 0;
+    // background-color: maroon;
+    font-variant: small-caps;
+    font-size: $font-size--4;
   }
 
   &__sub-title {
     padding: $buffer--xs 0;
     font-size: $font-size--2;
+    // background-color: lime;
   }
 
   &__paragraph {
     overflow: auto;
     height: calc(#{$card-height} - (#{$buffer--xl} * 4));
     color: var(--color-background);
+    text-align: justify;
+    // background-color: olive;
   }
 }

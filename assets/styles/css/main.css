@@ -579,7 +579,7 @@ section {
 -  Headings
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 1.5rem 0.5rem;
+  padding: 2rem 0.5rem;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
@@ -592,8 +592,7 @@ h1 {
 }
 
 h2 {
-  padding: 1.5rem 0.5rem;
-  color: var(--color-primary);
+  padding: 2rem 0.5rem;
   color: var(--color-tertiary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
@@ -612,7 +611,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   color: var(--color-secondary);
   font-family: "Oswald", sans-serif;
   font-size: 1.95312rem;
@@ -631,10 +630,10 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   color: var(--color-secondary);
   font-family: "Montserrat", monospace;
-  font-size: "Montserrat", monospace;
+  font-size: 1.5625rem;
   font-variant: normal;
   font-weight: 300;
   letter-spacing: normal;
@@ -650,7 +649,7 @@ h4 + p::first-letter {
 }
 
 h5 {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -669,7 +668,7 @@ h5 + p::first-letter {
 }
 
 h6 {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -1335,9 +1334,10 @@ input:checked + .slider::before {
 .box-border {
   position: relative;
   top: 50%;
+  top: calc(50% + 4rem);
   left: 50%;
   width: 100%;
-  max-width: 600px;
+  height: auto;
   padding: 0.5rem;
   border: calc(0.25rem / 2) solid var(--color-tertiary);
   background-color: rgba(0, 0, 0, 0.5);
@@ -1425,6 +1425,7 @@ input:checked + .slider::before {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
+  place-content: center;
   place-items: center;
 }
 
@@ -1446,7 +1447,7 @@ input:checked + .slider::before {
   color: var(--color-secondary);
   -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
           filter: drop-shadow(0 0 0.1em var(--color-foreground));
-  font-family: monospace;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.95312rem;
   font-weight: 600;
 }
@@ -1588,50 +1589,82 @@ input:checked + .slider::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   place-content: space-evenly;
   place-items: stretch;
+}
+
+@media (min-width: 960px) {
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: space-evenly;
+    place-items: stretch;
+  }
 }
 
 .about__container--visual {
   padding: 0 0.5rem 4rem 0.5rem;
 }
 
-.about__image {
-  background-color: navajowhite;
-}
-
 .about__container--text {
+  position: relative;
+  top: 50%;
+  left: 0%;
   min-width: calc(320px - 2rem);
-  max-width: calc((320px / 3) + 320px);
+  max-width: calc(400px + 1rem);
+  height: 80vh;
   padding: 0 0.5rem 4rem 0.5rem;
 }
 
-.about__outer-border {
-  min-width: calc(320px - (320px / 10));
-  max-width: calc((1600px / 4));
-  aspect-ratio: auto 9/16;
+@media (min-width: 640px) {
+  .about__container--text {
+    min-width: 400px;
+    height: 80vh;
+    max-height: 80vh;
+    aspect-ratio: auto 9/16;
+  }
+}
+
+@media (min-width: 960px) {
+  .about__container--text {
+    min-width: calc(400px + (400px / 2));
+    color: red;
+    background-color: red;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about__container--text {
+    min-width: calc(400px * 2);
+    color: green;
+    background-color: green;
+  }
 }
 
 @media (min-width: 640px) {
   .about__outer-border {
     min-width: 400px;
     max-height: 80vh;
-    aspect-ratio: auto 9/16;
   }
 }
 
-.about__inner-border {
-  height: 100%;
-}
-
 .about__title--text {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
+  font-variant: small-caps;
+  font-size: 1.95312rem;
 }
 
 .about__sub-title {
@@ -1643,6 +1676,7 @@ input:checked + .slider::before {
   overflow: auto;
   height: calc(80vh - (3rem * 4));
   color: var(--color-background);
+  text-align: justify;
 }
 
 /* -------------------------------------------------------------------------- *\

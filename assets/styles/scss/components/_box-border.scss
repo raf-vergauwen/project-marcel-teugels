@@ -5,9 +5,10 @@
 .box-border {
   position: relative;
   top: 50%;
+  top: calc(50% + #{$buffer--xxl});
   left: 50%;
   width: 100%;
-  max-width: 600px;
+  height: auto;
   padding: $buffer--xs;
   border: calc(#{$buffer--xxs} / 2) solid var(--color-tertiary);
   background-color: rgba(#000, 0.5);

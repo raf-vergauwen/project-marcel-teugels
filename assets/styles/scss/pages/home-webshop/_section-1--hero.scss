@@ -19,7 +19,7 @@
     // filter: contrast(50%);
 
     background-color: $bg-color--transparant-black---level-2;
-
+    place-content: center;
     place-items: center;
   }
 
@@ -38,7 +38,7 @@
   &__title {
     color: var(--color-secondary);
     filter: drop-shadow(0 0 0.1em var(--color-foreground));
-    font-family: monospace;
+    font-family: 'Oswald', sans-serif;
     font-size: $font-size--4;
     font-weight: 600;
   }
