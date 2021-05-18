@@ -50,6 +50,7 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
+div,
 address,
 article,
 aside,
@@ -1597,6 +1598,10 @@ input:checked + .slider::before {
   place-items: stretch;
 }
 
+.about__container--visual {
+  padding: 0 0.5rem 4rem 0.5rem;
+}
+
 .about__image {
   background-color: navajowhite;
 }
@@ -1604,7 +1609,7 @@ input:checked + .slider::before {
 .about__container--text {
   min-width: calc(320px - 2rem);
   max-width: calc((320px / 3) + 320px);
-  padding: 0;
+  padding: 0 0.5rem 4rem 0.5rem;
 }
 
 .about__outer-border {
@@ -1616,10 +1621,13 @@ input:checked + .slider::before {
 @media (min-width: 640px) {
   .about__outer-border {
     min-width: 400px;
-    height: 80vh;
     max-height: 80vh;
     aspect-ratio: auto 9/16;
   }
+}
+
+.about__inner-border {
+  height: 100%;
 }
 
 .about__title--text {
@@ -1633,7 +1641,7 @@ input:checked + .slider::before {
 
 .about__paragraph {
   overflow: auto;
-  height: calc(80vh - (4rem * 3));
+  height: calc(80vh - (3rem * 4));
   color: var(--color-background);
 }
 

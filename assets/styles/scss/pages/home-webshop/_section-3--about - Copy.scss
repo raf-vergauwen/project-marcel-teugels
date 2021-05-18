@@ -6,7 +6,11 @@
   background: radial-gradient(#003, #000);
 
   &__container {
-    @include flex-container(wrap, row, space-evenly, stretch);
+    @include flex-container(nowrap, column, center, center);
+
+    @include breakpoint(s) {
+      flex-direction: row;
+    }
   }
 
   &__title {
@@ -16,7 +20,6 @@
 
   &__container--visual {
     // flex: 1 1 50%;
-    padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
   }
 
   &__image {
@@ -25,30 +28,25 @@
   }
 
   &__container--text {
-    // width: 100%;
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
     max-width: calc((#{$dimension--xxs} / 3) + #{$dimension--xxs});
-    // height: 80vh;
-    // flex: 1 1 50%;
-    // margin: $buffer--m;
-    padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
+    padding: 0;
   }
 
   &__outer-border {
+    // top: 0%;
+    left: 50%;
+    bottom: 50%;
     min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
     max-width: calc((#{$dimension--l} / 4));
-    aspect-ratio: $card-aspect-ratio;
 
     @include breakpoint(xs) {
       min-width: $card-width;
-      // height: calc(#{$card-height} + #{$buffer--l});
       max-height: $card-height;
-      aspect-ratio: $card-aspect-ratio;
     }
   }
 
   &__inner-border {
-    // max-height: $card-height;
     height: 100%;
   }
 
@@ -63,7 +61,7 @@
 
   &__paragraph {
     overflow: auto;
-    height: calc(#{$card-height} - (#{$buffer--xl} * 4));
+    height: calc(#{$card-height} - (#{$buffer--xl} * 4) + #{$buffer--l});
     color: var(--color-background);
   }
 }
