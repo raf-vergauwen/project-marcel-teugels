@@ -7,12 +7,10 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  // filter: brightness(0.75);
 
   &__container {
     height: 100vh;
-    // background-color: $bg-color--transparant-gray---level-2;
-    // filter: brightness(0.2);
+    background-color: $bg-color--transparant-black---level-2;
   }
 }
 

@@ -19,29 +19,24 @@
     // filter: contrast(50%);
 
     background-color: $bg-color--transparant-black---level-2;
+
     place-items: center;
   }
 
   &__visual {
     max-height: 40vh;
     padding-top: $buffer--l;
-    // fill: var(--color-secondary);
     fill: var(--color-tertiary);
-    // fill: var(--color-background);
     filter: drop-shadow(0 0 0.1em var(--color-foreground));
   }
 
   &__subject {
-    color: var(--color-secondary);
-    // color: var(--color-tertiary);
     color: var(--color-background);
     filter: drop-shadow(0 0 0.1em var(--color-foreground));
   }
 
   &__title {
     color: var(--color-secondary);
-    // color: var(--color-tertiary);
-    // color: var(--color-background);
     filter: drop-shadow(0 0 0.1em var(--color-foreground));
     font-family: monospace;
     font-size: $font-size--4;

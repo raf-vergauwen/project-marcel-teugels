@@ -1430,7 +1430,6 @@ input:checked + .slider::before {
 }
 
 .hero__subject {
-  color: var(--color-secondary);
   color: var(--color-background);
   -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
           filter: drop-shadow(0 0 0.1em var(--color-foreground));
@@ -1485,8 +1484,6 @@ input:checked + .slider::before {
   right: 0;
   left: 0;
   padding: 1rem;
-  -webkit-filter: drop-shadow(0 0 0.05rem var(--color-background));
-          filter: drop-shadow(0 0 0.05rem var(--color-background));
   font-variant: normal;
   font-weight: 700;
 }
@@ -1495,6 +1492,8 @@ input:checked + .slider::before {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
   height: 100%;
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
 }
 
 .hot-item__caption {
@@ -1641,6 +1640,7 @@ input:checked + .slider::before {
 
 .intermezzo__container {
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .intermezzo--1 {

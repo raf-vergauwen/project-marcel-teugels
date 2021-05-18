@@ -30,8 +30,6 @@
     right: 0;
     left: 0;
     padding: $buffer--s;
-    filter: drop-shadow(0 0 0.05rem var(--color-background));
-    // background-color: thistle;
     font-variant: normal;
     font-weight: $font-weight--subject;
   }
@@ -40,6 +38,7 @@
     @include transition-general;
 
     height: 100%;
+    filter: $filter--dark;
   }
 
   &__caption {
