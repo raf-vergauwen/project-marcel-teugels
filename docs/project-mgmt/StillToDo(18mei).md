@@ -4,6 +4,8 @@
 - elke pagina responsive
 - overal echte text, realistische en bruikbare dummydata
 - duidelijke scheiding tussen restauratie contact formulier en costum work, aparte tabel in db
+- Fetchen veranderen naar Axios calls
+- Gebruik maken van store voor winkellijstje
 
 ## Restauratie
 
