@@ -205,7 +205,7 @@
       "*.json": "jsonc"
     },
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 250,
+    "files.autoSaveDelay": 2500,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git-graph.dialog.fetchIntoLocalBranch.forceFetch": true,
@@ -337,6 +337,8 @@
     "formattingToggle.affects": ["formatOnSave"],
     "markdown.preview.breaks": true,
     "liveServer.settings.port": 5501,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "puglint.run": "onSave",
+    "standard.run": "onSave"
   }
 }

@@ -381,5 +381,9 @@
   "hediet.vscode-drawio.codeLinkActivated": true,
   "formattingToggle.affects": ["formatOnSave"],
   "markdown.preview.breaks": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "standard.run": "onSave",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
