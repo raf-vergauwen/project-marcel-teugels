@@ -18,29 +18,23 @@ footer {
   // ...
 
   &__container {
-    background-color: purple;
     // ...
   }
 
   &__container--nav {
-    background-color: midnightblue;
-
     .foot-nav-text {
       // ...
 
       &__container {
-        background-color: blue;
         // ...
       }
 
       &__title {
         padding: $buffer--s 0;
-        background-color: aqua;
         // ...
       }
 
       &__paragraph {
-        background-color: paleturquoise;
         // ...
       }
     }
@@ -52,32 +46,43 @@ footer {
       // ...
 
       &__container {
-        background-color: royalblue;
         // ...
       }
 
       &__title {
         padding: $buffer--s 0;
-        background-color: aquamarine;
         // ...
       }
 
       &__list {
-        background-color: turquoise;
         // ...
       }
 
       &__link {
-        background-color: lightskyblue;
         white-space: nowrap;
         // ...
       }
     }
   }
 
-  &__container--contact {
-    background-color: darkgreen;
+  &__hr {
+    background-image:
+      linear-gradient(to right,
+      hsla(var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0),
+      hsla(var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.75),
+      hsla(var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0));
+  }
 
+  &__container--contact {
     @include breakpoint(xs) {
       @include flex-container(nowrap, row, space-evenly, center);
     }
@@ -87,15 +92,15 @@ footer {
       &__container {
         flex-direction: row;
         padding: $buffer--xs;
-        background-color: darkolivegreen;
 
         @include breakpoint(xs) {
           @include flex-items(2);
+
+          justify-content: flex-start;
         }
       }
 
       &__link {
-        background-color: lightgreen;
         // ...
       }
     }
@@ -107,7 +112,6 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         padding: $buffer--xs;
-        background-color: seagreen;
 
         @include breakpoint(xs) {
           @include flex-items(8);
@@ -122,7 +126,6 @@ footer {
 
       &__link {
         padding: 0;
-        background-color: lime;
       }
     }
   }

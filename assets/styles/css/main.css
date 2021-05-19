@@ -50,6 +50,143 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  outline: calc(0.25rem / 2) red dashed;
+}
+
+div,
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main {
+  outline: 2px rgba(0, 255, 0, 0.75) dashed;
+}
+
+blockquote,
+figcaption,
+figure,
+hr,
+li,
+ol,
+p,
+ul {
+  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+}
+
+abbr,
+b,
+bdi,
+bdo,
+br,
+cite,
+code,
+data,
+dfn,
+em,
+i,
+kbd,
+mark,
+q,
+rb,
+rp,
+rt,
+rtc,
+ruby,
+s,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+time,
+ul,
+var,
+wbr {
+  outline: 2px darkorange dotted;
+}
+
+area,
+audio,
+img,
+map,
+track,
+video {
+  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
+}
+
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+  outline: 1.5px rgba(173, 255, 47, 0.75) dashed;
+}
+
+svg,
+math {
+  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
+}
+
+canvas {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+del,
+ins {
+  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
+}
+
+caption,
+col,
+colgroup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
+}
+
+datalist,
+fieldset,
+form,
+input,
+label,
+legend,
+meter,
+optgroup,
+option,
+output,
+progress,
+select,
+textarea {
+  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
+}
+
+details,
+dialog,
+menu {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+slot,
+template {
+  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -328,42 +465,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 320px) {
-  body {
-    background-color: darkslateblue;
-  }
-}
-
-@media (min-width: 640px) {
-  body {
-    background-color: slateblue;
-  }
-}
-
-@media (min-width: 960px) {
-  body {
-    background-color: purple;
-  }
-}
-
-@media (min-width: 1280px) {
-  body {
-    background-color: blueviolet;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    background-color: magenta;
-  }
-}
-
-@media (min-width: 1920px) {
-  body {
-    background-color: plum;
-  }
-}
-
 .main__container > section {
   min-height: 100vh;
 }
@@ -566,12 +667,12 @@ figcaption {
 }
 
 hr {
-  width: 100%;
+  width: 80%;
+  height: 1%;
   border: 0;
   margin: 2% auto;
-  height: 1%;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-foreground)), color-stop(var(--color-background)), to(var(--color-foreground)));
-  background-image: linear-gradient(to right, var(--color-foreground), var(--color-background), var(--color-foreground));
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), to(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)));
+  background-image: linear-gradient(to right, hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0));
 }
 
 li {
@@ -871,25 +972,8 @@ ul.menu-left.collapse {
 /* -------------------------------------------------------------------------- *\
 -  FOOTER-MAIN: Footer
 \* -------------------------------------------------------------------------- */
-.main-footer__container {
-  background-color: purple;
-}
-
-.main-footer__container--nav {
-  background-color: midnightblue;
-}
-
-.main-footer__container--nav .foot-nav-text__container {
-  background-color: blue;
-}
-
 .main-footer__container--nav .foot-nav-text__title {
   padding: 1rem 0;
-  background-color: aqua;
-}
-
-.main-footer__container--nav .foot-nav-text__paragraph {
-  background-color: paleturquoise;
 }
 
 @media (min-width: 960px) {
@@ -901,26 +985,17 @@ ul.menu-left.collapse {
   }
 }
 
-.main-footer__container--nav .foot-nav-links__container {
-  background-color: royalblue;
-}
-
 .main-footer__container--nav .foot-nav-links__title {
   padding: 1rem 0;
-  background-color: aquamarine;
-}
-
-.main-footer__container--nav .foot-nav-links__list {
-  background-color: turquoise;
 }
 
 .main-footer__container--nav .foot-nav-links__link {
-  background-color: lightskyblue;
   white-space: nowrap;
 }
 
-.main-footer__container--contact {
-  background-color: darkgreen;
+.main-footer__hr {
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
+  background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
 
 @media (min-width: 640px) {
@@ -945,7 +1020,6 @@ ul.menu-left.collapse {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0.5rem;
-  background-color: darkolivegreen;
 }
 
 @media (min-width: 640px) {
@@ -958,11 +1032,10 @@ ul.menu-left.collapse {
     -ms-flex-negative: 1;
         flex-shrink: 1;
     place-self: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-}
-
-.main-footer__container--contact .foot-copyright__link {
-  background-color: lightgreen;
 }
 
 .main-footer__container--contact .foot-social-media__container {
@@ -973,7 +1046,6 @@ ul.menu-left.collapse {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0.5rem;
-  background-color: seagreen;
 }
 
 @media (min-width: 640px) {
@@ -1001,7 +1073,6 @@ ul.menu-left.collapse {
 
 .main-footer__container--contact .foot-social-media__link {
   padding: 0;
-  background-color: lime;
 }
 
 /* ========================================================================== *\
@@ -1394,6 +1465,7 @@ input:checked + .slider::before {
   font-family: 'Oswald', sans-serif;
   font-size: 1.95312rem;
   font-weight: 600;
+  padding-top: 0;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1645,12 +1717,10 @@ input:checked + .slider::before {
 }
 
 .about__hr {
-  width: 100%;
+  width: 80%;
   border: 0;
   margin: 2% auto;
   height: 1%;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-foreground)), color-stop(var(--color-background)), to(var(--color-foreground)));
-  background-image: linear-gradient(to right, var(--color-foreground), var(--color-background), var(--color-foreground));
 }
 
 .about__paragraph {

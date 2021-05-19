@@ -149,17 +149,24 @@ figcaption {
 
 // #  <hr>
 hr {
-  width: 100%;
+  width: 80%;
+  height: 1%;
   border: 0;
   margin: 2% auto;
-  height: 1%;
-
-  background-image: linear-gradient(
-    to right,
-    var(--color-foreground),
-    var(--color-background),
-    var(--color-foreground)
-  );
+  background-image:
+    linear-gradient(to right,
+    hsla(var(--color-foreground-h),
+    var(--color-foreground-s),
+    var(--color-foreground-l),
+    0),
+    hsla(var(--color-background-h),
+    var(--color-background-s),
+    var(--color-background-l),
+    0.75),
+    hsla(var(--color-foreground-h),
+    var(--color-foreground-s),
+    var(--color-foreground-l),
+    0));
 }
 // #  <ol>
 
