@@ -1,4 +1,6 @@
-export const state = () => ({});
+export const state = () => ({
+  shoppingCart: [],
+});
 
 export const getters = {};
 
