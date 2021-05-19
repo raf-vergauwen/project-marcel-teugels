@@ -50,23 +50,33 @@
     }
 
     @include breakpoint(m) {
+      min-width: calc(#{$card-width} + (#{$card-width} / 2));
+      background-color: green;
+      color: green;
+    }
+
+    @include breakpoint(l) {
+      min-width: calc(#{$card-width} * 2);
       background-color: green;
       color: green;
     }
   }
 
   &__outer-border {
-    // background-color: purple;
     top: calc((#{$card-height} / 2) + #{$buffer--xs});
+    margin-bottom: $buffer--xxl;
 
     @include breakpoint(xs) {
       top: calc((#{$card-height} / 2) + #{$buffer--m});
-      // height: $card-height;
     }
 
     @include breakpoint(s) {
-      top: calc((#{$card-height} / 2) - #{$buffer--l});
-      // height: $card-height;
+      top: calc((#{$card-height} / 2) - #{$buffer--l} - #{$buffer--xs});
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(m) {
+      // ...
     }
   }
 
@@ -93,13 +103,17 @@
 
   &__paragraph {
     overflow: auto;
-    color: var(--color-background);
-    text-align: justify;
     // background-color: olive;
     height: calc(#{$card-height} - (#{$buffer--s} * 10));
+    color: var(--color-background);
+    text-align: justify;
 
     @include breakpoint(s) {
       height: 70%;
+    }
+
+    @include breakpoint(s) {
+      height: 75%;
     }
   }
 }
