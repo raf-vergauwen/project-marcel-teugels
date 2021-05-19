@@ -27,8 +27,17 @@ header {
 
 .main-header {
   // ...
+  background-color: transparent;
+
   &__container {
-    background-color: gainsboro;
+    background-color: hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0.75
+    );
+
+    border-radius: $border-radius--xs;
   }
 }
 
@@ -41,27 +50,27 @@ header {
 .main-nav {
   &__container {
     margin: 0 auto;
-    background-color: lightpink;
+    // background-color: lightpink;
   }
 
   &__nav-logo {
-    background-color: hotpink;
+    // background-color: hotpink;
   }
 
   &__mobile-menu {
-    background-color: deeppink;
+    // background-color: deeppink;
   }
 
   &__mobile-menu-slice {
-    background-color: palevioletred;
+    // background-color: palevioletred;
   }
 
   &__list {
-    background-color: mediumvioletred;
+    // background-color: mediumvioletred;
   }
 
   &__item {
-    background-color: lavender;
+    // background-color: lavender;
   }
 }
 
@@ -98,14 +107,14 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background: var(--color-foreground);
   content: '';
   transition: width 0.35s ease;
 }
 
 .menu-left a:hover::before {
   width: 100%;
-  background: #000;
+  background: var(--color-tertiary);
   transition: width 0.35s ease;
 }
 
@@ -116,10 +125,11 @@ header {
 }
 
 header nav .nav-logo {
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
-  color: black;
+  color: var(--color-primary);
+  color: var(--color-foreground);
   float: left;
   font-size: 1.25rem;
   font-weight: 500;
@@ -153,21 +163,10 @@ header nav ul li a {
   display: block;
 }
 
-// @media (min-width: 576px) {
-//   header nav ul li a {
-//     display: block;
-//     padding: 0.425rem 0;
-//   }
-// }
-
 @media (max-width: 768px) {
   ul {
     clear: both;
   }
-
-  // ul li {
-  //   padding: 0.5em 0;
-  // }
 }
 
 .hide-nav {
@@ -237,6 +236,6 @@ ul.menu-left.collapse {
   width: 100%;
   height: 2px;
   margin-top: 4px;
-  background-color: #000;
+  background-color: var(--color-foreground);
   transition: all 0.25s;
 }

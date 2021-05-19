@@ -150,22 +150,22 @@ figcaption {
 // #  <hr>
 hr {
   width: 80%;
-  height: 1%;
+  height: $buffer--xxs;
   border: 0;
-  margin: 2% auto;
+  margin: $buffer--s auto;
   background-image:
     linear-gradient(to right,
-    hsla(var(--color-foreground-h),
-    var(--color-foreground-s),
-    var(--color-foreground-l),
-    0),
     hsla(var(--color-background-h),
     var(--color-background-s),
     var(--color-background-l),
-    0.75),
+    0),
     hsla(var(--color-foreground-h),
     var(--color-foreground-s),
     var(--color-foreground-l),
+    0.75),
+    hsla(var(--color-background-h),
+    var(--color-background-s),
+    var(--color-background-l),
     0));
 }
 // #  <ol>

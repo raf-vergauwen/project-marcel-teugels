@@ -50,143 +50,6 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  outline: calc(0.25rem / 2) red dashed;
-}
-
-div,
-address,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-main {
-  outline: 2px rgba(0, 255, 0, 0.75) dashed;
-}
-
-blockquote,
-figcaption,
-figure,
-hr,
-li,
-ol,
-p,
-ul {
-  outline: 2px rgba(0, 0, 255, 0.75) dashed;
-}
-
-abbr,
-b,
-bdi,
-bdo,
-br,
-cite,
-code,
-data,
-dfn,
-em,
-i,
-kbd,
-mark,
-q,
-rb,
-rp,
-rt,
-rtc,
-ruby,
-s,
-samp,
-small,
-span,
-strong,
-sub,
-sup,
-time,
-ul,
-var,
-wbr {
-  outline: 2px darkorange dotted;
-}
-
-area,
-audio,
-img,
-map,
-track,
-video {
-  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
-}
-
-embed,
-iframe,
-object,
-param,
-picture,
-source {
-  outline: 1.5px rgba(173, 255, 47, 0.75) dashed;
-}
-
-svg,
-math {
-  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
-}
-
-canvas {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
-}
-
-del,
-ins {
-  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
-}
-
-caption,
-col,
-colgroup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
-}
-
-datalist,
-fieldset,
-form,
-input,
-label,
-legend,
-meter,
-optgroup,
-option,
-output,
-progress,
-select,
-textarea {
-  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
-}
-
-details,
-dialog,
-menu {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
-}
-
-slot,
-template {
-  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -668,11 +531,11 @@ figcaption {
 
 hr {
   width: 80%;
-  height: 1%;
+  height: 0.25rem;
   border: 0;
-  margin: 2% auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), to(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)));
-  background-image: linear-gradient(to right, hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0));
+  margin: 1rem auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
+  background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
 
 li {
@@ -763,8 +626,13 @@ header {
   will-change: transform;
 }
 
+.main-header {
+  background-color: transparent;
+}
+
 .main-header__container {
-  background-color: gainsboro;
+  background-color: hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75);
+  border-radius: 8px;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -772,27 +640,6 @@ header {
 \* -------------------------------------------------------------------------- */
 .main-nav__container {
   margin: 0 auto;
-  background-color: lightpink;
-}
-
-.main-nav__nav-logo {
-  background-color: hotpink;
-}
-
-.main-nav__mobile-menu {
-  background-color: deeppink;
-}
-
-.main-nav__mobile-menu-slice {
-  background-color: palevioletred;
-}
-
-.main-nav__list {
-  background-color: mediumvioletred;
-}
-
-.main-nav__item {
-  background-color: lavender;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -825,7 +672,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background: var(--color-foreground);
   content: '';
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
@@ -833,7 +680,7 @@ header {
 
 .menu-left a:hover::before {
   width: 100%;
-  background: #000;
+  background: var(--color-tertiary);
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
 }
@@ -846,10 +693,11 @@ header {
 }
 
 header nav .nav-logo {
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
-  color: black;
+  color: var(--color-primary);
+  color: var(--color-foreground);
   float: left;
   font-size: 1.25rem;
   font-weight: 500;
@@ -961,7 +809,7 @@ ul.menu-left.collapse {
   width: 100%;
   height: 2px;
   margin-top: 4px;
-  background-color: #000;
+  background-color: var(--color-foreground);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -991,11 +839,6 @@ ul.menu-left.collapse {
 
 .main-footer__container--nav .foot-nav-links__link {
   white-space: nowrap;
-}
-
-.main-footer__hr {
-  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
-  background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
 
 @media (min-width: 640px) {
@@ -1428,6 +1271,7 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 .hero {
   position: relative;
+  padding: 0;
   background-attachment: fixed;
   background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
   background-position: center center;
@@ -1459,13 +1303,13 @@ input:checked + .slider::before {
 }
 
 .hero__title {
+  padding-top: 0;
   color: var(--color-secondary);
   -webkit-filter: drop-shadow(0 0 0.1em var(--color-foreground));
           filter: drop-shadow(0 0 0.1em var(--color-foreground));
   font-family: 'Oswald', sans-serif;
   font-size: 1.95312rem;
   font-weight: 600;
-  padding-top: 0;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1712,15 +1556,23 @@ input:checked + .slider::before {
 
 @media (min-width: 960px) {
   .about__sub-title {
+    height: 20%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about__sub-title {
     height: 15%;
   }
 }
 
 .about__hr {
   width: 80%;
+  height: 1%;
   border: 0;
   margin: 2% auto;
-  height: 1%;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), to(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0)));
+  background-image: linear-gradient(to right, hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0));
 }
 
 .about__paragraph {
@@ -1731,6 +1583,12 @@ input:checked + .slider::before {
 }
 
 @media (min-width: 960px) {
+  .about__paragraph {
+    height: 65%;
+  }
+}
+
+@media (min-width: 1280px) {
   .about__paragraph {
     height: 70%;
   }
