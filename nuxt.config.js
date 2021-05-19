@@ -47,6 +47,7 @@ export default {
   build: {},
 
   styleResources: {
+<<<<<<< HEAD
     scss: [
       './assets/styles/scss/abstracts/_variables.scss',
       './assets/styles/scss/abstracts/_functions.scss',
@@ -55,5 +56,8 @@ export default {
       './assets/styles/scss/abstracts/_utilities.scss',
       './assets/styles/scss/abstracts/_animations.scss',
     ],
+=======
+    scss: ['./assets/styles/scss/resources.scss'],
+>>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e
   },
 };

@@ -2,8 +2,16 @@
   <main>
     <restauration-header />
     <div class="container">
-      <h1>Login</h1>
-      <form @submit.prevent="login">
+      <h1>Account creation</h1>
+      <form action="account-creation" @submit.prevent="createAccount">
+        <label
+          >First name:
+          <input v-model="firstName" type="text" name="first-name" />
+        </label>
+        <label
+          >Last name:
+          <input v-model="lastName" type="text" name="last-name" />
+        </label>
         <label
           >E-mail:
           <input v-model="email" type="text" name="email" />
@@ -12,7 +20,7 @@
           >Password:
           <input v-model="password" type="password" name="password" />
         </label>
-        <button type="submit">Log in</button>
+        <button type="submit">Create</button>
       </form>
     </div>
   </main>
@@ -23,33 +31,37 @@ import RestaurationHeader from '~/components/RestaurationHeader';
 
 export default {
   components: { RestaurationHeader },
-
   data() {
     return {
+      firstName: '',
+      lastName: '',
       email: '',
       password: '',
-      admin: '',
+      role: 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7',
     };
   },
   computed: {
-    loginBody() {
-      return JSON.stringify({ email: this.email, password: this.password });
+    accountBody() {
+      return JSON.stringify({
+        first_name: this.firstName,
+        last_name: this.lastName,
+        email: this.email,
+        password: this.password,
+        role: this.role,
+      });
     },
     access_token() {
       return sessionStorage.getItem('access_token');
     },
-    user_role() {
-      return sessionStorage.getItem('user_role');
-    },
   },
   methods: {
-    login() {
-      fetch('http://157.230.126.154/auth/login', {
+    createAccount() {
+      fetch('http://157.230.126.154/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: this.loginBody,
+        body: this.accountBody,
       })
         .then((response) => {
           console.log(response);
@@ -60,28 +72,7 @@ export default {
         })
         .then((body) => {
           console.log(body);
-          sessionStorage.setItem('access_token', body.data.access_token);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-
-      fetch('http://157.230.126.154/users/me', {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + this.access_token,
-        },
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Could not get user info');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          this.admin = body.data.role;
-          sessionStorage.setItem('user_role', this.admin);
+          //sessionStorage.setItem('access_token', body.data.access_token);
         })
         .catch((err) => {
           console.error(err);
@@ -96,6 +87,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -121,5 +113,15 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  padding: 1em;
 }
 </style>

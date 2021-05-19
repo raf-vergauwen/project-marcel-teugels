@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 //  #  main.scss : This is the main scss file which imports the rest of the scss
 //  #  files and compiles it into one css file in `css/main.css`.
 
+=======
+>>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e
 @charset "UTF-8";
+@import "imports/variables";
+@import "imports/mixins";
+@import "imports/partials";
 
+<<<<<<< HEAD
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
@@ -59,3 +66,8 @@
 \* ========================================================================== */
 @import 'themes/light';
 @import 'themes/dark';
+=======
+@import 'imports/reboot';
+@import 'imports/typography';
+
+>>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e

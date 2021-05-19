@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  max-width: $site-width-with-padding;
+  padding-left: $m-site-padding;
+  padding-right: $m-site-padding;
+  margin: 0 auto;
+
+  @include md {
+    padding-left: $s-site-padding;
+    padding-right: $s-site-padding;
+  }
+}
+
+%font-size-0 {
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: 500;
+
+  @include md {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+%font-size-1 {
+  font-size: 42px;
+  line-height: 45px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+%font-size-2 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+%font-size-3 {
+  font-size: 34px;
+  line-height: 37px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+%font-size-4 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+%font-size-5 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

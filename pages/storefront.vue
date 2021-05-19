@@ -1,53 +1,61 @@
 <template>
-  <div class="container">
-    <h1 class="title">Store</h1>
-    <button @click="fetchItems">Fetch</button>
-    <div class="product-container">
-      <ul class="product-list">
-        <li
-          class="product-item"
-          v-for="product in productData.data"
-          :key="product.name"
-          style="list-style-type: none"
-        >
-          {{ product.name }}
-          <ul style="list-style-type: none">
-            <li>
-              <img
-                src="http://157.230.126.154/assets/88a546ef-8456-46ae-a887-f378e25ee300"
-                alt=""
-              />
-            </li>
-            <li>{{ product.id }}</li>
-            <li>{{ product.description }}</li>
-            <li>Quantity: {{ product.quantity_in_stock }}</li>
-            <li>Price: € {{ product.price }}</li>
-            <li>{{ product.name }}</li>
-          </ul>
-        </li>
-      </ul>
+  <main class="p-storefront">
+    <store-header />
+    <div
+      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
+      class="title-btn__container"
+    >
+      <h1 class="p-product__title">Store</h1>
+      <button class="p-product__btn">
+        <a href="/add-product">+</a>
+      </button>
     </div>
-  </div>
+
+    <div v-else class="title-btn__container">
+      <h1 class="p-product__title">Store</h1>
+    </div>
+
+    <div class="p-storefront__product-list">
+      <ProductItem
+        v-for="product in productData"
+        :key="product.id"
+        class="p-storefront__product-list__item"
+        :product="product"
+        v-on:add-product="addProduct($event)"
+      />
+    </div>
+  </main>
 </template>
 
 <script>
+import ProductItem from '~/components/ProductItem';
+import StoreHeader from '~/components/StoreHeader';
+
 export default {
+  components: { ProductItem, StoreHeader },
+
   data() {
     return {
       productData: {},
-      outside: null,
-      imageCodeList: [],
-      imageUrlList: [],
+      src: 'http://157.230.126.154/assets/',
+      Admin: false,
+      shoppingCart: [],
     };
+  },
+  fetch() {
+    return this.fetchItems();
   },
   computed: {
     access_token() {
       return sessionStorage.getItem('access_token');
     },
+    user_role() {
+      return sessionStorage.getItem('user_role');
+    },
   },
   methods: {
     fetchItems() {
-      fetch('http://157.230.126.154/items/products?fields=*.*', {
+      return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
         method: 'GET',
         headers: {},
       })
@@ -59,104 +67,113 @@ export default {
         })
         .then((data) => {
           console.log(data);
-          this.productData = data;
-          this.initImageCodeArray();
+          this.productData = data.data;
+          this.Admin = this.user_role;
         })
         .catch((err) => {
           console.error(err);
         });
     },
-    initImageCodeArray() {
-      for (let i = 0; i < this.productData.data.length; i++) {
-        const temp = JSON.parse(
-          JSON.stringify(this.productData.data[i].images[0].directus_files_id),
-        );
-        this.imageCodeList.push(temp);
-        this.fetchImages(this.imageCodeList[i]);
-      }
-      console.log(this.imageCodeList);
-      console.log(this.imageUrlList);
+    addProduct(product) {
+      this.shoppingCart.push(product.id);
+      sessionStorage.setItem('shopping_cart', this.shoppingCart);
+      console.log(this.shoppingCart);
     },
-    fetchImages(imageCode) {
-      fetch(`http://157.230.126.154/assets/${imageCode}`, {
-        method: 'GET',
+    /*
+    newShoppingCart() {
+      fetch('http://157.230.126.154/items/ordered_items', {
+        method: 'POST',
         headers: {
-          Authorization: 'Bearer ' + this.access_token,
+          'Content-Type': 'application/json',
         },
+        body: this.productBody,
       })
         .then((response) => {
-          return response.blob();
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not create new shopping cart');
+          }
+          return response.json();
         })
-        .then((image) => {
-          this.imageUrlList.push(URL.createObjectURL(image));
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('newCart');
         })
         .catch((err) => {
           console.error(err);
         });
     },
+    addToShoppingCart(product) {
+      fetch('http://157.230.126.154/items/ordered_items/21', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not add product to shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('addToCart');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    */
   },
 };
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style lang="scss">
+body {
+  color: black;
+}
+.p-storefront {
+  @extend .container;
+
+  &__product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $s-site-padding;
+
+    @include md() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm() {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.title-btn__container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  margin: 2em;
 }
 
-.product-container {
-  margin: 1em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1em;
+.p-product__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: $dark-bg;
+  border: 0px;
 }
 
-.product-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.p-product__title {
+  color: $dark-bg;
 }
 
-.product-item {
-  margin: 1em;
-  background-color: lightblue;
-  width: 45%;
-  height: 500px;
-  text-align: left;
-  padding: 0.5em;
-}
-
-img {
-  width: 200px;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+a {
+  font-size: 20px;
 }
 </style>

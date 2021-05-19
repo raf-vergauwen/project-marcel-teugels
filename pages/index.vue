@@ -1,50 +1,93 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">marcel_teugels</h1>
+  <section class="home">
+    <div class="home__webshop">
+      <div class="home__webshop--container">
+        <h1>webshop</h1>
+        <p class="home__webshop--text">
+          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
+          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
+          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+        </p>
+        <button>
+          <a href="/storefront"> webshop</a>
+        </button>
+      </div>
     </div>
-  </div>
+    <div class="home__restauratie">
+      <div class="home__restauratie--container">
+        <h2>restauratie</h2>
+        <p class="home__restauratie--text">
+          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
+          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
+          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+        </p>
+        <button>
+          <a href="/home-restauratie"> restauratie</a>
+        </button>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo'
+<script></script>
 
-export default {
-  components: {
-    Logo,
-  },
+<style lang="scss">
+body {
+  margin: 0px;
 }
-</script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+.home {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(110deg, #b0c4de 50%, #132636 50%);
+
+  &__webshop {
+    width: 50vw;
+    height: 100vh;
+
+    &--text {
+      width: 500px;
+    }
+
+    &--container {
+      margin: 5em;
+    }
+  }
+
+  &__restauratie {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50vw;
+    height: 100vh;
+
+    &--text {
+      width: 500px;
+      text-align: end;
+    }
+
+    &--container {
+      margin: 5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+button {
+  width: 200px;
+  height: 35px;
+  border-radius: 30px;
+  border: 0px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+h1 {
+  font-size: 30px;
 }
 
-.links {
-  padding-top: 15px;
+h2 {
+  font-size: 30px;
 }
 </style>

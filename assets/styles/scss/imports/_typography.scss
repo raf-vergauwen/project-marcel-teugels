@@ -2,6 +2,7 @@
 *  _typography.scss: This partial file contains all application-wide 'typography'.
 \* -------------------------------------------------------------------------- */
 
+<<<<<<< HEAD:assets/styles/scss/base/_typography.scss
 /* -------------------------------------------------------------------------- *\
 -  Headings
 \* -------------------------------------------------------------------------- */
@@ -237,3 +238,13 @@ button {
 // #  <sup>
 
 // #  <time>
+=======
+body {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+  @extend %font-size-1;
+}
+>>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e:assets/styles/scss/imports/_typography.scss

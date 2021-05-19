@@ -1,15 +1,36 @@
 <template>
-  <div class="container">
-    <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
-  </div>
+  <main>
+    <restauration-header />
+    <div class="container">
+      <h1>Profile</h1>
+      <label
+        >First name:
+        <input
+          v-model="firstName"
+          type="text"
+          name="first-name"
+          placeholder=""
+        />
+      </label>
+      <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
+      <p v-if="userInfo">{{ userInfo.email }}</p>
+      <p v-if="userInfo">
+        {{ userInfo.orders[0].ordered_items[0].products[0] }}
+      </p>
+    </div>
+  </main>
 </template>
 
 <script>
+import RestaurationHeader from '~/components/RestaurationHeader';
+
 export default {
   name: 'ProfilePage',
+  components: { RestaurationHeader },
   data() {
     return {
       userInfo: null,
+      firstName: 'Emiel',
     };
   },
   computed: {
@@ -18,19 +39,23 @@ export default {
     },
   },
   created() {
-    fetch('http://157.230.126.154/users/me', {
-      method: 'GET',
-      headers: {
-        Authorization: 'Bearer ' + this.access_token,
+    fetch(
+      'http://157.230.126.154/users/me?fields=*,orders.ordered_items.products.*',
+      {
+        method: 'GET',
+        headers: {
+          Authorization: 'Bearer ' + this.access_token,
+        },
       },
-    })
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not get user info');
         }
-        return response.blob();
+        return response.json();
       })
       .then((body) => {
+        console.log(body);
         this.userInfo = body.data;
       })
       .catch((err) => {
@@ -47,6 +72,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
