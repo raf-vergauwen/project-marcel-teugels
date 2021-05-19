@@ -34,6 +34,7 @@ footer {
       }
 
       &__title {
+        padding: $buffer--s 0;
         background-color: aqua;
         // ...
       }
@@ -53,6 +54,7 @@ footer {
       }
 
       &__title {
+        padding: $buffer--s 0;
         background-color: aquamarine;
         // ...
       }
@@ -72,11 +74,20 @@ footer {
   &__container--contact {
     background-color: darkgreen;
 
+    @include breakpoint(xs) {
+      @include flex-container(nowrap, row, space-evenly, center);
+    }
+
     .foot-copyright {
       // ...
       &__container {
+        flex-direction: row;
         background-color: darkolivegreen;
-        // ...
+        padding: $buffer--xs;
+
+        @include breakpoint(xs) {
+          @include flex-items(2);
+        }
       }
 
       &__link {
@@ -89,13 +100,25 @@ footer {
       // ...
 
       &__container {
-        // flex-direction: row;
-        // justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
+        // justify-content: space-evenly;
         background-color: seagreen;
+        padding: $buffer--xs;
+
+        @include breakpoint(xs) {
+          justify-content: space-around;
+          @include flex-items(8);
+        }
+
+        @include breakpoint(s) {
+          justify-content: space-evenly;
+        }
       }
 
       &__link {
         background-color: lime;
+        padding: 0;
       }
     }
   }

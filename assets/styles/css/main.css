@@ -1015,6 +1015,7 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--nav .foot-nav-text__title {
+  padding: 1rem 0;
   background-color: aqua;
 }
 
@@ -1027,6 +1028,7 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--nav .foot-nav-links__title {
+  padding: 1rem 0;
   background-color: aquamarine;
 }
 
@@ -1042,8 +1044,42 @@ ul.menu-left.collapse {
   background-color: darkgreen;
 }
 
+@media (min-width: 640px) {
+  .main-footer__container--contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    place-content: space-evenly;
+    place-items: center;
+  }
+}
+
 .main-footer__container--contact .foot-copyright__container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: darkolivegreen;
+  padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .main-footer__container--contact .foot-copyright__container {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    place-self: center;
+  }
 }
 
 .main-footer__container--contact .foot-copyright__link {
@@ -1051,11 +1087,42 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--contact .foot-social-media__container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: seagreen;
+  padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .main-footer__container--contact .foot-social-media__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-flex: 8;
+        -ms-flex-positive: 8;
+            flex-grow: 8;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    place-self: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-footer__container--contact .foot-social-media__container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .main-footer__container--contact .foot-social-media__link {
   background-color: lime;
+  padding: 0;
 }
 
 /* ========================================================================== *\
