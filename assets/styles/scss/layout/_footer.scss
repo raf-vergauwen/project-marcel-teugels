@@ -46,6 +46,9 @@ footer {
     }
 
     .foot-nav-links {
+      @include breakpoint(s) {
+        flex-direction: row;
+      }
       // ...
 
       &__container {
@@ -66,6 +69,7 @@ footer {
 
       &__link {
         background-color: lightskyblue;
+        white-space: nowrap;
         // ...
       }
     }
@@ -82,8 +86,8 @@ footer {
       // ...
       &__container {
         flex-direction: row;
-        background-color: darkolivegreen;
         padding: $buffer--xs;
+        background-color: darkolivegreen;
 
         @include breakpoint(xs) {
           @include flex-items(2);
@@ -102,13 +106,13 @@ footer {
       &__container {
         flex-direction: row;
         justify-content: space-around;
-        // justify-content: space-evenly;
-        background-color: seagreen;
         padding: $buffer--xs;
+        background-color: seagreen;
 
         @include breakpoint(xs) {
-          justify-content: space-around;
           @include flex-items(8);
+
+          justify-content: space-around;
         }
 
         @include breakpoint(s) {
@@ -117,8 +121,8 @@ footer {
       }
 
       &__link {
-        background-color: lime;
         padding: 0;
+        background-color: lime;
       }
     }
   }

@@ -148,7 +148,19 @@ figcaption {
 // #  <figure>
 
 // #  <hr>
+hr {
+  width: 100%;
+  border: 0;
+  margin: 2% auto;
+  height: 1%;
 
+  background-image: linear-gradient(
+    to right,
+    var(--color-foreground),
+    var(--color-background),
+    var(--color-foreground)
+  );
+}
 // #  <ol>
 
 // #  <ul>

@@ -50,140 +50,6 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
-div,
-address,
-article,
-aside,
-footer,
-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-main,
-nav,
-section {
-  outline: 2px rgba(0, 255, 0, 0.75) dashed;
-}
-
-blockquote,
-figcaption,
-figure,
-hr,
-li,
-ol,
-p,
-ul {
-  outline: 2px rgba(0, 0, 255, 0.75) dashed;
-}
-
-abbr,
-b,
-bdi,
-bdo,
-br,
-cite,
-code,
-data,
-dfn,
-em,
-i,
-kbd,
-mark,
-q,
-rb,
-rp,
-rt,
-rtc,
-ruby,
-s,
-samp,
-small,
-span,
-strong,
-sub,
-sup,
-time,
-ul,
-var,
-wbr {
-  outline: 2px darkorange dotted;
-}
-
-area,
-audio,
-img,
-map,
-track,
-video {
-  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
-}
-
-embed,
-iframe,
-object,
-param,
-picture,
-source {
-  outline: 1.5px rgba(173, 255, 47, 0.75) dashed;
-}
-
-svg,
-math {
-  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
-}
-
-canvas {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
-}
-
-del,
-ins {
-  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
-}
-
-caption,
-col,
-colgroup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
-}
-
-datalist,
-fieldset,
-form,
-input,
-label,
-legend,
-meter,
-optgroup,
-option,
-output,
-progress,
-select,
-textarea {
-  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
-}
-
-details,
-dialog,
-menu {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
-}
-
-slot,
-template {
-  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -510,22 +376,18 @@ body {
 \* -------------------------------------------------------------------------- */
 article {
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 aside {
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 footer {
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 header {
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 nav {
@@ -533,12 +395,10 @@ nav {
   height: auto;
   max-width: 1600px;
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 section {
   padding: 0.5rem;
-  outline: calc(0.25rem / 2) red dashed;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -703,6 +563,15 @@ figcaption {
   line-height: 1.5;
   text-align: left;
   text-transform: none;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  margin: 2% auto;
+  height: 1%;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-foreground)), color-stop(var(--color-background)), to(var(--color-foreground)));
+  background-image: linear-gradient(to right, var(--color-foreground), var(--color-background), var(--color-foreground));
 }
 
 li {
@@ -1023,6 +892,15 @@ ul.menu-left.collapse {
   background-color: paleturquoise;
 }
 
+@media (min-width: 960px) {
+  .main-footer__container--nav .foot-nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .main-footer__container--nav .foot-nav-links__container {
   background-color: royalblue;
 }
@@ -1038,6 +916,7 @@ ul.menu-left.collapse {
 
 .main-footer__container--nav .foot-nav-links__link {
   background-color: lightskyblue;
+  white-space: nowrap;
 }
 
 .main-footer__container--contact {
@@ -1065,8 +944,8 @@ ul.menu-left.collapse {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: darkolivegreen;
   padding: 0.5rem;
+  background-color: darkolivegreen;
 }
 
 @media (min-width: 640px) {
@@ -1093,14 +972,12 @@ ul.menu-left.collapse {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: seagreen;
   padding: 0.5rem;
+  background-color: seagreen;
 }
 
 @media (min-width: 640px) {
   .main-footer__container--contact .foot-social-media__container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     -webkit-box-flex: 8;
@@ -1109,6 +986,8 @@ ul.menu-left.collapse {
     -ms-flex-negative: 1;
         flex-shrink: 1;
     place-self: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1121,8 +1000,8 @@ ul.menu-left.collapse {
 }
 
 .main-footer__container--contact .foot-social-media__link {
-  background-color: lime;
   padding: 0;
+  background-color: lime;
 }
 
 /* ========================================================================== *\
@@ -1706,33 +1585,15 @@ input:checked + .slider::before {
   padding: 0;
 }
 
-@media (min-width: 640px) {
-  .about__container--text {
-    background-color: teal;
-    color: teal;
-  }
-}
-
-@media (min-width: 960px) {
-  .about__container--text {
-    background-color: red;
-    color: red;
-  }
-}
-
 @media (min-width: 1280px) {
   .about__container--text {
     min-width: calc(400px + (400px / 2));
-    background-color: green;
-    color: green;
   }
 }
 
 @media (min-width: 1600px) {
   .about__container--text {
     min-width: calc(400px * 2);
-    background-color: green;
-    color: green;
   }
 }
 
@@ -1760,15 +1621,36 @@ input:checked + .slider::before {
   }
 }
 
-.about__title--text {
-  padding: 1rem 0;
+.about__text-title {
+  padding: 0.5rem 0;
   font-size: 1.95312rem;
   font-variant: small-caps;
+}
+
+@media (min-width: 960px) {
+  .about__text-title {
+    height: 10%;
+  }
 }
 
 .about__sub-title {
   padding: 0.5rem 0;
   font-size: 1.25rem;
+}
+
+@media (min-width: 960px) {
+  .about__sub-title {
+    height: 15%;
+  }
+}
+
+.about__hr {
+  width: 100%;
+  border: 0;
+  margin: 2% auto;
+  height: 1%;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-foreground)), color-stop(var(--color-background)), to(var(--color-foreground)));
+  background-image: linear-gradient(to right, var(--color-foreground), var(--color-background), var(--color-foreground));
 }
 
 .about__paragraph {
@@ -1781,12 +1663,6 @@ input:checked + .slider::before {
 @media (min-width: 960px) {
   .about__paragraph {
     height: 70%;
-  }
-}
-
-@media (min-width: 960px) {
-  .about__paragraph {
-    height: 75%;
   }
 }
 

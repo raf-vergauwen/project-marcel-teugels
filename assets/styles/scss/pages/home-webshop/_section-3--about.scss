@@ -8,63 +8,41 @@
   &__container {
     @include flex-container(nowrap, column, center, center);
 
-    // padding-bottom: $buffer--xxl;
-
     @include breakpoint(s) {
       @include flex-container(wrap, row, space-evenly, stretch);
     }
   }
 
   &__title {
-    // padding: $buffer--m;
-    // background-color: saddlebrown;
+    // ...
   }
 
   &__container--visual {
-    // flex: 1 1 50%;
     padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
   }
 
   &__image {
-    // height: 100%;
-    // background-color: navy;
+    // ...
   }
 
   &__container--text {
-    // background-color: hotpink;
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
     max-width: calc(#{$card-width} + #{$buffer--s});
-    // height: 80vh;
     padding: 0;
-    // padding-bottom: $buffer--xxl;
-    // margin-bottom: $buffer--xxl;
-
-    @include breakpoint(xs) {
-      background-color: teal;
-      color: teal;
-    }
-
-    @include breakpoint(s) {
-      background-color: red;
-      color: red;
-    }
 
     @include breakpoint(m) {
       min-width: calc(#{$card-width} + (#{$card-width} / 2));
-      background-color: green;
-      color: green;
     }
 
     @include breakpoint(l) {
       min-width: calc(#{$card-width} * 2);
-      background-color: green;
-      color: green;
     }
   }
 
   &__outer-border {
     top: calc((#{$card-height} / 2) + #{$buffer--xs});
     margin-bottom: $buffer--xxl;
+    // ...
 
     @include breakpoint(xs) {
       top: calc((#{$card-height} / 2) + #{$buffer--m});
@@ -86,34 +64,48 @@
     }
   }
 
-  &__title--text {
-    padding: $buffer--s 0;
+  &__text-title {
+    padding: $buffer--xs 0;
     font-size: $font-size--4;
-    // background-color: maroon;
     font-variant: small-caps;
-    // height: 12.5%;
+
+    @include breakpoint(s) {
+      height: 10%;
+    }
   }
 
   &__sub-title {
     padding: $buffer--xs 0;
     font-size: $font-size--2;
-    // background-color: lime;
-    // height: 17.5%;
+
+    @include breakpoint(s) {
+      height: 15%;
+    }
+  }
+
+  &__hr {
+    width: 100%;
+    border: 0;
+    margin: 2% auto;
+    height: 1%;
+
+    background-image: linear-gradient(
+      to right,
+      var(--color-foreground),
+      var(--color-background),
+      var(--color-foreground)
+    );
   }
 
   &__paragraph {
     overflow: auto;
-    // background-color: olive;
     height: calc(#{$card-height} - (#{$buffer--s} * 10));
+
     color: var(--color-background);
     text-align: justify;
 
     @include breakpoint(s) {
       height: 70%;
-    }
-
-    @include breakpoint(s) {
-      height: 75%;
     }
   }
 }
