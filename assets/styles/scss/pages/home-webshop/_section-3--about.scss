@@ -6,9 +6,9 @@
   background: radial-gradient(#003, #000);
 
   &__container {
-    @include flex-container(nowrap, column, space-evenly, stretch);
+    @include flex-container(nowrap, column, center, center);
 
-    // max-width: 500px;
+    // padding-bottom: $buffer--xxl;
 
     @include breakpoint(s) {
       @include flex-container(wrap, row, space-evenly, stretch);
@@ -31,75 +31,75 @@
   }
 
   &__container--text {
-    position: relative;
-    top: 50%;
-
     // background-color: hotpink;
-    left: 0%;
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
     max-width: calc(#{$card-width} + #{$buffer--s});
-    height: 80vh;
-    padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
+    // height: 80vh;
+    padding: 0;
+    // padding-bottom: $buffer--xxl;
+    // margin-bottom: $buffer--xxl;
 
     @include breakpoint(xs) {
-      min-width: $card-width;
-      height: $card-height;
-      max-height: $card-height;
-      aspect-ratio: $card-aspect-ratio;
+      background-color: teal;
+      color: teal;
     }
 
     @include breakpoint(s) {
-      min-width: calc(#{$card-width} + (#{$card-width} / 2));
-      color: red;
       background-color: red;
+      color: red;
     }
 
     @include breakpoint(m) {
-      min-width: calc(#{$card-width} * 2);
-      color: green;
       background-color: green;
+      color: green;
     }
   }
 
   &__outer-border {
     // background-color: purple;
-
-    // min-width: calc(#{$dimension--xxs} - (#{$dimension--xxs} / 10));
-    // max-width: calc((#{$dimension--l} / 4));
-    // aspect-ratio: $card-aspect-ratio;
+    top: calc((#{$card-height} / 2) + #{$buffer--xs});
 
     @include breakpoint(xs) {
-      min-width: $card-width;
-      // height: calc(#{$card-height} + #{$buffer--l});
-      max-height: $card-height;
+      top: calc((#{$card-height} / 2) + #{$buffer--m});
+      // height: $card-height;
+    }
+
+    @include breakpoint(s) {
+      top: calc((#{$card-height} / 2) - #{$buffer--l});
+      // height: $card-height;
     }
   }
 
   &__inner-border {
-    // max-height: $card-height;
-    // height: 100%;
-
-    // background-color: deepskyblue;
+    @include breakpoint(s) {
+      height: calc(#{$card-height} - #{$buffer--m});
+    }
   }
 
   &__title--text {
     padding: $buffer--s 0;
+    font-size: $font-size--4;
     // background-color: maroon;
     font-variant: small-caps;
-    font-size: $font-size--4;
+    // height: 12.5%;
   }
 
   &__sub-title {
     padding: $buffer--xs 0;
     font-size: $font-size--2;
     // background-color: lime;
+    // height: 17.5%;
   }
 
   &__paragraph {
     overflow: auto;
-    height: calc(#{$card-height} - (#{$buffer--xl} * 4));
     color: var(--color-background);
     text-align: justify;
     // background-color: olive;
+    height: calc(#{$card-height} - (#{$buffer--s} * 10));
+
+    @include breakpoint(s) {
+      height: 70%;
+    }
   }
 }

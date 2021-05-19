@@ -5,7 +5,6 @@
 .box-border {
   position: relative;
   top: 50%;
-  top: calc(50% + #{$buffer--xxl});
   left: 50%;
   width: 100%;
   height: auto;

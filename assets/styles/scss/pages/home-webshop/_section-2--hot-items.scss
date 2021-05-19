@@ -5,7 +5,11 @@
 .hot-items {
   &__container {
     @include dimensions;
-    @include flex-container(wrap, row, space-evenly, stretch);
+    @include flex-container(nowrap, column, center, center);
+
+    @include breakpoint(s) {
+      @include flex-container(wrap, row, space-evenly, stretch);
+    }
   }
 
   &__title {
