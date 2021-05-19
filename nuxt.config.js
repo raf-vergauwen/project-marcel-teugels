@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   head: {
-    title: 'marcel_teugels',
+    title: 'project_marcel_teugels',
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,7 +16,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/styles/css/main.css'],
+  css: ['~/assets/styles/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -28,6 +28,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
     'nuxt-animejs',
   ],
 
@@ -37,7 +38,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     ['nuxt-buefy', { css: true }, { materialDesignIcons: true }],
-    '@nuxtjs/markdownit',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -47,6 +47,13 @@ export default {
   build: {},
 
   styleResources: {
-    scss: ['~/assets/styles/scss/core/*.scss'],
+    scss: [
+      './assets/styles/scss/abstracts/_variables.scss',
+      './assets/styles/scss/abstracts/_functions.scss',
+      './assets/styles/scss/abstracts/_mixins.scss',
+      './assets/styles/scss/abstracts/_mi.scss',
+      './assets/styles/scss/abstracts/_utilities.scss',
+      './assets/styles/scss/abstracts/_animations.scss',
+    ],
   },
 };

@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------- *\
+*  _layout.scss: This partial file contains all the default 'layout'.
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  GENERIC TAGS
+\* -------------------------------------------------------------------------- */
+
+// #  <<<----------<< Article >>---------->>
+
+article {
+  padding: $buffer--xs;
+}
+
+// #  <<<----------<< Aside >>---------->>
+
+aside {
+  padding: $buffer--xs;
+}
+
+// #  <<<----------<< Footer >>---------->>
+
+footer {
+  padding: $buffer--xs;
+}
+
+// #  <<<----------<< Header >>---------->>
+
+header {
+  padding: $buffer--xs;
+}
+
+// # <<----------<< Nav >>---------->>
+
+nav {
+  @include dimensions;
+
+  max-width: $limit--max-width;
+  padding: $buffer--xs;
+}
+
+// #  <<<----------<< Section >>---------->>
+
+section {
+  padding: $buffer--xs;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  CONTAINER CLASSES
+\* -------------------------------------------------------------------------- */
+
+.inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}

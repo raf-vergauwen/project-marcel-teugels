@@ -1,47 +1,61 @@
-// +  main.scss : This is main file which imports the rest of the scss files and is compiled to “css/main.css”.
+//  #  main.scss : This is the main scss file which imports the rest of the scss
+//  #  files and compiles it into one css file in `css/main.css`.
 
-/*
-	+  Partial SCSS Group 1 : <Reset>
-*/
+@charset "UTF-8";
 
-// -  Variant A: <normalize-css>
-// @import '../scss/reset/normalize-css/_normalize--default.scss';
-// @import '../scss/reset/normalize-css/_normalize--modern.scss';
-// @import '../scss/reset/normalize-css/_normalize--sanitize.scss';
-// @import '../scss/reset/normalize-css/_normalize--sanitize-opinionated.scss';
-@import '../scss/reset/normalize-css/_normalize--reboot.scss';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 1 - `abstracts/`
+\* ========================================================================== */
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/utilities';
+@import 'abstracts/configs';
 
-// -  Variant B: <reset-css>
-// @import '../scss/reset/reset-css/_reset--default.scss';
-// @import '../scss/reset/reset-css/_reset--html5-reset.scss';
-// @import '../scss/reset/reset-css/_reset--mini-reset.scss';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 2 - `vendors/`
+\* ========================================================================== */
+@import 'vendors/modern-normalize';
+@import 'vendors/scrollbar';
 
-/*
-	+  Partial SCSS Group 2 : <default-tags>
-*/
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `base/`
+\* ========================================================================== */
+@import 'base/base';
+@import 'base/layout';
+@import 'base/typography';
+@import 'base/media';
 
-@import '../scss/default/_default__html-tags--custom.scss';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 4 - `layout/`
+\* ========================================================================== */
+@import 'layout/header';
+@import 'layout/footer';
 
-/*
-	+  Partial SCSS Group 3 : <core>
-*/
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 5 - `components/`
+\* ========================================================================== */
+@import 'components/card';
+@import 'components/icon';
+@import 'components/switch';
+@import 'components/mobile-menu';
+@import 'components/button';
+@import 'components/scrollbar';
+@import 'components/box-border';
 
-@import '../scss/core/_mixins.scss';
-@import '../scss/core/_global-variables.scss';
-@import '../scss/core/_colors.scss';
-@import '../scss/core/_fonts.scss';
-@import '../scss/core/_typography.scss';
-@import '../scss/core/_animations.scss';
-@import '../scss/core/_media-queries.scss';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 6 - `pages/`
+\* ========================================================================== */
+@import 'pages/index';
+@import 'pages/home';
+@import 'pages/home-restoration';
+@import 'pages/home-webshop';
+@import 'pages/login';
+@import 'pages/profile';
+@import 'pages/storefront';
 
-/*
-	+  Partial SCSS Group 4 : <components>
-*/
-
-@import '../scss/components/_header.scss';
-@import '../scss/components/_aside.scss';
-@import '../scss/components/_section-1--hero.scss';
-@import '../scss/components/_section-2--name.scss';
-@import '../scss/components/_section-3--name.scss';
-@import '../scss/components/_section-4--name.scss';
-@import '../scss/components/_footer.scss';
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 7 - `themes/`
+\* ========================================================================== */
+@import 'themes/light';
+@import 'themes/dark';

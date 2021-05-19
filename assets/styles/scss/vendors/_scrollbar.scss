@@ -1,0 +1,221 @@
+/* -------------------------------------------------------------------------- *\
+*  _scrollbar.scss: This partial file contains all 'scrollbar' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+
+// ...
+
+// -  <<----------<< Specific >>---------->>
+
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: auto !important;
+  height: auto !important;
+  padding: 0;
+  margin: 0;
+  direction: inherit;
+}
+
+.simplebar-offset {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: inherit !important;
+  padding: 0;
+  margin: 0;
+  direction: inherit !important;
+  -webkit-overflow-scrolling: touch;
+  resize: none !important;
+}
+
+.simplebar-content-wrapper {
+  position: relative;
+  display: block;
+  width: auto;
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
+  box-sizing: border-box !important;
+  direction: inherit;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simplebar-content::before,
+.simplebar-content::after {
+  display: table;
+  content: ' ';
+}
+
+.simplebar-placeholder {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1px;
+  height: 100%;
+  max-height: 1px;
+  box-sizing: inherit !important;
+  flex-basis: 0;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  float: left;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  width: 1000%;
+  min-width: 1px;
+  height: 1000%;
+  min-height: 1px;
+  box-sizing: inherit;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.simplebar-track {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar::before {
+  position: absolute;
+  right: 2px;
+  left: 2px;
+  background: black;
+  border-radius: 7px;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+  right: 2px;
+  left: 2px;
+  height: 100%;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  top: 2px;
+  right: auto;
+  left: 0;
+  width: auto;
+  min-width: 10px;
+  height: 7px;
+  min-height: 0;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  direction: rtl;
+  opacity: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  visibility: hidden;
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  visibility: hidden;
+}
