@@ -149,7 +149,7 @@ figcaption {
 
 // #  <hr>
 hr {
-  width: 80%;
+  width: 100%;
   height: $buffer--xxs;
   border: 0;
   margin: $buffer--s auto;
@@ -162,7 +162,15 @@ hr {
     hsla(var(--color-foreground-h),
     var(--color-foreground-s),
     var(--color-foreground-l),
+    0.5),
+    hsla(var(--color-foreground-h),
+    var(--color-foreground-s),
+    var(--color-foreground-l),
     0.75),
+    hsla(var(--color-foreground-h),
+    var(--color-foreground-s),
+    var(--color-foreground-l),
+    0.5),
     hsla(var(--color-background-h),
     var(--color-background-s),
     var(--color-background-l),

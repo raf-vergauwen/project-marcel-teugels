@@ -88,7 +88,6 @@
   }
 
   &__hr {
-    width: 80%;
     height: 1%;
     border: 0;
     margin: 2% auto;
@@ -122,11 +121,11 @@
     text-align: justify;
 
     @include breakpoint(s) {
-      height: 65%;
+      height: 62.5%;
     }
 
     @include breakpoint(m) {
-      height: 70%;
+      height: 67.5%;
     }
   }
 }
