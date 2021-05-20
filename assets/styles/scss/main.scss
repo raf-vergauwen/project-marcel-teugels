@@ -1,73 +1,8 @@
-<<<<<<< HEAD
-//  #  main.scss : This is the main scss file which imports the rest of the scss
-//  #  files and compiles it into one css file in `css/main.css`.
-
-=======
->>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e
 @charset "UTF-8";
 @import "imports/variables";
 @import "imports/mixins";
 @import "imports/partials";
 
-<<<<<<< HEAD
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 1 - `abstracts/`
-\* ========================================================================== */
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/utilities';
-@import 'abstracts/configs';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 2 - `vendors/`
-\* ========================================================================== */
-@import 'vendors/modern-normalize';
-@import 'vendors/scrollbar';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 3 - `base/`
-\* ========================================================================== */
-@import 'base/base';
-@import 'base/layout';
-@import 'base/typography';
-@import 'base/media';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 4 - `layout/`
-\* ========================================================================== */
-@import 'layout/header';
-@import 'layout/footer';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 5 - `components/`
-\* ========================================================================== */
-@import 'components/card';
-@import 'components/icon';
-@import 'components/switch';
-@import 'components/mobile-menu';
-@import 'components/button';
-@import 'components/scrollbar';
-@import 'components/box-border';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 6 - `pages/`
-\* ========================================================================== */
-@import 'pages/index';
-@import 'pages/home';
-@import 'pages/home-restoration';
-@import 'pages/home-webshop';
-@import 'pages/login';
-@import 'pages/profile';
-@import 'pages/storefront';
-
-/* ========================================================================== *\
-+  PARTIAL SCSS GROUP 7 - `themes/`
-\* ========================================================================== */
-@import 'themes/light';
-@import 'themes/dark';
-=======
 @import 'imports/reboot';
 @import 'imports/typography';
 
->>>>>>> 0c831c74fcced08eb8157139b1a8e133397f4a9e

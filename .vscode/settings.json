@@ -88,6 +88,15 @@
       "strikethrough": false,
       "tag": "#",
       "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#596673",
+      "italic": false,
+      "strikethrough": true,
+      "tag": "//",
+      "underline": false
     }
   ],
   "bracket-pair-colorizer-2.activeScopeCSS": [
@@ -378,11 +387,7 @@
   "markdown.extension.print.absoluteImgPath": false,
   "hediet.vscode-drawio.customFonts": ["Fira Code"],
   "hediet.vscode-drawio.codeLinkActivated": true,
-  "formattingToggle.affects": ["formatOnSave"],
-  "markdown.preview.breaks": true,
   "editor.formatOnType": true,
-  "standard.run": "onSave",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "formattingToggle.affects": ["formatOnSave"],
+  "markdown.preview.breaks": true
 }

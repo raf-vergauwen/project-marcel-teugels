@@ -1,14 +1,7 @@
-/* -------------------------------------------------------------------------- *\
-*  _reboot.scss: This partial file contains the bootstrap 'reboot'.
-\* -------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------*\
+// *  _reboot.scss: This partial file contains the bootstrap 'reboot'.
+\*----------------------------------------------------------------------------*/
 
-/*!
- * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 *,
 *::before,
 *::after {
@@ -23,23 +16,23 @@
 
 body {
   margin: 0;
-  background-color: #fff;
-  color: #212529;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-size-adjust: 100%;
 }
 
 hr {
-  border: 0;
   margin: 1rem 0;
-  background-color: currentColor;
   color: inherit;
+  background-color: currentColor;
+  border: 0;
   opacity: 0.25;
 }
 
@@ -62,7 +55,6 @@ h1 {
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -72,7 +64,6 @@ h1 {
 h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
-
 @media (min-width: 1200px) {
   h2 {
     font-size: 2rem;
@@ -82,7 +73,6 @@ h2 {
 h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
-
 @media (min-width: 1200px) {
   h3 {
     font-size: 1.75rem;
@@ -92,7 +82,6 @@ h3 {
 h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-
 @media (min-width: 1200px) {
   h4 {
     font-size: 1.5rem;
@@ -114,10 +103,10 @@ p {
 
 abbr[title],
 abbr[data-bs-original-title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
-  text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -193,7 +182,6 @@ a {
   color: #0d6efd;
   text-decoration: underline;
 }
-
 a:hover {
   color: #0a58ca;
 }
@@ -208,45 +196,42 @@ pre,
 code,
 kbd,
 samp {
-  direction: ltr /* rtl:ignore */;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
   font-size: 1em;
+  direction: ltr /* rtl:ignore */;
   unicode-bidi: bidi-override;
 }
 
 pre {
   display: block;
-  overflow: auto;
   margin-top: 0;
   margin-bottom: 1rem;
+  overflow: auto;
   font-size: 0.875em;
 }
-
 pre code {
-  color: inherit;
   font-size: inherit;
+  color: inherit;
   word-break: normal;
 }
 
 code {
-  color: #d63384;
   font-size: 0.875em;
+  color: #d63384;
   word-wrap: break-word;
 }
-
 a > code {
   color: inherit;
 }
 
 kbd {
   padding: 0.2rem 0.4rem;
+  font-size: 0.875em;
+  color: #fff;
   background-color: #212529;
   border-radius: 0.2rem;
-  color: #fff;
-  font-size: 0.875em;
 }
-
 kbd kbd {
   padding: 0;
   font-size: 1em;
@@ -263,8 +248,8 @@ svg {
 }
 
 table {
-  border-collapse: collapse;
   caption-side: bottom;
+  border-collapse: collapse;
 }
 
 caption {
@@ -285,9 +270,9 @@ tfoot,
 tr,
 td,
 th {
-  border-width: 0;
-  border-style: solid;
   border-color: inherit;
+  border-style: solid;
+  border-width: 0;
 }
 
 label {
@@ -296,6 +281,10 @@ label {
 
 button {
   border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 input,
@@ -321,7 +310,6 @@ select {
 select {
   word-wrap: normal;
 }
-
 select:disabled {
   opacity: 1;
 }
@@ -334,18 +322,13 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  appearance: button;
+  -webkit-appearance: button;
 }
-
 button:not(:disabled),
 [type='button']:not(:disabled),
 [type='reset']:not(:disabled),
 [type='submit']:not(:disabled) {
   cursor: pointer;
-}
-
-button:focus:not(:focus-visible) {
-  outline: 0;
 }
 
 ::-moz-focus-inner {
@@ -360,25 +343,23 @@ textarea {
 fieldset {
   min-width: 0;
   padding: 0;
-  border: 0;
   margin: 0;
+  border: 0;
 }
 
 legend {
+  float: left;
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  float: left;
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
-
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
-
 legend + * {
   clear: left;
 }
@@ -398,8 +379,8 @@ legend + * {
 }
 
 [type='search'] {
-  appearance: textfield;
   outline-offset: -2px;
+  -webkit-appearance: textfield;
 }
 
 /* rtl:raw:
@@ -411,7 +392,7 @@ legend + * {
 }
 */
 ::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
 }
 
 ::-webkit-color-swatch-wrapper {
@@ -423,8 +404,8 @@ legend + * {
 }
 
 ::-webkit-file-upload-button {
-  appearance: button;
   font: inherit;
+  -webkit-appearance: button;
 }
 
 output {

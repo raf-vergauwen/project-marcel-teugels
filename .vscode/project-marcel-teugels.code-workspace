@@ -205,7 +205,7 @@
       "*.json": "jsonc"
     },
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 2500,
+    "files.autoSaveDelay": 250,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git-graph.dialog.fetchIntoLocalBranch.forceFetch": true,
@@ -334,11 +334,8 @@
     "markdown.extension.print.absoluteImgPath": false,
     "hediet.vscode-drawio.customFonts": ["Fira Code"],
     "hediet.vscode-drawio.codeLinkActivated": true,
-    "formattingToggle.affects": ["formatOnSave"],
-    "markdown.preview.breaks": true,
-    "liveServer.settings.port": 5501,
     "editor.formatOnType": true,
-    "puglint.run": "onSave",
-    "standard.run": "onSave"
+    "formattingToggle.affects": ["formatOnSave"],
+    "markdown.preview.breaks": true
   }
 }
