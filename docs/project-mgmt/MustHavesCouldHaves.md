@@ -3,6 +3,7 @@
 ## Restauratie gedeelte
 
 - Hoofdpagina
+  - nieuwste producten
 - Werkwijze (zie mockup remastered voor details)
 - Workshops
   - nieuwe workshop plaatsen (met images)
@@ -18,7 +19,9 @@
 - Account
 
   - account creation
+  - login
   - profiel bekijken
+    - bestelgeschiedenis
   - aanpassen van profiel
   - verwijderen profiel
 
@@ -29,12 +32,18 @@
   - product bekijken (zie admingedeelte)
   - product aanpassen
   - product verwijderen
+  - categorien
+
+- Product in detailpagina
 
 - Winkelmandje
 
   - product toevoegen (met images)
   - product verwijderen
   - berekenen totaal (+ vaste verzendkost binnen Belgie)
+    - geen verzendkosten
+    - zelf kost bereken
+    - en mail terugsturen + kost
   - afrekenen
   - order plaatsen
 
@@ -72,3 +81,4 @@
 
 - Sortering op basis van tagsysteem
   - implemtering in costum work
+  - Zoeken op tags en categorieen
