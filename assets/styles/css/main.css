@@ -50,6 +50,143 @@ html {
 /* -------------------------------------------------------------------------- *\
 *  Wireframe
 \* -------------------------------------------------------------------------- */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  outline: calc(0.25rem / 2) red dashed;
+}
+
+div,
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main {
+  outline: 2px rgba(0, 255, 0, 0.75) dashed;
+}
+
+blockquote,
+figcaption,
+figure,
+hr,
+li,
+ol,
+p,
+ul {
+  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+}
+
+abbr,
+b,
+bdi,
+bdo,
+br,
+cite,
+code,
+data,
+dfn,
+em,
+i,
+kbd,
+mark,
+q,
+rb,
+rp,
+rt,
+rtc,
+ruby,
+s,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+time,
+ul,
+var,
+wbr {
+  outline: 2px darkorange dotted;
+}
+
+area,
+audio,
+img,
+map,
+track,
+video {
+  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
+}
+
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+  outline: 1.5px rgba(173, 255, 47, 0.75) dashed;
+}
+
+svg,
+math {
+  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
+}
+
+canvas {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+del,
+ins {
+  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
+}
+
+caption,
+col,
+colgroup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
+}
+
+datalist,
+fieldset,
+form,
+input,
+label,
+legend,
+meter,
+optgroup,
+option,
+output,
+progress,
+select,
+textarea {
+  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
+}
+
+details,
+dialog,
+menu {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+slot,
+template {
+  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
+}
+
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -314,7 +451,7 @@ html {
 
 html {
   font-size: 1rem;
-  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
+  font-size: clamp(1rem, 0rem + 2.5vw, 1.5rem);
 }
 
 body {
