@@ -26,18 +26,18 @@ export default {
 
   data() {
     return {
-      shoppingList: sessionStorage.getItem('shopping_cart').split(','),
+      shoppingList: localStorage.getItem('cart').split(','),
       productData: [],
     };
   },
   computed: {
     shopping_cart() {
-      return sessionStorage.getItem('shopping_cart');
+      return this.$store.state.shoppingCart;
     },
   },
   methods: {
     printList() {
-      console.log(this.shoppingList);
+      console.log(this.shopping_cart);
       this.fetchItems();
     },
     fetchItems() {

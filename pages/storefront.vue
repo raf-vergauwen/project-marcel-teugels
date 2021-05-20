@@ -72,9 +72,9 @@ export default {
         });
     },
     addProduct(product) {
-      this.shoppingCart.push(product.id);
+      this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
-      console.log(this.shoppingCart);
+      console.log(product);
     },
     /*
     newShoppingCart() {
