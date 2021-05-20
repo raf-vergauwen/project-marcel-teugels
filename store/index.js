@@ -15,6 +15,12 @@ export const mutations = {
 
     updateLocalStorage(state.shoppingCart);
   },
+  updateCartFromLocalStorage(state) {
+    const cart = localStorage.getItem('cart');
+    if (cart) {
+      state.shoppingCart = cart.split(',');
+    }
+  },
 };
 
 export const actions = {};

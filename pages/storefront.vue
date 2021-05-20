@@ -50,6 +50,9 @@ export default {
       return sessionStorage.getItem('user_role');
     },
   },
+  mounted() {
+    this.$store.commit('updateCartFromLocalStorage');
+  },
   methods: {
     fetchItems() {
       return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
