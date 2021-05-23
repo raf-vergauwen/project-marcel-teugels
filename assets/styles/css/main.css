@@ -199,12 +199,12 @@ template {
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
-\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  _modern-normalize.scss: This partial file contains the 'modern-normalize'.
+\* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 *  _base.scss: This partial file contains the custom `base` HTML tags
 \* -------------------------------------------------------------------------- */
@@ -285,79 +285,6 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-}
-
-/* -------------------------------------------------------------------------- *\
--  CONTAINER CLASSES
-\* -------------------------------------------------------------------------- */
-.main__container > section {
-  min-height: 100vh;
-}
-
-.inline-flex {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-evenly;
-  place-items: stretch;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-evenly;
-  place-items: stretch;
-}
-
-.container {
-  width: 100%;
-  max-width: 1380px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 0 auto;
-}
-
-@media (max-width: 770px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-/* -------------------------------------------------------------------------- *\
--  TYPOGRAPHY CLASSES
-\* -------------------------------------------------------------------------- */
-h1 {
-  font-size: 42px;
-  line-height: 45px;
-  font-weight: 700;
-}
-
-@media (max-width: 770px) {
-  h1 {
-    font-size: 32px;
-    line-height: 35px;
-  }
-}
-
-/*----------------------------------------------------------------------------*\
-// *  This partial file contains all application-wide 'typography'.
-\*----------------------------------------------------------------------------*/
-body {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -535,6 +462,59 @@ button i {
   text-align: center;
 }
 
+/* -------------------------------------------------------------------------- *\
+-  CONTAINER CLASSES
+\* -------------------------------------------------------------------------- */
+.main__container > section {
+  min-height: 100vh;
+}
+
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  TYPOGRAPHY CLASSES
+\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */

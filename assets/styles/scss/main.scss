@@ -6,26 +6,19 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
-// @import 'style-recourses.scss';
-
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/utilities';
-@import 'abstracts/configs';
+@import 'style-recourses.scss';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
-@import 'vendors/modern-normalize';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
-@import 'base/base';
+@import 'base/modern-normalize';
+@import 'base/layout';
+@import 'base/typography';
 @import 'base/partials';
-@import 'base/typography--v1';
-@import 'base/typography--v2';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
