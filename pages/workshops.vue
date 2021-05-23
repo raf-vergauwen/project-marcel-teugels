@@ -21,6 +21,7 @@
         :key="workshop.id"
         class="p-workshops__product-list__item"
         :workshop="workshop"
+        v-on:remove-workshop="removeWorkshop($event)"
       />
     </div>
   </main>
@@ -29,6 +30,7 @@
 <script>
 import RestaurationHeader from '~/components/RestaurationHeader';
 import WorkshopItem from '~/components/WorkshopItem';
+import axios from 'axios';
 
 export default {
   components: { RestaurationHeader, WorkshopItem },
@@ -44,7 +46,7 @@ export default {
       return sessionStorage.getItem('user_role');
     },
   },
-  created() {
+  mounted() {
     this.fetchWorkshops();
   },
   methods: {
@@ -67,6 +69,22 @@ export default {
         })
         .catch((err) => {
           console.error(err);
+        });
+    },
+    removeWorkshop(workshop) {
+      console.log(workshop.id);
+      const options = {
+        method: 'DELETE',
+        url: `http://157.230.126.154/items/workshops/${workshop.id}`,
+      };
+
+      axios
+        .request(options)
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
         });
     },
   },
