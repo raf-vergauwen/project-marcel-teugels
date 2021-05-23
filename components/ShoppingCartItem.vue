@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'ShoppingItem',
+  name: 'ShoppingCartItem',
   props: {
     product: {
       type: Object,

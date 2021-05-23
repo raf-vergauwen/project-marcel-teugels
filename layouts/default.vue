@@ -2,16 +2,16 @@
   <div>
     <!--<StoreHeader /> -->
     <Nuxt />
+    <Notify />
   </div>
 </template>
 
 <script>
-/*
-import StoreHeader from '~/components/StoreHeader';
+import Notify from '~/components/Notify';
 export default {
-  components: { StoreHeader },
+  name: 'DefaultLayout',
+  components: { Notify },
 };
-*/
 </script>
 
 <style lang="scss"></style>

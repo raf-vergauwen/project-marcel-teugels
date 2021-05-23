@@ -15,7 +15,7 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
-    <button @click="$emit('add-product', product)">Buy</button>
+    <button @click="addProduct">Buy</button>
   </article>
 </template>
 
@@ -34,7 +34,16 @@ export default {
     };
   },
   computed: {},
-  methods: {},
+  methods: {
+    addProduct(product) {
+      this.$root.$emit('g-add-product', product);
+      this.$root.$emit(
+        'notify',
+        `${this.product.name} has been added to your shopping basket`,
+      );
+      this.$emit('add-product', product);
+    },
+  },
 };
 </script>
 
