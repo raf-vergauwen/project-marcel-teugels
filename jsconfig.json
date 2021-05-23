@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["components/*"]
+    }
+  },
+  "include": ["src/**/*.vue", "src/**/*.js", "components/*", "pages/*"],
+  "exclude": ["node_modules", "dist/"]
+}

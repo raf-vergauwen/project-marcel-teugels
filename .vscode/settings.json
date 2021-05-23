@@ -389,5 +389,6 @@
   "hediet.vscode-drawio.codeLinkActivated": true,
   "editor.formatOnType": true,
   "formattingToggle.affects": ["formatOnSave"],
-  "markdown.preview.breaks": true
+  "markdown.preview.breaks": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"]
 }
