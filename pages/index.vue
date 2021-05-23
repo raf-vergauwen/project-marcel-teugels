@@ -17,7 +17,7 @@
     </div>
     <div class="home__restoration">
       <div class="home__restoration--container">
-        <h2 class="home__webshop--title">restoration</h2>
+        <h2 class="home__restoration--title">restoration</h2>
         <p class="home__restoration--text">
           Fugiat ullamco et cillum reprehenderit magna ullamco ipsum sit. Quis
           sunt ullamco ut enim ullamco sit nisi ex velit aliqua id cupidatat

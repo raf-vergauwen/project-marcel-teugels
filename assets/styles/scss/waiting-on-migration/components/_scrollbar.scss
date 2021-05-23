@@ -1,0 +1,20 @@
+/* -------------------------------------------------------------------------- *\
+*  _scrollbar.scss: This partial file contains all 'scrollbar' styles.
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+
+// ...
+
+// -  <<----------<< Specific >>---------->>
+
+.simplebar-scrollbar::before {
+  position: absolute;
+  right: calc(#{$buffer--xxs} / 2);
+  left: calc(#{$buffer--xxs} / 2);
+  background: var(--color-tertiary);
+  border-radius: $border-radius--xs;
+  content: '';
+  opacity: 0;
+  @include transition-general;
+}

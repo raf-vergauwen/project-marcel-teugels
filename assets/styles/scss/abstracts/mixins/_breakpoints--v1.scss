@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// +  _breakpoints--v1.scss: This partial file contains all Scss 'breakpoints--v1'.
+// -----------------------------------------------------------------------------
+
 @mixin xxs {
   @media (max-width: #{$mq-xxs}) {
     @content;

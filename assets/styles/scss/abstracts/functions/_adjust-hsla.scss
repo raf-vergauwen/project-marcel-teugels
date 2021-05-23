@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// +  _adjust-hsla.scss: Modify color HSLA values.
+// -----------------------------------------------------------------------------
+
+@function adjust-hsla(
+  $color,
+  $hueMultiplier: 1,
+  $saturationMultiplier: 1,
+  $lightnessMultiplier: 1,
+  $opacity: 1
+) {
+  $color: str-replace($color, 'var(');
+  $color: str-replace($color, ')');
+  $color-h: var(#{$color + '-h'});
+  $color-s: var(#{$color + '-s'});
+  $color-l: var(#{$color + '-l'});
+
+  @return hsla(
+    calc(#{$color-h} * #{$hueMultiplier}),
+    calc(#{$color-s} * #{$saturationMultiplier}),
+    calc(#{$color-l} * #{$lightnessMultiplier}),
+    $opacity
+  );
+}

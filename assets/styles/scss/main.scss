@@ -1,5 +1,57 @@
-@charset "UTF-8";
-@import 'resources';
+//  #  main.scss : This is the main scss file which imports the rest of the scss
+//  #  files and compiles it into one css file in `css/main.css`.
 
-@import 'imports/reboot';
-@import 'imports/typography';
+@charset "UTF-8";
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 1 - `abstracts/`
+\* ========================================================================== */
+// @import 'style-recourses.scss';
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/utilities';
+@import 'abstracts/configs';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 2 - `vendors/`
+\* ========================================================================== */
+@import 'vendors/modern-normalize';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 3 - `base/`
+\* ========================================================================== */
+@import 'base/base';
+@import 'base/partials';
+@import 'base/typography--v1';
+@import 'base/typography--v2';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 4 - `layout/`
+\* ========================================================================== */
+// @import 'waiting-on-migration/layout/header';
+@import 'waiting-on-migration/layout/footer';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 5 - `components/`
+\* ========================================================================== */
+@import 'waiting-on-migration/components/card';
+@import 'waiting-on-migration/components/icon';
+@import 'waiting-on-migration/components/switch';
+@import 'waiting-on-migration/components/mobile-menu';
+@import 'waiting-on-migration/components/button';
+@import 'waiting-on-migration/components/scrollbar';
+@import 'waiting-on-migration/components/box-border';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 6 - `pages/`
+\* ========================================================================== */
+
+@import 'waiting-on-migration/pages/home-webshop';
+
+/* ========================================================================== *\
++  PARTIAL SCSS GROUP 7 - `themes/`
+\* ========================================================================== */
+@import 'themes/light--v1';
+@import 'themes/light--v2';

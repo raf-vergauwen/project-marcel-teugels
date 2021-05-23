@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// +  _define-color-hsl.scss: This partial file contains all Scss 'define-color-hsl'.
+// -----------------------------------------------------------------------------
+
+@mixin define-color-hsl($color, $hue, $saturation, $lightness) {
+  /* Color-Group */
+  #{$color}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
+  #{$color}-h: #{$hue};
+  #{$color}-s: #{$saturation};
+  #{$color}-l: #{$lightness};
+}

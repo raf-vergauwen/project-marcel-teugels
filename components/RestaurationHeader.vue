@@ -15,7 +15,7 @@
         </nuxt-link>
       </nav>
     </div>
-  </header>
+  </header><
 </template>
 
 <script>

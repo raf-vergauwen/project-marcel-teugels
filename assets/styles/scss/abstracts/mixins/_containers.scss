@@ -1,0 +1,271 @@
+// -----------------------------------------------------------------------------
+// +  _containers.scss: This partial file contains all Scss 'containers'.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// *  Experimental Containers
+// -----------------------------------------------------------------------------
+
+@mixin box-dimensions($width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin container-base($type, $padding-name, $padding-value) {
+  .#{$type} {
+    &__padded--#{$padding-name} {
+      @include box-dimensions;
+
+      display: $type;
+      padding: $padding-value;
+
+      // #  Flex
+      @if $type == flex {
+        &-column {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: column;
+          padding: $padding-value;
+        }
+
+        &-row {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          padding: $padding-value;
+        }
+
+        &-wrap {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: $padding-value;
+        }
+
+        // #  Inline-Flex
+      } @else if $type == inline-flex {
+        &-column {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: column;
+          padding: $padding-value;
+        }
+
+        &-row {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          padding: $padding-value;
+        }
+
+        &-wrap {
+          @include box-dimensions;
+
+          display: $type;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: $padding-value;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// *  Universal Containers
+// -----------------------------------------------------------------------------
+
+@mixin container(
+  $container-type: wrapped-block,
+  $wrap-type: nowrap,
+  $direction: column,
+  $justify: center,
+  $align: center
+) {
+  // @include dimensions;
+
+  // #  wrapped-Block Container
+  @if $container-type == wrapped-block {
+    display: block;
+    padding: 0;
+  }
+
+  // #  wrapped-Flex Container
+  @if $container-type == wrapped-flex {
+    display: flex;
+    padding: 0;
+  }
+
+  // #  wrapped-Grid Container
+  @if $container-type == wrapped-grid {
+    display: grid;
+    padding: 0;
+  }
+
+  // #  padded-Block Container
+  @if $container-type == padded-block {
+    display: block;
+    padding: $buffer--xs;
+  }
+
+  // #  padded-Flex Container
+  @if $container-type == padded-flex {
+    display: flex;
+    padding: $buffer--xs;
+  }
+
+  // #  padded-Grid Container
+  @if $container-type == padded-grid {
+    display: grid;
+    padding: $buffer--xs;
+  }
+
+  // -  <---------------------------------------------------------------------->
+
+  // #  wrapped-Flex Container
+  @if $container-type == wrapped-flex {
+    flex-direction: $direction;
+    flex-wrap: $wrap-type;
+    place-content: $justify;
+
+    // #  wrapped-Flex Container Nowrap
+    @if $wrap-type == nowrap {
+      place-items: $align;
+    }
+    // #  wrapped-Flex Container Wrap
+    @else if $wrap-type == wrap {
+      place-content: $align;
+    }
+    // #  Invalid arguments!
+    @else {
+      @error 'Invalid SCSS argument detected!';
+    }
+    //...
+  }
+
+  // #  padded-Flex Container
+  @if $container-type == padded-flex {
+    flex-direction: $direction;
+    flex-wrap: $wrap-type;
+    place-content: $justify;
+
+    // #  padded-Flex Container Nowrap
+    @if $wrap-type == nowrap {
+      place-items: $align;
+    }
+    // #  padded-Flex Container Wrap
+    @else if $wrap-type == wrap {
+      place-content: $align;
+    }
+    // #  Invalid arguments!
+    @else {
+      @error 'Invalid SCSS argument detected!';
+    }
+    //...
+  }
+}
+
+// -----------------------------------------------------------------------------
+// *  Specific Containers
+// -----------------------------------------------------------------------------
+
+// -  <<----------<< Block-Box>>---------->>
+
+@mixin dimensions($type: none, $width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+
+  // #  Regular Fontawesome Icons
+  @if $type == fas {
+    margin: 0;
+    margin-right: 0.5rem;
+    font-size: $width;
+  }
+  // #  Brand Fontawesome Icons
+  @else if $type == fab {
+    margin: 0;
+    font-size: $width;
+  }
+
+  // #  Button Fontawesome Icons
+  @else if $type == btn {
+    margin: 0;
+    font-size: $width;
+  }
+}
+
+// -  <<----------<< Flex-Box >>---------->>
+
+// #  Block-Flex-Container
+@mixin block-flex-container(
+  $wrap-type: nowrap,
+  $direction: column,
+  $justify: center,
+  $align: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap-type;
+  place-content: $justify;
+
+  // #  Block-Flex-Container Nowrap
+  @if $wrap-type == nowrap {
+    place-items: $align;
+  }
+  // #  Block-Flex-Container Wrap
+  @else if $wrap-type == wrap {
+    place-content: $align;
+  }
+  // #  Invalid arguments!
+  @else {
+    @error 'Invalid SCSS argument detected!';
+  }
+}
+
+// #  Inline-Flex-Container ---> buttons, navigation, vertical lists
+@mixin inline-flex-container(
+  $wrap-type: nowrap,
+  $direction: row,
+  $justify: center,
+  $align: center
+) {
+  display: inline-flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap-type;
+  place-content: $justify;
+
+  // #  Inline-Flex-Container Nowrap
+  @if $wrap-type == nowrap {
+    place-items: $align;
+  }
+  // #  Inline-Flex-Container Wrap
+  @else if $wrap-type == wrap {
+    place-content: $align;
+  }
+  // #  Invalid arguments!
+  @else {
+    @error 'Invalid SCSS argument detected!';
+  }
+}
+
+// #  Flex-Items ---> Children
+@mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: center) {
+  flex-basis: $basis;
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+  place-self: $self;
+}
+
+// -  <<----------<< Grid-Box >>---------->>
+
+// #  Grid-Container
+@mixin grid-container() {
+  display: grid;
+  // ...
+}

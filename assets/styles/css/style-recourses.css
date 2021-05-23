@@ -1,0 +1,193 @@
+html {
+  --wireframe--bg-color: hsla(0, 0%, 0%, 0.5);
+  --wireframe--wire: #f00;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@-webkit-keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.full-width {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  Wireframe
+\* -------------------------------------------------------------------------- */
+div,
+address,
+article,
+aside,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main,
+nav,
+section {
+  outline: 2px rgba(0, 255, 0, 0.75) dashed;
+}
+
+blockquote,
+figcaption,
+figure,
+hr,
+li,
+ol,
+p,
+ul {
+  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+}
+
+abbr,
+b,
+bdi,
+bdo,
+br,
+cite,
+code,
+data,
+dfn,
+em,
+i,
+kbd,
+mark,
+q,
+rb,
+rp,
+rt,
+rtc,
+ruby,
+s,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+time,
+ul,
+var,
+wbr {
+  outline: 2px darkorange dotted;
+}
+
+area,
+audio,
+img,
+map,
+track,
+video {
+  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
+}
+
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+  outline: 1.5px rgba(198, 200, 100, 0.75) dashed;
+}
+
+svg,
+math {
+  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
+}
+
+canvas {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+del,
+ins {
+  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
+}
+
+caption,
+col,
+colgroup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
+}
+
+datalist,
+fieldset,
+form,
+input,
+label,
+legend,
+meter,
+optgroup,
+option,
+output,
+progress,
+select,
+textarea {
+  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
+}
+
+details,
+dialog,
+menu {
+  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+}
+
+slot,
+template {
+  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
+}
+
+.block-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+}
+
+.flex-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+}
+
+.grid-container {
+  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+}
+/*# sourceMappingURL=style-recourses.css.map */

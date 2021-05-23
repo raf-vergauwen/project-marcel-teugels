@@ -1,0 +1,250 @@
+/* -------------------------------------------------------------------------- *\
+*  _typography--v2.scss: This partial file contains all application-wide 'typography--v2'.
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  HEADINGS
+\* -------------------------------------------------------------------------- */
+
+// #  <h1>
+h1 {
+  padding: $buffer--l $buffer--xs;
+  color: var(--color-primary);
+  font-family: $font-family--subject;
+  font-size: $font-size--6;
+  font-variant: $font-variant--subject;
+  font-weight: $font-weight--subject;
+  letter-spacing: $letter-spacing--subject;
+  line-height: $line-height--subject;
+  text-align: $text-align--subject;
+  text-transform: $text-transform--subject;
+}
+
+// #  <h2>
+h2 {
+  padding: $buffer--l $buffer--xs;
+  color: var(--color-tertiary);
+  font-family: $font-family--section-title;
+  font-size: $font-size--5;
+  font-variant: $font-variant--section-title;
+  font-weight: $font-weight--section-title;
+  letter-spacing: $letter-spacing--section-title;
+  line-height: $line-height--section-title;
+  text-align: $text-align--section-title;
+  text-transform: $text-transform--section-title;
+
+  + p::first-letter {
+    color: var(--color-secondary);
+    font-size: $font-size--3;
+    line-height: $line-height--article-title;
+  }
+}
+
+// #  <h3>
+h3 {
+  padding: $buffer--m 0;
+  color: var(--color-secondary);
+  font-family: $font-family--article-title;
+  font-size: $font-size--4;
+  font-variant: $font-variant--article-title;
+  font-weight: $font-weight--article-title;
+  letter-spacing: $letter-spacing--article-title;
+  line-height: $line-height--article-title;
+  text-align: $text-align--article-title;
+  text-transform: $text-transform--article-title;
+
+  + p::first-letter {
+    color: var(--color-secondary);
+    font-size: $font-size--3;
+    line-height: $line-height--article-title;
+  }
+}
+
+// #  <h4>
+h4 {
+  padding: $buffer--m 0;
+  color: var(--color-secondary);
+  font-family: $font-family--link;
+  font-size: $font-size--3;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
+  + p::first-letter {
+    color: var(--color-secondary);
+    font-size: $font-size--3;
+    line-height: $line-height--article-title;
+  }
+}
+
+// #  <h5>
+h5 {
+  padding: $buffer--s 0;
+  color: var(--color-tertiary);
+  font-family: $font-family--text;
+  font-size: $font-size--2;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
+  + p::first-letter {
+    color: var(--color-secondary);
+    font-size: $font-size--3;
+    line-height: $line-height--article-title;
+  }
+}
+
+// #  <h6>
+h6 {
+  padding: $buffer--s 0;
+  color: var(--color-tertiary);
+  font-family: $font-family--text;
+  font-size: $font-size--1;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+
+  + p::first-letter {
+    color: var(--color-secondary);
+    font-size: $font-size--3;
+    line-height: $line-height--article-title;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  BLOCK TEXT CONTENT
+\* -------------------------------------------------------------------------- */
+
+// #  Common Properties
+p,
+li,
+blockquote,
+figcaption {
+  padding: $buffer--xxs 0;
+  color: var(--color-foreground);
+  font-family: $font-family--text;
+  font-size: $font-size--1;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
+}
+
+// #  <blockquote>
+
+// #  <figcaption>
+
+// #  <figure>
+
+// #  <hr>
+hr {
+  width: 100%;
+  height: $buffer--xxs;
+  border: 0;
+  margin: $buffer--s auto;
+  background-image: linear-gradient(
+    to right,
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.5
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.75
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.5
+    ),
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    )
+  );
+}
+// #  <ol>
+
+// #  <ul>
+
+// #  <li>
+
+li {
+  padding: $buffer--xxs 0;
+  list-style-type: none;
+}
+
+// #  <p>
+
+/* -------------------------------------------------------------------------- *\
+-  INLINE TEXT SEMANTICS
+\* -------------------------------------------------------------------------- */
+
+// #  <a>
+
+a,
+button {
+  padding: $buffer--xxs 0;
+  color: var(--color-primary);
+  font-family: $font-family--link;
+  font-size: $font-size--2;
+  font-variant: $font-variant--link;
+  font-weight: $font-weight--link;
+  letter-spacing: $letter-spacing--link;
+  text-align: $line-height--link;
+  text-decoration: none;
+  text-transform: $text-transform--link;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+
+  i {
+    margin-right: $buffer--xs;
+    text-align: center;
+  }
+}
+
+// #  <abbr>
+
+// #  <cite>
+
+// #  <em>
+
+// #  <mark>
+
+// #  <q>
+
+// #  <small>
+
+// #  <span>
+
+// #  <sub>
+
+// #  <sup>
+
+// #  <time>

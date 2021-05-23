@@ -1,0 +1,117 @@
+/* -------------------------------------------------------------------------- *\
+-  SECTION 2: Hot Items
+\* -------------------------------------------------------------------------- */
+
+.hot-items {
+  &__container {
+    @include dimensions;
+    @include block-flex-container(nowrap, column, center, center);
+
+    @include breakpoint(s) {
+      @include block-flex-container(wrap, row, space-evenly, stretch);
+    }
+  }
+
+  &__title {
+    // padding: $buffer--l 0 $buffer--xs 0;
+  }
+}
+
+.hot-item {
+  padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    @include transition-general;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: $buffer--s;
+    font-variant: normal;
+    font-weight: $font-weight--subject;
+  }
+
+  &__visual {
+    @include transition-general;
+
+    height: 100%;
+    filter: $filter--dark;
+  }
+
+  &__caption {
+    @include transition-general;
+    @include dimensions;
+
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: calc(-#{$buffer--xxl} * 3 - (#{$buffer--xs}));
+    left: 0;
+    padding: $buffer--s;
+    background-color: $bg-color--transparant-black---level-3;
+    box-shadow: $box-shadow--caption---slide-in;
+  }
+
+  &__caption-title {
+    padding: 0;
+    color: var(--color-background);
+    font-variant: small-caps;
+    font-weight: $font-weight--subject;
+    text-transform: lowercase;
+  }
+
+  &__caption-text {
+    overflow: auto;
+    height: calc(#{$buffer--xxl} * 2);
+    margin: $buffer--s 0;
+    color: var(--color-background);
+  }
+
+  &__caption-text::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  &__caption-btns {
+    flex-direction: row;
+  }
+
+  &__caption-btn {
+    @include flex-items;
+    // ...
+  }
+
+  &__container:hover {
+    // ...
+    .hot-item {
+      // ...
+      &__visual {
+        filter: $filter--dark-blur;
+        // background-color: orchid;
+        transform: scale(1.25);
+      }
+
+      &__caption {
+        bottom: 0%;
+        background-color: $bg-color--transparant-black---level-5;
+        box-shadow: $box-shadow--caption---slide-out;
+      }
+
+      &__title {
+        top: -30%;
+      }
+
+      &__caption-title {
+        @include transition-general;
+
+        color: var(--color-secondary);
+      }
+    }
+  }
+}
