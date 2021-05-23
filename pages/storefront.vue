@@ -53,6 +53,9 @@ export default {
       return sessionStorage.getItem('user_role');
     },
   },
+  mounted() {
+    this.$store.commit('updateCartFromLocalStorage');
+  },
   methods: {
     fetchItems() {
       return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
@@ -75,9 +78,9 @@ export default {
         });
     },
     addProduct(product) {
-      this.shoppingCart.push(product.id);
+      this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
-      console.log(this.shoppingCart);
+      console.log(product);
     },
     /*
     newShoppingCart() {
