@@ -26,40 +26,32 @@ export default {
 
   data() {
     return {
-      shoppingList: sessionStorage.getItem('shopping_cart').split(','),
+      shoppingList: localStorage.getItem('cart').split(','),
       productData: [],
     };
   },
   computed: {
     shopping_cart() {
-      return sessionStorage.getItem('shopping_cart');
+      return this.$store.state.shoppingCart;
     },
   },
   methods: {
     printList() {
-      console.log(this.shoppingList);
+      console.log(this.shopping_cart);
       this.fetchItems();
     },
     fetchItems() {
       for (let i = 0; i < this.shoppingList.length; i++) {
-        fetch(
-          `http://157.230.126.154/items/products/` +
-            this.shoppingList[i] +
-            '?fields=*%2Cimages.*',
+        this.$axios(
+          `items/products/` + this.shoppingList[i] + '?fields=*%2Cimages.*',
           {
             method: 'GET',
             headers: {},
           },
         )
           .then((response) => {
-            if (!response.ok) {
-              console.log('Error');
-            }
-            return response.json();
-          })
-          .then((data) => {
-            console.log(data);
-            this.productData.push(data.data);
+            console.log(response);
+            this.productData.push(response.data.data);
             console.log(this.productData);
           })
           .catch((err) => {
