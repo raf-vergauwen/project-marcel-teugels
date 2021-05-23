@@ -18,7 +18,7 @@
   }
 
   &__container--visual {
-    padding: 0 $buffer--xs $buffer--xxl $buffer--xs;
+    padding: 0 $buffer--s $buffer--xxl $buffer--s;
   }
 
   &__image {
@@ -27,29 +27,29 @@
 
   &__container--text {
     min-width: calc(#{$dimension--xxs} - #{$buffer--l});
-    max-width: calc(#{$card-width} + #{$buffer--s});
+    max-width: calc(#{$card--width} + #{$buffer--m});
     padding: 0;
 
     @include breakpoint(m) {
-      min-width: calc(#{$card-width} + (#{$card-width} / 2));
+      min-width: calc(#{$card--width} + (#{$card--width} / 2));
     }
 
     @include breakpoint(l) {
-      min-width: calc(#{$card-width} * 2);
+      min-width: calc(#{$card--width} * 2);
     }
   }
 
   &__outer-border {
-    top: calc((#{$card-height} / 2) + #{$buffer--xs});
+    top: calc((#{$card--height} / 2) + #{$buffer--s});
     margin-bottom: $buffer--xxl;
     // ...
 
     @include breakpoint(xs) {
-      top: calc((#{$card-height} / 2) + #{$buffer--m});
+      top: calc((#{$card--height} / 2) + #{$buffer--m} + #{$buffer--m});
     }
 
     @include breakpoint(s) {
-      top: calc((#{$card-height} / 2) - #{$buffer--l} - #{$buffer--xs});
+      top: calc((#{$card--height} / 2) - #{$buffer--l} - #{$buffer--s});
       margin-bottom: 0;
     }
 
@@ -60,12 +60,12 @@
 
   &__inner-border {
     @include breakpoint(s) {
-      height: calc(#{$card-height} - #{$buffer--m});
+      height: calc(#{$card--height} - #{$buffer--m} + #{$buffer--m});
     }
   }
 
   &__text-title {
-    padding: $buffer--xs 0;
+    padding: $buffer--s 0;
     font-size: $font-size--4;
     font-variant: small-caps;
 
@@ -75,7 +75,7 @@
   }
 
   &__sub-title {
-    padding: $buffer--xs 0;
+    padding: $buffer--s 0;
     font-size: $font-size--2;
 
     @include breakpoint(s) {
@@ -116,7 +116,7 @@
 
   &__paragraph {
     overflow: auto;
-    height: calc(#{$card-height} - (#{$buffer--s} * 10));
+    height: calc(#{$card--height} - (#{$buffer--m} * 10));
     color: var(--color-background);
     text-align: justify;
 

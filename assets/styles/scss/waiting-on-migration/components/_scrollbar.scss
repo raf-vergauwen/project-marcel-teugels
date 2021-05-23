@@ -10,10 +10,10 @@
 
 .simplebar-scrollbar::before {
   position: absolute;
-  right: calc(#{$buffer--xxs} / 2);
-  left: calc(#{$buffer--xxs} / 2);
+  right: $buffer--xs;
+  left: $buffer--xs;
   background: var(--color-tertiary);
-  border-radius: $border-radius--xs;
+  border-radius: $border-radius--s;
   content: '';
   opacity: 0;
   @include transition-general;

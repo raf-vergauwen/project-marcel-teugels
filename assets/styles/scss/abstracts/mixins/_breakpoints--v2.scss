@@ -40,7 +40,7 @@
       @content;
     }
   }
-  // #  Breakpoint 7 - Extra Extra Large - 140rem / 2240px
+  // #  Breakpoint 7 - Extra Extra Large - 160rem / 2560px
   @else if $breakpoint == xxl {
     @media (min-width: $dimension--xxl) {
       @content;

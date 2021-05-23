@@ -19,23 +19,18 @@ $dimension--s: 960px; // 60rem
 $dimension--m: 1280px; // 80rem
 $dimension--l: 1600px; // 100rem
 $dimension--xl: 1920px; // 120rem
-$dimension--xxl: 2240px; // 140rem
+$dimension--xxl: 2560px; // 160rem
 
 // #  Utilitarian Values
 $limit--max-width: $dimension--xl;
-$card-width: 400px;
-$card-height: 80vh;
-// $card-caption-height: 40vh;
-// $card-height: calc((#{$card-width} / 9) * 16);
-$card-aspect-ratio: auto 9 / 16;
 
 // -  <<----------<< Padding, Border, Margin Box >>---------->>
 
 // #  Dynamic Values
-$buffer--xxs: 0.25rem; // 4px
-$buffer--xs: 0.5rem; // 8px
-$buffer--s: 1rem; // 16px
-$buffer--m: 1.5rem; // 24px
+$buffer--xxs: 0.125rem; // 2px
+$buffer--xs: 0.25rem; // 4px
+$buffer--s: 0.5rem; // 8px
+$buffer--m: 1rem; // 16px
 $buffer--l: 2rem; // 32px
 $buffer--xl: 3rem; // 48px
 $buffer--xxl: 4rem; // 64px
@@ -46,10 +41,10 @@ $center-me: 0 auto;
 // -  <<----------<< Border-Radius >>---------->>
 
 // #  Static Values
-$border-radius--xxs: 4px;
-$border-radius--xs: 8px;
-$border-radius--s: 16px;
-$border-radius--m: 24px;
+$border-radius--xxs: 2px;
+$border-radius--s: 4px;
+$border-radius--s: 8px;
+$border-radius--m: 16px;
 $border-radius--l: 32px;
 $border-radius--xl: 48px;
 $border-radius--xxl: 64px;
@@ -159,21 +154,21 @@ $letter-spacing--link: normal;
 // *  <<----------<< Shadows Colors >>---------->>
 
 // #  Component - Card
-$box-shadow--card---level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
+$card--box-shadow---level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
   0 1px 2px rgba(0, 0, 0, 0.24);
-$box-shadow--card---level-2: 0 3px 6px rgba(0, 0, 0, 0.16),
+$card--box-shadow---level-2: 0 3px 6px rgba(0, 0, 0, 0.16),
   0 3px 6px rgba(0, 0, 0, 0.23);
-$box-shadow--card---level-3: 0 10px 20px rgba(0, 0, 0, 0.19),
+$card--box-shadow---level-3: 0 10px 20px rgba(0, 0, 0, 0.19),
   0 6px 6px rgba(0, 0, 0, 0.23);
-$box-shadow--card---level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
+$card--box-shadow---level-4: 0 14px 28px rgba(0, 0, 0, 0.25),
   0 10px 10px rgba(0, 0, 0, 0.22);
-$box-shadow--card---level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
+$card--box-shadow---level-5: 0 19px 38px rgba(0, 0, 0, 0.3),
   0 15px 12px rgba(0, 0, 0, 0.22);
 
 // #  Component - Caption
-$box-shadow--caption---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
+$caption--box-shadow---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
   0 1px 2px 5px rgba(0, 0, 0, 0.24);
-$box-shadow--caption---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
+$caption--box-shadow---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
   0 15px 12px 20px rgba(0, 0, 0, 0.22);
 
 // -----------------------------------------------------------------------------
@@ -238,8 +233,7 @@ $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 // #  Light Filter
 // -  <<----------<< Filter >>---------->>
 $filter--dark: brightness(0.8) contrast(1.2);
-$filter--dark-blur: brightness(0.8) contrast(1.2)
-  blur(calc(#{$buffer--xxs / 2}));
+$filter--dark-blur: brightness(0.8) contrast(1.2) blur($buffer--xxs);
 
 // -  <<----------<< Other Colors >>---------->>
 
@@ -254,7 +248,7 @@ $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 
 // -----------------------------------------------------------------------------
-// *  Forms Components
+// *  Components
 // -----------------------------------------------------------------------------
 
 // -  <<----------<< Button >>---------->>
@@ -264,11 +258,16 @@ $button--height: $buffer--l;
 $button--depth: 6;
 $button--speed: 0.06;
 $button--timing-function: ease-out;
-$box-shadow--button---active: 0 3px 3px rgba(0, 0, 0, 0.7),
+$button--box-shadow---active: 0 3px 3px rgba(0, 0, 0, 0.7),
   0 3px 9px rgba(0, 0, 0, 0.2);
-$box-shadow--button---before: 0 1px 0 2px rgba(0, 0, 0, 0.3),
+$button--box-shadow---before: 0 1px 0 2px rgba(0, 0, 0, 0.3),
   0 5px ($button--depth * 0.4 + px) rgba(0, 0, 0, 0.5),
   0 ($button--depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
+
+// #  Card 1
+$card--width: 400px;
+$card--height: 80vh;
+$card--aspect-ratio: auto 9 / 16;
 
 // -----------------------------------------------------------------------------
 // *  Other

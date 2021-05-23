@@ -41,19 +41,19 @@ body {
 // #  <<<----------<< Header >>---------->>
 
 header {
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 // #  <<<----------<< Article >>---------->>
 
 article {
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 // #  <<<----------<< Aside >>---------->>
 
 aside {
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 // # <<----------<< Nav >>---------->>
@@ -62,19 +62,19 @@ nav {
   @include dimensions;
 
   max-width: $limit--max-width;
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 // #  <<<----------<< Section >>---------->>
 
 section {
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 // #  <<<----------<< Footer >>---------->>
 
 footer {
-  padding: $buffer--xs;
+  padding: $buffer--s;
 }
 
 /* -------------------------------------------------------------------------- *\

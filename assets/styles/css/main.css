@@ -399,7 +399,7 @@ h2 + p::first-letter {
 }
 
 h3 {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   color: var(--color-secondary);
   font-family: "Oswald", sans-serif;
   font-size: 1.95312rem;
@@ -418,7 +418,7 @@ h3 + p::first-letter {
 }
 
 h4 {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   color: var(--color-secondary);
   font-family: "Montserrat", monospace;
   font-size: 1.5625rem;
@@ -437,7 +437,7 @@ h4 + p::first-letter {
 }
 
 h5 {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -456,7 +456,7 @@ h5 + p::first-letter {
 }
 
 h6 {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: var(--color-tertiary);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -497,7 +497,7 @@ hr {
   width: 100%;
   height: 0.25rem;
   border: 0;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
   background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
@@ -659,7 +659,7 @@ button i {
   aspect-ratio: auto 9/16;
   /* Prevent background color leak outs */
   background-clip: padding-box;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 @media (min-width: 640px) {
@@ -824,7 +824,7 @@ input:checked + .slider::before {
   padding: 0.25rem;
   border-top: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.22));
   border-bottom: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.2));
-  margin-bottom: calc(0.5rem / 2);
+  margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1))));
   background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1)) 100%);
@@ -902,8 +902,8 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 .simplebar-scrollbar::before {
   position: absolute;
-  right: calc(0.25rem / 2);
-  left: calc(0.25rem / 2);
+  right: 0.25rem;
+  left: 0.25rem;
   background: var(--color-tertiary);
   border-radius: 8px;
   content: '';
@@ -921,7 +921,7 @@ input:checked + .slider::before {
   left: 50%;
   width: 100%;
   padding: 0.5rem;
-  border: calc(0.25rem / 2) solid var(--color-tertiary);
+  border: 0.25rem solid var(--color-tertiary);
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
@@ -932,7 +932,7 @@ input:checked + .slider::before {
   top: 0.5rem;
   width: 1rem;
   height: 1rem;
-  border: calc(0.25rem / 2) solid var(--color-tertiary);
+  border: 0.25rem solid var(--color-tertiary);
   color: var(--color-tertiary);
   content: '•';
   font-size: 1rem;
@@ -951,15 +951,15 @@ input:checked + .slider::before {
 .box-border .box-border-inner {
   position: relative;
   padding: 0.5rem;
-  border: calc(0.25rem / 2) solid var(--color-tertiary);
+  border: 0.25rem solid var(--color-tertiary);
 }
 
 .box-border .box-border-inner::before, .box-border .box-border-inner::after {
   position: absolute;
-  bottom: calc(-0.25rem / 2);
+  bottom: 0.25rem;
   width: 1rem;
   height: 1rem;
-  border: calc(0.25rem / 2) solid var(--color-tertiary);
+  border: 0.25rem solid var(--color-tertiary);
   color: var(--color-tertiary);
   content: '•';
   font-size: 1rem;
@@ -968,11 +968,11 @@ input:checked + .slider::before {
 }
 
 .box-border .box-border-inner::before {
-  left: calc(-0.25rem / 2);
+  left: 0.125rem;
 }
 
 .box-border .box-border-inner::after {
-  right: calc(-0.25rem / 2);
+  right: 0.125rem;
 }
 
 /* ========================================================================== *\
@@ -1146,8 +1146,8 @@ input:checked + .slider::before {
 }
 
 .hot-item__container:hover .hot-item__visual {
-  -webkit-filter: brightness(0.8) contrast(1.2) blur(calc(0.125rem));
-          filter: brightness(0.8) contrast(1.2) blur(calc(0.125rem));
+  -webkit-filter: brightness(0.8) contrast(1.2) blur(0.125rem);
+          filter: brightness(0.8) contrast(1.2) blur(0.125rem);
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
@@ -1235,7 +1235,7 @@ input:checked + .slider::before {
 
 @media (min-width: 640px) {
   .about__outer-border {
-    top: calc((80vh / 2) + 1.5rem);
+    top: calc((80vh / 2) + 1rem + 1rem);
   }
 }
 
@@ -1248,7 +1248,7 @@ input:checked + .slider::before {
 
 @media (min-width: 960px) {
   .about__inner-border {
-    height: calc(80vh - 1.5rem);
+    height: calc(80vh - 1rem + 1rem);
   }
 }
 

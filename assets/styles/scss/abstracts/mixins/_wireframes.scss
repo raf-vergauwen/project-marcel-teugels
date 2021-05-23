@@ -11,7 +11,7 @@
     [data-wf] {
       position: relative;
       z-index: 1;
-      outline: calc(#{$buffer--xxs} / 2) solid var(--wireframe--wire);
+      outline: $buffer--xs solid var(--wireframe--wire);
     }
 
     [data-wf]::before {

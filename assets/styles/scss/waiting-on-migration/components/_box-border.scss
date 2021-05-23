@@ -7,58 +7,58 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  padding: $buffer--xs;
-  border: calc(#{$buffer--xxs} / 2) solid var(--color-tertiary);
+  padding: $buffer--s;
+  border: $buffer--xs solid var(--color-tertiary);
   background-color: rgba(#000, 0.5);
   transform: translate3d(-50%, -50%, 0);
 
   &::before,
   &::after {
     position: absolute;
-    top: $buffer--xs;
-    width: $buffer--s;
-    height: $buffer--s;
-    border: calc(#{$buffer--xxs} / 2) solid var(--color-tertiary);
+    top: $buffer--s;
+    width: $buffer--m;
+    height: $buffer--m;
+    border: $buffer--xs solid var(--color-tertiary);
     color: var(--color-tertiary);
     content: '•';
-    font-size: $buffer--s;
-    line-height: calc(#{$buffer--s} - #{$buffer--xxs});
+    font-size: $buffer--m;
+    line-height: calc(#{$buffer--m} - #{$buffer--xs});
     text-align: center;
   }
 
   &::before {
-    left: $buffer--xs;
+    left: $buffer--s;
   }
 
   &::after {
-    right: $buffer--xs;
+    right: $buffer--s;
   }
 
   .box-border-inner {
     position: relative;
-    padding: $buffer--xs;
-    border: calc(#{$buffer--xxs} / 2) solid var(--color-tertiary);
+    padding: $buffer--s;
+    border: $buffer--xs solid var(--color-tertiary);
 
     &::before,
     &::after {
       position: absolute;
-      bottom: calc(-#{$buffer--xxs} / 2);
-      width: $buffer--s;
-      height: $buffer--s;
-      border: calc(#{$buffer--xxs} / 2) solid var(--color-tertiary);
+      bottom: $buffer--xs;
+      width: $buffer--m;
+      height: $buffer--m;
+      border: $buffer--xs solid var(--color-tertiary);
       color: var(--color-tertiary);
       content: '•';
-      font-size: $buffer--s;
-      line-height: calc(#{$buffer--s} - #{$buffer--xxs});
+      font-size: $buffer--m;
+      line-height: calc(#{$buffer--m} - #{$buffer--xs});
       text-align: center;
     }
 
     &::before {
-      left: calc(-#{$buffer--xxs} / 2);
+      left: $buffer--xxs;
     }
 
     &::after {
-      right: calc(-#{$buffer--xxs} / 2);
+      right: $buffer--xxs;
     }
   }
 }

@@ -111,19 +111,19 @@
   // #  padded-Block Container
   @if $container-type == padded-block {
     display: block;
-    padding: $buffer--xs;
+    padding: $buffer--s;
   }
 
   // #  padded-Flex Container
   @if $container-type == padded-flex {
     display: flex;
-    padding: $buffer--xs;
+    padding: $buffer--s;
   }
 
   // #  padded-Grid Container
   @if $container-type == padded-grid {
     display: grid;
-    padding: $buffer--xs;
+    padding: $buffer--s;
   }
 
   // -  <---------------------------------------------------------------------->
