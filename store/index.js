@@ -1,10 +1,12 @@
-
 function updateLocalStorage(cart) {
   localStorage.setItem('cart', cart);
 }
 
-export const getters = {};
+export const state = () => ({
+  shoppingCart: [],
+});
 
+export const getters = {};
 
 export const mutations = {
   addToCart(state, product) {
