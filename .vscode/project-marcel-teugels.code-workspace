@@ -1,7 +1,7 @@
 {
   "folders": [
     {
-      "path": ".." 
+      "path": ".."
     }
   ],
   "settings": {
@@ -339,6 +339,7 @@
     "markdown.preview.breaks": true,
     "vetur.experimental.templateInterpolationService": true,
     "vetur.format.defaultFormatter.js": "prettier-eslint",
-    "vetur.validation.templateProps": true
+    "vetur.validation.templateProps": true,
+    "eslint.validate": ["javascript", "javascriptreact", "vue"]
   }
 }
