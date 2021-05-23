@@ -31,7 +31,7 @@ export default {
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profile' },
         { path: '/account-creation', label: 'sign up' },
-        { path: '/home-store', label: 'store' },
+        { path: '/storefront', label: 'store' },
       ],
     };
   },
