@@ -1,5 +1,5 @@
 <template>
-  <main class="p-storefront">
+  <main class="p-store">
     <store-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
@@ -15,13 +15,13 @@
       <h1 class="p-product__title">Store</h1>
     </div>
 
-    <div class="p-storefront__product-list">
+    <div class="p-store__product-list">
       <ProductItem
         v-for="product in productData"
         :key="product.id"
-        class="p-storefront__product-list__item"
+        class="p-store__product-list__item"
         :product="product"
-        v-on:add-product="addProduct($event)"
+        @add-product="addProduct($event)"
       />
     </div>
   </main>
@@ -137,7 +137,7 @@ export default {
 body {
   color: black;
 }
-.p-storefront {
+.p-store {
   @extend .container;
 
   &__product-list {

@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*# sourceMappingURL=resources.css.map */

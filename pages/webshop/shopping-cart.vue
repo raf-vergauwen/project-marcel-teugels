@@ -8,9 +8,9 @@
         <shopping-cart-item
           v-for="product in productData"
           :key="product.id"
-          class="p-storefront__product-list__item"
+          class="p-store__product-list__item"
           :product="product"
-          v-on:remove-product="removeProduct($event)"
+          @remove-product="removeProduct($event)"
         />
       </div>
     </div>

@@ -2,27 +2,30 @@
   <section class="home">
     <div class="home__webshop">
       <div class="home__webshop--container">
-        <h1>webshop</h1>
+        <h1 class="home__webshop--title">webshop</h1>
         <p class="home__webshop--text">
-          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
-          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
-          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+          Ipsum dolor voluptate quis quis dolor mollit id pariatur velit enim et
+          irure pariatur. Eiusmod proident id sint irure exercitation aliqua est
+          ad officia consequat. Sunt eu incididunt nulla mollit officia do nisi
+          esse do nisi. Esse aliqua velit exercitation irure non eu dolore
+          mollit pariatur ut sit.
         </p>
         <button>
-          <a href="/storefront"> webshop</a>
+          <a href="/webshop/home-webshop">webshop</a>
         </button>
       </div>
     </div>
-    <div class="home__restauratie">
-      <div class="home__restauratie--container">
-        <h2>restauratie</h2>
-        <p class="home__restauratie--text">
-          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
-          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
-          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+    <div class="home__restoration">
+      <div class="home__restoration--container">
+        <h2 class="home__webshop--title">restoration</h2>
+        <p class="home__restoration--text">
+          Fugiat ullamco et cillum reprehenderit magna ullamco ipsum sit. Quis
+          sunt ullamco ut enim ullamco sit nisi ex velit aliqua id cupidatat
+          laborum tempor. Excepteur sit exercitation incididunt incididunt dolor
+          adipisicing tempor deserunt.
         </p>
         <button>
-          <a href="/home-restauratie"> restauratie</a>
+          <a href="/restoration/home-restoration">restoration</a>
         </button>
       </div>
     </div>
@@ -55,7 +58,7 @@ body {
     }
   }
 
-  &__restauratie {
+  &__restoration {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;

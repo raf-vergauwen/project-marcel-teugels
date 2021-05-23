@@ -24,14 +24,16 @@ export default {
   data() {
     return {
       navItems: [
-        { path: '/home-restauratie', label: 'home' },
-        { path: '/method', label: 'werkwijze' },
-        { path: '/workshops', label: 'workshops' },
-        { path: '/contact', label: 'contact' },
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profile' },
-        { path: '/account-creation', label: 'sign up' },
-        { path: '/storefront', label: 'store' },
+        { path: '/', label: 'home' },
+
+        { path: '/restoration/home-restoration', label: 'home' },
+        { path: '/restoration/methodology', label: 'methodology' },
+        { path: '/restoration/workshops', label: 'workshops' },
+        { path: '/restoration/contact', label: 'contact' },
+
+        { path: '/accounts/sign-up', label: 'sign up' },
+        { path: '/accounts/login', label: 'login' },
+        { path: '/accounts/profile', label: 'profile' },
       ],
     };
   },

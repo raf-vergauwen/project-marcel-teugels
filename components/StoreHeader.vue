@@ -26,13 +26,15 @@ export default {
       number: 0,
       navItems: [
         { path: '/', label: 'home' },
-        { path: '/storefront', label: 'store' },
-        { path: '/costumwork', label: 'costum' },
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profiel' },
-        { path: '/account-creation', label: 'sign up' },
-        { path: '/shopping-cart', label: `winkelwagen(0)` },
-        { path: '/home-restauratie', label: 'restauratie' },
+
+        { path: '/webshop/home-webshop', label: 'home' },
+        { path: '/webshop/store', label: 'store' },
+        { path: '/webshop/custom-work', label: 'custom work' },
+        { path: '/webshop/shopping-cart', label: `shopping-cart(0)` },
+
+        { path: '/accounts/sign-up', label: 'sign up' },
+        { path: '/accounts/login', label: 'login' },
+        { path: '/accounts/profile', label: 'profile' },
       ],
     };
   },
