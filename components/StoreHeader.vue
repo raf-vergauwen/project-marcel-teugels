@@ -23,7 +23,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      cijfer: 0,
+      number: 0,
       navItems: [
         { path: '/', label: 'home' },
         { path: '/storefront', label: 'store' },

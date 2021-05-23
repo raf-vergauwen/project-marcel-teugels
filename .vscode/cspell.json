@@ -5,10 +5,14 @@
         "animejs",
         "buefy",
         "bulma",
+        "directus",
         "nuxt",
         "nuxtjs"
     ],
     "flagWords": [
         "hte"
+    ],
+    "ignoreWords": [
+        "cimages"
     ]
 }
