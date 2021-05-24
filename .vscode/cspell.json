@@ -7,7 +7,9 @@
         "bulma",
         "directus",
         "nuxt",
-        "nuxtjs"
+        "nuxtjs",
+        "xxxl",
+        "xxxs"
     ],
     "flagWords": [
         "hte"

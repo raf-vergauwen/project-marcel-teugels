@@ -16,7 +16,8 @@
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "sass-migrator": "^1.4.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

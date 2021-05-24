@@ -19,7 +19,6 @@
 html {
   @include fluid-type(40rem, 60rem, 1rem, 1.5rem);
 }
-
 // #  <<<----------<< body >>---------->>
 body {
   max-width: $limit--max-width;
