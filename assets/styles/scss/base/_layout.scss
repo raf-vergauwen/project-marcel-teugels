@@ -58,7 +58,7 @@ aside {
 // # <<----------<< Nav >>---------->>
 
 nav {
-  @include dimensions;
+  @include box-dimensions;
 
   max-width: $limit--max-width;
   padding: $buffer--s;
@@ -83,7 +83,7 @@ footer {
 // #  <<<----------<< Svg >>---------->>
 
 svg {
-  @include dimensions;
+  @include box-dimensions;
 
   color: var(--color-foreground);
   fill: var(--color-foreground);
@@ -94,7 +94,7 @@ svg {
 // #  <<<----------<< Img >>---------->>
 
 img {
-  @include dimensions;
+  @include box-dimensions;
 
   background-color: var(--bg-color--transparant---softest);
   object-fit: cover;

@@ -4,11 +4,11 @@
 
 .hot-items {
   &__container {
-    @include dimensions;
-    @include block-flex-container(nowrap, column, center, center);
+    @include box-dimensions;
+    @include flex-container(nowrap, column, center, center);
 
     @include breakpoint(s) {
-      @include block-flex-container(wrap, row, space-evenly, stretch);
+      @include flex-container(wrap, row, space-evenly, stretch);
     }
   }
 
@@ -46,7 +46,7 @@
 
   &__caption {
     @include transition-general;
-    @include dimensions;
+    @include box-dimensions;
 
     position: absolute;
     z-index: 1;

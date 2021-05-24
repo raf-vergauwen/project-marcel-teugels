@@ -797,8 +797,8 @@ input:checked + .slider::before {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  place-content: center;
-  place-items: center;
+  place-content: space-evenly;
+  place-items: stretch;
   position: relative;
   top: 0;
   padding: 0.25rem;
@@ -1038,7 +1038,7 @@ input:checked + .slider::before {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     place-content: space-evenly;
-    place-content: stretch;
+    place-items: stretch;
   }
 }
 
@@ -1182,7 +1182,7 @@ input:checked + .slider::before {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     place-content: space-evenly;
-    place-content: stretch;
+    place-items: stretch;
   }
 }
 

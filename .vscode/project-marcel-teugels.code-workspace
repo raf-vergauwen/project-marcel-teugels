@@ -94,15 +94,6 @@
         "strikethrough": false,
         "tag": "#",
         "underline": false
-      },
-      {
-        "backgroundColor": "transparent",
-        "bold": false,
-        "color": "#596673",
-        "italic": false,
-        "strikethrough": true,
-        "tag": "//",
-        "underline": false
       }
     ],
     "bracket-pair-colorizer-2.activeScopeCSS": [
@@ -121,15 +112,18 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.codeLensFontFamily": "font-family: 'Fira Code', monospace;",
+    "editor.codeLensFontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": true,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.inlineHints.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.lineHeight": 20,
     "editor.linkedEditing": true,
     "editor.matchBrackets": "never",
@@ -146,11 +140,11 @@
     "editor.quickSuggestionsDelay": 10,
     "editor.rulers": [
       {
-        "color": "Rose Ebony",
+        "color": "#3E3E3E",
         "column": 80
       },
       {
-        "color": "Rose Ebony",
+        "color": "#3E3E3E",
         "column": 120
       }
     ],
@@ -188,17 +182,12 @@
     "emmet.extensionsPath": [""],
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.triggerExpansionOnTab": true,
-    "errorLens.addAnnotationTextPrefixes": true,
-    "errorLens.borderRadius": "5px",
-    "errorLens.fontWeight": "600",
-    "errorLens.onSave": true,
-    "errorLens.statusBarColorsEnabled": true,
-    "errorLens.statusBarMessageEnabled": true,
     "eslint.alwaysShowStatus": true,
     "eslint.codeAction.showDocumentation": {
       "enable": true
     },
     "eslint.run": "onSave",
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
     "explorer.confirmDelete": true,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
@@ -208,6 +197,7 @@
     "files.autoSaveDelay": 250,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "formattingToggle.affects": ["formatOnSave"],
     "git-graph.dialog.fetchIntoLocalBranch.forceFetch": true,
     "git-graph.openToTheRepoOfTheActiveTextEditorDocument": true,
     "git.autofetch": true,
@@ -215,12 +205,14 @@
     "gitlens.advanced.blame.customArguments": [],
     "gitlens.advanced.fileHistoryFollowsRenames": true,
     "gitlens.advanced.fileHistoryShowAllBranches": true,
-    "html-css-class-completion.enableEmmetSupport": true,
+    "hediet.vscode-drawio.codeLinkActivated": true,
+    "hediet.vscode-drawio.customFonts": ["Fira Code"],
     "html-css-class-completion.JavaScriptLanguages": [
       "javascript",
       "javascriptreact",
       "typescriptreact"
     ],
+    "html-css-class-completion.enableEmmetSupport": true,
     "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
     "javascript.referencesCodeLens.showOnAllFunctions": true,
@@ -235,17 +227,21 @@
       }
     ],
     "liveServer.settings.donotShowInfoMsg": true,
+    "markdown.extension.completion.root": "C:\\Users\\Verga\\OneDrive\\Fullstack-JavaScript-Developer",
     "markdown.extension.italic.indicator": "_",
     "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.math.enabled": false,
+    "markdown.extension.print.absoluteImgPath": false,
     "markdown.extension.print.theme": "dark",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdown.preview.breaks": true,
     "markdownExtended.imageOmitBackground": true,
     "markdownExtended.tocLevels": [1, 2, 3],
-    "markdownlint.run": "onSave",
     "markdownShortcuts.bullets.marker": "-",
     "markdownShortcuts.icons.citations": true,
     "markdownShortcuts.icons.image": true,
     "markdownShortcuts.icons.link": true,
+    "markdownlint.run": "onSave",
     "material-icon-theme.activeIconPack": "vue",
     "material-icon-theme.files.associations": {
       "*.7z": "zip"
@@ -280,7 +276,6 @@
       "vscode-material-icon-theme": "github",
       "xml": "src"
     },
-    "notebook.kernelProviderAssociations": [],
     "npm-intellisense.packageSubfoldersIntellisense": true,
     "npm-intellisense.scanDevDependencies": true,
     "npm-intellisense.showBuildInLibs": true,
@@ -289,14 +284,13 @@
     "php.validate.executablePath": "",
     "prettier.useTabs": true,
     "sass.disableAutoIndent": true,
+    "scm.inputFontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "scss.lint.boxModel": "warning",
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.float": "warning",
     "scss.lint.important": "warning",
     "scss.lint.unknownVendorSpecificProperties": "warning",
     "search.useGlobalIgnoreFiles": true,
-    "stylelint.reportInvalidScopeDisables": true,
-    "stylelint.reportNeedlessDisables": true,
     "sync.autoDownload": true,
     "sync.autoUpload": true,
     "sync.forceDownload": false,
@@ -306,6 +300,7 @@
     "sync.removeExtensions": true,
     "sync.syncExtensions": true,
     "terminal.integrated.automationShell.linux": "",
+    "terminal.integrated.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "terminal.integrated.shell.windows": "cmd.exe",
     "terminal.integrated.shellArgs.windows": [
       "/k",
@@ -319,6 +314,10 @@
     "versionlens.npm.caching.duration": 5,
     "versionlens.pub.caching.duration": 5,
     "versionlens.suggestions.showOnStartup": true,
+    "vetur.experimental.templateInterpolationService": true,
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "vetur.format.defaultFormatter.ts": "prettier-tslint",
+    "vetur.validation.templateProps": true,
     "vsintellicode.features.python.deepLearning": "enabled",
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
     "window.autoDetectColorScheme": true,
@@ -328,18 +327,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
     "workbench.preferredLightColorTheme": "Atom One Light",
-    "workbench.startupEditor": "none",
-    "markdown.extension.math.enabled": false,
-    "markdown.extension.completion.root": "C:\\Users\\Verga\\OneDrive\\Fullstack-JavaScript-Developer",
-    "markdown.extension.print.absoluteImgPath": false,
-    "hediet.vscode-drawio.customFonts": ["Fira Code"],
-    "hediet.vscode-drawio.codeLinkActivated": true,
-    "editor.formatOnType": true,
-    "formattingToggle.affects": ["formatOnSave"],
-    "markdown.preview.breaks": true,
-    "vetur.experimental.templateInterpolationService": true,
-    "vetur.format.defaultFormatter.js": "prettier-eslint",
-    "vetur.validation.templateProps": true,
-    "eslint.validate": ["javascript", "javascriptreact", "vue"]
+    "workbench.startupEditor": "none"
   }
 }

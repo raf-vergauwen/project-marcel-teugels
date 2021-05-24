@@ -62,7 +62,7 @@
 
   &__container--contact {
     @include breakpoint(xs) {
-      @include block-flex-container(nowrap, row, space-evenly, center);
+      @include flex-container(nowrap, row, space-evenly, center);
     }
 
     .foot-copyright {
