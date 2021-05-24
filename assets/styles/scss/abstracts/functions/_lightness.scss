@@ -1,7 +1,8 @@
 // -----------------------------------------------------------------------------
-// +  _lightness.scss: Return color with different lightness value.
+// +  <<--------------------<< LIGHTNESS >>-------------------->>
 // -----------------------------------------------------------------------------
 
+// -  <---------------| Lightness |--------------->
 @function lightness($color, $lightnessMultiplier) {
   $color: str-replace($color, 'var(');
   $color: str-replace($color, ')');

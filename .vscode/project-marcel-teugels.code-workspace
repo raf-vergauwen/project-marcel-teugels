@@ -285,7 +285,6 @@
     "prettier.useTabs": true,
     "sass.disableAutoIndent": true,
     "scm.inputFontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-    "scss.lint.boxModel": "warning",
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.float": "warning",
     "scss.lint.important": "warning",

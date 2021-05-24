@@ -16,5 +16,5 @@
   border-radius: $border-radius--s;
   content: '';
   opacity: 0;
-  @include transition-general;
+  @include general-transition;
 }

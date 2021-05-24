@@ -25,7 +25,7 @@
   }
 
   &__title {
-    @include transition-general;
+    @include general-transition;
 
     position: absolute;
     z-index: 1;
@@ -38,14 +38,14 @@
   }
 
   &__visual {
-    @include transition-general;
+    @include general-transition;
 
     height: 100%;
     filter: $filter--dark;
   }
 
   &__caption {
-    @include transition-general;
+    @include general-transition;
     @include box-dimensions;
 
     position: absolute;
@@ -108,7 +108,7 @@
       }
 
       &__caption-title {
-        @include transition-general;
+        @include general-transition;
 
         color: var(--color-secondary);
       }

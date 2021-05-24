@@ -8,9 +8,50 @@ html {
   --wireframe--wire: #f00;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
+.main__container > section {
+  min-height: 100vh;
+}
+
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -38,18 +79,12 @@ html {
   }
 }
 
-.full-width {
-  position: relative;
-  right: 50%;
-  left: 50%;
-  width: 100vw;
-  margin-right: -50vw;
-  margin-left: -50vw;
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
 }
 
-/* -------------------------------------------------------------------------- *\
-*  Wireframe
-\* -------------------------------------------------------------------------- */
 div,
 address,
 article,
@@ -65,7 +100,7 @@ h6,
 main,
 nav,
 section {
-  outline: 2px rgba(0, 255, 0, 0.75) dashed;
+  outline: 0.125rem rgba(0, 255, 0, 0.75) dashed;
 }
 
 blockquote,
@@ -76,7 +111,7 @@ li,
 ol,
 p,
 ul {
-  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+  outline: 0.125rem rgba(0, 0, 255, 0.75) dashed;
 }
 
 abbr,
@@ -109,7 +144,7 @@ time,
 ul,
 var,
 wbr {
-  outline: 2px darkorange dotted;
+  outline: 0.125rem darkorange dotted;
 }
 
 area,
@@ -118,7 +153,7 @@ img,
 map,
 track,
 video {
-  outline: 1.5px rgba(0, 0, 128, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(0, 0, 128, 0.75) dashed;
 }
 
 embed,
@@ -127,21 +162,21 @@ object,
 param,
 picture,
 source {
-  outline: 1.5px rgba(198, 200, 100, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(198, 200, 100, 0.75) dashed;
 }
 
 svg,
 math {
-  outline: 1.5px rgba(0, 128, 128, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(0, 128, 128, 0.75) dashed;
 }
 
 canvas {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(188, 143, 143, 0.75) dashed;
 }
 
 del,
 ins {
-  outline: 1.5px rgba(0, 255, 255, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(0, 255, 255, 0.75) dashed;
 }
 
 caption,
@@ -154,7 +189,7 @@ tfoot,
 th,
 thead,
 tr {
-  outline: 1.5px rgba(128, 128, 0, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(128, 128, 0, 0.75) dashed;
 }
 
 datalist,
@@ -170,30 +205,30 @@ output,
 progress,
 select,
 textarea {
-  outline: 1.5px rgba(255, 0, 255, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(255, 0, 255, 0.75) dashed;
 }
 
 details,
 dialog,
 menu {
-  outline: 1.5px rgba(188, 143, 143, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(188, 143, 143, 0.75) dashed;
 }
 
 slot,
 template {
-  outline: 1.5px rgba(127, 255, 212, 0.75) dashed;
+  outline: calc(0.125rem / 2) rgba(127, 255, 212, 0.75) dashed;
 }
 
 .block-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
 }
 
 .flex-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
 }
 
 .grid-container {
-  outline: 2.5px rgba(255, 0, 0, 0.75) solid;
+  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
 }
 
 /* ========================================================================== *\
@@ -462,59 +497,6 @@ button i {
   text-align: center;
 }
 
-/* -------------------------------------------------------------------------- *\
--  CONTAINER CLASSES
-\* -------------------------------------------------------------------------- */
-.main__container > section {
-  min-height: 100vh;
-}
-
-.inline-flex {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-evenly;
-  place-items: stretch;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-evenly;
-  place-items: stretch;
-}
-
-.container {
-  width: 100%;
-  max-width: 1380px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 0 auto;
-}
-
-@media (max-width: 770px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-/* -------------------------------------------------------------------------- *\
--  TYPOGRAPHY CLASSES
-\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */

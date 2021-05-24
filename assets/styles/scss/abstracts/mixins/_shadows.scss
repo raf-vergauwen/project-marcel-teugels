@@ -1,35 +1,35 @@
 // -----------------------------------------------------------------------------
-// +  _box-shadows.scss: This partial file contains all Scss 'box-shadows'.
+// +  <<--------------------<< SHADOWS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// #  Material Design Box-Shadow
+// -  <---------------| Box-Shadow |--------------->
 @mixin box-shadow($box-shadow--level: 1) {
-  // #  Box-Shadow - Level 1
+  // #  Box-Shadow : Level 1
   @if $box-shadow--level == 1 {
     box-shadow: $card--box-shadow---level-1;
     @content;
   }
-  // #  Box-Shadow - Level 2
+  // #  Box-Shadow : Level 2
   @else if $box-shadow--level == 2 {
     box-shadow: $card--box-shadow---level-2;
     @content;
   }
-  // #  Box-Shadow - Level 3
+  // #  Box-Shadow : Level 3
   @else if $box-shadow--level == 3 {
     box-shadow: $card--box-shadow---level-3;
     @content;
   }
-  // #  Box-Shadow - Level 4
+  // #  Box-Shadow : Level 4
   @else if $box-shadow--level == 4 {
     box-shadow: $card--box-shadow---level-4;
     @content;
   }
-  // #  Box-Shadow - Level 5
+  // #  Box-Shadow : Level 5
   @else if $box-shadow--level == 5 {
     box-shadow: $card--box-shadow---level-5;
     @content;
   }
-  // #  Invalid arguments!
+  // #  Box-Shadow : Invalid arguments!
   @else {
     @error '#{$box-shadow--level} is an unsupported box-shadow, choose between: 1,2,3,4,5.';
   }

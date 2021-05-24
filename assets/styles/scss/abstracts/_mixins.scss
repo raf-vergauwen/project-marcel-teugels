@@ -1,16 +1,14 @@
 // -----------------------------------------------------------------------------
-// +  _mixins.scss: This partial file contains all Scss 'mixins'.
+// +  <<--------------------<< MIXINS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// #  Kenneth's + Emiels Mixin
-@import 'mixins/breakpoints--v1';
-
-// #  Raf's Mixin
-@import 'mixins/breakpoints--v2';
+// -  <---------------| Import Mixin Partials |--------------->
+@import 'mixins/breakpoints';
 @import 'mixins/define-color-hsl';
 @import 'mixins/containers';
 @import 'mixins/responsive-font-sizes';
-@import 'mixins/box-shadows';
+@import 'mixins/shadows';
 @import 'mixins/wireframes';
 @import 'mixins/transitions';
 @import 'mixins/animations';
+@import 'mixins/utilities';

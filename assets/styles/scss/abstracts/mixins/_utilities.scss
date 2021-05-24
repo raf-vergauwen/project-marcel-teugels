@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// +  <<--------------------<< UTILITIES >>-------------------->>
+// -----------------------------------------------------------------------------
+
+
+@mixin full-width {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin reset {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+@mixin column($width) {
+  @if unit($width) != '%' {
+    $width: $width * 100%;
+  }
+  flex-basis: #{$width};
+  max-width: #{$width};
+}
+
+@mixin autoSizedColumn {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}

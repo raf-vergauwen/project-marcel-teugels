@@ -1,17 +1,15 @@
 // -----------------------------------------------------------------------------
-// +  _variables--v1.scss: This partial file contains all Scss 'variables--v1'.
+// +  <<--------------------<< VARIABLES V1 >>-------------------->>
 // -----------------------------------------------------------------------------
 
-//Colors
-
+// -  <---------------| colors |--------------->
 $accent-color: #c8ac7f;
 $light-blue: #b0c4de;
 $dark-blue: #132636;
 $dark-bg: #0f0e0e;
 $light-bg: #f7f5f5;
 
-//Media Queries
-
+// -  <---------------| Media Queries |--------------->
 $mq-xxs: 320px;
 $mq-xs: 390px;
 $mq-sm: 570px;
@@ -21,8 +19,7 @@ $mq-xl: 1260px;
 $mq-xxl: 1460px;
 $mq-xxxl: 1900px;
 
-// Widths
-
+// -  <---------------| Widths |--------------->
 $l-site-padding: 80px;
 $site-padding: 60px;
 $m-site-padding: 40px;

@@ -1,15 +1,18 @@
 // -----------------------------------------------------------------------------
-// +  _configs.scss: This partial file contains all Scss 'configs'.
+// +  <<--------------------<< CONFIGS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-/* -------------------------------------------------------------------------- *\
-*  Wireframe
-\* -------------------------------------------------------------------------- */
+// -  <---------------| Scroll-Behavior |--------------->
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 
-// - <<----------<< Automatic >>---------->>
+// *  <<--------------------<< WIREFRAMES >>-------------------->>
 
-@include automatic-wireframes(true);
+// -  <---------------| Automatic |--------------->
+@include automatic-wireframe(true);
 
-// - <<----------<< Manual >>---------->>
-
-@include manual-wireframes(false);
+// -  <---------------| Manual |--------------->
+@include manual-wireframe(false);

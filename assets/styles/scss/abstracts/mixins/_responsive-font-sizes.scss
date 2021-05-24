@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------------------
-// +  _responsive-font-sizes.scss: This partial file contains all Scss 'responsive-font-sizes'.
+// +  <<--------------------<< RESPONSIVE FONT SIZES >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// #  Fluid-Type
+// -  <---------------| Fluid-Type |--------------->
 @mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
   $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
   $calc-value: unquote(

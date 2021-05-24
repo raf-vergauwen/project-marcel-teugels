@@ -1,15 +1,11 @@
 // -----------------------------------------------------------------------------
-// +  _transitions.scss: This partial file contains all Scss 'transitions'.
+// +  <<--------------------<< TRANSITIONS >>-------------------->>
 // -----------------------------------------------------------------------------
-// *  <<----------<< Generic >>---------->>
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
+// *  <<--------------------<< GENERIC >>-------------------->>
 
-@mixin transition-general(
+// -  <---------------| General-Transition |--------------->
+@mixin general-transition(
   $property: all,
   $duration: 0.25s,
   $timing-function: ease,
@@ -18,10 +14,10 @@
   transition: $property $duration $timing-function $delay;
 }
 
-// *  <<----------<< Specific >>---------->>
+// *  <<--------------------<< SPECIFIC >>-------------------->>
 
-// -  Header
-@mixin transition-header--slidedown {
+// -  <---------------| Header-Transition--Slidedown |--------------->
+@mixin header-transition--slidedown {
   transform: translateY(0);
   transition: background 0.3s,
     -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
@@ -32,7 +28,7 @@
   will-change: transform;
 }
 
-// -  Card
+// -  <---------------| Box-Transition |--------------->
 @mixin box-transition {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }

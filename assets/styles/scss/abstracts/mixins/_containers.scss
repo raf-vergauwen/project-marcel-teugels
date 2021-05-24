@@ -1,13 +1,10 @@
 // -----------------------------------------------------------------------------
-// +  Containers
+// +  <<--------------------<< CONTAINERS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// -----------------------------------------------------------------------------
-// *  Parents
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< DIMENSIONS >>-------------------->>
 
-// -  <<----------<< Block-Box>>---------->>
-
+// -  <---------------| Box-Dimensions |--------------->
 @mixin box-dimensions($type: none, $width: 100%, $height: auto) {
   width: $width;
   height: $height;
@@ -15,7 +12,7 @@
   // #  Regular Fontawesome Icons
   @if $type == fas {
     margin: 0;
-    margin-right: 0.5rem;
+    margin-right: $buffer--s;
     font-size: $width;
   }
   // #  Brand Fontawesome Icons
@@ -31,9 +28,13 @@
   }
 }
 
-// -  <<----------<< Flex-Box >>---------->>
+// *  <<--------------------<< PARENTS >>-------------------->>
 
-// #  flex-container
+// -  <---------------| Block-Container |--------------->
+
+// -  <---------------| Inline-Block-Container |--------------->
+
+// -  <---------------| Flex-Container |--------------->
 @mixin flex-container(
   $wrap: nowrap,
   $direction: column,
@@ -47,7 +48,7 @@
   place-items: $align;
 }
 
-// #  Inline-Flex-Container ---> buttons, navigation, vertical lists
+// -  <---------------| Inline-Flex-Container |--------------->
 @mixin inline-flex-container(
   $wrap: nowrap,
   $direction: row,
@@ -61,14 +62,57 @@
   place-items: $align;
 }
 
-// -----------------------------------------------------------------------------
-// *  Children
-// -----------------------------------------------------------------------------
+// -  <---------------| Grid-Container |--------------->
 
-// #  Flex-Items ---> Children
+// -  <---------------| Inline-Grid-Container |--------------->
+
+// *  <<--------------------<< Children >>-------------------->>
+
+// -  <---------------| Flex-Items |--------------->
 @mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: center) {
   flex-basis: $basis;
   flex-grow: $grow;
   flex-shrink: $shrink;
   place-self: $self;
+}
+
+// -  <---------------| Grid-Items |--------------->
+
+// *  <<--------------------<< CLASSES >>-------------------->>
+
+// -  <---------------| .main__container |--------------->
+.main__container > section {
+  min-height: 100vh;
+}
+
+// -  <---------------| .inline-flex |--------------->
+.inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+// -  <---------------| .flex  |--------------->
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+}
+
+// -  <---------------| .container  |--------------->
+.container {
+  width: 100%;
+  max-width: $site-width-with-padding;
+  padding-left: $m-site-padding;
+  padding-right: $m-site-padding;
+  margin: 0 auto;
+
+  @include md {
+    padding-left: $s-site-padding;
+    padding-right: $s-site-padding;
+  }
 }

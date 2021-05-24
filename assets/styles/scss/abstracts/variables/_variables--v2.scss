@@ -1,16 +1,10 @@
 // -----------------------------------------------------------------------------
-// +  _variables--v2.scss: This partial file contains all Scss 'variables--v2'.
+// +  <<--------------------<< VARIABLES V2 >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// -----------------------------------------------------------------------------
-// +  <<<--------------------<<< LAYOUT >>>-------------------->>>
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< LAYOUT >>-------------------->>
 
-// -----------------------------------------------------------------------------
-// *  <<----------<< Box Model >>---------->>
-// -----------------------------------------------------------------------------
-
-// -  <<----------<< Content Box: Width and Height >>---------->>
+// -  <---------------| BOX MODEL: Content - Width - Height |--------------->
 
 // #  Static Values
 $dimension--xxs: 320px; // 20rem
@@ -24,7 +18,7 @@ $dimension--xxl: 2560px; // 160rem
 // #  Utilitarian Values
 $limit--max-width: $dimension--xl;
 
-// -  <<----------<< Padding, Border, Margin Box >>---------->>
+// -  <---------------| BOX MODEL: Padding - Border - Margin |--------------->
 
 // #  Dynamic Values
 $buffer--xxs: 0.125rem; // 2px
@@ -38,7 +32,7 @@ $buffer--xxl: 4rem; // 64px
 // #  Utilitarian Values
 $center-me: 0 auto;
 
-// -  <<----------<< Border-Radius >>---------->>
+// -  <<----------<< Border Radius >>---------->>
 
 // #  Static Values
 $border-radius--xxs: 2px;
@@ -49,17 +43,15 @@ $border-radius--l: 32px;
 $border-radius--xl: 48px;
 $border-radius--xxl: 64px;
 
-// -----------------------------------------------------------------------------
-// +  TYPOGRAPHY >>>-------------------->>>
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< TYPOGRAPHY >>-------------------->>
 
-// *  <<----------<< RFS >>---------->>
+// -  <---------------| Rfs |--------------->
 
 // #  Responsive Font Scale
 $font-scale: 1.25;
 $font-size: 1rem; // 16px
 
-// *  <<----------<< Font >>---------->>
+// -  <---------------| Font |--------------->
 
 // #  Font-Size
 $font-size--1: $font-size; // 16px
@@ -100,7 +92,7 @@ $line-height--article-title: 1.2; // 120%
 $line-height--text: 1.5; // 150%
 $line-height--link: 1.5; // 150%
 
-// *  <<----------<< Text >>---------->>
+// -  <---------------| Text |--------------->
 
 // #  Text-Align
 $text-align--subject: center;
@@ -130,13 +122,9 @@ $text-transform--article-title: none;
 $text-transform--text: none;
 $text-transform--link: none;
 
-// *  <<----------<< Word >>---------->>
-
 // #  Word-Break ---> Default
 
 // #  Word-Spacing ---> Default
-
-// *  <<----------<< Spacing >>---------->>
 
 // #  Letter-Spacing
 $letter-spacing--subject: 0.025rem; // 0.4px
@@ -147,11 +135,9 @@ $letter-spacing--link: normal;
 
 // #  White-Space ---> Default
 
-// -----------------------------------------------------------------------------
-// +  APPEARANCE
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< APPEARANCE >>-------------------->>
 
-// *  <<----------<< Shadows Colors >>---------->>
+// -  <---------------| Shadows Colors |--------------->
 
 // #  Component - Card
 $card--box-shadow---level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -171,11 +157,7 @@ $caption--box-shadow---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
 $caption--box-shadow---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
   0 15px 12px 20px rgba(0, 0, 0, 0.22);
 
-// -----------------------------------------------------------------------------
-// *  <<----------<< Colors >>---------->>
-// -----------------------------------------------------------------------------
-
-// -  <<----------<< Gradient>>---------->>
+// -  <---------------| Gradient Colors |--------------->
 
 // #  linear-Gradient
 $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
@@ -188,10 +170,10 @@ $linear-gradient--combo: linear-gradient(
   $linear-gradient--tertiary
 );
 
-// #  Radial-Gradientt
+// #  Radial-Gradient
 $radial-gradient--foreground: radial-gradient(#003, #000);
 
-// -  <<----------<< Background-Color--Transparant >>---------->>
+// -  <---------------| Background Colors |--------------->
 
 // #  White
 $bg-color--transparant-white---level-1: hsla(0, 0%, 100%, 0.25);
@@ -228,10 +210,13 @@ $bg-color--transparant-black---level-3: hsla(0, 0%, 0%, 0.55);
 $bg-color--transparant-black---level-4: hsla(0, 0%, 0%, 0.7);
 $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 
-// -  <<----------<< Filter >>---------->>
+// -  <---------------| Filter Colors |--------------->
 
 // #  Light Filter
-// -  <<----------<< Filter >>---------->>
+$filter--light: brightness(1.2) contrast(0.8);
+$filter--light-blur: brightness(1.2) contrast(0.8) blur($buffer--xxs);
+
+// #  Dark Filter
 $filter--dark: brightness(0.8) contrast(1.2);
 $filter--dark-blur: brightness(0.8) contrast(1.2) blur($buffer--xxs);
 
@@ -247,11 +232,9 @@ html {
 $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 
-// -----------------------------------------------------------------------------
-// *  Components
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< COMPONENTS >>-------------------->>
 
-// -  <<----------<< Button >>---------->>
+// -  <---------------| Buttons |--------------->
 
 // #  Button 1
 $button--height: $buffer--l;
@@ -264,11 +247,11 @@ $button--box-shadow---before: 0 1px 0 2px rgba(0, 0, 0, 0.3),
   0 5px ($button--depth * 0.4 + px) rgba(0, 0, 0, 0.5),
   0 ($button--depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
 
+// -  <---------------| Cards |--------------->
+
 // #  Card 1
 $card--width: 400px;
 $card--height: 80vh;
 $card--aspect-ratio: auto 9 / 16;
 
-// -----------------------------------------------------------------------------
-// *  Other
-// -----------------------------------------------------------------------------
+// *  <<--------------------<< Other >>-------------------->>

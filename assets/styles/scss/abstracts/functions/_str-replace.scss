@@ -1,7 +1,8 @@
 // -----------------------------------------------------------------------------
-// +  _str-replace.scss: Replace substring with another string.
+// +  <<--------------------<< STR-REPLACE >>-------------------->>
 // -----------------------------------------------------------------------------
 
+// -  <---------------| Str-Replace |--------------->
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
 
