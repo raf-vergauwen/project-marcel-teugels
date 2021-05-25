@@ -13,7 +13,7 @@
   right: $buffer--xs;
   left: $buffer--xs;
   background: var(--color-tertiary);
-  border-radius: $border-radius--s;
+  border-radius: $small-dimension--s;
   content: '';
   opacity: 0;
   @include general-transition;

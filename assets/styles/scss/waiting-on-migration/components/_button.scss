@@ -26,7 +26,7 @@ button {
     adjust-hsl(var(--color-tertiary), 1, 1.15, 1.12) 26%,
     adjust-hsl(var(--color-tertiary), 1, 1, 1) 100%
   );
-  border-radius: $border-radius--s;
+  border-radius: $small-dimension--s;
   color: lightness(var(--color-secondary), 0.9);
   text-shadow: 0 -2px 0 lightness(var(--color-secondary), 0.8),
     0 1px 1px lightness(var(--color-secondary), 1.2);
@@ -73,7 +73,7 @@ button {
     adjust-hsl(var(--color-secondary), 1, 1.15, 0.6) 0%,
     adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px
   );
-  border-radius: $border-radius--s;
+  border-radius: $small-dimension--s;
   box-shadow: $button--box-shadow---before;
   content: '';
   transition: all (($button--speed * 1.3) + s) $button--timing-function;

@@ -26,7 +26,7 @@
   }
 
   &__container--text {
-    min-width: calc(#{$dimension--xxs} - #{$buffer--l});
+    min-width: calc(#{$large-dimension--xxs} - #{$buffer--l});
     max-width: calc(#{$card--width} + #{$buffer--m});
     padding: 0;
 

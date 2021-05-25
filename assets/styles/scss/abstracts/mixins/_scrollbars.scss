@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// +  <<--------------------<< SCROLLBARS >>-------------------->>
+// -----------------------------------------------------------------------------
+
+// -  <---------------| Scrollbar Style |--------------->
+@mixin scrollbar-style($size: $buffer--s, $color: var(--color-tertiary)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: $small-dimension--s;
+
+    &:hover {
+      background: lightness($color, 0.75);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lightness($color, 0.5);
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $color;
+    scrollbar-track-color: lightness($color, 0.5);
+  }
+}
+
+// -  <---------------| Scrollbar Behaviour |--------------->
+@mixin scrollbar-function($behaviour: smooth, $type: y proximity) {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: $behaviour;
+  }
+  scroll-snap-type: $type;
+}

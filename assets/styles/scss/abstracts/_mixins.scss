@@ -2,7 +2,7 @@
 // +  <<--------------------<< MIXINS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// -  <---------------| Import Mixin Partials |--------------->
+// -  <---------------| Import Generic Mixin Partials |--------------->
 @import 'mixins/breakpoints';
 @import 'mixins/define-color-hsl';
 @import 'mixins/containers';
@@ -12,3 +12,7 @@
 @import 'mixins/transitions';
 @import 'mixins/animations';
 @import 'mixins/utilities';
+
+// -  <---------------| Import Component Mixin Partials |--------------->
+
+@import 'mixins/scrollbars';

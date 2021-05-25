@@ -68,43 +68,43 @@
 @mixin breakpoint($breakpoint) {
   // #  BREAKPOINT 1 : Extra Extra Small - 20rem / 320px
   @if $breakpoint == xxs {
-    @media (min-width: $dimension--xxs) {
+    @media (min-width: $large-dimension--xxs) {
       @content;
     }
   }
   // #  BREAKPOINT 2 : Extra Small - 40rem / 640px
   @else if $breakpoint == xs {
-    @media (min-width: $dimension--xs) {
+    @media (min-width: $large-dimension--xs) {
       @content;
     }
   }
   // #  BREAKPOINT 3 : Small - 60rem / 960px
   @else if $breakpoint == s {
-    @media (min-width: $dimension--s) {
+    @media (min-width: $large-dimension--s) {
       @content;
     }
   }
   // #  BREAKPOINT 4 : Medium - 80rem / 1280px
   @else if $breakpoint == m {
-    @media (min-width: $dimension--m) {
+    @media (min-width: $large-dimension--m) {
       @content;
     }
   }
   // #  BREAKPOINT 5 : Large - 100rem / 1600px
   @else if $breakpoint == l {
-    @media (min-width: $dimension--l) {
+    @media (min-width: $large-dimension--l) {
       @content;
     }
   }
   // #  BREAKPOINT 6 : Extra Large - 120rem / 1920px
   @else if $breakpoint == xl {
-    @media (min-width: $dimension--xl) {
+    @media (min-width: $large-dimension--xl) {
       @content;
     }
   }
   // #  BREAKPOINT 7 : Extra Extra Large - 160rem / 2560px
   @else if $breakpoint == xxl {
-    @media (min-width: $dimension--xxl) {
+    @media (min-width: $large-dimension--xxl) {
       @content;
     }
   }

@@ -6,17 +6,26 @@
 
 // -  <---------------| BOX MODEL: Content - Width - Height |--------------->
 
-// #  Static Values
-$dimension--xxs: 320px; // 20rem
-$dimension--xs: 640px; // 40rem
-$dimension--s: 960px; // 60rem
-$dimension--m: 1280px; // 80rem
-$dimension--l: 1600px; // 100rem
-$dimension--xl: 1920px; // 120rem
-$dimension--xxl: 2560px; // 160rem
+// #  Large Static Values
+$large-dimension--xxs: 320px; // 20rem
+$large-dimension--xs: 640px; // 40rem
+$large-dimension--s: 960px; // 60rem
+$large-dimension--m: 1280px; // 80rem
+$large-dimension--l: 1600px; // 100rem
+$large-dimension--xl: 1920px; // 120rem
+$large-dimension--xxl: 2560px; // 160rem
+
+// #  Small Static Values
+$small-dimension--xxs: 2px; // 0.125rem
+$small-dimension--s: 4px; // 0.25rem
+$small-dimension--s: 8px; // 0.5rem
+$small-dimension--m: 16px; // 1rem
+$small-dimension--l: 32px; // 2rem
+$small-dimension--xl: 48px; // 3rem
+$small-dimension--xxl: 64px; // 4em
 
 // #  Utilitarian Values
-$max-width--root: $dimension--xl;
+$max-width--root: $large-dimension--xl;
 
 // -  <---------------| BOX MODEL: Padding - Border - Margin |--------------->
 
@@ -31,17 +40,6 @@ $buffer--xxl: 4rem; // 64px
 
 // #  Utilitarian Values
 $center-me: 0 auto;
-
-// -  <<----------<< Border Radius >>---------->>
-
-// #  Static Values
-$border-radius--xxs: 2px;
-$border-radius--s: 4px;
-$border-radius--s: 8px;
-$border-radius--m: 16px;
-$border-radius--l: 32px;
-$border-radius--xl: 48px;
-$border-radius--xxl: 64px;
 
 // *  <<--------------------<< TYPOGRAPHY >>-------------------->>
 
