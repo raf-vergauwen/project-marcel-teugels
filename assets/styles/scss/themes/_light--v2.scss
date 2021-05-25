@@ -42,17 +42,18 @@
 // -  <<--------------------<< REGULAR COLORS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
-  @include define-color-hsl(false, --color-foreground, 240, 100%, 10%);
+  // #  <---------------| #003 - deep-dark-blue |--------------->
+  @include define-color-hsl(--color-foreground, 240, 100%, 10%, false);
 
   // #  <---------------| #f8f8ff : off-white |--------------->
-  @include define-color-hsl(false, --color-background, 240, 100%, 99%);
+  @include define-color-hsl(--color-background, 240, 100%, 99%, false);
 
   // #  <---------------| #022e51 : dark-mid-blue |--------------->
-  @include define-color-hsl(true, --color-primary, 207, 95%, 16%);
+  @include define-color-hsl(--color-primary, 207, 95%, 16%, true);
 
   // #  <---------------| #4676b9 : light-mid-blue |--------------->
-  @include define-color-hsl(true, --color-secondary, 215, 45%, 50%);
+  @include define-color-hsl(--color-secondary, 215, 45%, 50%, true);
 
   // #  <---------------| #b78846 : mid-goldbrown |--------------->
-  @include define-color-hsl(true, --color-tertiary, 35, 45%, 50%);
+  @include define-color-hsl(--color-tertiary, 35, 45%, 50%, true);
 }
