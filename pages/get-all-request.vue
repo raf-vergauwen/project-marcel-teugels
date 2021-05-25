@@ -2,9 +2,9 @@
   <section id="app">
     <ul class="request-list">
       <li
-        class="request-item"
         v-for="request in requestData.data"
         :key="request.name"
+        class="request-item"
         style="list-style-type: none"
       >
         {{ request.name }}
@@ -33,18 +33,13 @@ export default {
   },
   methods: {
     fetchRequest() {
-      fetch('http://157.230.126.154/items/user_requests?=*.*', {
+      this.$axios('items/user_requests?=*.*', {
         method: 'GET',
+        headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not fetch user requests');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          this.requestData = data;
+          console.log(response);
+          this.requestData = response.data.data;
         })
         .catch((err) => {
           console.error(err);
@@ -58,7 +53,7 @@ export default {
 body {
   display: flex;
   width: 100vw;
-  justify-content:center;
+  justify-content: center;
   background-color: silver;
 }
 

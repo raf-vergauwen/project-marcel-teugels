@@ -58,19 +58,13 @@ export default {
   },
   methods: {
     fetchItems() {
-      return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
+      this.$axios('items/products?fields=*,images.*', {
         method: 'GET',
         headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('Error');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          this.productData = data.data;
+          console.log(response);
+          this.productData = response.data.data;
           this.Admin = this.user_role;
         })
         .catch((err) => {
