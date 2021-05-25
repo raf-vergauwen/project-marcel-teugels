@@ -7,6 +7,7 @@ indent_size = 2
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
+# Temporary fix to annoying 
 insert_final_newline = false
 
 [*.md]

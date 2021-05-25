@@ -79,10 +79,146 @@ html {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
+/* -------------------------------------------------------------------------- *\
+*  _light--v1.scss: This partial file contains the 'light--v1' theme.
+\* -------------------------------------------------------------------------- */
+:root,
+[data-theme='light--v1'] {
+  /*  #  Transparant */
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
+  /* #  Main */
+  /* #  <---------------| --color-foreground: Group |---------------> */
+  --color-foreground--hue: 0;
+  --color-foreground--saturation: 3.4%;
+  --color-foreground--lightness: 5.7%;
+  --color-foreground: #0f0e0e;
+  /* #  <---------------| --color-background: Group |---------------> */
+  --color-background--hue: 0;
+  --color-background--saturation: 11.1%;
+  --color-background--lightness: 96.5%;
+  --color-background: #f7f5f5;
+  /* #  <---------------| --color-primary: Group |---------------> */
+  --color-primary--hue: 207.4;
+  --color-primary--saturation: 47.9%;
+  --color-primary--lightness: 14.3%;
+  --color-primary--lightest: #5a6772;
+  --color-primary--lighter: #42515e;
+  --color-primary--light: #2b3c4a;
+  --color-primary: #132636;
+  --color-primary--dark: #112231;
+  --color-primary--darker: #0f1e2b;
+  --color-primary--darkest: #0d1b26;
+  /* #  <---------------| --color-secondary: Group |---------------> */
+  --color-secondary--hue: 213.9;
+  --color-secondary--saturation: 41.1%;
+  --color-secondary--lightness: 78%;
+  --color-secondary--lightest: #c8d6e8;
+  --color-secondary--lighter: #c0d0e5;
+  --color-secondary--light: #b8cae1;
+  --color-secondary: lightsteelblue;
+  --color-secondary--dark: #9eb0c8;
+  --color-secondary--darker: #8d9db2;
+  --color-secondary--darkest: #7b899b;
+  /* #  <---------------| --color-tertiary: Group |---------------> */
+  --color-tertiary--hue: 37;
+  --color-tertiary--saturation: 39.9%;
+  --color-tertiary--lightness: 64.1%;
+  --color-tertiary--lightest: #d8c5a5;
+  --color-tertiary--lighter: #d3bd99;
+  --color-tertiary--light: #cdb48c;
+  --color-tertiary: #c8ac7f;
+  --color-tertiary--dark: #b49b72;
+  --color-tertiary--darker: #a08a66;
+  --color-tertiary--darkest: #8c7859;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< LIGHT V2 >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< VISUAL >>-------------------->>
+\* -------------------------------------------------------------------------- */
+:root,
+[data-theme='light--v2'] {
+  /* ------------------------------------------------------------------------ *\
+// -  <<--------------------<< TRANSPARANT BG COLORS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
+  --selection: #9e9e9e;
+  --text-main: #363636;
+  --text-bright: #000;
+  --text-muted: #70777f;
+  --links: #0076d1;
+  --focus: #0096bfab;
+  --border: #dbdbdb;
+  --code: #000;
+  --animation-duration: 0.1s;
+  --button-hover: #ddd;
+  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
+  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
+  --form-placeholder: #949494;
+  --form-text: #000;
+  --variable: #39a33c;
+  --highlight: #ff0;
+  --select-arrow: svg-load('./assets/select-arrow.svg', fill: #161f27);
+  /* ------------------------------------------------------------------------ *\
+// -  <<--------------------<< REGULAR COLORS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+  /* #  <---------------| --color-foreground: Group |---------------> */
+  --color-foreground--hue: 240;
+  --color-foreground--saturation: 100%;
+  --color-foreground--lightness: 10%;
+  --color-foreground: #000033;
+  /* #  <---------------| --color-background: Group |---------------> */
+  --color-background--hue: 240;
+  --color-background--saturation: 100%;
+  --color-background--lightness: 99%;
+  --color-background: #fafaff;
+  /* #  <---------------| --color-primary: Group |---------------> */
+  --color-primary--hue: 207;
+  --color-primary--saturation: 95%;
+  --color-primary--lightness: 16%;
+  --color-primary--lightest: #4e6c84;
+  --color-primary--lighter: #355773;
+  --color-primary--light: #1b4261;
+  --color-primary: #022d50;
+  --color-primary--dark: #022848;
+  --color-primary--darker: #022440;
+  --color-primary--darkest: #011f38;
+  /* #  <---------------| --color-secondary: Group |---------------> */
+  --color-secondary--hue: 215;
+  --color-secondary--saturation: 45%;
+  --color-secondary--lightness: 50%;
+  --color-secondary--lightest: #7e9fce;
+  --color-secondary--lighter: #6b91c7;
+  --color-secondary--light: #5984c0;
+  --color-secondary: #4676b9;
+  --color-secondary--dark: #3f6aa6;
+  --color-secondary--darker: #385e94;
+  --color-secondary--darkest: #315381;
+  /* #  <---------------| --color-tertiary: Group |---------------> */
+  --color-tertiary--hue: 35;
+  --color-tertiary--saturation: 45%;
+  --color-tertiary--lightness: 50%;
+  --color-tertiary--lightest: #ceac7e;
+  --color-tertiary--lighter: #c7a16b;
+  --color-tertiary--light: #c09559;
+  --color-tertiary: #b98946;
+  --color-tertiary--dark: #a67b3f;
+  --color-tertiary--darker: #946e38;
+  --color-tertiary--darkest: #816031;
 }
 
 div,
@@ -238,23 +374,52 @@ template {
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-// +  <<--------------------<< MODERN-NORMALIZE >>-------------------->>
+*  <<--------------------<< NORMALIZE >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// +  <<--------------------<< LAYOUT TAGS >>-------------------->>
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-*  <<--------------------<< ROOT TAGS >>-------------------->>
+// *  <<--------------------<< ROOT >>-------------------->>
 \* -------------------------------------------------------------------------- */
 * {
   padding: 0;
   border: 0;
   margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 html {
   font-size: 1rem;
   font-size: clamp(1rem, 0rem + 2.5vw, 1.5rem);
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
+html::-webkit-scrollbar {
+  width: calc(0.5rem + 0.25rem);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-tertiary);
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.75));
+}
+
+html::-webkit-scrollbar-track {
+  background: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
+}
+
+html {
+  scrollbar-face-color: var(--color-tertiary);
+  scrollbar-track-color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -266,23 +431,15 @@ body {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 
 /* -------------------------------------------------------------------------- *\
-*  <<--------------------<< MAIN SECTIONING TAGS >>-------------------->>
+// *  <<--------------------<< SECTIONING >>-------------------->>
 \* -------------------------------------------------------------------------- */
-header {
-  padding: 0.5rem;
-}
-
-article {
-  padding: 0.5rem;
-}
-
-aside {
-  padding: 0.5rem;
-}
-
+/* -------------------------------------------------------------------------- *\
+-  <<--------------------<< MAIN SECTIONING >>-------------------->>
+\* -------------------------------------------------------------------------- */
 nav {
   width: 100%;
   height: auto;
@@ -290,43 +447,33 @@ nav {
   padding: 0.5rem;
 }
 
+article {
+  padding: 0.5rem;
+}
+
 section {
+  padding: 0.5rem;
+}
+
+aside {
+  padding: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+-  <<--------------------<< SUB SECTIONING >>-------------------->>
+\* -------------------------------------------------------------------------- */
+header {
   padding: 0.5rem;
 }
 
 footer {
   padding: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
 }
 
 /* -------------------------------------------------------------------------- *\
--  MEDIA TAGS
-\* -------------------------------------------------------------------------- */
-svg {
-  width: 100%;
-  height: auto;
-  color: var(--color-foreground);
-  fill: var(--color-foreground);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  background-color: var(--bg-color--transparant---softest);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-/* -------------------------------------------------------------------------- *\
-// +  <<--------------------<< TYPOGRAPHY >>-------------------->>
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  HEADINGS
+*  <<--------------------<< HEADING >>-------------------->>
 \* -------------------------------------------------------------------------- */
 h1 {
   padding: 2rem 0.5rem;
@@ -437,11 +584,14 @@ h6 + p::first-letter {
 }
 
 /* -------------------------------------------------------------------------- *\
--  BLOCK TEXT CONTENT
+// *  <<--------------------<< BLOCK TEXT >>-------------------->>
 \* -------------------------------------------------------------------------- */
-p,
-li,
-blockquote,
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< DESCRIPTION >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< FIGURE >>-------------------->>
+\* -------------------------------------------------------------------------- */
 figcaption {
   padding: 0.25rem 0;
   color: var(--color-foreground);
@@ -455,25 +605,142 @@ figcaption {
   text-transform: none;
 }
 
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< LISTS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+li {
+  padding: 0.25rem 0;
+  list-style-type: none;
+  color: var(--color-foreground);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< OTHER >>-------------------->>
+\* -------------------------------------------------------------------------- */
+blockquote {
+  border-left: 4px solid var(--focus);
+  margin: 1.5em 0;
+  font-style: italic;
+  padding: 0.25rem 0;
+  color: var(--color-foreground);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+blockquote > footer {
+  font-style: normal;
+  border: 0;
+}
+
+blockquote cite {
+  font-style: normal;
+}
+
 hr {
   width: 100%;
-  height: 0.25rem;
+  height: calc(2px / 2);
   border: 0;
   margin: 0.5rem auto;
   background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75)), color-stop(hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
   background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.75), hsla(var(--color-foreground-h), var(--color-foreground-s), var(--color-foreground-l), 0.5), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
 
-li {
+p {
   padding: 0.25rem 0;
-  list-style-type: none;
+  color: var(--color-foreground);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+pre > code {
+  padding: 0.5rem;
+  display: block;
+  overflow-x: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 /* -------------------------------------------------------------------------- *\
--  INLINE TEXT SEMANTICS
+// *  <<--------------------<< INLINE TEXT >>-------------------->>
 \* -------------------------------------------------------------------------- */
-a,
-button {
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< VISUAL >>-------------------->>
+\* -------------------------------------------------------------------------- */
+b {
+  font-weight: 600;
+}
+
+code {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+kbd {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-main);
+  padding: 2px 4px 2px 4px;
+}
+
+mark {
+  background-color: var(--highlight);
+  border-radius: 2px;
+  padding: 0 2px 0 2px;
+  color: #000;
+}
+
+samp {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+strong {
+  color: var(--text-bright);
+  font-weight: 600;
+}
+
+var {
+  color: var(--variable);
+  font-style: normal;
+  font-family: monospace;
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< FUNCTIONAL >>-------------------->>
+\* -------------------------------------------------------------------------- */
+a {
   padding: 0.25rem 0;
   color: var(--color-primary);
   font-family: "Montserrat", monospace;
@@ -486,15 +753,570 @@ button {
   text-transform: none;
 }
 
-a:hover,
-button:hover {
+a::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: '';
+  -webkit-transition: width 0s ease, background 0.35s ease;
+  transition: width 0s ease, background 0.35s ease;
+}
+
+a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-foreground);
+  content: '';
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+a:hover {
   color: var(--color-secondary);
 }
 
-a i,
+a:hover::before {
+  width: 100%;
+  background: var(--color-tertiary);
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+a i {
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+q {
+  border-left: 4px solid var(--focus);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+q::before {
+  content: none;
+}
+
+q::after {
+  content: none;
+}
+
+time {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< MULTIMEDIA >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< REGULAR >>-------------------->>
+\* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  height: auto;
+  background-color: var(--bg-color--transparant---softest);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< COMPLEX >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< SPECIAL >>-------------------->>
+\* -------------------------------------------------------------------------- */
+svg {
+  width: 100%;
+  height: auto;
+  color: var(--color-foreground);
+  fill: var(--color-foreground);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* -------------------------------------------------------------------------- *\
+*  <<--------------------<< TABLE >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< MAIN PARENT >>-------------------->>
+\* -------------------------------------------------------------------------- */
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< PARENTS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+thead {
+  border-bottom: 1px solid var(--border);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--background);
+}
+
+tbody tr:nth-child(even) button {
+  background-color: var(--background-alt);
+}
+
+tbody tr:nth-child(even) button:hover {
+  background-color: var(--color-background);
+}
+
+tfoot {
+  border-top: 1px solid var(--border);
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< CHILDREN >>-------------------->>
+\* -------------------------------------------------------------------------- */
+th {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  font-weight: 600;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+td {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< FORMS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< MAIN PARENT >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< PARENTS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+fieldset {
+  border: 1px var(--focus) solid;
+  border-radius: 6px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+select {
+  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  cursor: pointer;
+  display: block;
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+select[multiple] {
+  padding-right: 10px;
+  background-image: none;
+  overflow-y: auto;
+}
+
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+select:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--focus);
+          box-shadow: 0 0 0 2px var(--focus);
+}
+
+select:not([type='checkbox']):not([type='radio']) {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< CHILDREN >>-------------------->>
+\* -------------------------------------------------------------------------- */
+button {
+  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+  position: relative;
+  top: 0;
+  padding: 0.25rem;
+  border-top: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.22));
+  border-bottom: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.2));
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1)) 100%);
+  border-radius: 8px;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
+  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
+  -webkit-transition: all 0.06s ease-out;
+  transition: all 0.06s ease-out;
+  background-color: var(--background);
+  border: none;
+  outline: none;
+  font-family: "Montserrat", monospace;
+  font-size: 1.25rem;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: 1.5;
+  text-decoration: none;
+  text-transform: none;
+}
+
+button:visited {
+  color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.9));
+}
+
+button:first-of-type {
+  margin-left: 0;
+}
+
+button:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--focus);
+          box-shadow: 0 0 0 2px var(--focus);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:hover {
+  color: var(--color-secondary);
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07)) 100%);
+}
+
+button:active {
+  top: 6px;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
+}
+
+button::before {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  right: 0;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2rem;
+  background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+  content: '';
+  -webkit-transition: all 0.078s ease-out;
+  transition: all 0.078s ease-out;
+}
+
 button i {
   margin-right: 0.5rem;
   text-align: center;
+}
+
+input {
+  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  cursor: pointer;
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  vertical-align: top;
+}
+
+input[type='submit'] {
+  padding-right: 30px;
+  padding-left: 30px;
+  background: var(--button-hover);
+}
+
+input[type='submit']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input[type='reset'] {
+  padding-right: 30px;
+  padding-left: 30px;
+  background: var(--button-hover);
+}
+
+input[type='reset']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input[type='checkbox'] {
+  min-height: 2rem;
+  padding: 8px;
+}
+
+input[type='checkbox']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input[type='range'] {
+  margin: 10px 0;
+  padding: 10px 0;
+  background: transparent;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9.5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: var(--background);
+  border-radius: 3px;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: var(--background);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
+          box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--border);
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type='range']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input[type='radio'] {
+  border-radius: 100%;
+}
+
+input[type='radio']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input[type='color'] {
+  min-height: 2rem;
+  padding: 8px;
+}
+
+input[type='button'] {
+  padding-right: 30px;
+  padding-left: 30px;
+  background: var(--button-hover);
+}
+
+input[type='button']:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+input:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--focus);
+          box-shadow: 0 0 0 2px var(--focus);
+}
+
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+  display: block;
+}
+
+label {
+  vertical-align: middle;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+legend {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+textarea {
+  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
+  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  cursor: pointer;
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  display: block;
+  margin-right: 0;
+}
+
+textarea:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--focus);
+          box-shadow: 0 0 0 2px var(--focus);
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--form-placeholder);
+}
+
+textarea:-ms-input-placeholder {
+  color: var(--form-placeholder);
+}
+
+textarea::-ms-input-placeholder {
+  color: var(--form-placeholder);
+}
+
+textarea::placeholder {
+  color: var(--form-placeholder);
+}
+
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< INTERACTIVE >>-------------------->>
+\* -------------------------------------------------------------------------- */
+details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: var(--background-alt);
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+dialog {
+  background-color: var(--background-alt);
+  color: var(--text-main);
+  border: none;
+  border-radius: 6px;
+  border-color: var(--border);
+  padding: 10px 30px;
+}
+
+dialog > header:first-child {
+  background-color: var(--background);
+  border-radius: 6px 6px 0 0;
+  margin: -10px -30px 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+dialog::-webkit-backdrop {
+  background: #0000009c;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+dialog::backdrop {
+  background: #0000009c;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 /* ========================================================================== *\
@@ -1296,85 +2118,4 @@ input:checked + .slider::before {
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`
 \* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _light--v1.scss: This partial file contains the 'light--v1' theme.
-\* -------------------------------------------------------------------------- */
-:root,
-[data-theme='light--v1'] {
-  /*  #  Transparant */
-  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
-  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
-  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
-  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
-  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
-  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
-  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
-  /* #  Main */
-  /* Color-Group */
-  --color-foreground: hsl(0, 3.4%, 5.7%);
-  --color-foreground-h: 0;
-  --color-foreground-s: 3.4%;
-  --color-foreground-l: 5.7%;
-  /* Color-Group */
-  --color-background: hsl(0, 11.1%, 96.5%);
-  --color-background-h: 0;
-  --color-background-s: 11.1%;
-  --color-background-l: 96.5%;
-  /* Color-Group */
-  --color-primary: hsl(207.4, 47.9%, 14.3%);
-  --color-primary-h: 207.4;
-  --color-primary-s: 47.9%;
-  --color-primary-l: 14.3%;
-  /* Color-Group */
-  --color-secondary: hsl(213.9, 41.1%, 78%);
-  --color-secondary-h: 213.9;
-  --color-secondary-s: 41.1%;
-  --color-secondary-l: 78%;
-  /* Color-Group */
-  --color-tertiary: hsl(37, 39.9%, 64.1%);
-  --color-tertiary-h: 37;
-  --color-tertiary-s: 39.9%;
-  --color-tertiary-l: 64.1%;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _light--v2.scss: This partial file contains the 'light--v2' theme.
-\* -------------------------------------------------------------------------- */
-:root,
-[data-theme='light--v2'] {
-  /*  #  Transparant */
-  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
-  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
-  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
-  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
-  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
-  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
-  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
-  /* #  Main */
-  /* Color-Group */
-  --color-foreground: hsl(240, 100%, 10%);
-  --color-foreground-h: 240;
-  --color-foreground-s: 100%;
-  --color-foreground-l: 10%;
-  /* Color-Group */
-  --color-background: hsl(240, 100%, 99%);
-  --color-background-h: 240;
-  --color-background-s: 100%;
-  --color-background-l: 99%;
-  /* Color-Group */
-  --color-primary: hsl(207, 95%, 16%);
-  --color-primary-h: 207;
-  --color-primary-s: 95%;
-  --color-primary-l: 16%;
-  /* Color-Group */
-  --color-secondary: hsl(215, 45%, 50%);
-  --color-secondary-h: 215;
-  --color-secondary-s: 45%;
-  --color-secondary-l: 50%;
-  /* Color-Group */
-  --color-tertiary: hsl(35, 45%, 50%);
-  --color-tertiary-h: 35;
-  --color-tertiary-s: 45%;
-  --color-tertiary-l: 50%;
-}
 /*# sourceMappingURL=main.css.map */

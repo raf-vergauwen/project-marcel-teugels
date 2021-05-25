@@ -104,8 +104,6 @@
     ],
     "bracket-pair-colorizer-2.colors": ["White", "Silver", "LightSlateGray"],
     "bracket-pair-colorizer-2.highlightActiveScope": true,
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
     "css.styleSheets": [],
     "diffEditor.codeLens": true,
     "editor.acceptSuggestionOnEnter": "off",

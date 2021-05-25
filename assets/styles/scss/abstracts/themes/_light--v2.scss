@@ -1,0 +1,58 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< LIGHT V2 >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< VISUAL >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+:root,
+[data-theme='light--v2'] {
+  /* ------------------------------------------------------------------------ *\
+// -  <<--------------------<< TRANSPARANT BG COLORS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
+
+  --selection: #9e9e9e;
+  --text-main: #363636;
+  --text-bright: #000;
+  --text-muted: #70777f;
+  --links: #0076d1;
+  --focus: #0096bfab;
+  --border: #dbdbdb;
+  --code: #000;
+  --animation-duration: 0.1s;
+  --button-hover: #ddd;
+  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
+  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
+  --form-placeholder: #949494;
+  --form-text: #000;
+  --variable: #39a33c;
+  --highlight: #ff0;
+  --select-arrow: svg-load('./assets/select-arrow.svg', fill: #161f27);
+
+  /* ------------------------------------------------------------------------ *\
+// -  <<--------------------<< REGULAR COLORS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+  @include define-color-hsl(false, --color-foreground, 240, 100%, 10%);
+
+  // #  <---------------| #f8f8ff : off-white |--------------->
+  @include define-color-hsl(false, --color-background, 240, 100%, 99%);
+
+  // #  <---------------| #022e51 : dark-mid-blue |--------------->
+  @include define-color-hsl(true, --color-primary, 207, 95%, 16%);
+
+  // #  <---------------| #4676b9 : light-mid-blue |--------------->
+  @include define-color-hsl(true, --color-secondary, 215, 45%, 50%);
+
+  // #  <---------------| #b78846 : mid-goldbrown |--------------->
+  @include define-color-hsl(true, --color-tertiary, 35, 45%, 50%);
+}

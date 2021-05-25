@@ -7,27 +7,29 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <dl> |--------------->
- {
-}
 
 // #  <---------------| <dt> |--------------->
- {
-}
 
 // #  <---------------| <dd> |--------------->
- {
-}
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< FIGURE >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <figure> |--------------->
- {
-}
 
 // #  <---------------| <figcaption> |--------------->
- {
+figcaption {
+  padding: $buffer--xs 0;
+  color: var(--color-foreground);
+  font-family: $font-family--text;
+  font-size: $font-size--1;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -35,17 +37,22 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <ol> |--------------->
- {
-}
 
 // #  <---------------| <ul> |--------------->
- {
-}
 
 // #  <---------------| <li> |--------------->
 li {
   padding: $buffer--xs 0;
   list-style-type: none;
+  color: var(--color-foreground);
+  font-family: $font-family--text;
+  font-size: $font-size--1;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -53,8 +60,6 @@ li {
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <div> |--------------->
- {
-}
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< OTHER >>-------------------->>
@@ -64,8 +69,18 @@ li {
 blockquote {
   border-left: 4px solid var(--focus);
   margin: 1.5em 0;
-  padding: 0.5em 1em;
   font-style: italic;
+
+  padding: $buffer--xs 0;
+  color: var(--color-foreground);
+  font-family: $font-family--text;
+  font-size: $font-size--1;
+  font-variant: $font-variant--text;
+  font-weight: $font-weight--text;
+  letter-spacing: $letter-spacing--text;
+  line-height: $line-height--text;
+  text-align: $text-align--text;
+  text-transform: $text-transform--text;
 
   & > footer {
     font-style: normal;

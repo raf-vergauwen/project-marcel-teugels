@@ -57,7 +57,7 @@
     "yzane.markdown-pdf",
     "bierner.markdown-mermaid",
     "mdickin.markdown-shortcuts",
-    "alanwalk.markdown-toc",
+    // "alanwalk.markdown-toc",
     "goessner.mdmath",
 
     // Optional Suggested Big
@@ -72,6 +72,6 @@
     "ecmel.vscode-html-css",
     "gera2ld.markmap-vscode",
     "bengreenier.vscode-node-readme",
-    "hediet.debug-visualizer",
+    "hediet.debug-visualizer"
   ]
 }
