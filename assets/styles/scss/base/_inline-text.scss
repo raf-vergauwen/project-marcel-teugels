@@ -13,7 +13,12 @@
 }
 
 // #  <---------------| <code> |--------------->
- {
+code {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 // #  <---------------| <em> |--------------->
@@ -25,7 +30,12 @@
 }
 
 // #  <---------------| <kbd> |--------------->
- {
+kbd {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-main);
+  padding: 2px 4px 2px 4px;
 }
 
 // #  <---------------| <mark> |--------------->
@@ -37,7 +47,12 @@
 }
 
 // #  <---------------| <samp> |--------------->
- {
+samp {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 // #  <---------------| <small> |--------------->
@@ -61,7 +76,10 @@
 }
 
 // #  <---------------| <var> |--------------->
- {
+var {
+  color: var(--variable);
+  font-style: normal;
+  font-family: monospace;
 }
 
 // -  <---------------| Non-Semantic |--------------->
@@ -111,7 +129,12 @@
 }
 
 // #  <---------------| <time> |--------------->
- {
+time {
+  background: var(--background);
+  color: var(--code);
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 // #  <---------------| <wbr> |--------------->

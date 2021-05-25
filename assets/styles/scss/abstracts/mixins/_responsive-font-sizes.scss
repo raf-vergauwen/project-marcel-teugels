@@ -16,3 +16,8 @@
     #{if($min-value > $max-value, $min-value, $max-value)}
   );
 }
+
+// -  <---------------| Text-Rendering |--------------->
+@mixin text-rendering-mode($mode) {
+  text-rendering: $mode;
+}

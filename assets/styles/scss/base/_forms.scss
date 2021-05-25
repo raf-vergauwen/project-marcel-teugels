@@ -7,7 +7,7 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <form> |--------------->
- {
+form {
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -19,7 +19,12 @@
 }
 
 // #  <---------------| <fieldset> |--------------->
- {
+fieldset {
+  border: 1px var(--focus) solid;
+  border-radius: 6px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 10px;
 }
 
 // #  <---------------| <optgroup> |--------------->
@@ -27,7 +32,39 @@
 }
 
 // #  <---------------| <select> |--------------->
- {
+select {
+  @include click-transition--small;
+
+  display: block;
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  &[multiple] {
+    padding-right: 10px;
+    background-image: none;
+    overflow-y: auto;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  &:not([type='checkbox']):not([type='radio']) {
+    display: block;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -35,37 +72,178 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <button> |--------------->
- {
+button {
+  @include click-transition--small;
+
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
 // #  <---------------| <input> |--------------->
- {
+input {
+  @include click-transition--small;
+
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  vertical-align: top;
+
+  &[type='submit'] {
+    padding-right: 30px;
+    padding-left: 30px;
+    background: var(--button-hover);
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &[type='reset'] {
+    padding-right: 30px;
+    padding-left: 30px;
+    background: var(--button-hover);
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &[type='checkbox'] {
+    min-height: 2rem;
+    padding: 8px;
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &[type='range'] {
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &[type='radio'] {
+    border-radius: 100%;
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &[type='color'] {
+    min-height: 2rem;
+    padding: 8px;
+  }
+
+  &[type='button'] {
+    padding-right: 30px;
+    padding-left: 30px;
+    background: var(--button-hover);
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:not([type='checkbox']):not([type='radio']) {
+    display: block;
+  }
 }
 
 // #  <---------------| <label> |--------------->
- {
+label {
+  vertical-align: middle;
+  margin-bottom: 4px;
+  display: inline-block;
 }
 
 // #  <---------------| <legend> |--------------->
- {
+legend {
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 // #  <---------------| <meter> |--------------->
- {
+meter {
 }
 
 // #  <---------------| <option> |--------------->
- {
+option {
 }
 
 // #  <---------------| <output> |--------------->
- {
+output {
 }
 
 // #  <---------------| <progress> |--------------->
- {
+progress {
 }
 
 // #  <---------------| <textarea> |--------------->
- {
+textarea {
+  @include click-transition--small;
+
+  color: var(--form-text);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  display: block;
+  margin-right: 0;
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  &::placeholder {
+    color: var(--form-placeholder);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }

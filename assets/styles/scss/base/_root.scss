@@ -33,6 +33,8 @@ body {
 
   // # Lifesaving Scrollbar hack!
   overflow-x: hidden;
+
+  @include text-rendering-mode(optimizeLegibility);
 }
 
 // #  <---------------| <main> |--------------->

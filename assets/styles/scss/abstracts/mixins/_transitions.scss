@@ -4,7 +4,7 @@
 
 // *  <<--------------------<< GENERIC >>-------------------->>
 
-// -  <---------------| General-Transition |--------------->
+// -  <---------------| General Transition |--------------->
 @mixin general-transition(
   $property: all,
   $duration: 0.25s,
@@ -31,4 +31,14 @@
 // -  <---------------| Box-Transition |--------------->
 @mixin box-transition {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+// -  <---------------| Click-Transition--Small |--------------->
+@mixin click-transition--small {
+  transition: background-color var(--animation-duration) linear,
+    border-color var(--animation-duration) linear,
+    color var(--animation-duration) linear,
+    box-shadow var(--animation-duration) linear,
+    transform var(--animation-duration) ease;
+  cursor: pointer;
 }
