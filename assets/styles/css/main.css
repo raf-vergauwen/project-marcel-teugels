@@ -228,12 +228,12 @@ template {
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+*  <<--------------------<< MODERN NORMALIZE >>-------------------->>
+\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  <<--------------------<< NORMALIZE >>-------------------->>
-\* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< ROOT >>-------------------->>
 \* -------------------------------------------------------------------------- */
@@ -865,9 +865,6 @@ button {
   text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
   -webkit-transition: all 0.06s ease-out;
   transition: all 0.06s ease-out;
-  background-color: var(--background);
-  border: none;
-  outline: none;
   font-family: "Montserrat", monospace;
   font-size: 1.25rem;
   font-variant: normal;
@@ -905,6 +902,12 @@ button:hover {
 button:active {
   top: 6px;
   color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
+}
+
+button:active::before {
+  top: 0;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
 }
 
 button::before {
@@ -1086,7 +1089,6 @@ textarea {
   border-radius: 6px;
   outline: none;
   display: block;
-  margin-right: 0;
 }
 
 textarea:focus {
@@ -1994,8 +1996,6 @@ input:checked + .slider::before {
   --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
   --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
   --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
-  --selection: #9e9e9e;
-  --text-main: #363636;
   --text-bright: #000;
   --text-muted: #70777f;
   --links: #0076d1;
@@ -2004,8 +2004,6 @@ input:checked + .slider::before {
   --code: #000;
   --animation-duration: 0.1s;
   --button-hover: #ddd;
-  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
-  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
   --form-placeholder: #949494;
   --form-text: #000;
   --variable: #39a33c;
@@ -2014,48 +2012,51 @@ input:checked + .slider::before {
   /* ------------------------------------------------------------------------ *\
 // -  <<--------------------<< REGULAR COLORS >>-------------------->>
 \* -------------------------------------------------------------------------- */
-  /* #  <---------------| --color-foreground: Group |---------------> */
+  /* #  <---------------| foreground-Palette |---------------> */
   --color-foreground-hue: 240;
   --color-foreground-saturation: 100%;
   --color-foreground-lightness: 10%;
-  --color-foreground: #000033;
-  /* #  <---------------| --color-background: Group |---------------> */
+  --color-foreground: tint(hsl($hue, $saturate, $lightness), 0%);
+  /* #  <---------------| background-Palette |---------------> */
   --color-background-hue: 240;
   --color-background-saturation: 100%;
-  --color-background-lightness: 99%;
-  --color-background: #fafaff;
-  /* #  <---------------| --color-primary: Group |---------------> */
-  --color-primary-hue: 207;
-  --color-primary-saturation: 95%;
-  --color-primary-lightness: 16%;
-  --color-primary-lightest: #4e6c84;
-  --color-primary-lighter: #355773;
-  --color-primary-light: #1b4261;
-  --color-primary: #022d50;
-  --color-primary-dark: #022848;
-  --color-primary-darker: #022440;
-  --color-primary-darkest: #011f38;
-  /* #  <---------------| --color-secondary: Group |---------------> */
+  --color-background-lightness: 98.6%;
+  --color-background: tint(hsl($hue, $saturate, $lightness), 0%);
+  /* #  <---------------| primary-Palette |---------------> */
+  --color-primary-hue: 206.6;
+  --color-primary-saturation: 95.2%;
+  --color-primary-lightness: 16.3%;
+  /* #  <----------| primary-Variants |----------> */
+  --color-primary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
+  --color-primary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
+  --color-primary-light: tint(hsl($hue, $saturate, $lightness), 10%);
+  --color-primary: tint(hsl($hue, $saturate, $lightness), 0%);
+  --color-primary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
+  --color-primary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
+  --color-primary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
+  /* #  <---------------| secondary-Palette |---------------> */
   --color-secondary-hue: 215;
-  --color-secondary-saturation: 45%;
+  --color-secondary-saturation: 45.1%;
   --color-secondary-lightness: 50%;
-  --color-secondary-lightest: #7e9fce;
-  --color-secondary-lighter: #6b91c7;
-  --color-secondary-light: #5984c0;
-  --color-secondary: #4676b9;
-  --color-secondary-dark: #3f6aa6;
-  --color-secondary-darker: #385e94;
-  --color-secondary-darkest: #315381;
-  /* #  <---------------| --color-tertiary: Group |---------------> */
+  /* #  <----------| secondary-Variants |----------> */
+  --color-secondary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
+  --color-secondary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
+  --color-secondary-light: tint(hsl($hue, $saturate, $lightness), 10%);
+  --color-secondary: tint(hsl($hue, $saturate, $lightness), 0%);
+  --color-secondary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
+  --color-secondary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
+  --color-secondary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
+  /* #  <---------------| tertiary-Palette |---------------> */
   --color-tertiary-hue: 35;
-  --color-tertiary-saturation: 45%;
-  --color-tertiary-lightness: 50%;
-  --color-tertiary-lightest: #ceac7e;
-  --color-tertiary-lighter: #c7a16b;
-  --color-tertiary-light: #c09559;
-  --color-tertiary: #b98946;
-  --color-tertiary-dark: #a67b3f;
-  --color-tertiary-darker: #946e38;
-  --color-tertiary-darkest: #816031;
+  --color-tertiary-saturation: 44.7%;
+  --color-tertiary-lightness: 49.6%;
+  /* #  <----------| tertiary-Variants |----------> */
+  --color-tertiary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
+  --color-tertiary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
+  --color-tertiary-light: tint(hsl($hue, $saturate, $lightness), 10%);
+  --color-tertiary: tint(hsl($hue, $saturate, $lightness), 0%);
+  --color-tertiary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
+  --color-tertiary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
+  --color-tertiary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
 }
 /*# sourceMappingURL=main.css.map */

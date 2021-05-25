@@ -2,9 +2,8 @@
 // +  <<--------------------<< SCROLLBARS >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// -  <---------------| Scrollbar Style |--------------->
-@mixin scrollbar-style($size: $buffer--s, $color: var(--color-tertiary)) {
-  // For Google Chrome
+// -  <---------------| Scrollbar-Style |--------------->
+@mixin scrollbar-style($size, $color) {
   &::-webkit-scrollbar {
     width: $size;
   }
@@ -29,8 +28,8 @@
   }
 }
 
-// -  <---------------| Scrollbar Behaviour |--------------->
-@mixin scrollbar-function($behaviour: smooth, $type: y proximity) {
+// -  <---------------| Scrollbar-Behaviour |--------------->
+@mixin scrollbar-function($behaviour, $type) {
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: $behaviour;
   }

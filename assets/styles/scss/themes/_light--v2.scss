@@ -20,8 +20,8 @@
   --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
   --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
 
-  --selection: #9e9e9e;
-  --text-main: #363636;
+  // --selection: #9e9e9e;
+  // --text-main: #363636;
   --text-bright: #000;
   --text-muted: #70777f;
   --links: #0076d1;
@@ -30,8 +30,6 @@
   --code: #000;
   --animation-duration: 0.1s;
   --button-hover: #ddd;
-  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
-  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
   --form-placeholder: #949494;
   --form-text: #000;
   --variable: #39a33c;
@@ -42,18 +40,18 @@
 // -  <<--------------------<< REGULAR COLORS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
-  // #  <---------------| #003 - deep-dark-blue |--------------->
-  @include define-color-hsl(--color-foreground, 240, 100%, 10%, false);
+  // #  <---------------| #000033 : Black Rock Variant |--------------->
+  @include color-palette('foreground', 240, 100%, 10%, false);
 
-  // #  <---------------| #f8f8ff : off-white |--------------->
-  @include define-color-hsl(--color-background, 240, 100%, 99%, false);
+  // #  <---------------| #f8f8ff : White Lilac Variant |--------------->
+  @include color-palette('background', 240, 100%, 98.6%, false);
 
-  // #  <---------------| #022e51 : dark-mid-blue |--------------->
-  @include define-color-hsl(--color-primary, 207, 95%, 16%, true);
+  // #  <---------------| #022e51 : Prussian Blue Variant |--------------->
+  @include color-palette('primary', 206.6, 95.2%, 16.3%, true);
 
-  // #  <---------------| #4676b9 : light-mid-blue |--------------->
-  @include define-color-hsl(--color-secondary, 215, 45%, 50%, true);
+  // #  <---------------| #4676b9 : San Marino Variant |--------------->
+  @include color-palette('secondary', 215, 45.1%, 50%, true);
 
-  // #  <---------------| #b78846 : mid-goldbrown |--------------->
-  @include define-color-hsl(--color-tertiary, 35, 45%, 50%, true);
+  // #  <---------------| #b78846 : Driftwood Variant |--------------->
+  @include color-palette('tertiary', 35, 44.7%, 49.6%, true);
 }

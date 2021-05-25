@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// +  <<--------------------<< FORMS >>-------------------->>
+// -----------------------------------------------------------------------------
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< MAIN PARENT >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< PARENTS >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+@mixin button--base-style {
+  @include click-transition--small;
+  @include flex-container;
+
+  position: relative;
+  top: 0;
+  padding: $buffer--xs;
+  border-top: 1px solid lightness(var(--color-tertiary), 1.22);
+  border-bottom: 1px solid lightness(var(--color-tertiary), 1.2);
+  margin-bottom: $buffer--s;
+  margin-left: $buffer--s;
+  font-family: $font-family--link;
+  font-size: $font-size--2;
+  font-variant: $font-variant--link;
+  font-weight: $font-weight--link;
+  letter-spacing: $letter-spacing--link;
+  text-align: $line-height--link;
+  text-decoration: none;
+  text-transform: $text-transform--link;
+  background: linear-gradient(
+    to bottom,
+    adjust-hsl(var(--color-tertiary), 1, 1.35, 1.15) 0%,
+    adjust-hsl(var(--color-tertiary), 1, 1.15, 1.12) 26%,
+    adjust-hsl(var(--color-tertiary), 1, 1, 1) 100%
+  );
+  border-radius: $small-dimension--s;
+  color: lightness(var(--color-secondary), 0.9);
+  text-shadow: 0 -2px 0 lightness(var(--color-secondary), 0.8),
+    0 1px 1px lightness(var(--color-secondary), 1.2);
+  transition: all ($button--speed + s) $button--timing-function;
+
+  &:visited {
+    color: lightness(var(--color-tertiary), 0.9);
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      adjust-hsl(var(--color-tertiary), 1, 1.35, 1.22) 0%,
+      adjust-hsl(var(--color-tertiary), 1, 1.15, 1.19) 26%,
+      adjust-hsl(var(--color-tertiary), 1, 1, 1.07) 100%
+    );
+  }
+
+  &:active {
+    top: $button--depth + px;
+    color: lightness(var(--color-secondary), 1.45);
+
+    &::before {
+      top: 0;
+      box-shadow: $button--box-shadow---active;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: ($button--depth) + px;
+    right: 0;
+    left: 0;
+    display: inline-flex;
+    height: $button--height;
+    background: linear-gradient(
+      to top,
+      adjust-hsl(var(--color-secondary), 1, 1.15, 0.6) 0%,
+      adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px
+    );
+    border-radius: $small-dimension--s;
+    box-shadow: $button--box-shadow---before;
+    content: '';
+    transition: all (($button--speed * 1.3) + s) $button--timing-function;
+  }
+
+  i {
+    margin-right: $buffer--s;
+    text-align: center;
+  }
+}
+
+@mixin button--style-1 {
+}
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< CHILDREN >>-------------------->>
+\* -------------------------------------------------------------------------- */

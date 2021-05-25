@@ -4,9 +4,9 @@
 
 // -  <---------------| Import Generic Mixin Partials |--------------->
 @import 'mixins/breakpoints';
-@import 'mixins/define-color-hsl';
+@import 'mixins/color-palette';
 @import 'mixins/containers';
-@import 'mixins/responsive-font-sizes';
+@import 'mixins/typography';
 @import 'mixins/shadows';
 @import 'mixins/wireframes';
 @import 'mixins/transitions';

@@ -43,13 +43,13 @@ $center-me: 0 auto;
 
 // *  <<--------------------<< TYPOGRAPHY >>-------------------->>
 
-// -  <---------------| Rfs |--------------->
+// -  <---------------| font-sizes--responsive |--------------->
 
 // #  Responsive Font Scale
 $font-scale: 1.25;
 $font-size: 1rem; // 16px
 
-// -  <---------------| Font |--------------->
+// -  <---------------| Fonts |--------------->
 
 // #  Font-Size
 $font-size--1: $font-size; // 16px
@@ -135,7 +135,7 @@ $letter-spacing--link: normal;
 
 // *  <<--------------------<< APPEARANCE >>-------------------->>
 
-// -  <---------------| Shadows Colors |--------------->
+// -  <---------------| Shadows-Colors |--------------->
 
 // #  Component - Card
 $card--box-shadow---level-1: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -155,7 +155,7 @@ $caption--box-shadow---slide-in: 0 1px 3px 10px rgba(0, 0, 0, 0.12),
 $caption--box-shadow---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
   0 15px 12px 20px rgba(0, 0, 0, 0.22);
 
-// -  <---------------| Gradient Colors |--------------->
+// -  <---------------| Gradient-Colors |--------------->
 
 // #  linear-Gradient
 $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
@@ -171,7 +171,7 @@ $linear-gradient--combo: linear-gradient(
 // #  Radial-Gradient
 $radial-gradient--foreground: radial-gradient(#003, #000);
 
-// -  <---------------| Background Colors |--------------->
+// -  <---------------| Background-Colors |--------------->
 
 // #  White
 $bg-color--transparant-white---level-1: hsla(0, 0%, 100%, 0.25);
@@ -208,7 +208,7 @@ $bg-color--transparant-black---level-3: hsla(0, 0%, 0%, 0.55);
 $bg-color--transparant-black---level-4: hsla(0, 0%, 0%, 0.7);
 $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 
-// -  <---------------| Filter Colors |--------------->
+// -  <---------------| Filter-Colors |--------------->
 
 // #  Light Filter
 $filter--light: brightness(1.2) contrast(0.8);
@@ -218,7 +218,7 @@ $filter--light-blur: brightness(1.2) contrast(0.8) blur($buffer--xxs);
 $filter--dark: brightness(0.8) contrast(1.2);
 $filter--dark-blur: brightness(0.8) contrast(1.2) blur($buffer--xxs);
 
-// -  <<----------<< Other Colors >>---------->>
+// -  <<----------<< Other-Colors >>---------->>
 
 // #  Wireframe
 html {

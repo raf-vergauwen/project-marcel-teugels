@@ -97,12 +97,6 @@ button {
     margin-left: 0;
   }
 
-  background-color: var(--background);
-
-  border: none;
-
-  outline: none;
-
   &:focus {
     box-shadow: 0 0 0 2px var(--focus);
   }
@@ -135,10 +129,10 @@ button {
     top: $button--depth + px;
     color: lightness(var(--color-secondary), 1.45);
 
-    // &::before {
-    //   top: 0;
-    //   box-shadow: $button--box-shadow---active;
-    // }
+    &::before {
+      top: 0;
+      box-shadow: $button--box-shadow---active;
+    }
   }
 
   &::before {
@@ -320,7 +314,6 @@ textarea {
   outline: none;
 
   display: block;
-  margin-right: 0;
 
   &:focus {
     box-shadow: 0 0 0 2px var(--focus);

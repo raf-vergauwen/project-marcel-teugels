@@ -1,6 +1,3 @@
-//  #  main.scss : This is the main scss file which imports the rest of the scss
-//  #  files and compiles it into one css file in `css/main.css`.
-
 @charset "UTF-8";
 
 /* ========================================================================== *\
@@ -11,11 +8,12 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
+@import 'vendors/modern-normalize';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
-@import 'base/normalize';
+
 @import 'base/root';
 @import 'base/sectioning';
 @import 'base/heading';

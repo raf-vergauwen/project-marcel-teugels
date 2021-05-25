@@ -20,17 +20,17 @@
   /* #  Main */
 
   // #0f0e0e
-  @include define-color-hsl(--color-foreground, 0, 3.4%, 5.7%, false);
+  @include color-palette(--color-foreground, 0, 3.4%, 5.7%, false);
 
   // #f7f5f5
-  @include define-color-hsl(--color-background, 0, 11.1%, 96.5%, false);
+  @include color-palette(--color-background, 0, 11.1%, 96.5%, false);
 
   // #132636
-  @include define-color-hsl(--color-primary, 207.4, 47.9%, 14.3%, true);
+  @include color-palette(--color-primary, 207.4, 47.9%, 14.3%, true);
 
   // #b0c4de
-  @include define-color-hsl(--color-secondary, 213.9, 41.1%, 78%, true);
+  @include color-palette(--color-secondary, 213.9, 41.1%, 78%, true);
 
   // #c8ac7f
-  @include define-color-hsl(--color-tertiary, 37, 39.9%, 64.1%, true);
+  @include color-palette(--color-tertiary, 37, 39.9%, 64.1%, true);
 }
