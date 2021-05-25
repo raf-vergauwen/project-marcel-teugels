@@ -7,7 +7,11 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <table> |--------------->
- {
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+  table-layout: fixed;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -15,15 +19,28 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <thead> |--------------->
- {
+thead {
+  border-bottom: 1px solid var(--border);
 }
 
 // #  <---------------| <tbody> |--------------->
- {
+tbody {
+  tr:nth-child(even) {
+    background-color: var(--background);
+  }
+
+  tr:nth-child(even) button {
+    background-color: var(--background-alt);
+  }
+
+  tr:nth-child(even) button:hover {
+    background-color: var(--background-body);
+  }
 }
 
 // #  <---------------| <tfoot> |--------------->
- {
+tfoot {
+  border-top: 1px solid var(--border);
 }
 
 // #  <---------------| <colgroup> |--------------->
@@ -47,9 +64,20 @@
 }
 
 // #  <---------------| <th> |--------------->
- {
+th {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  font-weight: 600;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 // #  <---------------| <td> |--------------->
- {
+td {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  padding: 6px;
 }

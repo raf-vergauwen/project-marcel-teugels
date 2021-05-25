@@ -43,7 +43,9 @@
 }
 
 // #  <---------------| <li> |--------------->
- {
+li {
+  padding: $buffer--xs 0;
+  list-style-type: none;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -59,11 +61,61 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <blockquote> |--------------->
- {
+blockquote {
+  border-left: 4px solid var(--focus);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+
+  & > footer {
+    font-style: normal;
+    border: 0;
+  }
+
+  & cite {
+    font-style: normal;
+  }
 }
 
 // #  <---------------| <hr> |--------------->
- {
+hr {
+  width: 100%;
+  height: calc(#{$small-dimension--xxs} / 2);
+  border: 0;
+  margin: $buffer--s auto;
+  background-image: linear-gradient(
+    to right,
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.5
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.75
+    ),
+    hsla(
+      var(--color-foreground-h),
+      var(--color-foreground-s),
+      var(--color-foreground-l),
+      0.5
+    ),
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    )
+  );
 }
 
 // #  <---------------| <p> |--------------->
@@ -87,4 +139,9 @@ pre {
     display: block;
     overflow-x: auto;
   }
+}
+
+// #  <---------------| <address> |--------------->
+address {
+  font-style: normal;
 }

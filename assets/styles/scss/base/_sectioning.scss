@@ -41,4 +41,7 @@ header {
 // #  <---------------| <footer> |--------------->
 footer {
   padding: $buffer--s;
+
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
 }

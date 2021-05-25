@@ -9,7 +9,8 @@
 // -  <---------------| Semantic |--------------->
 
 // #  <---------------| <b> |--------------->
- {
+b {
+  font-weight: 600;
 }
 
 // #  <---------------| <code> |--------------->
@@ -39,7 +40,11 @@ kbd {
 }
 
 // #  <---------------| <mark> |--------------->
- {
+mark {
+  background-color: var(--highlight);
+  border-radius: 2px;
+  padding: 0 2px 0 2px;
+  color: #000;
 }
 
 // #  <---------------| <s> |--------------->
@@ -60,7 +65,9 @@ samp {
 }
 
 // #  <---------------| <strong> |--------------->
- {
+strong {
+  color: var(--text-bright);
+  font-weight: 600;
 }
 
 // #  <---------------| <sub> |--------------->
@@ -93,7 +100,61 @@ var {
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <a> |--------------->
- {
+a {
+  padding: $buffer--xs 0;
+  color: var(--color-primary);
+  font-family: $font-family--link;
+  font-size: $font-size--2;
+  font-variant: $font-variant--link;
+  font-weight: $font-weight--link;
+  letter-spacing: $letter-spacing--link;
+  text-align: $line-height--link;
+  text-decoration: none;
+  text-transform: $text-transform--link;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    content: '';
+    transition: width 0s ease, background 0.35s ease;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-foreground);
+    content: '';
+    transition: width 0.35s ease;
+  }
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+
+  &:hover::before {
+    width: 100%;
+    background: var(--color-tertiary);
+    transition: width 0.35s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+
+  i {
+    margin-right: $buffer--s;
+    text-align: center;
+  }
 }
 
 // #  <---------------| <abbr> |--------------->
@@ -125,7 +186,19 @@ var {
 }
 
 // #  <---------------| <q> |--------------->
- {
+q {
+  border-left: 4px solid var(--focus);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    content: none;
+  }
 }
 
 // #  <---------------| <time> |--------------->
