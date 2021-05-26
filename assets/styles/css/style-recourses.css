@@ -77,14 +77,17 @@ html {
 nav,
 article,
 section,
-aside,
+aside {
+  outline: solid orangered;
+}
+
 header,
 footer {
-  outline: 2px red solid;
+  outline: solid indianred;
 }
 
 div {
-  outline: 2px saddlebrown dashed;
+  outline: solid red;
 }
 
 h1,
@@ -93,57 +96,57 @@ h3,
 h4,
 h5,
 h6 {
-  outline: 2px brown solid;
+  outline: solid tomato;
 }
 
 dl,
 dt,
-dd,
+dd {
+  outline: solid deepskyblue;
+}
+
 figure,
-figcaption,
+figcaption {
+  outline: solid dodgerblue;
+}
+
 ol,
 ul,
-li,
+li {
+  outline: solid steelblue;
+}
+
+address,
 blockquote,
 hr,
 p,
-pre,
-address {
-  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+pre {
+  outline: solid blue;
+}
+
+b,
+code,
+kbd,
+mark,
+samp,
+span,
+strong,
+var {
+  outline: solid lime;
 }
 
 a,
 abbr,
-b,
 bdi,
 bdo,
 br,
 cite,
-code,
 data,
 dfn,
-em,
-i,
-kbd,
-mark,
 q,
-rb,
-rp,
-rt,
-rtc,
-ruby,
-s,
-samp,
-small,
-span,
-strong,
-sub,
-sup,
 time,
-ul,
-var,
 wbr {
-  outline: 2px darkorange dotted;
+  outline: solid springgreen;
 }
 
 area,
@@ -152,7 +155,7 @@ img,
 map,
 track,
 video {
-  outline: calc(2px / 2) rgba(0, 0, 128, 0.75) dashed;
+  outline: solid yellow;
 }
 
 embed,
@@ -161,72 +164,57 @@ object,
 param,
 picture,
 source {
-  outline: calc(2px / 2) rgba(198, 200, 100, 0.75) dashed;
+  outline: solid khaki;
 }
 
 svg,
 math {
-  outline: calc(2px / 2) rgba(0, 128, 128, 0.75) dashed;
+  outline: solid gold;
 }
 
-canvas {
-  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
-}
-
-del,
-ins {
-  outline: calc(2px / 2) rgba(0, 255, 255, 0.75) dashed;
+table,
+thead,
+tbody,
+tfoot,
+colgroup,
+tr {
+  outline: solid darkorchid;
 }
 
 caption,
 col,
-colgroup,
-table,
-tbody,
-td,
-tfoot,
 th,
-thead,
-tr {
-  outline: calc(2px / 2) rgba(128, 128, 0, 0.75) dashed;
+td {
+  outline: solid slateblue;
 }
 
+form,
 datalist,
 fieldset,
-form,
+optgroup,
+select {
+  outline: solid teal;
+}
+
+button,
 input,
 label,
 legend,
 meter,
-optgroup,
 option,
 output,
 progress,
-select,
 textarea {
-  outline: calc(2px / 2) rgba(255, 0, 255, 0.75) dashed;
+  outline: solid turquoise;
 }
 
 details,
+summary {
+  outline: solid deeppink;
+}
+
 dialog,
 menu {
-  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
-}
-
-slot,
-template {
-  outline: calc(2px / 2) rgba(127, 255, 212, 0.75) dashed;
-}
-
-.block-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
-}
-
-.flex-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
-}
-
-.grid-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
+  outline: solid hotpink;
 }
 /*# sourceMappingURL=style-recourses.css.map */

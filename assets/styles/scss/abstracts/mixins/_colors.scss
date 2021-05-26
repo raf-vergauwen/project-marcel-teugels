@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// +  <<--------------------<< DEFINE COLOR HSL >>-------------------->>
+// -----------------------------------------------------------------------------
+
+// -  <---------------| color-palette |--------------->
+@mixin color-palette($text, $background, $primary, $secondary, $tertiary) {
+  $colors: (text, $text), (background, $background), (primary, $primary),
+    (secondary, $secondary), (tertiary, $tertiary);
+
+  @each $color-name, $color-value in $colors {
+    /* #  ---------------------------------------- */
+    /* #  #{$color-name} color group */
+    /* #  ---------------------------------------- */
+    #{--color-#{$color-name}--lightest}: tint($color-value, 30%);
+    #{--color-#{$color-name}--lighter}: tint($color-value, 15%);
+    #{--color-#{$color-name}}: $color-value;
+    #{--color-#{$color-name}--darker}: shade($color-value, 15%);
+    #{--color-#{$color-name}--darkest}: shade($color-value, 30%);
+  }
+}
+
+// -  <---------------| define-color-hsl |--------------->
+@mixin define-color-hsl($color, $hue, $saturation, $lightness) {
+  #{$color}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
+  #{$color}-h: #{$hue};
+  #{$color}-s: #{$saturation};
+  #{$color}-l: #{$lightness};
+}

@@ -82,14 +82,17 @@ html {
 nav,
 article,
 section,
-aside,
+aside {
+  outline: solid orangered;
+}
+
 header,
 footer {
-  outline: 2px red solid;
+  outline: solid indianred;
 }
 
 div {
-  outline: 2px saddlebrown dashed;
+  outline: solid red;
 }
 
 h1,
@@ -98,57 +101,57 @@ h3,
 h4,
 h5,
 h6 {
-  outline: 2px brown solid;
+  outline: solid tomato;
 }
 
 dl,
 dt,
-dd,
+dd {
+  outline: solid deepskyblue;
+}
+
 figure,
-figcaption,
+figcaption {
+  outline: solid dodgerblue;
+}
+
 ol,
 ul,
-li,
+li {
+  outline: solid steelblue;
+}
+
+address,
 blockquote,
 hr,
 p,
-pre,
-address {
-  outline: 2px rgba(0, 0, 255, 0.75) dashed;
+pre {
+  outline: solid blue;
+}
+
+b,
+code,
+kbd,
+mark,
+samp,
+span,
+strong,
+var {
+  outline: solid lime;
 }
 
 a,
 abbr,
-b,
 bdi,
 bdo,
 br,
 cite,
-code,
 data,
 dfn,
-em,
-i,
-kbd,
-mark,
 q,
-rb,
-rp,
-rt,
-rtc,
-ruby,
-s,
-samp,
-small,
-span,
-strong,
-sub,
-sup,
 time,
-ul,
-var,
 wbr {
-  outline: 2px darkorange dotted;
+  outline: solid springgreen;
 }
 
 area,
@@ -157,7 +160,7 @@ img,
 map,
 track,
 video {
-  outline: calc(2px / 2) rgba(0, 0, 128, 0.75) dashed;
+  outline: solid yellow;
 }
 
 embed,
@@ -166,73 +169,58 @@ object,
 param,
 picture,
 source {
-  outline: calc(2px / 2) rgba(198, 200, 100, 0.75) dashed;
+  outline: solid khaki;
 }
 
 svg,
 math {
-  outline: calc(2px / 2) rgba(0, 128, 128, 0.75) dashed;
+  outline: solid gold;
 }
 
-canvas {
-  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
-}
-
-del,
-ins {
-  outline: calc(2px / 2) rgba(0, 255, 255, 0.75) dashed;
+table,
+thead,
+tbody,
+tfoot,
+colgroup,
+tr {
+  outline: solid darkorchid;
 }
 
 caption,
 col,
-colgroup,
-table,
-tbody,
-td,
-tfoot,
 th,
-thead,
-tr {
-  outline: calc(2px / 2) rgba(128, 128, 0, 0.75) dashed;
+td {
+  outline: solid slateblue;
 }
 
+form,
 datalist,
 fieldset,
-form,
+optgroup,
+select {
+  outline: solid teal;
+}
+
+button,
 input,
 label,
 legend,
 meter,
-optgroup,
 option,
 output,
 progress,
-select,
 textarea {
-  outline: calc(2px / 2) rgba(255, 0, 255, 0.75) dashed;
+  outline: solid turquoise;
 }
 
 details,
+summary {
+  outline: solid deeppink;
+}
+
 dialog,
 menu {
-  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
-}
-
-slot,
-template {
-  outline: calc(2px / 2) rgba(127, 255, 212, 0.75) dashed;
-}
-
-.block-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
-}
-
-.flex-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
-}
-
-.grid-container {
-  outline: 2px rgba(255, 0, 0, 0.75) solid;
+  outline: solid hotpink;
 }
 
 /* ========================================================================== *\
@@ -304,7 +292,7 @@ body {
 // *  <<--------------------<< SECTIONING >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
--  <<--------------------<< MAIN SECTIONING >>-------------------->>
+-  <<--------------------<< MAIN >>-------------------->>
 \* -------------------------------------------------------------------------- */
 nav {
   width: 100%;
@@ -326,7 +314,7 @@ aside {
 }
 
 /* -------------------------------------------------------------------------- *\
--  <<--------------------<< SUB SECTIONING >>-------------------->>
+-  <<--------------------<< SUB >>-------------------->>
 \* -------------------------------------------------------------------------- */
 header {
   padding: 0.5rem;
@@ -337,7 +325,13 @@ footer {
 }
 
 /* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 *  <<--------------------<< HEADING >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+-  <<--------------------<< Heading >>-------------------->>
 \* -------------------------------------------------------------------------- */
 h1 {
   padding: 2rem 0.5rem;
@@ -350,6 +344,12 @@ h1 {
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
+}
+
+h1 + p::first-letter {
+  color: var(--color-secondary);
+  font-size: 1.5625rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -487,11 +487,12 @@ li {
 }
 
 /* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
+// -  <<--------------------<< CONTENT >>-------------------->>
 \* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< OTHER >>-------------------->>
-\* -------------------------------------------------------------------------- */
+address {
+  font-style: normal;
+}
+
 blockquote {
   border-left: 4px solid var(--focus);
   margin: 1.5em 0;
@@ -543,10 +544,6 @@ pre > code {
   padding: 0.5rem;
   display: block;
   overflow-x: auto;
-}
-
-address {
-  font-style: normal;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -689,6 +686,9 @@ time {
 }
 
 /* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< NON-SEMANTIC >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< MULTIMEDIA >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
@@ -730,7 +730,7 @@ svg {
 *  <<--------------------<< TABLE >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< MAIN PARENT >>-------------------->>
+// -  <<--------------------<< PARENTS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 table {
   border-collapse: collapse;
@@ -739,9 +739,6 @@ table {
   table-layout: fixed;
 }
 
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< PARENTS >>-------------------->>
-\* -------------------------------------------------------------------------- */
 thead {
   border-bottom: 1px solid var(--border);
 }
@@ -783,9 +780,6 @@ td {
 
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< FORMS >>-------------------->>
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< MAIN PARENT >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< PARENTS >>-------------------->>
@@ -1091,6 +1085,9 @@ textarea:disabled {
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< INTERACTIVE >>-------------------->>
 \* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< Disclosure Widget >>-------------------->>
+\* -------------------------------------------------------------------------- */
 details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1121,6 +1118,9 @@ details[open] summary {
   margin-bottom: 10px;
 }
 
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< Other >>-------------------->>
+\* -------------------------------------------------------------------------- */
 dialog {
   background-color: var(--background-alt);
   color: var(--text-main);
@@ -1957,9 +1957,9 @@ input:checked + .slider::before {
 \* -------------------------------------------------------------------------- */
 :root,
 [data-theme='light--v2'] {
-  /* ------------------------------------------------------------------------ *\
-// -  <<--------------------<< TRANSPARANT BG COLORS >>-------------------->>
-\* -------------------------------------------------------------------------- */
+  /* - ----------------------------------------------------------------------- */
+  /* - <<--------------------<< TRANSPARANT BG COLORS >>-------------------->> */
+  /* - ----------------------------------------------------------------------- */
   --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
   --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
   --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
@@ -1981,54 +1981,48 @@ input:checked + .slider::before {
   --form-text: #000;
   --variable: #39a33c;
   --highlight: #ff0;
-  /* ------------------------------------------------------------------------ *\
-// -  <<--------------------<< REGULAR COLORS >>-------------------->>
-\* -------------------------------------------------------------------------- */
-  /* #  <---------------| foreground-Palette |---------------> */
-  --color-foreground-hue: 240;
-  --color-foreground-saturation: 100%;
-  --color-foreground-lightness: 10%;
-  --color-foreground: tint(hsl($hue, $saturate, $lightness), 0%);
-  /* #  <---------------| background-Palette |---------------> */
-  --color-background-hue: 240;
-  --color-background-saturation: 100%;
-  --color-background-lightness: 98.6%;
-  --color-background: tint(hsl($hue, $saturate, $lightness), 0%);
-  /* #  <---------------| primary-Palette |---------------> */
-  --color-primary-hue: 206.6;
-  --color-primary-saturation: 95.2%;
-  --color-primary-lightness: 16.3%;
-  /* #  <----------| primary-Variants |----------> */
-  --color-primary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
-  --color-primary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
-  --color-primary-light: tint(hsl($hue, $saturate, $lightness), 10%);
-  --color-primary: tint(hsl($hue, $saturate, $lightness), 0%);
-  --color-primary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
-  --color-primary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
-  --color-primary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
-  /* #  <---------------| secondary-Palette |---------------> */
-  --color-secondary-hue: 215;
-  --color-secondary-saturation: 45.1%;
-  --color-secondary-lightness: 50%;
-  /* #  <----------| secondary-Variants |----------> */
-  --color-secondary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
-  --color-secondary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
-  --color-secondary-light: tint(hsl($hue, $saturate, $lightness), 10%);
-  --color-secondary: tint(hsl($hue, $saturate, $lightness), 0%);
-  --color-secondary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
-  --color-secondary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
-  --color-secondary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
-  /* #  <---------------| tertiary-Palette |---------------> */
-  --color-tertiary-hue: 35;
-  --color-tertiary-saturation: 44.7%;
-  --color-tertiary-lightness: 49.6%;
-  /* #  <----------| tertiary-Variants |----------> */
-  --color-tertiary-lightest: tint(hsl($hue, $saturate, $lightness), 30%);
-  --color-tertiary-lighter: tint(hsl($hue, $saturate, $lightness), 20%);
-  --color-tertiary-light: tint(hsl($hue, $saturate, $lightness), 10%);
-  --color-tertiary: tint(hsl($hue, $saturate, $lightness), 0%);
-  --color-tertiary-dark: shade(hsl($hue, $saturate, $lightness), 10%);
-  --color-tertiary-darker: shade(hsl($hue, $saturate, $lightness), 20%);
-  --color-tertiary-darkest: shade(hsl($hue, $saturate, $lightness), 30%);
+  /* -  ---------------------------------------------------------------- */
+  /* -  <<--------------------<< REGULAR COLORS >>-------------------->> */
+  /* -  ---------------------------------------------------------------- */
+  /* #  ---------------------------------------- */
+  /* #  text color group */
+  /* #  ---------------------------------------- */
+  --color-text--lightest: #4d4d70;
+  --color-text--lighter: #262652;
+  --color-text: #000033;
+  --color-text--darker: #00002b;
+  --color-text--darkest: #000024;
+  /* #  ---------------------------------------- */
+  /* #  background color group */
+  /* #  ---------------------------------------- */
+  --color-background--lightest: #fafaff;
+  --color-background--lighter: #f9f9ff;
+  --color-background: #f8f8ff;
+  --color-background--darker: #d3d3d9;
+  --color-background--darkest: #aeaeb3;
+  /* #  ---------------------------------------- */
+  /* #  primary color group */
+  /* #  ---------------------------------------- */
+  --color-primary--lightest: #4e6d85;
+  --color-primary--lighter: #284d6b;
+  --color-primary: #022e51;
+  --color-primary--darker: #022745;
+  --color-primary--darkest: #012039;
+  /* #  ---------------------------------------- */
+  /* #  secondary color group */
+  /* #  ---------------------------------------- */
+  --color-secondary--lightest: #7e9fce;
+  --color-secondary--lighter: #628bc4;
+  --color-secondary: #4676b9;
+  --color-secondary--darker: #3c649d;
+  --color-secondary--darkest: #315382;
+  /* #  ---------------------------------------- */
+  /* #  tertiary color group */
+  /* #  ---------------------------------------- */
+  --color-tertiary--lightest: #cdac7e;
+  --color-tertiary--lighter: #c29a62;
+  --color-tertiary: #b78846;
+  --color-tertiary--darker: #9c743c;
+  --color-tertiary--darkest: #805f31;
 }
 /*# sourceMappingURL=main.css.map */
