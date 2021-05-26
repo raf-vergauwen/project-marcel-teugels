@@ -61,6 +61,7 @@ export default {
         .then((body) => {
           console.log(body);
           sessionStorage.setItem('access_token', body.data.access_token);
+          this.$router.push('/profile');
         })
         .catch((err) => {
           console.error(err);

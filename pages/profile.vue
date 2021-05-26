@@ -3,20 +3,22 @@
     <restauration-header />
     <div class="container">
       <h1>Profile</h1>
-      <label
-        >First name:
-        <input
-          v-model="firstName"
-          type="text"
-          name="first-name"
-          placeholder=""
-        />
-      </label>
-      <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
-      <p v-if="userInfo">{{ userInfo.email }}</p>
-      <p v-if="userInfo">
-        {{ userInfo.orders[0].ordered_items[0].products[0] }}
-      </p>
+      <form @submit.prevent="updateAccount">
+        <label
+          >First name: <input v-model="userInfo.firstName" type="text" />
+        </label>
+        <label
+          >Last name: <input v-model="userInfo.lastName" type="text" />
+        </label>
+        <label>Email: <input v-model="userInfo.email" type="email" /> </label>
+        <label
+          >Password: <input v-model="userInfo.password" type="password" />
+        </label>
+        <label
+          >Location: <input v-model="userInfo.location" type="text" />
+        </label>
+        <button type="submit">Update</button>
+      </form>
     </div>
   </main>
 </template>
@@ -29,8 +31,13 @@ export default {
   components: { RestaurationHeader },
   data() {
     return {
-      userInfo: null,
-      firstName: 'Emiel',
+      userInfo: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        location: '',
+      },
     };
   },
   computed: {
@@ -48,12 +55,41 @@ export default {
       .then((response) => {
         console.log(response);
         this.userInfo = response.data.data;
+        this.userInfo.firstName = response.data.data.first_name;
+        this.userInfo.lastName = response.data.data.last_name;
+        this.userInfo.email = response.data.data.email;
+        this.userInfo.password = response.data.data.password;
+        this.userInfo.location = response.data.data.location;
       })
       .catch((err) => {
         console.error(err);
         sessionStorage.removeItem('access_token');
         this.$router.push('/login');
       });
+  },
+  methods: {
+    updateAccount() {
+      this.$axios('users/me', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + this.access_token,
+        },
+        data: {
+          first_name: this.userInfo.firstName,
+          last_name: this.userInfo.lastName,
+          email: this.userInfo.email,
+          password: this.userInfo.password,
+          location: this.userInfo.location,
+        },
+      })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
   },
 };
 </script>
