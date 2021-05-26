@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import shoppingCartItem from '~/components/shoppingCartItem';
+import ShoppingCartItem from '~/components/ShoppingCartItem';
 import StoreHeader from '~/components/StoreHeader';
 
 export default {
-  components: { StoreHeader, shoppingCartItem },
+  components: { StoreHeader, ShoppingCartItem },
 
   data() {
     return {
