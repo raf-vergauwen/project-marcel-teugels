@@ -35,7 +35,7 @@
           label="Please select an image"
           validation="mime:image/jpeg,image/png"
         />
-        <FormulateInput type="submit" label="Sign up" @click="postImage" />
+        <FormulateInput type="submit" label="Sign up" @click="postWorkshop" />
       </template>
     </section>
   </main>
@@ -75,7 +75,7 @@ export default {
         organizer: this.organizer,
         subject: this.subject,
         text_content: this.textContent,
-        images: this.newImage,
+        images: this.images,
       };
 
       fetch('http://157.230.126.154/items/workshops/', {
