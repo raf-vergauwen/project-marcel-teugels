@@ -69,7 +69,7 @@ export default {
         images: this.images,
       };
 
-      fetch('http://157.230.126.154/items/products/', {
+      this.$axios('items/products/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,14 +78,7 @@ export default {
         body: JSON.stringify(body),
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not post new product');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+          console.log(response);
         })
         .catch((err) => {
           console.error(err);

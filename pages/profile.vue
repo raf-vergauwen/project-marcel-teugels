@@ -14,9 +14,7 @@
       </label>
       <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
       <p v-if="userInfo">{{ userInfo.email }}</p>
-      <p v-if="userInfo">
-        {{ userInfo.orders[0].ordered_items[0].products[0] }}
-      </p>
+      <p v-if="userInfo"></p>
     </div>
   </main>
 </template>
@@ -39,29 +37,18 @@ export default {
     },
   },
   created() {
-    fetch(
-      'http://157.230.126.154/users/me?fields=*,orders.ordered_items.products.*',
-      {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + this.access_token,
-        },
+    this.$axios('users/me?fields=*,orders.ordered_items.products.*', {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer ' + this.access_token,
       },
-    )
+    })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error('Could not get user info');
-        }
-        return response.json();
-      })
-      .then((body) => {
-        console.log(body);
-        this.userInfo = body.data;
+        console.log(response);
+        this.userInfo = response.data.data;
       })
       .catch((err) => {
         console.error(err);
-        sessionStorage.removeItem('access_token');
-        this.$router.push('/login');
       });
   },
 };

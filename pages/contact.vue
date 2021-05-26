@@ -63,7 +63,7 @@ export default {
         text_content: this.textContent,
       };
 
-      fetch('http://157.230.126.154/items/user_requests/', {
+      this.$axios('items/user_requests/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -72,14 +72,8 @@ export default {
         body: JSON.stringify(body),
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not post user requests');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          this.requestData = data;
+          console.log(response);
+          this.requestData = response.data.data;
         })
         .catch((err) => {
           console.error(err);

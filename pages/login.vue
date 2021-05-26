@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     login() {
-      fetch('http://157.230.126.154/auth/login', {
+      this.$axios('auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,34 +53,24 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not login');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          sessionStorage.setItem('access_token', body.data.access_token);
+          sessionStorage.setItem(
+            'access_token',
+            response.data.data.access_token,
+          );
         })
         .catch((err) => {
           console.error(err);
         });
 
-      fetch('http://157.230.126.154/users/me', {
+      this.$axios('users/me', {
         method: 'GET',
         headers: {
           Authorization: 'Bearer ' + this.access_token,
         },
       })
         .then((response) => {
-          if (!response.ok) {
-            throw new Error('Could not get user info');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          this.admin = body.data.role;
+          console.log(response);
+          this.admin = response.data.data.role;
           sessionStorage.setItem('user_role', this.admin);
         })
         .catch((err) => {
