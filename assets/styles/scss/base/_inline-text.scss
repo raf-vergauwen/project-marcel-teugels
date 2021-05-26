@@ -8,21 +8,29 @@
 
 // #  <---------------| <b> |--------------->
 b {
-  font-weight: 600;
+  font-weight: $font-weight--subject;
+  color: var(--color-text);
 }
 
 // #  <---------------| <code> |--------------->
 code {
   background: var(--background);
-  color: var(--code);
+  color: var(--color-text);
   padding: 2.5px 5px;
   border-radius: 6px;
   font-size: 1em;
+  font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <em> |--------------->
+em {
+  color: var(--color-text);
+}
 
 // #  <---------------| <i> |--------------->
+i {
+  color: var(--color-text);
+}
 
 // #  <---------------| <kbd> |--------------->
 kbd {
@@ -31,6 +39,7 @@ kbd {
   border-radius: 2px;
   color: var(--text-main);
   padding: 2px 4px 2px 4px;
+  font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <mark> |--------------->
@@ -38,31 +47,47 @@ mark {
   background-color: var(--highlight);
   border-radius: 2px;
   padding: 0 2px 0 2px;
-  color: #000;
+  color: var(--color-text);
 }
 
 // #  <---------------| <s> |--------------->
+s {
+  color: var(--color-text);
+}
 
 // #  <---------------| <samp> |--------------->
 samp {
   background: var(--background);
-  color: var(--code);
+  color: var(--color-text);
   padding: 2.5px 5px;
   border-radius: 6px;
   font-size: 1em;
+  font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <small> |--------------->
+small {
+  font-weight: $font-weight--text-alt;
+  color: var(--color-text);
+}
 
 // #  <---------------| <strong> |--------------->
 strong {
-  color: var(--text-bright);
-  font-weight: 600;
+  color: var(--color-text);
+  font-weight: $font-weight--subject;
 }
 
 // #  <---------------| <sub> |--------------->
+sub {
+  font-weight: $font-weight--text-alt;
+  font-variant: $font-variant--text-alt;
+}
 
 // #  <---------------| <sup> |--------------->
+sup {
+  font-weight: $font-weight--text-alt;
+  font-variant: $font-variant--text-alt;
+}
 
 // #  <---------------| <u> |--------------->
 
@@ -71,6 +96,7 @@ var {
   color: var(--variable);
   font-style: normal;
   font-family: monospace;
+  font-variant: $font-variant--text-alt;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -136,6 +162,9 @@ a {
 }
 
 // #  <---------------| <abbr> |--------------->
+abbr {
+  font-variant: $font-variant--text-alt;
+}
 
 // #  <---------------| <bdi> |--------------->
 

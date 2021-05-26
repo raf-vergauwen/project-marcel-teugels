@@ -67,42 +67,47 @@ $font-size--7: $font-size--6 * $font-scale; // 61.04px
 
 // #  Font-Family
 $font-family--subject: 'Montserrat', sans-serif;
-$font-family--section-title: 'Montserrat', sans-serif;
-$font-family--article-title: 'Oswald', sans-serif;
-$font-family--text: 'Roboto', sans-serif;
+$font-family--section: 'Montserrat', sans-serif;
+$font-family--article: 'Oswald', sans-serif;
 $font-family--link: 'Montserrat', monospace;
+$font-family--text: 'Roboto', sans-serif;
+$font-family--text-alt: 'Oswald', sans-serif;
 
 // #  Font-Style ---> Default
 
 // #  Font-Variant
 $font-variant--subject: normal;
-$font-variant--section-title: normal;
-$font-variant--article-title: small-caps;
-$font-variant--text: normal;
+$font-variant--section: normal;
+$font-variant--article: small-caps;
 $font-variant--link: normal;
+$font-variant--text: normal;
+$font-variant--text-alt: small-caps;
 
 // #  Font-Weight
 $font-weight--subject: 700; // Bold
-$font-weight--section-title: 400; // Normal
-$font-weight--article-title: 300; // Light
-$font-weight--text: 300; // Light
-$font-weight--link: 400; // Light
+$font-weight--section: 600; // Semi Bold
+$font-weight--article: 500; // Medium
+$font-weight--link: 400; // Normal
+$font-weight--text: 400; // Normal
+$font-weight--text-alt: 300; // Light
 
 // #  Line-Height
 $line-height--subject: 1; // 120%
-$line-height--section-title: 1; // 120%
-$line-height--article-title: 1.2; // 120%
-$line-height--text: 1.5; // 150%
+$line-height--section: 1; // 120%
+$line-height--article: 1.25; // 120%
 $line-height--link: 1.5; // 150%
+$line-height--text: 1.5; // 150%
+$line-height--text-alt: 1.5; // 150%
 
 // -  <---------------| Text |--------------->
 
 // #  Text-Align
 $text-align--subject: center;
-$text-align--section-title: center;
-$text-align--article-title: left;
-$text-align--text: left;
+$text-align--section: center;
+$text-align--article: left;
 $text-align--link: center;
+$text-align--text: left;
+$text-align--text-alt: left;
 
 // #  Text-Decoration ---> Default
 
@@ -120,10 +125,11 @@ $text-shadow--variant-5: -1px -1px 1px #111, 2px 2px 1px #363636;
 
 // #  Text-Transform
 $text-transform--subject: uppercase;
-$text-transform--section-title: capitalize;
-$text-transform--article-title: none;
-$text-transform--text: none;
+$text-transform--section: capitalize;
+$text-transform--article: none;
 $text-transform--link: none;
+$text-transform--text: none;
+$text-transform--text-alt: none;
 
 // #  Word-Break ---> Default
 
@@ -131,10 +137,11 @@ $text-transform--link: none;
 
 // #  Letter-Spacing
 $letter-spacing--subject: 0.025rem; // 0.4px
-$letter-spacing--section-title: 0.05rem; // 0.8px
-$letter-spacing--article-title: 0.1rem; // 1.6px
-$letter-spacing--text: normal;
+$letter-spacing--section: 0.05rem; // 0.8px
+$letter-spacing--article: 0.1rem; // 1.6px
 $letter-spacing--link: normal;
+$letter-spacing--text: normal;
+$letter-spacing--text-alt: normal;
 
 // #  White-Space ---> Default
 

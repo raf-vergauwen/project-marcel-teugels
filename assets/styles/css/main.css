@@ -349,7 +349,7 @@ h1 {
 h1 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h2 {
@@ -358,7 +358,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.05rem;
   line-height: 1;
   text-align: center;
@@ -368,7 +368,7 @@ h2 {
 h2 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h3 {
@@ -377,9 +377,9 @@ h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.95312rem;
   font-variant: small-caps;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.1rem;
-  line-height: 1.2;
+  line-height: 1.25;
   text-align: left;
   text-transform: none;
 }
@@ -387,7 +387,7 @@ h3 {
 h3 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h4 {
@@ -406,7 +406,7 @@ h4 {
 h4 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h5 {
@@ -425,7 +425,7 @@ h5 {
 h5 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h6 {
@@ -444,7 +444,7 @@ h6 {
 h6 + p::first-letter {
   color: var(--color-secondary);
   font-size: 1.5625rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -553,7 +553,7 @@ pre > code {
 // -  <<--------------------<< VISUAL >>-------------------->>
 \* -------------------------------------------------------------------------- */
 b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 code {
@@ -589,7 +589,7 @@ samp {
 
 strong {
   color: var(--text-bright);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 var {

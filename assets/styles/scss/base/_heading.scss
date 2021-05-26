@@ -22,7 +22,7 @@ h1 {
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
 
@@ -30,19 +30,19 @@ h1 {
 h2 {
   padding: $buffer--l $buffer--s;
   color: var(--color-tertiary);
-  font-family: $font-family--section-title;
+  font-family: $font-family--section;
   font-size: $font-size--5;
-  font-variant: $font-variant--section-title;
-  font-weight: $font-weight--section-title;
-  letter-spacing: $letter-spacing--section-title;
-  line-height: $line-height--section-title;
-  text-align: $text-align--section-title;
-  text-transform: $text-transform--section-title;
+  font-variant: $font-variant--section;
+  font-weight: $font-weight--section;
+  letter-spacing: $letter-spacing--section;
+  line-height: $line-height--section;
+  text-align: $text-align--section;
+  text-transform: $text-transform--section;
 
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
 
@@ -50,19 +50,19 @@ h2 {
 h3 {
   padding: $buffer--m 0;
   color: var(--color-secondary);
-  font-family: $font-family--article-title;
+  font-family: $font-family--article;
   font-size: $font-size--4;
-  font-variant: $font-variant--article-title;
-  font-weight: $font-weight--article-title;
-  letter-spacing: $letter-spacing--article-title;
-  line-height: $line-height--article-title;
-  text-align: $text-align--article-title;
-  text-transform: $text-transform--article-title;
+  font-variant: $font-variant--article;
+  font-weight: $font-weight--article;
+  letter-spacing: $letter-spacing--article;
+  line-height: $line-height--article;
+  text-align: $text-align--article;
+  text-transform: $text-transform--article;
 
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
 
@@ -82,7 +82,7 @@ h4 {
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
 
@@ -102,7 +102,7 @@ h5 {
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
 
@@ -122,6 +122,6 @@ h6 {
   + p::first-letter {
     color: var(--color-secondary);
     font-size: $font-size--3;
-    line-height: $line-height--article-title;
+    line-height: $line-height--article;
   }
 }
