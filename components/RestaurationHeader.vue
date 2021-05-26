@@ -26,7 +26,7 @@ export default {
       navItems: [
         { path: '/', label: 'home' },
 
-        { path: '/restoration/home-restoration', label: 'home' },
+        { path: '/restoration/home-restoration', label: 'overview' },
         { path: '/restoration/methodology', label: 'methodology' },
         { path: '/restoration/workshops', label: 'workshops' },
         { path: '/restoration/contact', label: 'contact' },

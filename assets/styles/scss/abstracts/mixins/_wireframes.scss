@@ -2,13 +2,13 @@
 // +  <<--------------------<< WIREFRAMES >>-------------------->>
 // -----------------------------------------------------------------------------
 
-// -  <---------------| Manual-Wireframe |--------------->
+// *  <<--------------------<< MANUAL WIREFRAME >>-------------------->>
 @mixin manual-wireframe($wireframe--manual) {
   @if $wireframe--manual {
     [data-wf] {
       position: relative;
       z-index: 1;
-      outline: $buffer--xs solid var(--wireframe--wire);
+      outline: $small-dimension--xs solid var(--wireframe--wire);
     }
 
     [data-wf]::before {
@@ -48,171 +48,180 @@
   }
 }
 
-// -  <---------------| Automatic-Wireframe |--------------->
+// *  <<--------------------<< AUTOMATIC WIREFRAME >>-------------------->>
 @mixin automatic-wireframe($wireframe--automatic) {
   @if $wireframe--automatic {
     // ! REFERENCE: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element#href>
 
-    // #  Content Sectioning: Block
-    div,
-    address,
+    // -  <---------------| Sectioning |--------------->
+    // #  <-----| Main |----->
+    nav,
     article,
-    aside,
-    footer,
+    section,
+    aside {
+      outline: solid orangered;
+    }
+
+    // #  <-----| Sub |----->
     header,
+    footer {
+      outline: solid indianred;
+    }
+
+    // #  <-----| Non-Semantic |----->
+    div {
+      outline: solid red;
+    }
+
+    // -  <---------------| Heading |--------------->
+    // #  <-----| Heading |----->
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6,
-    main,
-    nav,
-    section {
-      outline: $buffer--xxs rgba(0, 255, 0, 0.75) dashed;
+    h6 {
+      outline: solid tomato;
     }
 
-    // #  Text Content: Block
-    blockquote,
-    figcaption,
+    // -  <---------------| Block-Text |--------------->
+    // #  <-----| Description |----->
+    dl,
+    dt,
+    dd {
+      outline: solid deepskyblue;
+    }
+
+    // #  <-----| Figure |----->
     figure,
-    hr,  // Self Closing
-    li, // Listitem
-    ol,
-    p,
-    ul {
-      outline: $buffer--xxs rgba(0, 0, 255, 0.75) dashed;
+    figcaption {
+      outline: solid dodgerblue;
     }
 
-    // #  Inline Text Semantics
-    // a,
-    abbr,
+    // #  <-----| Lists |----->
+    ol,
+    ul,
+    li {
+      outline: solid steelblue;
+    }
+
+    // #  <-----| Other |----->
+    address,
+    blockquote,
+    hr,
+    p,
+    pre {
+      outline: solid blue;
+    }
+
+    // -  <---------------| Inline-Text |--------------->
+    // #  <-----| Visual |----->
     b,
+    code,
+    kbd,
+    mark,
+    samp,
+    span,
+    strong,
+    var {
+      outline: solid lime;
+    }
+
+    // #  <-----| Functional |----->
+    a,
+    abbr,
     bdi,
     bdo,
     br,
     cite,
-    code,
     data,
     dfn,
-    em,
-    i,
-    kbd,
-    mark,
     q,
-    rb,
-    rp,
-    rt,
-    rtc,
-    ruby,
-    s,
-    samp,
-    small,
-    span,
-    strong,
-    sub,
-    sup,
     time,
-    ul,
-    var,
     wbr {
-      outline: $buffer--xxs rgb(255, 140, 0) dotted;
+      outline: solid springgreen;
     }
 
-    // #  Image and Multimedia
+    // -  <---------------| Multimedia |--------------->
+    // #  <-----| Regular |----->
     area,
     audio,
     img,
     map,
     track,
     video {
-      outline: calc(#{$buffer--xxs} / 2) rgba(0, 0, 128, 0.75) dashed;
+      outline: solid yellow;
     }
 
-    // #  Embedded Content
+    // #  <-----| Complex |----->
     embed,
     iframe,
     object,
     param,
     picture,
     source {
-      outline: calc(#{$buffer--xxs} / 2) rgba(198, 200, 100, 0.75) dashed;
+      outline: solid khaki;
     }
 
-    // #  SVG and MathML
+    // #  <-----| Special |----->
     svg,
     math {
-      outline: calc(#{$buffer--xxs} / 2) rgba(0, 128, 128, 0.75) dashed;
+      outline: solid gold;
     }
 
-    // #  Scripting
-    canvas {
-      outline: calc(#{$buffer--xxs} / 2) rgba(188, 143, 143, 0.75) dashed;
+    // -  <---------------| Table |--------------->
+    // #  <-----| Parents |----->
+    table,
+    thead,
+    tbody,
+    tfoot,
+    colgroup,
+    tr {
+      outline: solid darkorchid;
     }
 
-    // #  Demarcating Edits
-    del,
-    ins {
-      outline: calc(#{$buffer--xxs} / 2) rgba(0, 255, 255, 0.75) dashed;
-    }
-
-    // #  Table Content
+    // #  <-----| Children |----->
     caption,
     col,
-    colgroup,
-    table,
-    tbody,
-    td,
-    tfoot,
     th,
-    thead,
-    tr {
-      outline: calc(#{$buffer--xxs} / 2) rgba(128, 128, 0, 0.75) dashed;
+    td {
+      outline: solid slateblue;
     }
 
-    // #  Forms
-    // button,
+    // -  <---------------| Forms |--------------->
+    // #  <-----| Parents |----->
+    form,
     datalist,
     fieldset,
-    form,
+    optgroup,
+    select {
+      outline: solid teal;
+    }
+
+    // #  <-----| Children |----->
+    button,
     input,
     label,
     legend,
     meter,
-    optgroup,
     option,
     output,
     progress,
-    select,
     textarea {
-      outline: calc(#{$buffer--xxs} / 2) rgba(255, 0, 255, 0.75) dashed;
+      outline: solid turquoise;
     }
 
-    // #  Interactive Elements: Block
-    details, // Block
-    dialog, // Block
+    // -  <---------------| Intertactive |--------------->
+    // #  <-----| Disclosure Widget |----->
+    details,
+    summary {
+      outline: solid deeppink;
+    }
+
+    // #  <-----| Other |----->
+    dialog,
     menu {
-      outline: calc(#{$buffer--xxs} / 2) rgba(188, 143, 143, 0.75) dashed;
-    }
-
-    // #  Web Components
-    slot, // Inline
-    template {
-      // Block
-      outline: calc(#{$buffer--xxs} / 2) rgba(127, 255, 212, 0.75) dashed;
-    }
-
-    // #  Custom
-    .block-container {
-      outline: $buffer--xxs rgba(255, 0, 0, 0.75) solid;
-    }
-
-    .flex-container {
-      outline: $buffer--xxs rgba(255, 0, 0, 0.75) solid;
-    }
-
-    .grid-container {
-      outline: $buffer--xxs rgba(255, 0, 0, 0.75) solid;
+      outline: solid hotpink;
     }
   }
 }

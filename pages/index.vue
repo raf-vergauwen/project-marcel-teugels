@@ -11,7 +11,7 @@
           mollit pariatur ut sit.
         </p>
         <button>
-          <a href="/webshop/home-webshop">webshop</a>
+          <a href="/webshop/storefront">webshop</a>
         </button>
       </div>
     </div>

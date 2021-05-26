@@ -13,16 +13,19 @@ $large-dimension--s: 960px; // 60rem
 $large-dimension--m: 1280px; // 80rem
 $large-dimension--l: 1600px; // 100rem
 $large-dimension--xl: 1920px; // 120rem
-$large-dimension--xxl: 2560px; // 160rem
+$large-dimension--xxl: 2240px; // 140rem
+$large-dimension--xxxl: 2560px; // 160rem
 
 // #  Small Static Values
+$small-dimension--xxxs: 1px; // 0.0625rem
 $small-dimension--xxs: 2px; // 0.125rem
-$small-dimension--s: 4px; // 0.25rem
+$small-dimension--xs: 4px; // 0.25rem
 $small-dimension--s: 8px; // 0.5rem
 $small-dimension--m: 16px; // 1rem
 $small-dimension--l: 32px; // 2rem
 $small-dimension--xl: 48px; // 3rem
 $small-dimension--xxl: 64px; // 4em
+$small-dimension--xxxl: 80px; // 5em
 
 // #  Utilitarian Values
 $max-width--root: $large-dimension--xl;
@@ -30,6 +33,7 @@ $max-width--root: $large-dimension--xl;
 // -  <---------------| BOX MODEL: Padding - Border - Margin |--------------->
 
 // #  Dynamic Values
+$buffer--xxxs: 0.0625rem; // 1px
 $buffer--xxs: 0.125rem; // 2px
 $buffer--xs: 0.25rem; // 4px
 $buffer--s: 0.5rem; // 8px
@@ -37,6 +41,7 @@ $buffer--m: 1rem; // 16px
 $buffer--l: 2rem; // 32px
 $buffer--xl: 3rem; // 48px
 $buffer--xxl: 4rem; // 64px
+$buffer--xxxl: 5rem; // 80px
 
 // #  Utilitarian Values
 $center-me: 0 auto;

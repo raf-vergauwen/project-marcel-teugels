@@ -23,11 +23,10 @@ export default {
   name: 'Header',
   data() {
     return {
-      number: 0,
       navItems: [
         { path: '/', label: 'home' },
 
-        { path: '/webshop/home-webshop', label: 'home' },
+        { path: '/webshop/home-webshop', label: 'overview' },
         { path: '/webshop/store', label: 'store' },
         { path: '/webshop/custom-work', label: 'custom work' },
         { path: '/webshop/shopping-cart', label: `shopping-cart(0)` },

@@ -3,8 +3,8 @@
     <restauration-header />
     <div class="container">
       <h1>Profile</h1>
-      <label
-        >First name:
+      <label>
+        First name:
         <input
           v-model="firstName"
           type="text"

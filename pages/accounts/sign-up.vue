@@ -4,20 +4,20 @@
     <div class="container">
       <h1>Account creation</h1>
       <form action="account-creation" @submit.prevent="createAccount">
-        <label
-          >First name:
+        <label>
+          First name:
           <input v-model="firstName" type="text" name="first-name" />
         </label>
-        <label
-          >Last name:
+        <label>
+          Last name:
           <input v-model="lastName" type="text" name="last-name" />
         </label>
-        <label
-          >E-mail:
+        <label>
+          E-mail:
           <input v-model="email" type="text" name="email" />
         </label>
-        <label
-          >Password:
+        <label>
+          Password:
           <input v-model="password" type="password" name="password" />
         </label>
         <button type="submit">Create</button>

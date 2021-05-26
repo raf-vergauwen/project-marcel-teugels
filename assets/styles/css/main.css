@@ -79,35 +79,45 @@ html {
   }
 }
 
-div,
-address,
+nav,
 article,
+section,
 aside,
-footer,
 header,
+footer {
+  outline: 2px red solid;
+}
+
+div {
+  outline: 2px saddlebrown dashed;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-main,
-nav,
-section {
-  outline: 0.125rem rgba(0, 255, 0, 0.75) dashed;
+h6 {
+  outline: 2px brown solid;
 }
 
-blockquote,
-figcaption,
+dl,
+dt,
+dd,
 figure,
-hr,
-li,
+figcaption,
 ol,
+ul,
+li,
+blockquote,
+hr,
 p,
-ul {
-  outline: 0.125rem rgba(0, 0, 255, 0.75) dashed;
+pre,
+address {
+  outline: 2px rgba(0, 0, 255, 0.75) dashed;
 }
 
+a,
 abbr,
 b,
 bdi,
@@ -138,7 +148,7 @@ time,
 ul,
 var,
 wbr {
-  outline: 0.125rem darkorange dotted;
+  outline: 2px darkorange dotted;
 }
 
 area,
@@ -147,7 +157,7 @@ img,
 map,
 track,
 video {
-  outline: calc(0.125rem / 2) rgba(0, 0, 128, 0.75) dashed;
+  outline: calc(2px / 2) rgba(0, 0, 128, 0.75) dashed;
 }
 
 embed,
@@ -156,21 +166,21 @@ object,
 param,
 picture,
 source {
-  outline: calc(0.125rem / 2) rgba(198, 200, 100, 0.75) dashed;
+  outline: calc(2px / 2) rgba(198, 200, 100, 0.75) dashed;
 }
 
 svg,
 math {
-  outline: calc(0.125rem / 2) rgba(0, 128, 128, 0.75) dashed;
+  outline: calc(2px / 2) rgba(0, 128, 128, 0.75) dashed;
 }
 
 canvas {
-  outline: calc(0.125rem / 2) rgba(188, 143, 143, 0.75) dashed;
+  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
 }
 
 del,
 ins {
-  outline: calc(0.125rem / 2) rgba(0, 255, 255, 0.75) dashed;
+  outline: calc(2px / 2) rgba(0, 255, 255, 0.75) dashed;
 }
 
 caption,
@@ -183,7 +193,7 @@ tfoot,
 th,
 thead,
 tr {
-  outline: calc(0.125rem / 2) rgba(128, 128, 0, 0.75) dashed;
+  outline: calc(2px / 2) rgba(128, 128, 0, 0.75) dashed;
 }
 
 datalist,
@@ -199,30 +209,30 @@ output,
 progress,
 select,
 textarea {
-  outline: calc(0.125rem / 2) rgba(255, 0, 255, 0.75) dashed;
+  outline: calc(2px / 2) rgba(255, 0, 255, 0.75) dashed;
 }
 
 details,
 dialog,
 menu {
-  outline: calc(0.125rem / 2) rgba(188, 143, 143, 0.75) dashed;
+  outline: calc(2px / 2) rgba(188, 143, 143, 0.75) dashed;
 }
 
 slot,
 template {
-  outline: calc(0.125rem / 2) rgba(127, 255, 212, 0.75) dashed;
+  outline: calc(2px / 2) rgba(127, 255, 212, 0.75) dashed;
 }
 
 .block-container {
-  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
+  outline: 2px rgba(255, 0, 0, 0.75) solid;
 }
 
 .flex-container {
-  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
+  outline: 2px rgba(255, 0, 0, 0.75) solid;
 }
 
 .grid-container {
-  outline: 0.125rem rgba(255, 0, 0, 0.75) solid;
+  outline: 2px rgba(255, 0, 0, 0.75) solid;
 }
 
 /* ========================================================================== *\
@@ -241,13 +251,11 @@ template {
   padding: 0;
   border: 0;
   margin: 0;
-  width: 100%;
-  height: auto;
 }
 
 html {
   font-size: 1rem;
-  font-size: clamp(1rem, 0rem + 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
 }
@@ -326,8 +334,6 @@ header {
 
 footer {
   padding: 0.5rem;
-  border-top: 1px solid var(--border);
-  padding-top: 10px;
 }
 
 /* -------------------------------------------------------------------------- *\
