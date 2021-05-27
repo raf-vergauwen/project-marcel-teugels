@@ -29,6 +29,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     'nuxt-animejs',
+    '@braid/vue-formulate/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -36,11 +37,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    ['nuxt-buefy', { css: true }, { materialDesignIcons: true }],
+    '@nuxtjs/html-validator',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseUrl: 'http://157.230.126.154/',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

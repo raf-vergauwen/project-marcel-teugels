@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
       class="title-btn__container"
@@ -21,18 +20,19 @@
         :key="workshop.id"
         class="p-workshops__product-list__item"
         :workshop="workshop"
+        @remove-workshop="removeWorkshop($event)"
       />
     </div>
   </main>
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
 import WorkshopItem from '~/components/WorkshopItem';
 
 export default {
-  components: { RestaurationHeader, WorkshopItem },
-
+  name: 'WordShopsPage',
+  components: { WorkshopItem },
+  layout: 'restauratie',
   data() {
     return {
       workshopData: {},
@@ -44,29 +44,34 @@ export default {
       return sessionStorage.getItem('user_role');
     },
   },
-  created() {
+  mounted() {
     this.fetchWorkshops();
   },
   methods: {
     fetchWorkshops() {
-      fetch('http://157.230.126.154/items/workshops?fields=*.*', {
+      this.$axios('items/workshops?fields=*.*', {
         method: 'GET',
         headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('fetch workshops did not work');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          this.workshopData = data.data;
+          console.log(response);
+          this.workshopData = response.data.data;
           console.log(this.user_role);
           this.Admin = this.user_role;
         })
         .catch((err) => {
           console.error(err);
+        });
+    },
+    removeWorkshop(workshop) {
+      this.$axios(`/items/workshops/${workshop.id}`, {
+        method: 'DELETE',
+      })
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
         });
     },
   },

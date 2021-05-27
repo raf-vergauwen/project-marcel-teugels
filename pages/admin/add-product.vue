@@ -1,6 +1,5 @@
 <template>
   <main class="p-product-page">
-    <store-header />
     <section id="app">
       <div>
         <label>
@@ -33,10 +32,9 @@
 </template>
 
 <script>
-import StoreHeader from '~/components/StoreHeader';
-
 export default {
-  components: { StoreHeader },
+  name: 'AddProductPage',
+  layout: 'admin',
   data() {
     return {
       name: '',
@@ -69,7 +67,7 @@ export default {
         images: this.images,
       };
 
-      fetch('http://157.230.126.154/items/products/', {
+      this.$axios('items/products/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,14 +76,7 @@ export default {
         body: JSON.stringify(body),
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not post new product');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+          console.log(response);
         })
         .catch((err) => {
           console.error(err);

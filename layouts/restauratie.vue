@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StoreHeader />
+    <RestaurationHeader />
     <Nuxt />
     <Notify />
   </div>
@@ -8,11 +8,11 @@
 
 <script>
 import Notify from '~/components/Notify';
-import StoreHeader from '~/components/StoreHeader';
+import RestaurationHeader from '~/components/RestaurationHeader';
 
 export default {
-  name: 'DefaultLayout',
-  components: { Notify, StoreHeader },
+  name: 'RestauratieLayout',
+  components: { RestaurationHeader, Notify },
 };
 </script>
 

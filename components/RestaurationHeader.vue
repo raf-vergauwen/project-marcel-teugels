@@ -20,18 +20,18 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'RestaurationHeader',
   data() {
     return {
       navItems: [
-        { path: '/home-restauratie', label: 'home' },
-        { path: '/method', label: 'werkwijze' },
-        { path: '/workshops', label: 'workshops' },
-        { path: '/contact', label: 'contact' },
+        { path: '/restauratie', label: 'home' },
+        { path: '/restauratie/method', label: 'werkwijze' },
+        { path: '/restauratie/workshop', label: 'workshops' },
+        { path: '/restauratie/contact', label: 'contact' },
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profile' },
         { path: '/account-creation', label: 'sign up' },
-        { path: '/storefront', label: 'store' },
+        { path: '/shop/storefront', label: 'store' },
       ],
     };
   },

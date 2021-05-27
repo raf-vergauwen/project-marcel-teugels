@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <div class="container">
       <h1>Account creation</h1>
       <form action="account-creation" @submit.prevent="createAccount">
@@ -27,10 +26,8 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
-
 export default {
-  components: { RestaurationHeader },
+  name: 'AccountCreationPage',
   data() {
     return {
       firstName: '',
@@ -56,7 +53,7 @@ export default {
   },
   methods: {
     createAccount() {
-      fetch('http://157.230.126.154/users', {
+      this.$axios('users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -65,14 +62,6 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not login');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //sessionStorage.setItem('access_token', body.data.access_token);
         })
         .catch((err) => {
           console.error(err);
