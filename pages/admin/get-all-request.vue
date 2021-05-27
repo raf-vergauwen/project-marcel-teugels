@@ -23,6 +23,8 @@
 
 <script>
 export default {
+  name: 'GetAllRequestsPage',
+  layout: 'admin',
   data() {
     return {
       requestData: {},

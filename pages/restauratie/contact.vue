@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <section id="app">
       <div>
         <label>
@@ -32,10 +31,8 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
-
 export default {
-  components: { RestaurationHeader },
+  name: 'ContactPage',
   data() {
     return {
       firstName: '',

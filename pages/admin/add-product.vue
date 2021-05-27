@@ -1,6 +1,5 @@
 <template>
   <main class="p-product-page">
-    <store-header />
     <section id="app">
       <div>
         <label>
@@ -33,10 +32,9 @@
 </template>
 
 <script>
-import StoreHeader from '~/components/StoreHeader';
-
 export default {
-  components: { StoreHeader },
+  name: 'AddProductPage',
+  layout: 'admin',
   data() {
     return {
       name: '',

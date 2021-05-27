@@ -1,6 +1,5 @@
 <template>
   <main class="p-product-page">
-    <restauration-header />
     <div class="p-workshop__container">
       <img class="p-workshop__image" :src="src" alt="" />
       <div
@@ -43,12 +42,11 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
 import axios from 'axios';
 
 export default {
-  name: 'WorkshopPage',
-  components: { RestaurationHeader },
+  name: 'WorkShopDetailsPage',
+  layout: 'restauratie',
 
   data() {
     return {

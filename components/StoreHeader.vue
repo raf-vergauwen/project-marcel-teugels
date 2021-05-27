@@ -27,13 +27,12 @@ export default {
       cijfer: 0,
       navItems: [
         { path: '/', label: 'home' },
-        { path: '/storefront', label: 'store' },
-        { path: '/costumwork', label: 'costum' },
+        { path: '/shop/storefront', label: 'store' },
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profiel' },
         { path: '/account-creation', label: 'sign up' },
-        { path: '/shopping-cart', label: `winkelwagen` },
-        { path: '/home-restauratie', label: 'restauratie' },
+        { path: '/shop/shopping-cart', label: `winkelwagen` },
+        { path: '/restauratie', label: 'restauratie' },
       ],
     };
   },

@@ -3,7 +3,7 @@
     <div class="c-product-item__image">
       <img :src="src + product.images[0].directus_files_id" alt="" />
     </div>
-    <NuxtLink :to="`/product/${product.id}`">
+    <NuxtLink :to="`/shop/product/${product.id}`">
       <h2 class="c-product-item__title">
         {{ product.name }}
       </h2>
@@ -35,13 +35,13 @@ export default {
   },
   computed: {},
   methods: {
-    addProduct(product) {
-      this.$root.$emit('g-add-product', product);
+    addProduct() {
+      this.$root.$emit('g-add-product', this.product);
       this.$root.$emit(
         'notify',
         `${this.product.name} has been added to your shopping basket`,
       );
-      this.$emit('add-product', product);
+      this.$emit('add-product', this.product);
     },
   },
 };

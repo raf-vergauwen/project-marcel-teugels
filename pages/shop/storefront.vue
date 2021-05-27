@@ -17,7 +17,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
-        @add-product="addProduct($event)"
+        @add-product="addProduct"
       />
     </div>
   </main>
@@ -67,9 +67,9 @@ export default {
         });
     },
     addProduct(product) {
+      console.log(product);
       this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
-      console.log(product);
     },
     /*
     newShoppingCart() {

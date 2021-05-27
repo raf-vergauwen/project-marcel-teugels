@@ -1,11 +1,10 @@
 <template>
   <main>
-    <store-header />
     <div class="container">
       <h1 class="title">Shopping cart</h1>
       <button @click="printList">print</button>
       <div class="cart-card">
-        <shopping-cart-item
+        <ShoppingCartItem
           v-for="product in productData"
           :key="product.id"
           class="p-storefront__product-list__item"
@@ -18,16 +17,15 @@
 </template>
 
 <script>
-import shoppingCartItem from '~/components/shoppingCartItem';
-import StoreHeader from '~/components/StoreHeader';
+import ShoppingCartItem from '~/components/ShoppingCartItem';
 
 export default {
   name: 'ShoppingCartPage',
-  components: { StoreHeader, shoppingCartItem },
+  components: { ShoppingCartItem },
 
   data() {
     return {
-      shoppingList: localStorage.getItem('cart').split(','),
+      shoppingList: [],
       productData: [],
     };
   },
@@ -35,6 +33,11 @@ export default {
     shopping_cart() {
       return this.$store.state.shoppingCart;
     },
+  },
+  created() {
+    if (localStorage.getItem('cart')) {
+      this.shoppingList = localStorage.getItem('cart').split(',');
+    }
   },
   methods: {
     printList() {
@@ -62,7 +65,7 @@ export default {
     },
     removeProduct(product) {
       console.log(product);
-      let index = this.productData.indexOf(product);
+      const index = this.productData.indexOf(product);
       this.productData.splice(index, index + 1);
     },
   },

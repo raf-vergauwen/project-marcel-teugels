@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <div class="container">
       <h1>Account creation</h1>
       <form action="account-creation" @submit.prevent="createAccount">
@@ -27,10 +26,8 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
-
 export default {
-  components: { RestaurationHeader },
+  name: 'AccountCreationPage',
   data() {
     return {
       firstName: '',

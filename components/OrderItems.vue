@@ -35,9 +35,9 @@ export default {
 .c-order-item {
   background-color: $light-blue;
   margin: 2em 0em;
-}
 
-.c-order-item__content {
-  width: 600px;
+  &__content {
+    width: 600px;
+  }
 }
 </style>

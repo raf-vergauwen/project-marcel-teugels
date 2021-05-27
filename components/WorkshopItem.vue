@@ -8,7 +8,7 @@
         v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
         class="c-workshop-itmes__admin-btn"
       >
-        <NuxtLink :to="`/workshop/${workshop.id}`">
+        <NuxtLink :to="`/restauratie/workshop/${workshop.id}`">
           <h2 class="c-workshop-item__title">
             {{ workshop.title }}
           </h2>
@@ -22,7 +22,7 @@
       </div>
 
       <div v-else>
-        <NuxtLink :to="`/workshop/${workshop.id}`">
+        <NuxtLink :to="`/restauratie/workshop/${workshop.id}`">
           <h2 class="c-workshop-item__title">
             {{ workshop.title }}
           </h2>
