@@ -51,5 +51,13 @@ export default {
 .c-product-item {
   background-color: $dark-blue;
   padding: $s-site-padding;
+
+  &__image {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 </style>

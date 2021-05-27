@@ -1,93 +1,96 @@
 <template>
-  <section class="home">
+  <main class="home">
     <div class="home__webshop">
-      <div class="home__webshop--container">
-        <h1>webshop</h1>
-        <p class="home__webshop--text">
+      <div class="home__webshop-container">
+        <h1 class="home__title">webshop</h1>
+        <p class="home__webshop-text">
           hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <button>
-          <a href="/storefront"> webshop</a>
-        </button>
+        <nuxt-link class="home__link" to="/storefront"> webshop</nuxt-link>
       </div>
     </div>
     <div class="home__restauratie">
-      <div class="home__restauratie--container">
-        <h2>restauratie</h2>
-        <p class="home__restauratie--text">
+      <div class="home__restauratie-container">
+        <h2 class="home__title">restauratie</h2>
+        <p class="home__restauratie-text">
           hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <button>
-          <a href="/home-restauratie"> restauratie</a>
-        </button>
+        <nuxt-link
+          class="home__link home__restauratie-link"
+          to="/home-restauratie"
+        >
+          restauratie
+        </nuxt-link>
       </div>
     </div>
-  </section>
+  </main>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'IndexPage',
+  layout: 'home',
+};
+</script>
 
 <style lang="scss">
-body {
-  margin: 0px;
-}
-
 .home {
   display: flex;
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(110deg, #b0c4de 50%, #132636 50%);
 
+  &__title {
+    font-size: 30px;
+  }
+
+  &__link {
+    width: 200px;
+    height: 35px;
+    border-radius: 30px;
+    border: 0;
+  }
+
   &__webshop {
     width: 50vw;
     height: 100vh;
 
-    &--text {
+    &-text {
       width: 500px;
     }
 
-    &--container {
+    &-container {
       margin: 5em;
     }
   }
 
   &__restauratie {
+    color: white;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     width: 50vw;
     height: 100vh;
 
-    &--text {
-      width: 500px;
-      text-align: end;
+    &-link {
+      text-align: right;
     }
 
-    &--container {
+    &-text {
+      width: 500px;
+      text-align: right;
+    }
+
+    &-container {
       margin: 5em;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
     }
   }
-}
-
-button {
-  width: 200px;
-  height: 35px;
-  border-radius: 30px;
-  border: 0px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 30px;
 }
 </style>

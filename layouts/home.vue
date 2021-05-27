@@ -1,6 +1,5 @@
 <template>
   <div>
-    <StoreHeader />
     <Nuxt />
     <Notify />
   </div>
@@ -8,11 +7,9 @@
 
 <script>
 import Notify from '~/components/Notify';
-import StoreHeader from '~/components/StoreHeader';
-
 export default {
-  name: 'DefaultLayout',
-  components: { Notify, StoreHeader },
+  name: 'HomeLayout',
+  components: { Notify },
 };
 </script>
 
