@@ -254,17 +254,14 @@
     height: 1%;
     border: 0;
     margin: 2% auto;
-    background-image: linear-gradient(
-      to right,
+    background-image:
+      linear-gradient(to right,
       hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0),
-      hsla(
-        var(--color-background-h),
-        var(--color-background-s),
-        var(--color-background-l),
-        0.75
-      ),
-      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0)
-    );
+      hsla(var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0.75),
+      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0));
   }
 
   &__paragraph {

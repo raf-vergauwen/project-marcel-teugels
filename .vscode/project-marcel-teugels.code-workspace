@@ -104,11 +104,11 @@
     ],
     "bracket-pair-colorizer-2.colors": ["White", "Silver", "LightSlateGray"],
     "bracket-pair-colorizer-2.highlightActiveScope": true,
-    "css.styleSheets": [],
     "diffEditor.codeLens": true,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": true,
+      "source.fixAll.eslint": true
     },
     "editor.codeLensFontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.cursorBlinking": "smooth",
@@ -315,6 +315,7 @@
     "vetur.format.defaultFormatter.js": "prettier-eslint",
     "vetur.format.defaultFormatter.ts": "prettier-tslint",
     "vetur.validation.templateProps": true,
+    "vetur.validation.template": false,
     "vsintellicode.features.python.deepLearning": "enabled",
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
     "window.autoDetectColorScheme": true,
