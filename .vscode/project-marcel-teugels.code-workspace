@@ -324,6 +324,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
     "workbench.preferredLightColorTheme": "Atom One Light",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "liveServer.settings.port": 5501
   }
 }

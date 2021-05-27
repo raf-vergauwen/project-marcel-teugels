@@ -1,0 +1,111 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< MAIN FOOTER >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+// -  <---------------| Main-Footer |--------------->
+@mixin main-footer {
+  .main-footer {
+    // ...
+
+    &__container {
+      // ...
+    }
+
+    &__container--nav {
+      // ...
+      .foot-nav-text {
+        // ...
+
+        &__container {
+          // ...
+        }
+
+        &__title {
+          padding: $buffer--m 0;
+          // ...
+        }
+
+        &__paragraph {
+          // ...
+        }
+      }
+
+      .foot-nav-links {
+        @include breakpoint(s) {
+          flex-direction: row;
+        }
+        // ...
+
+        &__container {
+          // ...
+        }
+
+        &__title {
+          padding: $buffer--m 0;
+          // ...
+        }
+
+        &__list {
+          // ...
+        }
+
+        &__link {
+          white-space: nowrap;
+          // ...
+        }
+      }
+    }
+
+    &__hr {
+      // ...
+    }
+
+    &__container--contact {
+      @include breakpoint(xs) {
+        @include flex-container(nowrap, row, space-evenly, center);
+      }
+
+      .foot-copyright {
+        // ...
+        &__container {
+          flex-direction: row;
+          padding: $buffer--s;
+
+          @include breakpoint(xs) {
+            @include flex-items(2);
+
+            justify-content: flex-start;
+          }
+        }
+
+        &__link {
+          // ...
+        }
+      }
+
+      .foot-social-media {
+        // ...
+
+        &__container {
+          flex-direction: row;
+          justify-content: space-around;
+          padding: $buffer--s;
+
+          @include breakpoint(xs) {
+            @include flex-items(8);
+
+            justify-content: space-around;
+          }
+
+          @include breakpoint(s) {
+            justify-content: space-evenly;
+          }
+        }
+
+        &__link {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,6 @@
 //       "@/*": ["components/*"]
 //     }
 //   },
-//   "include": ["src/**/*.vue", "src/**/*.js", "components/*", "pages/*"],
+//   "include": ["components/*","layouts/*", "pages/*"],
 //   "exclude": ["node_modules", "dist/"]
 // }

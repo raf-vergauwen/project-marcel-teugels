@@ -11,7 +11,7 @@
           mollit pariatur ut sit.
         </p>
         <button>
-          <a href="/webshop/storefront">webshop</a>
+          <a href="/webshop/home-webshop">webshop</a>
         </button>
       </div>
     </div>
@@ -48,14 +48,14 @@ body {
   &__webshop {
     width: 50vw;
     height: 100vh;
+  }
 
-    &--text {
-      width: 500px;
-    }
+  &__webshop--text {
+    width: 500px;
+  }
 
-    &--container {
-      margin: 5em;
-    }
+  &__webshop--container {
+    margin: 5em;
   }
 
   &__restoration {
@@ -64,18 +64,18 @@ body {
     height: 100vh;
     align-items: flex-end;
     justify-content: flex-end;
+  }
 
-    &--text {
-      width: 500px;
-      text-align: end;
-    }
+  &__restoration--text {
+    width: 500px;
+    text-align: end;
+  }
 
-    &--container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin: 5em;
-    }
+  &__restoration--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5em;
   }
 }
 

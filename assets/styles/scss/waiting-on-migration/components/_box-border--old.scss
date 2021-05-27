@@ -33,32 +33,32 @@
   &::after {
     right: $buffer--s;
   }
+}
 
-  .box-border-inner {
-    position: relative;
-    padding: $buffer--s;
+.box-border-inner {
+  position: relative;
+  padding: $buffer--s;
+  border: $buffer--xs solid var(--color-tertiary);
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: $buffer--xs;
+    width: $buffer--m;
+    height: $buffer--m;
     border: $buffer--xs solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    content: '•';
+    font-size: $buffer--m;
+    line-height: calc(#{$buffer--m} - #{$buffer--xs});
+    text-align: center;
+  }
 
-    &::before,
-    &::after {
-      position: absolute;
-      bottom: $buffer--xs;
-      width: $buffer--m;
-      height: $buffer--m;
-      border: $buffer--xs solid var(--color-tertiary);
-      color: var(--color-tertiary);
-      content: '•';
-      font-size: $buffer--m;
-      line-height: calc(#{$buffer--m} - #{$buffer--xs});
-      text-align: center;
-    }
+  &::before {
+    left: $buffer--xxs;
+  }
 
-    &::before {
-      left: $buffer--xxs;
-    }
-
-    &::after {
-      right: $buffer--xxs;
-    }
+  &::after {
+    right: $buffer--xxs;
   }
 }

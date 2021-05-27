@@ -2,13 +2,7 @@
 *  _button.scss: This partial file contains all 'button' styles.
 \* -------------------------------------------------------------------------- */
 
-// -  <<----------<< General >>---------->>
-
-button {
-  // ...
-}
-
-// -  <<----------<< Specific >>---------->>
+// -  <<----------<< Style 1 >>---------->>
 
 .btn {
   @include flex-container;
@@ -49,16 +43,6 @@ button {
     adjust-hsl(var(--color-tertiary), 1, 1, 1.07) 100%);
 }
 
-.btn:active {
-  top: $button--depth + px;
-  color: lightness(var(--color-secondary), 1.45);
-
-  &::before {
-    top: 0;
-    box-shadow: $button--box-shadow---active;
-  }
-}
-
 .btn::before {
   position: absolute;
   z-index: -1;
@@ -84,4 +68,14 @@ button {
 .btn--icon {
   @include box-dimensions(btn, $font-size--3);
   @include flex-items;
+}
+
+.btn:active {
+  top: $button--depth + px;
+  color: lightness(var(--color-secondary), 1.45);
+
+  &::before {
+    top: 0;
+    box-shadow: $button--box-shadow---active;
+  }
 }

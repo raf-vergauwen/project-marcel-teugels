@@ -217,4 +217,152 @@ dialog,
 menu {
   outline: calc(1px * 1.25) solid #ff69b4;
 }
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< LIGHT >>-------------------->>
+\* -------------------------------------------------------------------------- */
+:root,
+[data-theme='light'] {
+  /* - ----------------------------------------------------------------------- */
+  /* - <<--------------------<< TRANSPARANT BG COLORS >>-------------------->> */
+  /* - ----------------------------------------------------------------------- */
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
+  /* -  ---------------------------------------------------------------- */
+  /* -  <<--------------------<< REGULAR COLORS >>-------------------->> */
+  /* -  ---------------------------------------------------------------- */
+  /* #  ---------------------------------------- */
+  /* #  text color group */
+  /* #  ---------------------------------------- */
+  --color-text--lightest: #575656;
+  --color-text--lighter: #333232;
+  --color-text: #0f0e0e;
+  --color-text--darker: #0d0c0c;
+  --color-text--darkest: #0b0a0a;
+  /* #  ---------------------------------------- */
+  /* #  background color group */
+  /* #  ---------------------------------------- */
+  --color-background--lightest: #f9f8f8;
+  --color-background--lighter: #f8f7f7;
+  --color-background: #f7f5f5;
+  --color-background--darker: #d2d0d0;
+  --color-background--darkest: #adacac;
+  /* #  ---------------------------------------- */
+  /* #  primary color group */
+  /* #  ---------------------------------------- */
+  --color-primary--lightest: #5a6772;
+  --color-primary--lighter: #364754;
+  --color-primary: #132636;
+  --color-primary--darker: #10202e;
+  --color-primary--darkest: #0d1b26;
+  /* #  ---------------------------------------- */
+  /* #  secondary color group */
+  /* #  ---------------------------------------- */
+  --color-secondary--lightest: #c8d6e8;
+  --color-secondary--lighter: #bccde3;
+  --color-secondary: #b0c4de;
+  --color-secondary--darker: #96a7bd;
+  --color-secondary--darkest: #7b899b;
+  /* #  ---------------------------------------- */
+  /* #  tertiary color group */
+  /* #  ---------------------------------------- */
+  --color-tertiary--lightest: #d9c5a5;
+  --color-tertiary--lighter: #d0b892;
+  --color-tertiary: #c8ac7f;
+  --color-tertiary--darker: #aa926c;
+  --color-tertiary--darkest: #8c7859;
+  /* #  ---------------------------------------- */
+  /* #  --color-text hsl */
+  /* #  ---------------------------------------- */
+  --color-text: hsl(0, 3.4%, 5.7%);
+  --color-text-h: 0;
+  --color-text-s: 3.4%;
+  --color-text-l: 5.7%;
+  /* #  ---------------------------------------- */
+  /* #  --color-background hsl */
+  /* #  ---------------------------------------- */
+  --color-background: hsl(0, 11.1%, 96.5%);
+  --color-background-h: 0;
+  --color-background-s: 11.1%;
+  --color-background-l: 96.5%;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< LIGHT ALT >>-------------------->>
+\* -------------------------------------------------------------------------- */
+:root,
+[data-theme='light--alt'] {
+  /* - ----------------------------------------------------------------------- */
+  /* - <<--------------------<< TRANSPARANT BG COLORS >>-------------------->> */
+  /* - ----------------------------------------------------------------------- */
+  --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
+  --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
+  --bg-color--transparant---soft: hsla(0, 0%, 100%, 0.35);
+  --bg-color--transparant---medium: hsla(0, 0%, 100%, 0.5);
+  --bg-color--transparant---hard: hsla(0, 0%, 100%, 0.65);
+  --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
+  --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
+  /* -  ---------------------------------------------------------------- */
+  /* -  <<--------------------<< REGULAR COLORS >>-------------------->> */
+  /* -  ---------------------------------------------------------------- */
+  /* #  ---------------------------------------- */
+  /* #  text color group */
+  /* #  ---------------------------------------- */
+  --color-text--lightest: #4d4d70;
+  --color-text--lighter: #262652;
+  --color-text: #000033;
+  --color-text--darker: #00002b;
+  --color-text--darkest: #000024;
+  /* #  ---------------------------------------- */
+  /* #  background color group */
+  /* #  ---------------------------------------- */
+  --color-background--lightest: #fafaff;
+  --color-background--lighter: #f9f9ff;
+  --color-background: #f8f8ff;
+  --color-background--darker: #d3d3d9;
+  --color-background--darkest: #aeaeb3;
+  /* #  ---------------------------------------- */
+  /* #  primary color group */
+  /* #  ---------------------------------------- */
+  --color-primary--lightest: #4e6d85;
+  --color-primary--lighter: #284d6b;
+  --color-primary: #022e51;
+  --color-primary--darker: #022745;
+  --color-primary--darkest: #012039;
+  /* #  ---------------------------------------- */
+  /* #  secondary color group */
+  /* #  ---------------------------------------- */
+  --color-secondary--lightest: #7e9fce;
+  --color-secondary--lighter: #628bc4;
+  --color-secondary: #4676b9;
+  --color-secondary--darker: #3c649d;
+  --color-secondary--darkest: #315382;
+  /* #  ---------------------------------------- */
+  /* #  tertiary color group */
+  /* #  ---------------------------------------- */
+  --color-tertiary--lightest: #cdac7e;
+  --color-tertiary--lighter: #c29a62;
+  --color-tertiary: #b78846;
+  --color-tertiary--darker: #9c743c;
+  --color-tertiary--darkest: #805f31;
+  /* #  ---------------------------------------- */
+  /* #  --color-text hsl */
+  /* #  ---------------------------------------- */
+  --color-text: hsl(240, 100%, 10%);
+  --color-text-h: 240;
+  --color-text-s: 100%;
+  --color-text-l: 10%;
+  /* #  ---------------------------------------- */
+  /* #  --color-background hsl */
+  /* #  ---------------------------------------- */
+  --color-background: hsl(240, 100%, 98.6%);
+  --color-background-h: 240;
+  --color-background-s: 100%;
+  --color-background-l: 98.6%;
+}
 /*# sourceMappingURL=style-recourses.css.map */

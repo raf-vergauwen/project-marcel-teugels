@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< BUTTON >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< Style 1 >>---------->>
+.btn {
+  @include flex-container;
+
+  position: relative;
+  top: 0;
+  padding: $buffer--xs;
+  border-top: 1px solid lightness(var(--color-tertiary), 1.22);
+  border-bottom: 1px solid lightness(var(--color-tertiary), 1.2);
+  margin-bottom: $buffer--s;
+  margin-left: $buffer--s;
+  background:
+    linear-gradient(to bottom,
+    adjust-hsl(var(--color-tertiary), 1, 1.35, 1.15) 0%,
+    adjust-hsl(var(--color-tertiary), 1, 1.15, 1.12) 26%,
+    adjust-hsl(var(--color-tertiary), 1, 1, 1) 100%);
+  border-radius: $small-dimension--s;
+  color: lightness(var(--color-secondary), 0.9);
+  text-shadow:
+    0 -2px 0 lightness(var(--color-secondary), 0.8),
+    0 1px 1px lightness(var(--color-secondary), 1.2);
+  transition: all ($button--speed + s) $button--timing-function;
+
+  &:visited {
+    color: lightness(var(--color-tertiary), 0.9);
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.btn:hover {
+  background:
+    linear-gradient(to bottom,
+    adjust-hsl(var(--color-tertiary), 1, 1.35, 1.22) 0%,
+    adjust-hsl(var(--color-tertiary), 1, 1.15, 1.19) 26%,
+    adjust-hsl(var(--color-tertiary), 1, 1, 1.07) 100%);
+}
+
+.btn::before {
+  position: absolute;
+  z-index: -1;
+  top: ($button--depth) + px;
+  right: 0;
+  left: 0;
+  display: inline-flex;
+  height: $button--height;
+  background:
+    linear-gradient(to top,
+    adjust-hsl(var(--color-secondary), 1, 1.15, 0.6) 0%,
+    adjust-hsl(var(--color-secondary), 1, 1.1, 0.75) $button--depth + px);
+  border-radius: $small-dimension--s;
+  box-shadow: $button--box-shadow---before;
+  content: '';
+  transition: all (($button--speed * 1.3) + s) $button--timing-function;
+}
+
+.btn--text {
+  padding: 0 ($button--height/4);
+}
+
+.btn--icon {
+  @include box-dimensions(btn, $font-size--3);
+  @include flex-items;
+}
+
+.btn:active {
+  top: $button--depth + px;
+  color: lightness(var(--color-secondary), 1.45);
+
+  &::before {
+    top: 0;
+    box-shadow: $button--box-shadow---active;
+  }
+}

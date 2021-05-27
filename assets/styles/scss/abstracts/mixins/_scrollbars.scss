@@ -4,13 +4,16 @@
 
 // -  <---------------| Scrollbar-Style |--------------->
 @mixin scrollbar-style($size, $color) {
-
   // For Internet Explorer
   scrollbar-face-color: $color;
   scrollbar-track-color: lightness($color, 0.5);
 
   &::-webkit-scrollbar {
     width: $size;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lightness($color, 0.5);
   }
 
   &::-webkit-scrollbar-thumb {
@@ -20,10 +23,6 @@
     &:hover {
       background: lightness($color, 0.75);
     }
-  }
-
-  &::-webkit-scrollbar-track {
-    background: lightness($color, 0.5);
   }
 }
 

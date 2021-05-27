@@ -96,10 +96,12 @@ export default {
 </script>
 
 <style lang="scss">
-.title__container {
-  display: flex;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
+.title {
+  &__container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>

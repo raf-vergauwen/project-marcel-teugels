@@ -6,5 +6,6 @@ module.exports = {
   ],
   rules: {
     'order/properties-alphabetical-order': null,
+    'selector-class-pattern': null,
   },
 };

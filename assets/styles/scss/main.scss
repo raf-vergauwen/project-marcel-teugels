@@ -3,7 +3,7 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
-@import 'style-recourses.scss';
+@import 'style-recourses';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
@@ -14,39 +14,44 @@
 +  PARTIAL SCSS GROUP 3 - `base/`
 \* ========================================================================== */
 
-@import 'base/root';
-@import 'base/sectioning';
-@import 'base/heading';
-@import 'base/block-text';
-@import 'base/inline-text';
-@import 'base/multimedia';
-@import 'base/table';
-@import 'base/forms';
-@import 'base/interactive';
+@import 'base/b-root';
+@import 'base/b-sectioning';
+@import 'base/b-heading';
+@import 'base/b-block-text';
+@import 'base/b-inline-text';
+@import 'base/b-multimedia';
+@import 'base/b-table';
+@import 'base/b-forms';
+@import 'base/b-interactive';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */
-// @import 'waiting-on-migration/layout/header';
-// @import 'waiting-on-migration/layout/footer';
+@import 'components/layout/webshop/l-home-webshop';
+@import 'components/layout/webshop/l-store';
+@import 'components/layout/webshop/l-custom-work';
+@import 'components/layout/webshop/l-shopping-cart';
+@import 'components/layout/restoration/l-home-restoration';
+@import 'components/layout/restoration/l-methodology';
+@import 'components/layout/restoration/l-workshops';
+@import 'components/layout/restoration/l-contact';
+@import 'components/layout/accounts/l-sign-up';
+@import 'components/layout/accounts/l-login';
+@import 'components/layout/accounts/l-profile';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
-// @import 'waiting-on-migration/components/card';
-// @import 'waiting-on-migration/components/icon';
-// @import 'waiting-on-migration/components/switch';
-// @import 'waiting-on-migration/components/mobile-menu';
-// @import 'waiting-on-migration/components/button';
-// @import 'waiting-on-migration/components/scrollbar';
-// @import 'waiting-on-migration/components/box-border';
-
-@import 'components/main-logo';
-@import 'components/main-header';
-@import 'components/product-item';
-@import 'components/shopping-cart-item';
-@import 'components/workshop-item';
-@import 'components/main-footer';
+@import 'components/c-card';
+@import 'components/c-icon';
+@import 'components/c-button';
+@import 'components/c-box-border';
+@import 'components/c-main-logo';
+@import 'components/c-main-header';
+@import 'components/c-product-item';
+@import 'components/c-shopping-cart-item';
+@import 'components/c-workshop-item';
+@import 'components/c-main-footer';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
@@ -57,5 +62,5 @@
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`
 \* ========================================================================== */
-// @import 'themes/light--v1';
-@import 'themes/light--v2';
+// @import 'themes/light';
+// @import 'themes/light--v2';

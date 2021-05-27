@@ -1,0 +1,308 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< HOME WEBSHOP >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 1: hero
+\* -------------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url('/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    height: 100vh;
+    justify-content: center;
+    background-color: $bg-color--transparant-black---level-2;
+    place-content: center;
+    place-items: center;
+  }
+
+  &__visual {
+    max-height: 40vh;
+    padding-top: $buffer--l;
+    fill: var(--color-tertiary);
+    filter: drop-shadow(0 0 0.1em var(--color-text));
+  }
+
+  &__subject {
+    color: var(--color-background);
+    filter: drop-shadow(0 0 0.1em var(--color-text));
+  }
+
+  &__title {
+    padding-top: 0;
+    color: var(--color-secondary);
+    filter: drop-shadow(0 0 0.1em var(--color-text));
+    font-family: 'Oswald', sans-serif;
+    font-size: $font-size--4;
+    font-weight: 600;
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 2: Hot Items
+\* -------------------------------------------------------------------------- */
+
+.hot-items {
+  &__container {
+    @include box-dimensions;
+    @include flex-container(nowrap, column, center, center);
+
+    @include breakpoint(s) {
+      @include flex-container(wrap, row, space-evenly, stretch);
+    }
+  }
+
+  &__title {
+    // padding: $buffer--l 0 $buffer--s 0;
+  }
+}
+
+.hot-item {
+  padding: 0 $buffer--s $buffer--xxl $buffer--s;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    @include general-transition;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: $buffer--m;
+    font-variant: normal;
+    font-weight: $font-weight--subject;
+  }
+
+  &__visual {
+    @include general-transition;
+
+    height: 100%;
+    filter: $filter--dark;
+  }
+
+  &__caption {
+    @include general-transition;
+    @include box-dimensions;
+
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: calc(-#{$buffer--xxl} * 3 - (#{$buffer--s}));
+    left: 0;
+    padding: $buffer--m;
+    background-color: $bg-color--transparant-black---level-3;
+    box-shadow: $caption--box-shadow---slide-in;
+  }
+
+  &__caption-title {
+    padding: 0;
+    color: var(--color-background);
+    font-variant: small-caps;
+    font-weight: $font-weight--subject;
+    text-transform: lowercase;
+  }
+
+  &__caption-text {
+    overflow: auto;
+    height: calc(#{$buffer--xxl} * 2);
+    margin: $buffer--m 0;
+    color: var(--color-background);
+  }
+
+  &__caption-text::-webkit-scrollbar-thumb {
+    background-color: var(--color-background--darkest);
+    outline: 1px solid var(--color-text--lightest);
+  }
+
+  &__caption-btns {
+    flex-direction: row;
+  }
+
+  &__caption-btn {
+    @include flex-items;
+    // ...
+  }
+}
+
+.hot-item__container:hover {
+  // ...
+
+  // ...
+  .hot-item__visual {
+    filter: $filter--dark-blur;
+    // background-color: orchid;
+    transform: scale(1.25);
+  }
+
+  .hot-item__caption {
+    bottom: 0%;
+    background-color: $bg-color--transparant-black---level-5;
+    box-shadow: $caption--box-shadow---slide-out;
+  }
+
+  .hot-item__title {
+    top: -30%;
+  }
+
+  .hot-item__caption-title {
+    @include general-transition;
+
+    color: var(--color-secondary);
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 3: About
+\* -------------------------------------------------------------------------- */
+
+.about {
+  background: radial-gradient(#003, #000);
+
+  &__container {
+    @include flex-container(nowrap, column, center, center);
+
+    @include breakpoint(s) {
+      @include flex-container(wrap, row, space-evenly, stretch);
+    }
+  }
+
+  &__title {
+    // ...
+  }
+
+  &__container--visual {
+    padding: 0 $buffer--s $buffer--xxl $buffer--s;
+  }
+
+  &__image {
+    // ...
+  }
+
+  &__container--text {
+    min-width: calc(#{$large-dimension--xxs} - #{$buffer--l});
+    max-width: calc(#{$card--width} + #{$buffer--m});
+    padding: 0;
+
+    @include breakpoint(m) {
+      min-width: calc(#{$card--width} + (#{$card--width} / 2));
+    }
+
+    @include breakpoint(l) {
+      min-width: calc(#{$card--width} * 2);
+    }
+  }
+
+  &__outer-border {
+    top: calc((#{$card--height} / 2) + #{$buffer--s});
+    margin-bottom: $buffer--xxl;
+    // ...
+
+    @include breakpoint(xs) {
+      top: calc((#{$card--height} / 2) + #{$buffer--m} + #{$buffer--m});
+    }
+
+    @include breakpoint(s) {
+      top: calc((#{$card--height} / 2) - #{$buffer--l} - #{$buffer--s});
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(m) {
+      // ...
+    }
+  }
+
+  &__inner-border {
+    @include breakpoint(s) {
+      height: calc(#{$card--height} - #{$buffer--m} + #{$buffer--m});
+    }
+  }
+
+  &__text-title {
+    padding: $buffer--s 0;
+    font-size: $font-size--4;
+    font-variant: small-caps;
+
+    @include breakpoint(s) {
+      height: 10%;
+    }
+  }
+
+  &__sub-title {
+    padding: $buffer--s 0;
+    font-size: $font-size--2;
+
+    @include breakpoint(s) {
+      height: 20%;
+    }
+
+    @include breakpoint(m) {
+      height: 15%;
+    }
+  }
+
+  &__hr {
+    height: 1%;
+    border: 0;
+    margin: 2% auto;
+    background-image: linear-gradient(
+      to right,
+      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0),
+      hsla(
+        var(--color-background-h),
+        var(--color-background-s),
+        var(--color-background-l),
+        0.75
+      ),
+      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0)
+    );
+  }
+
+  &__paragraph {
+    overflow: auto;
+    height: calc(#{$card--height} - (#{$buffer--m} * 10));
+    color: var(--color-background);
+    text-align: justify;
+
+    @include breakpoint(s) {
+      height: 62.5%;
+    }
+
+    @include breakpoint(m) {
+      height: 67.5%;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  INTERMEZZO
+\* -------------------------------------------------------------------------- */
+
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    height: 100vh;
+    background-color: $bg-color--transparant-black---level-2;
+  }
+}
+
+.intermezzo--1 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
+}
+
+.intermezzo--2 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/construction-work--05.jpg');
+}

@@ -2,9 +2,9 @@
   <section id="app">
     <ul class="request-list">
       <li
-        class="request-item"
         v-for="request in requestData.data"
         :key="request.name"
+        class="request-item"
         style="list-style-type: none;"
       >
         {{ request.name }}
@@ -59,15 +59,15 @@ body {
   display: flex;
   width: 100vw;
   justify-content: center;
-  background-color: silver;
+  background-color: var(--color-background--darkest);
 }
 
 .request-item {
   width: 50vw;
   padding: 2em;
   margin: 1em;
-  background-color: white;
+  background-color: var(--color-background);
   border-radius: 15px;
-  color: black;
+  color: var(--color-text);
 }
 </style>

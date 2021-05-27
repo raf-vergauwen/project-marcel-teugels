@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< CARD >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+.card {
+  @include box-shadow(2);
+  @include box-transition;
+
+  overflow: hidden;
+  min-width: calc(#{$large-dimension--xxs} - (#{$large-dimension--xxs} / 10));
+  max-width: calc((#{$large-dimension--l} / 4));
+  aspect-ratio: $card--aspect-ratio;
+  // height: $card--height;
+
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+  border-radius: $small-dimension--s;
+
+  @include breakpoint(xs) {
+    min-width: $card--width;
+    height: $card--height;
+    max-height: $card--height;
+    aspect-ratio: $card--aspect-ratio;
+  }
+
+  &:hover {
+    @include box-shadow(5);
+  }
+}
+
+// -  <<----------<< Specific >>---------->>

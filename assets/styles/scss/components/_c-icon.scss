@@ -1,0 +1,69 @@
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< ICON >>-------------------->>
+\* -------------------------------------------------------------------------- */
+
+// -  <<----------<< General >>---------->>
+.fas {
+  @include box-dimensions(fas, $font-size--2);
+}
+
+.fab {
+  @include box-dimensions(fab, $font-size--5);
+}
+
+// -  <<----------<< Specific >>---------->>
+.fa-heart {
+  &:hover {
+    @include box-transition;
+
+    color: #f00;
+  }
+}
+
+.fa-facebook-f {
+  &:hover {
+    @include box-transition;
+
+    color: #1877f2;
+  }
+}
+
+.fa-twitter {
+  &:hover {
+    @include box-transition;
+
+    color: #1da1f2;
+  }
+}
+
+.fa-instagram {
+  &:hover {
+    @include box-transition;
+
+    color: #e4405f;
+  }
+}
+
+.fa-pinterest-p {
+  &:hover {
+    @include box-transition;
+
+    color: #bd081c;
+  }
+}
+
+.fa-youtube {
+  &:hover {
+    @include box-transition;
+
+    color: #f00;
+  }
+}
+
+.fa-shopping-basket {
+  &:hover {
+    @include box-transition;
+
+    color: #000;
+  }
+}
