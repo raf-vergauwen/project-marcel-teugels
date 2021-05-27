@@ -11,6 +11,8 @@
 
 <script>
 export default {
+  name: 'OrderPage',
+  layout: 'admin',
   data() {
     return {
       orderProductData: {},

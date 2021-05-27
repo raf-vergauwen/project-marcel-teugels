@@ -59,6 +59,8 @@ export default {
       })
       .catch((err) => {
         console.error(err);
+        sessionStorage.removeItem('access_token');
+        this.$router.push('/login');
       });
   },
   methods: {

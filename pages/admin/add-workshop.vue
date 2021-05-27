@@ -1,6 +1,5 @@
 <template>
   <main class="p-product-page">
-    <restauration-header />
     <section id="app">
       <template>
         <FormulateInput
@@ -42,11 +41,9 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
-import axios from 'axios';
-
 export default {
-  components: { RestaurationHeader },
+  name: 'AddWorkshopPage',
+  layout: 'admin',
   data() {
     return {
       title: '',
@@ -102,15 +99,11 @@ export default {
     },
 
     postImage() {
-      const options = {
+      this.$axios('/assets/' + this.newImage, {
         method: 'POST',
-        url: 'http://157.230.126.154/assets/' + this.newImage,
         headers: { 'Content-Type': 'application/json' },
         data: {},
-      };
-
-      axios
-        .request(options)
+      })
         .then(function (response) {
           console.log(response.data);
         })

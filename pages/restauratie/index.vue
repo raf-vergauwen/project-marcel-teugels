@@ -1,7 +1,5 @@
 <template>
   <main>
-    <restauration-header />
-
     <section class="hero"></section>
     <section class="diensten">
       <div class="diensten--container">
@@ -170,9 +168,9 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
 export default {
-  components: { RestaurationHeader },
+  name: 'RestauratieIndexPage',
+  layout: 'restauratie',
 };
 </script>
 

@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
       class="title-btn__container"
@@ -21,20 +20,19 @@
         :key="workshop.id"
         class="p-workshops__product-list__item"
         :workshop="workshop"
-        v-on:remove-workshop="removeWorkshop($event)"
+        @remove-workshop="removeWorkshop($event)"
       />
     </div>
   </main>
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
 import WorkshopItem from '~/components/WorkshopItem';
-import axios from 'axios';
 
 export default {
-  components: { RestaurationHeader, WorkshopItem },
-
+  name: 'WordShopsPage',
+  components: { WorkshopItem },
+  layout: 'restauratie',
   data() {
     return {
       workshopData: {},
@@ -66,14 +64,9 @@ export default {
         });
     },
     removeWorkshop(workshop) {
-      console.log(workshop.id);
-      const options = {
+      this.$axios(`/items/workshops/${workshop.id}`, {
         method: 'DELETE',
-        url: `http://157.230.126.154/items/workshops/${workshop.id}`,
-      };
-
-      axios
-        .request(options)
+      })
         .then(function (response) {
           console.log(response.data);
         })

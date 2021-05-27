@@ -1,6 +1,5 @@
 <template>
   <main>
-    <restauration-header />
     <div class="conservation__container">
       <img
         class="conservation__img"
@@ -97,9 +96,9 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
 export default {
-  components: { RestaurationHeader },
+  name: 'MethodPage',
+  layout: 'restauratie',
 };
 </script>
 

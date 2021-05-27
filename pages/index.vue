@@ -8,7 +8,7 @@
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <nuxt-link class="home__link" to="/storefront"> webshop</nuxt-link>
+        <nuxt-link class="home__link" to="/shop/storefront"> webshop</nuxt-link>
       </div>
     </div>
     <div class="home__restauratie">
@@ -19,10 +19,7 @@
           jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
           jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
         </p>
-        <nuxt-link
-          class="home__link home__restauratie-link"
-          to="/home-restauratie"
-        >
+        <nuxt-link class="home__link home__restauratie-link" to="/restauratie">
           restauratie
         </nuxt-link>
       </div>
