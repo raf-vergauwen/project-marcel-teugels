@@ -16,7 +16,7 @@ export default {
     title: 'project_marcel_teugels',
     htmlAttrs: {
       lang: 'en',
-      'data-theme': 'light',
+      dataTheme: 'light',
     },
     meta: [
       { charset: 'utf-8' },
@@ -41,7 +41,18 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome', // Imports FontAwesome 5 SVG icons
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    preload: true,
+    download: true,
+    families: {
+      Roboto: true,
+      Montserrat: true,
+      Oswald: true,
+    },
+  },
 
   fontawesome: {
     imports: [
