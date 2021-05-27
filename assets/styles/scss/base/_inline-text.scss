@@ -8,19 +8,19 @@
 
 // #  <---------------| <b> |--------------->
 b {
-  font-weight: $font-weight--subject;
   color: var(--color-text--darker);
+  font-weight: $font-weight--subject;
 }
 
 // #  <---------------| <code> |--------------->
 code {
-  background: var(--color-background);
-  color: var(--color-text);
   padding: $buffer--xs;
+  background: var(--color-background);
   border-radius: $small-dimension--xs;
+  color: var(--color-text);
+  font-family: $font-family--text-alt;
   font-size: $font-size--1;
   font-variant: $font-variant--text-alt;
-  font-family: $font-family--text-alt;
 }
 
 // #  <---------------| <em> |--------------->
@@ -35,19 +35,19 @@ i {
 
 // #  <---------------| <kbd> |--------------->
 kbd {
-  background: var(--color-primary);
+  padding: $buffer--xs;
   border: $small-dimension--xxxs solid var(--color-secondary);
+  background: var(--color-primary);
   border-radius: $small-dimension--xs;
   color: var(--color-text--darker);
-  padding: $buffer--xs;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <mark> |--------------->
 mark {
+  padding: $buffer--xs;
   background-color: var(--color-tertiary);
   border-radius: $small-dimension--xs;
-  padding: $buffer--xs;
   color: var(--color-text--darker);
 }
 
@@ -58,18 +58,18 @@ s {
 
 // #  <---------------| <samp> |--------------->
 samp {
-  background: var(--color-background);
-  color: var(--color-text--darker);
   padding: $buffer--xs;
+  background: var(--color-background);
   border-radius: $small-dimension--xs;
+  color: var(--color-text--darker);
   font-size: $font-size--1;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <small> |--------------->
 small {
-  font-weight: $font-weight--text-alt;
   color: var(--color-text--lighter);
+  font-weight: $font-weight--text-alt;
 }
 
 // #  <---------------| <strong> |--------------->
@@ -81,15 +81,15 @@ strong {
 // #  <---------------| <sub> |--------------->
 sub {
   color: var(--color-text--lighter);
-  font-weight: $font-weight--text-alt;
   font-variant: $font-variant--text-alt;
+  font-weight: $font-weight--text-alt;
 }
 
 // #  <---------------| <sup> |--------------->
 sup {
   color: var(--color-text--lighter);
-  font-weight: $font-weight--text-alt;
   font-variant: $font-variant--text-alt;
+  font-weight: $font-weight--text-alt;
 }
 
 // #  <---------------| <u> |--------------->
@@ -100,8 +100,8 @@ u {
 // #  <---------------| <var> |--------------->
 var {
   color: var(--color-primary);
-  font-style: normal;
   font-family: $font-family--text-alt;
+  font-style: normal;
   font-variant: $font-variant--text-alt;
 }
 
@@ -169,8 +169,8 @@ a {
 
 // #  <---------------| <abbr> |--------------->
 abbr {
-  font-variant: $font-variant--text-alt;
   color: var(--color-text--lighter);
+  font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <bdi> |--------------->
@@ -202,10 +202,10 @@ dfn {
 
 // #  <---------------| <q> |--------------->
 q {
-  border-left: $small-dimension--xs solid var(--color-tertiary--darkest);
   padding: $buffer--xs;
-  font-style: italic;
+  border-left: $small-dimension--xs solid var(--color-tertiary--darkest);
   color: var(--color-text--lighter);
+  font-style: italic;
 
   &::before {
     content: none;
@@ -218,10 +218,10 @@ q {
 
 // #  <---------------| <time> |--------------->
 time {
-  background: var(--color-background);
-  color: var(--color-text);
   padding: $buffer--xs;
+  background: var(--color-background);
   border-radius: $small-dimension--xs;
+  color: var(--color-text);
   font-size: $font-size--1;
 }
 

@@ -8,20 +8,20 @@
 
 // #  <---------------| <dl> |--------------->
 dl {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <dt> |--------------->
 dt {
-  color: var(--color-text);
   padding: $buffer--xxs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <dd> |--------------->
 dd {
-  color: var(--color-text);
   padding: $buffer--xxs;
+  color: var(--color-text);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -30,8 +30,8 @@ dd {
 
 // #  <---------------| <figure> |--------------->
 figure {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <figcaption> |--------------->
@@ -54,20 +54,19 @@ figcaption {
 
 // #  <---------------| <ol> |--------------->
 ol {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <ul> |--------------->
 ul {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <li> |--------------->
 li {
   padding: $buffer--xxs;
-  list-style-type: none;
   color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
@@ -75,6 +74,7 @@ li {
   font-weight: $font-weight--text;
   letter-spacing: $letter-spacing--text;
   line-height: $line-height--text;
+  list-style-type: none;
   text-align: $text-align--text;
   text-transform: $text-transform--text;
 }
@@ -85,20 +85,19 @@ li {
 
 // #  <---------------| <address> |--------------->
 address {
-  font-style: normal;
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
+  font-style: normal;
 }
 
 // #  <---------------| <blockquote> |--------------->
 blockquote {
-  border-left: $buffer--xs solid var(--color-tertiary--darkest);
   padding: $buffer--xs;
-  font-style: italic;
-
+  border-left: $buffer--xs solid var(--color-tertiary--darkest);
   color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
+  font-style: italic;
   font-variant: $font-variant--text;
   font-weight: $font-weight--text;
   letter-spacing: $letter-spacing--text;
@@ -106,12 +105,12 @@ blockquote {
   text-align: $text-align--text;
   text-transform: $text-transform--text;
 
-  & > footer {
-    font-style: normal;
+  > footer {
     border: 0;
+    font-style: normal;
   }
 
-  & cite {
+  cite {
     font-style: normal;
   }
 }
@@ -119,27 +118,22 @@ blockquote {
 hr {
   width: 100%;
   height: $small-dimension--xxxs;
-  border: 0;
   padding: $buffer--xs;
+  border: 0;
   margin: $buffer--xs;
-  background-image: linear-gradient(
-    to right,
-    hsla(
-      var(--color-background-h),
-      var(--color-background-s),
-      var(--color-background-l),
-      0
-    ),
+  background-image:
+    linear-gradient(to right,
+    hsla(var(--color-background-h),
+    var(--color-background-s),
+    var(--color-background-l),
+    0),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
-    hsla(
-      var(--color-background-h),
-      var(--color-background-s),
-      var(--color-background-l),
-      0
-    )
-  );
+    hsla(var(--color-background-h),
+    var(--color-background-s),
+    var(--color-background-l),
+    0));
 }
 
 // #  <---------------| <p> |--------------->
@@ -160,9 +154,10 @@ p {
 pre {
   padding: $buffer--xs;
   color: var(--color-text);
-  & > code {
-    padding: $buffer--xxs;
+
+  > code {
     display: block;
+    padding: $buffer--xxs;
     overflow-x: auto;
   }
 }

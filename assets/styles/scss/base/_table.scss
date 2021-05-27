@@ -8,25 +8,31 @@
 
 // #  <---------------| <table> |--------------->
 table {
-  border-collapse: collapse;
-  margin-bottom: $buffer--s;
   width: 100%;
-  table-layout: fixed;
-  color: var(--color-text);
   padding: $buffer--s;
   margin: $buffer--s;
+  margin-bottom: $buffer--s;
+  border-collapse: collapse;
+  color: var(--color-text);
+  table-layout: fixed;
 }
 
 // #  <---------------| <thead> |--------------->
 thead {
+  padding: $buffer--xs;
   border-bottom: $small-dimension--xxxs solid var(--color-secondary);
   color: var(--color-text);
+}
+// #  <---------------| <tr> |--------------->
+tr {
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <tbody> |--------------->
 tbody {
   padding: $buffer--xs;
+
   tr:nth-child(even) {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -45,21 +51,15 @@ tbody {
 
 // #  <---------------| <tfoot> |--------------->
 tfoot {
+  padding: $buffer--xs;
   border-top: $small-dimension--xxxs solid var(--color-secondary);
   color: var(--color-text);
-  padding: $buffer--xs;
 }
 
 // #  <---------------| <colgroup> |--------------->
 colgroup {
-  color: var(--color-text);
   padding: $buffer--xs;
-}
-
-// #  <---------------| <tr> |--------------->
-tr {
   color: var(--color-text);
-  padding: $buffer--xs;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -68,31 +68,31 @@ tr {
 
 // #  <---------------| <caption> |--------------->
 caption {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <col> |--------------->
 col {
-  color: var(--color-text);
   padding: $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <th> |--------------->
 th {
   padding: $buffer--xs;
+  color: var(--color-text);
+  font-weight: $font-weight--subject;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
-  font-weight: $font-weight--subject;
-  color: var(--color-text);
 }
 
 // #  <---------------| <td> |--------------->
 td {
   padding: $buffer--xs;
+  color: var(--color-text);
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
-  color: var(--color-text);
 }

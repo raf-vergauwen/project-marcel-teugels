@@ -8,49 +8,49 @@
 
 // #  <---------------| <form> |--------------->
 form {
-  color: var(--color-text);
-  margin: $buffer--s;
   padding: $buffer--s;
+  margin: $buffer--s;
+  color: var(--color-text);
 }
 
 // #  <---------------| <datalist> |--------------->
 datalist {
-  color: var(--color-text);
-  margin: $buffer--s;
   padding: $buffer--s;
+  margin: $buffer--s;
+  color: var(--color-text);
 }
 
 // #  <---------------| <fieldset> |--------------->
 fieldset {
-  color: var(--color-text);
-  border: $buffer--xxxs var(--color-tertiary--darkest) solid;
-  border-radius: $small-dimension--s;
-  margin: $buffer--s;
   padding: $buffer--s;
+  border: $buffer--xxxs var(--color-tertiary--darkest) solid;
+  margin: $buffer--s;
+  border-radius: $small-dimension--s;
+  color: var(--color-text);
 }
 
 // #  <---------------| <optgroup> |--------------->
 optgroup {
-  color: var(--color-text);
-  margin: $buffer--s;
   padding: $buffer--s;
+  margin: $buffer--s;
+  color: var(--color-text);
 }
 
 // #  <---------------| <select> |--------------->
 select {
   @include click-transition--small;
 
-  color: var(--color-text);
+  padding: $buffer--s;
+  border: 0;
+  margin: $buffer--s;
   background-color: var(--color-tertiary);
+  border-radius: $small-dimension--s;
+  color: var(--color-text);
   font-family: inherit;
   font-size: inherit;
-  margin: $buffer--s;
-  padding: $buffer--s;
-  border: none;
-  border-radius: $small-dimension--s;
   outline: none;
 
-  &[multiple] {
+  [multiple] {
     padding-right: $buffer--s;
     background-image: none;
     overflow-y: auto;
@@ -82,14 +82,14 @@ select {
 button {
   @include click-transition--small;
 
-  color: var(--color-text);
+  padding: $buffer--s;
+  border: 0;
+  margin: $buffer--s;
   background-color: var(--color-tertiary);
+  border-radius: $small-dimension--s;
+  color: var(--color-text);
   font-family: inherit;
   font-size: inherit;
-  margin: $buffer--s;
-  padding: $buffer--s;
-  border: none;
-  border-radius: $small-dimension--s;
   outline: none;
 
   &:focus {
@@ -114,106 +114,105 @@ button {
 input {
   @include click-transition--small;
 
-  color: var(--color-text);
+  padding: $buffer--s;
+  border: 0;
+  margin: $buffer--s;
   background-color: var(--color-tertiary);
+  border-radius: $small-dimension--s;
+  color: var(--color-text);
   font-family: inherit;
   font-size: inherit;
-  margin: $buffer--s;
-  padding: $buffer--s;
-  border: none;
-  border-radius: $small-dimension--s;
   outline: none;
-
   vertical-align: top;
 
-  &[type='submit'] {
-    margin: $buffer--s;
+  [type='submit'] {
     padding: $buffer--s;
+    margin: $buffer--s;
     background: var(--color-tertiary--lighter);
-
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
   }
 
-  &[type='reset'] {
-    margin: $buffer--s;
-    padding: $buffer--s;
-    background: var(--color-tertiary--lighter);
-
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
+  [type='submit']:active {
+    transform: translateY($small-dimension--xxs);
   }
 
-  &[type='checkbox'] {
-    height: $buffer--m;
+  [type='reset'] {
+    padding: $buffer--s;
+    margin: $buffer--s;
+    background: var(--color-tertiary--lighter);
+  }
+
+  [type='reset']:active {
+    transform: translateY($small-dimension--xxs);
+  }
+
+  [type='checkbox'] {
     width: $buffer--m;
+    height: $buffer--m;
     padding: $buffer--xxs $buffer--xs;
-
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
   }
 
-  &[type='range'] {
-    height: $buffer--m;
+  [type='checkbox']:active {
+    transform: translateY($small-dimension--xxs);
+  }
+
+  [type='range'] {
     width: $buffer--m;
+    height: $buffer--m;
     padding: $buffer--xxs $buffer--xs;
     background: transparent;
-
-    &::-webkit-slider-runnable-track {
-      width: 100%;
-      height: $small-dimension--s;
-      transition: 0.2s;
-      background: var(--color-tertiary);
-      border-radius: $small-dimension--xs;
-    }
-
-    &:focus::-webkit-slider-runnable-track {
-      background: var(--color-tertiary);
-    }
-
-    &::-webkit-slider-thumb {
-      box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
-      height: $small-dimension--m;
-      width: $small-dimension--m;
-      border-radius: 100%;
-      background: var(--color-secondary);
-      -webkit-appearance: none;
-      margin-top: -$small-dimension--s;
-    }
-
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
   }
 
-  &[type='radio'] {
-    height: $buffer--m;
+  [type='range']::-webkit-slider-runnable-track {
+    width: 100%;
+    height: $small-dimension--s;
+    background: var(--color-tertiary);
+    border-radius: $small-dimension--xs;
+    transition: 0.2s;
+  }
+
+  [type='range']:focus::-webkit-slider-runnable-track {
+    background: var(--color-tertiary);
+  }
+
+  [type='range']::-webkit-slider-thumb {
+    width: $small-dimension--m;
+    height: $small-dimension--m;
+    margin-top: -$small-dimension--s;
+    appearance: none;
+    background: var(--color-secondary);
+    border-radius: 100%;
+    box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
+  }
+
+  [type='range']:active {
+    transform: translateY($small-dimension--xxs);
+  }
+
+  [type='radio'] {
     width: $buffer--m;
+    height: $buffer--m;
     padding: $buffer--xxs $buffer--xs;
     border-radius: 100%;
-
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
   }
 
-  &[type='color'] {
-    height: $buffer--m;
+  [type='radio']:active {
+    transform: translateY($small-dimension--xxs);
+  }
+
+  [type='color'] {
     width: $buffer--m;
+    height: $buffer--m;
     padding: $buffer--xxs $buffer--xs;
   }
 
-  &[type='button'] {
-    margin: $buffer--s;
+  [type='button'] {
     padding: $buffer--s;
+    margin: $buffer--s;
     background: var(--color-tertiary--lighter);
+  }
 
-    &:active {
-      transform: translateY($small-dimension--xxs);
-    }
+  [type='button']:active {
+    transform: translateY($small-dimension--xxs);
   }
 
   &:focus {
@@ -236,60 +235,59 @@ input {
 
 // #  <---------------| <label> |--------------->
 label {
-  color: var(--color-text);
-  vertical-align: middle;
   display: inline-block;
   padding: $buffer--xxs $buffer--xs;
+  color: var(--color-text);
+  vertical-align: middle;
 }
 
 // #  <---------------| <legend> |--------------->
 legend {
-  color: var(--color-background);
+  padding: $buffer--xxs $buffer--xs;
   background-color: var(--color-primary);
+  color: var(--color-background);
   font-size: $font-size--2;
   font-weight: $font-weight--section;
-  padding: $buffer--xxs $buffer--xs;
 }
 
 // #  <---------------| <meter> |--------------->
 meter {
-  color: var(--color-text);
   padding: $buffer--xxs $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <option> |--------------->
 option {
-  color: var(--color-text);
   padding: $buffer--xxs $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <output> |--------------->
 output {
-  color: var(--color-text);
   padding: $buffer--xxs $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <progress> |--------------->
 progress {
-  color: var(--color-text);
   padding: $buffer--xxs $buffer--xs;
+  color: var(--color-text);
 }
 
 // #  <---------------| <textarea> |--------------->
 textarea {
   @include click-transition--small;
 
-  color: var(--color-primary);
+  display: block;
+  padding: $buffer--s;
+  border: 0;
+  margin: $buffer--s;
   background-color: var(--color-tertiary);
+  border-radius: $small-dimension--s;
+  color: var(--color-primary);
   font-family: inherit;
   font-size: inherit;
-  padding: $buffer--s;
-  margin: $buffer--s;
-  border: none;
-  border-radius: $small-dimension--s;
   outline: none;
-
-  display: block;
 
   &:focus {
     box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);

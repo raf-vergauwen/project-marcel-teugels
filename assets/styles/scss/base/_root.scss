@@ -23,6 +23,8 @@ html {
 
 // #  <---------------| <body> |--------------->
 body {
+  @include text-rendering(optimizeLegibility);
+
   max-width: $max-width--root;
   margin: $center-me;
   background-color: var(--color-background);
@@ -33,8 +35,6 @@ body {
 
   // # Lifesaving Scrollbar hack!
   overflow-x: hidden;
-
-  @include text-rendering(optimizeLegibility);
 }
 
 // #  <---------------| <main> |--------------->

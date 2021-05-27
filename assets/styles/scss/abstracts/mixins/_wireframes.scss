@@ -59,18 +59,18 @@
     article,
     section,
     aside {
-      outline: solid orangered;
+      outline: $small-dimension--xxs double orangered;
     }
 
     // #  <-----| Sub |----->
     header,
     footer {
-      outline: solid indianred;
+      outline: $small-dimension--xxs double indianred;
     }
 
     // #  <-----| Non-Semantic |----->
     div {
-      outline: solid red;
+      outline: $small-dimension--xxs dashed red;
     }
 
     // -  <---------------| Heading |--------------->
@@ -81,7 +81,7 @@
     h4,
     h5,
     h6 {
-      outline: solid tomato;
+      outline: $small-dimension--xxs double tomato;
     }
 
     // -  <---------------| Block-Text |--------------->
@@ -89,20 +89,20 @@
     dl,
     dt,
     dd {
-      outline: solid deepskyblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge deepskyblue;
     }
 
     // #  <-----| Figure |----->
     figure,
     figcaption {
-      outline: solid dodgerblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge dodgerblue;
     }
 
     // #  <-----| Lists |----->
     ol,
     ul,
     li {
-      outline: solid steelblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge steelblue;
     }
 
     // #  <-----| Other |----->
@@ -111,7 +111,7 @@
     hr,
     p,
     pre {
-      outline: solid blue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge blue;
     }
 
     // -  <---------------| Inline-Text |--------------->
@@ -124,7 +124,7 @@
     span,
     strong,
     var {
-      outline: solid lime;
+      outline: $small-dimension--xxxs dotted lime;
     }
 
     // #  <-----| Functional |----->
@@ -139,7 +139,7 @@
     q,
     time,
     wbr {
-      outline: solid springgreen;
+      outline: $small-dimension--xxxs dotted springgreen;
     }
 
     // -  <---------------| Multimedia |--------------->
@@ -150,7 +150,7 @@
     map,
     track,
     video {
-      outline: solid yellow;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge yellow;
     }
 
     // #  <-----| Complex |----->
@@ -160,13 +160,13 @@
     param,
     picture,
     source {
-      outline: solid khaki;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge khaki;
     }
 
     // #  <-----| Special |----->
     svg,
     math {
-      outline: solid gold;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge gold;
     }
 
     // -  <---------------| Table |--------------->
@@ -177,7 +177,7 @@
     tfoot,
     colgroup,
     tr {
-      outline: solid darkorchid;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) solid darkorchid;
     }
 
     // #  <-----| Children |----->
@@ -185,7 +185,7 @@
     col,
     th,
     td {
-      outline: solid slateblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid slateblue;
     }
 
     // -  <---------------| Forms |--------------->
@@ -195,7 +195,7 @@
     fieldset,
     optgroup,
     select {
-      outline: solid teal;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) solid teal;
     }
 
     // #  <-----| Children |----->
@@ -208,20 +208,20 @@
     output,
     progress,
     textarea {
-      outline: solid turquoise;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid turquoise;
     }
 
     // -  <---------------| Intertactive |--------------->
     // #  <-----| Disclosure Widget |----->
     details,
     summary {
-      outline: solid deeppink;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid deeppink;
     }
 
     // #  <-----| Other |----->
     dialog,
     menu {
-      outline: solid hotpink;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid hotpink;
     }
   }
 }

@@ -6,19 +6,26 @@
 // -  <<--------------------<< Disclosure Widget >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
+// #  <---------------| <summary> |--------------->
+summary {
+  padding: $buffer--xs;
+  margin: $buffer--xs;
+  color: var(--color-text);
+}
+
 // #  <---------------| <details> |--------------->
 details {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--color-background--lighter);
-  color: var(--color-text);
   padding: $buffer--s;
   margin: $buffer--s;
+  background-color: var(--color-background--lighter);
   border-radius: $small-dimension--xs;
-  overflow: hidden;
+  color: var(--color-text);
 
-  &[open] {
+  [open] {
     padding: $buffer--s;
   }
 
@@ -26,16 +33,9 @@ details {
     margin-bottom: 0;
   }
 
-  &[open] summary {
+  [open] summary {
     margin-bottom: $buffer--s;
   }
-}
-
-// #  <---------------| <summary> |--------------->
-summary {
-  color: var(--color-text);
-  padding: $buffer--xs;
-  margin: $buffer--xs;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -44,32 +44,32 @@ summary {
 
 // #  <---------------| <dialog> |--------------->
 dialog {
-  background-color: var(--color-background--lighter);
-  color: var(--color-text);
-  border: none;
-  border-radius: $small-dimension--xs;
-  border-color: var(--color-secondary);
   padding: $buffer--s;
+  border: 0;
+  border-color: var(--color-secondary);
   margin: $buffer--s;
+  background-color: var(--color-background--lighter);
+  border-radius: $small-dimension--xs;
+  color: var(--color-text);
 
-  & > header:first-child {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    border-radius: $small-dimension--xs $small-dimension--xs 0 0;
-    margin: -$buffer--s -$buffer--l $buffer--s;
+  > header:first-child {
     padding: $buffer--s;
+    margin: -$buffer--s -$buffer--l $buffer--s;
+    background-color: var(--color-background);
+    border-radius: $small-dimension--xs $small-dimension--xs 0 0;
+    color: var(--color-text);
     text-align: center;
   }
 
   &::backdrop {
+    backdrop-filter: blur($small-dimension--xs);
     background: #0000009c;
-    backdrop-filter: blur(4px);
   }
 }
 
 // #  <---------------| <menu> |--------------->
 menu {
-  color: var(--color-text);
   padding: $buffer--xs;
   margin: $buffer--xs;
+  color: var(--color-text);
 }

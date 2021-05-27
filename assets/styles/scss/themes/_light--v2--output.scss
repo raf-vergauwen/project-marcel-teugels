@@ -1,7 +1,9 @@
 :root,
 [data-theme='light--v2'] {
   /* - ----------------------------------------------------------------------- */
+
   /* - <<--------------------<< TRANSPARANT BG COLORS >>-------------------->> */
+
   /* - ----------------------------------------------------------------------- */
   --bg-color--transparant---sofest: hsla(0, 0%, 100%, 0.05);
   --bg-color--transparant---softer: hsla(0, 0%, 100%, 0.2);
@@ -24,43 +26,61 @@
   --form-text: #000;
   --variable: #39a33c;
   --highlight: #ff0;
+
   /* -  ---------------------------------------------------------------- */
+
   /* -  <<--------------------<< REGULAR COLORS >>-------------------->> */
+
   /* -  ---------------------------------------------------------------- */
+
   /* #  ---------------------------------------- */
+
   /* #  text color group */
+
   /* #  ---------------------------------------- */
   --color-text--lightest: #4d4d70;
   --color-text--lighter: #262652;
-  --color-text: #000033;
+  --color-text: #003;
   --color-text--darker: #00002b;
   --color-text--darkest: #000024;
+
   /* #  ---------------------------------------- */
+
   /* #  background color group */
+
   /* #  ---------------------------------------- */
   --color-background--lightest: #fafaff;
   --color-background--lighter: #f9f9ff;
   --color-background: #f8f8ff;
   --color-background--darker: #d3d3d9;
   --color-background--darkest: #aeaeb3;
+
   /* #  ---------------------------------------- */
+
   /* #  primary color group */
+
   /* #  ---------------------------------------- */
   --color-primary--lightest: #4e6d85;
   --color-primary--lighter: #284d6b;
   --color-primary: #022e51;
   --color-primary--darker: #022745;
   --color-primary--darkest: #012039;
+
   /* #  ---------------------------------------- */
+
   /* #  secondary color group */
+
   /* #  ---------------------------------------- */
   --color-secondary--lightest: #7e9fce;
   --color-secondary--lighter: #628bc4;
   --color-secondary: #4676b9;
   --color-secondary--darker: #3c649d;
   --color-secondary--darkest: #315382;
+
   /* #  ---------------------------------------- */
+
   /* #  tertiary color group */
+
   /* #  ---------------------------------------- */
   --color-tertiary--lightest: #cdac7e;
   --color-tertiary--lighter: #c29a62;

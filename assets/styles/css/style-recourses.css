@@ -78,16 +78,16 @@ nav,
 article,
 section,
 aside {
-  outline: solid orangered;
+  outline: 2px double orangered;
 }
 
 header,
 footer {
-  outline: solid indianred;
+  outline: 2px double indianred;
 }
 
 div {
-  outline: solid red;
+  outline: 2px dashed red;
 }
 
 h1,
@@ -96,24 +96,24 @@ h3,
 h4,
 h5,
 h6 {
-  outline: solid tomato;
+  outline: 2px double tomato;
 }
 
 dl,
 dt,
 dd {
-  outline: solid deepskyblue;
+  outline: calc(1px * 1.5) ridge deepskyblue;
 }
 
 figure,
 figcaption {
-  outline: solid dodgerblue;
+  outline: calc(1px * 1.5) ridge dodgerblue;
 }
 
 ol,
 ul,
 li {
-  outline: solid steelblue;
+  outline: calc(1px * 1.5) ridge steelblue;
 }
 
 address,
@@ -121,7 +121,7 @@ blockquote,
 hr,
 p,
 pre {
-  outline: solid blue;
+  outline: calc(1px * 1.5) ridge blue;
 }
 
 b,
@@ -132,7 +132,7 @@ samp,
 span,
 strong,
 var {
-  outline: solid lime;
+  outline: 1px dotted lime;
 }
 
 a,
@@ -146,7 +146,7 @@ dfn,
 q,
 time,
 wbr {
-  outline: solid springgreen;
+  outline: 1px dotted springgreen;
 }
 
 area,
@@ -155,7 +155,7 @@ img,
 map,
 track,
 video {
-  outline: solid yellow;
+  outline: calc(1px * 1.25) ridge yellow;
 }
 
 embed,
@@ -164,12 +164,12 @@ object,
 param,
 picture,
 source {
-  outline: solid khaki;
+  outline: calc(1px * 1.25) ridge khaki;
 }
 
 svg,
 math {
-  outline: solid gold;
+  outline: calc(1px * 1.25) ridge gold;
 }
 
 table,
@@ -178,14 +178,14 @@ tbody,
 tfoot,
 colgroup,
 tr {
-  outline: solid darkorchid;
+  outline: calc(1px * 1.5) solid darkorchid;
 }
 
 caption,
 col,
 th,
 td {
-  outline: solid slateblue;
+  outline: calc(1px * 1.25) solid slateblue;
 }
 
 form,
@@ -193,7 +193,7 @@ datalist,
 fieldset,
 optgroup,
 select {
-  outline: solid teal;
+  outline: calc(1px * 1.5) solid teal;
 }
 
 button,
@@ -205,16 +205,16 @@ option,
 output,
 progress,
 textarea {
-  outline: solid turquoise;
+  outline: calc(1px * 1.25) solid turquoise;
 }
 
 details,
 summary {
-  outline: solid deeppink;
+  outline: calc(1px * 1.25) solid deeppink;
 }
 
 dialog,
 menu {
-  outline: solid hotpink;
+  outline: calc(1px * 1.25) solid hotpink;
 }
 /*# sourceMappingURL=style-recourses.css.map */
