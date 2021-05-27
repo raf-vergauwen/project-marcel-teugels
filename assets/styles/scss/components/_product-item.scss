@@ -4,4 +4,8 @@
 
 // -  <---------------| Product-Item |--------------->
 @mixin product-item {
+  .c-product-item {
+    padding: $s-site-padding;
+    background-color: $dark-blue;
+  }
 }

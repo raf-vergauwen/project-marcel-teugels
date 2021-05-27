@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'RestaurationHeader',
   data() {
     return {
       navItems: [
@@ -41,5 +41,5 @@ export default {
 </script>
 
 <style lang="scss">
-@include header;
+@include main-header;
 </style>
