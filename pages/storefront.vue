@@ -1,18 +1,14 @@
 <template>
   <main class="p-storefront">
-    <store-header />
-    <div
-      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-      class="title-btn__container"
-    >
+    <div class="title-btn__container">
       <h1 class="p-product__title">Store</h1>
-      <button class="p-product__btn">
-        <a href="/add-product">+</a>
-      </button>
-    </div>
 
-    <div v-else class="title-btn__container">
-      <h1 class="p-product__title">Store</h1>
+      <button
+        v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
+        class="p-product__btn"
+      >
+        <nuxt-link to="/add-product">+</nuxt-link>
+      </button>
     </div>
 
     <div class="p-storefront__product-list">
@@ -21,7 +17,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
-        v-on:add-product="addProduct($event)"
+        @add-product="addProduct($event)"
       />
     </div>
   </main>
@@ -29,11 +25,10 @@
 
 <script>
 import ProductItem from '~/components/ProductItem';
-import StoreHeader from '~/components/StoreHeader';
 
 export default {
-  components: { ProductItem, StoreHeader },
-
+  name: 'StoreFrontPage',
+  components: { ProductItem },
   data() {
     return {
       productData: {},
@@ -58,19 +53,13 @@ export default {
   },
   methods: {
     fetchItems() {
-      return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
+      this.$axios('items/products?fields=*,images.*', {
         method: 'GET',
         headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('Error');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          this.productData = data.data;
+          console.log(response);
+          this.productData = response.data.data;
           this.Admin = this.user_role;
         })
         .catch((err) => {
@@ -169,7 +158,7 @@ body {
   height: 40px;
   border-radius: 50px;
   background-color: $dark-bg;
-  border: 0px;
+  border: 0;
 }
 
 .p-product__title {

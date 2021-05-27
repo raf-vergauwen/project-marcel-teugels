@@ -2,37 +2,48 @@
   <main class="p-product-page">
     <restauration-header />
     <section id="app">
-      <div>
-        <label>
-          titel:
-          <input v-model="title" type="text" />
-        </label>
-        <label>
-          datum:
-          <input v-model="date" type="text" />
-        </label>
-        <label>
-          organisator:
-          <input v-model="organizer" type="email" />
-        </label>
-        <label>
-          onderwerp:
-          <input v-model="subject" type="tel" />
-        </label>
-        <label>
-          bio
-          <textarea v-model="textContent"> </textarea>
-        </label>
-      </div>
-      <div class="container">
-        <button @click="postWorkshop">Verstuur</button>
-      </div>
+      <template>
+        <FormulateInput
+          v-model="title"
+          name="name"
+          type="text"
+          label="workshop naam"
+        />
+        <FormulateInput v-model="date" name="date" type="date" label="datum" />
+        <FormulateInput
+          v-model="organizer"
+          name="organizer"
+          type="text"
+          label="naam organisator"
+        />
+        <FormulateInput
+          v-model="subject"
+          name="subject"
+          type="text"
+          label="onderwerp"
+        />
+        <FormulateInput
+          v-model="textContent"
+          name="textContent"
+          type="textarea"
+          label="uitleg over workshop"
+        />
+        <FormulateInput
+          v-model="newImage"
+          type="file"
+          name="images"
+          label="Please select an image"
+          validation="mime:image/jpeg,image/png"
+        />
+        <FormulateInput type="submit" label="Sign up" @click="postWorkshop" />
+      </template>
     </section>
   </main>
 </template>
 
 <script>
 import RestaurationHeader from '~/components/RestaurationHeader';
+import axios from 'axios';
 
 export default {
   components: { RestaurationHeader },
@@ -43,6 +54,7 @@ export default {
       organizer: '',
       subject: '',
       textContent: '',
+      newImage: '',
       images: [
         {
           directus_files_id: '79c4d9ef-cd71-41ed-ae19-87af431bdfa5',
@@ -86,6 +98,27 @@ export default {
         })
         .catch((err) => {
           console.error(err);
+        });
+    },
+
+    postImage() {
+      const options = {
+        method: 'POST',
+        url: 'http://157.230.126.154/assets/' + this.newImage,
+        headers: { 'Content-Type': 'application/json' },
+        data: {},
+      };
+
+      axios
+        .request(options)
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch(function (error) {
+          console.error(error);
         });
     },
   },

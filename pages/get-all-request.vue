@@ -33,18 +33,13 @@ export default {
   },
   methods: {
     fetchRequest() {
-      fetch('http://157.230.126.154/items/user_requests?=*.*', {
+      this.$axios('items/user_requests?=*.*', {
         method: 'GET',
+        headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not fetch user requests');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          this.requestData = data;
+          console.log(response);
+          this.requestData = response.data.data;
         })
         .catch((err) => {
           console.error(err);

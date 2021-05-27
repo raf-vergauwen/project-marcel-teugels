@@ -1,7 +1,6 @@
 <template>
-  <main>
-    <restauration-header />
-    <div class="container">
+  <main class="p-profile">
+    <div class="p-profile__container">
       <h1>Profile</h1>
       <label
         >First name:
@@ -14,19 +13,14 @@
       </label>
       <p v-if="userInfo">{{ userInfo.first_name }} {{ userInfo.last_name }}</p>
       <p v-if="userInfo">{{ userInfo.email }}</p>
-      <p v-if="userInfo">
-        {{ userInfo.orders[0].ordered_items[0].products[0] }}
-      </p>
+      <p v-if="userInfo"></p>
     </div>
   </main>
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
-
 export default {
   name: 'ProfilePage',
-  components: { RestaurationHeader },
   data() {
     return {
       userInfo: null,
@@ -51,43 +45,15 @@ export default {
       })
       .catch((err) => {
         console.error(err);
-        sessionStorage.removeItem('access_token');
-        this.$router.push('/login');
       });
   },
 };
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+<style lang="scss">
+.p-profile {
+  &__container {
+    @extend .container;
+  }
 }
 </style>

@@ -1,27 +1,25 @@
 <template>
-  <article class="c-product-item">
-    <div class="c-product-item__image">
-      <img :src="src + product.images[0].directus_files_id" alt="" />
+  <article class="c-order-product">
+    <div class="c-order-product__image-container">
+      <img
+        :src="src + product.images[0].directus_files_id"
+        alt=""
+        class="c-order-product__image"
+      />
     </div>
-    <NuxtLink :to="`/product/${product.id}`">
-      <h2 class="c-product-item__title">
-        {{ product.name }}
-      </h2>
-    </NuxtLink>
-    <div class="c-product-item__content">
+    <div class="c-order-product__content">
       <p>{{ product.name }}</p>
       <p>{{ product.id }}</p>
       <p>{{ product.description }}</p>
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
-    <button @click="addProduct">Buy</button>
   </article>
 </template>
 
 <script>
 export default {
-  name: 'ProductItem',
+  name: 'OrderProducts',
   props: {
     product: {
       type: Object,
@@ -48,16 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
-.c-product-item {
-  background-color: $dark-blue;
-  padding: $s-site-padding;
-
-  &__image {
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
+.c-order-product {
+  display: flex;
 }
 </style>

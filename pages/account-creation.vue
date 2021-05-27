@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     createAccount() {
-      fetch('http://157.230.126.154/users', {
+      this.$axios('users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -65,14 +65,6 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not login');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //sessionStorage.setItem('access_token', body.data.access_token);
         })
         .catch((err) => {
           console.error(err);

@@ -51,19 +51,13 @@ export default {
   },
   methods: {
     fetchWorkshops() {
-      fetch('http://157.230.126.154/items/workshops?fields=*.*', {
+      this.$axios('items/workshops?fields=*.*', {
         method: 'GET',
         headers: {},
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('fetch workshops did not work');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          this.workshopData = data.data;
+          console.log(response);
+          this.workshopData = response.data.data;
           console.log(this.user_role);
           this.Admin = this.user_role;
         })
