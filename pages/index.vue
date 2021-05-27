@@ -36,13 +36,13 @@
 
 <style lang="scss">
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 .home {
   display: flex;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(110deg, #b0c4de 50%, #132636 50%);
 
   &__webshop {
@@ -60,10 +60,10 @@ body {
 
   &__restoration {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     width: 50vw;
     height: 100vh;
+    align-items: flex-end;
+    justify-content: flex-end;
 
     &--text {
       width: 500px;
@@ -71,10 +71,10 @@ body {
     }
 
     &--container {
-      margin: 5em;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      margin: 5em;
     }
   }
 }
@@ -82,8 +82,8 @@ body {
 button {
   width: 200px;
   height: 35px;
+  border: 0;
   border-radius: 30px;
-  border: 0px;
 }
 
 h1 {

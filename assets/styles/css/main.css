@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 1 - `abstracts/`
 \* ========================================================================== */
@@ -43,15 +42,15 @@ html {
 .container {
   width: 100%;
   max-width: 1380px;
-  padding-left: 40px;
   padding-right: 40px;
+  padding-left: 40px;
   margin: 0 auto;
 }
 
 @media (max-width: 770px) {
   .container {
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -83,16 +82,16 @@ nav,
 article,
 section,
 aside {
-  outline: 2px double orangered;
+  outline: 2px double #ff4500;
 }
 
 header,
 footer {
-  outline: 2px double indianred;
+  outline: 2px double #cd5c5c;
 }
 
 div {
-  outline: 2px dashed red;
+  outline: 2px dashed #f00;
 }
 
 h1,
@@ -101,24 +100,24 @@ h3,
 h4,
 h5,
 h6 {
-  outline: 2px double tomato;
+  outline: 2px double #ff6347;
 }
 
 dl,
 dt,
 dd {
-  outline: calc(1px * 1.5) ridge deepskyblue;
+  outline: calc(1px * 1.5) ridge #00bfff;
 }
 
 figure,
 figcaption {
-  outline: calc(1px * 1.5) ridge dodgerblue;
+  outline: calc(1px * 1.5) ridge #1e90ff;
 }
 
 ol,
 ul,
 li {
-  outline: calc(1px * 1.5) ridge steelblue;
+  outline: calc(1px * 1.5) ridge #4682b4;
 }
 
 address,
@@ -126,7 +125,7 @@ blockquote,
 hr,
 p,
 pre {
-  outline: calc(1px * 1.5) ridge blue;
+  outline: calc(1px * 1.5) ridge #00f;
 }
 
 b,
@@ -137,7 +136,7 @@ samp,
 span,
 strong,
 var {
-  outline: 1px dotted lime;
+  outline: 1px dotted #0f0;
 }
 
 a,
@@ -151,7 +150,7 @@ dfn,
 q,
 time,
 wbr {
-  outline: 1px dotted springgreen;
+  outline: 1px dotted #00ff7f;
 }
 
 area,
@@ -160,7 +159,7 @@ img,
 map,
 track,
 video {
-  outline: calc(1px * 1.25) ridge yellow;
+  outline: calc(1px * 1.25) ridge #ff0;
 }
 
 embed,
@@ -169,12 +168,12 @@ object,
 param,
 picture,
 source {
-  outline: calc(1px * 1.25) ridge khaki;
+  outline: calc(1px * 1.25) ridge #f0e68c;
 }
 
 svg,
 math {
-  outline: calc(1px * 1.25) ridge gold;
+  outline: calc(1px * 1.25) ridge #ffd700;
 }
 
 table,
@@ -183,14 +182,14 @@ tbody,
 tfoot,
 colgroup,
 tr {
-  outline: calc(1px * 1.5) solid darkorchid;
+  outline: calc(1px * 1.5) solid #9932cc;
 }
 
 caption,
 col,
 th,
 td {
-  outline: calc(1px * 1.25) solid slateblue;
+  outline: calc(1px * 1.25) solid #6a5acd;
 }
 
 form,
@@ -198,7 +197,7 @@ datalist,
 fieldset,
 optgroup,
 select {
-  outline: calc(1px * 1.5) solid teal;
+  outline: calc(1px * 1.5) solid #008080;
 }
 
 button,
@@ -210,17 +209,17 @@ option,
 output,
 progress,
 textarea {
-  outline: calc(1px * 1.25) solid turquoise;
+  outline: calc(1px * 1.25) solid #40e0d0;
 }
 
 details,
 summary {
-  outline: calc(1px * 1.25) solid deeppink;
+  outline: calc(1px * 1.25) solid #ff1493;
 }
 
 dialog,
 menu {
-  outline: calc(1px * 1.25) solid hotpink;
+  outline: calc(1px * 1.25) solid #ff69b4;
 }
 
 /* ========================================================================== *\
@@ -244,6 +243,8 @@ menu {
 html {
   font-size: 1rem;
   font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
+  scrollbar-face-color: var(--color-tertiary);
+  scrollbar-track-color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
 }
@@ -263,11 +264,6 @@ html::-webkit-scrollbar-thumb:hover {
 
 html::-webkit-scrollbar-track {
   background: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
-}
-
-html {
-  scrollbar-face-color: var(--color-tertiary);
-  scrollbar-track-color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -960,11 +956,11 @@ optgroup {
 }
 
 select {
+  cursor: pointer;
   -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  cursor: pointer;
   padding: 0.5rem;
   border: 0;
   margin: 0.5rem;
@@ -1004,11 +1000,11 @@ select:not([type='checkbox']):not([type='radio']) {
 // -  <<--------------------<< CHILDREN >>-------------------->>
 \* -------------------------------------------------------------------------- */
 button {
+  cursor: pointer;
   -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  cursor: pointer;
   padding: 0.5rem;
   border: 0;
   margin: 0.5rem;
@@ -1051,11 +1047,11 @@ button:disabled {
 }
 
 input {
+  cursor: pointer;
   -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  cursor: pointer;
   padding: 0.5rem;
   border: 0;
   margin: 0.5rem;
@@ -1221,11 +1217,11 @@ progress {
 }
 
 textarea {
+  cursor: pointer;
   -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
   transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  cursor: pointer;
   display: block;
   padding: 0.5rem;
   border: 0;
@@ -1354,803 +1350,30 @@ menu {
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _footer.scss: This partial file contains all 'footer' styles.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  FOOTER-MAIN: Footer
-\* -------------------------------------------------------------------------- */
-.main-footer__container--nav .foot-nav-text__title {
-  padding: 1rem 0;
-}
-
-@media (min-width: 960px) {
-  .main-footer__container--nav .foot-nav-links {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.main-footer__container--nav .foot-nav-links__title {
-  padding: 1rem 0;
-}
-
-.main-footer__container--nav .foot-nav-links__link {
-  white-space: nowrap;
-}
-
-@media (min-width: 640px) {
-  .main-footer__container--contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    place-content: space-evenly;
-    place-items: center;
-  }
-}
-
-.main-footer__container--contact .foot-copyright__container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0.5rem;
-}
-
-@media (min-width: 640px) {
-  .main-footer__container--contact .foot-copyright__container {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    place-self: center;
-    max-width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-.main-footer__container--contact .foot-social-media__container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0.5rem;
-}
-
-@media (min-width: 640px) {
-  .main-footer__container--contact .foot-social-media__container {
-    -webkit-box-flex: 8;
-        -ms-flex-positive: 8;
-            flex-grow: 8;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    place-self: center;
-    max-width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media (min-width: 960px) {
-  .main-footer__container--contact .foot-social-media__container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-}
-
-.main-footer__container--contact .foot-social-media__link {
-  padding: 0;
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
 /* -------------------------------------------------------------------------- *\
-*  _card.scss: This partial file contains all 'card' styles.
-\* -------------------------------------------------------------------------- */
-.card {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  overflow: hidden;
-  min-width: calc(320px - (320px / 10));
-  max-width: calc((1600px / 4));
-  aspect-ratio: auto 9/16;
-  /* Prevent background color leak outs */
-  background-clip: padding-box;
-  border-radius: 8px;
-}
-
-@media (min-width: 640px) {
-  .card {
-    min-width: 400px;
-    height: 80vh;
-    max-height: 80vh;
-    aspect-ratio: auto 9/16;
-  }
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _icon.scss: This partial file contains all 'icon' styles.
-\* -------------------------------------------------------------------------- */
-.fas {
-  width: 1.25rem;
-  height: auto;
-  margin: 0;
-  margin-right: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.fab {
-  width: 2.44141rem;
-  height: auto;
-  margin: 0;
-  font-size: 2.44141rem;
-}
-
-.fa-heart:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-}
-
-.fa-facebook-f:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1877f2;
-}
-
-.fa-twitter:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1da1f2;
-}
-
-.fa-instagram:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #e4405f;
-}
-
-.fa-pinterest-p:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #bd081c;
-}
-
-.fa-youtube:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-}
-
-.fa-shopping-basket:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #000;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _toggle.scss: This partial file contains all 'toggle' styles.
-\* -------------------------------------------------------------------------- */
-.theme-switch-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.theme-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 8px 16px 0 0;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #ccc;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider::before {
-  position: absolute;
-  bottom: 4px;
-  left: 4px;
-  width: 26px;
-  height: 26px;
-  background-color: #fff;
-  content: '';
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-input:checked + .slider::before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round::before {
-  border-radius: 50%;
-}
-
-/* -------------------------------------------------------------------------- *\
-*  _burger-menu.scss: This partial file contains all 'burger-menu' styles.
+// *  <<--------------------<< LOGO >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
-*  _button.scss: This partial file contains all 'button' styles.
+// *  <<--------------------<< RESTAURATION HEADER >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: space-evenly;
-  place-items: stretch;
-  position: relative;
-  top: 0;
-  padding: 0.25rem;
-  border-top: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.22));
-  border-bottom: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.2));
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1))));
-  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1)) 100%);
-  border-radius: 8px;
-  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
-  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
-  -webkit-transition: all 0.06s ease-out;
-  transition: all 0.06s ease-out;
-}
-
-.btn:visited {
-  color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.9));
-}
-
-.btn:first-of-type {
-  margin-left: 0;
-}
-
-.btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07))));
-  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07)) 100%);
-}
-
-.btn:active {
-  top: 6px;
-  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
-}
-
-.btn:active::before {
-  top: 0;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
-}
-
-.btn::before {
-  position: absolute;
-  z-index: -1;
-  top: 6px;
-  right: 0;
-  left: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 2rem;
-  background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
-  content: '';
-  -webkit-transition: all 0.078s ease-out;
-  transition: all 0.078s ease-out;
-}
-
-.btn--text {
-  padding: 0 0.5rem;
-}
-
-.btn--icon {
-  width: 1.5625rem;
-  height: auto;
-  margin: 0;
-  font-size: 1.5625rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  place-self: center;
-  max-width: 100%;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _scrollbar.scss: This partial file contains all 'scrollbar' styles.
+// *  <<--------------------<< STORE HEADER >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.simplebar-scrollbar::before {
-  position: absolute;
-  right: 0.25rem;
-  left: 0.25rem;
-  background: var(--color-tertiary);
-  border-radius: 8px;
-  content: '';
-  opacity: 0;
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-}
-
 /* -------------------------------------------------------------------------- *\
-*  _box-border.scss: This partial file contains all 'box-border' styles.
+// *  <<--------------------<< PRODUCT ITEM >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.box-border {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  padding: 0.5rem;
-  border: 0.25rem solid var(--color-tertiary);
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-}
-
-.box-border::before, .box-border::after {
-  position: absolute;
-  top: 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  border: 0.25rem solid var(--color-tertiary);
-  color: var(--color-tertiary);
-  content: '•';
-  font-size: 1rem;
-  line-height: calc(1rem - 0.25rem);
-  text-align: center;
-}
-
-.box-border::before {
-  left: 0.5rem;
-}
-
-.box-border::after {
-  right: 0.5rem;
-}
-
-.box-border .box-border-inner {
-  position: relative;
-  padding: 0.5rem;
-  border: 0.25rem solid var(--color-tertiary);
-}
-
-.box-border .box-border-inner::before, .box-border .box-border-inner::after {
-  position: absolute;
-  bottom: 0.25rem;
-  width: 1rem;
-  height: 1rem;
-  border: 0.25rem solid var(--color-tertiary);
-  color: var(--color-tertiary);
-  content: '•';
-  font-size: 1rem;
-  line-height: calc(1rem - 0.25rem);
-  text-align: center;
-}
-
-.box-border .box-border-inner::before {
-  left: 0.125rem;
-}
-
-.box-border .box-border-inner::after {
-  right: 0.125rem;
-}
-
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< SHOPPING CART ITEM >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< WORKSHOP ITEM >>-------------------->>
+\* -------------------------------------------------------------------------- */
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
-/* -------------------------------------------------------------------------- *\
-*  _home-webshop.scss: This partial file contains the styles of the 'home-webshop' page.
-\* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- *\
--  SECTION 1: hero
-\* -------------------------------------------------------------------------- */
-.hero {
-  position: relative;
-  padding: 0;
-  background-attachment: fixed;
-  background-image: url("/assets/media/images/marcel-teugels/favorites/kantrechten--05-upscaled.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.hero__container {
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  place-content: center;
-  place-items: center;
-}
-
-.hero__visual {
-  max-height: 40vh;
-  padding-top: 2rem;
-  fill: var(--color-tertiary);
-  -webkit-filter: drop-shadow(0 0 0.1em var(--color-text));
-          filter: drop-shadow(0 0 0.1em var(--color-text));
-}
-
-.hero__subject {
-  color: var(--color-background);
-  -webkit-filter: drop-shadow(0 0 0.1em var(--color-text));
-          filter: drop-shadow(0 0 0.1em var(--color-text));
-}
-
-.hero__title {
-  padding-top: 0;
-  color: var(--color-secondary);
-  -webkit-filter: drop-shadow(0 0 0.1em var(--color-text));
-          filter: drop-shadow(0 0 0.1em var(--color-text));
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.95312rem;
-  font-weight: 600;
-}
-
-/* -------------------------------------------------------------------------- *\
--  SECTION 2: Hot Items
-\* -------------------------------------------------------------------------- */
-.hot-items__container {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: center;
-  place-items: center;
-}
-
-@media (min-width: 960px) {
-  .hot-items__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    place-content: space-evenly;
-    place-items: stretch;
-  }
-}
-
-.hot-item {
-  padding: 0 0.5rem 4rem 0.5rem;
-}
-
-.hot-item__container {
-  position: relative;
-}
-
-.hot-item__title {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 1rem;
-  font-variant: normal;
-  font-weight: 700;
-}
-
-.hot-item__visual {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  height: 100%;
-  -webkit-filter: brightness(0.8) contrast(1.2);
-          filter: brightness(0.8) contrast(1.2);
-}
-
-.hot-item__caption {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  bottom: calc(-4rem * 3 - (0.5rem));
-  left: 0;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.55);
-  -webkit-box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px 5px rgba(0, 0, 0, 0.24);
-}
-
-.hot-item__caption-title {
-  padding: 0;
-  color: var(--color-background);
-  font-variant: small-caps;
-  font-weight: 700;
-  text-transform: lowercase;
-}
-
-.hot-item__caption-text {
-  overflow: auto;
-  height: calc(4rem * 2);
-  margin: 1rem 0;
-  color: var(--color-background);
-}
-
-.hot-item__caption-text::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-}
-
-.hot-item__caption-btns {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.hot-item__caption-btn {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  place-self: center;
-  max-width: 100%;
-}
-
-.hot-item__container:hover .hot-item__visual {
-  -webkit-filter: brightness(0.8) contrast(1.2) blur(0.125rem);
-          filter: brightness(0.8) contrast(1.2) blur(0.125rem);
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-}
-
-.hot-item__container:hover .hot-item__caption {
-  bottom: 0%;
-  background-color: rgba(0, 0, 0, 0.85);
-  -webkit-box-shadow: 0 19px 38px 20px rgba(0, 0, 0, 0.3), 0 15px 12px 20px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px 20px rgba(0, 0, 0, 0.3), 0 15px 12px 20px rgba(0, 0, 0, 0.22);
-}
-
-.hot-item__container:hover .hot-item__title {
-  top: -30%;
-}
-
-.hot-item__container:hover .hot-item__caption-title {
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  color: var(--color-secondary);
-}
-
-/* -------------------------------------------------------------------------- *\
--  SECTION 3: About
-\* -------------------------------------------------------------------------- */
-.about {
-  background: radial-gradient(#003, #000);
-}
-
-.about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  place-content: center;
-  place-items: center;
-}
-
-@media (min-width: 960px) {
-  .about__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    place-content: space-evenly;
-    place-items: stretch;
-  }
-}
-
-.about__container--visual {
-  padding: 0 0.5rem 4rem 0.5rem;
-}
-
-.about__container--text {
-  min-width: calc(320px - 2rem);
-  max-width: calc(400px + 1rem);
-  padding: 0;
-}
-
-@media (min-width: 1280px) {
-  .about__container--text {
-    min-width: calc(400px + (400px / 2));
-  }
-}
-
-@media (min-width: 1600px) {
-  .about__container--text {
-    min-width: calc(400px * 2);
-  }
-}
-
-.about__outer-border {
-  top: calc((80vh / 2) + 0.5rem);
-  margin-bottom: 4rem;
-}
-
-@media (min-width: 640px) {
-  .about__outer-border {
-    top: calc((80vh / 2) + 1rem + 1rem);
-  }
-}
-
-@media (min-width: 960px) {
-  .about__outer-border {
-    top: calc((80vh / 2) - 2rem - 0.5rem);
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 960px) {
-  .about__inner-border {
-    height: calc(80vh - 1rem + 1rem);
-  }
-}
-
-.about__text-title {
-  padding: 0.5rem 0;
-  font-size: 1.95312rem;
-  font-variant: small-caps;
-}
-
-@media (min-width: 960px) {
-  .about__text-title {
-    height: 10%;
-  }
-}
-
-.about__sub-title {
-  padding: 0.5rem 0;
-  font-size: 1.25rem;
-}
-
-@media (min-width: 960px) {
-  .about__sub-title {
-    height: 20%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about__sub-title {
-    height: 15%;
-  }
-}
-
-.about__hr {
-  height: 1%;
-  border: 0;
-  margin: 2% auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), to(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0)));
-  background-image: linear-gradient(to right, hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0));
-}
-
-.about__paragraph {
-  overflow: auto;
-  height: calc(80vh - (1rem * 10));
-  color: var(--color-background);
-  text-align: justify;
-}
-
-@media (min-width: 960px) {
-  .about__paragraph {
-    height: 62.5%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about__paragraph {
-    height: 67.5%;
-  }
-}
-
-/* -------------------------------------------------------------------------- *\
--  INTERMEZZO
-\* -------------------------------------------------------------------------- */
-.intermezzo {
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-}
-
-.intermezzo__container {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.intermezzo--1 {
-  background-image: url("/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg");
-}
-
-.intermezzo--2 {
-  background-image: url("/assets/media/images/marcel-teugels/favorites/construction-work--05.jpg");
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`
 \* ========================================================================== */

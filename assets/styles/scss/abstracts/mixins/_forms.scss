@@ -10,14 +10,14 @@
 // -  <<--------------------<< PARENTS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 @mixin button-like-shared {
-  color: var(--color-text);
-  background-color: var(--color-tertiary);
-  font-family: inherit;
-  font-size: inherit;
-  margin: $buffer--s;
   padding: $buffer--s;
   border: 0;
+  margin: $buffer--s;
+  background-color: var(--color-tertiary);
   border-radius: $small-dimension--xs;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: inherit;
   outline: none;
 
   &:focus {

@@ -40,7 +40,9 @@ export default {
 
 <style lang="scss">
 .c-product-item {
-  background-color: $dark-blue;
   padding: $s-site-padding;
+  background-color: $dark-blue;
 }
+
+@include product-item;
 </style>

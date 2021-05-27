@@ -31,6 +31,13 @@
 // *  <<--------------------<< PARENTS >>-------------------->>
 
 // -  <---------------| Block-Container |--------------->
+@mixin block-container($max-width: 100%, $padding: $buffer--xs) {
+  @include box-dimensions;
+
+  max-width: $max-width--root;
+  padding: $padding;
+  margin: $center-me;
+}
 
 // -  <---------------| Inline-Block-Container |--------------->
 
@@ -70,11 +77,11 @@
 
 // -  <---------------| Flex-Items |--------------->
 @mixin flex-items($grow: 1, $shrink: 0, $basis: auto, $self: center) {
+  max-width: 100%;
+  flex-basis: $basis;
   flex-grow: $grow;
   flex-shrink: $shrink;
-  flex-basis: $basis;
   place-self: $self;
-  max-width: 100%;
 }
 
 // -  <---------------| Grid-Items |--------------->
@@ -108,12 +115,12 @@
 .container {
   width: 100%;
   max-width: $site-width-with-padding;
-  padding-left: $m-site-padding;
   padding-right: $m-site-padding;
+  padding-left: $m-site-padding;
   margin: 0 auto;
 
   @include md {
-    padding-left: $s-site-padding;
     padding-right: $s-site-padding;
+    padding-left: $s-site-padding;
   }
 }

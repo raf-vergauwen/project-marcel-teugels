@@ -9,7 +9,9 @@
 
   @each $color-name, $color-value in $colors {
     /* #  ---------------------------------------- */
+
     /* #  #{$color-name} color group */
+
     /* #  ---------------------------------------- */
     #{--color-#{$color-name}--lightest}: tint($color-value, 30%);
     #{--color-#{$color-name}--lighter}: tint($color-value, 15%);
@@ -22,7 +24,9 @@
 // -  <---------------| define-color-hsl |--------------->
 @mixin define-color-hsl($color-name, $hue, $saturation, $lightness) {
   /* #  ---------------------------------------- */
+
   /* #  #{$color-name} hsl */
+
   /* #  ---------------------------------------- */
   #{$color-name}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
   #{$color-name}-h: #{$hue};

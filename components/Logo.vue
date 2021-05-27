@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="NuxtLogo"
+    class="nuxt-logo"
     width="245"
     height="180"
     viewBox="0 0 452 342"
@@ -21,10 +21,10 @@
   </svg>
 </template>
 
-<style>
-.NuxtLogo {
-  animation: 1s appear;
+<style lang="scss">
+.nuxt-logo {
   margin: auto;
+  animation: 1s appear;
 }
 
 @keyframes appear {
@@ -32,4 +32,6 @@
     opacity: 0;
   }
 }
+
+@include main-logo;
 </style>

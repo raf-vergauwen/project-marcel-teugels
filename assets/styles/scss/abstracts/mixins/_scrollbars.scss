@@ -4,6 +4,11 @@
 
 // -  <---------------| Scrollbar-Style |--------------->
 @mixin scrollbar-style($size, $color) {
+
+  // For Internet Explorer
+  scrollbar-face-color: $color;
+  scrollbar-track-color: lightness($color, 0.5);
+
   &::-webkit-scrollbar {
     width: $size;
   }
@@ -20,18 +25,13 @@
   &::-webkit-scrollbar-track {
     background: lightness($color, 0.5);
   }
-
-  // For Internet Explorer
-  & {
-    scrollbar-face-color: $color;
-    scrollbar-track-color: lightness($color, 0.5);
-  }
 }
 
 // -  <---------------| Scrollbar-Behaviour |--------------->
 @mixin scrollbar-function($behaviour, $type) {
+  scroll-snap-type: $type;
+
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: $behaviour;
   }
-  scroll-snap-type: $type;
 }

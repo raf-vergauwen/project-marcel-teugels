@@ -52,4 +52,6 @@ export default {
 .c-product-item__image {
   width: 400px;
 }
+
+@include workshop-item;
 </style>

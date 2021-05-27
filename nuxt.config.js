@@ -32,6 +32,7 @@ export default {
   ],
   stylelint: {
     // npx stylelint --fix assets/styles/scss/**/*.scss
+    // npx stylelint --fix **/*.{vue,htm,html,css,sss,less,scss,sass}
     configFile: './stylelint.config.js',
   },
 

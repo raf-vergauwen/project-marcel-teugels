@@ -9,6 +9,8 @@
 // -  <<----------<< Specific >>---------->>
 
 .simplebar-scrollbar::before {
+  @include general-transition;
+
   position: absolute;
   right: $buffer--xs;
   left: $buffer--xs;
@@ -16,5 +18,4 @@
   border-radius: $small-dimension--s;
   content: '';
   opacity: 0;
-  @include general-transition;
 }

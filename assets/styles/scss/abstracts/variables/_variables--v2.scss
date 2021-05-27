@@ -173,12 +173,10 @@ $caption--box-shadow---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
 $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
 $linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
 $linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
-$linear-gradient--combo: linear-gradient(
-  -45deg,
-  $linear-gradient--primary,
-  $linear-gradient--secondary,
-  $linear-gradient--tertiary
-);
+$linear-gradient--combo: linear-gradient(-45deg,
+$linear-gradient--primary,
+$linear-gradient--secondary,
+$linear-gradient--tertiary);
 
 // #  Radial-Gradient
 $radial-gradient--foreground: radial-gradient(#003, #000);

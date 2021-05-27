@@ -28,24 +28,31 @@
 +  PARTIAL SCSS GROUP 4 - `layout/`
 \* ========================================================================== */
 // @import 'waiting-on-migration/layout/header';
-@import 'waiting-on-migration/layout/footer';
+// @import 'waiting-on-migration/layout/footer';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 5 - `components/`
 \* ========================================================================== */
-@import 'waiting-on-migration/components/card';
-@import 'waiting-on-migration/components/icon';
-@import 'waiting-on-migration/components/switch';
-@import 'waiting-on-migration/components/mobile-menu';
-@import 'waiting-on-migration/components/button';
-@import 'waiting-on-migration/components/scrollbar';
-@import 'waiting-on-migration/components/box-border';
+// @import 'waiting-on-migration/components/card';
+// @import 'waiting-on-migration/components/icon';
+// @import 'waiting-on-migration/components/switch';
+// @import 'waiting-on-migration/components/mobile-menu';
+// @import 'waiting-on-migration/components/button';
+// @import 'waiting-on-migration/components/scrollbar';
+// @import 'waiting-on-migration/components/box-border';
+
+@import 'components/main-logo';
+@import 'components/restauration-header';
+@import 'components/store-header';
+@import 'components/product-item';
+@import 'components/shopping-cart-item';
+@import 'components/workshop-item';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 6 - `pages/`
 \* ========================================================================== */
 
-@import 'waiting-on-migration/pages/home-webshop';
+// @import 'waiting-on-migration/pages/home-webshop';
 
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 7 - `themes/`

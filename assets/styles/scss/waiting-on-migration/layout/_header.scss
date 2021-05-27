@@ -16,7 +16,8 @@ header {
   width: 100%;
   background: rgba(255, 255, 255, 0.92);
   transform: translateY(0);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+  transition:
+    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
   will-change: transform;
 
@@ -30,13 +31,11 @@ header {
   background-color: transparent;
 
   &__container {
-    background-color: hsla(
-      var(--color-background-h),
+    background-color:
+      hsla(var(--color-background-h),
       var(--color-background-s),
       var(--color-background-l),
-      0.75
-    );
-
+      0.75);
     border-radius: $small-dimension--s;
   }
 }

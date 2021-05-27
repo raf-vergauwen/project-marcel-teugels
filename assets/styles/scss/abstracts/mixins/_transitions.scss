@@ -19,12 +19,16 @@
 // -  <---------------| Header-Transition--Slidedown |--------------->
 @mixin header-transition--slidedown {
   transform: translateY(0);
-  transition: background 0.3s,
+  transition:
+    background 0.3s,
     -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+  transition:
+    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
     background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
-    background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition:
+    transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s,
+    -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   will-change: transform;
 }
 
@@ -35,10 +39,11 @@
 
 // -  <---------------| Click-Transition--Small |--------------->
 @mixin click-transition--small {
-  transition: background-color var(--animation-duration) linear,
+  cursor: pointer;
+  transition:
+    background-color var(--animation-duration) linear,
     border-color var(--animation-duration) linear,
     color var(--animation-duration) linear,
     box-shadow var(--animation-duration) linear,
     transform var(--animation-duration) ease;
-  cursor: pointer;
 }

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://watercss.kognise.dev/ -->
+<html lang="en" wtx-context="81E90D38-2D05-434F-8270-B3FA4A8FF150">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water.css</title>
+    <link rel="canonical" href="https://watercss.kognise.dev/" />
+    <meta
+      name="description"
+      content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://watercss.kognise.dev/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      id="icon-16"
+      type="image/png"
+      sizes="16x16"
+      href="https://watercss.kognise.dev/icons/light-favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      id="icon-32"
+      type="image/png"
+      sizes="32x32"
+      href="https://watercss.kognise.dev/icons/light-favicon-32x32.png"
+    />
+    <link rel="manifest" href="https://watercss.kognise.dev/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="https://watercss.kognise.dev/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link
+      rel="shortcut icon"
+      id="icon-ico"
+      href="https://watercss.kognise.dev/icons/light-favicon.ico"
+    />
+    <meta name="apple-mobile-web-app-title" content="Water.css" />
+    <meta name="application-name" content="Water.css" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="msapplication-config" content="./icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://watercss.kognise.dev/water.css/dark.min.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://watercss.kognise.dev/water.css/light.min.css"
+    />
+    <link
+      rel="stylesheet"
+      id="js-stylesheet"
+      href="./Water.css_files/water.min.css"
+    />
+    <link rel="stylesheet" href="./Water.css_files/style.css" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://watercss.kognise.dev/" />
+    <meta property="og:title" content="Water.css" />
+    <meta
+      property="og:description"
+      content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/kognise/water.css/master/assets/logo.png"
+    />
+    <meta property="og:image:width" content="1154" />
+    <meta property="og:image:height" content="444" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Water.css",
+        "alternateName": "Water.css",
+        "url": "https://watercss.kognise.dev/"
+      }
+    </script>
+    <script>
+      window.navigator.clipboard ||
+        document.write(
+          ' <script src="https://unpkg.com/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.promise.js"> <\/script>',
+        );
+    </script>
+    <script data-dapp-detection="">
+      !(function () {
+        let e = !1;
+        function n() {
+          if (!e) {
+            const n = document.createElement('meta');
+            (n.name = 'dapp-detected'), document.head.appendChild(n), (e = !0);
+          }
+        }
+        if (window.hasOwnProperty('ethereum')) {
+          if (
+            ((window.__disableDappDetectionInsertion = !0),
+            void 0 === window.ethereum)
+          )
+            return;
+          n();
+        } else {
+          var t = window.ethereum;
+          Object.defineProperty(window, 'ethereum', {
+            configurable: !0,
+            enumerable: !1,
+            set: function (e) {
+              window.__disableDappDetectionInsertion || n(), (t = e);
+            },
+            get: function () {
+              if (!window.__disableDappDetectionInsertion) {
+                const e = arguments.callee;
+                (e &&
+                  e.caller &&
+                  e.caller.toString &&
+                  -1 !== e.caller.toString().indexOf('getOwnPropertyNames')) ||
+                  n();
+              }
+              return t;
+            },
+          });
+        }
+      })();
+    </script>
+    <script type="module">
+      import faviconSwitcher from 'https://unpkg.com/favicon-mode-switcher@1.0.4/dist/index.min.mjs';
+      faviconSwitcher([
+        { element: '#icon-ico', href: { dark: './icons/light-favicon.ico' } },
+        {
+          element: '#icon-16',
+          href: { dark: './icons/light-favicon-16x16.png' },
+        },
+        {
+          element: '#icon-32',
+          href: { dark: './icons/light-favicon-32x32.png' },
+        },
+      ]);
+    </script>
+  </head>
+  <body>
+    <h1>Water.css</h1>
+    <p>
+      Water.css is a drop-in collection of CSS styles to make simple websites
+      like this just a little bit nicer.
+    </p>
+    <p>
+      Now you can write your simple static site with nice semantic html, and
+      Water.css will manage the styling for you.
+    </p>
+    <div class="row">
+      <div>
+        <a href="https://watercss.kognise.dev/#installation"
+          ><b>Get it already!</b></a
+        >
+        <br />
+        <a href="https://github.com/kognise/water.css"><b>GitHub</b></a>
+      </div>
+      <a
+        href="https://www.producthunt.com/posts/water-css?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-water-css"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          id="product-hunt"
+          src="./Water.css_files/top-post-badge.svg"
+          alt="Water.css - Make your tiny website just a little nicer | Product Hunt Embed"
+          style="width: 250px;
+  height: 54px;"
+          width="250px"
+          height="54px"
+        />
+      </a>
+    </div>
+    <h2>Installation</h2>
+    <div id="installation">
+      <header class="row">
+        <h3 id="link-snippet-headline">
+          Paste this into the <code>&lt;head&gt;</code> of your HTML:
+        </h3>
+        <button type="button" id="copy-button">
+          <span id="copy-button-feedback"></span> Copy to clipboard
+        </button>
+      </header>
+      <div id="link-snippet-container">
+        <pre
+          id="link-snippet-auto"
+        ><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"&gt;</code></pre>
+        <pre
+          hidden=""
+          id="link-snippet-dark"
+        ><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"&gt;</code></pre>
+        <pre
+          hidden=""
+          id="link-snippet-light"
+        ><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"&gt;</code></pre>
+      </div>
+      <h3>Options</h3>
+      <form id="theme-form" wtx-context="7BB5A247-ABB0-4F88-A102-A24655F35235">
+        <input
+          type="radio"
+          value="auto"
+          checked=""
+          name="theme"
+          id="theme-auto"
+          wtx-context="258298F9-342C-4828-80F4-5D096B7D5A12"
+        />
+        <label for="theme-auto">Automatic 🌙 / ☀</label>
+        <input
+          type="radio"
+          value="dark"
+          name="theme"
+          id="theme-dark"
+          wtx-context="E3F8C8CC-69AA-4AD8-87C1-71E7E8DC7C0C"
+        />
+        <label for="theme-dark">Dark theme 🌙</label>
+        <input
+          type="radio"
+          value="light"
+          name="theme"
+          id="theme-light"
+          wtx-context="09A17063-7BDF-4369-A99D-7F112BEDA851"
+        />
+        <label for="theme-light">Light theme ☀</label>
+      </form>
+      <table id="version-info">
+        <caption>
+          <h3>Version info</h3>
+        </caption>
+        <tbody>
+          <tr>
+            <th scope="row">File</th>
+            <td id="table-file-name">water.min.css</td>
+          </tr>
+          <tr>
+            <th scope="row">Size (min + gzip)</th>
+            <td id="table-file-size">3.27 kb</td>
+          </tr>
+          <tr>
+            <th scope="row">Theme</th>
+            <td id="table-theme">
+              Respects user-defined theme settings using
+              <a
+                style="--links: var(--code);"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+                target="_blank"
+                rel="noopener"
+                ><code>prefers-color-scheme</code></a
+              >.<br />
+              Light in browsers where the theme settings can't be detected.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 id="goals">Goals</h2>
+    <ul>
+      <li>Responsive</li>
+      <li>Good code quality</li>
+      <li>Good browser support</li>
+      <li>Small size (&lt; 2kb)</li>
+      <li>Beautiful</li>
+      <li>No classes</li>
+    </ul>
+    <h2 id="responsive">Is it responsive?</h2>
+    <p>
+      <strong>Heck yeah!</strong> It doesn't include any fancy styles so it's
+      easily mobile responsive. Just add the famous
+      <a href="https://www.w3schools.com/css/css_rwd_viewport.asp"
+        >responsive viewport tag</a
+      >
+      and you'll be good to go!
+    </p>
+    <p>
+      In fact, try resizing this page. Everything flows super nicely as you'll
+      see.
+    </p>
+    <h2 id="bookmarklet">Bookmarklet</h2>
+    <p>
+      A bookmarklet is a snippet of JavaScript that sits in your bookmarks bar.
+    </p>
+    <p>
+      The Waterize bookmarklet can be used to make ugly websites more readable
+      by replacing the styles with Water.css. Just drag this link to your
+      bookmarks bar:
+    </p>
+    <strong>
+      <a
+        href="javascript:void%20function(){const%20a=a=%3Edocument.querySelectorAll(a),b=(a,b)=%3EObject.assign(document.createElement(a),b);a(%22link[rel=\%22stylesheet\%22],style%22).forEach(a=%3Ea.remove()),a(%22*%22).forEach(a=%3Ea.style=%22%22),document.head.append(b(%22link%22,{rel:%22stylesheet%22,href:%22//cdn.jsdelivr.net/npm/water.css%402/out/water.css%22}),!a(%22meta[name=\%22viewport\%22]%22).length%26%26b(%22meta%22,{name:%22viewport%22,content:%22width=device-width,initial-scale=1.0%22}))}();"
+      >
+        Waterize
+      </a>
+    </strong>
+    <h2 id="demo">Element demos</h2>
+    <p>This is supposed to be a demo page so we need more elements!</p>
+    <h3 id="form-elements">Form elements</h3>
+    <form wtx-context="6FA5A845-32DA-48D8-8693-284EC8BFAADD">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="john.doe@gmail.com"
+        wtx-context="283EEC12-2256-4935-9E7F-963EDAD72889"
+      />
+      <label for="id">User id (read only)</label>
+      <input
+        readonly=""
+        name="id"
+        id="id"
+        value="04D6H89Z"
+        wtx-context="8655BE0E-1B41-4FB6-806F-1E7CEEB1736F"
+      />
+      <label for="disabled">Random disabled input</label>
+      <input
+        disabled=""
+        name="disabled"
+        id="disabled"
+        placeholder="Because why not?"
+        wtx-context="D27CE642-0FB3-4B5C-8ACA-E4F0B5332179"
+      />
+      <label for="about">About me</label>
+      <textarea
+        name="about"
+        id="about"
+        placeholder="I am a textarea..."
+      ></textarea>
+      <label>Choose a Doe:</label>
+      <div>
+        <input
+          type="radio"
+          id="john"
+          name="drone"
+          value="john"
+          checked=""
+          wtx-context="1E0224DB-88B1-44FE-9D8F-B76D1CB77871"
+        />
+        <label for="john">John Doe</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="jane"
+          name="drone"
+          value="jane"
+          checked=""
+          wtx-context="BBEFC18A-6B54-48D3-8B44-8701A3EEEE9F"
+        />
+        <label for="jane">Jane Doe</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="johnny"
+          name="drone"
+          value="johnny"
+          checked=""
+          wtx-context="BD5763E1-7F38-4FBA-B3A0-AEC2C5C71B9D"
+        />
+        <label for="johnny">Johnny Doe</label>
+      </div>
+      <br />
+      <input
+        type="checkbox"
+        name="remember"
+        id="remember"
+        checked=""
+        wtx-context="2393D09B-82D2-45A5-9DCF-3F189BF5BB27"
+      />
+      <label for="remember">Remember me</label>
+      <input
+        type="submit"
+        value="Submit"
+        wtx-context="01B0E5C0-237D-4EA5-8A90-69C1C1740776"
+      />
+      <input
+        type="reset"
+        value="Reset"
+        wtx-context="C3167F99-D7A2-4582-89CF-6E792CBCB45D"
+      />
+    </form>
+    <h3 id="code">Code</h3>
+    <p>
+      Below is some code, you can copy it with <kbd>Ctrl-C</kbd>. Did you know,
+      <code>alert(1)</code> can show an alert in JavaScript!
+    </p>
+    <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
+    <h3 id="other">Other</h3>
+    <p>
+      Here's a horizontal rule and image because I don't know where else to put
+      them.
+    </p>
+    <img src="./Water.css_files/287" alt="Example kitten" />
+    <hr />
+    <p>And here's a nicely marked up table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+    <details>
+      <summary>Some summary/details can't hurt!</summary>
+      <p>Lorem ipsum dolor sit blah blah.</p>
+    </details>
+    <p>The dialog (form, and menu) tag</p>
+    <div>
+      <button type="button" id="dialog-trigger">Show me the dialog!</button>
+      <span id="dialog-result"></span>
+    </div>
+    <dialog id="dialog">
+      <header>This is a sample dialog</header>
+      <form method="dialog" wtx-context="BC7398E6-CD95-4CAB-8CA9-703404ED5330">
+        <p>What is your favorite pet animal?</p>
+        <menu>
+          <button value="feline">Cats</button>
+          <button value="canine">Dogs</button>
+          <button value="other">Others</button>
+        </menu>
+      </form>
+    </dialog>
+    <h3 id="typography">Typography</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum
+      hendrerit velit, quis ullamcorper sem congue ac. Quisque id magna rhoncus,
+      sodales massa vel, vestibulum elit. Duis ornare accumsan egestas. Proin
+      maximus lacus interdum leo molestie convallis. Orci varius natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut
+      iaculis risus eu felis feugiat, eu mollis neque elementum. Donec interdum,
+      nisl id dignissim iaculis, felis dui aliquet dui, non fermentum velit
+      lectus ac quam. Class aptent taciti sociosqu ad litora torquent per
+      conubia nostra, per inceptos himenaeos.
+      <strong>This is strong,</strong> this is normal,
+      <b>this is just bold,</b> <em>and this is emphasized!</em> And heck,
+      <a href="https://watercss.kognise.dev/">here</a>'s a link.
+    </p>
+    <blockquote cite="./Water.css_files/blockquote">
+      "The HTML blockquote Element (or HTML Block Quotation Element) indicates
+      that the enclosed text is an extended quotation. Usually, this is rendered
+      visually by indentation (see
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes"
+        >Notes</a
+      >
+      for how to change it). A URL for the source of the quotation may be given
+      using the <code>cite</code> attribute, while a text representation of the
+      source can be given using the <code>&lt;cite&gt;</code> cite element."
+      <footer><cite>MDN, "The Block Quotation element"</cite></footer>
+    </blockquote>
+    <ul>
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <li>Unordered list item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered list item 1</li>
+      <li>Ordered list item 2</li>
+      <li>Ordered list item 3</li>
+    </ol>
+    <p>Addresses are also styled to be <strong>awesome</strong>!</p>
+    <address>
+      <a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
+      <a href="tel:778-330-2389">778-330-2389</a><br />
+      <a href="sms:666-666-6666">666-666-6666</a><br />
+    </address>
+    <br />
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <footer><a href="https://watercss.kognise.dev/#">Back to top ⬆</a></footer>
+    <script src="./Water.css_files/script.js.download" defer=""></script>
+  </body>
+</html>

@@ -12,26 +12,27 @@
 }
 
 @mixin reset {
-  background-color: transparent;
   padding: 0;
   border: 0;
+  appearance: none;
+  background-color: transparent;
   border-radius: 0;
   color: inherit;
   line-height: inherit;
-  appearance: none;
 }
 
 @mixin column($width) {
   @if unit($width) != '%' {
     $width: $width * 100%;
   }
-  flex-basis: #{$width};
+
   max-width: #{$width};
+  flex-basis: #{$width};
 }
 
 @mixin auto-sized-column {
+  max-width: 100%;
+  flex-basis: auto;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: auto;
-  max-width: 100%;
 }

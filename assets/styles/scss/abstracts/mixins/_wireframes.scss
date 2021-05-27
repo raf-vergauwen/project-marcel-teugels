@@ -21,25 +21,23 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(
-          to top right,
-          transparent calc(50% - 1px),
-          var(--wireframe--wire) calc(50% - 1px),
-          var(--wireframe--wire) calc(50% + 1px),
-          transparent calc(50% + 1px)
-        ),
-        linear-gradient(
-          to bottom right,
-          transparent calc(50% - 1px),
-          var(--wireframe--wire) calc(50% - 1px),
-          var(--wireframe--wire) calc(50% + 1px),
-          transparent calc(50% + 1px)
-        ),
+      background:
+        linear-gradient(to top right,
+        transparent calc(50% - 1px),
+        var(--wireframe--wire) calc(50% - 1px),
+        var(--wireframe--wire) calc(50% + 1px),
+        transparent calc(50% + 1px)),
+        linear-gradient(to bottom right,
+        transparent calc(50% - 1px),
+        var(--wireframe--wire) calc(50% - 1px),
+        var(--wireframe--wire) calc(50% + 1px),
+        transparent calc(50% + 1px)),
         var(--wireframe--bg-color);
       color: var(--wireframe--wire);
       content: attr(data-wf);
       font: bold 2em Jubilat, Georgia, serif;
-      text-shadow: 0 0 0.25em var(--wireframe--bg-color),
+      text-shadow:
+        0 0 0.25em var(--wireframe--bg-color),
         0 0 0.25em var(--wireframe--bg-color),
         0 0 0.25em var(--wireframe--bg-color),
         0 0 0.25em var(--wireframe--bg-color),
@@ -59,18 +57,18 @@
     article,
     section,
     aside {
-      outline: $small-dimension--xxs double orangered;
+      outline: $small-dimension--xxs double #ff4500; // orangered
     }
 
     // #  <-----| Sub |----->
     header,
     footer {
-      outline: $small-dimension--xxs double indianred;
+      outline: $small-dimension--xxs double #cd5c5c; // indianred
     }
 
     // #  <-----| Non-Semantic |----->
     div {
-      outline: $small-dimension--xxs dashed red;
+      outline: $small-dimension--xxs dashed #f00; // red
     }
 
     // -  <---------------| Heading |--------------->
@@ -81,7 +79,7 @@
     h4,
     h5,
     h6 {
-      outline: $small-dimension--xxs double tomato;
+      outline: $small-dimension--xxs double #ff6347; // tomato
     }
 
     // -  <---------------| Block-Text |--------------->
@@ -89,20 +87,20 @@
     dl,
     dt,
     dd {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge deepskyblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #00bfff; // deepskyblue
     }
 
     // #  <-----| Figure |----->
     figure,
     figcaption {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge dodgerblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #1e90ff; // dodgerblue
     }
 
     // #  <-----| Lists |----->
     ol,
     ul,
     li {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge steelblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #4682b4; // steelblue
     }
 
     // #  <-----| Other |----->
@@ -111,7 +109,7 @@
     hr,
     p,
     pre {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge blue;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #00f; // blue
     }
 
     // -  <---------------| Inline-Text |--------------->
@@ -124,7 +122,7 @@
     span,
     strong,
     var {
-      outline: $small-dimension--xxxs dotted lime;
+      outline: $small-dimension--xxxs dotted #0f0; // lime
     }
 
     // #  <-----| Functional |----->
@@ -139,7 +137,7 @@
     q,
     time,
     wbr {
-      outline: $small-dimension--xxxs dotted springgreen;
+      outline: $small-dimension--xxxs dotted #00ff7f; // springgreen
     }
 
     // -  <---------------| Multimedia |--------------->
@@ -150,7 +148,7 @@
     map,
     track,
     video {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge yellow;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge #ff0; // yellow
     }
 
     // #  <-----| Complex |----->
@@ -160,13 +158,13 @@
     param,
     picture,
     source {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge khaki;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge #f0e68c; // khaki
     }
 
     // #  <-----| Special |----->
     svg,
     math {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge gold;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) ridge #ffd700; // gold
     }
 
     // -  <---------------| Table |--------------->
@@ -177,7 +175,7 @@
     tfoot,
     colgroup,
     tr {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) solid darkorchid;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) solid #9932cc; // darkorchid
     }
 
     // #  <-----| Children |----->
@@ -185,7 +183,7 @@
     col,
     th,
     td {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid slateblue;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #6a5acd; // slateblue
     }
 
     // -  <---------------| Forms |--------------->
@@ -195,7 +193,7 @@
     fieldset,
     optgroup,
     select {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) solid teal;
+      outline: calc(#{$small-dimension--xxxs} * 1.5) solid #008080; // teal
     }
 
     // #  <-----| Children |----->
@@ -208,20 +206,20 @@
     output,
     progress,
     textarea {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid turquoise;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #40e0d0; // turquoise
     }
 
     // -  <---------------| Intertactive |--------------->
     // #  <-----| Disclosure Widget |----->
     details,
     summary {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid deeppink;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #ff1493; // deeppink
     }
 
     // #  <-----| Other |----->
     dialog,
     menu {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid hotpink;
+      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #ff69b4; // hotpink
     }
   }
 }

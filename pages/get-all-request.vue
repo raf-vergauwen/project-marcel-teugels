@@ -5,10 +5,10 @@
         class="request-item"
         v-for="request in requestData.data"
         :key="request.name"
-        style="list-style-type: none"
+        style="list-style-type: none;"
       >
         {{ request.name }}
-        <ul style="list-style-type: none">
+        <ul style="list-style-type: none;">
           <li>id: {{ request.id }}</li>
           <li>voornaam: {{ request.first_name }}</li>
           <li>achternaam: {{ request.last_name }}</li>
@@ -58,7 +58,7 @@ export default {
 body {
   display: flex;
   width: 100vw;
-  justify-content:center;
+  justify-content: center;
   background-color: silver;
 }
 
@@ -67,7 +67,7 @@ body {
   padding: 2em;
   margin: 1em;
   background-color: white;
-  color: black;
   border-radius: 15px;
+  color: black;
 }
 </style>
