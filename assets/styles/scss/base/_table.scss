@@ -9,62 +9,90 @@
 // #  <---------------| <table> |--------------->
 table {
   border-collapse: collapse;
-  margin-bottom: 10px;
+  margin-bottom: $buffer--s;
   width: 100%;
   table-layout: fixed;
+  color: var(--color-text);
+  padding: $buffer--s;
+  margin: $buffer--s;
 }
 
 // #  <---------------| <thead> |--------------->
 thead {
-  border-bottom: 1px solid var(--border);
+  border-bottom: $small-dimension--xxxs solid var(--color-secondary);
+  color: var(--color-text);
+  padding: $buffer--xs;
 }
 
 // #  <---------------| <tbody> |--------------->
 tbody {
+  padding: $buffer--xs;
   tr:nth-child(even) {
-    background-color: var(--background);
+    background-color: var(--color-background);
+    color: var(--color-text);
   }
 
   tr:nth-child(even) button {
-    background-color: var(--background-alt);
+    background-color: var(--color-background--lighter);
+    color: var(--color-text);
   }
 
   tr:nth-child(even) button:hover {
     background-color: var(--color-background);
+    color: var(--color-text);
   }
 }
 
 // #  <---------------| <tfoot> |--------------->
 tfoot {
-  border-top: 1px solid var(--border);
+  border-top: $small-dimension--xxxs solid var(--color-secondary);
+  color: var(--color-text);
+  padding: $buffer--xs;
 }
 
 // #  <---------------| <colgroup> |--------------->
+colgroup {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <tr> |--------------->
+tr {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< CHILDREN >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <caption> |--------------->
+caption {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <col> |--------------->
+col {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <th> |--------------->
 th {
-  padding: 6px;
+  padding: $buffer--xs;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
-  font-weight: 600;
-  border-bottom: 1px solid #dbdbdb;
+  font-weight: $font-weight--subject;
+  color: var(--color-text);
 }
 
 // #  <---------------| <td> |--------------->
 td {
-  padding: 6px;
+  padding: $buffer--xs;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
+  color: var(--color-text);
 }

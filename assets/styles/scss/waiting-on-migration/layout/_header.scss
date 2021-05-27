@@ -107,7 +107,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background: var(--color-foreground);
+  background: var(--color-text);
   content: '';
   transition: width 0.35s ease;
 }
@@ -129,7 +129,7 @@ header nav .nav-logo {
   padding-bottom: 0.25rem;
   margin-right: 1rem;
   color: var(--color-primary);
-  color: var(--color-foreground);
+  color: var(--color-text);
   float: left;
   font-size: 1.25rem;
   font-weight: 500;
@@ -236,6 +236,6 @@ ul.menu-left.collapse {
   width: 100%;
   height: 2px;
   margin-top: 4px;
-  background-color: var(--color-foreground);
+  background-color: var(--color-text);
   transition: all 0.25s;
 }

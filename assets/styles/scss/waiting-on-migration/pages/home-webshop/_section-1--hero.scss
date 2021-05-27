@@ -22,18 +22,18 @@
     max-height: 40vh;
     padding-top: $buffer--l;
     fill: var(--color-tertiary);
-    filter: drop-shadow(0 0 0.1em var(--color-foreground));
+    filter: drop-shadow(0 0 0.1em var(--color-text));
   }
 
   &__subject {
     color: var(--color-background);
-    filter: drop-shadow(0 0 0.1em var(--color-foreground));
+    filter: drop-shadow(0 0 0.1em var(--color-text));
   }
 
   &__title {
     padding-top: 0;
     color: var(--color-secondary);
-    filter: drop-shadow(0 0 0.1em var(--color-foreground));
+    filter: drop-shadow(0 0 0.1em var(--color-text));
     font-family: 'Oswald', sans-serif;
     font-size: $font-size--4;
     font-weight: 600;

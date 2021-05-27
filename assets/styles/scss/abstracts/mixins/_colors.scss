@@ -20,9 +20,12 @@
 }
 
 // -  <---------------| define-color-hsl |--------------->
-@mixin define-color-hsl($color, $hue, $saturation, $lightness) {
-  #{$color}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
-  #{$color}-h: #{$hue};
-  #{$color}-s: #{$saturation};
-  #{$color}-l: #{$lightness};
+@mixin define-color-hsl($color-name, $hue, $saturation, $lightness) {
+  /* #  ---------------------------------------- */
+  /* #  #{$color-name} hsl */
+  /* #  ---------------------------------------- */
+  #{$color-name}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
+  #{$color-name}-h: #{$hue};
+  #{$color-name}-s: #{$saturation};
+  #{$color-name}-l: #{$lightness};
 }

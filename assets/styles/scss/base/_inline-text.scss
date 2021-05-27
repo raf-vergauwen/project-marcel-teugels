@@ -9,22 +9,23 @@
 // #  <---------------| <b> |--------------->
 b {
   font-weight: $font-weight--subject;
-  color: var(--color-text);
+  color: var(--color-text--darker);
 }
 
 // #  <---------------| <code> |--------------->
 code {
-  background: var(--background);
+  background: var(--color-background);
   color: var(--color-text);
-  padding: 2.5px 5px;
-  border-radius: 6px;
-  font-size: 1em;
+  padding: $buffer--xs;
+  border-radius: $small-dimension--xs;
+  font-size: $font-size--1;
   font-variant: $font-variant--text-alt;
+  font-family: $font-family--text-alt;
 }
 
 // #  <---------------| <em> |--------------->
 em {
-  color: var(--color-text);
+  color: var(--color-text--darker);
 }
 
 // #  <---------------| <i> |--------------->
@@ -34,20 +35,20 @@ i {
 
 // #  <---------------| <kbd> |--------------->
 kbd {
-  background: var(--background);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  color: var(--text-main);
-  padding: 2px 4px 2px 4px;
+  background: var(--color-primary);
+  border: $small-dimension--xxxs solid var(--color-secondary);
+  border-radius: $small-dimension--xs;
+  color: var(--color-text--darker);
+  padding: $buffer--xs;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <mark> |--------------->
 mark {
-  background-color: var(--highlight);
-  border-radius: 2px;
-  padding: 0 2px 0 2px;
-  color: var(--color-text);
+  background-color: var(--color-tertiary);
+  border-radius: $small-dimension--xs;
+  padding: $buffer--xs;
+  color: var(--color-text--darker);
 }
 
 // #  <---------------| <s> |--------------->
@@ -57,45 +58,50 @@ s {
 
 // #  <---------------| <samp> |--------------->
 samp {
-  background: var(--background);
-  color: var(--color-text);
-  padding: 2.5px 5px;
-  border-radius: 6px;
-  font-size: 1em;
+  background: var(--color-background);
+  color: var(--color-text--darker);
+  padding: $buffer--xs;
+  border-radius: $small-dimension--xs;
+  font-size: $font-size--1;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <small> |--------------->
 small {
   font-weight: $font-weight--text-alt;
-  color: var(--color-text);
+  color: var(--color-text--lighter);
 }
 
 // #  <---------------| <strong> |--------------->
 strong {
-  color: var(--color-text);
+  color: var(--color-text--darker);
   font-weight: $font-weight--subject;
 }
 
 // #  <---------------| <sub> |--------------->
 sub {
+  color: var(--color-text--lighter);
   font-weight: $font-weight--text-alt;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <sup> |--------------->
 sup {
+  color: var(--color-text--lighter);
   font-weight: $font-weight--text-alt;
   font-variant: $font-variant--text-alt;
 }
 
 // #  <---------------| <u> |--------------->
+u {
+  color: var(--color-text);
+}
 
 // #  <---------------| <var> |--------------->
 var {
-  color: var(--variable);
+  color: var(--color-primary);
   font-style: normal;
-  font-family: monospace;
+  font-family: $font-family--text-alt;
   font-variant: $font-variant--text-alt;
 }
 
@@ -105,7 +111,7 @@ var {
 
 // #  <---------------| <a> |--------------->
 a {
-  padding: $buffer--xs 0;
+  padding: $buffer--xs;
   color: var(--color-primary);
   font-family: $font-family--link;
   font-size: $font-size--2;
@@ -122,7 +128,7 @@ a {
     left: 0;
     display: block;
     width: 0;
-    height: 2px;
+    height: $small-dimension--xxs;
     content: '';
     transition: width 0s ease, background 0.35s ease;
   }
@@ -133,8 +139,8 @@ a {
     bottom: 0;
     display: block;
     width: 0;
-    height: 2px;
-    background: var(--color-foreground);
+    height: $small-dimension--xxs;
+    background: var(--color-tertiary);
     content: '';
     transition: width 0.35s ease;
   }
@@ -164,26 +170,42 @@ a {
 // #  <---------------| <abbr> |--------------->
 abbr {
   font-variant: $font-variant--text-alt;
+  color: var(--color-text--lighter);
 }
 
 // #  <---------------| <bdi> |--------------->
+bdi {
+  color: var(--color-text);
+}
 
 // #  <---------------| <bdo> |--------------->
+bdo {
+  color: var(--color-text);
+}
 
 // #  <---------------| <br> |--------------->
 
 // #  <---------------| <cite> |--------------->
+cite {
+  color: var(--color-text--lighter);
+}
 
 // #  <---------------| <data> |--------------->
+data {
+  color: var(--color-text);
+}
 
 // #  <---------------| <dfn> |--------------->
+dfn {
+  color: var(--color-text);
+}
 
 // #  <---------------| <q> |--------------->
 q {
-  border-left: 4px solid var(--focus);
-  margin: 1.5em 0;
-  padding: 0.5em 1em;
+  border-left: $small-dimension--xs solid var(--color-tertiary--darkest);
+  padding: $buffer--xs;
   font-style: italic;
+  color: var(--color-text--lighter);
 
   &::before {
     content: none;
@@ -196,17 +218,23 @@ q {
 
 // #  <---------------| <time> |--------------->
 time {
-  background: var(--background);
-  color: var(--code);
-  padding: 2.5px 5px;
-  border-radius: 6px;
-  font-size: 1em;
+  background: var(--color-background);
+  color: var(--color-text);
+  padding: $buffer--xs;
+  border-radius: $small-dimension--xs;
+  font-size: $font-size--1;
 }
 
 // #  <---------------| <wbr> |--------------->
+wbr {
+  color: var(--color-text);
+}
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< NON-SEMANTIC >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <span> |--------------->
+span {
+  color: var(--color-text);
+}

@@ -7,21 +7,37 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <dl> |--------------->
+dl {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <dt> |--------------->
+dt {
+  color: var(--color-text);
+  padding: $buffer--xxs;
+}
 
 // #  <---------------| <dd> |--------------->
+dd {
+  color: var(--color-text);
+  padding: $buffer--xxs;
+}
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< FIGURE >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <figure> |--------------->
+figure {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <figcaption> |--------------->
 figcaption {
-  padding: $buffer--xs 0;
-  color: var(--color-foreground);
+  padding: $buffer--xxs;
+  color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -37,14 +53,22 @@ figcaption {
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <ol> |--------------->
+ol {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <ul> |--------------->
+ul {
+  color: var(--color-text);
+  padding: $buffer--xs;
+}
 
 // #  <---------------| <li> |--------------->
 li {
-  padding: $buffer--xs 0;
+  padding: $buffer--xxs;
   list-style-type: none;
-  color: var(--color-foreground);
+  color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -62,16 +86,17 @@ li {
 // #  <---------------| <address> |--------------->
 address {
   font-style: normal;
+  color: var(--color-text);
+  padding: $buffer--xs;
 }
 
 // #  <---------------| <blockquote> |--------------->
 blockquote {
-  border-left: 4px solid var(--focus);
-  margin: 1.5em 0;
+  border-left: $buffer--xs solid var(--color-tertiary--darkest);
+  padding: $buffer--xs;
   font-style: italic;
 
-  padding: $buffer--xs 0;
-  color: var(--color-foreground);
+  color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -93,9 +118,10 @@ blockquote {
 // #  <---------------| <hr> |--------------->
 hr {
   width: 100%;
-  height: calc(#{$small-dimension--xxs} / 2);
+  height: $small-dimension--xxxs;
   border: 0;
-  margin: $buffer--s auto;
+  padding: $buffer--xs;
+  margin: $buffer--xs;
   background-image: linear-gradient(
     to right,
     hsla(
@@ -104,24 +130,9 @@ hr {
       var(--color-background-l),
       0
     ),
-    hsla(
-      var(--color-foreground-h),
-      var(--color-foreground-s),
-      var(--color-foreground-l),
-      0.5
-    ),
-    hsla(
-      var(--color-foreground-h),
-      var(--color-foreground-s),
-      var(--color-foreground-l),
-      0.75
-    ),
-    hsla(
-      var(--color-foreground-h),
-      var(--color-foreground-s),
-      var(--color-foreground-l),
-      0.5
-    ),
+    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
+    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75),
+    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
     hsla(
       var(--color-background-h),
       var(--color-background-s),
@@ -133,8 +144,8 @@ hr {
 
 // #  <---------------| <p> |--------------->
 p {
-  padding: $buffer--xs 0;
-  color: var(--color-foreground);
+  padding: $buffer--xs;
+  color: var(--color-text);
   font-family: $font-family--text;
   font-size: $font-size--1;
   font-variant: $font-variant--text;
@@ -147,8 +158,10 @@ p {
 
 // #  <---------------| <pre> |--------------->
 pre {
+  padding: $buffer--xs;
+  color: var(--color-text);
   & > code {
-    padding: $buffer--s;
+    padding: $buffer--xxs;
     display: block;
     overflow-x: auto;
   }

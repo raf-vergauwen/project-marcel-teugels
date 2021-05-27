@@ -2,7 +2,6 @@
 // +  <<--------------------<< UTILITIES >>-------------------->>
 // -----------------------------------------------------------------------------
 
-
 @mixin full-width {
   position: relative;
   right: 50%;
@@ -11,7 +10,6 @@
   margin-right: -50vw;
   margin-left: -50vw;
 }
-
 
 @mixin reset {
   background-color: transparent;
@@ -31,8 +29,9 @@
   max-width: #{$width};
 }
 
-@mixin autoSizedColumn {
+@mixin auto-sized-column {
   flex-grow: 1;
-  flex-basis: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   max-width: 100%;
 }

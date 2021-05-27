@@ -15,6 +15,7 @@ img {
   @include box-dimensions;
 
   background-color: var(--bg-color--transparant---softest);
+  color: var(--color-text);
   object-fit: cover;
   object-position: center center;
 }
@@ -52,10 +53,13 @@ video {
 svg {
   @include box-dimensions;
 
-  color: var(--color-foreground);
-  fill: var(--color-foreground);
+  color: var(--color-text);
+  fill: var(--color-text);
   object-fit: cover;
   object-position: center center;
 }
 
 // #  <---------------| <math> |--------------->
+math {
+  color: var(--color-text);
+}

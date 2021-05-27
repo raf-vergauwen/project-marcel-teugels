@@ -20,22 +20,6 @@
   --bg-color--transparant---harder: hsla(0, 0%, 100%, 0.8);
   --bg-color--transparant---hardest: hsla(0, 0%, 100%, 0.95);
 
-  --selection: #9e9e9e;
-  --text-main: #363636;
-  --text-bright: #000;
-  --text-muted: #70777f;
-  --links: #0076d1;
-  --focus: #0096bfab;
-  --border: #dbdbdb;
-  --code: #000;
-  --animation-duration: 0.1s;
-  --button-hover: #ddd;
-  --form-placeholder: #949494;
-  --form-text: #000;
-  --variable: #39a33c;
-  --highlight: #ff0;
-  // --select-arrow: svg-load('./assets/select-arrow.svg', fill: #161f27);
-
   /* -  ---------------------------------------------------------------- */
   /* -  <<--------------------<< REGULAR COLORS >>-------------------->> */
   /* -  ---------------------------------------------------------------- */
@@ -47,4 +31,7 @@
     $secondary: #4676b9,
     $tertiary: #b78846
   );
+
+  @include define-color-hsl(--color-text, 240, 100%, 10%);
+  @include define-color-hsl(--color-background, 240, 100%, 98.6%);
 }

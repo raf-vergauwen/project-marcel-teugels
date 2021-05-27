@@ -69,11 +69,12 @@
 // *  <<--------------------<< Children >>-------------------->>
 
 // -  <---------------| Flex-Items |--------------->
-@mixin flex-items($grow: 1, $shrink: 1, $basis: auto, $self: center) {
-  flex-basis: $basis;
+@mixin flex-items($grow: 1, $shrink: 0, $basis: auto, $self: center) {
   flex-grow: $grow;
   flex-shrink: $shrink;
+  flex-basis: $basis;
   place-self: $self;
+  max-width: 100%;
 }
 
 // -  <---------------| Grid-Items |--------------->

@@ -8,7 +8,7 @@
 
 // #  <---------------| <h1> |--------------->
 h1 {
-  padding: $buffer--l $buffer--s;
+  padding: $buffer--m;
   color: var(--color-primary);
   font-family: $font-family--subject;
   font-size: $font-size--6;
@@ -28,8 +28,8 @@ h1 {
 
 // #  <---------------| <h2> |--------------->
 h2 {
-  padding: $buffer--l $buffer--s;
-  color: var(--color-tertiary);
+  padding: $buffer--m;
+  color: var(--color-secondary);
   font-family: $font-family--section;
   font-size: $font-size--5;
   font-variant: $font-variant--section;
@@ -48,7 +48,7 @@ h2 {
 
 // #  <---------------| <h3> |--------------->
 h3 {
-  padding: $buffer--m 0;
+  padding: $buffer--s;
   color: var(--color-secondary);
   font-family: $font-family--article;
   font-size: $font-size--4;
@@ -68,7 +68,7 @@ h3 {
 
 // #  <---------------| <h4> |--------------->
 h4 {
-  padding: $buffer--m 0;
+  padding: $buffer--s;
   color: var(--color-secondary);
   font-family: $font-family--link;
   font-size: $font-size--3;
@@ -88,7 +88,7 @@ h4 {
 
 // #  <---------------| <h5> |--------------->
 h5 {
-  padding: $buffer--s 0;
+  padding: $buffer--xs;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--2;
@@ -108,7 +108,7 @@ h5 {
 
 // #  <---------------| <h6> |--------------->
 h6 {
-  padding: $buffer--s 0;
+  padding: $buffer--xs;
   color: var(--color-tertiary);
   font-family: $font-family--text;
   font-size: $font-size--1;

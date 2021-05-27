@@ -7,39 +7,51 @@
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <form> |--------------->
+form {
+  color: var(--color-text);
+  margin: $buffer--s;
+  padding: $buffer--s;
+}
 
 // #  <---------------| <datalist> |--------------->
+datalist {
+  color: var(--color-text);
+  margin: $buffer--s;
+  padding: $buffer--s;
+}
 
 // #  <---------------| <fieldset> |--------------->
 fieldset {
-  border: 1px var(--focus) solid;
-  border-radius: 6px;
-  margin: 0;
-  margin-bottom: 12px;
-  padding: 10px;
+  color: var(--color-text);
+  border: $buffer--xxxs var(--color-tertiary--darkest) solid;
+  border-radius: $small-dimension--s;
+  margin: $buffer--s;
+  padding: $buffer--s;
 }
 
 // #  <---------------| <optgroup> |--------------->
+optgroup {
+  color: var(--color-text);
+  margin: $buffer--s;
+  padding: $buffer--s;
+}
 
 // #  <---------------| <select> |--------------->
 select {
   @include click-transition--small;
 
-  display: block;
-  color: var(--form-text);
-  background-color: var(--background);
+  color: var(--color-text);
+  background-color: var(--color-tertiary);
   font-family: inherit;
   font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-  padding-right: 35px;
+  margin: $buffer--s;
+  padding: $buffer--s;
   border: none;
-  border-radius: 6px;
+  border-radius: $small-dimension--s;
   outline: none;
 
   &[multiple] {
-    padding-right: 10px;
+    padding-right: $buffer--s;
     background-image: none;
     overflow-y: auto;
   }
@@ -50,11 +62,11 @@ select {
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--focus);
+    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
   }
 
   &:hover {
-    background: var(--button-hover);
+    background: var(--color-tertiary--lighter);
   }
 
   &:not([type='checkbox']):not([type='radio']) {
@@ -70,29 +82,26 @@ select {
 button {
   @include click-transition--small;
 
-  color: var(--form-text);
-  background-color: var(--background);
+  color: var(--color-text);
+  background-color: var(--color-tertiary);
   font-family: inherit;
   font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+  margin: $buffer--s;
+  padding: $buffer--s;
   border: none;
-  border-radius: 6px;
+  border-radius: $small-dimension--s;
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--focus);
+    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
   }
 
   &:hover {
-    background: var(--button-hover);
+    background: var(--color-tertiary--lighter);
   }
 
   &::placeholder {
-    color: var(--form-placeholder);
+    color: var(--color-text--lightest);
   }
 
   &:disabled {
@@ -105,111 +114,114 @@ button {
 input {
   @include click-transition--small;
 
-  color: var(--form-text);
-  background-color: var(--background);
+  color: var(--color-text);
+  background-color: var(--color-tertiary);
   font-family: inherit;
   font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+  margin: $buffer--s;
+  padding: $buffer--s;
   border: none;
-  border-radius: 6px;
+  border-radius: $small-dimension--s;
   outline: none;
 
   vertical-align: top;
 
   &[type='submit'] {
-    padding-right: 30px;
-    padding-left: 30px;
-    background: var(--button-hover);
+    margin: $buffer--s;
+    padding: $buffer--s;
+    background: var(--color-tertiary--lighter);
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &[type='reset'] {
-    padding-right: 30px;
-    padding-left: 30px;
-    background: var(--button-hover);
+    margin: $buffer--s;
+    padding: $buffer--s;
+    background: var(--color-tertiary--lighter);
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &[type='checkbox'] {
-    min-height: 2rem;
-    padding: 8px;
+    height: $buffer--m;
+    width: $buffer--m;
+    padding: $buffer--xxs $buffer--xs;
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &[type='range'] {
-    margin: 10px 0;
-    padding: 10px 0;
+    height: $buffer--m;
+    width: $buffer--m;
+    padding: $buffer--xxs $buffer--xs;
     background: transparent;
 
     &::-webkit-slider-runnable-track {
       width: 100%;
-      height: 9.5px;
+      height: $small-dimension--s;
       transition: 0.2s;
-      background: var(--background);
-      border-radius: 3px;
+      background: var(--color-tertiary);
+      border-radius: $small-dimension--xs;
     }
 
     &:focus::-webkit-slider-runnable-track {
-      background: var(--background);
+      background: var(--color-tertiary);
     }
 
     &::-webkit-slider-thumb {
       box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background: var(--border);
+      height: $small-dimension--m;
+      width: $small-dimension--m;
+      border-radius: 100%;
+      background: var(--color-secondary);
       -webkit-appearance: none;
-      margin-top: -7px;
+      margin-top: -$small-dimension--s;
     }
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &[type='radio'] {
+    height: $buffer--m;
+    width: $buffer--m;
+    padding: $buffer--xxs $buffer--xs;
     border-radius: 100%;
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &[type='color'] {
-    min-height: 2rem;
-    padding: 8px;
+    height: $buffer--m;
+    width: $buffer--m;
+    padding: $buffer--xxs $buffer--xs;
   }
 
   &[type='button'] {
-    padding-right: 30px;
-    padding-left: 30px;
-    background: var(--button-hover);
+    margin: $buffer--s;
+    padding: $buffer--s;
+    background: var(--color-tertiary--lighter);
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY($small-dimension--xxs);
     }
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--focus);
+    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
   }
 
   &:hover {
-    background: var(--button-hover);
+    background: var(--color-tertiary--lighter);
   }
 
   &:disabled {
@@ -224,54 +236,71 @@ input {
 
 // #  <---------------| <label> |--------------->
 label {
+  color: var(--color-text);
   vertical-align: middle;
-  margin-bottom: 4px;
   display: inline-block;
+  padding: $buffer--xxs $buffer--xs;
 }
 
 // #  <---------------| <legend> |--------------->
 legend {
-  font-size: 0.9em;
-  font-weight: 600;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  font-size: $font-size--2;
+  font-weight: $font-weight--section;
+  padding: $buffer--xxs $buffer--xs;
 }
 
 // #  <---------------| <meter> |--------------->
+meter {
+  color: var(--color-text);
+  padding: $buffer--xxs $buffer--xs;
+}
 
 // #  <---------------| <option> |--------------->
+option {
+  color: var(--color-text);
+  padding: $buffer--xxs $buffer--xs;
+}
 
 // #  <---------------| <output> |--------------->
+output {
+  color: var(--color-text);
+  padding: $buffer--xxs $buffer--xs;
+}
 
 // #  <---------------| <progress> |--------------->
+progress {
+  color: var(--color-text);
+  padding: $buffer--xxs $buffer--xs;
+}
 
 // #  <---------------| <textarea> |--------------->
 textarea {
   @include click-transition--small;
 
-  color: var(--form-text);
-  background-color: var(--background);
+  color: var(--color-primary);
+  background-color: var(--color-tertiary);
   font-family: inherit;
   font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: $buffer--s;
+  margin: $buffer--s;
   border: none;
-  border-radius: 6px;
+  border-radius: $small-dimension--s;
   outline: none;
 
   display: block;
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--focus);
+    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
   }
 
   &:hover {
-    background: var(--button-hover);
+    background: var(--color-tertiary--lighter);
   }
 
   &::placeholder {
-    color: var(--form-placeholder);
+    color: var(--color-primary--lightest);
   }
 
   &:disabled {
