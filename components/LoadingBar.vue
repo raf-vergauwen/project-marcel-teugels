@@ -27,10 +27,10 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  text-align: center;
   padding-top: 200px;
-  font-size: 30px;
+  background: rgba(255, 255, 255, 0.8);
   font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
 }
 </style>

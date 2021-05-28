@@ -65,7 +65,6 @@ export default {
           'faQuestion',
           'faInfoCircle',
           'faHeart',
-          'faInfoCircle',
           'faShoppingBasket',
           'faDraftingCompass',
           'faMapMarkerAlt',
@@ -89,7 +88,7 @@ export default {
   },
   stylelint: {
     // #  npx stylelint --fix assets/styles/scss/**/*.scss
-    // #  npx stylelint --fix **/*.{vue,html,css,scss}
+    // #  npx stylelint --fix **/*.{vue,html,scss}
     configFile: './stylelint.config.js',
   },
 
