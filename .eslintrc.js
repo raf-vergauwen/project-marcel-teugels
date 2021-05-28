@@ -1,5 +1,15 @@
 module.exports = {
   root: true,
+  parser: '@babel/eslint-parser',
+
+  parserOptions: {
+    requireConfigFile: false,
+    ecmaVersion: 12,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   env: {
     browser: true,
     es2021: true,
@@ -21,16 +31,15 @@ module.exports = {
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'node/no-unsupported-features/es-syntax': [
+      'error',
+      { ignores: ['modules'] },
+    ],
   },
   globals: {
     $nuxt: true,
   },
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    requireConfigFile: false,
-    ecmaVersion: 2021,
-    sourceType: 'module',
-  },
+
   plugins: [
     '@babel',
     'import',
