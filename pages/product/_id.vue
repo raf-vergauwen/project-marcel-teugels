@@ -42,6 +42,5 @@ export default {
 </script>
 
 <style lang="scss">
-.p-product-page {
-}
+/* No style yet */
 </style>

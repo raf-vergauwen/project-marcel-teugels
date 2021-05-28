@@ -89,4 +89,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+/* No style yet */
+</style>
