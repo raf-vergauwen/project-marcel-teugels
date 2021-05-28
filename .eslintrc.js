@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  parser: '@babel/eslint-parser',
-
+  // parser: '@babel/eslint-parser',
   parserOptions: {
+    parser: '@babel/eslint-parser',
     requireConfigFile: false,
     ecmaVersion: 12,
     sourceType: 'module',
@@ -19,7 +19,6 @@ module.exports = {
     '@nuxtjs',
     'eslint:recommended',
     'plugin:import/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:node/recommended',
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
@@ -28,11 +27,11 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'node/no-unsupported-features/es-syntax': [
-      'error',
+      'warn',
       { ignores: ['modules'] },
     ],
   },
@@ -40,14 +39,5 @@ module.exports = {
     $nuxt: true,
   },
 
-  plugins: [
-    '@babel',
-    'import',
-    'jsx-a11y',
-    'node',
-    'nuxt',
-    'prettier',
-    'promise',
-    'vue',
-  ],
+  plugins: ['@babel', 'import', 'node', 'nuxt', 'prettier', 'promise', 'vue'],
 };

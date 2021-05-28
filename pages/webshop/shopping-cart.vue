@@ -77,10 +77,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  color: #000;
-}
-
 .container {
   display: flex;
   min-height: 100vh;

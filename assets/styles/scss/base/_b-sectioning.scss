@@ -16,11 +16,13 @@ nav {
 
 // #  <---------------| <article> |--------------->
 article {
+  max-width: $max-width--root;
   padding: $buffer--s;
 }
 
 // #  <---------------| <section> |--------------->
 section {
+  max-width: $max-width--root;
   padding: $buffer--s;
 }
 
@@ -35,11 +37,13 @@ aside {
 
 // #  <---------------| <header> |--------------->
 header {
+  max-width: $max-width--root;
   padding: $buffer--s;
 }
 
 // #  <---------------| <footer> |--------------->
 footer {
+  max-width: $max-width--root;
   padding: $buffer--s;
 }
 
@@ -48,3 +52,6 @@ footer {
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <div> |--------------->
+div {
+  max-width: $max-width--root;
+}

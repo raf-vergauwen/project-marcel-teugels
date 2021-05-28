@@ -4,19 +4,19 @@ export default {
 
   // #  Loading Indicator: https://nuxtjs.org/docs/2.x/features/loading#the-loading-indicator-property
   loadingIndicator: {
-    name: 'pulse',
+    name: 'fading-circle',
     color: '#b78846',
     background: '#022e51',
   },
 
   // #  Progress Bar: https://nuxtjs.org/docs/2.x/features/loading
-  loading: '@/components/LoadingBar.vue',
+  loading: '~/components/LoadingBar.vue',
 
   head: {
     title: 'project_marcel_teugels',
     htmlAttrs: {
       lang: 'en',
-      dataTheme: 'light',
+      dataTheme: 'light--alt',
     },
     meta: [
       { charset: 'utf-8' },
@@ -100,6 +100,13 @@ export default {
 
   // #  Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  vue: {
+    config: {
+      productionTip: true,
+      devtools: true,
+    },
+  },
 
   styleResources: {
     scss: ['./assets/styles/scss/style-recourses.scss'],

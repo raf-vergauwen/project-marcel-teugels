@@ -144,10 +144,6 @@ export default {
 </script>
 
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif, monospace;
-}
-
 .order {
   margin: 6em;
 }

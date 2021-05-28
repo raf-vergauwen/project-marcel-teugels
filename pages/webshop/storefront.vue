@@ -134,10 +134,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  color: #000;
-}
-
 .p-store {
   @include block-container;
 

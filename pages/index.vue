@@ -35,10 +35,6 @@
 <script></script>
 
 <style lang="scss">
-body {
-  margin: 0;
-}
-
 .home {
   display: flex;
   width: 100vw;

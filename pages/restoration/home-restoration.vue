@@ -177,9 +177,7 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-}
+
 
 a {
   color: #f0f0f0;

@@ -23,14 +23,32 @@ export default {
 <style scoped>
 .loading-page {
   position: fixed;
+  z-index: 1000;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
+}
+
+.loading {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 4px solid rgba(9, 133, 81, 0.705);
+  border-top-color: #158876;
+  animation: spin 1s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>

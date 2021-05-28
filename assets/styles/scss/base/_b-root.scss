@@ -14,11 +14,11 @@
 // #  <---------------| <html> |--------------->
 html {
   @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
-  @include scrollbar-style(
-    $size: calc(#{$buffer--s} + #{$buffer--xs}),
-    $color: var(--color-tertiary)
-  );
-  @include scrollbar-function(smooth, y proximity);
+  // @include scrollbar-style(
+  //   $size: calc(#{$buffer--s} + #{$buffer--xs}),
+  //   $color: var(--color-tertiary)
+  // );
+  // @include scrollbar-function(smooth, y proximity);
 }
 
 // #  <---------------| <body> |--------------->
@@ -38,3 +38,8 @@ body {
 }
 
 // #  <---------------| <main> |--------------->
+main {
+  max-width: $max-width--root;
+  margin: $center-me;
+  background-color: #ff1493;
+}
