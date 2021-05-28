@@ -38,5 +38,8 @@ export default {
 </script>
 
 <style lang="scss">
-@include shopping-cart-item;
+.c-product-item {
+  padding: $s-site-padding;
+  background-color: $dark-blue;
+}
 </style>

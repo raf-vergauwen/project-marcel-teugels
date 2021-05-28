@@ -36,5 +36,20 @@ export default {
 </script>
 
 <style lang="scss">
-@include workshop-item;
+.c-product-item__container {
+  margin-left: 2em;
+}
+
+.c-product-item__title {
+  color: $dark-bg;
+}
+
+.c-product-item {
+  display: flex;
+  margin: 2em 4em;
+}
+
+.c-product-item__image {
+  width: 400px;
+}
 </style>

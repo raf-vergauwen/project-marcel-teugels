@@ -54,8 +54,8 @@ export default {
 <style lang="scss">
 .container {
   display: flex;
-  height: 90vh;
   width: 100vw;
+  height: 90vh;
   align-items: center;
   justify-content: center;
 }

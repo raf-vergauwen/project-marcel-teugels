@@ -135,15 +135,16 @@ export default {
 
 <style lang="scss">
 body {
-  color: black;
+  color: #000;
 }
+
 .p-store {
-  @extend .container;
+  @include block-container;
 
   &__product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: $s-site-padding;
+    grid-template-columns: repeat(3, 1fr);
 
     @include md() {
       grid-template-columns: repeat(2, 1fr);
@@ -164,9 +165,9 @@ body {
 .p-product__btn {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border: 0;
   background-color: $dark-bg;
-  border: 0px;
+  border-radius: 50px;
 }
 
 .p-product__title {

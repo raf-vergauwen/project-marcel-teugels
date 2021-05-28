@@ -1,6 +1,31 @@
+@charset "UTF-8";
 html {
   --wireframe--bg-color: hsla(0, 0%, 0%, 0.5);
   --wireframe--wire: #f00;
+}
+
+@-webkit-keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .main__container > section {
@@ -50,30 +75,260 @@ html {
   }
 }
 
-@-webkit-keyframes linear-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 0%;
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< BOX BORDER >>-------------------->>
+\* -------------------------------------------------------------------------- */
+.box-border {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.25rem solid var(--color-tertiary);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.box-border::before, .box-border::after {
+  position: absolute;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.25rem solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 1rem;
+  line-height: calc(1rem - 0.25rem);
+  text-align: center;
+}
+
+.box-border::before {
+  left: 0.5rem;
+}
+
+.box-border::after {
+  right: 0.5rem;
+}
+
+.box-border-inner {
+  position: relative;
+  padding: 0.5rem;
+  border: 0.25rem solid var(--color-tertiary);
+}
+
+.box-border-inner::before, .box-border-inner::after {
+  position: absolute;
+  bottom: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.25rem solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 1rem;
+  line-height: calc(1rem - 0.25rem);
+  text-align: center;
+}
+
+.box-border-inner::before {
+  left: 0.125rem;
+}
+
+.box-border-inner::after {
+  right: 0.125rem;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< BUTTON >>-------------------->>
+\* -------------------------------------------------------------------------- */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: space-evenly;
+  place-items: stretch;
+  position: relative;
+  top: 0;
+  padding: 0.25rem;
+  border-top: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.22));
+  border-bottom: 1px solid hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 1.2));
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.15)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.12)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1)) 100%);
+  border-radius: 8px;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.9));
+  text-shadow: 0 -2px 0 hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 0.8)), 0 1px 1px hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.2));
+  -webkit-transition: all 0.06s ease-out;
+  transition: all 0.06s ease-out;
+}
+
+.btn:visited {
+  color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.9));
+}
+
+.btn:first-of-type {
+  margin-left: 0;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22))), color-stop(26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19))), to(hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07))));
+  background: linear-gradient(to bottom, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.35), calc(var(--color-tertiary-l) * 1.22)) 0%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1.15), calc(var(--color-tertiary-l) * 1.19)) 26%, hsl(calc(var(--color-tertiary-h) * 1), calc(var(--color-tertiary-s) * 1), calc(var(--color-tertiary-l) * 1.07)) 100%);
+}
+
+.btn::before {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  right: 0;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2rem;
+  background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+  content: '';
+  -webkit-transition: all 0.078s ease-out;
+  transition: all 0.078s ease-out;
+}
+
+.btn--text {
+  padding: 0 0.5rem;
+}
+
+.btn--icon {
+  width: 1.5625rem;
+  height: auto;
+  margin: 0;
+  font-size: 1.5625rem;
+  max-width: 100%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  place-self: center;
+}
+
+.btn:active {
+  top: 6px;
+  color: hsl(var(--color-secondary-h), var(--color-secondary-s), calc(var(--color-secondary-l) * 1.45));
+}
+
+.btn:active::before {
+  top: 0;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< CARD >>-------------------->>
+\* -------------------------------------------------------------------------- */
+.card {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  min-width: calc(320px - (320px / 10));
+  max-width: calc((1600px / 4));
+  aspect-ratio: auto 9/16;
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+  border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+  .card {
+    min-width: 400px;
+    height: 80vh;
+    max-height: 80vh;
+    aspect-ratio: auto 9/16;
   }
 }
 
-@keyframes linear-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
+.card:hover {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< ICON >>-------------------->>
+\* -------------------------------------------------------------------------- */
+.fas {
+  width: 1.25rem;
+  height: auto;
+  margin: 0;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.fab {
+  width: 2.44141rem;
+  height: auto;
+  margin: 0;
+  font-size: 2.44141rem;
+}
+
+.fa-heart:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #f00;
+}
+
+.fa-facebook-f:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #1877f2;
+}
+
+.fa-twitter:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #e4405f;
+}
+
+.fa-pinterest-p:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #bd081c;
+}
+
+.fa-youtube:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #f00;
+}
+
+.fa-shopping-basket:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #000;
+}
+
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< MAIN FOOTER >>-------------------->>
+\* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< MAIN HEADER >>-------------------->>
+\* -------------------------------------------------------------------------- */
 nav,
 article,
 section,

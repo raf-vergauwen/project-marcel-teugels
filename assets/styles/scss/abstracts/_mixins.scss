@@ -3,16 +3,15 @@
 // -----------------------------------------------------------------------------
 
 // -  <---------------| Import Generic Mixin Partials |--------------->
+@import 'mixins/animations';
 @import 'mixins/breakpoints';
 @import 'mixins/colors';
 @import 'mixins/containers';
-@import 'mixins/typography';
 @import 'mixins/shadows';
-@import 'mixins/wireframes';
 @import 'mixins/transitions';
-@import 'mixins/animations';
+@import 'mixins/typography';
 @import 'mixins/utilities';
+@import 'mixins/wireframes';
 
 // -  <---------------| Import Component Mixin Partials |--------------->
-
-@import 'mixins/scrollbars';
+@import 'mixins/components';

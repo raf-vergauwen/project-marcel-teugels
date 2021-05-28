@@ -83,9 +83,9 @@ export default {
 .p-workshop__btn {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border: 0;
   background-color: $dark-bg;
-  border: 0px;
+  border-radius: 50px;
 }
 
 a {

@@ -22,5 +22,14 @@
 </template>
 
 <style lang="scss">
-@include main-logo;
+.nuxt-logo {
+  margin: auto;
+  animation: 1s appear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
 </style>

@@ -55,41 +55,37 @@ export default {
   },
 
   fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons', // Solid icons
-        icons: [
-          'faGlobe',
-          'faHome',
-          'faBurn',
-          'faQuestion',
-          'faInfoCircle',
-          'faHeart',
-          'faShoppingBasket',
-          'faDraftingCompass',
-          'faMapMarkerAlt',
-          'faPhone',
-          'faEnvelope',
-          'faHouseDamage',
-          'faStoreAlt',
-        ],
-      },
-      {
-        set: '@fortawesome/free-brands-svg-icons', // Brand icons
-        icons: [
-          'faFacebookF',
-          'faTwitter',
-          'faInstagram',
-          'faPinterestP',
-          'faYoutube',
-        ],
-      },
-    ],
+    icons: {
+      solid: [
+        'faGlobe',
+        'faHome',
+        'faBurn',
+        'faQuestion',
+        'faInfoCircle',
+        'faHeart',
+        'faShoppingBasket',
+        'faDraftingCompass',
+        'faMapMarkerAlt',
+        'faPhone',
+        'faEnvelope',
+        'faHouseDamage',
+        'faStoreAlt',
+      ],
+      brands: [
+        'faFacebookF',
+        'faTwitter',
+        'faInstagram',
+        'faPinterestP',
+        'faYoutube',
+      ],
+    },
   },
+
   stylelint: {
     // #  npx stylelint --fix assets/styles/scss/**/*.scss
     // #  npx stylelint --fix **/*.{vue,html,scss}
     configFile: './stylelint.config.js',
+    fix: 'true',
   },
 
   // #  Modules: https://go.nuxtjs.dev/config-modules

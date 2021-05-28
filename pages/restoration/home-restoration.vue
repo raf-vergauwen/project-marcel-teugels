@@ -178,23 +178,23 @@ export default {
 
 <style>
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 .hero {
-  height: 90vh;
   width: 100vw;
+  height: 90vh;
   background-image: linear-gradient(110deg, #b0c4de 14.8%, #132636 14.8%);
 }
 
 .diensten {
-  min-height: 60vh;
   display: flex;
+  min-height: 60vh;
   background-color: #f7f5f5;
 }
 
@@ -209,26 +209,26 @@ a {
 }
 
 .diensten__info {
-  width: 50vw;
   display: flex;
+  width: 50vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .diensten__text {
-  margin: 30px 0px;
+  margin: 30px 0;
   font-size: 17px;
 }
 
 .diensten__btn {
-  margin-top: 2em;
   width: 200px;
   height: 35px;
+  border: 0;
+  margin-top: 2em;
   background-color: #132636;
-  color: #f7f5f5;
   border-radius: 30px;
-  border: 0px;
+  color: #f7f5f5;
 }
 
 .button__container {
@@ -242,15 +242,15 @@ a {
 }
 
 .about__marcel {
-  height: 60vh;
   display: flex;
+  height: 60vh;
   justify-content: space-between;
 }
 
 .about__img--container {
   display: flex;
-  align-items: flex-end;
   flex-direction: column-reverse;
+  align-items: flex-end;
 }
 
 .about__text {
@@ -265,44 +265,44 @@ a {
 }
 
 .panorama {
-  background-color: #f7f5f5;
   width: 100vw;
   height: 40vh;
+  background-color: #f7f5f5;
 }
 
 .about__btn {
-  margin-top: 1em;
   width: 200px;
   height: 35px;
+  border: 0;
+  margin-top: 1em;
   background-color: #f7f5f5;
-  color: #132636;
   border-radius: 30px;
-  border: 0px;
+  color: #132636;
 }
 
 .about__workshops {
   display: flex;
+  width: 100vw;
+  height: 50vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 50vh;
 }
 
 .about__container {
   display: flex;
+  width: 80vw;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
 }
 
 .contact {
-  height: 65vh;
-  background-color: #f7f5f5;
   display: flex;
+  height: 65vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f7f5f5;
 }
 
 .contact__container {
@@ -316,22 +316,22 @@ a {
 }
 
 .contact__btn {
-  margin-top: 2em;
   width: 200px;
   height: 35px;
+  border: 0;
+  margin-top: 2em;
   background-color: #132636;
-  color: #f7f5f5;
   border-radius: 30px;
-  border: 0px;
+  color: #f7f5f5;
 }
 
 footer {
   display: flex;
-  justify-content: space-between;
   width: 100vw;
+  justify-content: space-between;
+  padding: 1em 0;
   background-color: #0f0e0e;
   color: #f7f5f5;
-  padding: 1em 0em;
 }
 
 .footer__container {
