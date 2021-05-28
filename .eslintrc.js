@@ -8,8 +8,14 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'eslint:recommended',
-    'plugin:vue/recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:node/recommended',
+    'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
+    'plugin:promise/recommended',
+    'plugin:vue/recommended',
+    'prettier',
   ],
   rules: {
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
@@ -21,9 +27,18 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 12,
-    parser: '@babel/eslint-parser',
+    requireConfigFile: false,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
-  plugins: ['@babel', 'vue', 'prettier'],
+  plugins: [
+    '@babel',
+    'import',
+    'jsx-a11y',
+    'node',
+    'nuxt',
+    'prettier',
+    'promise',
+    'vue',
+  ],
 };
