@@ -1,17 +1,18 @@
 <template>
-  <header class="c-header">
-    <div class="c-header__container">
-      <nav class="c-header__nav">
+  <header class="c-a-header">
+    <div class="c-a-header__container">
+      <nav class="c-a-header__nav">
         <nuxt-link
           v-for="navItem in navItems"
           :key="navItem.path"
           :class="{
-            'c-header__nav__item': true,
-            'c-header__nav__item--active': navItem.path === $route.path,
+            'c-a-header__nav__items': true,
+            'c-a-header__nav__items--active': navItem.path === $route.path,
           }"
           :to="navItem.path"
         >
           {{ navItem.label }}
+          {{ navItem.path === '/shopping-cart' ? '(' + cijfer + ')' : '' }}
         </nuxt-link>
       </nav>
     </div>
@@ -20,15 +21,14 @@
 
 <script>
 export default {
-  name: 'RestaurationHeader',
+  name: 'AccountHeader',
   data() {
     return {
+      cijfer: 0,
       navItems: [
-        { path: '/restauratie', label: 'home' },
-        { path: '/restauratie/method', label: 'werkwijze' },
-        { path: '/restauratie/workshop', label: 'workshops' },
-        { path: '/restauratie/contact', label: 'contact' },
-        { path: '/shop/storefront', label: 'store' },
+        { path: '/login', label: 'login' },
+        { path: '/profile', label: 'profiel' },
+        { path: '/account-creation', label: 'sign up' },
       ],
     };
   },
@@ -36,8 +36,8 @@ export default {
 </script>
 
 <style lang="scss">
-.c-header {
-  background-color: $dark-bg;
+.c-a-header {
+  background-color: $almost-dark-bg;
 
   &__container {
     @extend .container;
@@ -46,8 +46,8 @@ export default {
   &__nav {
     display: flex;
     justify-content: flex-end;
-    &__item {
-      padding: $s-site-padding $s-site-padding;
+    &__items {
+      padding: $xs-site-padding $xs-site-padding;
       text-decoration: none;
       color: $light-bg;
 

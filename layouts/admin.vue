@@ -1,5 +1,6 @@
 <template>
   <div>
+    <AccountHeader />
     <Nuxt />
     <Notify />
   </div>
