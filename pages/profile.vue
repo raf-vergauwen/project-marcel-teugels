@@ -2,22 +2,37 @@
   <main class="p-profile">
     <div class="p-profile__container">
       <h1>Profile</h1>
-      <form @submit.prevent="checkEmail">
-        <label
-          >First name: <input v-model="userInfo.firstName" type="text" />
-        </label>
-        <label
-          >Last name: <input v-model="userInfo.lastName" type="text" />
-        </label>
-        <label>Email: <input v-model="userInfo.email" type="email" /> </label>
-        <label
-          >Password: <input v-model="userInfo.password" type="password" />
-        </label>
-        <label
-          >Location: <input v-model="userInfo.location" type="text" />
-        </label>
-        <button type="submit">Update</button>
-      </form>
+      <FormulateInput
+        v-model="userInfo.firstName"
+        name="first name"
+        type="text"
+        label="first name"
+      />
+      <FormulateInput
+        v-model="userInfo.lastName"
+        name="last name"
+        type="text"
+        label="last name"
+      />
+      <FormulateInput
+        v-model="userInfo.email"
+        name="email"
+        type="email"
+        label="email"
+      />
+      <FormulateInput
+        v-model="userInfo.password"
+        name="password"
+        type="password"
+        label="password"
+      />
+      <FormulateInput
+        v-model="userInfo.location"
+        name="location"
+        type="text"
+        label="location"
+      />
+      <FormulateInput type="submit" label="Update" @click="checkEmail" />
     </div>
   </main>
 </template>
