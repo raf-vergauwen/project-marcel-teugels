@@ -7,7 +7,7 @@
         v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
         class="p-product__btn"
       >
-        <nuxt-link to="/add-product">+</nuxt-link>
+        <nuxt-link to="/admin/add-product">+</nuxt-link>
       </button>
     </div>
 
@@ -17,6 +17,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
+        @remove-product="removeProduct($event)"
         @add-product="addProduct"
       />
     </div>
@@ -71,6 +72,68 @@ export default {
       this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
     },
+
+    removeProduct(product) {
+      this.$axios(`/items/products/${product.id}`, {
+        method: 'DELETE',
+      })
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
+    },
+    /*
+    newShoppingCart() {
+      fetch('http://157.230.126.154/items/ordered_items', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not create new shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('newCart');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    addToShoppingCart(product) {
+      fetch('http://157.230.126.154/items/ordered_items/21', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: this.productBody,
+      })
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error('Could not add product to shopping cart');
+          }
+          return response.json();
+        })
+        .then((body) => {
+          console.log(body);
+          //this.clickCount++;
+          console.log('addToCart');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    */
   },
 };
 </script>
