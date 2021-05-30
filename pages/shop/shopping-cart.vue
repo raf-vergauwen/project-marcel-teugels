@@ -1,16 +1,20 @@
 <template>
-  <main>
-    <div class="container">
-      <h1 class="title">Shopping cart</h1>
-      <button @click="printList">print</button>
-      <div class="cart-card">
+  <main class="p-shopping-cart">
+    <h1 class="p-shopping-cart__title">Shopping cart</h1>
+    <div class="p-shopping-cart__container">
+      <div class="p-shopping-cart__product-list">
         <ShoppingCartItem
           v-for="product in productData"
           :key="product.id"
-          class="p-storefront__product-list__item"
+          class="p-shopping-cart__product-list__item"
           :product="product"
           @remove-product="removeProduct($event)"
         />
+      </div>
+      <div class="p-shopping-cart__total">
+        <h2>Total:</h2>
+        <h3>€ {{ calculate_Total }}</h3>
+        <button>Afrekenen</button>
       </div>
     </div>
   </main>
@@ -29,9 +33,17 @@ export default {
       productData: [],
     };
   },
+  fetch() {
+    return this.fetchItems();
+  },
   computed: {
     shopping_cart() {
       return this.$store.state.shoppingCart;
+    },
+    calculate_Total() {
+      return this.productData.reduce((acc, product) => {
+        return acc + parseInt(product.price);
+      }, 0);
     },
   },
   created() {
@@ -40,10 +52,6 @@ export default {
     }
   },
   methods: {
-    printList() {
-      console.log(this.shopping_cart);
-      this.fetchItems();
-    },
     fetchItems() {
       for (let i = 0; i < this.shoppingList.length; i++) {
         this.$axios(
@@ -67,44 +75,34 @@ export default {
       console.log(product);
       const index = this.productData.indexOf(product);
       this.productData.splice(index, index + 1);
+      this.$store.commit('removeFromCart', product);
     },
   },
 };
 </script>
 
 <style lang="scss">
-body {
-  color: black;
+.p-shopping-cart__title {
+  margin: 1em;
 }
 
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+.p-shopping-cart__container {
   display: flex;
-  justify-content: center;
+}
+
+.p-shopping-cart__product-list {
+  width: 70%;
+}
+
+.p-shopping-cart__product-list__item {
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+.p-shopping-cart__total {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

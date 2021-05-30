@@ -20,14 +20,17 @@
 
 <script>
 export default {
-  name: 'RestaurationHeader',
+  name: 'AdminHeader',
   data() {
     return {
       navItems: [
-        { path: '/restauratie', label: 'home' },
-        { path: '/restauratie/method', label: 'werkwijze' },
-        { path: '/restauratie/workshop', label: 'workshops' },
-        { path: '/restauratie/contact', label: 'contact' },
+        { path: '/restauratie', label: 'Home' },
+        { path: '/admin/add-product', label: 'Add Products' },
+        { path: '/admin/add-workshop', label: 'Add Workshops' },
+        { path: '/admin/get-all-requests', label: 'Manage Requests' },
+        { path: '/admin/order', label: 'Orders' },
+        { path: '/login', label: 'login' },
+        { path: '/profile', label: 'profile' },
         { path: '/shop/storefront', label: 'store' },
       ],
     };
