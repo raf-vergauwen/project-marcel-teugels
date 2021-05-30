@@ -1,10 +1,11 @@
 //Colors
 
-$accent-color: #C8AC7F;
-$light-blue:#b0c4de;
-$dark-blue:#132636;
-$dark-bg:#0f0e0e;
-$light-bg:#F7F5F5;
+$accent-color: #c8ac7f;
+$light-blue: #b0c4de;
+$dark-blue: #132636;
+$dark-bg: #0f0e0e;
+$almost-dark-bg: #353535;
+$light-bg: #f7f5f5;
 
 //Media Queries
 
@@ -23,6 +24,7 @@ $l-site-padding: 80px;
 $site-padding: 60px;
 $m-site-padding: 40px;
 $s-site-padding: 20px;
+$xs-site-padding: 10px;
 
 $site-width: 1300px;
 $site-width-with-padding: $site-width + $m-site-padding + $m-site-padding;

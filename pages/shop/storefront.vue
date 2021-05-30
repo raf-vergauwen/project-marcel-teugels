@@ -71,56 +71,6 @@ export default {
       this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
     },
-    /*
-    newShoppingCart() {
-      fetch('http://157.230.126.154/items/ordered_items', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not create new shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('newCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    addToShoppingCart(product) {
-      fetch('http://157.230.126.154/items/ordered_items/21', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not add product to shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('addToCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    */
   },
 };
 </script>
