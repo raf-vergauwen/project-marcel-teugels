@@ -27,7 +27,7 @@ export default {
         { path: '/restauratie', label: 'Home' },
         { path: '/admin/add-product', label: 'Add Products' },
         { path: '/admin/add-workshop', label: 'Add Workshops' },
-        { path: '/admin/get-all-requests', label: 'Manage Requests' },
+        { path: '/admin/get-all-request', label: 'Manage Requests' },
         { path: '/admin/order', label: 'Orders' },
         { path: '/login', label: 'login' },
         { path: '/profile', label: 'profile' },
