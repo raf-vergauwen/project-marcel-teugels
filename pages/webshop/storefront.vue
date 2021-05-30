@@ -16,7 +16,7 @@
     </div>
 
     <div class="p-store__product-list">
-      <ProductItem
+      <product-item
         v-for="product in productData"
         :key="product.id"
         class="p-store__product-list__item"

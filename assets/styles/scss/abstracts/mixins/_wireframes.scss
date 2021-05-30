@@ -8,7 +8,7 @@
     [data-wf] {
       position: relative;
       z-index: 1;
-      outline: $small-dimension--xs solid var(--wireframe--wire);
+      outline: $small-dimension--xs solid var(#f00);
     }
 
     [data-wf]::before {
@@ -21,27 +21,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background:
-        linear-gradient(to top right,
-        transparent calc(50% - 1px),
-        var(--wireframe--wire) calc(50% - 1px),
-        var(--wireframe--wire) calc(50% + 1px),
-        transparent calc(50% + 1px)),
-        linear-gradient(to bottom right,
-        transparent calc(50% - 1px),
-        var(--wireframe--wire) calc(50% - 1px),
-        var(--wireframe--wire) calc(50% + 1px),
-        transparent calc(50% + 1px)),
-        var(--wireframe--bg-color);
-      color: var(--wireframe--wire);
+      background: linear-gradient(
+          to top right,
+          transparent calc(50% - 1px),
+          var(#f00) calc(50% - 1px),
+          var(#f00) calc(50% + 1px),
+          transparent calc(50% + 1px)
+        ),
+        linear-gradient(
+          to bottom right,
+          transparent calc(50% - 1px),
+          var(#f00) calc(50% - 1px),
+          var(#f00) calc(50% + 1px),
+          transparent calc(50% + 1px)
+        ),
+        var(hsla(0, 0%, 0%, 0.5));
+      color: var(#f00);
       content: attr(data-wf);
       font: bold 2em Jubilat, Georgia, serif;
-      text-shadow:
-        0 0 0.25em var(--wireframe--bg-color),
-        0 0 0.25em var(--wireframe--bg-color),
-        0 0 0.25em var(--wireframe--bg-color),
-        0 0 0.25em var(--wireframe--bg-color),
-        0 0 0.25em var(--wireframe--bg-color);
+      text-shadow: 0 0 0.25em var(hsla(0, 0%, 0%, 0.5)),
+        0 0 0.25em var(hsla(0, 0%, 0%, 0.5)),
+        0 0 0.25em var(hsla(0, 0%, 0%, 0.5)),
+        0 0 0.25em var(hsla(0, 0%, 0%, 0.5)),
+        0 0 0.25em var(hsla(0, 0%, 0%, 0.5));
     }
   }
 }
@@ -87,13 +89,17 @@
     dl,
     dt,
     dd {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #00bfff; // deepskyblue
+      outline: calc(#{$small-dimension--xxxs} * 1.5)
+        ridge
+        #00bfff; // deepskyblue
     }
 
     // #  <-----| Figure |----->
     figure,
     figcaption {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) ridge #1e90ff; // dodgerblue
+      outline: calc(#{$small-dimension--xxxs} * 1.5)
+        ridge
+        #1e90ff; // dodgerblue
     }
 
     // #  <-----| Lists |----->
@@ -175,7 +181,9 @@
     tfoot,
     colgroup,
     tr {
-      outline: calc(#{$small-dimension--xxxs} * 1.5) solid #9932cc; // darkorchid
+      outline: calc(#{$small-dimension--xxxs} * 1.5)
+        solid
+        #9932cc; // darkorchid
     }
 
     // #  <-----| Children |----->
@@ -183,7 +191,9 @@
     col,
     th,
     td {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #6a5acd; // slateblue
+      outline: calc(#{$small-dimension--xxxs} * 1.25)
+        solid
+        #6a5acd; // slateblue
     }
 
     // -  <---------------| Forms |--------------->
@@ -206,7 +216,9 @@
     output,
     progress,
     textarea {
-      outline: calc(#{$small-dimension--xxxs} * 1.25) solid #40e0d0; // turquoise
+      outline: calc(#{$small-dimension--xxxs} * 1.25)
+        solid
+        #40e0d0; // turquoise
     }
 
     // -  <---------------| Intertactive |--------------->

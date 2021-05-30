@@ -1,7 +1,6 @@
 <template>
   <main>
     <restauration-header />
-
     <section class="hero"></section>
     <section class="diensten">
       <div class="diensten--container">

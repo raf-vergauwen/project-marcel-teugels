@@ -28,7 +28,10 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'vue/component-definition-name-casing': ['error', 'PascalCase'],
+    'vue/prop-name-casing': ['error', 'camelCase'],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/custom-event-name-casing': ['error', 'kebab-case'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'node/no-unsupported-features/es-syntax': [

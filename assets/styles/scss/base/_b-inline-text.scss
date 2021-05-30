@@ -93,54 +93,15 @@ var {
 \* -------------------------------------------------------------------------- */
 
 // #  <---------------| <a> |--------------->
+
 a {
   @include font(text-bigger);
 
+  padding: $buffer--xs $buffer--m;
+  font-family: 'Roboto Mono', monospace;
   text-decoration: none;
 
-  &::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 0;
-    height: $small-dimension--xxs;
-    content: '';
-    transition: width 0s ease, background 0.35s ease;
-  }
-
-  &::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 0;
-    height: $small-dimension--xxs;
-    background: var(--color-tertiary);
-    content: '';
-    transition: width 0.35s ease;
-  }
-
-  &:hover {
-    color: var(--color-secondary);
-  }
-
-  &:hover::before {
-    width: 100%;
-    background: var(--color-tertiary);
-    transition: width 0.35s ease;
-  }
-
-  &:hover::after {
-    width: 100%;
-    background: transparent;
-    transition: all 0s ease;
-  }
-
-  i {
-    margin-right: $buffer--s;
-    text-align: center;
-  }
+  
 }
 
 // #  <---------------| <abbr> |--------------->

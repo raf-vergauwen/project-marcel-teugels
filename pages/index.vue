@@ -10,9 +10,7 @@
           esse do nisi. Esse aliqua velit exercitation irure non eu dolore
           mollit pariatur ut sit.
         </p>
-        <button>
-          <a href="/webshop/home-webshop">webshop</a>
-        </button>
+        <a class="btn" href="/webshop/home-webshop">webshop</a>
       </div>
     </div>
     <div class="home__restoration">
@@ -24,9 +22,7 @@
           laborum tempor. Excepteur sit exercitation incididunt incididunt dolor
           adipisicing tempor deserunt.
         </p>
-        <button>
-          <a href="/restoration/home-restoration">restoration</a>
-        </button>
+        <a class="btn" href="/restoration/home-restoration">restoration</a>
       </div>
     </div>
   </section>
@@ -46,12 +42,12 @@
     height: 100vh;
   }
 
-  &__webshop--text {
-    width: 500px;
-  }
-
   &__webshop--container {
     margin: 5em;
+  }
+
+  &__webshop--text {
+    width: 500px;
   }
 
   &__restoration {
@@ -73,20 +69,5 @@
     align-items: flex-end;
     margin: 5em;
   }
-}
-
-button {
-  width: 200px;
-  height: 35px;
-  border: 0;
-  border-radius: 30px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 30px;
 }
 </style>

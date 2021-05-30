@@ -16,7 +16,7 @@
     </div>
 
     <div class="p-workshop__product-list">
-      <WorkshopItem
+      <workshop-item
         v-for="workshop in workshopData"
         :key="workshop.id"
         class="p-workshops__product-list__item"

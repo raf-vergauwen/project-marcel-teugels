@@ -24,9 +24,9 @@ html {
 // #  <---------------| <body> |--------------->
 body {
   @include box-dimensions($max-width: $max-width--root);
-  @include block-container;
-  @include font(text);
-  @include text-rendering(optimizeLegibility);
+  @include block-container($center-me);
+  // @include font(text);
+  // @include text-rendering(optimizeLegibility);
 
   background-color: var(--color-background);
 
