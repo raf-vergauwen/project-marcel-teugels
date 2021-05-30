@@ -1,5 +1,6 @@
 <template>
   <div>
+    <AdminHeader />
     <AccountHeader />
     <Nuxt />
     <Notify />
@@ -8,10 +9,11 @@
 
 <script>
 import Notify from '~/components/Notify';
+import AdminHeader from '~/components/AdminHeader';
 
 export default {
   name: 'AdminLayout',
-  components: { Notify },
+  components: { AdminHeader, Notify },
 };
 </script>
 
