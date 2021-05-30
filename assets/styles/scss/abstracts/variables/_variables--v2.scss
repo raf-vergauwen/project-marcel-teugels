@@ -49,72 +49,113 @@ $center-me: 0 auto;
 
 // *  <<--------------------<< TYPOGRAPHY >>-------------------->>
 
-// -  <---------------| font-sizes--responsive |--------------->
+// -  <---------------| Font-Sizes--Responsive |--------------->
 
 // #  Responsive Font Scale
 $font-scale: 1.25;
-$font-size: 1rem; // 16px
+$font-size--base: 1rem; // 16px
 
 // -  <---------------| Fonts |--------------->
 
-// #  Font-Size
-$font-size--1: $font-size; // 16px
-$font-size--2: $font-size--1 * $font-scale; // 20px
-$font-size--3: $font-size--2 * $font-scale; // 25px
-$font-size--4: $font-size--3 * $font-scale; // 31.25px
-$font-size--5: $font-size--4 * $font-scale; // 39.06px
-$font-size--6: $font-size--5 * $font-scale; // 48.83px
-$font-size--7: $font-size--6 * $font-scale; // 61.04px
-
 // #  Font-Family
-$font-family--subject: 'Montserrat', sans-serif;
-$font-family--section: 'Montserrat', sans-serif;
-$font-family--article: 'Oswald', sans-serif;
-$font-family--link: 'Montserrat', monospace;
-$font-family--text: 'Roboto', sans-serif;
-$font-family--text-alt: 'Oswald', sans-serif;
+$font-family--h1: 'Montserrat', sans-serif;
+$font-family--h2: 'Montserrat', sans-serif;
+$font-family--h3: 'Montserrat', sans-serif;
+$font-family--h4: 'Roboto Slab', serif;
+$font-family--h5: 'Roboto Slab', serif;
+$font-family--h6: 'Roboto Slab', serif;
+$font-family--text-smaller: 'Poppins', sans-serif;
+$font-family--text: 'Poppins', sans-serif;
+$font-family--text-bigger: 'Roboto', sans-serif;
+$font-family--component-smaller: 'Fira Mono', monospace;
+$font-family--component: 'Fira Mono', monospace;
+$font-family--component-bigger: 'Roboto Mono', monospace;
 
-// #  Font-Style ---> Default
+// #  Font-Size
+$font-size--text-smaller: $font-size--base * 0.9;
+$font-size--text: $font-size--base;
+$font-size--text-bigger: $font-size--base * 1.1;
+$font-size--component-smaller: ($font-size--base * $font-scale) * 0.9;
+$font-size--component: $font-size--base * $font-scale;
+$font-size--component-bigger: ($font-size--base * $font-scale) * 1.1;
+$font-size--h6: $font-size--base * $font-scale; // 20px
+$font-size--h5: $font-size--h6 * $font-scale; // 25px
+$font-size--h4: $font-size--h5 * $font-scale; // 31.25px
+$font-size--h3: $font-size--h4 * $font-scale; // 39.06px
+$font-size--h2: $font-size--h3 * $font-scale; // 48.83px
+$font-size--h1: $font-size--h2 * $font-scale; // 61.04px
+
+// #  Font-Stretch
+$font-stretch--h1: normal;
+$font-stretch--h2: normal;
+$font-stretch--h3: normal;
+$font-stretch--h4: normal;
+$font-stretch--h5: normal;
+$font-stretch--h6: normal;
+$font-stretch--text-smaller: normal;
+$font-stretch--text: normal;
+$font-stretch--text-bigger: normal;
+$font-stretch--component-smaller: normal;
+$font-stretch--component: normal;
+$font-stretch--component-bigger: normal;
+
+// #  Font-Style
+$font-style--h1: normal;
+$font-style--h2: normal;
+$font-style--h3: normal;
+$font-style--h4: normal;
+$font-style--h5: normal;
+$font-style--h6: normal;
+$font-style--text-smaller: normal;
+$font-style--text: normal;
+$font-style--text-bigger: normal;
+$font-style--component-smaller: normal;
+$font-style--component: normal;
+$font-style--component-bigger: normal;
 
 // #  Font-Variant
-$font-variant--subject: normal;
-$font-variant--section: normal;
-$font-variant--article: small-caps;
-$font-variant--link: normal;
+$font-variant--h1: normal;
+$font-variant--h2: normal;
+$font-variant--h3: small-caps;
+$font-variant--h4: normal;
+$font-variant--h5: normal;
+$font-variant--h6: small-caps;
+$font-variant--text-smaller: normal;
 $font-variant--text: normal;
-$font-variant--text-alt: small-caps;
+$font-variant--text-bigger: normal;
+$font-variant--component-smaller: small-caps;
+$font-variant--component: small-caps;
+$font-variant--component-bigger: small-caps;
 
 // #  Font-Weight
-$font-weight--subject: 700; // Bold
-$font-weight--section: 600; // Semi Bold
-$font-weight--article: 500; // Medium
-$font-weight--link: 400; // Normal
+$font-weight--h1: 900; // Ultra Bold
+$font-weight--h2: 800; // Extra Bold
+$font-weight--h3: 700; // Bold
+$font-weight--h4: 600; // Semi Bold
+$font-weight--h5: 500; // Medium
+$font-weight--h6: 400; // Normal
+$font-weight--text-smaller: 300; // Light
 $font-weight--text: 400; // Normal
-$font-weight--text-alt: 300; // Light
+$font-weight--text-bigger: 500; // Medium
+$font-weight--component-smaller: 300; // Light
+$font-weight--component: 400; // Normal
+$font-weight--component-bigger: 500; // Medium
 
 // #  Line-Height
-$line-height--subject: 1; // 120%
-$line-height--section: 1; // 120%
-$line-height--article: 1.25; // 120%
-$line-height--link: 1.5; // 150%
+$line-height--h1: 1; // 100%
+$line-height--h2: 1; // 100%
+$line-height--h3: 1; // 100%
+$line-height--h4: 1.25; // 125%
+$line-height--h5: 1.25; // 125%
+$line-height--h6: 1.25; // 125%
+$line-height--text-smaller: 1.5; // 150%
 $line-height--text: 1.5; // 150%
-$line-height--text-alt: 1.5; // 150%
+$line-height--text-bigger: 1.5; // 150%
+$line-height--component-smaller: 1.5; // 150%
+$line-height--component: 1.5; // 150%
+$line-height--component-bigger: 1.5; // 150%
 
 // -  <---------------| Text |--------------->
-
-// #  Text-Align
-$text-align--subject: center;
-$text-align--section: center;
-$text-align--article: left;
-$text-align--link: center;
-$text-align--text: left;
-$text-align--text-alt: left;
-
-// #  Text-Decoration ---> Default
-
-// #  Text-Indent ---> Default
-
-// #  Text-Overflow ---> Default
 
 // #  Text-Shadow ---> Default
 $text-shadow--variant-1: 6px 6px 0 rgba(0, 0, 0, 0.2);
@@ -123,28 +164,6 @@ $text-shadow--variant-3: 0 4px 3px rgba(0, 0, 0, 0.4),
   0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 $text-shadow--variant-4: 4px 4px 0 #d5d5d5, 7px 7px 0 rgba(0, 0, 0, 0.2);
 $text-shadow--variant-5: -1px -1px 1px #111, 2px 2px 1px #363636;
-
-// #  Text-Transform
-$text-transform--subject: uppercase;
-$text-transform--section: capitalize;
-$text-transform--article: none;
-$text-transform--link: none;
-$text-transform--text: none;
-$text-transform--text-alt: none;
-
-// #  Word-Break ---> Default
-
-// #  Word-Spacing ---> Default
-
-// #  Letter-Spacing
-$letter-spacing--subject: 0.025rem; // 0.4px
-$letter-spacing--section: 0.05rem; // 0.8px
-$letter-spacing--article: 0.1rem; // 1.6px
-$letter-spacing--link: normal;
-$letter-spacing--text: normal;
-$letter-spacing--text-alt: normal;
-
-// #  White-Space ---> Default
 
 // *  <<--------------------<< APPEARANCE >>-------------------->>
 
@@ -174,10 +193,12 @@ $caption--box-shadow---slide-out: 0 19px 38px 20px rgba(0, 0, 0, 0.3),
 $linear-gradient--primary: hsla(207, 95%, 16%, 0.5);
 $linear-gradient--secondary: hsla(215, 44%, 49%, 0.5);
 $linear-gradient--tertiary: hsla(35, 45%, 50%, 0.5);
-$linear-gradient--combo: linear-gradient(-45deg,
-$linear-gradient--primary,
-$linear-gradient--secondary,
-$linear-gradient--tertiary);
+$linear-gradient--combo: linear-gradient(
+  -45deg,
+  $linear-gradient--primary,
+  $linear-gradient--secondary,
+  $linear-gradient--tertiary
+);
 
 // #  Radial-Gradient
 $radial-gradient--foreground: radial-gradient(#003, #000);
@@ -223,11 +244,11 @@ $bg-color--transparant-black---level-5: hsla(0, 0%, 0%, 0.85);
 
 // #  Light Filter
 $filter--light: brightness(1.2) contrast(0.8);
-$filter--light-blur: brightness(1.2) contrast(0.8) blur($buffer--xxs);
+$filter--light-blur: brightness(1.2) contrast(0.8) blur($small-dimension--xxs);
 
 // #  Dark Filter
 $filter--dark: brightness(0.8) contrast(1.2);
-$filter--dark-blur: brightness(0.8) contrast(1.2) blur($buffer--xxs);
+$filter--dark-blur: brightness(0.8) contrast(1.2) blur($small-dimension--xxs);
 
 // -  <<----------<< Other-Colors >>---------->>
 
@@ -246,7 +267,7 @@ $color-black: hsl(0, 0%, 0%);
 // -  <---------------| Buttons |--------------->
 
 // #  Button 1
-$button--height: $buffer--l;
+$button--height: $small-dimension--l;
 $button--depth: 6;
 $button--speed: 0.06;
 $button--timing-function: ease-out;

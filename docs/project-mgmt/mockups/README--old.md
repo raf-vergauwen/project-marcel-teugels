@@ -251,11 +251,11 @@
 
 ### **Roles**
 
-* Korneel Eeckhout : Prestigious Project Patriarch
-* Emiel Teugels : Driven Database Director
-* Raf Vergauwen : Glorious Git Governor
-* Kenneth Blondeel : Illustrious Illustration Inventor
-* Lins Timperman : Suitable Support Sidekick
+- Korneel Eeckhout : Prestigious Project Patriarch
+- Emiel Teugels : Driven Database Director
+- Raf Vergauwen : Glorious Git Governor
+- Kenneth Blondeel : Illustrious Illustration Inventor
+- Lins Timperman : Suitable Support Sidekick
 
 ### **Build Setup**
 
@@ -517,7 +517,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [ ] Sociale media
 - [ ] Contactgegevens?!
 
-<style>
+<style lang="scss">
 	* {
 		color: white;
 	}

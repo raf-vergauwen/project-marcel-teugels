@@ -5,11 +5,11 @@
 // -  <<----------<< General >>---------->>
 
 .fas {
-  @include box-dimensions(fas, $font-size--2);
+  @include box-dimensions(fas, $font-size--h6);
 }
 
 .fab {
-  @include box-dimensions(fab, $font-size--5);
+  @include box-dimensions(fab, $font-size--h3);
 }
 
 // -  <<----------<< Specific >>---------->>

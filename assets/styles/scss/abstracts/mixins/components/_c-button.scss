@@ -65,7 +65,7 @@
 }
 
 .btn--icon {
-  @include box-dimensions(btn, $font-size--3);
+  @include box-dimensions(btn, $font-size--h1);
   @include flex-items;
 }
 

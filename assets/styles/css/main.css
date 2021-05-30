@@ -195,7 +195,7 @@ html {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 2rem;
+  height: 32px;
   background: linear-gradient(to top, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.15), calc(var(--color-secondary-l) * 0.6)) 0%, hsl(calc(var(--color-secondary-h) * 1), calc(var(--color-secondary-s) * 1.1), calc(var(--color-secondary-l) * 0.75)) 6px);
   border-radius: 8px;
   -webkit-box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
@@ -206,15 +206,12 @@ html {
 }
 
 .btn--text {
-  padding: 0 0.5rem;
+  padding: 0 8px;
 }
 
 .btn--icon {
-  width: 1.5625rem;
-  height: auto;
-  margin: 0;
-  font-size: 1.5625rem;
-  max-width: 100%;
+  width: 3.8147rem;
+  font-size: 3.8147rem;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -webkit-box-flex: 1;
@@ -272,16 +269,12 @@ html {
 \* -------------------------------------------------------------------------- */
 .fas {
   width: 1.25rem;
-  height: auto;
-  margin: 0;
   margin-right: 0.5rem;
   font-size: 1.25rem;
 }
 
 .fab {
   width: 2.44141rem;
-  height: auto;
-  margin: 0;
   font-size: 2.44141rem;
 }
 
@@ -538,14 +531,12 @@ menu {
   /* #  ---------------------------------------- */
   /* #  --color-text hsl */
   /* #  ---------------------------------------- */
-  --color-text: hsl(0, 3.4%, 5.7%);
   --color-text-h: 0;
   --color-text-s: 3.4%;
   --color-text-l: 5.7%;
   /* #  ---------------------------------------- */
   /* #  --color-background hsl */
   /* #  ---------------------------------------- */
-  --color-background: hsl(0, 11.1%, 96.5%);
   --color-background-h: 0;
   --color-background-s: 11.1%;
   --color-background-l: 96.5%;
@@ -612,14 +603,12 @@ menu {
   /* #  ---------------------------------------- */
   /* #  --color-text hsl */
   /* #  ---------------------------------------- */
-  --color-text: hsl(240, 100%, 10%);
   --color-text-h: 240;
   --color-text-s: 100%;
   --color-text-l: 10%;
   /* #  ---------------------------------------- */
   /* #  --color-background hsl */
   /* #  ---------------------------------------- */
-  --color-background: hsl(240, 100%, 98.6%);
   --color-background-h: 240;
   --color-background-s: 100%;
   --color-background-l: 98.6%;
@@ -646,45 +635,67 @@ menu {
 html {
   font-size: 1rem;
   font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
-  scrollbar-face-color: var(--color-tertiary);
-  scrollbar-track-color: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-}
-
-html::-webkit-scrollbar {
-  width: calc(0.5rem + 0.25rem);
-}
-
-html::-webkit-scrollbar-track {
-  background: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.5));
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--color-tertiary);
-  border-radius: 8px;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--color-tertiary-h), var(--color-tertiary-s), calc(var(--color-tertiary-l) * 0.75));
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }
 
 body {
-  text-rendering: optimizeLegibility;
+  width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
-  background-color: var(--color-background);
+  padding: null;
+  display: block;
+  padding: 0.25rem 0;
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 400;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background-color: var(--color-background);
   overflow-x: hidden;
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: #2f4f4f;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    background-color: #704241;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background-color: #674846;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-color: #52593b;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-color: #414a4c;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-color: #32174d;
+  }
+}
+
+@media (min-width: 2240px) {
+  body {
+    background-color: #1a2421;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -695,20 +706,23 @@ body {
 \* -------------------------------------------------------------------------- */
 nav {
   width: 100%;
-  height: auto;
-  max-width: 1920px;
   padding: 0.5rem;
 }
 
 article {
+  width: 100%;
   padding: 0.5rem;
 }
 
 section {
+  width: 100%;
+  max-width: 1920px;
   padding: 0.5rem;
+  min-height: 100vh;
 }
 
 aside {
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -716,16 +730,31 @@ aside {
 -  <<--------------------<< SUB >>-------------------->>
 \* -------------------------------------------------------------------------- */
 header {
+  width: 100%;
+  max-width: 1920px;
   padding: 0.5rem;
 }
 
 footer {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0.5rem;
+}
+
+main {
+  width: 100%;
+  max-width: 1920px;
   padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
 \* -------------------------------------------------------------------------- */
+div {
+  width: 100%;
+  padding: null;
+}
+
 /* -------------------------------------------------------------------------- *\
 *  <<--------------------<< HEADING >>-------------------->>
 \* -------------------------------------------------------------------------- */
@@ -733,117 +762,101 @@ footer {
 -  <<--------------------<< Heading >>-------------------->>
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 1rem;
+  padding: 1rem 0;
   color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
-  font-size: 3.05176rem;
+  font-size: 3.8147rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
-  font-weight: 700;
-  letter-spacing: 0.025rem;
+  font-weight: 900;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 
-h1 + p::first-letter {
-  color: var(--color-secondary);
-  font-size: 1.5625rem;
-  line-height: 1.25;
-}
-
 h2 {
-  padding: 1rem;
-  color: var(--color-secondary);
+  padding: 1rem 0;
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
-  font-size: 2.44141rem;
+  font-size: 3.05176rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
+  font-weight: 800;
   line-height: 1;
   text-align: center;
-  text-transform: capitalize;
-}
-
-h2 + p::first-letter {
-  color: var(--color-secondary);
-  font-size: 1.5625rem;
-  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 h3 {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   color: var(--color-secondary);
-  font-family: "Oswald", sans-serif;
-  font-size: 1.95312rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: small-caps;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  line-height: 1.25;
-  text-align: left;
-  text-transform: none;
-}
-
-h3 + p::first-letter {
-  color: var(--color-secondary);
-  font-size: 1.5625rem;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
 }
 
 h4 {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   color: var(--color-secondary);
-  font-family: "Montserrat", monospace;
-  font-size: 1.5625rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.95312rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
-}
-
-h4 + p::first-letter {
-  color: var(--color-secondary);
-  font-size: 1.5625rem;
+  font-weight: 600;
   line-height: 1.25;
+  text-transform: capitalize;
 }
 
 h5 {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--color-tertiary);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-  font-variant: normal;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
-}
-
-h5 + p::first-letter {
-  color: var(--color-secondary);
+  font-family: "Roboto Slab", serif;
   font-size: 1.5625rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 h6 {
-  padding: 0.25rem;
+  padding: 0.25rem 0;
   color: var(--color-tertiary);
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-variant: normal;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
   font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
+h1 + p::first-letter,
+h2 + p::first-letter,
+h3 + p::first-letter,
+h4 + p::first-letter,
+h5 + p::first-letter,
 h6 + p::first-letter {
+  padding: 0.5rem 0;
   color: var(--color-secondary);
-  font-size: 1.5625rem;
-  line-height: 1.25;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.44141rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -853,133 +866,205 @@ h6 + p::first-letter {
 // -  <<--------------------<< DESCRIPTION >>-------------------->>
 \* -------------------------------------------------------------------------- */
 dl {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: null;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 dt {
-  padding: 0.125rem;
+  width: 100%;
+  padding: null;
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 dd {
-  padding: 0.125rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: null;
+  padding: 0.125rem 0;
+  color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< FIGURE >>-------------------->>
 \* -------------------------------------------------------------------------- */
 figure {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: null;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 figcaption {
-  padding: 0.125rem;
+  width: 100%;
+  padding: null;
+  padding: 0.25rem 0;
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  letter-spacing: normal;
   line-height: 1.5;
-  text-align: left;
-  text-transform: none;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< LISTS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 ol {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: null;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 ul {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: null;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 li {
-  padding: 0.125rem;
+  width: 100%;
+  padding: null;
+  padding: 0.25rem 0;
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  letter-spacing: normal;
   line-height: 1.5;
   list-style-type: none;
-  text-align: left;
-  text-transform: none;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< CONTENT >>-------------------->>
 \* -------------------------------------------------------------------------- */
 address {
-  padding: 0.25rem;
+  width: 100%;
+  padding: null;
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
   font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 blockquote {
-  padding: 0.25rem;
-  border-left: 0.25rem solid var(--color-tertiary--darkest);
-  color: var(--color-text);
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-style: italic;
-  font-variant: normal;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.5;
-  text-align: left;
-  text-transform: none;
-}
-
-blockquote > footer {
-  border: 0;
+  width: 100%;
+  padding: null;
+  padding: 0.125rem 0;
+  color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
   font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  border-left: 0.25rem solid var(--color-tertiary--darkest);
 }
 
 blockquote cite {
+  width: 100%;
+  padding: null;
+  padding: 0.125rem 0;
+  color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
   font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 hr {
   width: 100%;
   height: 1px;
-  padding: 0.25rem;
-  border: 0;
   margin: 0.25rem;
+  padding: 0.25rem;
   background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
   background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
 }
 
 p {
-  padding: 0.25rem;
+  width: 100%;
+  padding: null;
+  padding: 0.25rem 0;
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  letter-spacing: normal;
   line-height: 1.5;
-  text-align: left;
-  text-transform: none;
 }
 
 pre {
-  padding: 0.25rem;
-  color: var(--color-text);
-}
-
-pre > code {
-  display: block;
-  padding: 0.125rem;
-  overflow-x: auto;
+  width: 100%;
+  padding: null;
+  padding: 0.125rem 0;
+  color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -989,104 +1074,205 @@ pre > code {
 // -  <<--------------------<< VISUAL >>-------------------->>
 \* -------------------------------------------------------------------------- */
 b {
+  padding: 0.5rem 0;
   color: var(--color-text--darker);
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 code {
-  padding: 0.25rem;
-  background: var(--color-background);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-secondary--lighter);
+  background: var(--color-tertiary--lighter);
   border-radius: 4px;
-  color: var(--color-text);
-  font-family: "Oswald", sans-serif;
-  font-size: 1rem;
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.125rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: small-caps;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 em {
+  padding: 0.5rem 0;
   color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 i {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 kbd {
-  padding: 0.25rem;
-  border: 1px solid var(--color-secondary);
-  background: var(--color-primary);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-secondary--lighter);
+  background: var(--color-tertiary--lighter);
   border-radius: 4px;
-  color: var(--color-text--darker);
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.125rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: small-caps;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 mark {
-  padding: 0.25rem;
-  background-color: var(--color-tertiary);
-  border-radius: 4px;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--color-tertiary--lighter);
 }
 
 s {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: line-through;
 }
 
 samp {
-  padding: 0.25rem;
-  background: var(--color-background);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-secondary--lighter);
+  background: var(--color-tertiary--lighter);
   border-radius: 4px;
-  color: var(--color-text--darker);
-  font-size: 1rem;
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.125rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: small-caps;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 small {
+  padding: 0.125rem 0;
   color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 strong {
+  padding: 0.5rem 0;
   color: var(--color-text--darker);
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 sub {
+  padding: 0.125rem 0;
   color: var(--color-text--lighter);
-  font-variant: small-caps;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 300;
+  line-height: 1.5;
+  vertical-align: bottom;
 }
 
 sup {
+  padding: 0.125rem 0;
   color: var(--color-text--lighter);
-  font-variant: small-caps;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 300;
+  line-height: 1.5;
+  vertical-align: top;
 }
 
 u {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: underline;
 }
 
 var {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-secondary--lighter);
+  background: var(--color-tertiary--lighter);
+  border-radius: 4px;
   color: var(--color-primary);
-  font-family: "Oswald", sans-serif;
+  font-family: "Fira Mono", monospace;
+  font-size: 1.125rem;
+  font-stretch: normal;
   font-style: normal;
   font-variant: small-caps;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< FUNCTIONAL >>-------------------->>
 \* -------------------------------------------------------------------------- */
 a {
-  padding: 0.25rem;
-  color: var(--color-primary);
-  font-family: "Montserrat", monospace;
-  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
   font-variant: normal;
-  font-weight: 400;
-  letter-spacing: normal;
-  text-align: 1.5;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
-  text-transform: none;
 }
 
 a::before {
@@ -1138,34 +1324,90 @@ a i {
 }
 
 abbr {
-  color: var(--color-text--lighter);
-  font-variant: small-caps;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  border-bottom: 1px dotted var(--color-tertiary);
 }
 
 bdi {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 bdo {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 cite {
+  padding: 0.125rem 0;
   color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 data {
-  color: var(--color-text);
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  font-variant: small-caps;
 }
 
 dfn {
-  color: var(--color-text);
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 q {
-  padding: 0.25rem;
-  border-left: 4px solid var(--color-tertiary--darkest);
+  padding: 0.125rem 0;
   color: var(--color-text--lighter);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  border-left: 4px solid var(--color-tertiary--darkest);
   font-style: italic;
 }
 
@@ -1178,22 +1420,42 @@ q::after {
 }
 
 time {
-  padding: 0.25rem;
-  background: var(--color-background);
-  border-radius: 4px;
-  color: var(--color-text);
-  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: var(--color-text--darker);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 wbr {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< NON-SEMANTIC >>-------------------->>
 \* -------------------------------------------------------------------------- */
 span {
+  padding: 0.25rem 0;
   color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1204,7 +1466,7 @@ span {
 \* -------------------------------------------------------------------------- */
 img {
   width: 100%;
-  height: auto;
+  padding: null;
   background-color: var(--bg-color--transparant---softest);
   color: var(--color-text);
   -o-object-fit: cover;
@@ -1215,7 +1477,7 @@ img {
 
 video {
   width: 100%;
-  height: auto;
+  padding: null;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1226,7 +1488,7 @@ video {
 \* -------------------------------------------------------------------------- */
 svg {
   width: 100%;
-  height: auto;
+  padding: null;
   color: var(--color-text);
   fill: var(--color-text);
   -o-object-fit: cover;
@@ -1247,27 +1509,72 @@ math {
 \* -------------------------------------------------------------------------- */
 table {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
+  border: 2px solid var(--color-secondary--darker);
   margin: 0.5rem;
-  margin-bottom: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
   border-collapse: collapse;
-  color: var(--color-text);
   table-layout: fixed;
 }
 
 thead {
-  padding: 0.25rem;
-  border-bottom: 1px solid var(--color-secondary);
-  color: var(--color-text);
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
+  margin: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 tr {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
+  margin: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 tbody {
-  padding: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
+  margin: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 tbody tr:nth-child(even) {
@@ -1286,14 +1593,37 @@ tbody tr:nth-child(even) button:hover {
 }
 
 tfoot {
-  padding: 0.25rem;
-  border-top: 1px solid var(--color-secondary);
-  color: var(--color-text);
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
+  margin: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 colgroup {
-  padding: 0.25rem;
-  color: var(--color-text);
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
+  margin: 0.5rem;
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1312,7 +1642,6 @@ col {
 th {
   padding: 0.25rem;
   color: var(--color-text);
-  font-weight: 700;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
@@ -1333,52 +1662,96 @@ td {
 // -  <<--------------------<< PARENTS >>-------------------->>
 \* -------------------------------------------------------------------------- */
 form {
-  padding: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--color-secondary--darker);
   margin: 0.5rem;
-  color: var(--color-text);
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 datalist {
+  width: 100%;
   padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
   margin: 0.5rem;
-  color: var(--color-text);
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 fieldset {
+  width: 100%;
   padding: 0.5rem;
-  border: 0.0625rem var(--color-tertiary--darkest) solid;
+  border: 2px solid var(--color-secondary--darker);
   margin: 0.5rem;
-  border-radius: 8px;
-  color: var(--color-text);
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 optgroup {
+  width: 100%;
   padding: 0.5rem;
+  border: 2px solid var(--color-secondary--darker);
   margin: 0.5rem;
-  color: var(--color-text);
+  background: var(--color-tertiary--darker);
+  border-radius: 16px;
+  color: var(--color-primary--darker);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< CHILDREN >>-------------------->>
+\* -------------------------------------------------------------------------- */
 select {
-  cursor: pointer;
-  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  width: 100%;
   padding: 0.5rem;
-  border: 0;
   margin: 0.5rem;
-  background-color: var(--color-tertiary);
+  background: var(--color-tertiary);
   border-radius: 8px;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.25rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 1.5;
   outline: none;
-}
-
-select [multiple] {
-  padding-right: 0.5rem;
-  background-image: none;
-  overflow-y: auto;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
 }
 
 select:disabled {
@@ -1395,28 +1768,41 @@ select:hover {
   background: var(--color-tertiary--lighter);
 }
 
+select [multiple] {
+  padding-right: 0.5rem;
+  background-image: none;
+  overflow-y: auto;
+}
+
 select:not([type='checkbox']):not([type='radio']) {
   display: block;
 }
 
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< CHILDREN >>-------------------->>
-\* -------------------------------------------------------------------------- */
 button {
-  cursor: pointer;
-  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
+  width: 100%;
   padding: 0.5rem;
-  border: 0;
   margin: 0.5rem;
-  background-color: var(--color-tertiary);
+  background: var(--color-tertiary);
   border-radius: 8px;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.25rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 1.5;
   outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 button:focus {
@@ -1428,43 +1814,42 @@ button:hover {
   background: var(--color-tertiary--lighter);
 }
 
-button::-webkit-input-placeholder {
-  color: var(--color-text--lightest);
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background: var(--color-tertiary);
+  border-radius: 8px;
+  color: var(--color-primary);
+  font-family: "Fira Mono", monospace;
+  font-size: 1.25rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  outline: none;
+  vertical-align: top;
 }
 
-button:-ms-input-placeholder {
-  color: var(--color-text--lightest);
-}
-
-button::-ms-input-placeholder {
-  color: var(--color-text--lightest);
-}
-
-button::placeholder {
-  color: var(--color-text--lightest);
-}
-
-button:disabled {
+input:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-input {
-  cursor: pointer;
-  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  padding: 0.5rem;
-  border: 0;
-  margin: 0.5rem;
-  background-color: var(--color-tertiary);
-  border-radius: 8px;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
-  vertical-align: top;
+input:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--color-tertiary--darkest);
+          box-shadow: 0 0 0 2px var(--color-tertiary--darkest);
+}
+
+input:hover {
+  background: var(--color-tertiary--lighter);
 }
 
 input [type='submit'] {
@@ -1566,22 +1951,24 @@ input [type='button']:active {
           transform: translateY(2px);
 }
 
-input:focus {
-  -webkit-box-shadow: 0 0 0 2px var(--color-tertiary--darkest);
-          box-shadow: 0 0 0 2px var(--color-tertiary--darkest);
-}
-
-input:hover {
-  background: var(--color-tertiary--lighter);
-}
-
-input:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
 input:not([type='checkbox']):not([type='radio']) {
   display: block;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-text--lightest);
+}
+
+input:-ms-input-placeholder {
+  color: var(--color-text--lightest);
+}
+
+input::-ms-input-placeholder {
+  color: var(--color-text--lightest);
+}
+
+input::placeholder {
+  color: var(--color-text--lightest);
 }
 
 label {
@@ -1596,7 +1983,6 @@ legend {
   background-color: var(--color-primary);
   color: var(--color-background);
   font-size: 1.25rem;
-  font-weight: 600;
 }
 
 meter {
@@ -1620,21 +2006,31 @@ progress {
 }
 
 textarea {
-  cursor: pointer;
-  -webkit-transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease;
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow var(--animation-duration) linear, transform var(--animation-duration) ease, -webkit-box-shadow var(--animation-duration) linear, -webkit-transform var(--animation-duration) ease;
-  display: block;
+  width: 100%;
   padding: 0.5rem;
-  border: 0;
   margin: 0.5rem;
-  background-color: var(--color-tertiary);
+  background: var(--color-tertiary);
   border-radius: 8px;
   color: var(--color-primary);
-  font-family: inherit;
-  font-size: inherit;
+  font-family: "Fira Mono", monospace;
+  font-size: 1.25rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 1.5;
   outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease, -webkit-box-shadow 0.1s linear, -webkit-transform 0.1s ease;
+  display: block;
+}
+
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 textarea:focus {
@@ -1662,13 +2058,8 @@ textarea::placeholder {
   color: var(--color-primary--lightest);
 }
 
-textarea:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
 /* -------------------------------------------------------------------------- *\
-// *  <<--------------------<< INTERACTIVE >>-------------------->>
+// *  <<--------------------<< component >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
 // -  <<--------------------<< Disclosure Widget >>-------------------->>

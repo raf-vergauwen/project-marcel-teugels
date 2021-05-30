@@ -45,12 +45,15 @@ export default {
   ],
 
   googleFonts: {
-    preload: true,
+    preconnect: true,
     download: true,
     families: {
-      Roboto: true,
       Montserrat: true,
-      Oswald: true,
+      Poppins: true,
+      FiraMono: true,
+      RobotoSlab: true,
+      Robot: true,
+      RobotMono: true,
     },
   },
 

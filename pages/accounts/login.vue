@@ -12,7 +12,7 @@
           Password:
           <input v-model="password" type="password" name="password" />
         </label>
-        <button type="submit">Log in</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   </main>
@@ -91,7 +91,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .container {
   display: flex;
   min-height: 100vh;
@@ -104,16 +104,8 @@ export default {
 .title {
   display: block;
   color: #35495e;
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 100px;
   font-weight: 300;
   letter-spacing: 1px;

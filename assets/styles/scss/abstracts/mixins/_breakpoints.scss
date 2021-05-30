@@ -108,6 +108,7 @@
       @content;
     }
   }
+
   // #  ERROR: Invalid arguments!
   @else {
     @error '#{$breakpoint} is an unsupported breakpoint, choose betweens: xxs, xs, s, m, l, xl, xxl.';

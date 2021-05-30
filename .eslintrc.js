@@ -18,11 +18,12 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'eslint:recommended',
-    'plugin:import/recommended',
-    'plugin:node/recommended',
+    'standard',
+    // 'plugin:import/recommended',
+    // 'plugin:node/recommended',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-    'plugin:promise/recommended',
+    // 'plugin:prettier/recommended',
+    // 'plugin:promise/recommended',
     'plugin:vue/recommended',
     'prettier',
   ],
@@ -39,5 +40,5 @@ module.exports = {
     $nuxt: true,
   },
 
-  plugins: ['@babel', 'import', 'node', 'nuxt', 'prettier', 'promise', 'vue'],
+  plugins: ['@babel', 'nuxt', 'vue', 'prettier'],
 };

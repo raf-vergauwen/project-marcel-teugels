@@ -115,14 +115,14 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          //console.log($image[0].src)
+          // console.log($image[0].src)
         })
         .then((image) => {
           this.imageUrlList.push(URL.createObjectURL(image));
         })
         .then((data) => {
           this.photoData = data;
-          //$image.src = data.url;
+          // $image.src = data.url;
         })
         .catch((err) => {
           console.error(err);
@@ -143,7 +143,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .order {
   margin: 6em;
 }

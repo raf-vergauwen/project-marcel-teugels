@@ -8,20 +8,20 @@
 
 // #  <---------------| <dl> |--------------->
 dl {
-  padding: $buffer--xs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text-bigger);
 }
 
 // #  <---------------| <dt> |--------------->
 dt {
-  padding: $buffer--xxs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text);
 }
 
 // #  <---------------| <dd> |--------------->
 dd {
-  padding: $buffer--xxs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text-smaller);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -30,22 +30,14 @@ dd {
 
 // #  <---------------| <figure> |--------------->
 figure {
-  padding: $buffer--xs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text-bigger);
 }
 
 // #  <---------------| <figcaption> |--------------->
 figcaption {
-  padding: $buffer--xxs;
-  color: var(--color-text);
-  font-family: $font-family--text;
-  font-size: $font-size--1;
-  font-variant: $font-variant--text;
-  font-weight: $font-weight--text;
-  letter-spacing: $letter-spacing--text;
-  line-height: $line-height--text;
-  text-align: $text-align--text;
-  text-transform: $text-transform--text;
+  @include box-dimensions;
+  @include font(text);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -54,29 +46,22 @@ figcaption {
 
 // #  <---------------| <ol> |--------------->
 ol {
-  padding: $buffer--xs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text-bigger);
 }
 
 // #  <---------------| <ul> |--------------->
 ul {
-  padding: $buffer--xs;
-  color: var(--color-text);
+  @include box-dimensions;
+  @include font(text-bigger);
 }
 
 // #  <---------------| <li> |--------------->
 li {
-  padding: $buffer--xxs;
-  color: var(--color-text);
-  font-family: $font-family--text;
-  font-size: $font-size--1;
-  font-variant: $font-variant--text;
-  font-weight: $font-weight--text;
-  letter-spacing: $letter-spacing--text;
-  line-height: $line-height--text;
+  @include box-dimensions;
+  @include font(text);
+
   list-style-type: none;
-  text-align: $text-align--text;
-  text-transform: $text-transform--text;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -85,79 +70,58 @@ li {
 
 // #  <---------------| <address> |--------------->
 address {
-  padding: $buffer--xs;
-  color: var(--color-text);
-  font-style: normal;
+  @include box-dimensions;
+  @include font(text);
 }
 
 // #  <---------------| <blockquote> |--------------->
 blockquote {
-  padding: $buffer--xs;
-  border-left: $buffer--xs solid var(--color-tertiary--darkest);
-  color: var(--color-text);
-  font-family: $font-family--text;
-  font-size: $font-size--1;
-  font-style: italic;
-  font-variant: $font-variant--text;
-  font-weight: $font-weight--text;
-  letter-spacing: $letter-spacing--text;
-  line-height: $line-height--text;
-  text-align: $text-align--text;
-  text-transform: $text-transform--text;
+  @include box-dimensions;
+  @include font(text-smaller);
 
-  > footer {
-    border: 0;
-    font-style: normal;
-  }
+  border-left: $buffer--xs solid var(--color-tertiary--darkest);
 
   cite {
-    font-style: normal;
+    @include box-dimensions;
+    @include font(text-smaller);
   }
 }
 // #  <---------------| <hr> |--------------->
 hr {
-  width: 100%;
-  height: $small-dimension--xxxs;
-  padding: $buffer--xs;
-  border: 0;
-  margin: $buffer--xs;
-  background-image:
-    linear-gradient(to right,
-    hsla(var(--color-background-h),
-    var(--color-background-s),
-    var(--color-background-l),
-    0),
+  @include box-dimensions(
+    $type: xs,
+    $height: $small-dimension--xxxs,
+    $margin: $buffer--xs
+  );
+
+  background-image: linear-gradient(
+    to right,
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    ),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75),
     hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
-    hsla(var(--color-background-h),
-    var(--color-background-s),
-    var(--color-background-l),
-    0));
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0
+    )
+  );
 }
 
 // #  <---------------| <p> |--------------->
 p {
-  padding: $buffer--xs;
-  color: var(--color-text);
-  font-family: $font-family--text;
-  font-size: $font-size--1;
-  font-variant: $font-variant--text;
-  font-weight: $font-weight--text;
-  letter-spacing: $letter-spacing--text;
-  line-height: $line-height--text;
-  text-align: $text-align--text;
-  text-transform: $text-transform--text;
+  @include box-dimensions;
+  @include font(text);
 }
 
 // #  <---------------| <pre> |--------------->
 pre {
-  padding: $buffer--xs;
-  color: var(--color-text);
-
-  > code {
-    display: block;
-    padding: $buffer--xxs;
-    overflow-x: auto;
-  }
+  @include box-dimensions;
+  @include font(text-smaller);
 }

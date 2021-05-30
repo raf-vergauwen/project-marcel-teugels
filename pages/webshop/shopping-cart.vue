@@ -69,7 +69,7 @@ export default {
     },
     removeProduct(product) {
       console.log(product);
-      let index = this.productData.indexOf(product);
+      const index = this.productData.indexOf(product);
       this.productData.splice(index, index + 1);
     },
   },

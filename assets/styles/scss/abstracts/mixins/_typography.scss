@@ -7,19 +7,213 @@
 // -  <---------------| Font-Sizes--Responsive |--------------->
 @mixin font-sizes--responsive($min-vw, $max-vw, $min-value, $max-value) {
   $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
-  $calc-value: unquote('#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }');
+  $calc-value: unquote(
+    '#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }'
+  );
 
   font-size: $min-value; // Fallback for older browsers
-  font-size:
-    clamp(#{if($min-value > $max-value, $max-value, $min-value)},
+  font-size: clamp(
+    #{if($min-value > $max-value, $max-value, $min-value)},
     #{$calc-value},
-    #{if($min-value > $max-value, $min-value, $max-value)});
+    #{if($min-value > $max-value, $min-value, $max-value)}
+  );
 }
 
 // -  <---------------| Font-Smooth |--------------->
 @mixin font-smooth {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// -  <---------------| Font |--------------->
+@mixin font($tier) {
+  // #  TIER 1 : <h1>
+  @if $tier == 'h1' {
+    padding: $buffer--m 0;
+    color: var(--color-primary);
+    font-family: $font-family--h1;
+    font-size: $font-size--h1;
+    font-stretch: $font-stretch--h1;
+    font-style: $font-style--h1;
+    font-variant: $font-variant--h1;
+    font-weight: $font-weight--h1;
+    line-height: $line-height--h1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  // #  TIER 2 : <h2>
+  @else if $tier == 'h2' {
+    padding: $buffer--m 0;
+    color: var(--color-primary);
+    font-family: $font-family--h2;
+    font-size: $font-size--h2;
+    font-stretch: $font-stretch--h2;
+    font-style: $font-style--h2;
+    font-variant: $font-variant--h2;
+    font-weight: $font-weight--h2;
+    line-height: $line-height--h2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  // #  TIER 3 : <h3>
+  @else if $tier == 'h3' {
+    padding: $buffer--s 0;
+    color: var(--color-secondary);
+    font-family: $font-family--h3;
+    font-size: $font-size--h3;
+    font-stretch: $font-stretch--h3;
+    font-style: $font-style--h3;
+    font-variant: $font-variant--h3;
+    font-weight: $font-weight--h3;
+    line-height: $line-height--h3;
+    text-transform: capitalize;
+  }
+  // #  TIER 4 : <h4>
+  @else if $tier == 'h4' {
+    padding: $buffer--s 0;
+    color: var(--color-secondary);
+    font-family: $font-family--h4;
+    font-size: $font-size--h4;
+    font-stretch: $font-stretch--h4;
+    font-style: $font-style--h4;
+    font-variant: $font-variant--h4;
+    font-weight: $font-weight--h4;
+    line-height: $line-height--h4;
+    text-transform: capitalize;
+  }
+  // #  TIER 5 : <h5>
+  @else if $tier == 'h5' {
+    padding: $buffer--xs 0;
+    color: var(--color-tertiary);
+    font-family: $font-family--h5;
+    font-size: $font-size--h5;
+    font-stretch: $font-stretch--h5;
+    font-style: $font-style--h5;
+    font-variant: $font-variant--h5;
+    font-weight: $font-weight--h5;
+    line-height: $line-height--h5;
+    text-transform: uppercase;
+  }
+  // #  TIER 6 : <h6>
+  @else if $tier == 'h6' {
+    padding: $buffer--xs 0;
+    color: var(--color-tertiary);
+    font-family: $font-family--h6;
+    font-size: $font-size--h6;
+    font-stretch: $font-stretch--h6;
+    font-style: $font-style--h6;
+    font-variant: $font-variant--h6;
+    font-weight: $font-weight--h6;
+    line-height: $line-height--h6;
+    text-transform: uppercase;
+  }
+
+  // #  TIER 7 : Text-Smaller
+  @else if $tier == 'text-smaller' {
+    padding: $buffer--xxs 0;
+    color: var(--color-text--lighter);
+    font-family: $font-family--text-smaller;
+    font-size: $font-size--text-smaller;
+    font-stretch: $font-stretch--text-smaller;
+    font-style: $font-style--text-smaller;
+    font-variant: $font-variant--text-smaller;
+    font-weight: $font-weight--text-smaller;
+    line-height: $line-height--text-smaller;
+  }
+
+  // #  TIER 8 : Text
+  @else if $tier == 'text' {
+    padding: $buffer--xs 0;
+    color: var(--color-text);
+    font-family: $font-family--text;
+    font-size: $font-size--text;
+    font-stretch: $font-stretch--text;
+    font-style: $font-style--text;
+    font-variant: $font-variant--text;
+    font-weight: $font-weight--text;
+    line-height: $line-height--text;
+  }
+
+  // #  TIER 9 : Text-Bigger
+  @else if $tier == 'text-bigger' {
+    padding: $buffer--s 0;
+    color: var(--color-text--darker);
+    font-family: $font-family--text-bigger;
+    font-size: $font-size--text-bigger;
+    font-stretch: $font-stretch--text-bigger;
+    font-style: $font-style--text-bigger;
+    font-variant: $font-variant--text-bigger;
+    font-weight: $font-weight--text-bigger;
+    line-height: $line-height--text-bigger;
+  }
+
+  // #  TIER 10 : Component-Smaller
+  @else if $tier == 'component-smaller' {
+    padding: $buffer--xs $buffer--s;
+    border: $small-dimension--xxxs solid var(--color-secondary--lighter);
+    background: var(--color-tertiary--lighter);
+    border-radius: $small-dimension--xs;
+    color: var(--color-primary);
+    font-family: $font-family--component-smaller;
+    font-size: $font-size--component-smaller;
+    font-stretch: $font-stretch--component-smaller;
+    font-style: $font-style--component-smaller;
+    font-variant: $font-variant--component-smaller;
+    font-weight: $font-weight--component-smaller;
+    line-height: $line-height--component-smaller;
+  }
+
+  // #  TIER 11 : Component
+  @else if $tier == 'component' {
+    margin: $buffer--s;
+    background: var(--color-tertiary);
+    border-radius: $small-dimension--s;
+    color: var(--color-primary);
+    font-family: $font-family--component;
+    font-size: $font-size--component;
+    font-stretch: $font-stretch--component;
+    font-style: $font-style--component;
+    font-variant: $font-variant--component;
+    font-weight: $font-weight--component;
+    line-height: $line-height--component;
+
+    // border: $small-dimension--xxs solid var(--color-secondary);
+    outline: none;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
+    }
+
+    &:hover {
+      background: var(--color-tertiary--lighter);
+    }
+  }
+
+  // #  TIER 12 : Component-Bigger
+  @else if $tier == 'component-bigger' {
+    border: $small-dimension--xxs solid var(--color-secondary--darker);
+    margin: $buffer--s;
+    background: var(--color-tertiary--darker);
+    border-radius: $small-dimension--m;
+    color: var(--color-primary--darker);
+    font-family: $font-family--component-bigger;
+    font-size: $font-size--component-bigger;
+    font-stretch: $font-stretch--component-bigger;
+    font-style: $font-style--component-bigger;
+    font-variant: $font-variant--component-bigger;
+    font-weight: $font-weight--component-bigger;
+    line-height: $line-height--component-bigger;
+  }
+
+  // #  ERROR: Invalid arguments!
+  @else {
+    @error '#{$tier} is an unsupported tier, choose betweens: h1, h2, h3, h4, h5, h6, element-smaller, element, element-bigger, component-smaller, component, component-bigger';
+  }
 }
 
 // *  <<--------------------<< TEXT >>-------------------->>

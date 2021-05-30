@@ -23,23 +23,41 @@ html {
 
 // #  <---------------| <body> |--------------->
 body {
+  @include box-dimensions($max-width: $max-width--root);
+  @include block-container;
+  @include font(text);
   @include text-rendering(optimizeLegibility);
 
-  max-width: $max-width--root;
-  margin: $center-me;
   background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: $font-family--text;
-  font-weight: $font-weight--text;
-  line-height: $line-height--text;
 
   // # Lifesaving Scrollbar hack!
   overflow-x: hidden;
-}
 
-// #  <---------------| <main> |--------------->
-main {
-  max-width: $max-width--root;
-  margin: $center-me;
-  background-color: #ff1493;
+  @include breakpoint(xxs) {
+    background-color: #2f4f4f;
+  }
+
+  @include breakpoint(xs) {
+    background-color: #704241;
+  }
+
+  @include breakpoint(s) {
+    background-color: #674846;
+  }
+
+  @include breakpoint(m) {
+    background-color: #52593b;
+  }
+
+  @include breakpoint(l) {
+    background-color: #414a4c;
+  }
+
+  @include breakpoint(xl) {
+    background-color: #32174d;
+  }
+
+  @include breakpoint(xxl) {
+    background-color: #1a2421;
+  }
 }

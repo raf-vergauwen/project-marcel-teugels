@@ -8,27 +8,24 @@
 
 // #  <---------------| <nav> |--------------->
 nav {
-  @include box-dimensions;
-
-  max-width: $max-width--root;
-  padding: $buffer--s;
+  @include box-dimensions(s);
 }
 
 // #  <---------------| <article> |--------------->
 article {
-  max-width: $max-width--root;
-  padding: $buffer--s;
+  @include box-dimensions(s);
 }
 
 // #  <---------------| <section> |--------------->
 section {
-  max-width: $max-width--root;
-  padding: $buffer--s;
+  @include box-dimensions(s, $max-width: $max-width--root);
+
+  min-height: 100vh;
 }
 
 // #  <---------------| <aside> |--------------->
 aside {
-  padding: $buffer--s;
+  @include box-dimensions(s);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -37,14 +34,17 @@ aside {
 
 // #  <---------------| <header> |--------------->
 header {
-  max-width: $max-width--root;
-  padding: $buffer--s;
+  @include box-dimensions(s, $max-width: $max-width--root);
 }
 
 // #  <---------------| <footer> |--------------->
 footer {
-  max-width: $max-width--root;
-  padding: $buffer--s;
+  @include box-dimensions(s, $max-width: $max-width--root);
+}
+
+// #  <---------------| <main> |--------------->
+main {
+  @include box-dimensions(s, $max-width: $max-width--root);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -53,5 +53,5 @@ footer {
 
 // #  <---------------| <div> |--------------->
 div {
-  max-width: $max-width--root;
+  @include box-dimensions;
 }

@@ -66,7 +66,7 @@
 
   &__text-title {
     padding: $buffer--s 0;
-    font-size: $font-size--4;
+    font-size: $font-size--h2;
     font-variant: small-caps;
 
     @include breakpoint(s) {
@@ -76,7 +76,7 @@
 
   &__sub-title {
     padding: $buffer--s 0;
-    font-size: $font-size--2;
+    font-size: $font-size--h6;
 
     @include breakpoint(s) {
       height: 20%;

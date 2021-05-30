@@ -72,7 +72,7 @@ export default {
         })
         .then((body) => {
           console.log(body);
-          //sessionStorage.setItem('access_token', body.data.access_token);
+          // sessionStorage.setItem('access_token', body.data.access_token);
         })
         .catch((err) => {
           console.error(err);
@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .container {
   display: flex;
   min-height: 100vh;

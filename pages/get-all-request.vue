@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 body {
   display: flex;
   width: 100vw;

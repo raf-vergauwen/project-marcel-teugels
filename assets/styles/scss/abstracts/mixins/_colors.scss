@@ -28,7 +28,6 @@
   /* #  #{$color-name} hsl */
 
   /* #  ---------------------------------------- */
-  #{$color-name}: unquote('hsl(#{$hue}, #{$saturation}, #{$lightness})');
   #{$color-name}-h: #{$hue};
   #{$color-name}-s: #{$saturation};
   #{$color-name}-l: #{$lightness};

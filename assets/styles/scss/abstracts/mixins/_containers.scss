@@ -5,38 +5,66 @@
 // *  <<--------------------<< DIMENSIONS >>-------------------->>
 
 // -  <---------------| Box-Dimensions |--------------->
-@mixin box-dimensions($type: none, $width: 100%, $height: auto) {
+@mixin box-dimensions(
+  $type: none,
+  $width: 100%,
+  $height: null,
+  $max-width: null,
+  $margin: null
+) {
   width: $width;
+  max-width: $max-width;
   height: $height;
+  margin: $margin;
+
+  // #  Extra Small Box
+  @if $type == 'none' {
+    padding: null;
+  }
+
+  // #  Extra Small Box
+  @else if $type == 'xs' {
+    padding: $buffer--xs;
+  }
+
+  // #  Small Box
+  @else if $type == 's' {
+    padding: $buffer--s;
+  }
+
+  // #  Medium Box
+  @else if $type == 'm' {
+    padding: $buffer--m;
+  }
 
   // #  Regular Fontawesome Icons
-  @if $type == fas {
-    margin: 0;
+  @else if $type == 'fas' {
     margin-right: $buffer--s;
     font-size: $width;
   }
+
   // #  Brand Fontawesome Icons
-  @else if $type == fab {
-    margin: 0;
+  @else if $type == 'fab' {
     font-size: $width;
   }
 
   // #  Button Fontawesome Icons
-  @else if $type == btn {
-    margin: 0;
+  @else if $type == 'btn' {
     font-size: $width;
+  }
+
+  // #  ERROR: Invalid arguments!
+  @else {
+    @error '#{$type} is an unsupported type, choose betweens: xs, s, m, fas, fab, btn';
   }
 }
 
 // *  <<--------------------<< PARENTS >>-------------------->>
 
 // -  <---------------| Block-Container |--------------->
-@mixin block-container($max-width: 100%, $padding: $buffer--xs) {
-  @include box-dimensions;
-
-  max-width: $max-width--root;
-  padding: $padding;
-  margin: $center-me;
+@mixin block-container($margin: null) {
+  display: block;
+  margin: $margin;
 }
 
 // -  <---------------| Inline-Block-Container |--------------->
@@ -77,7 +105,6 @@
 
 // -  <---------------| Flex-Items |--------------->
 @mixin flex-items($grow: 1, $shrink: 0, $basis: auto, $self: center) {
-  max-width: 100%;
   flex-basis: $basis;
   flex-grow: $grow;
   flex-shrink: $shrink;

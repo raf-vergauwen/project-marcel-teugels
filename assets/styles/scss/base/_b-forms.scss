@@ -8,47 +8,37 @@
 
 // #  <---------------| <form> |--------------->
 form {
-  padding: $buffer--s;
-  margin: $buffer--s;
-  color: var(--color-text);
+  @include box-dimensions(m);
+  @include font(component-bigger);
 }
 
 // #  <---------------| <datalist> |--------------->
 datalist {
-  padding: $buffer--s;
-  margin: $buffer--s;
-  color: var(--color-text);
+  @include box-dimensions(s);
+  @include font(component-bigger);
 }
 
 // #  <---------------| <fieldset> |--------------->
 fieldset {
-  padding: $buffer--s;
-  border: $buffer--xxxs var(--color-tertiary--darkest) solid;
-  margin: $buffer--s;
-  border-radius: $small-dimension--s;
-  color: var(--color-text);
+  @include box-dimensions(s);
+  @include font(component-bigger);
 }
 
 // #  <---------------| <optgroup> |--------------->
 optgroup {
-  padding: $buffer--s;
-  margin: $buffer--s;
-  color: var(--color-text);
+  @include box-dimensions(s);
+  @include font(component-bigger);
 }
+
+/* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< CHILDREN >>-------------------->>
+\* -------------------------------------------------------------------------- */
 
 // #  <---------------| <select> |--------------->
 select {
+  @include box-dimensions(s);
+  @include font(component);
   @include click-transition--small;
-
-  padding: $buffer--s;
-  border: 0;
-  margin: $buffer--s;
-  background-color: var(--color-tertiary);
-  border-radius: $small-dimension--s;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
 
   [multiple] {
     padding-right: $buffer--s;
@@ -56,72 +46,24 @@ select {
     overflow-y: auto;
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
-  }
-
-  &:hover {
-    background: var(--color-tertiary--lighter);
-  }
-
   &:not([type='checkbox']):not([type='radio']) {
     display: block;
   }
 }
 
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< CHILDREN >>-------------------->>
-\* -------------------------------------------------------------------------- */
-
 // #  <---------------| <button> |--------------->
 button {
+  @include box-dimensions(s);
+  @include font(component);
   @include click-transition--small;
-
-  padding: $buffer--s;
-  border: 0;
-  margin: $buffer--s;
-  background-color: var(--color-tertiary);
-  border-radius: $small-dimension--s;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
-
-  &:focus {
-    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
-  }
-
-  &:hover {
-    background: var(--color-tertiary--lighter);
-  }
-
-  &::placeholder {
-    color: var(--color-text--lightest);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
 }
 
 // #  <---------------| <input> |--------------->
 input {
+  @include box-dimensions(s);
+  @include font(component);
   @include click-transition--small;
 
-  padding: $buffer--s;
-  border: 0;
-  margin: $buffer--s;
-  background-color: var(--color-tertiary);
-  border-radius: $small-dimension--s;
-  color: var(--color-text);
-  font-family: inherit;
-  font-size: inherit;
   outline: none;
   vertical-align: top;
 
@@ -215,21 +157,12 @@ input {
     transform: translateY($small-dimension--xxs);
   }
 
-  &:focus {
-    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
-  }
-
-  &:hover {
-    background: var(--color-tertiary--lighter);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
   &:not([type='checkbox']):not([type='radio']) {
     display: block;
+  }
+
+  &::placeholder {
+    color: var(--color-text--lightest);
   }
 }
 
@@ -246,8 +179,7 @@ legend {
   padding: $buffer--xxs $buffer--xs;
   background-color: var(--color-primary);
   color: var(--color-background);
-  font-size: $font-size--2;
-  font-weight: $font-weight--section;
+  font-size: $font-size--h6;
 }
 
 // #  <---------------| <meter> |--------------->
@@ -276,33 +208,12 @@ progress {
 
 // #  <---------------| <textarea> |--------------->
 textarea {
+  @include box-dimensions(s);
+  @include font(component);
   @include click-transition--small;
-
-  display: block;
-  padding: $buffer--s;
-  border: 0;
-  margin: $buffer--s;
-  background-color: var(--color-tertiary);
-  border-radius: $small-dimension--s;
-  color: var(--color-primary);
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
-
-  &:focus {
-    box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
-  }
-
-  &:hover {
-    background: var(--color-tertiary--lighter);
-  }
+  @include block-container;
 
   &::placeholder {
     color: var(--color-primary--lightest);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
   }
 }

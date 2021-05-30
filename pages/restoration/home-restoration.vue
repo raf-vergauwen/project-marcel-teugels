@@ -176,9 +176,7 @@ export default {
 };
 </script>
 
-<style>
-
-
+<style lang="scss">
 a {
   color: #f0f0f0;
   text-decoration: none;

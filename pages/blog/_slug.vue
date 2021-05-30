@@ -7,10 +7,10 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
-<style>
+<style lang="scss">
 .container {
   display: flex;
   min-height: 100vh;
