@@ -2,26 +2,36 @@
   <main>
     <section id="app">
       <div>
-        <label>
-          voornaam:
-          <input v-model="firstName" type="text" />
-        </label>
-        <label>
-          achternaam:
-          <input v-model="lastName" type="text" />
-        </label>
-        <label>
-          email:
-          <input v-model="email" type="email" />
-        </label>
-        <label>
-          telefoon nummer:
-          <input v-model="telefoonNummer" type="tel" />
-        </label>
-        <label>
-          bio
-          <textarea v-model="textContent"> </textarea>
-        </label>
+        <FormulateInput
+          v-model="firstName"
+          name="firstName"
+          type="text"
+          label="voornaam:"
+        />
+        <FormulateInput
+          v-model="lastName"
+          name="lastName"
+          type="text"
+          label="achternaam:"
+        />
+        <FormulateInput
+          v-model="email"
+          name="email"
+          type="email"
+          label="email"
+        />
+        <FormulateInput
+          v-model="telefoonNummer"
+          name="telefoon"
+          type="number"
+          label="telefoon nummer"
+        />
+        <FormulateInput
+          v-model="textContent"
+          name="textContent"
+          type="textarea"
+          label="Waarmee kunnen wij u helpen?"
+        />
       </div>
       <div class="container">
         <button @click="postRequest">Verstuur</button>
@@ -40,18 +50,11 @@ export default {
       email: '',
       telefoonNummer: '',
       textContent: '',
-      userId: '',
     };
-  },
-  computed: {
-    access_token() {
-      return sessionStorage.getItem('access_token');
-    },
   },
   methods: {
     postRequest() {
       const body = {
-        done: true,
         first_name: this.firstName,
         last_name: this.lastName,
         email: this.email,
@@ -59,22 +62,35 @@ export default {
         status: 'draft',
         text_content: this.textContent,
       };
+            fetch("http://157.230.126.154/items/user_requests/", {
+                "method": "POST",
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Authorization": "Bearer "
+                },
+                "body":  JSON.stringify(body),
+              })
+              .then((response) => {
+                if (!response.ok) {
+                    console.log('could not post user requests');
+                }
+                return response.json();
+            })
+              .then((data) => {
+                this.requestData = data
+              })
+              .catch(err => {
+                console.error(err);
+              });
+        }
+}}
+</script>
 
-      this.$axios('items/user_requests/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + this.access_token,
-        },
-        body: JSON.stringify(body),
-      })
-        .then((response) => {
-          console.log(response);
-          this.requestData = response.data.data;
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+<style>
+</style>
+ 154  pages/order.vue
+Viewed
+
     },
   },
 };
