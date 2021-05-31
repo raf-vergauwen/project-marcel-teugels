@@ -14,7 +14,7 @@
       <div class="p-shopping-cart__total">
         <h2>Total:</h2>
         <h3>€ {{ calculate_Total }}</h3>
-        <button>Afrekenen</button>
+        <button @click="createOrderedItems">Afrekenen</button>
       </div>
     </div>
   </main>
@@ -31,6 +31,8 @@ export default {
     return {
       shoppingList: [],
       productData: [],
+      orderedItemId: null,
+      orderId: null,
     };
   },
   fetch() {
@@ -77,6 +79,46 @@ export default {
       this.productData.splice(index, index + 1);
       this.$store.commit('removeFromCart', product);
     },
+    createOrderedItems() {
+      this.$axios('items/ordered_items', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        data: {
+          quantity: this.shoppingList.length,
+          total_price: this.calculate_Total,
+          products: this.shoppingList,
+        },
+      })
+        .then((response) => {
+          console.log(response);
+          this.orderedItemId = response.data.data.id;
+          console.log(this.orderedItemId);
+          this.createOrders();
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    createOrders() {
+      this.$axios('items/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        data: {
+          total_price: this.calculate_Total,
+          notes: 'test1234',
+          ordered_items: [this.orderedItemId],
+        },
+      })
+        .then((response) => {
+          console.log(response);
+          this.orderId = response.data.data.id;
+          console.log(this.orderId);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    linkIds() {},
   },
 };
 </script>
