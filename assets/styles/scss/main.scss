@@ -1,8 +1,9 @@
 @charset "UTF-8";
-@import "imports/variables";
-@import "imports/mixins";
-@import "imports/partials";
+@import 'imports/variables';
+@import '../../../node_modules/@braid/vue-formulate/themes/snow/inputs';
+@import 'imports/mixins';
+@import 'imports/partials';
+@import 'imports/form';
 
 @import 'imports/reboot';
 @import 'imports/typography';
-

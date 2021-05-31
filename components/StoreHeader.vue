@@ -28,9 +28,6 @@ export default {
       navItems: [
         { path: '/', label: 'home' },
         { path: '/shop/storefront', label: 'store' },
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profiel' },
-        { path: '/account-creation', label: 'sign up' },
         { path: '/shop/shopping-cart', label: `winkelwagen` },
         { path: '/restauratie', label: 'restauratie' },
       ],

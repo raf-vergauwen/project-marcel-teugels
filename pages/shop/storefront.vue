@@ -7,7 +7,7 @@
         v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
         class="p-product__btn"
       >
-        <nuxt-link to="/add-product">+</nuxt-link>
+        <nuxt-link to="/admin/add-product">+</nuxt-link>
       </button>
     </div>
 
@@ -17,6 +17,7 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
+        @remove-product="removeProduct($event)"
         @add-product="addProduct"
       />
     </div>
@@ -70,6 +71,18 @@ export default {
       console.log(product);
       this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
+    },
+
+    removeProduct(product) {
+      this.$axios(`/items/products/${product.id}`, {
+        method: 'DELETE',
+      })
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
     },
     /*
     newShoppingCart() {

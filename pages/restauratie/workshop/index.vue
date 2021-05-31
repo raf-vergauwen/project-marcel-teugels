@@ -6,7 +6,7 @@
     >
       <h1 class="p-workshop__title">Workshops</h1>
       <button class="p-workshop__btn">
-        <a href="/add-workshop">+</a>
+        <a href="/admin/add-workshop">+</a>
       </button>
     </div>
 

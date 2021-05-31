@@ -2,7 +2,8 @@
   <main class="p-profile">
     <div class="p-profile__container">
       <h1>Profile</h1>
-      <form @submit.prevent="updateAccount">
+      <NuxtLink to="admin/add-workshop">Add Workshop</NuxtLink>
+      <form @submit.prevent="checkEmail">
         <label
           >First name: <input v-model="userInfo.firstName" type="text" />
         </label>
@@ -27,6 +28,7 @@ export default {
   name: 'ProfilePage',
   data() {
     return {
+      oldEmail: '',
       userInfo: {
         firstName: '',
         lastName: '',
@@ -49,6 +51,8 @@ export default {
       },
     })
       .then((response) => {
+        this.oldEmail = response.data.data.email;
+        console.log(this.oldEmail);
         console.log(response);
         this.userInfo = response.data.data;
         this.userInfo.firstName = response.data.data.first_name;
@@ -64,7 +68,14 @@ export default {
       });
   },
   methods: {
-    updateAccount() {
+    checkEmail() {
+      if (this.userInfo.email === this.oldEmail) {
+        this.updateAccount();
+      } else {
+        this.updateAccountEmail();
+      }
+    },
+    updateAccountEmail() {
       this.$axios('users/me', {
         method: 'PATCH',
         headers: {
@@ -75,6 +86,27 @@ export default {
           first_name: this.userInfo.firstName,
           last_name: this.userInfo.lastName,
           email: this.userInfo.email,
+          password: this.userInfo.password,
+          location: this.userInfo.location,
+        },
+      })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    updateAccount() {
+      this.$axios('users/me', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + this.access_token,
+        },
+        data: {
+          first_name: this.userInfo.firstName,
+          last_name: this.userInfo.lastName,
           password: this.userInfo.password,
           location: this.userInfo.location,
         },
