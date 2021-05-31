@@ -139,9 +139,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  color: black;
-}
 .p-storefront {
   @extend .container;
 
