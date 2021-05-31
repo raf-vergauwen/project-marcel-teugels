@@ -136,8 +136,8 @@
 
   // #  TIER 9 : Text-Bigger
   @else if $tier == 'text-bigger' {
-    padding: $buffer--s 0;
-    color: var(--color-text--darker);
+    padding: $buffer--xs 0;
+    color:  var(--color-primary);
     font-family: $font-family--text-bigger;
     font-size: $font-size--text-bigger;
     font-stretch: $font-stretch--text-bigger;
@@ -152,7 +152,7 @@
     padding: $buffer--xs $buffer--s;
     border: $small-dimension--xxxs solid var(--color-secondary--lighter);
     background: var(--color-tertiary--lighter);
-    border-radius: $small-dimension--xs;
+    border-radius: $small-dimension--s;
     color: var(--color-primary);
     font-family: $font-family--component-smaller;
     font-size: $font-size--component-smaller;

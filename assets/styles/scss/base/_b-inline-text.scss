@@ -97,11 +97,51 @@ var {
 a {
   @include font(text-bigger);
 
-  padding: $buffer--xs $buffer--m;
+  position: relative;
+  display: inline-flex;
+  padding: 0 $buffer--s;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
+  transition: color 0.35s ease;
 
-  
+  &:hover {
+    color: var(--color-secondary);
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: $small-dimension--xxs;
+    content: '';
+    transition: width 0s ease, background 0.35s ease;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: $small-dimension--xxs;
+    background: var(--color-secondary);
+    content: '';
+    transition: width 0.35s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+    background: var(--color-secondary);
+    transition: width 0.35s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
 }
 
 // #  <---------------| <abbr> |--------------->

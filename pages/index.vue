@@ -10,7 +10,7 @@
           esse do nisi. Esse aliqua velit exercitation irure non eu dolore
           mollit pariatur ut sit.
         </p>
-        <a class="btn" href="/webshop/home-webshop">webshop</a>
+        <a class="home__webshop--link" href="/webshop/home-webshop">webshop</a>
       </div>
     </div>
     <div class="home__restoration">
@@ -22,7 +22,7 @@
           laborum tempor. Excepteur sit exercitation incididunt incididunt dolor
           adipisicing tempor deserunt.
         </p>
-        <a class="btn" href="/restoration/home-restoration">restoration</a>
+        <a class="home__webshop--link" href="/restoration/home-restoration">restoration</a>
       </div>
     </div>
   </section>

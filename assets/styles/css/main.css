@@ -137,150 +137,6 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< MAIN HEADER >>-------------------->>
 \* -------------------------------------------------------------------------- */
-nav,
-article,
-section,
-aside {
-  outline: 2px double #ff4500;
-}
-
-header,
-footer {
-  outline: 2px double #cd5c5c;
-}
-
-div {
-  outline: 2px dashed #f00;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  outline: 2px double #ff6347;
-}
-
-dl,
-dt,
-dd {
-  outline: calc(1px * 1.5) ridge #00bfff;
-}
-
-figure,
-figcaption {
-  outline: calc(1px * 1.5) ridge #1e90ff;
-}
-
-ol,
-ul,
-li {
-  outline: calc(1px * 1.5) ridge #4682b4;
-}
-
-address,
-blockquote,
-hr,
-p,
-pre {
-  outline: calc(1px * 1.5) ridge #00f;
-}
-
-b,
-code,
-kbd,
-mark,
-samp,
-span,
-strong,
-var {
-  outline: 1px dotted #0f0;
-}
-
-a,
-abbr,
-bdi,
-bdo,
-br,
-cite,
-data,
-dfn,
-q,
-time,
-wbr {
-  outline: 1px dotted #00ff7f;
-}
-
-area,
-audio,
-img,
-map,
-track,
-video {
-  outline: calc(1px * 1.25) ridge #ff0;
-}
-
-embed,
-iframe,
-object,
-param,
-picture,
-source {
-  outline: calc(1px * 1.25) ridge #f0e68c;
-}
-
-svg,
-math {
-  outline: calc(1px * 1.25) ridge #ffd700;
-}
-
-table,
-thead,
-tbody,
-tfoot,
-colgroup,
-tr {
-  outline: calc(1px * 1.5) solid #9932cc;
-}
-
-caption,
-col,
-th,
-td {
-  outline: calc(1px * 1.25) solid #6a5acd;
-}
-
-form,
-datalist,
-fieldset,
-optgroup,
-select {
-  outline: calc(1px * 1.5) solid #008080;
-}
-
-button,
-input,
-label,
-legend,
-meter,
-option,
-output,
-progress,
-textarea {
-  outline: calc(1px * 1.25) solid #40e0d0;
-}
-
-details,
-summary {
-  outline: calc(1px * 1.25) solid #ff1493;
-}
-
-dialog,
-menu {
-  outline: calc(1px * 1.25) solid #ff69b4;
-}
-
 /* ========================================================================== *\
 +  PARTIAL SCSS GROUP 2 - `vendors/`
 \* ========================================================================== */
@@ -365,6 +221,8 @@ body {
 nav {
   width: 100%;
   padding: 0.25rem;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 article {
@@ -390,19 +248,24 @@ aside {
 header {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   padding: 0.5rem;
+  margin: 0 auto;
 }
 
 footer {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   padding: 0.5rem;
 }
 
 main {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   padding: null;
+  margin: 0 auto;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -526,15 +389,15 @@ h6 + p::first-letter {
 dl {
   width: 100%;
   padding: null;
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 dt {
@@ -571,15 +434,15 @@ dd {
 figure {
   width: 100%;
   padding: null;
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 figcaption {
@@ -602,29 +465,29 @@ figcaption {
 ol {
   width: 100%;
   padding: null;
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 ul {
   width: 100%;
   padding: null;
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 li {
@@ -732,22 +595,22 @@ pre {
 // -  <<--------------------<< VISUAL >>-------------------->>
 \* -------------------------------------------------------------------------- */
 b {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 code {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--color-secondary--lighter);
   background: var(--color-tertiary--lighter);
-  border-radius: 4px;
+  border-radius: 8px;
   color: var(--color-primary);
   font-family: "Fira Mono", monospace;
   font-size: 1.125rem;
@@ -759,15 +622,15 @@ code {
 }
 
 em {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 i {
@@ -787,7 +650,7 @@ kbd {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--color-secondary--lighter);
   background: var(--color-tertiary--lighter);
-  border-radius: 4px;
+  border-radius: 8px;
   color: var(--color-primary);
   font-family: "Fira Mono", monospace;
   font-size: 1.125rem;
@@ -828,7 +691,7 @@ samp {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--color-secondary--lighter);
   background: var(--color-tertiary--lighter);
-  border-radius: 4px;
+  border-radius: 8px;
   color: var(--color-primary);
   font-family: "Fira Mono", monospace;
   font-size: 1.125rem;
@@ -852,15 +715,15 @@ small {
 }
 
 strong {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 sub {
@@ -906,7 +769,7 @@ var {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--color-secondary--lighter);
   background: var(--color-tertiary--lighter);
-  border-radius: 4px;
+  border-radius: 8px;
   color: var(--color-primary);
   font-family: "Fira Mono", monospace;
   font-size: 1.125rem;
@@ -921,30 +784,79 @@ var {
 // -  <<--------------------<< FUNCTIONAL >>-------------------->>
 \* -------------------------------------------------------------------------- */
 a {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
-  padding: 0.25rem 1rem;
+  line-height: 1.25;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 0.5rem;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+a::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: '';
+  -webkit-transition: width 0s ease, background 0.35s ease;
+  transition: width 0s ease, background 0.35s ease;
+}
+
+a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-secondary);
+  content: '';
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+a:hover::before {
+  width: 100%;
+  background: var(--color-secondary);
+  -webkit-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
 }
 
 abbr {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
   border-bottom: 1px dotted var(--color-tertiary);
 }
 
@@ -985,28 +897,28 @@ cite {
 }
 
 data {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
   font-variant: small-caps;
 }
 
 dfn {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 q {
@@ -1032,15 +944,15 @@ q::after {
 }
 
 time {
-  padding: 0.5rem 0;
-  color: var(--color-text--darker);
+  padding: 0.25rem 0;
+  color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-stretch: normal;
   font-style: normal;
-  font-variant: small-caps;
+  font-variant: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 wbr {
@@ -1133,7 +1045,7 @@ table {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -1152,7 +1064,7 @@ thead {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 tr {
@@ -1169,7 +1081,7 @@ tr {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 tbody {
@@ -1186,7 +1098,7 @@ tbody {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 tbody tr:nth-child(even) {
@@ -1218,7 +1130,7 @@ tfoot {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 colgroup {
@@ -1235,7 +1147,7 @@ colgroup {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1287,7 +1199,7 @@ form {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 datalist {
@@ -1304,7 +1216,7 @@ datalist {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 fieldset {
@@ -1321,7 +1233,7 @@ fieldset {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 optgroup {
@@ -1338,7 +1250,7 @@ optgroup {
   font-style: normal;
   font-variant: small-caps;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1835,5 +1747,149 @@ menu {
   --color-background-h: 240;
   --color-background-s: 100%;
   --color-background-l: 98.6%;
+}
+
+nav,
+article,
+section,
+aside {
+  outline: 2px double #ff4500;
+}
+
+header,
+footer {
+  outline: 2px double #cd5c5c;
+}
+
+div {
+  outline: 2px dashed #f00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  outline: 2px double #ff6347;
+}
+
+dl,
+dt,
+dd {
+  outline: calc(1px * 1.5) ridge #00bfff;
+}
+
+figure,
+figcaption {
+  outline: calc(1px * 1.5) ridge #1e90ff;
+}
+
+ol,
+ul,
+li {
+  outline: calc(1px * 1.5) ridge #4682b4;
+}
+
+address,
+blockquote,
+hr,
+p,
+pre {
+  outline: calc(1px * 1.5) ridge #00f;
+}
+
+b,
+code,
+kbd,
+mark,
+samp,
+span,
+strong,
+var {
+  outline: 1px dotted #0f0;
+}
+
+a,
+abbr,
+bdi,
+bdo,
+br,
+cite,
+data,
+dfn,
+q,
+time,
+wbr {
+  outline: 1px dotted #00ff7f;
+}
+
+area,
+audio,
+img,
+map,
+track,
+video {
+  outline: calc(1px * 1.25) ridge #ff0;
+}
+
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+  outline: calc(1px * 1.25) ridge #f0e68c;
+}
+
+svg,
+math {
+  outline: calc(1px * 1.25) ridge #ffd700;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+colgroup,
+tr {
+  outline: calc(1px * 1.5) solid #9932cc;
+}
+
+caption,
+col,
+th,
+td {
+  outline: calc(1px * 1.25) solid #6a5acd;
+}
+
+form,
+datalist,
+fieldset,
+optgroup,
+select {
+  outline: calc(1px * 1.5) solid #008080;
+}
+
+button,
+input,
+label,
+legend,
+meter,
+option,
+output,
+progress,
+textarea {
+  outline: calc(1px * 1.25) solid #40e0d0;
+}
+
+details,
+summary {
+  outline: calc(1px * 1.25) solid #ff1493;
+}
+
+dialog,
+menu {
+  outline: calc(1px * 1.25) solid #ff69b4;
 }
 /*# sourceMappingURL=main.css.map */

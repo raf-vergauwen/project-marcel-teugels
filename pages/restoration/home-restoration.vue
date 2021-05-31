@@ -176,11 +176,6 @@ export default {
 </script>
 
 <style lang="scss">
-a {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
 .hero {
   width: 100vw;
   height: 90vh;

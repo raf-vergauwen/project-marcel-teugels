@@ -87,8 +87,4 @@ export default {
   background-color: $dark-bg;
   border-radius: 50px;
 }
-
-a {
-  font-size: 20px;
-}
 </style>

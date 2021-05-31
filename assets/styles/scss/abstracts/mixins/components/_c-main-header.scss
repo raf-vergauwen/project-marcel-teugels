@@ -5,10 +5,13 @@
 // -  <---------------| Main-Header |--------------->
 @mixin main-header {
   .c-header {
-    background-color: $dark-bg;
+    background-color: transparent;
 
     &__container {
       @include block-container;
+
+      overflow: hidden;
+      border-radius: $small-dimension--m;
     }
   }
 
@@ -17,19 +20,17 @@
     justify-content: flex-end;
 
     &__item {
-      // padding: $s-site-padding $s-site-padding;
-      color: $light-bg;
-      text-decoration: none;
+      color: var(--color-background);
     }
 
     &__item--active {
-      background-color: $light-bg;
-      color: $dark-bg;
+      background-color: var(--color-tertiary);
+      color: var(--color-text);
     }
 
     &__item--active:hover {
-      background-color: $light-bg;
-      color: $dark-bg;
+      background-color: var(--color-tertiary);
+      color: var(--color-primary);
     }
   }
 }

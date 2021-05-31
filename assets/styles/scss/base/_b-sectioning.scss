@@ -9,6 +9,9 @@
 // #  <---------------| <nav> |--------------->
 nav {
   @include box-dimensions(xs);
+
+  overflow: hidden;
+  border-radius: $small-dimension--m;
 }
 
 // #  <---------------| <article> |--------------->
@@ -34,17 +37,21 @@ aside {
 
 // #  <---------------| <header> |--------------->
 header {
-  @include box-dimensions(s, $max-width: $max-width--root);
+  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
+
+  margin: $center-me;
 }
 
 // #  <---------------| <footer> |--------------->
 footer {
-  @include box-dimensions(s, $max-width: $max-width--root);
+  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
 }
 
 // #  <---------------| <main> |--------------->
 main {
-  @include box-dimensions($max-width: $max-width--root);
+  @include box-dimensions($max-width: $max-width--root, $margin: $center-me);
+
+  margin: $center-me;
 }
 
 /* -------------------------------------------------------------------------- *\

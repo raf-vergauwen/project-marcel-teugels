@@ -169,8 +169,4 @@ export default {
 .p-product__title {
   color: $dark-bg;
 }
-
-a {
-  font-size: 20px;
-}
 </style>
