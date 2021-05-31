@@ -99,12 +99,17 @@ a {
 
   position: relative;
   display: inline-flex;
+  align-self: center;
   padding: 0 $buffer--s;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  transition: color 0.35s ease;
+  transition: $transition-link--color;
 
   &:hover {
+    color: var(--color-secondary);
+  }
+
+  &:hover path {
     color: var(--color-secondary);
   }
 

@@ -33,4 +33,7 @@
   );
   @include define-color-hsl(--color-text, 0, 3.4%, 5.7%);
   @include define-color-hsl(--color-background, 0, 11.1%, 96.5%);
+  @include define-color-hsl(--color-primary, 207.4, 47.9%, 14.3%);
+  @include define-color-hsl(--color-secondary, 213.9, 41.1%, 78%);
+  @include define-color-hsl(--color-tertiary, 37, 39.9%, 64.1%);
 }

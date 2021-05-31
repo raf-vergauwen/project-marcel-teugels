@@ -39,12 +39,14 @@
 
   // #  Regular Fontawesome Icons
   @else if $type == 'fas' {
+    height: $width;
     margin-right: $buffer--s;
     font-size: $width;
   }
 
   // #  Brand Fontawesome Icons
   @else if $type == 'fab' {
+    height: $width;
     font-size: $width;
   }
 

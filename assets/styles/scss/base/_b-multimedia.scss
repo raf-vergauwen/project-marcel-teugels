@@ -18,6 +18,7 @@ img {
   color: var(--color-text);
   object-fit: cover;
   object-position: center center;
+  transition: $transition-link--color;
 }
 
 // #  <---------------| <map> |--------------->
@@ -53,10 +54,15 @@ video {
 svg {
   @include box-dimensions;
 
-  color: var(--color-text);
-  fill: var(--color-text);
+  color: var(--color-primary);
+  fill: var(--color-primary);
   object-fit: cover;
   object-position: center center;
+  transition: $transition-link--color;
+
+  path {
+    transition: $transition-link--color;
+  }
 }
 
 // #  <---------------| <math> |--------------->

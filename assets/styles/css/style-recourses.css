@@ -75,15 +75,34 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< ICON >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.fas {
-  width: 1.25rem;
+.fas,
+[data-prefix='fas'] {
+  width: 1rem;
+  height: 1rem;
   margin-right: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.fab {
+.fab,
+[data-prefix='fab'] {
   width: 2.44141rem;
+  height: 2.44141rem;
   font-size: 2.44141rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.fab:hover,
+[data-prefix='fab']:hover {
+  color: var(--color-secondary);
 }
 
 .fa-heart:hover {
@@ -92,7 +111,7 @@
   color: #f00;
 }
 
-.fa-facebook-f:hover {
+.fa-facebook:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1877f2;
@@ -110,7 +129,7 @@
   color: #e4405f;
 }
 
-.fa-pinterest-p:hover {
+.fa-pinterest:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #bd081c;

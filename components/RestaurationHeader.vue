@@ -11,6 +11,10 @@
           }"
           :to="navItem.path"
         >
+          <fa
+            :class="{ 'c-header-nav__item--icon': true }"
+            :icon="['fas', navItem.icon]"
+          />
           {{ navItem.label }}
         </nuxt-link>
       </nav>
@@ -24,16 +28,34 @@ export default {
   data() {
     return {
       navItems: [
-        { path: '/', label: 'home' },
-
-        { path: '/restoration/home-restoration', label: 'overview' },
-        { path: '/restoration/methodology', label: 'methodology' },
-        { path: '/restoration/workshops', label: 'workshops' },
-        { path: '/restoration/contact', label: 'contact' },
-
-        { path: '/accounts/sign-up', label: 'sign up' },
-        { path: '/accounts/login', label: 'login' },
-        { path: '/accounts/profile', label: 'profile' },
+        {
+          path: '/',
+          label: 'home',
+          icon: 'home',
+        },
+        {
+          path: '/restoration/home-restoration',
+          label: 'overview',
+          icon: 'search',
+        },
+        {
+          path: '/restoration/methodology',
+          label: 'methodology',
+          icon: 'lightbulb',
+        },
+        {
+          path: '/restoration/workshops',
+          label: 'workshops',
+          icon: 'users',
+        },
+        {
+          path: '/restoration/contact',
+          label: 'contact',
+          icon: 'address-card',
+        },
+        { path: '/accounts/sign-up', label: 'sign up', icon: 'user-plus' },
+        { path: '/accounts/login', label: 'login', icon: 'sign-in-alt' },
+        { path: '/accounts/profile', label: 'profile', icon: 'user-circle' },
       ],
     };
   },

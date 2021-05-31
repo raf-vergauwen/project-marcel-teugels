@@ -59,6 +59,7 @@ export default {
   },
 
   fontawesome: {
+    component: 'fa',
     icons: {
       solid: [
         'faGlobe',
@@ -74,12 +75,19 @@ export default {
         'faEnvelope',
         'faHouseDamage',
         'faStoreAlt',
+        'faUserCircle',
+        'faSignInAlt',
+        'faUserPlus',
+        'faAddressCard',
+        'faUsers',
+        'faLightbulb',
+        'faSearch',
       ],
       brands: [
-        'faFacebookF',
+        'faFacebook',
         'faTwitter',
         'faInstagram',
-        'faPinterestP',
+        'faPinterest',
         'faYoutube',
       ],
     },

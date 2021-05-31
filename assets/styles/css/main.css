@@ -78,15 +78,34 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< ICON >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.fas {
-  width: 1.25rem;
+.fas,
+[data-prefix='fas'] {
+  width: 1rem;
+  height: 1rem;
   margin-right: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.fab {
+.fab,
+[data-prefix='fab'] {
   width: 2.44141rem;
+  height: 2.44141rem;
   font-size: 2.44141rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.fab:hover,
+[data-prefix='fab']:hover {
+  color: var(--color-secondary);
 }
 
 .fa-heart:hover {
@@ -95,7 +114,7 @@
   color: #f00;
 }
 
-.fa-facebook-f:hover {
+.fa-facebook:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1877f2;
@@ -113,7 +132,7 @@
   color: #e4405f;
 }
 
-.fa-pinterest-p:hover {
+.fa-pinterest:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #bd081c;
@@ -220,14 +239,14 @@ body {
 \* -------------------------------------------------------------------------- */
 nav {
   width: 100%;
-  padding: 0.25rem;
+  padding: 0.5rem;
   overflow: hidden;
   border-radius: 16px;
 }
 
 article {
   width: 100%;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 section {
@@ -239,7 +258,7 @@ section {
 
 aside {
   width: 100%;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -250,7 +269,15 @@ header {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0.5rem;
+  position: fixed;
   margin: 0 auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  will-change: transform;
 }
 
 footer {
@@ -797,6 +824,8 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0 0.5rem;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
@@ -805,6 +834,10 @@ a {
 }
 
 a:hover {
+  color: var(--color-secondary);
+}
+
+a:hover path {
   color: var(--color-secondary);
 }
 
@@ -997,6 +1030,8 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
 }
 
 video {
@@ -1013,12 +1048,19 @@ video {
 svg {
   width: 100%;
   padding: null;
-  color: var(--color-text);
-  fill: var(--color-text);
+  color: var(--color-primary);
+  fill: var(--color-primary);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+}
+
+svg path {
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
 }
 
 math {
@@ -1751,6 +1793,24 @@ menu {
   --color-background-h: 240;
   --color-background-s: 100%;
   --color-background-l: 98.6%;
+  /* #  ---------------------------------------- */
+  /* #  --color-primary hsl */
+  /* #  ---------------------------------------- */
+  --color-primary-h: 206.6;
+  --color-primary-s: 95.2%;
+  --color-primary-l: 16.3%;
+  /* #  ---------------------------------------- */
+  /* #  --color-secondary hsl */
+  /* #  ---------------------------------------- */
+  --color-secondary-h: 215;
+  --color-secondary-s: 45.1%;
+  --color-secondary-l: 50%;
+  /* #  ---------------------------------------- */
+  /* #  --color-tertiary hsl */
+  /* #  ---------------------------------------- */
+  --color-tertiary-h: 35;
+  --color-tertiary-s: 44.7%;
+  --color-tertiary-l: 49.6%;
 }
 
 nav,

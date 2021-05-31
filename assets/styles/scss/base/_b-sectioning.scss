@@ -8,7 +8,7 @@
 
 // #  <---------------| <nav> |--------------->
 nav {
-  @include box-dimensions(xs);
+  @include box-dimensions(s);
 
   overflow: hidden;
   border-radius: $small-dimension--m;
@@ -16,7 +16,7 @@ nav {
 
 // #  <---------------| <article> |--------------->
 article {
-  @include box-dimensions(xs);
+  @include box-dimensions(s);
 }
 
 // #  <---------------| <section> |--------------->
@@ -28,7 +28,7 @@ section {
 
 // #  <---------------| <aside> |--------------->
 aside {
-  @include box-dimensions(xs);
+  @include box-dimensions(s);
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -39,7 +39,12 @@ aside {
 header {
   @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
 
+  position: fixed;
   margin: $center-me;
+  transform: translateY(0);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s;
+  will-change: transform;
 }
 
 // #  <---------------| <footer> |--------------->

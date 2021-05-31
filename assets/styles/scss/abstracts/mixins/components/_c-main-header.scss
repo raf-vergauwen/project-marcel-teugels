@@ -8,18 +8,33 @@
     background-color: transparent;
 
     &__container {
-      @include block-container;
-
       overflow: hidden;
       border-radius: $small-dimension--s;
+      @include breakpoint(xxs) {
+        @include block-container;
+      }
+
+      @include breakpoint(s) {
+        @include flex-container(nowrap, column, space-evenly, stretch);
+      }
     }
   }
 
   .c-header-nav {
-    display: flex;
-    justify-content: flex-end;
+    background-color: var(--color-primary);
+
+    @include breakpoint(s) {
+      @include flex-container(nowrap, row, space-evenly, stretch);
+
+      overflow: hidden;
+      border-radius: $small-dimension--m;
+    }
 
     &__item {
+      color: var(--color-background);
+    }
+
+    &__item--icon {
       color: var(--color-background);
     }
 
@@ -28,6 +43,14 @@
       background-color: var(--color-tertiary);
       border-radius: $small-dimension--s;
       color: var(--color-primary);
+    }
+
+    &__item--active path {
+      color: var(--color-primary);
+    }
+
+    &__item--active:hover path {
+      color: var(--color-text);
     }
 
     &__item--active::after {

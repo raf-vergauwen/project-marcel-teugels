@@ -155,6 +155,13 @@
           <p>blog</p>
           <p>webshop</p>
           <p>contact</p>
+          <fa class="link-icon" icon="globe" />
+          <fa class="link-icon" icon="home" />
+          <fa class="link-icon" icon="burn" />
+          <fa class="link-icon" icon="sign-in-alt" />
+          <fa :class="{ 'link-icon': true }" :icon="['fab', 'facebook']" />
+          <fa :class="{ 'link-icon': true }" :icon="['fab', 'youtube']" />
+          <p>contact</p>
         </div>
         <div class="social">
           <p>social</p>
@@ -320,7 +327,7 @@ footer {
   width: 100vw;
   justify-content: space-between;
   padding: 1em 0;
-  background-color: #0f0e0e;
+  // background-color: #0f0e0e;
   color: #f7f5f5;
 }
 

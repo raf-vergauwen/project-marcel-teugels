@@ -3,12 +3,24 @@
 \* -------------------------------------------------------------------------- */
 
 // -  <<----------<< General >>---------->>
-.fas {
-  @include box-dimensions(fas, $font-size--h6);
+.fas,
+[data-prefix='fas'] {
+  @include box-dimensions(fas, $font-size--text);
+
+  display: inline-flex;
+  align-self: center;
 }
 
-.fab {
+.fab,
+[data-prefix='fab'] {
   @include box-dimensions(fab, $font-size--h3);
+
+  display: inline-flex;
+  align-self: center;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
 }
 
 // -  <<----------<< Specific >>---------->>
@@ -20,7 +32,7 @@
   }
 }
 
-.fa-facebook-f {
+.fa-facebook {
   &:hover {
     @include box-transition;
 
@@ -44,7 +56,7 @@
   }
 }
 
-.fa-pinterest-p {
+.fa-pinterest {
   &:hover {
     @include box-transition;
 
