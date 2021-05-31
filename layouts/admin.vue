@@ -14,6 +14,7 @@ import AdminHeader from '~/components/AdminHeader';
 export default {
   name: 'AdminLayout',
   components: { AdminHeader, Notify },
+  middleware: 'admin-auth',
 };
 </script>
 

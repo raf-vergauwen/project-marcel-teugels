@@ -14,6 +14,7 @@ import RestaurationHeader from '~/components/RestaurationHeader';
 export default {
   name: 'RestauratieLayout',
   components: { RestaurationHeader, Notify },
+  middleware: 'session',
 };
 </script>
 
