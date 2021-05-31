@@ -10,6 +10,7 @@ import Notify from '~/components/Notify';
 export default {
   name: 'HomeLayout',
   components: { Notify },
+  middleware: 'session',
 };
 </script>
 

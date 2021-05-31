@@ -16,6 +16,7 @@ import Footer from '~/components/Footer.vue';
 export default {
   name: 'DefaultLayout',
   components: { Notify, StoreHeader, Footer },
+  middleware: 'session',
 };
 </script>
 

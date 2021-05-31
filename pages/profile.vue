@@ -2,6 +2,7 @@
   <main class="p-profile">
     <div class="p-profile__container">
       <h1>Profile</h1>
+      <NuxtLink to="admin/add-workshop">Add Workshop</NuxtLink>
       <form @submit.prevent="checkEmail">
         <label
           >First name: <input v-model="userInfo.firstName" type="text" />
@@ -25,6 +26,7 @@
 <script>
 export default {
   name: 'ProfilePage',
+  middleware: 'auth',
   data() {
     return {
       oldEmail: '',

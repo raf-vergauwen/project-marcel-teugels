@@ -28,3 +28,71 @@ $xs-site-padding: 10px;
 
 $site-width: 1300px;
 $site-width-with-padding: $site-width + $m-site-padding + $m-site-padding;
+
+// Vue Formulate Variables
+
+// Snow theme colors
+// -----------------------------------------------------------------------------
+
+$formulate-font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+$formulate-gray: #efefef;
+$formulate-gray-d: #cecece;
+$formulate-gray-dd: #a8a8a8;
+$formulate-gray-ddd: #6d6d6d;
+$formulate-gray-dddd: #2e2e2e;
+
+$formulate-dark: #000000;
+
+$formulate-blue-l: #f3f4f4;
+
+$formulate-green: goldenrod;
+$formulate-green-l: #64c89b;
+
+$formulate-error: #960505;
+$formulate-error-l: #dc2c2c;
+
+$formulate-yellow-d: #6b5900;
+$formulate-yellow: #e6c000;
+$formulate-yellow-l: #fff8d2;
+
+$formulate-white: #ffffff;
+
+// Mixins
+// -----------------------------------------------------------------------------
+@mixin baseinput {
+  appearance: none;
+  border-radius: 0;
+  border: 1px solid $formulate-gray-d;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 0.9em;
+  font-family: $formulate-font-stack;
+  padding: 0.75em;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+
+  &::placeholder {
+    color: $formulate-gray-dd;
+    line-height: normal;
+  }
+
+  &:focus {
+    outline: 0;
+    border: 1px solid $formulate-green;
+  }
+}
+
+@mixin down-arrow {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0.3em solid transparent;
+  border-top-color: $formulate-gray-d;
+  border-bottom-width: 0;
+}

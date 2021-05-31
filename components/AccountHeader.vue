@@ -3,16 +3,44 @@
     <div class="c-a-header__container">
       <nav class="c-a-header__nav">
         <nuxt-link
-          v-for="navItem in navItems"
-          :key="navItem.path"
+          v-if="!isLoggedIn"
           :class="{
             'c-a-header__nav__items': true,
-            'c-a-header__nav__items--active': navItem.path === $route.path,
+            'c-a-header__nav__items--active': '/login' === $route.path,
           }"
-          :to="navItem.path"
+          to="/login"
         >
-          {{ navItem.label }}
-          {{ navItem.path === '/shopping-cart' ? '(' + cijfer + ')' : '' }}
+          login
+        </nuxt-link>
+        <a
+          v-if="isLoggedIn"
+          :class="{
+            'c-a-header__nav__items': true,
+          }"
+          @click="logout"
+        >
+          logout
+        </a>
+        <nuxt-link
+          v-if="isLoggedIn"
+          :class="{
+            'c-a-header__nav__items': true,
+            'c-a-header__nav__items--active': '/profile' === $route.path,
+          }"
+          to="/profile"
+        >
+          profile
+        </nuxt-link>
+        <nuxt-link
+          v-if="!isLoggedIn"
+          :class="{
+            'c-a-header__nav__items': true,
+            'c-a-header__nav__items--active':
+              '/account-creation' === $route.path,
+          }"
+          to="/account-creation"
+        >
+          register
         </nuxt-link>
       </nav>
     </div>
@@ -23,14 +51,18 @@
 export default {
   name: 'AccountHeader',
   data() {
-    return {
-      cijfer: 0,
-      navItems: [
-        { path: '/login', label: 'login' },
-        { path: '/profile', label: 'profiel' },
-        { path: '/account-creation', label: 'sign up' },
-      ],
-    };
+    return {};
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.getters['auth/isLoggedIn'];
+    },
+  },
+  methods: {
+    logout() {
+      this.$store.dispatch('auth/logout');
+      this.$router.push('/');
+    },
   },
 };
 </script>

@@ -16,6 +16,7 @@ import Footer from '~/components/Footer.vue';
 export default {
   name: 'AdminLayout',
   components: { AdminHeader, Notify, Footer },
+  middleware: 'admin-auth',
 };
 </script>
 

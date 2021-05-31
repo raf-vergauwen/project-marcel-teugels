@@ -16,6 +16,7 @@ import Footer from '~/components/Footer.vue';
 export default {
   name: 'RestauratieLayout',
   components: { RestaurationHeader, Notify, Footer },
+  middleware: 'session',
 };
 </script>
 
