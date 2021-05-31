@@ -1,41 +1,32 @@
 <template>
   <main class="p-product-page">
     <section id="app">
-      <template>
+      <FormulateForm v-model="formData" @submit="postWorkshop">
         <FormulateInput
-          v-model="title"
-          name="name"
+          name="title"
           type="text"
           label="workshop naam"
+          validation-name="titel"
+          validation="required"
         />
-        <FormulateInput v-model="date" name="date" type="date" label="datum" />
+        <FormulateInput name="date" type="date" label="datum" />
+        <FormulateInput name="organizer" type="text" label="naam organisator" />
+        <FormulateInput name="subject" type="text" label="onderwerp" />
         <FormulateInput
-          v-model="organizer"
-          name="organizer"
-          type="text"
-          label="naam organisator"
-        />
-        <FormulateInput
-          v-model="subject"
-          name="subject"
-          type="text"
-          label="onderwerp"
-        />
-        <FormulateInput
-          v-model="textContent"
-          name="textContent"
+          name="text_content"
           type="textarea"
           label="uitleg over workshop"
         />
         <FormulateInput
-          v-model="newImage"
-          type="file"
+          type="image"
           name="images"
           label="Please select an image"
           validation="mime:image/jpeg,image/png"
+          :uploader="uploader"
+          multiple
         />
-        <FormulateInput type="submit" label="Sign up" @click="postWorkshop" />
-      </template>
+        <FormulateInput type="submit" label="Sign up" />
+      </FormulateForm>
     </section>
   </main>
 </template>
@@ -46,11 +37,14 @@ export default {
   layout: 'admin',
   data() {
     return {
-      title: '',
-      date: '',
-      organizer: '',
-      subject: '',
-      textContent: '',
+      formData: {
+        title: '',
+        date: '',
+        organizer: '',
+        subject: '',
+        text_content: '',
+        images: [],
+      },
       newImage: '',
       images: [
         {
@@ -65,53 +59,42 @@ export default {
     },
   },
   methods: {
-    postWorkshop() {
-      const body = {
-        title: this.title,
-        date: this.date,
-        organizer: this.organizer,
-        subject: this.subject,
-        text_content: this.textContent,
-        images: this.images,
-      };
-
-      fetch('http://157.230.126.154/items/workshops/', {
+    postWorkshop(data) {
+      return this.$axios('/items/workshops/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + this.access_token,
         },
-        body: JSON.stringify(body),
+        data,
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not post new workshop');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+          console.log(response);
+          return response.data.data;
         })
         .catch((err) => {
           console.error(err);
         });
     },
+    uploader(file, progress, error) {
+      const formData = new FormData();
+      formData.append('file', file);
 
-    postImage() {
-      this.$axios('/assets/' + this.newImage, {
+      return this.$axios('/files', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        data: {},
+        data: formData,
       })
-        .then(function (response) {
-          console.log(response.data);
+        .then((response) => {
+          console.log(response);
+
+          progress(100);
+
+          return {
+            directus_files_id: response.data.data.id,
+          };
         })
-        .then((data) => {
-          console.log(data);
-        })
-        .catch(function (error) {
-          console.error(error);
+        .catch((e) => {
+          console.error(e);
+          error('Kan afbeelding niet uploaden, probeer het opnieuw');
         });
     },
   },

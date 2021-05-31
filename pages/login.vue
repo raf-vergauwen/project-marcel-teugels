@@ -57,6 +57,12 @@ export default {
         .then((body) => {
           console.log(body);
           sessionStorage.setItem('access_token', body.data.access_token);
+
+          this.$axios.setHeader(
+            'Authorization',
+            'Bearer ' + body.data.access_token,
+          );
+
           this.$router.push('/profile');
         })
         .catch((err) => {
