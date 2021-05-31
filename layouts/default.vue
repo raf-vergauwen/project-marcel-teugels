@@ -14,6 +14,7 @@ import StoreHeader from '~/components/StoreHeader';
 export default {
   name: 'DefaultLayout',
   components: { Notify, StoreHeader },
+  middleware: 'session',
 };
 </script>
 
