@@ -137,7 +137,7 @@
   // #  TIER 9 : Text-Bigger
   @else if $tier == 'text-bigger' {
     padding: $buffer--xs 0;
-    color:  var(--color-primary);
+    color: var(--color-primary);
     font-family: $font-family--text-bigger;
     font-size: $font-size--text-bigger;
     font-stretch: $font-stretch--text-bigger;
@@ -186,11 +186,12 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 $small-dimension--xxs var(--color-tertiary--darkest);
+      box-shadow: 0 0 0 $small-dimension--xxs var(--color-secondary);
+      outline: 0;
     }
 
     &:hover {
-      background: var(--color-tertiary--lighter);
+      color: var(--color-secondary);
     }
   }
 

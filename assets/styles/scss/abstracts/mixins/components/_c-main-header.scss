@@ -11,7 +11,7 @@
       @include block-container;
 
       overflow: hidden;
-      border-radius: $small-dimension--m;
+      border-radius: $small-dimension--s;
     }
   }
 
@@ -24,13 +24,23 @@
     }
 
     &__item--active {
+      overflow: hidden;
       background-color: var(--color-tertiary);
-      color: var(--color-text);
+      border-radius: $small-dimension--s;
+      color: var(--color-primary);
+    }
+
+    &__item--active::after {
+      background: var(--color-text);
     }
 
     &__item--active:hover {
       background-color: var(--color-tertiary);
-      color: var(--color-primary);
+      color: var(--color-text);
+    }
+
+    &__item--active:hover::before {
+      background: var(--color-text);
     }
   }
 }
