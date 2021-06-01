@@ -146,24 +146,6 @@
       </div>
       <button class="contact__btn">contact</button>
     </section>
-    <footer>
-      <div class="footer__container">
-        <div class="navigatie">
-          <p>navigatie</p>
-          <p>home</p>
-          <p>blog</p>
-          <p>webshop</p>
-          <p>contact</p>
-        </div>
-        <div class="social">
-          <p>social</p>
-          <p>instagram</p>
-          <p>facebook</p>
-          <p>youtube</p>
-        </div>
-      </div>
-      <p>Marcel Teugels</p>
-    </footer>
   </main>
 </template>
 
@@ -321,22 +303,5 @@ a {
   color: #f7f5f5;
   border-radius: 30px;
   border: 0px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  background-color: #0f0e0e;
-  color: #f7f5f5;
-  padding: 1em 0em;
-}
-
-.footer__container {
-  display: flex;
-}
-
-.footer p {
-  text-align: end;
 }
 </style>
