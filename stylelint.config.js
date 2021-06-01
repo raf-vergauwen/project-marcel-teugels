@@ -8,5 +8,11 @@ module.exports = {
   rules: {
     'order/properties-alphabetical-order': null,
     'selector-class-pattern': null,
+    'max-nesting-depth': [
+      2,
+      {
+        ignore: ['blockless-at-rules', 'pseudo-classes'],
+      },
+    ],
   },
 };

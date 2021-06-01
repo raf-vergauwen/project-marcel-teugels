@@ -90,11 +90,27 @@
   }
 
   &__webshop--link {
+    @include box-shadow(1);
+
     overflow: hidden;
     padding-right: $buffer--l;
     padding-left: $buffer--l;
     background-color: var(--color-tertiary);
     border-radius: $small-dimension--m;
+
+    &::after {
+      background: var(--color-text);
+    }
+
+    &:hover {
+      @include box-shadow(3);
+
+      color: var(--color-text);
+    }
+
+    &:hover::before {
+      background: var(--color-text);
+    }
   }
 
   &__restoration {
@@ -102,13 +118,27 @@
   }
 
   &__restoration--box {
+    border: $buffer--xxs solid var(--color-tertiary--darkest);
     background-color: var(--color-secondary--lightest);
+
+    &::before,
+    &::after {
+      border: $buffer--xxs solid var(--color-tertiary--darkest);
+      color: var(--color-tertiary--darkest);
+    }
   }
 
   &__restoration--container {
     @include flex-container($justify: space-evenly);
 
     padding: $buffer--s;
+    border: $buffer--xxs solid var(--color-tertiary--darkest);
+
+    &::before,
+    &::after {
+      border: $buffer--xxs solid var(--color-tertiary--darkest);
+      color: var(--color-tertiary--darkest);
+    }
   }
 
   &__restoration--title {
@@ -122,11 +152,27 @@
   }
 
   &__restoration--link {
+    @include box-shadow(1);
+
     overflow: hidden;
     padding-right: $buffer--l;
     padding-left: $buffer--l;
     background-color: var(--color-tertiary);
     border-radius: $small-dimension--m;
+
+    &::after {
+      background: var(--color-text);
+    }
+
+    &:hover {
+      @include box-shadow(3);
+
+      color: var(--color-text);
+    }
+
+    &:hover::before {
+      background: var(--color-text);
+    }
   }
 }
 </style>

@@ -4,6 +4,7 @@
 
 .box {
   @include box-dimensions($width: 100%, $height: 100%);
+  @include box-shadow(2);
 
   position: relative;
   top: 50%;
@@ -30,6 +31,12 @@
   }
   &::after {
     right: $buffer--xs;
+  }
+
+  &:hover {
+    @include box-shadow(5);
+
+    transform: translate3d(-50%, -50.5%, 0);
   }
 }
 
