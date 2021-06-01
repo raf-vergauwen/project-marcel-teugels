@@ -100,7 +100,7 @@ a {
   position: relative;
   display: inline-flex;
   align-self: center;
-  padding: 0 $buffer--s;
+  padding: $buffer--xxs $buffer--s;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   transition: $transition-link--color;

@@ -1,6 +1,9 @@
 <template>
   <header class="c-header">
-    <div class="c-header__container">
+    <div
+      class="c-header__container"
+      :class="{ 'c-header__container--hidden': !showNavbar }"
+    >
       <nav class="c-header-nav">
         <nuxt-link
           v-for="navItem in navItems"
@@ -57,7 +60,30 @@ export default {
         { path: '/accounts/login', label: 'login', icon: 'sign-in-alt' },
         { path: '/accounts/profile', label: 'profile', icon: 'user-circle' },
       ],
+      showNavbar: true,
+      lastScrollPosition: 0,
     };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll);
+  },
+  methods: {
+    onScroll() {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 0) {
+        return;
+      }
+
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 64) {
+        return;
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      this.lastScrollPosition = currentScrollPosition;
+    },
   },
 };
 </script>

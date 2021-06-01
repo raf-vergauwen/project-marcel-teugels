@@ -269,15 +269,7 @@ header {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0.5rem;
-  position: fixed;
   margin: 0 auto;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  will-change: transform;
 }
 
 footer {
@@ -826,7 +818,7 @@ a {
   display: inline-flex;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 0 0.5rem;
+  padding: 0.125rem 0.5rem;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   -webkit-transition: color 0.35s ease;

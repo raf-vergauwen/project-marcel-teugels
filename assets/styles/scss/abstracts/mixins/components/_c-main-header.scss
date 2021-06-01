@@ -5,11 +5,20 @@
 // -  <---------------| Main-Header |--------------->
 @mixin main-header {
   .c-header {
+    padding: 0;
     background-color: transparent;
 
     &__container {
-      overflow: hidden;
-      border-radius: $small-dimension--s;
+      @include box-dimensions(
+        s,
+        $max-width: $max-width--root,
+        $margin: $center-me
+      );
+
+      position: fixed;
+      height: 7.5vh;
+      transform: translate3d(0, 0, 0);
+      transition: 0.35s all ease;
       @include breakpoint(xxs) {
         @include block-container;
       }
@@ -17,6 +26,10 @@
       @include breakpoint(s) {
         @include flex-container(nowrap, column, space-evenly, stretch);
       }
+    }
+
+    &__container--hidden {
+      transform: translate3d(0, -100%, 0);
     }
   }
 
@@ -27,7 +40,7 @@
       @include flex-container(nowrap, row, space-evenly, stretch);
 
       overflow: hidden;
-      border-radius: $small-dimension--m;
+      border-radius: $small-dimension--l;
     }
 
     &__item {
@@ -41,7 +54,7 @@
     &__item--active {
       overflow: hidden;
       background-color: var(--color-tertiary);
-      border-radius: $small-dimension--s;
+      border-radius: $small-dimension--m;
       color: var(--color-primary);
     }
 
