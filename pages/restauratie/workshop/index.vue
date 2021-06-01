@@ -1,11 +1,8 @@
 <template>
   <main>
-    <div
-      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-      class="title-btn__container"
-    >
+    <div v-if="isAdmin === true" class="title-btn__container">
       <h1 class="p-workshop__title">Workshops</h1>
-      <button class="p-workshop__btn">
+      <button class="p-workshop__btn admin-btn">
         <a href="/admin/add-workshop">+</a>
       </button>
     </div>
@@ -42,6 +39,9 @@ export default {
   computed: {
     user_role() {
       return sessionStorage.getItem('user_role');
+    },
+    isAdmin() {
+      return this.$store.getters['auth/isAdmin'];
     },
   },
   mounted() {
@@ -83,14 +83,6 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-}
-
-.p-workshop__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: $dark-bg;
-  border: 0px;
 }
 
 a {
