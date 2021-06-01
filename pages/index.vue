@@ -10,8 +10,8 @@
             aliqua est ad officia consequat.
           </p>
           <a class="home__webshop--link" href="/webshop/home-webshop"
-            >webshop</a
-          >
+            >webshop
+          </a>
         </div>
       </div>
     </div>
@@ -27,8 +27,8 @@
           <a
             class="home__restoration--link"
             href="/restoration/home-restoration"
-            >restoration</a
-          >
+            >restoration
+          </a>
         </div>
       </div>
     </div>

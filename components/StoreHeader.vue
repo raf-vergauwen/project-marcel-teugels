@@ -1,6 +1,9 @@
 <template>
   <header class="c-header">
-    <div class="c-header__container">
+    <div
+      class="c-header__container"
+      :class="{ 'c-header__container--hidden': !showNavbar }"
+    >
       <nav class="c-header-nav">
         <nuxt-link
           v-for="navItem in navItems"
@@ -11,6 +14,11 @@
           }"
           :to="navItem.path"
         >
+          <fa
+            :class="{ 'c-header-nav__item--icon': true }"
+            :icon="['fas', navItem.icon]"
+            style="width: 1rem"
+          />
           {{ navItem.label }}
         </nuxt-link>
       </nav>
@@ -20,22 +28,63 @@
 
 <script>
 export default {
-  name: 'StoreHeader',
+  name: 'RestaurationHeader',
   data() {
     return {
       navItems: [
-        { path: '/', label: 'home' },
-
-        { path: '/webshop/home-webshop', label: 'overview' },
-        { path: '/webshop/store', label: 'store' },
-        { path: '/webshop/custom-work', label: 'custom work' },
-        { path: '/webshop/shopping-cart', label: `shopping-cart(0)` },
-
-        { path: '/accounts/sign-up', label: 'sign up' },
-        { path: '/accounts/login', label: 'login' },
-        { path: '/accounts/profile', label: 'profile' },
+        {
+          path: '/',
+          label: 'home',
+          icon: 'home',
+        },
+        {
+          path: '/webshop/home-webshop',
+          label: 'overview',
+          icon: 'search',
+        },
+        {
+          path: '/webshop/store',
+          label: 'store',
+          icon: 'store-alt',
+        },
+        {
+          path: '/webshop/custom-work',
+          label: 'custom work',
+          icon: 'drafting-compass',
+        },
+        {
+          path: '/webshop/shopping-cart',
+          label: 'shopping-cart(0)',
+          icon: 'shopping-basket',
+        },
+        { path: '/accounts/sign-up', label: 'sign up', icon: 'user-plus' },
+        { path: '/accounts/login', label: 'login', icon: 'sign-in-alt' },
+        { path: '/accounts/profile', label: 'profile', icon: 'user-circle' },
       ],
+      showNavbar: true,
+      lastScrollPosition: 0,
     };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll);
+  },
+  methods: {
+    onScroll() {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 0) {
+        return;
+      }
+
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 64) {
+        return;
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      this.lastScrollPosition = currentScrollPosition;
+    },
   },
 };
 </script>
