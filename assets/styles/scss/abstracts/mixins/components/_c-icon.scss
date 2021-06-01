@@ -8,6 +8,7 @@
   @include box-dimensions(fas, $font-size--text);
 
   display: inline-flex;
+  overflow: visible;
   align-self: center;
 }
 
@@ -16,6 +17,7 @@
   @include box-dimensions(fab, $font-size--h3);
 
   display: inline-flex;
+  overflow: visible;
   align-self: center;
 
   &:hover {

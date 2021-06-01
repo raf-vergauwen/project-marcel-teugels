@@ -23,7 +23,7 @@ html {
 
 // #  <---------------| <body> |--------------->
 body {
-  @include box-dimensions($max-width: $max-width--root);
+  // @include box-dimensions($max-width: $max-width--root);
   @include block-container($center-me);
   // @include font(text);
   // @include text-rendering(optimizeLegibility);

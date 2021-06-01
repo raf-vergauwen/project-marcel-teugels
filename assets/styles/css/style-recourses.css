@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes linear-gradient {
   0% {
     background-position: 0% 50%;
@@ -9,7 +10,6 @@
     background-position: 50% 0%;
   }
 }
-
 @keyframes linear-gradient {
   0% {
     background-position: 0% 50%;
@@ -70,6 +70,71 @@
 }
 
 /* -------------------------------------------------------------------------- *\
+// *  <<--------------------<< BOX BORDER >>-------------------->>
+\* -------------------------------------------------------------------------- */
+.box {
+  width: 100%;
+  height: 100%;
+  padding: null;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 0.25rem;
+  border: 0.125rem solid var(--color-tertiary);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.box::before, .box::after {
+  position: absolute;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.125rem solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 1rem;
+  line-height: 0.5625rem;
+  text-align: center;
+}
+
+.box::before {
+  left: 0.25rem;
+}
+
+.box::after {
+  right: 0.25rem;
+}
+
+.box-inner {
+  position: relative;
+  height: 100%;
+  padding: 1rem;
+  border: 0.125rem solid var(--color-tertiary);
+}
+
+.box-inner::before, .box-inner::after {
+  position: absolute;
+  bottom: -0.125rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.125rem solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  content: '•';
+  font-size: 1rem;
+  line-height: 0.5625rem;
+  text-align: center;
+}
+
+.box-inner::before {
+  left: -0.125rem;
+}
+
+.box-inner::after {
+  right: -0.125rem;
+}
+
+/* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< CARD >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
@@ -84,6 +149,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  overflow: visible;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -96,6 +162,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  overflow: visible;
   -ms-flex-item-align: center;
       align-self: center;
 }

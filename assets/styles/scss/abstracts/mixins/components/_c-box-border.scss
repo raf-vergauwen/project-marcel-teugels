@@ -2,63 +2,60 @@
 // *  <<--------------------<< BOX BORDER >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
-.box-border {
+.box {
+  @include box-dimensions($width: 100%, $height: 100%);
+
   position: relative;
   top: 50%;
   left: 50%;
-  width: 100%;
-  padding: $buffer--s;
-  border: $buffer--xs solid var(--color-tertiary);
-  background-color: rgba(#000, 0.5);
+  padding: $buffer--xs;
+  border: $buffer--xxs solid var(--color-tertiary);
   transform: translate3d(-50%, -50%, 0);
 
   &::before,
   &::after {
     position: absolute;
-    top: $buffer--s;
+    top: $buffer--xs;
     width: $buffer--m;
     height: $buffer--m;
-    border: $buffer--xs solid var(--color-tertiary);
+    border: $buffer--xxs solid var(--color-tertiary);
     color: var(--color-tertiary);
     content: '•';
     font-size: $buffer--m;
-    line-height: calc(#{$buffer--m} - #{$buffer--xs});
+    line-height: $buffer--s + $buffer--xxxs;
     text-align: center;
   }
-
   &::before {
-    left: $buffer--s;
+    left: $buffer--xs;
   }
-
   &::after {
-    right: $buffer--s;
+    right: $buffer--xs;
   }
 }
 
-.box-border-inner {
+.box-inner {
   position: relative;
-  padding: $buffer--s;
-  border: $buffer--xs solid var(--color-tertiary);
+  height: 100%;
+  padding: $buffer--m;
+  border: $buffer--xxs solid var(--color-tertiary);
 
   &::before,
   &::after {
     position: absolute;
-    bottom: $buffer--xs;
+    bottom: -$buffer--xxs;
     width: $buffer--m;
     height: $buffer--m;
-    border: $buffer--xs solid var(--color-tertiary);
+    border: $buffer--xxs solid var(--color-tertiary);
     color: var(--color-tertiary);
     content: '•';
     font-size: $buffer--m;
-    line-height: calc(#{$buffer--m} - #{$buffer--xs});
+    line-height: $buffer--s + $buffer--xxxs;
     text-align: center;
   }
-
   &::before {
-    left: $buffer--xxs;
+    left: -$buffer--xxs;
   }
-
   &::after {
-    right: $buffer--xxs;
+    right: -$buffer--xxs;
   }
 }

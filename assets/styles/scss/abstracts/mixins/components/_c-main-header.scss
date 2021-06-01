@@ -15,17 +15,11 @@
         $margin: $center-me
       );
 
+      @include block-container;
+
       position: fixed;
-      height: 7.5vh;
       transform: translate3d(0, 0, 0);
       transition: 0.35s all ease;
-      @include breakpoint(xxs) {
-        @include block-container;
-      }
-
-      @include breakpoint(s) {
-        @include flex-container(nowrap, column, space-evenly, stretch);
-      }
     }
 
     &__container--hidden {
@@ -34,9 +28,11 @@
   }
 
   .c-header-nav {
+    @include flex-container(nowrap, column);
+
     background-color: var(--color-primary);
 
-    @include breakpoint(s) {
+    @include breakpoint(m) {
       @include flex-container(nowrap, row, space-evenly, stretch);
 
       overflow: hidden;
@@ -44,7 +40,21 @@
     }
 
     &__item {
+      width: 100%;
+      align-self: flex-start;
+      margin: $buffer--s 0 0 0;
       color: var(--color-background);
+
+      @include breakpoint(m) {
+        width: auto;
+        margin-top: 0;
+      }
+    }
+
+    &__item:first-child {
+      margin: 0;
+      background-color: var(--color-text);
+      border-radius: $small-dimension--l;
     }
 
     &__item--icon {
@@ -71,7 +81,6 @@
     }
 
     &__item--active:hover {
-      background-color: var(--color-tertiary);
       color: var(--color-text);
     }
 
