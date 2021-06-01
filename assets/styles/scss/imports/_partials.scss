@@ -11,6 +11,23 @@
   }
 }
 
+.admin-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: $dark-bg;
+  color: $light-bg;
+  border: 0;
+}
+
+.user-btn {
+  margin-top: 2em;
+  min-width: 200px;
+  min-height: 35px;
+  border-radius: 30px;
+  border: 0px;
+}
+
 %font-size-0 {
   font-size: 1.6rem;
   line-height: 26px;
