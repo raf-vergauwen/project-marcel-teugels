@@ -103,7 +103,7 @@ a {
   padding: $buffer--xs $buffer--s;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  transition: $transition-link--color;
+  transition: color 0.35s ease;
 
   &:hover {
     color: var(--color-secondary);

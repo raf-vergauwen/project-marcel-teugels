@@ -327,17 +327,35 @@ article {
   padding: 0.5rem;
 }
 
+@media (min-width: 1600px) {
+  article {
+    padding: 1rem;
+  }
+}
+
 section {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
   min-height: 100vh;
+}
+
+@media (min-width: 1600px) {
+  section {
+    padding: 2rem;
+  }
 }
 
 aside {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 1600px) {
+  aside {
+    padding: 2rem;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -347,14 +365,26 @@ header {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 1600px) {
+  header {
+    padding: 2rem;
+  }
 }
 
 footer {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 1600px) {
+  footer {
+    padding: 2rem;
+  }
 }
 
 main {
@@ -1099,8 +1129,8 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  -webkit-transition: color 0.35s ease;
-  transition: color 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 video {
@@ -1123,13 +1153,13 @@ svg {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  -webkit-transition: color 0.35s ease;
-  transition: color 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 svg path {
-  -webkit-transition: color 0.35s ease;
-  transition: color 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 math {

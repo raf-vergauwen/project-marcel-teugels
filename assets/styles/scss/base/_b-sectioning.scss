@@ -17,18 +17,30 @@ nav {
 // #  <---------------| <article> |--------------->
 article {
   @include box-dimensions(s);
+
+  @include breakpoint(l) {
+    padding: $buffer--m;
+  }
 }
 
 // #  <---------------| <section> |--------------->
 section {
-  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
+  @include box-dimensions(m, $max-width: $max-width--root, $margin: $center-me);
 
   min-height: 100vh;
+
+  @include breakpoint(l) {
+    padding: $buffer--l;
+  }
 }
 
 // #  <---------------| <aside> |--------------->
 aside {
-  @include box-dimensions(s);
+  @include box-dimensions(m);
+
+  @include breakpoint(l) {
+    padding: $buffer--l;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -37,12 +49,20 @@ aside {
 
 // #  <---------------| <header> |--------------->
 header {
-  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
+  @include box-dimensions(m, $max-width: $max-width--root, $margin: $center-me);
+
+  @include breakpoint(l) {
+    padding: $buffer--l;
+  }
 }
 
 // #  <---------------| <footer> |--------------->
 footer {
-  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
+  @include box-dimensions(m, $max-width: $max-width--root, $margin: $center-me);
+
+  @include breakpoint(l) {
+    padding: $buffer--l;
+  }
 }
 
 // #  <---------------| <main> |--------------->

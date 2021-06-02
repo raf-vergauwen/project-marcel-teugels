@@ -37,6 +37,11 @@
     padding: $buffer--m;
   }
 
+  // #  Large Box
+  @else if $type == 'l' {
+    padding: $buffer--l;
+  }
+
   // #  Regular Fontawesome Icons
   @else if $type == 'fas' {
     height: $width;
@@ -57,7 +62,7 @@
 
   // #  ERROR: Invalid arguments!
   @else {
-    @error '#{$type} is an unsupported type, choose betweens: xs, s, m, fas, fab, btn';
+    @error '#{$type} is an unsupported type, choose betweens: xs, s, m, l, fas, fab, btn';
   }
 }
 

@@ -161,6 +161,7 @@ export default {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     place-items: center;
+    transition: $transition--default;
 
     @include breakpoint(xs) {
       grid-template-areas: '. .';
@@ -169,11 +170,16 @@ export default {
     }
 
     @include breakpoint(m) {
-      padding: $buffer--l;
-      gap: $buffer--l;
+      padding: $buffer--m;
+      gap: $buffer--m;
       grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include breakpoint(l) {
+      padding: $buffer--l;
+      gap: $buffer--l;
     }
   }
 
