@@ -19,14 +19,9 @@
 
       position: fixed;
       z-index: 1;
-      padding: $buffer--s $buffer--m;
+      padding: $buffer--m;
       transform: translate3d(0, 0, 0);
       transition: 0.35s all ease;
-
-      @include breakpoint(xs) {
-        padding-right: $buffer--m + $buffer--s;
-        padding-left: $buffer--m + $buffer--s;
-      }
 
       @include breakpoint(m) {
         padding-right: $buffer--l;

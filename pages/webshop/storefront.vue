@@ -140,7 +140,13 @@ export default {
   }
 
   &__title {
+    padding-top: $buffer--m;
+    padding-bottom: 0;
     color: var(--color-text);
+
+    @include breakpoint(m) {
+      padding-top: $buffer--l;
+    }
   }
 
   &__btn {
@@ -150,44 +156,22 @@ export default {
   &__product-list {
     display: grid;
     padding: $buffer--m;
-    padding-top: $buffer--s;
     gap: $buffer--m;
-    grid-template-areas:
-      '.'
-      '.'
-      '.'
-      '.'
-      '.'
-      '.'
-      '.'
-      '.'
-      '.';
+    grid-template-areas: '.';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     place-items: center;
 
     @include breakpoint(xs) {
-      padding: $buffer--m + $buffer--s;
-      padding-top: $buffer--s;
-      gap: $buffer--m + $buffer--s;
-      grid-template-areas:
-        '. .'
-        '. .'
-        '. .'
-        '. .'
-        '. .';
+      grid-template-areas: '. .';
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
     }
 
     @include breakpoint(m) {
       padding: $buffer--l;
-      padding-top: $buffer--s;
       gap: $buffer--l;
-      grid-template-areas:
-        '. . .'
-        '. . .'
-        '. . .';
+      grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
@@ -197,12 +181,7 @@ export default {
     @include card;
 
     &:hover {
-      color: rgb(245, 16, 16);
       transform: translate3d(0, -$buffer--xs, 0);
-
-      @include breakpoint(xs) {
-        transform: translate3d(0, calc(#{-$buffer--xs} + #{-$buffer--xxs}), 0);
-      }
 
       @include breakpoint(m) {
         transform: translate3d(0, -$buffer--s, 0);
