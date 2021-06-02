@@ -145,6 +145,10 @@ export default {
     color: var(--color-text);
 
     @include breakpoint(m) {
+      padding-top: $buffer--m;
+    }
+
+    @include breakpoint(l) {
       padding-top: $buffer--l;
     }
   }
@@ -181,15 +185,25 @@ export default {
       padding: $buffer--l;
       gap: $buffer--l;
     }
+
+    @include breakpoint(xl) {
+      grid-template-areas: '. . . .';
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
 
   &__product-list--item {
     @include card;
 
     &:hover {
-      transform: translate3d(0, -$buffer--xs, 0);
+      transform: translate3d(0, -$buffer--xxs, 0);
 
       @include breakpoint(m) {
+        transform: translate3d(0, -$buffer--xs, 0);
+      }
+
+      @include breakpoint(l) {
         transform: translate3d(0, -$buffer--s, 0);
       }
     }
