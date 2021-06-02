@@ -47,7 +47,7 @@ footer {
 
 // #  <---------------| <main> |--------------->
 main {
-  @include box-dimensions($margin: $center-me);
+  @include box-dimensions($max-width: $max-width--root, $margin: $center-me);
 }
 
 /* -------------------------------------------------------------------------- *\

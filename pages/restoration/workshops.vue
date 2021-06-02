@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <main class="p-workshop">
     <restauration-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-      class="title-btn__container"
+      class="p-workshop__header-container"
     >
       <h1 class="p-workshop__title">Workshops</h1>
       <button class="p-workshop__btn">
@@ -11,7 +11,7 @@
       </button>
     </div>
 
-    <div v-else class="title-btn__container">
+    <div v-else class="p-workshop__header-container">
       <h1 class="p-workshop__title">Workshops</h1>
     </div>
 
@@ -19,8 +19,8 @@
       <workshop-item
         v-for="workshop in workshopData"
         :key="workshop.id"
-        class="p-workshops__product-list__item"
         :workshop="workshop"
+        class="p-workshops__product-list--item"
       />
     </div>
   </main>
@@ -74,17 +74,41 @@ export default {
 </script>
 
 <style lang="scss">
-.title-btn__container {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em;
-}
+.p-workshop {
+  @include block-container;
 
-.p-workshop__btn {
-  width: 40px;
-  height: 40px;
-  border: 0;
-  background-color: $dark-bg;
-  border-radius: 50px;
+  &__header-container {
+    // ...
+  }
+
+  &__title {
+    color: $dark-bg;
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: $dark-bg;
+    border-radius: 50px;
+  }
+
+  &__product-list {
+    display: grid;
+    grid-gap: $s-site-padding;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include md() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm() {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__product-list--item {
+    // ...
+  }
 }
 </style>

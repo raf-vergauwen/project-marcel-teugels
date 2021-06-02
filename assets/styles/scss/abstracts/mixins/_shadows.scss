@@ -4,7 +4,7 @@
 
 // -  <---------------| Box-Shadow |--------------->
 @mixin box-shadow($box-shadow--level: 1) {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  @include box-transition;
   // #  Box-Shadow : Level 1
   @if $box-shadow--level == 1 {
     box-shadow: $card--box-shadow---level-1;

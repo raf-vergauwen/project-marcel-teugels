@@ -3,24 +3,24 @@
     <store-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-      class="title-btn__container"
+      class="p-store__header-container"
     >
-      <h1 class="p-product__title">Store</h1>
-      <button class="p-product__btn">
+      <h1 class="p-store__title">Store</h1>
+      <button class="p-store__btn">
         <a href="/add-product">+</a>
       </button>
     </div>
 
-    <div v-else class="title-btn__container">
-      <h1 class="p-product__title">Store</h1>
+    <div v-else class="p-store__header-container">
+      <h1 class="p-store__title">Store</h1>
     </div>
 
     <div class="p-store__product-list">
       <product-item
         v-for="product in productData"
         :key="product.id"
-        class="p-store__product-list__item"
         :product="product"
+        class="p-store__product-list--item"
         @add-product="addProduct($event)"
       />
     </div>
@@ -135,38 +135,79 @@ export default {
 
 <style lang="scss">
 .p-store {
-  @include block-container;
+  &__header-container {
+    padding-top: $buffer--xxl;
+  }
+
+  &__title {
+    color: var(--color-text);
+  }
+
+  &__btn {
+    // ...
+  }
 
   &__product-list {
     display: grid;
-    grid-gap: $s-site-padding;
-    grid-template-columns: repeat(3, 1fr);
+    padding: $buffer--m;
+    padding-top: $buffer--s;
+    gap: $buffer--m;
+    grid-template-areas:
+      '.'
+      '.'
+      '.'
+      '.'
+      '.'
+      '.'
+      '.'
+      '.'
+      '.';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    place-items: center;
 
-    @include md() {
+    @include breakpoint(xs) {
+      padding: $buffer--m + $buffer--s;
+      padding-top: $buffer--s;
+      gap: $buffer--m + $buffer--s;
+      grid-template-areas:
+        '. .'
+        '. .'
+        '. .'
+        '. .'
+        '. .';
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
     }
 
-    @include sm() {
-      grid-template-columns: 1fr;
+    @include breakpoint(m) {
+      padding: $buffer--l;
+      padding-top: $buffer--s;
+      gap: $buffer--l;
+      grid-template-areas:
+        '. . .'
+        '. . .'
+        '. . .';
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
     }
   }
-}
 
-.title-btn__container {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em;
-}
+  &__product-list--item {
+    @include card;
 
-.p-product__btn {
-  width: 40px;
-  height: 40px;
-  border: 0;
-  background-color: $dark-bg;
-  border-radius: 50px;
-}
+    &:hover {
+      color: rgb(245, 16, 16);
+      transform: translate3d(0, -$buffer--xs, 0);
 
-.p-product__title {
-  color: $dark-bg;
+      @include breakpoint(xs) {
+        transform: translate3d(0, calc(#{-$buffer--xs} + #{-$buffer--xxs}), 0);
+      }
+
+      @include breakpoint(m) {
+        transform: translate3d(0, -$buffer--s, 0);
+      }
+    }
+  }
 }
 </style>
