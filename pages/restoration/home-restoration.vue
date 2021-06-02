@@ -161,7 +161,6 @@
           <fa class="link-icon" icon="sign-in-alt" />
           <fa :class="{ 'link-icon': true }" :icon="['fab', 'facebook']" />
           <fa :class="{ 'link-icon': true }" :icon="['fab', 'youtube']" />
-          <p>contact</p>
         </div>
         <div class="social">
           <p>social</p>

@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'RestaurationHeader',
+  name: 'StoreHeader',
   data() {
     return {
       navItems: [
@@ -43,7 +43,7 @@ export default {
           icon: 'search',
         },
         {
-          path: '/webshop/store',
+          path: '/webshop/storefront',
           label: 'store',
           icon: 'store-alt',
         },
@@ -62,7 +62,7 @@ export default {
         { path: '/accounts/profile', label: 'profile', icon: 'user-circle' },
       ],
       showNavbar: true,
-      lastScrollPosition: 0,
+      lastScrollPosition: -100,
     };
   },
   mounted() {

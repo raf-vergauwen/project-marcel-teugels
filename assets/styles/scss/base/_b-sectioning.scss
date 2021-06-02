@@ -21,7 +21,7 @@ article {
 
 // #  <---------------| <section> |--------------->
 section {
-  @include box-dimensions(s, $max-width: $max-width--root);
+  @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
 
   min-height: 100vh;
 }
@@ -38,8 +38,6 @@ aside {
 // #  <---------------| <header> |--------------->
 header {
   @include box-dimensions(s, $max-width: $max-width--root, $margin: $center-me);
-
-  margin: $center-me;
 }
 
 // #  <---------------| <footer> |--------------->
@@ -49,9 +47,7 @@ footer {
 
 // #  <---------------| <main> |--------------->
 main {
-  @include box-dimensions($max-width: $max-width--root, $margin: $center-me);
-
-  margin: $center-me;
+  @include box-dimensions($margin: $center-me);
 }
 
 /* -------------------------------------------------------------------------- *\

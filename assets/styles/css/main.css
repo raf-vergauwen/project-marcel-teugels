@@ -330,6 +330,7 @@ article {
 section {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   padding: 0.5rem;
   min-height: 100vh;
 }
@@ -347,7 +348,6 @@ header {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0.5rem;
-  margin: 0 auto;
 }
 
 footer {
@@ -359,10 +359,8 @@ footer {
 
 main {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: null;
-  margin: 0 auto;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1881,5 +1879,149 @@ menu {
   --color-tertiary-h: 35;
   --color-tertiary-s: 44.7%;
   --color-tertiary-l: 49.6%;
+}
+
+nav,
+article,
+section,
+aside {
+  outline: 2px double #ff4500;
+}
+
+header,
+footer {
+  outline: 2px double #cd5c5c;
+}
+
+div {
+  outline: 2px dashed #f00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  outline: 2px double #ff6347;
+}
+
+dl,
+dt,
+dd {
+  outline: calc(1px * 1.5) ridge #00bfff;
+}
+
+figure,
+figcaption {
+  outline: calc(1px * 1.5) ridge #1e90ff;
+}
+
+ol,
+ul,
+li {
+  outline: calc(1px * 1.5) ridge #4682b4;
+}
+
+address,
+blockquote,
+hr,
+p,
+pre {
+  outline: calc(1px * 1.5) ridge #00f;
+}
+
+b,
+code,
+kbd,
+mark,
+samp,
+span,
+strong,
+var {
+  outline: 1px dotted #0f0;
+}
+
+a,
+abbr,
+bdi,
+bdo,
+br,
+cite,
+data,
+dfn,
+q,
+time,
+wbr {
+  outline: 1px dotted #00ff7f;
+}
+
+area,
+audio,
+img,
+map,
+track,
+video {
+  outline: calc(1px * 1.25) ridge #ff0;
+}
+
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+  outline: calc(1px * 1.25) ridge #f0e68c;
+}
+
+svg,
+math {
+  outline: calc(1px * 1.25) ridge #ffd700;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+colgroup,
+tr {
+  outline: calc(1px * 1.5) solid #9932cc;
+}
+
+caption,
+col,
+th,
+td {
+  outline: calc(1px * 1.25) solid #6a5acd;
+}
+
+form,
+datalist,
+fieldset,
+optgroup,
+select {
+  outline: calc(1px * 1.5) solid #008080;
+}
+
+button,
+input,
+label,
+legend,
+meter,
+option,
+output,
+progress,
+textarea {
+  outline: calc(1px * 1.25) solid #40e0d0;
+}
+
+details,
+summary {
+  outline: calc(1px * 1.25) solid #ff1493;
+}
+
+dialog,
+menu {
+  outline: calc(1px * 1.25) solid #ff69b4;
 }
 /*# sourceMappingURL=main.css.map */
