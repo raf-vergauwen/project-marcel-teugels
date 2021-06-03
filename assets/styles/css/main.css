@@ -327,12 +327,6 @@ article {
   padding: 0.5rem;
 }
 
-@media (min-width: 1600px) {
-  article {
-    padding: 1rem;
-  }
-}
-
 section {
   width: 100%;
   max-width: 1920px;

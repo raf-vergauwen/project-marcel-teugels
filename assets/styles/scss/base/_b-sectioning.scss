@@ -17,10 +17,6 @@ nav {
 // #  <---------------| <article> |--------------->
 article {
   @include box-dimensions(s);
-
-  @include breakpoint(l) {
-    padding: $buffer--m;
-  }
 }
 
 // #  <---------------| <section> |--------------->

@@ -26,7 +26,8 @@ export default {
 
   data() {
     return {
-      shoppingList: sessionStorage.getItem('shopping_cart').split(','),
+      // shoppingList: sessionStorage.getItem('shopping_cart').split(','),
+      shoppingList: (sessionStorage.getItem('shopping_cart') || '').split(','),
       productData: [],
     };
   },
