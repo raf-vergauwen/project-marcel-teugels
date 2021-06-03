@@ -1,36 +1,42 @@
 <template>
-  <main class="p-shopping-cart">
-    <h1 class="p-shopping-cart__title">Shopping cart</h1>
-    <div class="p-shopping-cart__container">
-      <div class="p-shopping-cart__product-list">
-        <ShoppingCartItem
-          v-for="product in productData"
-          :key="product.id"
-          class="p-shopping-cart__product-list__item"
-          :product="product"
-          @remove-product="removeProduct($event)"
+  <main class="p-place-order">
+    <h1 class="p-place-order__title">Bestelling plaatsen</h1>
+    <div class="p-place-order__container">
+      <FormulateForm v-model="formData" @submit="placeOrder">
+        <FormulateInput
+          name="firstName"
+          type="text"
+          label="voornaam"
+          validation-name="firstName"
+          validation="required"
         />
-      </div>
-      <div class="p-shopping-cart__total">
-        <h2>Total:</h2>
+        <FormulateInput
+          name="lastName"
+          type="text"
+          label="achternaam"
+          validation-name="lastName"
+          validation="required"
+        />
+        <FormulateInput
+          name="adress"
+          type="text"
+          label="adres"
+          validation-name="adres"
+          validation="required"
+        />
+        <FormulateInput name="notes" type="textarea" label="notities" />
+        <FormulateInput type="submit" label="Bestelling plaatsen" />
+      </FormulateForm>
+      <div class="p-place-order__total">
+        <h2>Totaal:</h2>
         <h3>€ {{ calculate_Total }}</h3>
-        <button @click="createOrderedItems">
-          <nuxt-link class="place-order-link" to="/shop/place-order">
-            Afrekenen
-          </nuxt-link>
-        </button>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import ShoppingCartItem from '~/components/ShoppingCartItem';
-
 export default {
-  name: 'ShoppingCartPage',
-  components: { ShoppingCartItem },
-
   data() {
     return {
       shoppingList: [],
@@ -122,7 +128,6 @@ export default {
           console.error(err);
         });
     },
-    linkIds() {},
   },
 };
 </script>
