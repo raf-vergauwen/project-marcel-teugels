@@ -14,7 +14,7 @@
       <div class="p-shopping-cart__total">
         <h2>Total:</h2>
         <h3>€ {{ calculate_Total }}</h3>
-        <button @click="createOrderedItems">
+        <button>
           <nuxt-link class="place-order-link" to="/shop/place-order">
             Afrekenen
           </nuxt-link>

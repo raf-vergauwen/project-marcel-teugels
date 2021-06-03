@@ -2,7 +2,7 @@
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
     <div class="p-place-order__container">
-      <FormulateForm v-model="formData" @submit="placeOrder">
+      <FormulateForm v-model="formData" @submit="createOrderedItems">
         <FormulateInput
           name="firstName"
           type="text"
