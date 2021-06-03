@@ -2,7 +2,7 @@
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
     <div class="p-place-order__container">
-      <FormulateForm v-model="formData" @submit="createOrderedItems">
+      <FormulateForm v-model="formData" @submit="createOrder">
         <FormulateInput
           name="firstName"
           type="text"
@@ -18,7 +18,7 @@
           validation="required"
         />
         <FormulateInput
-          name="adress"
+          name="address"
           type="text"
           label="adres"
           validation-name="adres"
@@ -89,40 +89,44 @@ export default {
       this.productData.splice(index, index + 1);
       this.$store.commit('removeFromCart', product);
     },
-    createOrderedItems() {
-      this.$axios('items/ordered_items', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        data: {
-          quantity: this.shoppingList.length,
-          total_price: this.calculate_Total,
-          products: this.shoppingList,
-        },
-      })
-        .then((response) => {
-          console.log(response);
-          this.orderedItemId = response.data.data.id;
-          console.log(this.orderedItemId);
-          this.createOrders();
+    createOrderedItems(orderId) {
+      const promiseArr = this.productData.map((product) => {
+        return this.$axios('items/ordered_items', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          data: {
+            quantity: 1, // TODO: make dynamic
+            total_price: parseFloat(product.price) * 1,
+            order_id: orderId,
+            product_id: product.id,
+          },
+        });
+      });
+
+      return Promise.all(promiseArr)
+        .then((values) => {
+          this.$root.$emit('notify', 'Je bestelling is geplaatst');
         })
-        .catch((err) => {
-          console.error(err);
+        .catch((e) => {
+          this.$axios('items/orders/' + orderId, { method: 'DELETE' });
         });
     },
-    createOrders() {
+    createOrder(data) {
       this.$axios('items/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: {
           total_price: this.calculate_Total,
-          notes: 'test1234',
-          ordered_items: [this.orderedItemId],
+          notes: data.notes,
+          first_name: data.firstName,
+          last_name: data.lastName,
+          address: data.address,
         },
       })
         .then((response) => {
-          console.log(response);
           this.orderId = response.data.data.id;
-          console.log(this.orderId);
+
+          return this.createOrderedItems(this.orderId);
         })
         .catch((err) => {
           console.error(err);
