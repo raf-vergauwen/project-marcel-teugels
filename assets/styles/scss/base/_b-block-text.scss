@@ -89,9 +89,8 @@ blockquote {
 // #  <---------------| <hr> |--------------->
 hr {
   @include box-dimensions(
-    $type: xs,
-    $height: $small-dimension--xxxs,
-    $margin: $buffer--xs
+    $height: $small-dimension--xxs,
+    $margin: $buffer--s 0
   );
 
   background-image: linear-gradient(

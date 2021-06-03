@@ -108,6 +108,8 @@ export default {
     grid-template-rows: auto;
 
     .c-pi-t__title {
+      @include overflow;
+
       color: var(--color-background);
       grid-area: c-pi-t__title;
     }
@@ -120,29 +122,33 @@ export default {
     grid-template-areas:
       'c-pi-c__name c-pi-c__id c-pi-c__quantity c-pi-c__price'
       'c-pi-c__description c-pi-c__description c-pi-c__description c-pi-c__description';
-    grid-template-columns: 30fr 10fr 10fr 20fr;
-    grid-template-columns: 50fr 10fr 10fr 20fr;
-    // grid-template-columns: 1fr auto auto auto;
+    grid-template-columns: 50fr 15fr 15fr 20fr;
+    grid-template-columns: 50fr auto auto auto;
     grid-template-rows: auto 4fr;
 
     .c-pi-c__name {
+      @include overflow;
+
       color: var(--color-background--darker);
       grid-area: c-pi-c__name;
     }
 
     .c-pi-c__id {
+      padding: $buffer--xs $buffer--s;
       color: var(--color-background--darker);
       grid-area: c-pi-c__id;
       text-align: center;
     }
 
     .c-pi-c__quantity {
+      padding: $buffer--xs $buffer--s;
       color: var(--color-background--darker);
       grid-area: c-pi-c__quantity;
       text-align: center;
     }
 
     .c-pi-c__price {
+      padding: $buffer--xs $buffer--s;
       color: var(--color-background--darker);
       grid-area: c-pi-c__price;
       text-align: center;
@@ -155,10 +161,12 @@ export default {
       );
       @include scrollbar-function(smooth, y proximity);
 
-      max-height: 85%;
+      @include overflow;
+
+      // max-height: 85%;
       color: var(--color-background--darker);
       grid-area: c-pi-c__description;
-      overflow-y: scroll;
+      text-overflow: ellipsis;
     }
   }
 
@@ -176,9 +184,5 @@ export default {
       grid-area: c-pi-b__btn;
     }
   }
-}
-
-.fa-home {
-  color: rgb(197, 4, 4);
 }
 </style>

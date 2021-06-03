@@ -167,24 +167,6 @@
       align-self: center;
 }
 
-.fab,
-[data-prefix='fab'] {
-  width: 2.44141rem;
-  height: 2.44141rem;
-  font-size: 2.44141rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: visible;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.fab:hover,
-[data-prefix='fab']:hover {
-  color: var(--color-secondary);
-}
-
 .item-icon {
   color: var(--color-tertiary);
 }
@@ -197,6 +179,29 @@
   color: var(--color-text);
 }
 
+.fa-shopping-basket:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #000;
+}
+
+[data-prefix='fab'] {
+  width: 2.44141rem;
+  height: 2.44141rem;
+  font-size: 2.44141rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: visible;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0.5rem;
+}
+
+[data-prefix='fab']:hover {
+  color: var(--color-secondary);
+}
+
 .fa-heart:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -204,39 +209,78 @@
 }
 
 .fa-facebook:hover {
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
+}
+
+.fa-facebook:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1877f2;
+  -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
+          filter: drop-shadow(30px 10px 4px var(--color-secondary));
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
 .fa-twitter:hover {
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
+}
+
+.fa-twitter:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #1da1f2;
+  -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
+          filter: drop-shadow(30px 10px 4px var(--color-secondary));
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
 .fa-instagram:hover {
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
+}
+
+.fa-instagram:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #e4405f;
+  -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
+          filter: drop-shadow(30px 10px 4px var(--color-secondary));
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
 .fa-pinterest:hover {
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
+}
+
+.fa-pinterest:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #bd081c;
+  -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
+          filter: drop-shadow(30px 10px 4px var(--color-secondary));
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
 .fa-youtube:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
-.fa-shopping-basket:hover {
+.fa-youtube:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #000;
+  color: #ff0000;
+  -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
+          filter: drop-shadow(30px 10px 4px var(--color-secondary));
+  -webkit-transform: translate3d(0, -0.25rem, 0);
+          transform: translate3d(0, -0.25rem, 0);
 }
 
 /* -------------------------------------------------------------------------- *\

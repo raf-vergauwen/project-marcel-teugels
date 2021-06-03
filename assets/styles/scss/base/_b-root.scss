@@ -34,31 +34,31 @@ body {
   // # Lifesaving Scrollbar hack!
   overflow-x: hidden;
 
-  @include breakpoint(xxs) {
-    background-color: #2f4f4f;
-  }
+  // @include breakpoint(xxs) {
+  //   background-color: #2f4f4f;
+  // }
 
-  @include breakpoint(xs) {
-    background-color: #704241;
-  }
+  // @include breakpoint(xs) {
+  //   background-color: #704241;
+  // }
 
-  @include breakpoint(s) {
-    background-color: #674846;
-  }
+  // @include breakpoint(s) {
+  //   background-color: #674846;
+  // }
 
-  @include breakpoint(m) {
-    background-color: #52593b;
-  }
+  // @include breakpoint(m) {
+  //   background-color: #52593b;
+  // }
 
-  @include breakpoint(l) {
-    background-color: #414a4c;
-  }
+  // @include breakpoint(l) {
+  //   background-color: #414a4c;
+  // }
 
-  @include breakpoint(xl) {
-    background-color: #32174d;
-  }
+  // @include breakpoint(xl) {
+  //   background-color: #32174d;
+  // }
 
-  @include breakpoint(xxl) {
-    background-color: #1a2421;
-  }
+  // @include breakpoint(xxl) {
+  //   background-color: #1a2421;
+  // }
 }

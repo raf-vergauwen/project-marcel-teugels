@@ -117,7 +117,7 @@ export default {
     place-items: center;
     transition: $transition--default;
 
-    @include breakpoint(xs) {
+    @include breakpoint(s) {
       grid-template-areas: '. .';
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);

@@ -155,12 +155,6 @@
           <p>blog</p>
           <p>webshop</p>
           <p>contact</p>
-          <fa class="link-icon" icon="globe" />
-          <fa class="link-icon" icon="home" />
-          <fa class="link-icon" icon="burn" />
-          <fa class="link-icon" icon="sign-in-alt" />
-          <fa :class="{ 'link-icon': true }" :icon="['fab', 'facebook']" />
-          <fa :class="{ 'link-icon': true }" :icon="['fab', 'youtube']" />
         </div>
         <div class="social">
           <p>social</p>

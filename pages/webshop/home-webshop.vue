@@ -30,6 +30,183 @@
         />
       </div>
     </section>
+    <footer class="main-footer">
+      <!-- * ------------------------------------------------------------------>
+      <div class="main-footer__container">
+        <!-- - ---------------------------------------------------------------->
+        <div class="main-footer__container--nav">
+          <!-- # -------------------------------------------------------------->
+          <article class="foot-nav-text">
+            <div class="foot-nav-text__container">
+              <!----------------------------------------------------------------->
+              <h3 class="foot-nav-text__title">About</h3>
+              <p class="foot-nav-text__paragraph">
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                est. Mauris placerat eleifend leo.
+              </p>
+            </div>
+          </article>
+          <!-- # -------------------------------------------------------------->
+          <div class="foot-nav-links">
+            <!----------------------------------------------------------------->
+            <nav class="foot-nav-links__container">
+              <h3 class="foot-nav-links__title">Webshop</h3>
+              <ul class="foot-nav-links__list">
+                <li class="foot-nav-links__link">
+                  <a href="#hero"> <i class="fas fa-home"></i>Home Page </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="#hot-items">
+                    <i class="fas fa-shopping-basket"></i>Webshop
+                  </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="#about">
+                    <i class="fas fa-drafting-compass"></i>Custom Work
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!----------------------------------------------------------------->
+            <nav class="foot-nav-links__container">
+              <h3 class="foot-nav-links__title">Contact Info</h3>
+              <ul class="foot-nav-links__list">
+                <li class="foot-nav-links__link">
+                  <a
+                    href="http://www.google.com/maps/place/50.867785845595435,%203.8150557738335107"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>Location
+                  </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="tel:+123456789">
+                    <i class="fas fa-phone"></i>+32 470 32 45 20
+                  </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="mailto:support@company.com">
+                    <i class="fas fa-envelope"></i>support.testing@company.com
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!----------------------------------------------------------------->
+            <nav class="foot-nav-links__container">
+              <h3 class="foot-nav-links__title">Restoration</h3>
+              <ul class="foot-nav-links__list">
+                <li class="foot-nav-links__link">
+                  <a href="#restoration-hero">
+                    <i class="fas fa-home"></i>Home Page
+                  </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="#restoration">
+                    <i class="fas fa-house-damage"></i>Restoration
+                  </a>
+                </li>
+                <li class="foot-nav-links__link">
+                  <a href="#workshops">
+                    <i class="fas fa-store-alt"></i>Workshops
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- - ---------------------------------------------------------------->
+        <hr class="main-footer__hr" />
+        <!-- - ---------------------------------------------------------------->
+        <div class="main-footer__container--contact">
+          <!------------------------------------------------------------------->
+          <div class="foot-copyright__container">
+            <p class="foot-copyright__text">
+              Copyright &copy; 2021 All Rights Reserved
+            </p>
+          </div>
+          <!------------------------------------------------------------------->
+          <div class="foot-social-media__container">
+            <a
+              class="foot-social-media__link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              <fa
+                :class="{ 'link-icon': true }"
+                :icon="['fab', 'youtube']"
+                :style="{
+                  width: iconWidth + 'rem',
+                  height: iconHeight + 'rem',
+                }"
+              />
+            </a>
+            <a
+              class="foot-social-media__link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              <fa
+                :class="{ 'link-icon': true }"
+                :icon="['fab', 'facebook']"
+                :style="{
+                  width: iconWidth + 'rem',
+                  height: iconHeight + 'rem',
+                }"
+              />
+            </a>
+            <a
+              class="foot-social-media__link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              <fa
+                :class="{ 'link-icon': true }"
+                :icon="['fab', 'instagram']"
+                :style="{
+                  width: iconWidth + 'rem',
+                  height: iconHeight + 'rem',
+                }"
+              />
+            </a>
+            <a
+              class="foot-social-media__link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              <fa
+                :class="{ 'link-icon': true }"
+                :icon="['fab', 'twitter']"
+                :style="{
+                  width: iconWidth + 'rem',
+                  height: iconHeight + 'rem',
+                }"
+              />
+            </a>
+            <a
+              class="foot-social-media__link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              <fa
+                :class="{ 'link-icon': true }"
+                :icon="['fab', 'pinterest']"
+                :style="{
+                  width: iconWidth + 'rem',
+                  height: iconHeight + 'rem',
+                }"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </template>
 
@@ -50,6 +227,8 @@ export default {
       src: 'http://157.230.126.154/assets/',
       Admin: false,
       shoppingCart: [],
+      iconWidth: 3,
+      iconHeight: 3,
     };
   },
 
@@ -100,6 +279,10 @@ export default {
 .main {
   max-width: 100%;
 }
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 1: hero
+\* -------------------------------------------------------------------------- */
 .hero {
   @include flex-container($justify: center);
 
@@ -131,6 +314,10 @@ export default {
     font-family: $font-family--component;
   }
 }
+
+/* -------------------------------------------------------------------------- *\
+-  SECTION 2: Hot Items
+\* -------------------------------------------------------------------------- */
 .hot-items {
   &__title {
     margin-bottom: $buffer--m;
@@ -150,21 +337,17 @@ export default {
     place-items: center;
     transition: $transition--default;
 
-    @include breakpoint(xs) {
+    @include breakpoint(s) {
       grid-template-areas: '. .';
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
     }
 
-    @include breakpoint(m) {
-      gap: $buffer--m;
+    @include breakpoint(l) {
+      gap: $buffer--l;
       grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
-    }
-
-    @include breakpoint(l) {
-      gap: $buffer--l;
     }
 
     @include breakpoint(xl) {
@@ -188,6 +371,118 @@ export default {
         transform: translate3d(0, -$buffer--s, 0);
       }
     }
+  }
+}
+
+/* -------------------------------------------------------------------------- *\
+-  FOOTER-MAIN: Footer
+\* -------------------------------------------------------------------------- */
+
+.main-footer {
+  // ...
+
+  &__container {
+    // ...
+  }
+
+  &__hr {
+    // ...
+  }
+}
+
+.main-footer__container--nav {
+  .foot-nav-text {
+    // ...
+
+    &__container {
+      // ...
+    }
+
+    &__title {
+      padding: $buffer--m 0;
+      // ...
+    }
+
+    &__paragraph {
+      // ...
+    }
+  }
+
+  .foot-nav-links {
+    @include breakpoint(s) {
+      flex-direction: row;
+    }
+    // ...
+
+    &__container {
+      @include flex-container;
+    }
+
+    &__title {
+      padding: $buffer--m 0;
+      // ...
+    }
+
+    &__list {
+      // ...
+    }
+
+    &__link {
+      white-space: nowrap;
+      // ...
+    }
+  }
+}
+
+.main-footer__container--contact {
+  @include breakpoint(xs) {
+    @include flex-container(nowrap, row, space-evenly, center);
+  }
+}
+
+.foot-copyright {
+  // ...
+  &__container {
+    @include flex-container;
+
+    flex-direction: row;
+    padding: $buffer--s;
+
+    @include breakpoint(xs) {
+      @include flex-items(2);
+
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    // ...
+  }
+}
+
+.foot-social-media {
+  // ...
+
+  &__container {
+    @include flex-container($direction: row);
+
+    justify-content: space-between;
+    // justify-content: space-evenly;
+    // padding: 0 $buffer--s;
+
+    @include breakpoint(xs) {
+      justify-content: space-around;
+      // @include flex-items(8);
+      background-color: rgb(245, 17, 17);
+    }
+
+    @include breakpoint(s) {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__link {
+    padding: 0;
   }
 }
 </style>

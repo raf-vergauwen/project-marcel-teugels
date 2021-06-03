@@ -7,7 +7,7 @@
   @include box-shadow(2);
 
   overflow: hidden;
-  // max-width: $large-dimension--xxs + $large-dimension--xxxs;
+  max-width: $large-dimension--xxs + $large-dimension--xxxs;
   aspect-ratio: $card--aspect-ratio;
 
   /* Prevent background color leak outs */

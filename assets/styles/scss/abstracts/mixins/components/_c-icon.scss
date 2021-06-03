@@ -2,7 +2,7 @@
 // *  <<--------------------<< ICON >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
-// -  <<----------<< General >>---------->>
+// -  <<----------<< Solid >>---------->>
 .fas,
 [data-prefix='fas'] {
   @include box-dimensions(fas, $font-size--text);
@@ -10,19 +10,6 @@
   display: inline-flex;
   overflow: visible;
   align-self: center;
-}
-
-.fab,
-[data-prefix='fab'] {
-  @include box-dimensions(fab, $font-size--h3);
-
-  display: inline-flex;
-  overflow: visible;
-  align-self: center;
-
-  &:hover {
-    color: var(--color-secondary);
-  }
 }
 
 .item-icon {
@@ -37,7 +24,30 @@
   }
 }
 
-// -  <<----------<< Specific >>---------->>
+.fa-shopping-basket {
+  &:hover {
+    @include box-transition;
+
+    color: #000;
+  }
+}
+
+// -  <<----------<< Brands >>---------->>
+
+// .fab,
+[data-prefix='fab'] {
+  @include box-dimensions(fab, $font-size--h3);
+
+  display: inline-flex;
+  overflow: visible;
+  align-self: center;
+  padding: $buffer--s;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
 .fa-heart {
   &:hover {
     @include box-transition;
@@ -48,48 +58,65 @@
 
 .fa-facebook {
   &:hover {
-    @include box-transition;
+    transform: translate3d(0, -$buffer--xs, 0);
+    path {
+      @include box-transition;
 
-    color: #1877f2;
+      color: #1877f2;
+      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      transform: translate3d(0, -$buffer--xs, 0);
+    }
   }
 }
 
 .fa-twitter {
   &:hover {
-    @include box-transition;
+    transform: translate3d(0, -$buffer--xs, 0);
+    path {
+      @include box-transition;
 
-    color: #1da1f2;
+      color: #1da1f2;
+      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      transform: translate3d(0, -$buffer--xs, 0);
+    }
   }
 }
 
 .fa-instagram {
   &:hover {
-    @include box-transition;
+    transform: translate3d(0, -$buffer--xs, 0);
+    path {
+      @include box-transition;
 
-    color: #e4405f;
+      color: #e4405f;
+      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      transform: translate3d(0, -$buffer--xs, 0);
+    }
   }
 }
 
 .fa-pinterest {
   &:hover {
-    @include box-transition;
+    transform: translate3d(0, -$buffer--xs, 0);
+    path {
+      @include box-transition;
 
-    color: #bd081c;
+      color: #bd081c;
+      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      transform: translate3d(0, -$buffer--xs, 0);
+    }
   }
 }
 
 .fa-youtube {
   &:hover {
-    @include box-transition;
+    transform: translate3d(0, -$buffer--xs, 0);
+    path {
+      @include box-transition;
 
-    color: #f00;
-  }
-}
-
-.fa-shopping-basket {
-  &:hover {
-    @include box-transition;
-
-    color: #000;
+      color: #f00;
+      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      transform: translate3d(0, -$buffer--xs, 0);
+    }
   }
 }
