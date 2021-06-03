@@ -14,6 +14,7 @@
 
   &::-webkit-scrollbar-track {
     background: lightness($color, 0.5);
+    border-radius: $small-dimension--s;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -21,7 +22,7 @@
     border-radius: $small-dimension--s;
 
     &:hover {
-      background: lightness($color, 0.75);
+      background: lightness($color, 0.9);
     }
   }
 }

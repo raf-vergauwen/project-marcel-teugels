@@ -81,7 +81,7 @@ export default {
       'c-pi-c'
       'c-pi-b';
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 3fr 1fr;
+    grid-template-rows: 50fr 5fr 45fr 5fr;
   }
 
   &__visual-container {
@@ -93,17 +93,19 @@ export default {
     grid-template-rows: 1fr;
 
     .c-pi-v__visual {
+      max-height: $large-dimension--xxs + $large-dimension--xxxs;
       grid-area: c-pi-v__visual;
     }
   }
 
   &__title-container {
     display: grid;
+    padding-left: 0;
     gap: 0 0;
     grid-area: c-pi-t;
     grid-template-areas: 'c-pi-t__title';
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 
     .c-pi-t__title {
       color: var(--color-background);
@@ -118,27 +120,32 @@ export default {
     grid-template-areas:
       'c-pi-c__name c-pi-c__id c-pi-c__quantity c-pi-c__price'
       'c-pi-c__description c-pi-c__description c-pi-c__description c-pi-c__description';
-    grid-template-columns: 3fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 30fr 10fr 10fr 20fr;
+    grid-template-columns: 50fr 10fr 10fr 20fr;
+    // grid-template-columns: 1fr auto auto auto;
+    grid-template-rows: auto 4fr;
 
     .c-pi-c__name {
-      color: var(--color-secondary--lightest);
+      color: var(--color-background--darker);
       grid-area: c-pi-c__name;
     }
 
     .c-pi-c__id {
-      color: var(--color-secondary--lightest);
+      color: var(--color-background--darker);
       grid-area: c-pi-c__id;
+      text-align: center;
     }
 
     .c-pi-c__quantity {
-      color: var(--color-secondary--lightest);
+      color: var(--color-background--darker);
       grid-area: c-pi-c__quantity;
+      text-align: center;
     }
 
     .c-pi-c__price {
-      color: var(--color-secondary--lightest);
+      color: var(--color-background--darker);
       grid-area: c-pi-c__price;
+      text-align: center;
     }
 
     .c-pi-c__description {
@@ -148,8 +155,8 @@ export default {
       );
       @include scrollbar-function(smooth, y proximity);
 
-      max-height: 75%;
-      color: var(--color-secondary--lightest);
+      max-height: 85%;
+      color: var(--color-background--darker);
       grid-area: c-pi-c__description;
       overflow-y: scroll;
     }
