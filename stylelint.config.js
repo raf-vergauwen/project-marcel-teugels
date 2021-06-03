@@ -9,7 +9,7 @@ module.exports = {
     'order/properties-alphabetical-order': null,
     'selector-class-pattern': null,
     'max-nesting-depth': [
-      2,
+      3,
       {
         ignore: ['blockless-at-rules', 'pseudo-classes'],
       },

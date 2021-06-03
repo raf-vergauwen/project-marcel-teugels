@@ -96,16 +96,8 @@ export default {
 .title {
   display: block;
   color: #35495e;
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 100px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -127,9 +119,5 @@ form {
   display: flex;
   flex-direction: column;
   text-align: left;
-}
-
-label {
-  padding: 1em;
 }
 </style>

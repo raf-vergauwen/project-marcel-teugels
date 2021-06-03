@@ -30,6 +30,9 @@
         />
       </div>
     </section>
+    <div class="intermezzo intermezzo--1 full-width" :style="intermezzo1">
+      <div class="intermezzo__container"></div>
+    </div>
     <footer class="main-footer">
       <!-- * ------------------------------------------------------------------>
       <div class="main-footer__container">
@@ -56,16 +59,18 @@
               <h3 class="foot-nav-links__title">Webshop</h3>
               <ul class="foot-nav-links__list">
                 <li class="foot-nav-links__link">
-                  <a href="#hero"> <i class="fas fa-home"></i>Home Page </a>
+                  <a href="#hero">
+                    <fa class="item-icon" icon="home" />Home Page
+                  </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="#hot-items">
-                    <i class="fas fa-shopping-basket"></i>Webshop
+                    <fa class="item-icon" icon="shopping-basket" />Webshop
                   </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="#about">
-                    <i class="fas fa-drafting-compass"></i>Custom Work
+                    <fa class="item-icon" icon="drafting-compass" />Custom Work
                   </a>
                 </li>
               </ul>
@@ -78,17 +83,20 @@
                   <a
                     href="http://www.google.com/maps/place/50.867785845595435,%203.8150557738335107"
                   >
-                    <i class="fas fa-map-marker-alt"></i>Location
+                    <fa class="item-icon" icon="map-marker-alt" />Location
                   </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="tel:+123456789">
-                    <i class="fas fa-phone"></i>+32 470 32 45 20
+                    <fa class="item-icon" icon="phone" />+32 470 32 45 20
                   </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="mailto:support@company.com">
-                    <i class="fas fa-envelope"></i>support.testing@company.com
+                    <fa
+                      class="item-icon"
+                      icon="envelope"
+                    />support.testing@company.com
                   </a>
                 </li>
               </ul>
@@ -99,17 +107,17 @@
               <ul class="foot-nav-links__list">
                 <li class="foot-nav-links__link">
                   <a href="#restoration-hero">
-                    <i class="fas fa-home"></i>Home Page
+                    <fa class="item-icon" icon="home" />Home Page
                   </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="#restoration">
-                    <i class="fas fa-house-damage"></i>Restoration
+                    <fa class="item-icon" icon="house-damage" />Restoration
                   </a>
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="#workshops">
-                    <i class="fas fa-store-alt"></i>Workshops
+                    <fa class="item-icon" icon="store-alt" />Workshops
                   </a>
                 </li>
               </ul>
@@ -222,6 +230,10 @@ export default {
       heroImage: {
         backgroundImage:
           'url(http://157.230.126.154/assets/eaad4d0f-f450-47a0-b99a-bd7767111d7d)',
+      },
+      intermezzo1: {
+        backgroundImage:
+          'url(http://157.230.126.154/assets/e75be596-13cf-4527-8254-6423c5880acf)',
       },
       productData: {},
       src: 'http://157.230.126.154/assets/',
@@ -379,10 +391,25 @@ export default {
 \* -------------------------------------------------------------------------- */
 
 .main-footer {
+  display: flex;
+  width: 100vw;
+  max-width: 100vw;
+  justify-content: center;
+  padding-right: $buffer--l;
+  margin: 0;
   // ...
+  background-color: var(--color-background--darker);
+
+  @include breakpoint(xl) {
+    padding-right: $buffer--xl;
+  }
 
   &__container {
+    // margin: $center-me;
     // ...
+    // display: flex;
+    max-width: $max-width--root;
+    // justify-content: center;
   }
 
   &__hr {
@@ -409,13 +436,14 @@ export default {
   }
 
   .foot-nav-links {
+    @include flex-container;
+
     @include breakpoint(s) {
       flex-direction: row;
     }
-    // ...
 
     &__container {
-      @include flex-container;
+      // ...
     }
 
     &__title {
@@ -449,9 +477,9 @@ export default {
     padding: $buffer--s;
 
     @include breakpoint(xs) {
-      @include flex-items(2);
+      // @include flex-items(2);
 
-      justify-content: flex-start;
+      // justify-content: flex-start;
     }
   }
 
@@ -473,7 +501,6 @@ export default {
     @include breakpoint(xs) {
       justify-content: space-around;
       // @include flex-items(8);
-      background-color: rgb(245, 17, 17);
     }
 
     @include breakpoint(s) {
@@ -484,5 +511,25 @@ export default {
   &__link {
     padding: 0;
   }
+}
+
+.intermezzo {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    height: 100vh;
+    background-color: $bg-color--transparant-black---level-2;
+  }
+}
+
+.intermezzo--1 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/sculpture--07.jpg');
+}
+
+.intermezzo--2 {
+  background-image: url('/assets/media/images/marcel-teugels/favorites/construction-work--05.jpg');
 }
 </style>
