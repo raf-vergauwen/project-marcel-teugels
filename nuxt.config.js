@@ -83,6 +83,7 @@ export default {
         'faUsers',
         'faLightbulb',
         'faSearch',
+        'faTag',
       ],
       brands: [
         'faFacebook',

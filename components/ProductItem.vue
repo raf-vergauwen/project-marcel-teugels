@@ -12,20 +12,30 @@
         class="c-product-item__title-container c-pi-t"
         :to="`/product/${product.id}`"
       >
-        <h2 class="c-pi-t__title">
+        <h3 class="c-pi-t__title">
           {{ product.name }}
-        </h2>
+        </h3>
       </NuxtLink>
       <div class="c-product-item__content-container c-pi-c">
-        <p class="c-pi-c__name">{{ product.name }}</p>
-        <p class="c-pi-c__id">{{ product.id }}</p>
+        <p class="c-pi-c__name">
+          <fa class="item-icon" icon="globe" />
+          {{ product.name }}
+        </p>
+        <p class="c-pi-c__id">
+          <fa class="item-icon" icon="globe" />
+          {{ product.id }}
+        </p>
+        <p class="c-pi-c__quantity">
+          <fa class="item-icon" icon="globe" />
+          {{ product.quantity_in_stock }}
+        </p>
         <p class="c-pi-c__description">
           {{ product.description }}
         </p>
-        <p class="c-pi-c__quantity">
-          Quantity: {{ product.quantity_in_stock }}
+        <p class="c-pi-c__price">
+          <fa class="item-icon" icon="globe" />
+          {{ product.price }}
         </p>
-        <p class="c-pi-c__price">Price: € {{ product.price }}</p>
       </div>
       <div class="c-product-item__btn-container c-pi-b">
         <button class="c-pi-b__btn" @click="$emit('add-product', product)">
@@ -60,8 +70,10 @@ export default {
   background-color: var(--color-primary);
 
   &__main-container {
+    @include card;
+
     display: grid;
-    gap: 8px 8px;
+    gap: $buffer--s $buffer--s;
     grid-template-areas:
       'c-pi-v'
       'c-pi-t'
@@ -69,6 +81,7 @@ export default {
       'c-pi-b';
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 1fr 3fr 1fr;
+    overflow-y: scroll;
   }
 
   &__visual-container {
@@ -99,7 +112,7 @@ export default {
 
   &__content-container {
     display: grid;
-    gap: 4px 4px;
+    gap: $buffer--xs $buffer--xs;
     grid-area: c-pi-c;
     grid-template-areas:
       'c-pi-c__name c-pi-c__id c-pi-c__quantity c-pi-c__price'
@@ -125,6 +138,7 @@ export default {
 
     .c-pi-c__description {
       grid-area: c-pi-c__description;
+      overflow-y: scroll;
     }
   }
 
@@ -137,6 +151,8 @@ export default {
     grid-template-rows: 1fr;
 
     .c-pi-b__btn {
+      padding: 0;
+      margin: 0;
       grid-area: c-pi-b__btn;
     }
   }
