@@ -18,27 +18,28 @@
       </NuxtLink>
       <div class="c-product-item__content-container c-pi-c">
         <p class="c-pi-c__name">
-          <fa class="item-icon" icon="globe" />
+          <fa class="item-icon" icon="tag" />
           {{ product.name }}
         </p>
         <p class="c-pi-c__id">
-          <fa class="item-icon" icon="globe" />
+          <fa class="item-icon" icon="hashtag" />
           {{ product.id }}
         </p>
         <p class="c-pi-c__quantity">
-          <fa class="item-icon" icon="globe" />
+          <fa class="item-icon" icon="shopping-bag" />
           {{ product.quantity_in_stock }}
         </p>
         <p class="c-pi-c__description">
           {{ product.description }}
         </p>
         <p class="c-pi-c__price">
-          <fa class="item-icon" icon="globe" />
+          <fa class="item-icon" icon="euro-sign" />
           {{ product.price }}
         </p>
       </div>
       <div class="c-product-item__btn-container c-pi-b">
         <button class="c-pi-b__btn" @click="$emit('add-product', product)">
+          <fa class="item-icon--btn" icon="cart-plus" />
           Buy
         </button>
       </div>
@@ -81,7 +82,6 @@ export default {
       'c-pi-b';
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 1fr 3fr 1fr;
-    overflow-y: scroll;
   }
 
   &__visual-container {
@@ -106,6 +106,7 @@ export default {
     grid-template-rows: 1fr;
 
     .c-pi-t__title {
+      color: var(--color-background);
       grid-area: c-pi-t__title;
     }
   }
@@ -117,26 +118,38 @@ export default {
     grid-template-areas:
       'c-pi-c__name c-pi-c__id c-pi-c__quantity c-pi-c__price'
       'c-pi-c__description c-pi-c__description c-pi-c__description c-pi-c__description';
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
 
     .c-pi-c__name {
+      color: var(--color-secondary--lightest);
       grid-area: c-pi-c__name;
     }
 
     .c-pi-c__id {
+      color: var(--color-secondary--lightest);
       grid-area: c-pi-c__id;
     }
 
     .c-pi-c__quantity {
+      color: var(--color-secondary--lightest);
       grid-area: c-pi-c__quantity;
     }
 
     .c-pi-c__price {
+      color: var(--color-secondary--lightest);
       grid-area: c-pi-c__price;
     }
 
     .c-pi-c__description {
+      @include scrollbar-style(
+        $size: calc(#{$buffer--s} + #{$buffer--xs}),
+        $color: var(--color-tertiary)
+      );
+      @include scrollbar-function(smooth, y proximity);
+
+      max-height: 75%;
+      color: var(--color-secondary--lightest);
       grid-area: c-pi-c__description;
       overflow-y: scroll;
     }
@@ -156,5 +169,9 @@ export default {
       grid-area: c-pi-b__btn;
     }
   }
+}
+
+.fa-home {
+  color: rgb(197, 4, 4);
 }
 </style>

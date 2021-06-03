@@ -84,6 +84,10 @@ export default {
         'faLightbulb',
         'faSearch',
         'faTag',
+        'faHashtag',
+        'faShoppingBag',
+        'faEuroSign',
+        'faCartPlus',
       ],
       brands: [
         'faFacebook',

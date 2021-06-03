@@ -189,6 +189,14 @@
   color: var(--color-tertiary);
 }
 
+.item-icon--btn {
+  color: var(--color-primary);
+}
+
+.item-icon--btn:hover {
+  color: var(--color-text);
+}
+
 .fa-heart:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
