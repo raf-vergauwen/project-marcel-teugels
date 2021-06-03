@@ -1,38 +1,40 @@
 <template>
-  <main class="p-store">
+  <main>
     <store-header />
-    <div
-      v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-      class="p-store__header-container"
-    >
-      <h1 class="p-store__title">Store</h1>
-      <button class="p-store__btn">
-        <a href="/add-product">+</a>
-      </button>
-    </div>
+    <section class="p-store">
+      <div
+        v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
+        class="p-store__header-container"
+      >
+        <h1 class="p-store__title">Store</h1>
+        <button class="p-store__btn">
+          <a href="/add-product">+</a>
+        </button>
+      </div>
 
-    <div v-else class="p-store__header-container">
-      <h1 class="p-store__title">Store</h1>
-    </div>
+      <div v-else class="p-store__header-container">
+        <h1 class="p-store__title">Store</h1>
+      </div>
 
-    <div class="p-store__product-list">
-      <product-item
-        v-for="product in productData"
-        :key="product.id"
-        :product="product"
-        class="p-store__product-list--item"
-        @add-product="addProduct($event)"
-      />
-    </div>
+      <div class="p-store__product-list">
+        <product-item
+          v-for="product in productData"
+          :key="product.id"
+          :product="product"
+          class="p-store__product-list--item"
+          @add-product="addProduct($event)"
+        />
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
-import ProductItem from '~/components/ProductItem';
 import StoreHeader from '~/components/StoreHeader';
+import ProductItem from '~/components/ProductItem';
 
 export default {
-  components: { ProductItem, StoreHeader },
+  components: { StoreHeader, ProductItem },
 
   data() {
     return {
@@ -79,77 +81,26 @@ export default {
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
       console.log(this.shoppingCart);
     },
-    /*
-    newShoppingCart() {
-      fetch('http://157.230.126.154/items/ordered_items', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not create new shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('newCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    addToShoppingCart(product) {
-      fetch('http://157.230.126.154/items/ordered_items/21', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not add product to shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('addToCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    */
   },
 };
 </script>
 
 <style lang="scss">
 .p-store {
+  padding-top: $buffer--xxl;
+
   &__header-container {
-    padding-top: $buffer--xxl;
+    @include breakpoint(l) {
+      padding: $buffer--m;
+    }
   }
 
   &__title {
-    padding-top: $buffer--m;
-    padding-bottom: 0;
+    margin-bottom: $buffer--m;
     color: var(--color-text);
 
-    @include breakpoint(m) {
-      padding-top: $buffer--m;
-    }
-
     @include breakpoint(l) {
-      padding-top: $buffer--l;
+      margin-bottom: $buffer--l;
     }
   }
 
@@ -159,7 +110,6 @@ export default {
 
   &__product-list {
     display: grid;
-    padding: $buffer--m;
     gap: $buffer--m;
     grid-template-areas: '.';
     grid-template-columns: 1fr;
@@ -174,7 +124,6 @@ export default {
     }
 
     @include breakpoint(m) {
-      padding: $buffer--m;
       gap: $buffer--m;
       grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
@@ -182,14 +131,13 @@ export default {
     }
 
     @include breakpoint(l) {
-      padding: $buffer--l;
       gap: $buffer--l;
     }
 
     @include breakpoint(xl) {
       grid-template-areas: '. . . .';
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
   }
 

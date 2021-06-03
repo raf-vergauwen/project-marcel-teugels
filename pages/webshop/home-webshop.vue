@@ -2,7 +2,7 @@
   <main class="main">
     <!-- * ------------------------------------------------------------------>
     <store-header />
-    <section class="hero full-width" :style="src">
+    <section class="hero" :style="heroImage">
       <!-- * -------------------------------------------------------------->
       <div class="hero__container">
         <svg
@@ -18,34 +18,16 @@
         <h2 class="hero__title">Webshop Homepage</h2>
       </div>
     </section>
-    <section class="diensten">
-      <div class="diensten--container">
-        <img
-          class="diensten__img"
-          src="http://157.230.126.154/assets/e75be596-13cf-4527-8254-6423c5880acf"
-          alt=""
+    <section class="hot-items">
+      <h2 class="hot-items__title">Hot Items</h2>
+      <div class="hot-items__container">
+        <product-item
+          v-for="product in productData"
+          :key="product.id"
+          :product="product"
+          class="hot-items__item"
+          @add-product="addProduct($event)"
         />
-      </div>
-      <div class="diensten__info">
-        <p class="diensten__text">
-          hjkdsljghj ruifjsldknfjghru eoijs fkmdlvfjnd gheiorze fpqjkmldv
-          snfjgrhiefjop kdlvsfjngrhui ojefqckl,dnfsg jrhuei ojsdklvg
-          nrjeijsodvklng jreuhij osdklvfn gjreuh ijsodklvsgh iruzo jsdlvkn
-          gjrheiuojsp dvlmkgihro jsp dvilgrh ojps hjkdsljghj ruifjsldknfjghru
-          eoijs fkmdlvfjnd gheiorze fpqjkmldv snfjgrhiefjop kdlvsfjngrhui
-          ojefqckl,dnfsg jrhuei ojsdklvg nrjeijsodvklng jreuhij osdklvfn gjreuh
-          ijsodklvsgh iruzo jsdlvkn gjrheiuojsp dvlmkgihro jsp dvilgrh ojps
-          hjkdsljghj ruifjsldknfjghru eoijs fkmdlvfjnd gheiorze fpqjkmldv
-          snfjgrhiefjop kdlvsfjngrhui ojefqckl,dnfsg jrhuei ojsdklvg
-          nrjeijsodvklng jreuhij osdklvfn gjreuh ijsodklvsgh iruzo jsdlvkn
-          gjrheiuojsp dvlmkgihro jsp dvilgrh ojps hjkdsljghj ruifjsldknfjghru
-          eoijs fkmdlvfjnd gheiorze fpqjkmldv snfjgrhiefjop kdlvsfjngrhui
-          ojefqckl,dnfsg jrhuei ojsdklvg nrjeijsodvklng jreuhij osdklvfn gjreuh
-          ijsodklvsgh iruzo jsdlvkn gjrheiuojsp dvlmkgihro jsp dvilgrh ojps
-        </p>
-        <div class="button__container">
-          <button class="diensten__btn">lees meer</button>
-        </div>
       </div>
     </section>
   </main>
@@ -53,15 +35,63 @@
 
 <script>
 import StoreHeader from '~/components/StoreHeader';
+import ProductItem from '~/components/ProductItem';
+
 export default {
-  components: { StoreHeader },
+  components: { StoreHeader, ProductItem },
+
   data() {
     return {
-      src: {
+      heroImage: {
         backgroundImage:
           'url(http://157.230.126.154/assets/eaad4d0f-f450-47a0-b99a-bd7767111d7d)',
       },
+      productData: {},
+      src: 'http://157.230.126.154/assets/',
+      Admin: false,
+      shoppingCart: [],
     };
+  },
+
+  fetch() {
+    return this.fetchItems();
+  },
+
+  computed: {
+    access_token() {
+      return sessionStorage.getItem('access_token');
+    },
+    user_role() {
+      return sessionStorage.getItem('user_role');
+    },
+  },
+
+  methods: {
+    fetchItems() {
+      return fetch('http://157.230.126.154/items/products?fields=*,images.*', {
+        method: 'GET',
+        headers: {},
+      })
+        .then((response) => {
+          if (!response.ok) {
+            console.log('Error');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+          this.productData = data.data;
+          this.Admin = this.user_role;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    addProduct(product) {
+      this.shoppingCart.push(product.id);
+      sessionStorage.setItem('shopping_cart', this.shoppingCart);
+      console.log(this.shoppingCart);
+    },
   },
 };
 </script>
@@ -99,6 +129,65 @@ export default {
     color: var(--color-secondary);
     filter: drop-shadow(0 0 0.1em var(--color-text));
     font-family: $font-family--component;
+  }
+}
+.hot-items {
+  &__title {
+    margin-bottom: $buffer--m;
+    color: var(--color-text);
+
+    @include breakpoint(l) {
+      margin-bottom: $buffer--l;
+    }
+  }
+
+  &__container {
+    display: grid;
+    gap: $buffer--m;
+    grid-template-areas: '.';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    place-items: center;
+    transition: $transition--default;
+
+    @include breakpoint(xs) {
+      grid-template-areas: '. .';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    @include breakpoint(m) {
+      gap: $buffer--m;
+      grid-template-areas: '. . .';
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include breakpoint(l) {
+      gap: $buffer--l;
+    }
+
+    @include breakpoint(xl) {
+      grid-template-areas: '. . . .';
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    @include card;
+
+    &:hover {
+      transform: translate3d(0, -$buffer--xxs, 0);
+
+      @include breakpoint(m) {
+        transform: translate3d(0, -$buffer--xs, 0);
+      }
+
+      @include breakpoint(l) {
+        transform: translate3d(0, -$buffer--s, 0);
+      }
+    }
   }
 }
 </style>
