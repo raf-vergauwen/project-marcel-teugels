@@ -41,7 +41,7 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          this.requestData = response.data.data;
+          this.requestData = response.data;
         })
         .catch((err) => {
           console.error(err);

@@ -8,7 +8,7 @@ export const state = () => {
 export const getters = {
   isLoggedIn(state) {
     return state.token !== null;
-  },
+  }, 
   isAdmin(state) {
     if (!state.user) {
       return false;

@@ -38,7 +38,7 @@
           gjrheiuojsp dvlmkgihro jsp dvilgrh ojps
         </p>
         <div class="button__container">
-          <button class="diensten__btn">lees meer</button>
+          <button class="diensten__btn user-btn">lees meer</button>
         </div>
       </div>
     </section>
@@ -109,7 +109,7 @@
             nrjeijsodvklng jreuhij osdklvfn gjreuh ijsodklvsgh iruzo jsdlvkn
             gjrheiuojsp dvlmkgihro jsp dvilgrh ojps
           </p>
-          <button class="about__btn">bekijk alle workshops</button>
+          <button class="about__btn user-btn">bekijk alle workshops</button>
         </div>
       </div>
     </section>
@@ -144,26 +144,8 @@
           ijsodklvsgh iruzo jsdlvkn gjrheiuojsp dvlmkgihro jsp dvilgrh
         </p>
       </div>
-      <button class="contact__btn">contact</button>
+      <button class="contact__btn user-btn">contact</button>
     </section>
-    <footer>
-      <div class="footer__container">
-        <div class="navigatie">
-          <p>navigatie</p>
-          <p>home</p>
-          <p>blog</p>
-          <p>webshop</p>
-          <p>contact</p>
-        </div>
-        <div class="social">
-          <p>social</p>
-          <p>instagram</p>
-          <p>facebook</p>
-          <p>youtube</p>
-        </div>
-      </div>
-      <p>Marcel Teugels</p>
-    </footer>
   </main>
 </template>
 
@@ -220,13 +202,8 @@ a {
 }
 
 .diensten__btn {
-  margin-top: 2em;
-  width: 200px;
-  height: 35px;
   background-color: #132636;
   color: #f7f5f5;
-  border-radius: 30px;
-  border: 0px;
 }
 
 .button__container {
@@ -269,13 +246,8 @@ a {
 }
 
 .about__btn {
-  margin-top: 1em;
-  width: 200px;
-  height: 35px;
   background-color: #f7f5f5;
   color: #132636;
-  border-radius: 30px;
-  border: 0px;
 }
 
 .about__workshops {
@@ -314,29 +286,7 @@ a {
 }
 
 .contact__btn {
-  margin-top: 2em;
-  width: 200px;
-  height: 35px;
   background-color: #132636;
   color: #f7f5f5;
-  border-radius: 30px;
-  border: 0px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  background-color: #0f0e0e;
-  color: #f7f5f5;
-  padding: 1em 0em;
-}
-
-.footer__container {
-  display: flex;
-}
-
-.footer p {
-  text-align: end;
 }
 </style>
