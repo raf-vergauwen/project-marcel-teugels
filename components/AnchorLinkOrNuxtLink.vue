@@ -10,5 +10,15 @@
 <script>
 export default {
   props: ['nuxt', 'to'],
+  // props: {
+  //   nuxt: {
+  //     type: String,
+  //     required: true,
+  //   },
+  //   to: {
+  //     type: String,
+  //     required: true,
+  //   },
+  // },
 };
 </script>

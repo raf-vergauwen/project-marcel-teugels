@@ -42,7 +42,7 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome', // Imports FontAwesome 5 SVG icons
     '@nuxtjs/google-fonts',
-    'nuxt-build-optimisations',
+    // 'nuxt-build-optimisations',
   ],
 
   googleFonts: {

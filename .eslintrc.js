@@ -38,6 +38,7 @@ module.exports = {
       'warn',
       { ignores: ['modules'] },
     ],
+    'vue/no-unused-properties': ['warn'],
   },
   globals: {
     $nuxt: true,

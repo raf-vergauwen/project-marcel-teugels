@@ -1,39 +1,58 @@
 <template>
   <footer class="c-footer">
-    <div class="c-footer__container">
-      <nav class="c-footer-store-nav">
-        <ul v-for="navItem in navItems" :key="navItem.id">
-          <h3>{{ navItem.title }}</h3>
-          <li>
-            <fa
-              :class="{ 'c-footer-restoration-nav__item--icon': true }"
-              :icon="['fas', navItem.icon[0]]"
-              style="width: 1rem"
-            />
-            {{ navItem.label[0] }}
-          </li>
-          <li>
-            <fa
-              :class="{ 'c-footer-restoration-nav__item--icon': true }"
-              :icon="['fas', navItem.icon[1]]"
-              style="width: 1rem"
-            />
-            {{ navItem.label[1] }}
-          </li>
-          <li>
-            <fa
-              :class="{ 'c-footer-restoration-nav__item--icon': true }"
-              :icon="['fas', navItem.icon[2]]"
-              style="width: 1rem"
-            />
-            {{ navItem.label[2] }}
+    <div class="c-footer__main-container">
+      <article class="c-footer__about-container c-f-about">
+        <h3 class="c-f-about__title">About</h3>
+        <p class="c-f-about__paragraph">
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+          eleifend leo.
+        </p>
+      </article>
+      <nav class="c-footer__nav-container c-f-nav">
+        <ul v-for="navItem in navItems" :key="navItem.id" class="c-f-nav__list">
+          <h3 class="c-f-nav__title">{{ navItem.title }}</h3>
+          <li
+            v-for="listItem in navItem.listItems"
+            :key="listItem.id"
+            class="c-f-nav__list"
+          >
+            <anchor-link-or-nuxt-link
+              :to="listItem.path"
+              :nuxt="navItem.nuxt"
+              class="c-f-nav__link"
+            >
+              <fa
+                class="c-f-nav__icon"
+                :icon="['fas', listItem.icon]"
+                style="width: 1rem"
+              />
+              {{ listItem.label }}
+            </anchor-link-or-nuxt-link>
           </li>
         </ul>
       </nav>
+      <hr class="c-footer__hr" />
+      <div class="c-footer__social-media-container c-f-sm">
+        <a
+          v-for="smItem in smItems"
+          :key="smItem.id"
+          class="c-f-sm__item"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          :href="smItem.link"
+        >
+          <fa class="c-f-sm__icon" :icon="['fab', smItem.icon]" />
+        </a>
+      </div>
+      <div class="c-footer__legal-container c-f-legal">
+        <p class="c-f-legal__text">Copyright &copy; 2021 All Rights Reserved</p>
+      </div>
     </div>
   </footer>
 </template>
-
 <script>
 import AnchorLinkOrNuxtLink from './AnchorLinkOrNuxtLink.vue';
 
@@ -41,50 +60,101 @@ export default {
   components: {
     AnchorLinkOrNuxtLink,
   },
-  props: ['brandIsNuxtLink', 'navbar'],
+
   data() {
     return {
       navItems: [
         {
+          nuxt: true,
           title: 'webshop',
-          icon: ['store-alt', 'drafting-compass', 'shopping-basket'],
-          label: ['store', 'custom work', 'shopping cart(0)'],
-          nuxt: true,
-          path: [
-            '/webshop/storefront',
-            '/webshop/custom-work',
-            '/webshop/shopping-cart',
+          listItems: [
+            {
+              path: '/webshop/storefront',
+              icon: 'store-alt',
+              label: 'store',
+            },
+            {
+              path: '/webshop/custom-work',
+              icon: 'drafting-compass',
+              label: 'custom work',
+            },
+            {
+              path: '/webshop/storefront',
+              icon: 'shopping-basket',
+              label: 'shopping cart',
+            },
           ],
         },
         {
+          nuxt: true,
           title: 'restoration',
-          icon: ['lightbulb', 'users', 'address-card'],
-          label: ['methodology', 'workshops', 'contact'],
-          nuxt: true,
-          path: [
-            '/restoration/methodology',
-            '/restoration/workshops',
-            '/restoration/contact',
+          listItems: [
+            {
+              path: '/restoration/methodology',
+              icon: 'lightbulb',
+              label: 'methodology',
+            },
+            {
+              path: '/restoration/workshops',
+              icon: 'users',
+              label: 'workshops',
+            },
+            {
+              path: '/restoration/contact',
+              icon: 'address-card',
+              label: 'contact',
+            },
           ],
         },
         {
-          title: 'contact info',
-          icon: ['map-marker-alt', 'phone', 'envelope'],
-          label: ['location', 'phone', 'e-mail'],
           nuxt: false,
-          path: [
-            'http://www.google.com/maps/place/50.867785845595435,%203.8150557738335107',
-            'tel:+123456789',
-            'mailto:support@company.com',
+          title: 'contact info',
+          listItems: [
+            {
+              path: 'https://www.google.com/maps/place/50.867785845595435,%203.8150557738335107',
+              icon: 'map-marker-alt',
+              label: 'location',
+            },
+            {
+              path: 'tel:+123456789',
+              icon: 'phone',
+              label: 'phone',
+            },
+            {
+              path: 'mailto:support@company.com',
+              icon: 'envelope',
+              label: 'e-mail',
+            },
           ],
         },
         {
-          title: 'accounts',
-          icon: ['user-plus', 'sign-in-alt', 'user-circle'],
-          label: ['sign up', 'login', 'profile'],
           nuxt: true,
-          path: ['/accounts/sign-up', '/accounts/login', '/accounts/profile'],
+          title: 'accounts',
+          listItems: [
+            {
+              path: '/accounts/sign-up',
+              icon: 'user-plus',
+              label: 'sign up',
+            },
+            {
+              path: '/accounts/login',
+              icon: 'sign-in-alt',
+              label: 'login',
+            },
+            {
+              path: '/accounts/profile',
+              icon: 'user-circle',
+              label: 'profile',
+            },
+          ],
         },
+      ],
+      smItems: [
+        { link: 'youtube.com', icon: 'youtube' },
+        { link: 'facebook.com', icon: 'facebook' },
+        { link: 'instagram.com', icon: 'instagram' },
+        { link: 'twitter.com', icon: 'twitter' },
+        { link: 'pinterest.com', icon: 'pinterest' },
       ],
     };
   },
@@ -93,4 +163,22 @@ export default {
 
 <style lang="scss" scoped>
 @include c-main-footer;
+
+.c-footer {
+  &__main-container {
+    // ...
+  }
+  &__about-container {
+    // ...
+  }
+  &__nav-container {
+    // ...
+  }
+  &__social-media-container {
+    // ...
+  }
+  &__legal-container {
+    // ...
+  }
+}
 </style>

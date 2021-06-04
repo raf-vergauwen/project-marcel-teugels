@@ -34,14 +34,14 @@
 
 // -  <<----------<< Brands >>---------->>
 
-// .fab,
+.fab,
 [data-prefix='fab'] {
   @include box-dimensions(fab, $font-size--h3);
 
   display: inline-flex;
   overflow: visible;
   align-self: center;
-  padding: $buffer--s;
+  padding: $buffer--xxs;
 
   &:hover {
     color: var(--color-secondary);
@@ -63,7 +63,7 @@
       @include box-transition;
 
       color: #1877f2;
-      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }
   }
@@ -76,7 +76,8 @@
       @include box-transition;
 
       color: #1da1f2;
-      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      // filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }
   }
@@ -89,7 +90,7 @@
       @include box-transition;
 
       color: #e4405f;
-      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }
   }
@@ -102,7 +103,7 @@
       @include box-transition;
 
       color: #bd081c;
-      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }
   }
@@ -115,7 +116,7 @@
       @include box-transition;
 
       color: #f00;
-      filter: drop-shadow(30px 10px 4px var(--color-secondary));
+      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }
   }
