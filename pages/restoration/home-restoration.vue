@@ -1,6 +1,6 @@
 <template>
   <main>
-    <restauration-header />
+    <restoration-header />
     <section class="hero"></section>
     <section class="diensten">
       <div class="diensten--container">
@@ -169,13 +169,13 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 export default {
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero {
   width: 100vw;
   height: 90vh;

@@ -37,7 +37,7 @@
 
 <script></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home {
   display: grid;
   padding: $buffer--m;

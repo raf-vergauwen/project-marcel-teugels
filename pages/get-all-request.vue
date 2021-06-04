@@ -5,10 +5,10 @@
         v-for="request in requestData.data"
         :key="request.name"
         class="request-item"
-        style="list-style-type: none;"
+        style="list-style-type: none"
       >
         {{ request.name }}
-        <ul style="list-style-type: none;">
+        <ul style="list-style-type: none">
           <li>id: {{ request.id }}</li>
           <li>voornaam: {{ request.first_name }}</li>
           <li>achternaam: {{ request.last_name }}</li>
@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
   display: flex;
   width: 100vw;

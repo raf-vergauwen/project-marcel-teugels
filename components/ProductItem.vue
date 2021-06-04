@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .c-product-item {
   background-color: var(--color-primary);
 

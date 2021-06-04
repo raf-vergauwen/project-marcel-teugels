@@ -93,10 +93,7 @@
                 </li>
                 <li class="foot-nav-links__link">
                   <a href="mailto:support@company.com">
-                    <fa
-                      class="item-icon"
-                      icon="envelope"
-                    />support.testing@company.com
+                    <fa class="item-icon" icon="envelope" />support@company.com
                   </a>
                 </li>
               </ul>
@@ -215,15 +212,17 @@
         </div>
       </div>
     </footer>
+    <main-footer />
   </main>
 </template>
 
 <script>
 import StoreHeader from '~/components/StoreHeader';
 import ProductItem from '~/components/ProductItem';
+import MainFooter from '~/components/MainFooter';
 
 export default {
-  components: { StoreHeader, ProductItem },
+  components: { StoreHeader, ProductItem, MainFooter },
 
   data() {
     return {
@@ -287,7 +286,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
   max-width: 100%;
 }
@@ -331,6 +330,7 @@ export default {
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
 .hot-items {
+  // background-color: var(--color-secondary);
   &__title {
     margin-bottom: $buffer--m;
     color: var(--color-text);
@@ -397,19 +397,14 @@ export default {
   justify-content: center;
   padding-right: $buffer--l;
   margin: 0;
-  // ...
-  background-color: var(--color-background--darker);
+  background-color: var(--color-primary--darker);
 
   @include breakpoint(xl) {
     padding-right: $buffer--xl;
   }
 
   &__container {
-    // margin: $center-me;
-    // ...
-    // display: flex;
     max-width: $max-width--root;
-    // justify-content: center;
   }
 
   &__hr {
@@ -456,8 +451,8 @@ export default {
     }
 
     &__link {
-      white-space: nowrap;
       // ...
+      color: var(--color-secondary);
     }
   }
 }
@@ -512,6 +507,10 @@ export default {
     padding: 0;
   }
 }
+
+/* -------------------------------------------------------------------------- *\
+-  INTERMEZZO
+\* -------------------------------------------------------------------------- */
 
 .intermezzo {
   height: 100vh;

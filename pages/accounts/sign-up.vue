@@ -1,6 +1,6 @@
 <template>
   <main>
-    <restauration-header />
+    <restoration-header />
     <div class="container">
       <h1>Account creation</h1>
       <form action="account-creation" @submit.prevent="createAccount">
@@ -27,10 +27,10 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 
 export default {
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
   data() {
     return {
       firstName: '',
@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   display: flex;
   min-height: 100vh;

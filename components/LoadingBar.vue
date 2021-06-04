@@ -8,6 +8,7 @@
 export default {
   data: () => ({
     loading: false,
+    continuous: true,
   }),
   methods: {
     start() {
@@ -20,7 +21,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .loading-page {
   position: fixed;
   z-index: 1000;

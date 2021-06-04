@@ -1,6 +1,6 @@
 <template>
   <main class="p-product-page">
-    <restauration-header />
+    <restoration-header />
     <div class="container">
       <h1>Under Construction</h1>
     </div>
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 
 export default {
   name: 'WorkshopPage',
 
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
   data() {
     return {
       workshopData: null,

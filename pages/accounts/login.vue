@@ -1,6 +1,6 @@
 <template>
   <main>
-    <restauration-header />
+    <restoration-header />
     <div class="container">
       <h1>Login</h1>
       <form @submit.prevent="login">
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 
 export default {
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
 
   data() {
     return {
@@ -91,7 +91,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   display: flex;
   min-height: 100vh;

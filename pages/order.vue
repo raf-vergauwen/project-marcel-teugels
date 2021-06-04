@@ -5,10 +5,10 @@
         v-for="product in productData"
         :key="product.name"
         class="product-item"
-        style="list-style-type: none;"
+        style="list-style-type: none"
       >
         {{ product.name }}
-        <ul style="list-style-type: none;">
+        <ul style="list-style-type: none">
           <li>
             <img class="image" src="" />
           </li>
@@ -143,7 +143,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .order {
   margin: 6em;
 }

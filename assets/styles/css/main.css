@@ -280,7 +280,7 @@
 .fa-youtube:hover path {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #ff0000;
+  color: #f00;
   -webkit-filter: drop-shadow(30px 10px 4px var(--color-secondary));
           filter: drop-shadow(30px 10px 4px var(--color-secondary));
   -webkit-transform: translate3d(0, -0.25rem, 0);

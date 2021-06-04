@@ -1,6 +1,6 @@
 <template>
   <main class="p-product-page">
-    <restauration-header />
+    <restoration-header />
     <section id="app">
       <div>
         <label>
@@ -32,10 +32,10 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 
 export default {
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
   data() {
     return {
       title: '',
@@ -92,7 +92,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .title__container {
   display: flex;
   width: 100vw;

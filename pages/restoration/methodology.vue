@@ -1,6 +1,6 @@
 <template>
   <main>
-    <restauration-header />
+    <restoration-header />
     <div class="title__container">
       <h1>Under Construction</h1>
     </div>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 export default {
-  components: { RestaurationHeader },
+  components: { RestorationHeader },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .title__container {
   display: flex;
   width: 100vw;

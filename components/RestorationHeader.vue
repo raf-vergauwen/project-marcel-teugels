@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'RestaurationHeader',
+  name: 'RestorationHeader',
   data() {
     return {
       navItems: [
@@ -89,6 +89,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @include main-header;
 </style>

@@ -1,6 +1,6 @@
 <template>
   <main class="p-workshop">
-    <restauration-header />
+    <restoration-header />
     <div
       v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
       class="p-workshop__header-container"
@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import RestaurationHeader from '~/components/RestaurationHeader';
+import RestorationHeader from '~/components/RestorationHeader';
 import WorkshopItem from '~/components/WorkshopItem';
 
 export default {
-  components: { RestaurationHeader, WorkshopItem },
+  components: { RestorationHeader, WorkshopItem },
 
   data() {
     return {
@@ -73,7 +73,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .p-workshop {
   @include block-container;
 
