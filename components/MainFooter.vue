@@ -194,7 +194,6 @@ export default {
     .c-foot-about {
       &__title {
         // ...
-        // color: var(--color-tertiary);
       }
 
       &__paragraph {
