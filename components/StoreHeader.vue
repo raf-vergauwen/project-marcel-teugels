@@ -21,7 +21,6 @@
               <fa
                 class="c-header-nav__link-icon"
                 :icon="['fas', navItem.icon]"
-                style="width: 1rem"
               />
               {{ navItem.label }}
             </nuxt-link>

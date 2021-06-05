@@ -190,10 +190,6 @@
   overflow: visible;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.fab:hover,
-[data-prefix='fab']:hover {
   color: var(--color-secondary);
 }
 

@@ -194,10 +194,6 @@
   overflow: visible;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.fab:hover,
-[data-prefix='fab']:hover {
   color: var(--color-secondary);
 }
 
@@ -938,11 +934,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-tertiary--lightest);
 }
 
 a:hover path {
-  color: var(--color-secondary);
+  color: var(--color-tertiary--lightest);
 }
 
 a::before {
@@ -964,7 +960,7 @@ a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: var(--color-secondary);
+  background: var(--color-tertiary--lightest);
   content: '';
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
@@ -972,7 +968,7 @@ a::after {
 
 a:hover::before {
   width: 100%;
-  background: var(--color-secondary);
+  background: var(--color-tertiary--lightest);
   -webkit-transition: width 0.35s ease;
   transition: width 0.35s ease;
 }

@@ -15,7 +15,7 @@
         <div
           v-for="navItem in navItems"
           :key="navItem.id"
-          class="c-footer-nav__sub-container"
+          :class="[`c-footer-nav__${navItem.container}-container`]"
         >
           <h3 class="c-foot-nav__title">{{ navItem.title }}</h3>
           <ul class="c-foot-nav__list">
@@ -40,23 +40,27 @@
           </ul>
         </div>
       </nav>
-      <hr class="c-footer__hr-container c-foot-hr" />
-      <div class="c-footer__social-media-container c-foot-sm">
-        <a
-          v-for="smItem in smItems"
-          :key="smItem.id"
-          class="c-foot-sm__item"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          :href="smItem.link"
-        >
-          <fa class="c-foot-sm__icon" :icon="['fab', smItem.icon]" />
-        </a>
-      </div>
-      <div class="c-footer__legal-container c-foot-legal">
-        <p class="c-foot-legal__text">
-          Copyright &copy; 2021 All Rights Reserved
-        </p>
+      <hr class="c-footer__hr-container" />
+      <div class="c-footer__end-container">
+        <div class="c-footer__social-media-container c-foot-sm">
+          <a
+            v-for="smItem in smItems"
+            :key="smItem.id"
+            class="c-foot-sm__item"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            :href="smItem.link"
+          >
+            <fa class="c-foot-sm__icon" :icon="['fab', smItem.icon]" />
+          </a>
+        </div>
+        <div class="c-footer__legal-container c-foot-legal">
+          <p class="c-foot-legal__text">
+            Copyright
+            <fa class="c-foot-legal__icon" :icon="['fas', 'copyright']" /> 2021
+            All Rights Reserved
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -74,6 +78,7 @@ export default {
       navItems: [
         {
           nuxt: true,
+          container: 'webshop',
           title: 'webshop',
           listItems: [
             {
@@ -95,6 +100,7 @@ export default {
         },
         {
           nuxt: true,
+          container: 'restoration',
           title: 'restoration',
           listItems: [
             {
@@ -116,6 +122,7 @@ export default {
         },
         {
           nuxt: false,
+          container: 'contact-info',
           title: 'contact info',
           listItems: [
             {
@@ -137,6 +144,7 @@ export default {
         },
         {
           nuxt: true,
+          container: 'accounts',
           title: 'accounts',
           listItems: [
             {
@@ -171,8 +179,13 @@ export default {
 
 <style lang="scss" scoped>
 .c-footer {
+  max-width: 100vw;
+  background-color: var(--color-primary);
+
   &__main-container {
+    max-width: $max-width--root;
     padding: $buffer--s;
+    margin: 0 auto;
   }
 
   &__about-container {
@@ -181,24 +194,54 @@ export default {
     .c-foot-about {
       &__title {
         // ...
+        // color: var(--color-tertiary);
       }
 
       &__paragraph {
-        // ...
+        color: var(--color-background--darkest);
+        color: var(--color-secondary--lightest);
       }
     }
   }
 
   &__nav-container {
     padding: 0;
+    @include breakpoint(s) {
+      display: grid;
+      gap: $buffer--s;
+      grid-template-areas:
+        'c-footer-nav__webshop-container c-footer-nav__restoration-container'
+        'c-footer-nav__contact-info-container c-footer-nav__accounts-container';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include breakpoint(l) {
+      grid-template-areas: 'c-footer-nav__webshop-container c-footer-nav__restoration-container c-footer-nav__contact-info-container c-footer-nav__accounts-container';
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
 
     .c-foot-nav {
-      &__sub-container {
-        // ...
+      &__webshop-container {
+        grid-area: c-footer-nav__webshop-container;
+      }
+
+      &__restoration-container {
+        grid-area: c-footer-nav__restoration-container;
+      }
+
+      &__contact-info-container {
+        grid-area: c-footer-nav__contact-info-container;
+      }
+
+      &__accounts-container {
+        grid-area: c-footer-nav__accounts-container;
       }
 
       &__title {
         // ...
+        // color: var(--color-tertiary);
       }
 
       &__list {
@@ -210,22 +253,33 @@ export default {
       }
 
       &__link {
-        // ...
+        color: var(--color-background);
+
+        &:hover {
+          color: var(--color-tertiary--lightest);
+        }
       }
 
       &__link-icon {
-        // ...
+        color: var(--color-background);
       }
     }
   }
 
-  &____hr-container .c-foot-hr {
+  &____hr-container {
     padding: 0;
   }
 
-  &__social-media-container {
-    @include flex-container(nowrap, row);
+  &__end-container {
+    @include breakpoint(s) {
+      @include flex-container(nowrap, row);
+    }
+  }
 
+  &__social-media-container {
+    @include flex-container(nowrap, row, space-around);
+
+    order: 1;
     padding: 0;
 
     .c-foot-sm {
@@ -240,14 +294,28 @@ export default {
   }
 
   &__legal-container {
-    padding: 0;
+    @include flex-container;
+
+    height: $font-size--h3 + $buffer--s;
+    order: 0;
 
     .c-foot-legal {
       &__text {
-        padding: $buffer--s 0;
+        color: var(--color-secondary--lightest);
         font-family: $font-family--text-bigger;
-        font-size: $font-family--text-bigger;
+        font-size: $font-size--h6;
         text-align: center;
+      }
+
+      &__icon {
+        width: $font-size--h6;
+        height: $font-size--h6;
+        margin-right: 0;
+        vertical-align: -12.5%;
+      }
+
+      &__icon > path {
+        color: var(--color-secondary);
       }
     }
   }

@@ -33,11 +33,7 @@
   display: inline-flex;
   overflow: visible;
   align-self: center;
-  // padding: $buffer--xxs;
-
-  &:hover {
-    color: var(--color-secondary);
-  }
+  color: var(--color-secondary);
 }
 
 .fa-heart {

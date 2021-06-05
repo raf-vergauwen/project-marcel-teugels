@@ -88,6 +88,7 @@ export default {
         'faShoppingBag',
         'faEuroSign',
         'faCartPlus',
+        'faCopyright',
       ],
       brands: [
         'faFacebook',

@@ -94,11 +94,10 @@
 
       @include breakpoint(m) {
         width: auto;
-        // margin-top: 0;
       }
 
       &:hover {
-        color: var(--color-secondary);
+        color: var(--color-tertiary--lightest);
       }
     }
 
@@ -117,19 +116,23 @@
       }
 
       &:hover path {
-        color: var(--color-text);
+        color: var(--color-text--darkest);
       }
 
       &::after {
-        background: var(--color-text);
+        background: var(--color-text--darkest);
       }
 
       &:hover {
-        color: var(--color-text);
+        color: var(--color-text--darkest);
       }
 
       &:hover::before {
-        background: var(--color-text);
+        background: var(--color-text--darkest);
+      }
+
+      &:hover::after {
+        background: transparent;
       }
     }
   }

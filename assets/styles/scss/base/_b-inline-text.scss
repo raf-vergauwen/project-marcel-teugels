@@ -104,11 +104,11 @@ a {
   transition: color 0.35s ease;
 
   &:hover {
-    color: var(--color-secondary);
-  }
+    color: var(--color-tertiary--lightest);
 
-  &:hover path {
-    color: var(--color-secondary);
+    path {
+      color: var(--color-tertiary--lightest);
+    }
   }
 
   &::before {
@@ -129,14 +129,14 @@ a {
     display: block;
     width: 0;
     height: $small-dimension--xxs;
-    background: var(--color-secondary);
+    background: var(--color-tertiary--lightest);
     content: '';
     transition: width 0.35s ease;
   }
 
   &:hover::before {
     width: 100%;
-    background: var(--color-secondary);
+    background: var(--color-tertiary--lightest);
     transition: width 0.35s ease;
   }
 
