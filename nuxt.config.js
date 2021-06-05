@@ -42,19 +42,19 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome', // Imports FontAwesome 5 SVG icons
     '@nuxtjs/google-fonts',
-    // 'nuxt-build-optimisations',
+    'nuxt-build-optimisations',
   ],
 
   googleFonts: {
     preconnect: true,
     download: true,
     families: {
-      Montserrat: true,
-      Poppins: true,
-      FiraMono: true,
-      RobotoSlab: true,
-      Robot: true,
-      RobotMono: true,
+      Montserrat: { wght: [600, 700, 800, 900] },
+      Poppins: { wght: [300, 400] },
+      FiraMono: { wght: [300, 400] },
+      RobotoSlab: { wght: [400, 500] },
+      Robot: { wght: [500] },
+      RobotMono: { wght: [500] },
     },
   },
 

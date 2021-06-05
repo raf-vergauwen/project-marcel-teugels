@@ -28,10 +28,6 @@ section {
   @include breakpoint(l) {
     padding: $buffer--l;
   }
-
-  @include breakpoint(xl) {
-    // padding: $buffer--xl 0;
-  }
 }
 
 // #  <---------------| <aside> |--------------->

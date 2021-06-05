@@ -11,13 +11,17 @@
           eleifend leo.
         </p>
       </article>
-      <nav class="c-footer__nav-container c-f-nav">
-        <ul v-for="navItem in navItems" :key="navItem.id" class="c-f-nav__list">
-          <h3 class="c-f-nav__title">{{ navItem.title }}</h3>
+      <nav
+        v-for="navItem in navItems"
+        :key="navItem.id"
+        class="c-footer__nav-container c-f-nav"
+      >
+        <h3 class="c-f-nav__title">{{ navItem.title }}</h3>
+        <ul class="c-f-nav__list">
           <li
             v-for="listItem in navItem.listItems"
             :key="listItem.id"
-            class="c-f-nav__list"
+            class="c-f-nav__list-item"
           >
             <anchor-link-or-nuxt-link
               :to="listItem.path"
@@ -34,7 +38,7 @@
           </li>
         </ul>
       </nav>
-      <hr class="c-footer__hr" />
+      <hr class="c-footer__hr-container c-f-hr" />
       <div class="c-footer__social-media-container c-f-sm">
         <a
           v-for="smItem in smItems"
@@ -162,23 +166,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@include c-main-footer;
-
 .c-footer {
+  // ...
   &__main-container {
     // ...
   }
-  &__about-container {
+
+  &__about-container.c-f-about {
+    // ...
+    &__title {
+      // ...
+    }
+
+    &__paragraph {
+      // ...
+    }
+  }
+
+  &__nav-container.c-f-nav {
+    // ...
+    &__title {
+      // ...
+    }
+
+    &__list {
+      // ...
+    }
+
+    &__list-item {
+      // ...
+    }
+
+    &__link {
+      // ...
+    }
+
+    &__icon {
+      // ...
+    }
+  }
+
+  &____hr-container.c-f-hr {
     // ...
   }
-  &__nav-container {
+
+  &__social-media-container.c-f-sm {
     // ...
+    &__item {
+      // ...
+    }
+
+    &__icon {
+      // ...
+    }
   }
-  &__social-media-container {
+
+  &__legal-container.c-f-legal {
     // ...
-  }
-  &__legal-container {
-    // ...
+    &__text {
+      // ...
+    }
   }
 }
 </style>

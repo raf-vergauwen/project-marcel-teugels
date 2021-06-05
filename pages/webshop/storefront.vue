@@ -110,7 +110,7 @@ export default {
 
   &__product-list {
     display: grid;
-    gap: $buffer--m;
+    gap: $buffer--l $buffer--m;
     grid-template-areas: '.';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
@@ -123,15 +123,11 @@ export default {
       grid-template-rows: repeat(5, 1fr);
     }
 
-    @include breakpoint(m) {
-      gap: $buffer--m;
+    @include breakpoint(l) {
+      gap: $buffer--l;
       grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
-    }
-
-    @include breakpoint(l) {
-      gap: $buffer--l;
     }
 
     @include breakpoint(xl) {

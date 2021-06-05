@@ -24,14 +24,6 @@
   }
 }
 
-.fa-shopping-basket {
-  &:hover {
-    @include box-transition;
-
-    color: #000;
-  }
-}
-
 // -  <<----------<< Brands >>---------->>
 
 .fab,
@@ -41,7 +33,7 @@
   display: inline-flex;
   overflow: visible;
   align-self: center;
-  padding: $buffer--xxs;
+  // padding: $buffer--xxs;
 
   &:hover {
     color: var(--color-secondary);

@@ -41,6 +41,9 @@
     @include flex-container(nowrap, column);
 
     background-color: var(--color-primary);
+    filter: drop-shadow(
+      0 $small-dimension--s $small-dimension--s var(--color-text)
+    );
 
     @include breakpoint(m) {
       @include flex-container(nowrap, row, space-evenly, stretch);
