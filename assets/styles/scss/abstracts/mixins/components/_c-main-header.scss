@@ -52,53 +52,85 @@
       border-radius: $small-dimension--l;
     }
 
+    &__list {
+      @include breakpoint(m) {
+        @include flex-container(nowrap, row, space-evenly, stretch);
+      }
+
+      > li:first-child > a {
+        // margin: 0;
+        background-color: var(--color-text);
+        border-radius: $small-dimension--l;
+      }
+    }
     &__item {
-      width: 100%;
-      align-self: flex-start;
-      margin: $buffer--s 0 0 0;
+      @include breakpoint(xxs) {
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      @include breakpoint(m) {
+        display: inline-flex;
+        width: auto;
+
+        &:first-child {
+          padding-top: $buffer--xs;
+        }
+
+        &:last-child {
+          padding-bottom: $buffer--xs;
+        }
+      }
+    }
+
+    &__link {
+      padding: $buffer--xs $buffer--s;
       color: var(--color-background);
 
       @include breakpoint(m) {
         width: auto;
-        margin-top: 0;
+        // margin-top: 0;
+      }
+
+      &:hover {
+        color: var(--color-secondary);
       }
     }
 
-    &__item:first-child {
-      margin: 0;
-      background-color: var(--color-text);
-      border-radius: $small-dimension--l;
-    }
-
-    &__item--icon {
+    &__link-icon {
       color: var(--color-background);
     }
 
-    &__item--active {
+    &__link--active {
       overflow: hidden;
       background-color: var(--color-tertiary);
       border-radius: $small-dimension--m;
       color: var(--color-primary);
-    }
 
-    &__item--active path {
-      color: var(--color-primary);
-    }
+      path {
+        color: var(--color-primary);
+      }
 
-    &__item--active:hover path {
-      color: var(--color-text);
-    }
+      &:hover path {
+        color: var(--color-text);
+      }
 
-    &__item--active::after {
-      background: var(--color-text);
-    }
+      &::after {
+        background: var(--color-text);
+      }
 
-    &__item--active:hover {
-      color: var(--color-text);
-    }
+      &:hover {
+        color: var(--color-text);
+      }
 
-    &__item--active:hover::before {
-      background: var(--color-text);
+      &:hover::before {
+        background: var(--color-text);
+      }
     }
   }
 }

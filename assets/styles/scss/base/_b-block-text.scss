@@ -48,12 +48,16 @@ figcaption {
 ol {
   @include box-dimensions;
   @include font(text-bigger);
+
+  padding: 0;
 }
 
 // #  <---------------| <ul> |--------------->
 ul {
   @include box-dimensions;
   @include font(text-bigger);
+
+  padding: 0;
 }
 
 // #  <---------------| <li> |--------------->
@@ -62,6 +66,12 @@ li {
   @include font(text);
 
   list-style-type: none;
+
+  > a {
+    display: inline-flex;
+    width: 100%;
+    place-self: center;
+  }
 }
 
 /* -------------------------------------------------------------------------- *\

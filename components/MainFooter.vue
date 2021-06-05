@@ -21,7 +21,7 @@
           <li
             v-for="listItem in navItem.listItems"
             :key="listItem.id"
-            class="c-f-nav__list-item"
+            class="c-f-nav__item"
           >
             <anchor-link-or-nuxt-link
               :to="listItem.path"
@@ -29,7 +29,7 @@
               class="c-f-nav__link"
             >
               <fa
-                class="c-f-nav__icon"
+                class="c-f-nav__link-icon"
                 :icon="['fas', listItem.icon]"
                 style="width: 1rem"
               />
@@ -167,13 +167,11 @@ export default {
 
 <style lang="scss" scoped>
 .c-footer {
-  // ...
   &__main-container {
-    // ...
+    padding: $buffer--s;
   }
 
   &__about-container.c-f-about {
-    // ...
     &__title {
       // ...
     }
@@ -184,7 +182,6 @@ export default {
   }
 
   &__nav-container.c-f-nav {
-    // ...
     &__title {
       // ...
     }
@@ -193,7 +190,7 @@ export default {
       // ...
     }
 
-    &__list-item {
+    &__item {
       // ...
     }
 
@@ -201,7 +198,7 @@ export default {
       // ...
     }
 
-    &__icon {
+    &__link-icon {
       // ...
     }
   }
@@ -211,7 +208,6 @@ export default {
   }
 
   &__social-media-container.c-f-sm {
-    // ...
     &__item {
       // ...
     }
@@ -222,7 +218,6 @@ export default {
   }
 
   &__legal-container.c-f-legal {
-    // ...
     &__text {
       // ...
     }

@@ -600,6 +600,7 @@ ol {
   font-variant: normal;
   font-weight: 500;
   line-height: 1.25;
+  padding: 0;
 }
 
 ul {
@@ -614,6 +615,7 @@ ul {
   font-variant: normal;
   font-weight: 500;
   line-height: 1.25;
+  padding: 0;
 }
 
 li {
@@ -629,6 +631,14 @@ li {
   font-weight: 400;
   line-height: 1.5;
   list-style-type: none;
+}
+
+li > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  place-self: center;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -920,12 +930,7 @@ a {
   font-weight: 500;
   line-height: 1.25;
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   -webkit-transition: color 0.35s ease;
@@ -977,6 +982,10 @@ a:hover::after {
   background: transparent;
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
+}
+
+a > svg {
+  margin-left: 0.25rem;
 }
 
 abbr {

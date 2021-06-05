@@ -98,9 +98,7 @@ a {
   @include font(text-bigger);
 
   position: relative;
-  display: inline-flex;
-  align-self: center;
-  padding: $buffer--xs $buffer--s;
+  padding: $buffer--xs 0;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   transition: color 0.35s ease;
@@ -146,6 +144,10 @@ a {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+  }
+
+  > svg {
+    margin-left: $buffer--xs;
   }
 }
 

@@ -5,22 +5,28 @@
       :class="{ 'c-header__container--hidden': !showNavbar }"
     >
       <nav class="c-header-nav">
-        <nuxt-link
-          v-for="navItem in navItems"
-          :key="navItem.path"
-          :class="{
-            'c-header-nav__item': true,
-            'c-header-nav__item--active': navItem.path === $route.path,
-          }"
-          :to="navItem.path"
-        >
-          <fa
-            :class="{ 'c-header-nav__item--icon': true }"
-            :icon="['fas', navItem.icon]"
-            style="width: 1rem"
-          />
-          {{ navItem.label }}
-        </nuxt-link>
+        <ul class="c-header-nav__list">
+          <li
+            v-for="navItem in navItems"
+            :key="navItem.path"
+            class="c-header-nav__item"
+          >
+            <nuxt-link
+              :class="{
+                'c-header-nav__link': true,
+                'c-header-nav__link--active': navItem.path === $route.path,
+              }"
+              :to="navItem.path"
+            >
+              <fa
+                class="c-header-nav__link-icon"
+                :icon="['fas', navItem.icon]"
+                style="width: 1rem"
+              />
+              {{ navItem.label }}
+            </nuxt-link>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
