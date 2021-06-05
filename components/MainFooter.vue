@@ -1,9 +1,9 @@
 <template>
   <footer class="c-footer">
     <div class="c-footer__main-container">
-      <article class="c-footer__about-container c-f-about">
-        <h3 class="c-f-about__title">About</h3>
-        <p class="c-f-about__paragraph">
+      <article class="c-footer__about-container c-foot-about">
+        <h3 class="c-foot-about__title">About</h3>
+        <p class="c-foot-about__paragraph">
           Pellentesque habitant morbi tristique senectus et netus et malesuada
           fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
           ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
@@ -11,48 +11,52 @@
           eleifend leo.
         </p>
       </article>
-      <nav
-        v-for="navItem in navItems"
-        :key="navItem.id"
-        class="c-footer__nav-container c-f-nav"
-      >
-        <h3 class="c-f-nav__title">{{ navItem.title }}</h3>
-        <ul class="c-f-nav__list">
-          <li
-            v-for="listItem in navItem.listItems"
-            :key="listItem.id"
-            class="c-f-nav__item"
-          >
-            <anchor-link-or-nuxt-link
-              :to="listItem.path"
-              :nuxt="navItem.nuxt"
-              class="c-f-nav__link"
+      <nav class="c-footer__nav-container c-foot-nav">
+        <div
+          v-for="navItem in navItems"
+          :key="navItem.id"
+          class="c-footer-nav__sub-container"
+        >
+          <h3 class="c-foot-nav__title">{{ navItem.title }}</h3>
+          <ul class="c-foot-nav__list">
+            <li
+              v-for="listItem in navItem.listItems"
+              :key="listItem.id"
+              class="c-foot-nav__item"
             >
-              <fa
-                class="c-f-nav__link-icon"
-                :icon="['fas', listItem.icon]"
-                style="width: 1rem"
-              />
-              {{ listItem.label }}
-            </anchor-link-or-nuxt-link>
-          </li>
-        </ul>
+              <anchor-link-or-nuxt-link
+                :to="listItem.path"
+                :nuxt="navItem.nuxt"
+                class="c-foot-nav__link"
+              >
+                <fa
+                  class="c-foot-nav__link-icon"
+                  :icon="['fas', listItem.icon]"
+                  style="width: 1rem"
+                />
+                {{ listItem.label }}
+              </anchor-link-or-nuxt-link>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <hr class="c-footer__hr-container c-f-hr" />
-      <div class="c-footer__social-media-container c-f-sm">
+      <hr class="c-footer__hr-container c-foot-hr" />
+      <div class="c-footer__social-media-container c-foot-sm">
         <a
           v-for="smItem in smItems"
           :key="smItem.id"
-          class="c-f-sm__item"
+          class="c-foot-sm__item"
           target="_blank"
           rel="noopener noreferrer nofollow"
           :href="smItem.link"
         >
-          <fa class="c-f-sm__icon" :icon="['fab', smItem.icon]" />
+          <fa class="c-foot-sm__icon" :icon="['fab', smItem.icon]" />
         </a>
       </div>
-      <div class="c-footer__legal-container c-f-legal">
-        <p class="c-f-legal__text">Copyright &copy; 2021 All Rights Reserved</p>
+      <div class="c-footer__legal-container c-foot-legal">
+        <p class="c-foot-legal__text">
+          Copyright &copy; 2021 All Rights Reserved
+        </p>
       </div>
     </div>
   </footer>
@@ -171,55 +175,80 @@ export default {
     padding: $buffer--s;
   }
 
-  &__about-container.c-f-about {
-    &__title {
-      // ...
-    }
+  &__about-container {
+    padding: 0;
 
-    &__paragraph {
-      // ...
-    }
-  }
+    .c-foot-about {
+      &__title {
+        // ...
+      }
 
-  &__nav-container.c-f-nav {
-    &__title {
-      // ...
-    }
-
-    &__list {
-      // ...
-    }
-
-    &__item {
-      // ...
-    }
-
-    &__link {
-      // ...
-    }
-
-    &__link-icon {
-      // ...
+      &__paragraph {
+        // ...
+      }
     }
   }
 
-  &____hr-container.c-f-hr {
-    // ...
+  &__nav-container {
+    padding: 0;
+
+    .c-foot-nav {
+      &__sub-container {
+        // ...
+      }
+
+      &__title {
+        // ...
+      }
+
+      &__list {
+        // ...
+      }
+
+      &__item {
+        // ...
+      }
+
+      &__link {
+        // ...
+      }
+
+      &__link-icon {
+        // ...
+      }
+    }
   }
 
-  &__social-media-container.c-f-sm {
-    &__item {
-      // ...
-    }
+  &____hr-container .c-foot-hr {
+    padding: 0;
+  }
 
-    &__icon {
-      // ...
+  &__social-media-container {
+    @include flex-container(nowrap, row);
+
+    padding: 0;
+
+    .c-foot-sm {
+      &__item {
+        // ...
+      }
+
+      &__icon {
+        // ...
+      }
     }
   }
 
-  &__legal-container.c-f-legal {
-    &__text {
-      // ...
+  &__legal-container {
+    padding: 0;
+
+    .c-foot-legal {
+      &__text {
+        padding: $buffer--s 0;
+        font-family: $font-family--text-bigger;
+        font-size: $font-family--text-bigger;
+        text-align: center;
+      }
     }
   }
 }

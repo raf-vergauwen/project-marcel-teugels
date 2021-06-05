@@ -984,10 +984,6 @@ a:hover::after {
   transition: all 0s ease;
 }
 
-a > svg {
-  margin-left: 0.25rem;
-}
-
 abbr {
   padding: 0.25rem 0;
   color: var(--color-primary);
