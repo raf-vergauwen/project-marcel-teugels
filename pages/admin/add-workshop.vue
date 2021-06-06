@@ -1,7 +1,7 @@
 <template>
   <main class="p-product-page">
-    <section id="app">
-      <FormulateForm v-model="formData" @submit="postWorkshop">
+    <section id="new-workshop">
+      <FormulateForm v-model="workshopFormData" @submit="postWorkshop">
         <FormulateInput
           name="title"
           type="text"
@@ -37,7 +37,7 @@ export default {
   layout: 'admin',
   data() {
     return {
-      formData: {
+      workshopFormData: {
         title: '',
         date: '',
         organizer: '',

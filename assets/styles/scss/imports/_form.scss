@@ -12,7 +12,8 @@
     // Global field-level wrapper styles
     max-width: unset;
 
-    input, textarea {
+    input,
+    textarea {
       background-color: #fff;
     }
   }
@@ -79,7 +80,6 @@
     }
   }
 
-
   // Box inputs
   // -----------------------------------------------------------------------------
 
@@ -92,11 +92,10 @@
     }
   }
 
-
   // File inputs
   // -----------------------------------------------------------------------------
 
-  &[data-classification="file"] {
+  &[data-classification='file'] {
     background-color: #fff;
     .formulate-input-upload-area {
       input {
@@ -105,21 +104,18 @@
     }
   }
 
-
   // Image uploads
   // -----------------------------------------------------------------------------
 
-  [data-type="image"] {
+  [data-type='image'] {
     // image uploads
   }
 }
-
 
 // Form-level errors
 // -----------------------------------------------------------------------------
 
 .formulate-form-errors {
-
   .formulate-form-error {
     // form errors (not specific to a field)
   }
