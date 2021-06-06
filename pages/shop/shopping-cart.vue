@@ -39,7 +39,11 @@ export default {
   computed: {
     calculate_Total() {
       return this.shoppingList.reduce((acc, product) => {
-        return acc + parseFloat(product.price) * product.quantity;
+        return (
+          acc +
+          parseFloat(product.price) *
+            this.$store.getters.productQuantity(product)
+        );
       }, 0);
     },
   },
