@@ -70,7 +70,7 @@ input {
   [type='submit'] {
     padding: $buffer--s;
     margin: $buffer--s;
-    background: var(--color-tertiary--lighter);
+    background: var(--color-tertiary--light);
   }
 
   [type='submit']:active {
@@ -80,7 +80,7 @@ input {
   [type='reset'] {
     padding: $buffer--s;
     margin: $buffer--s;
-    background: var(--color-tertiary--lighter);
+    background: var(--color-tertiary--light);
   }
 
   [type='reset']:active {
@@ -150,7 +150,7 @@ input {
   [type='button'] {
     padding: $buffer--s;
     margin: $buffer--s;
-    background: var(--color-tertiary--lighter);
+    background: var(--color-tertiary--light);
   }
 
   [type='button']:active {
@@ -162,7 +162,7 @@ input {
   }
 
   &::placeholder {
-    color: var(--color-text--lightest);
+    color: var(--color-text--lighter);
   }
 }
 
@@ -214,6 +214,6 @@ textarea {
   @include block-container;
 
   &::placeholder {
-    color: var(--color-primary--lightest);
+    color: var(--color-primary--lighter);
   }
 }

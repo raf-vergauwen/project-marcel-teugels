@@ -45,15 +45,15 @@
 .i-l {
   background-image: linear-gradient(
     180deg,
-    var(--color-secondary--lightest) 50%,
-    var(--color-primary--darkest) 50%
+    var(--color-secondary--lighter) 50%,
+    var(--color-primary--darker) 50%
   );
 
   @include breakpoint(m) {
     background-image: linear-gradient(
       110deg,
-      var(--color-secondary--lightest) 50%,
-      var(--color-primary--darkest) 50%
+      var(--color-secondary--lighter) 50%,
+      var(--color-primary--darker) 50%
     );
   }
 
@@ -96,7 +96,7 @@
 
 .i-c-webshop {
   &__box-outer {
-    background-color: var(--color-primary--darkest);
+    background-color: var(--color-primary--darker);
   }
 
   &__box-inner {
@@ -107,15 +107,15 @@
 
   &__title {
     padding: 0;
-    color: var(--color-secondary--lightest);
+    color: var(--color-background--lightest);
   }
 
   &__text {
     padding: 0;
-    color: var(--color-background--lightest);
+    color: var(--color-background--lighter);
 
     &::first-letter {
-      color: var(--color-secondary--lightest);
+      color: var(--color-secondary--lighter);
     }
   }
 
@@ -150,13 +150,13 @@
 
 .i-c-restauration {
   &__box-outer {
-    border: $buffer--xxs solid var(--color-tertiary--darkest);
-    background-color: var(--color-secondary--lightest);
+    border: $buffer--xxs solid var(--color-tertiary--darker);
+    background-color: var(--color-secondary--lighter);
 
     &::before,
     &::after {
-      border: $buffer--xxs solid var(--color-tertiary--darkest);
-      color: var(--color-tertiary--darkest);
+      border: $buffer--xxs solid var(--color-tertiary--darker);
+      color: var(--color-tertiary--darker);
     }
   }
 
@@ -164,23 +164,23 @@
     @include flex-container;
 
     padding: $buffer--s;
-    border: $buffer--xxs solid var(--color-tertiary--darkest);
+    border: $buffer--xxs solid var(--color-tertiary--darker);
 
     &::before,
     &::after {
-      border: $buffer--xxs solid var(--color-tertiary--darkest);
-      color: var(--color-tertiary--darkest);
+      border: $buffer--xxs solid var(--color-tertiary--darker);
+      color: var(--color-tertiary--darker);
     }
   }
 
   &__title {
     padding: 0;
-    color: var(--color-primary--darkest);
+    color: var(--color-primary--darker);
   }
 
   &__text {
     padding: 0;
-    color: var(--color-text--darkest);
+    color: var(--color-text--darker);
   }
 
   &__link {

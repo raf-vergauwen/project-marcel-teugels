@@ -21,7 +21,7 @@ details {
   align-items: flex-start;
   padding: $buffer--s;
   margin: $buffer--s;
-  background-color: var(--color-background--lighter);
+  background-color: var(--color-background--light);
   border-radius: $small-dimension--xs;
   color: var(--color-text);
 
@@ -48,7 +48,7 @@ dialog {
   border: 0;
   border-color: var(--color-secondary);
   margin: $buffer--s;
-  background-color: var(--color-background--lighter);
+  background-color: var(--color-background--light);
   border-radius: $small-dimension--xs;
   color: var(--color-text);
 

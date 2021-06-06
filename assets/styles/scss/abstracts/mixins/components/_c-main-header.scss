@@ -89,7 +89,7 @@
       }
 
       &:hover {
-        color: var(--color-tertiary--lightest);
+        color: var(--color-tertiary--lighter);
       }
     }
 
@@ -108,19 +108,19 @@
       }
 
       &:hover path {
-        color: var(--color-text--darkest);
+        color: var(--color-text--darker);
       }
 
       &::after {
-        background: var(--color-text--darkest);
+        background: var(--color-text--darker);
       }
 
       &:hover {
-        color: var(--color-text--darkest);
+        color: var(--color-text--darker);
       }
 
       &:hover::before {
-        background: var(--color-text--darkest);
+        background: var(--color-text--darker);
       }
 
       &:hover::after {

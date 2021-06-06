@@ -115,7 +115,7 @@
   // #  TIER 7 : Text-Smaller
   @else if $tier == 'text-smaller' {
     padding: $buffer--xxs 0;
-    color: var(--color-text--lighter);
+    color: var(--color-text--light);
     font-family: $font-family--text-smaller;
     font-size: $font-size--text-smaller;
     font-stretch: $font-stretch--text-smaller;
@@ -154,8 +154,8 @@
   // #  TIER 10 : Component-Smaller
   @else if $tier == 'component-smaller' {
     padding: $buffer--xs $buffer--s;
-    border: $small-dimension--xxxs solid var(--color-secondary--lighter);
-    background: var(--color-tertiary--lighter);
+    border: $small-dimension--xxxs solid var(--color-secondary--light);
+    background: var(--color-tertiary--light);
     border-radius: $small-dimension--s;
     color: var(--color-primary);
     font-family: $font-family--component-smaller;
@@ -201,11 +201,11 @@
 
   // #  TIER 12 : Component-Bigger
   @else if $tier == 'component-bigger' {
-    border: $small-dimension--xxs solid var(--color-secondary--darker);
+    border: $small-dimension--xxs solid var(--color-secondary--dark);
     margin: $buffer--s;
-    background: var(--color-tertiary--darker);
+    background: var(--color-tertiary--dark);
     border-radius: $small-dimension--m;
-    color: var(--color-primary--darker);
+    color: var(--color-primary--dark);
     font-family: $font-family--component-bigger;
     font-size: $font-size--component-bigger;
     font-stretch: $font-stretch--component-bigger;

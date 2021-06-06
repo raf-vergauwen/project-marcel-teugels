@@ -47,6 +47,6 @@ h6 {
   + p::first-letter {
     @include font(h4);
 
-    color: var(--color-text--darkest);
+    color: var(--color-text--darker);
   }
 }

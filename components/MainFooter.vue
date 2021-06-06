@@ -188,13 +188,15 @@ export default {
 
     .c-foot-about {
       &__title {
-        // color: var(--color-text--darkest);
-        color: var(--color-secondary--lightest);
+        color: var(--color-background--lightest);
       }
 
       &__paragraph {
-        color: var(--color-background--darkest);
-        color: var(--color-secondary--lightest);
+        color: var(--color-background--darker);
+      }
+
+      &__paragraph::first-letter {
+        color: var(--color-secondary);
       }
     }
   }
@@ -235,7 +237,7 @@ export default {
       }
 
       &__title {
-        color: var(--color-text);
+        color: var(--color-background--lightest);
       }
 
       &__list {
@@ -247,15 +249,15 @@ export default {
       }
 
       &__link {
-        color: var(--color-background);
+        color: var(--color-secondary--lighter);
 
         &:hover {
-          color: var(--color-tertiary--lightest);
+          color: var(--color-tertiary--lighter);
         }
       }
 
       &__link-icon {
-        color: var(--color-background);
+        color: var(--color-secondary--lighter);
       }
     }
   }
@@ -283,6 +285,7 @@ export default {
 
       &__icon {
         // ...
+        color: var(--color-tertiary);
       }
     }
   }
@@ -295,7 +298,7 @@ export default {
 
     .c-foot-legal {
       &__text {
-        color: var(--color-secondary--lightest);
+        color: var(--color-secondary--lighter);
         font-family: $font-family--text-bigger;
         font-size: $font-size--h6;
         text-align: center;
@@ -309,7 +312,7 @@ export default {
       }
 
       &__icon > path {
-        color: var(--color-secondary);
+        color: var(--color-tertiary);
       }
     }
   }

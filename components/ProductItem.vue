@@ -129,27 +129,27 @@ export default {
     .c-pi-c__name {
       @include overflow;
 
-      color: var(--color-background--darker);
+      color: var(--color-background--dark);
       grid-area: c-pi-c__name;
     }
 
     .c-pi-c__id {
       padding: $buffer--xs $buffer--s;
-      color: var(--color-background--darker);
+      color: var(--color-background--dark);
       grid-area: c-pi-c__id;
       text-align: center;
     }
 
     .c-pi-c__quantity {
       padding: $buffer--xs $buffer--s;
-      color: var(--color-background--darker);
+      color: var(--color-background--dark);
       grid-area: c-pi-c__quantity;
       text-align: center;
     }
 
     .c-pi-c__price {
       padding: $buffer--xs $buffer--s;
-      color: var(--color-background--darker);
+      color: var(--color-background--dark);
       grid-area: c-pi-c__price;
       text-align: center;
     }
@@ -164,7 +164,7 @@ export default {
       @include overflow;
 
       // max-height: 85%;
-      color: var(--color-background--darker);
+      color: var(--color-background--dark);
       grid-area: c-pi-c__description;
       text-overflow: ellipsis;
     }

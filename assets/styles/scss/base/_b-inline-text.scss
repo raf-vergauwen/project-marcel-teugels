@@ -37,7 +37,7 @@ kbd {
 mark {
   @include font(text);
 
-  background-color: var(--color-tertiary--lighter);
+  background-color: var(--color-tertiary--light);
 }
 
 // #  <---------------| <s> |--------------->
@@ -101,13 +101,16 @@ a {
   padding: $buffer--xs 0;
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  transition: color 0.35s ease;
+
+  svg {
+    transition: $transition--default;
+  }
 
   &:hover {
-    color: var(--color-tertiary--lightest);
+    color: var(--color-tertiary--lighter);
 
     path {
-      color: var(--color-tertiary--lightest);
+      color: var(--color-tertiary--lighter);
     }
   }
 
@@ -129,14 +132,14 @@ a {
     display: block;
     width: 0;
     height: $small-dimension--xxs;
-    background: var(--color-tertiary--lightest);
+    background: var(--color-tertiary--lighter);
     content: '';
     transition: width 0.35s ease;
   }
 
   &:hover::before {
     width: 100%;
-    background: var(--color-tertiary--lightest);
+    background: var(--color-tertiary--lighter);
     transition: width 0.35s ease;
   }
 
@@ -187,7 +190,7 @@ dfn {
 q {
   @include font(text-smaller);
 
-  border-left: $small-dimension--xs solid var(--color-tertiary--darkest);
+  border-left: $small-dimension--xs solid var(--color-tertiary--darker);
   font-style: italic;
 
   &::before {

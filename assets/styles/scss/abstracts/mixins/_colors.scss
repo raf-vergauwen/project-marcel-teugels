@@ -13,11 +13,13 @@
     /* #  #{$color-name} color group */
 
     /* #  ---------------------------------------- */
-    #{--color-#{$color-name}--lightest}: tint($color-value, 30%);
-    #{--color-#{$color-name}--lighter}: tint($color-value, 15%);
+    #{--color-#{$color-name}--lightest}: tint($color-value, 45%);
+    #{--color-#{$color-name}--lighter}: tint($color-value, 30%);
+    #{--color-#{$color-name}--light}: tint($color-value, 15%);
     #{--color-#{$color-name}}: $color-value;
-    #{--color-#{$color-name}--darker}: shade($color-value, 15%);
-    #{--color-#{$color-name}--darkest}: shade($color-value, 30%);
+    #{--color-#{$color-name}--dark}: shade($color-value, 15%);
+    #{--color-#{$color-name}--darker}: shade($color-value, 30%);
+    #{--color-#{$color-name}--darkest}: shade($color-value, 45%);
   }
 }
 
@@ -32,3 +34,5 @@
   #{$color-name}-s: #{$saturation};
   #{$color-name}-l: #{$lightness};
 }
+
+// -  <---------------| define-color-hsl |--------------->

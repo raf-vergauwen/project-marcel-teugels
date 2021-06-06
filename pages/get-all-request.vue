@@ -59,7 +59,7 @@ body {
   display: flex;
   width: 100vw;
   justify-content: center;
-  background-color: var(--color-background--darkest);
+  background-color: var(--color-background--darker);
 }
 
 .request-item {

@@ -89,7 +89,7 @@ blockquote {
   @include box-dimensions;
   @include font(text-smaller);
 
-  border-left: $buffer--xs solid var(--color-tertiary--darkest);
+  border-left: $buffer--xs solid var(--color-tertiary--darker);
 
   cite {
     @include box-dimensions;
