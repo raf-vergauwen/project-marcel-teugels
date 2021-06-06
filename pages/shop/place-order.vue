@@ -2,7 +2,11 @@
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
     <div class="p-place-order__container">
-      <FormulateForm v-model="formData" @submit="createOrder">
+      <FormulateForm
+        v-model="formData"
+        @submit="createOrder"
+        class="p-place-order__form"
+      >
         <FormulateInput
           name="firstName"
           type="text"
@@ -128,24 +132,20 @@ export default {
 </script>
 
 <style lang="scss">
-.p-shopping-cart__title {
+.p-place-order__title {
   margin: 1em;
 }
 
-.p-shopping-cart__container {
+.p-place-order__container {
   display: flex;
 }
 
-.p-shopping-cart__product-list {
+.p-place-order__form {
   width: 70%;
-}
-
-.p-shopping-cart__product-list__item {
-  margin-bottom: 1em;
   margin-left: 2em;
 }
 
-.p-shopping-cart__total {
+.p-place-order__total {
   width: 30%;
   display: flex;
   flex-direction: column;

@@ -12,8 +12,12 @@
         />
       </div>
       <div class="p-shopping-cart__total">
-        <h2>Total:</h2>
-        <h3>€ {{ calculate_Total }}</h3>
+        <h3>Rekening</h3>
+        <h5 v-for="product in shoppingList" :key="product.id">
+          {{ product.quantity }} x {{ product.price }} =
+          {{ product.quantity * product.price }}
+        </h5>
+        <h3>Totaal: € {{ calculate_Total }}</h3>
         <button>
           <nuxt-link class="place-order-link" to="/shop/place-order">
             Afrekenen
