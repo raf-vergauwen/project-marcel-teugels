@@ -1,7 +1,7 @@
 <template>
   <div>
-    <AdminHeader />
     <AccountHeader />
+    <AdminHeader />
     <Nuxt />
     <Notify />
     <Footer />

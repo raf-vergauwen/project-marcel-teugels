@@ -7,14 +7,14 @@
           name="firstName"
           type="text"
           label="voornaam"
-          validation-name="firstName"
+          validation-name="voornaam"
           validation="required"
         />
         <FormulateInput
           name="lastName"
           type="text"
           label="achternaam"
-          validation-name="lastName"
+          validation-name="achternaam"
           validation="required"
         />
         <FormulateInput
@@ -22,13 +22,14 @@
           type="email"
           label="email"
           validation-name="email"
-          validation="required"
+          validation="required|email"
         />
         <FormulateInput
           name="phoneNumber"
           type="number"
           label="telefoonnummer"
           validation-name="telefoonnummer"
+          validation="optional"
         />
         <FormulateInput
           name="address"
@@ -37,7 +38,13 @@
           validation-name="adres"
           validation="required"
         />
-        <FormulateInput name="notes" type="textarea" label="notities" />
+        <FormulateInput
+          name="notes"
+          type="textarea"
+          label="notities"
+          validation-name="notities"
+          validation="optional"
+        />
         <FormulateInput type="submit" label="Bestelling plaatsen" />
       </FormulateForm>
       <div class="p-place-order__total">
@@ -52,64 +59,33 @@
 export default {
   data() {
     return {
-      shoppingList: [],
-      productData: [],
-      orderedItemId: null,
-      orderId: null,
+      shoppingList: this.$store.state.shoppingCart,
+      formData: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        phone_number: '',
+        address: '',
+        notes: '',
+      },
     };
   },
-  fetch() {
-    return this.fetchItems();
-  },
   computed: {
-    shopping_cart() {
-      return this.$store.state.shoppingCart;
-    },
     calculate_Total() {
-      return this.productData.reduce((acc, product) => {
-        return acc + parseInt(product.price);
+      return this.shoppingList.reduce((acc, product) => {
+        return acc + parseFloat(product.price) * product.quantity;
       }, 0);
     },
   },
-  created() {
-    if (localStorage.getItem('cart')) {
-      this.shoppingList = localStorage.getItem('cart').split(',');
-    }
-  },
   methods: {
-    fetchItems() {
-      for (let i = 0; i < this.shoppingList.length; i++) {
-        this.$axios(
-          `items/products/` + this.shoppingList[i] + '?fields=*%2Cimages.*',
-          {
-            method: 'GET',
-            headers: {},
-          },
-        )
-          .then((response) => {
-            console.log(response);
-            this.productData.push(response.data.data);
-            console.log(this.productData);
-          })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
-    },
-    removeProduct(product) {
-      console.log(product);
-      const index = this.productData.indexOf(product);
-      this.productData.splice(index, index + 1);
-      this.$store.commit('removeFromCart', product);
-    },
     createOrderedItems(orderId) {
-      const promiseArr = this.productData.map((product) => {
+      const promiseArr = this.shoppingList.map((product) => {
         return this.$axios('items/ordered_items', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           data: {
-            quantity: 1, // TODO: make dynamic
-            total_price: parseFloat(product.price) * 1,
+            quantity: product.quantity,
+            total_price: parseFloat(product.price) * product.quantity,
             order_id: orderId,
             product_id: product.id,
           },
@@ -130,10 +106,12 @@ export default {
         headers: { 'Content-Type': 'application/json' },
         data: {
           total_price: this.calculate_Total,
-          notes: data.notes,
           first_name: data.firstName,
           last_name: data.lastName,
+          email: data.email,
+          phone_number: data.phoneNumber,
           address: data.address,
+          notes: data.notes,
         },
       })
         .then((response) => {
