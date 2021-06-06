@@ -1,17 +1,8 @@
 export default {
-  // #  Global Page Headers: https://go.nuxtjs.dev/config-head
+  // # rm -rf node_modules/
   ssr: false,
 
-  // #  Loading Indicator: https://nuxtjs.org/docs/2.x/features/loading#the-loading-indicator-property
-  loadingIndicator: {
-    name: 'fading-circle',
-    color: '#b78846',
-    background: '#022e51',
-  },
-
-  // #  Progress Bar: https://nuxtjs.org/docs/2.x/features/loading
-  loading: '~/components/LoadingBar.vue',
-
+  // #  Global Page Headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'project_marcel_teugels',
     htmlAttrs: {
@@ -25,6 +16,16 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+
+  // #  Loading Indicator: https://nuxtjs.org/docs/2.x/features/loading#the-loading-indicator-property
+  loadingIndicator: {
+    name: 'fading-circle',
+    color: '#b78846',
+    background: '#022e51',
+  },
+
+  // #  Progress Bar: https://nuxtjs.org/docs/2.x/features/loading
+  loading: '~/components/LoadingBar.vue',
 
   // #  Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/styles/scss/main.scss'],
@@ -42,7 +43,7 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/fontawesome', // Imports FontAwesome 5 SVG icons
     '@nuxtjs/google-fonts',
-    'nuxt-build-optimisations',
+    //  - "nuxt-build-optimisations": "^1.0.3", 'nuxt-build-optimisations',
   ],
 
   googleFonts: {

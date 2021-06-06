@@ -36,6 +36,7 @@ import RestorationHeader from '~/components/RestorationHeader';
 
 export default {
   components: { RestorationHeader },
+
   data() {
     return {
       firstName: '',
@@ -46,11 +47,13 @@ export default {
       userId: '',
     };
   },
+
   computed: {
     access_token() {
       return sessionStorage.getItem('access_token');
     },
   },
+  
   methods: {
     postRequest() {
       const body = {
