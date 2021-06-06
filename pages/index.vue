@@ -28,7 +28,7 @@
               cupidatat laborum tempor.
             </p>
             <a
-              class="i-c-restoration__link"
+              class="i-c-restauration__link"
               href="/restoration/home-restoration"
               >restoration
             </a>
@@ -111,9 +111,6 @@
   }
 
   &__text {
-    // @include flex-items;
-
-    // display: flex;
     padding: 0;
     color: var(--color-background--lightest);
 
@@ -143,6 +140,10 @@
 
     &:hover::before {
       background: var(--color-text);
+    }
+
+    &:hover::after {
+      background: transparent;
     }
   }
 }
@@ -203,6 +204,10 @@
 
     &:hover::before {
       background: var(--color-text);
+    }
+
+    &:hover::after {
+      background: transparent;
     }
   }
 }

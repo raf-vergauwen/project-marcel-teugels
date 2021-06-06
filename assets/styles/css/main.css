@@ -547,6 +547,7 @@ h6 + p::first-letter {
   font-weight: 600;
   line-height: 1.25;
   text-transform: capitalize;
+  color: var(--color-text--darkest);
 }
 
 /* -------------------------------------------------------------------------- *\
