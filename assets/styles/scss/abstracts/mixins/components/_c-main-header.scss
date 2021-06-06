@@ -5,34 +5,29 @@
 // -  <---------------| Main-Header |--------------->
 @mixin main-header {
   .c-header {
-    padding: 0;
-    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    padding-top: $buffer--s;
+    padding-bottom: $buffer--s;
+    transform: translate3d(0, 0, 0);
+    // transition: $transition--default;
 
-    &__container {
-      @include box-dimensions(
-        s,
-        $max-width: $max-width--root,
-        $margin: $center-me
-      );
-
-      @include block-container;
-
-      position: fixed;
-      z-index: 1;
-      padding: $buffer--s $buffer--m;
-      transform: translate3d(0, 0, 0);
-      transition: $transition--default;
-
-      @include breakpoint(m) {
-        padding: $buffer--s $buffer--m;
-      }
-
-      @include breakpoint(l) {
-        padding: $buffer--s $buffer--l;
-      }
+    &--hidden {
+      transform: translate3d(0, -100%, 0);
     }
 
-    &__container--hidden {
+    &__main-container {
+      // position: fixed;
+      // z-index: 1;
+      // right: 0;
+      // left: 0;
+      // transform: translate3d(0, 0, 0);
+      // transition: $transition--default;
+    }
+
+    &__main-container--hidden {
       transform: translate3d(0, -100%, 0);
     }
   }
@@ -40,6 +35,7 @@
   .c-header-nav {
     @include flex-container(nowrap, column);
 
+    padding: 0;
     background-color: var(--color-primary);
     filter: drop-shadow(
       0 $small-dimension--s $small-dimension--s var(--color-text)

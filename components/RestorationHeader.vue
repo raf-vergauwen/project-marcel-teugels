@@ -1,8 +1,8 @@
 <template>
   <header class="c-header">
     <div
-      class="c-header__container"
-      :class="{ 'c-header__container--hidden': !showNavbar }"
+      class="c-header__main-container"
+      :class="{ 'c-header__main-container--hidden': !showNavbar }"
     >
       <nav class="c-header-nav">
         <ul class="c-header-nav__list">

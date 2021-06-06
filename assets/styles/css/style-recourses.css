@@ -22,6 +22,12 @@
   }
 }
 
+.root {
+  width: 100%;
+  max-width: 100vw;
+  padding: null;
+}
+
 .main__container > section {
   min-height: 100vh;
 }

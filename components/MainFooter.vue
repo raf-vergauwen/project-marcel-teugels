@@ -179,8 +179,6 @@ export default {
 
 <style lang="scss" scoped>
 .c-footer {
-  max-width: 100vw;
-  background-color: var(--color-primary);
 
   &__main-container {
     max-width: $max-width--root;

@@ -26,6 +26,12 @@
   }
 }
 
+.root {
+  width: 100%;
+  max-width: 100vw;
+  padding: null;
+}
+
 .main__container > section {
   min-height: 100vh;
 }
@@ -331,7 +337,6 @@ article {
 
 section {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: 1rem;
   min-height: 100vh;
@@ -355,13 +360,21 @@ aside {
 }
 
 /* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
+\* -------------------------------------------------------------------------- */
+div {
+  width: 100%;
+  padding: null;
+}
+
+/* -------------------------------------------------------------------------- *\
 -  <<--------------------<< SUB >>-------------------->>
 \* -------------------------------------------------------------------------- */
 header {
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 1rem;
+  background-color: var(--color-primary);
 }
 
 @media (min-width: 1600px) {
@@ -370,11 +383,18 @@ header {
   }
 }
 
-footer {
+header > div {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0.5rem;
+}
+
+footer {
+  width: 100%;
+  max-width: 100vw;
   padding: 1rem;
+  background-color: var(--color-primary);
 }
 
 @media (min-width: 1600px) {
@@ -383,19 +403,31 @@ footer {
   }
 }
 
-main {
+footer > div {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: null;
+  padding: 0.5rem;
 }
 
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
-\* -------------------------------------------------------------------------- */
-div {
+main {
   width: 100%;
-  padding: null;
+  max-width: 100vw;
+  padding: 1rem;
+  background-color: #06cc06;
+}
+
+@media (min-width: 1600px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+main > div {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -1130,8 +1162,6 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
 }
 
 video {
@@ -1154,8 +1184,6 @@ svg {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
 }
 
 svg path {
