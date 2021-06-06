@@ -1,124 +1,128 @@
 <template>
-  <main class="p-shopping-cart">
-    <h1 class="p-shopping-cart__title">Shopping cart</h1>
-    <div class="p-shopping-cart__container">
-      <div class="p-shopping-cart__product-list">
-        <ShoppingCartItem
-          v-for="product in productData"
-          :key="product.id"
-          class="p-shopping-cart__product-list__item"
-          :product="product"
-          @remove-product="removeProduct($event)"
+  <main class="p-place-order">
+    <h1 class="p-place-order__title">Bestelling plaatsen</h1>
+    <div class="p-place-order__container">
+      <FormulateForm v-model="formData" @submit="createOrder">
+        <FormulateInput
+          name="firstName"
+          type="text"
+          label="voornaam"
+          validation-name="voornaam"
+          validation="required"
         />
-      </div>
-      <div class="p-shopping-cart__total">
-        <h2>Total:</h2>
+        <FormulateInput
+          name="lastName"
+          type="text"
+          label="achternaam"
+          validation-name="achternaam"
+          validation="required"
+        />
+        <FormulateInput
+          name="email"
+          type="email"
+          label="email"
+          validation-name="email"
+          validation="required|email"
+        />
+        <FormulateInput
+          name="phoneNumber"
+          type="number"
+          label="telefoonnummer"
+          validation-name="telefoonnummer"
+          validation="optional"
+        />
+        <FormulateInput
+          name="address"
+          type="text"
+          label="adres"
+          validation-name="adres"
+          validation="required"
+        />
+        <FormulateInput
+          name="notes"
+          type="textarea"
+          label="notities"
+          validation-name="notities"
+          validation="optional"
+        />
+        <FormulateInput type="submit" label="Bestelling plaatsen" />
+      </FormulateForm>
+      <div class="p-place-order__total">
+        <h2>Totaal:</h2>
         <h3>€ {{ calculate_Total }}</h3>
-        <button @click="createOrderedItems">Afrekenen</button>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import ShoppingCartItem from '~/components/ShoppingCartItem';
-
 export default {
-  name: 'PlaceOrderPage',
-  components: { ShoppingCartItem },
-
   data() {
     return {
-      shoppingList: [],
-      productData: [],
-      orderedItemId: null,
-      orderId: null,
+      shoppingList: this.$store.state.shoppingCart,
+      formData: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        phone_number: '',
+        address: '',
+        notes: '',
+      },
     };
   },
-  fetch() {
-    return this.fetchItems();
-  },
   computed: {
-    shopping_cart() {
-      return this.$store.state.shoppingCart;
-    },
     calculate_Total() {
-      return this.productData.reduce((acc, product) => {
-        return acc + parseInt(product.price);
+      return this.shoppingList.reduce((acc, product) => {
+        return acc + parseFloat(product.price) * product.quantity;
       }, 0);
     },
   },
-  created() {
-    if (localStorage.getItem('cart')) {
-      this.shoppingList = localStorage.getItem('cart').split(',');
-    }
-  },
   methods: {
-    fetchItems() {
-      for (let i = 0; i < this.shoppingList.length; i++) {
-        this.$axios(
-          `items/products/` + this.shoppingList[i] + '?fields=*%2Cimages.*',
-          {
-            method: 'GET',
-            headers: {},
+    createOrderedItems(orderId) {
+      const promiseArr = this.shoppingList.map((product) => {
+        return this.$axios('items/ordered_items', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          data: {
+            quantity: product.quantity,
+            total_price: parseFloat(product.price) * product.quantity,
+            order_id: orderId,
+            product_id: product.id,
           },
-        )
-          .then((response) => {
-            console.log(response);
-            this.productData.push(response.data.data);
-            console.log(this.productData);
-          })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
-    },
-    removeProduct(product) {
-      console.log(product);
-      const index = this.productData.indexOf(product);
-      this.productData.splice(index, index + 1);
-      this.$store.commit('removeFromCart', product);
-    },
-    createOrderedItems() {
-      this.$axios('items/ordered_items', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        data: {
-          quantity: this.shoppingList.length,
-          total_price: this.calculate_Total,
-          products: this.shoppingList,
-        },
-      })
-        .then((response) => {
-          console.log(response);
-          this.orderedItemId = response.data.data.id;
-          console.log(this.orderedItemId);
-          this.createOrders();
+        });
+      });
+
+      return Promise.all(promiseArr)
+        .then((values) => {
+          this.$root.$emit('notify', 'Je bestelling is geplaatst');
         })
-        .catch((err) => {
-          console.error(err);
+        .catch((e) => {
+          this.$axios('items/orders/' + orderId, { method: 'DELETE' });
         });
     },
-    createOrders() {
+    createOrder(data) {
       this.$axios('items/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: {
           total_price: this.calculate_Total,
-          notes: 'test1234',
-          ordered_items: [this.orderedItemId],
+          first_name: data.firstName,
+          last_name: data.lastName,
+          email: data.email,
+          phone_number: data.phoneNumber,
+          address: data.address,
+          notes: data.notes,
         },
       })
         .then((response) => {
-          console.log(response);
           this.orderId = response.data.data.id;
-          console.log(this.orderId);
+
+          return this.createOrderedItems(this.orderId);
         })
         .catch((err) => {
           console.error(err);
         });
     },
-    linkIds() {},
   },
 };
 </script>
