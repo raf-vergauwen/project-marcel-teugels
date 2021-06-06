@@ -89,6 +89,7 @@ export default {
         'faEuroSign',
         'faCartPlus',
         'faCopyright',
+        'faTools',
       ],
       brands: [
         'faFacebook',

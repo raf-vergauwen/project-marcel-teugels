@@ -36,14 +36,6 @@
   color: var(--color-secondary);
 }
 
-.fa-heart {
-  &:hover {
-    @include box-transition;
-
-    color: #f00;
-  }
-}
-
 .fa-facebook {
   &:hover {
     transform: translate3d(0, -$buffer--xs, 0);
@@ -64,7 +56,6 @@
       @include box-transition;
 
       color: #1da1f2;
-      // filter: drop-shadow(30px 10px 4px var(--color-secondary));
       filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
       transform: translate3d(0, -$buffer--xs, 0);
     }

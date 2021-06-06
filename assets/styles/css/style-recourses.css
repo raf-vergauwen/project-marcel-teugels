@@ -199,12 +199,6 @@
   color: var(--color-secondary);
 }
 
-.fa-heart:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-}
-
 .fa-facebook:hover {
   -webkit-transform: translate3d(0, -0.25rem, 0);
           transform: translate3d(0, -0.25rem, 0);

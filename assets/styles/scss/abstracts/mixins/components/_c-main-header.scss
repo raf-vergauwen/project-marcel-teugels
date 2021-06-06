@@ -29,7 +29,6 @@
     @include flex-container(nowrap, column);
 
     padding: 0;
-    // background-color: var(--color-primary);
 
     @include breakpoint(m) {
       @include flex-container(nowrap, row);
@@ -44,7 +43,6 @@
       }
 
       > li:first-child > a {
-        // margin: 0;
         background-color: var(--color-text);
         border-radius: $small-dimension--l;
       }
@@ -75,8 +73,9 @@
     }
 
     &__link {
+      @include color-link(background, 'tertiary--lighter');
+
       padding: $buffer--xs $buffer--s;
-      color: var(--color-background);
 
       @include breakpoint(l) {
         padding-right: $buffer--m;
@@ -87,45 +86,10 @@
         padding-right: $buffer--l;
         padding-left: $buffer--l;
       }
-
-      &:hover {
-        color: var(--color-tertiary--lighter);
-      }
-    }
-
-    &__link-icon {
-      color: var(--color-background);
     }
 
     &__link--active {
-      overflow: hidden;
-      background-color: var(--color-tertiary);
-      border-radius: $small-dimension--m;
-      color: var(--color-primary);
-
-      path {
-        color: var(--color-primary);
-      }
-
-      &:hover path {
-        color: var(--color-text--darker);
-      }
-
-      &::after {
-        background: var(--color-text--darker);
-      }
-
-      &:hover {
-        color: var(--color-text--darker);
-      }
-
-      &:hover::before {
-        background: var(--color-text--darker);
-      }
-
-      &:hover::after {
-        background: transparent;
-      }
+      @include color-link(primary, 'text--darkest', btn);
     }
   }
 }

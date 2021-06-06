@@ -102,21 +102,38 @@ hr {
 
   background-image: linear-gradient(
     to right,
+    hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25),
     hsla(
       var(--color-background-h),
       var(--color-background-s),
       var(--color-background-l),
-      0
+      0.5
     ),
-    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
-    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75),
-    hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5),
     hsla(
       var(--color-background-h),
       var(--color-background-s),
       var(--color-background-l),
-      0
-    )
+      0.75
+    ),
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      1
+    ),
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0.75
+    ),
+    hsla(
+      var(--color-background-h),
+      var(--color-background-s),
+      var(--color-background-l),
+      0.5
+    ),
+    hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25),
   );
 }
 

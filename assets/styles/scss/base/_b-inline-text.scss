@@ -103,14 +103,16 @@ a {
   text-decoration: none;
 
   svg {
-    transition: $transition--default;
+    transition: $transition--color;
   }
 
   &:hover {
     color: var(--color-tertiary--lighter);
+    transition: $transition--color;
 
     path {
       color: var(--color-tertiary--lighter);
+      transition: $transition--color;
     }
   }
 

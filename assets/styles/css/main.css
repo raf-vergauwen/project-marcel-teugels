@@ -203,12 +203,6 @@
   color: var(--color-secondary);
 }
 
-.fa-heart:hover {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-}
-
 .fa-facebook:hover {
   -webkit-transform: translate3d(0, -0.25rem, 0);
           transform: translate3d(0, -0.25rem, 0);
@@ -737,8 +731,8 @@ hr {
   height: 4px;
   margin: 0.5rem 0;
   padding: null;
-  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75)), color-stop(hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5)), to(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0)));
-  background-image: linear-gradient(to right, hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.75), hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0.5), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0));
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.5)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 1)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75)), color-stop(hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.5)), to(hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25)));
+  background-image: linear-gradient(to right, hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.5), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 1), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.75), hsla(var(--color-background-h), var(--color-background-s), var(--color-background-l), 0.5), hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25));
 }
 
 p {
@@ -981,16 +975,20 @@ a {
 }
 
 a svg {
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
 }
 
 a:hover {
   color: var(--color-tertiary--lighter);
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
 }
 
 a:hover path {
   color: var(--color-tertiary--lighter);
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
 }
 
 a::before {

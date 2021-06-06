@@ -35,4 +35,44 @@
   #{$color-name}-l: #{$lightness};
 }
 
-// -  <---------------| define-color-hsl |--------------->
+
+
+// -  <---------------| Color-Link |--------------->
+@mixin color-link($color-name, $color-name--hover, $shadow: false) {
+  color: var(--color-#{$color-name});
+
+  path {
+    color: var(--color-#{$color-name});
+  }
+
+  &:hover path {
+    color: var(--color-#{$color-name--hover});
+  }
+
+  &::after {
+    background: var(--color-#{$color-name--hover});
+  }
+
+  &:hover {
+    color: var(--color-#{$color-name--hover});
+  }
+
+  &:hover::before {
+    background: var(--color-#{$color-name--hover});
+  }
+
+  &:hover::after {
+    background: transparent;
+  }
+
+  @if $shadow == btn {
+    &:hover {
+      @include box-shadow(3);
+    }
+
+    display: inline-flex;
+    overflow: hidden;
+    background-color: var(--color-tertiary);
+    border-radius: $small-dimension--m;
+  }
+}

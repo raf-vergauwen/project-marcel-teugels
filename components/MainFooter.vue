@@ -32,7 +32,6 @@
                 <fa
                   class="c-foot-nav__link-icon"
                   :icon="['fas', listItem.icon]"
-                  style="width: 1rem"
                 />
                 {{ listItem.label }}
               </anchor-link-or-nuxt-link>

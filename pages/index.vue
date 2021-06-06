@@ -12,8 +12,12 @@
               enim et irure pariatur. Eiusmod proident id sint irure
               exercitation aliqua est ad officia consequat.
             </p>
-            <a class="i-c-webshop__link" href="/webshop/home-webshop"
-              >webshop
+            <a
+              class="i-c-webshop__link index-link-btn"
+              href="/webshop/home-webshop"
+            >
+              <fa class="i-c-webshop__icon" :icon="['fas', 'tools']" />
+              webshop
             </a>
           </div>
         </div>
@@ -28,9 +32,14 @@
               cupidatat laborum tempor.
             </p>
             <a
-              class="i-c-restauration__link"
+              class="i-c-restauration__link index-link-btn"
               href="/restoration/home-restoration"
-              >restoration
+            >
+              <fa
+                class="i-c-restauration__icon"
+                :icon="['fas', 'shopping-bag']"
+              />
+              restoration
             </a>
           </div>
         </div>
@@ -100,9 +109,13 @@
   }
 
   &__box-inner {
-    @include flex-container;
+    @include flex-container($justify: space-between);
 
-    padding: $buffer--s;
+    padding: $buffer--m;
+
+    @include breakpoint(xs) {
+      padding: $buffer--m + $buffer--s $buffer--l;
+    }
   }
 
   &__title {
@@ -116,34 +129,6 @@
 
     &::first-letter {
       color: var(--color-secondary--lighter);
-    }
-  }
-
-  &__link {
-    @include box-shadow(1);
-
-    overflow: hidden;
-    padding-right: $buffer--l;
-    padding-left: $buffer--l;
-    background-color: var(--color-tertiary);
-    border-radius: $small-dimension--m;
-
-    &::after {
-      background: var(--color-text);
-    }
-
-    &:hover {
-      @include box-shadow(3);
-
-      color: var(--color-text);
-    }
-
-    &:hover::before {
-      background: var(--color-text);
-    }
-
-    &:hover::after {
-      background: transparent;
     }
   }
 }
@@ -161,10 +146,15 @@
   }
 
   &__box-inner {
-    @include flex-container;
+    @include flex-container($justify: space-between);
 
+    padding: $buffer--m;
     padding: $buffer--s;
     border: $buffer--xxs solid var(--color-tertiary--darker);
+
+    @include breakpoint(xs) {
+      padding: $buffer--m + $buffer--s $buffer--l;
+    }
 
     &::before,
     &::after {
@@ -183,32 +173,13 @@
     color: var(--color-text--darker);
   }
 
-  &__link {
-    @include box-shadow(1);
+}
 
-    overflow: hidden;
-    padding-right: $buffer--l;
-    padding-left: $buffer--l;
-    background-color: var(--color-tertiary);
-    border-radius: $small-dimension--m;
+.index-link-btn {
+  @include color-link(primary, 'text--darkest', btn);
 
-    &::after {
-      background: var(--color-text);
-    }
-
-    &:hover {
-      @include box-shadow(3);
-
-      color: var(--color-text);
-    }
-
-    &:hover::before {
-      background: var(--color-text);
-    }
-
-    &:hover::after {
-      background: transparent;
-    }
-  }
+  padding-right: $buffer--xxxl;
+  padding-left: $buffer--xxxl;
+  margin: $center-me;
 }
 </style>
