@@ -118,7 +118,7 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Fira Code Two iScript, FiraCode-Retina, Fira Code Retina, Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontWeight": "400",
     "editor.formatOnPaste": false,
@@ -172,9 +172,33 @@
     "editor.tokenColorCustomizations": {
       "textMateRules": [
         {
-          "scope": ["comment"],
+          "scope": [
+            "comment",
+            "constant", //String, Number, Boolean…, this, super
+            "keyword", //import, export, return…
+            "markup.italic",
+            "meta.selector",
+            "storage.modifier", //static keyword
+            "storage.type",
+            "storage.type.class.js", //class keyword
+            "variable.language"
+          ],
           "settings": {
             "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            //following will be excluded from italics (VSCode has some defaults for italics which aren't amazingT)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": ""
           }
         }
       ]

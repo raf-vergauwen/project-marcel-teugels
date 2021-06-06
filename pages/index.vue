@@ -18,7 +18,7 @@
           </div>
         </div>
       </div>
-      <div class="i-l__restauration-container">
+      <div class="i-l__restauration-container i-c-restauration">
         <div class="i-c-restauration__box-outer box-outer">
           <div class="i-c-restauration__box-inner box-inner">
             <h2 class="i-c-restauration__title">restoration</h2>
@@ -59,7 +59,7 @@
 
   &__main-container {
     display: grid;
-    // min-height: calc(100vh - #{$buffer--l});
+    min-height: calc(100vh - #{$buffer--l});
     gap: $buffer--l;
     grid-template-areas:
       'home__webshop'
@@ -68,11 +68,14 @@
     grid-template-rows: 1fr 1fr;
 
     @include breakpoint(m) {
-      min-height: calc(100vh - #{$buffer--xxl});
       grid-template-areas:
         'home__webshop .'
         '. home__restoration';
       grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint(l) {
+      min-height: calc(100vh - #{$buffer--xxl});
     }
   }
 
