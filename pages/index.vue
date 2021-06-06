@@ -1,34 +1,38 @@
+// ! [NAMESPACE]-[PREFIX]-[BLOCK]__[ELEMENT]--[MODIFIER]
+
 <template>
-  <section class="home">
-    <div class="home__webshop">
-      <div class="home__webshop--box box">
-        <div class="home__webshop--container box-inner">
-          <h2 class="home__webshop--title">webshop</h2>
-          <p class="home__webshop--text">
-            Ipsum dolor voluptate quis quis dolor mollit id pariatur velit enim
-            et irure pariatur. Eiusmod proident id sint irure exercitation
-            aliqua est ad officia consequat.
-          </p>
-          <a class="home__webshop--link" href="/webshop/home-webshop"
-            >webshop
-          </a>
+  <section class="i-l">
+    <div class="i-l__main-container">
+      <div class="i-l__webshop-container i-c-webshop">
+        <div class="i-c-webshop__box-outer box-outer">
+          <div class="i-c-webshop__box-inner box-inner">
+            <h2 class="i-c-webshop__title">webshop</h2>
+            <p class="i-c-webshop__text">
+              Ipsum dolor voluptate quis quis dolor mollit id pariatur velit
+              enim et irure pariatur. Eiusmod proident id sint irure
+              exercitation aliqua est ad officia consequat.
+            </p>
+            <a class="i-c-webshop__link" href="/webshop/home-webshop"
+              >webshop
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="home__restoration">
-      <div class="home__restoration--box box">
-        <div class="home__restoration--container box-inner">
-          <h2 class="home__restoration--title">restoration</h2>
-          <p class="home__restoration--text">
-            Fugiat ullamco et cillum reprehenderit magna ullamco ipsum sit. Quis
-            sunt ullamco ut enim ullamco sit nisi ex velit aliqua id cupidatat
-            laborum tempor.
-          </p>
-          <a
-            class="home__restoration--link"
-            href="/restoration/home-restoration"
-            >restoration
-          </a>
+      <div class="i-l__restauration-container">
+        <div class="i-c-restauration__box-outer box-outer">
+          <div class="i-c-restauration__box-inner box-inner">
+            <h2 class="i-c-restauration__title">restoration</h2>
+            <p class="i-c-restauration__text">
+              Fugiat ullamco et cillum reprehenderit magna ullamco ipsum sit.
+              Quis sunt ullamco ut enim ullamco sit nisi ex velit aliqua id
+              cupidatat laborum tempor.
+            </p>
+            <a
+              class="i-c-restoration__link"
+              href="/restoration/home-restoration"
+              >restoration
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -38,58 +42,84 @@
 <script></script>
 
 <style lang="scss" scoped>
-.home {
-  display: grid;
-  padding: $buffer--m;
+.i-l {
   background-image: linear-gradient(
     180deg,
     var(--color-secondary--lightest) 50%,
     var(--color-primary--darkest) 50%
   );
-  gap: $buffer--l;
-  grid-template-areas:
-    'home__webshop'
-    'home__restoration';
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
 
-  @include breakpoint(s) {
+  @include breakpoint(m) {
     background-image: linear-gradient(
       110deg,
       var(--color-secondary--lightest) 50%,
       var(--color-primary--darkest) 50%
     );
+  }
+
+  &__main-container {
+    display: grid;
+    // min-height: calc(100vh - #{$buffer--l});
+    gap: $buffer--l;
     grid-template-areas:
-      'home__webshop .'
-      '. home__restoration';
-    grid-template-columns: 1fr 1fr;
+      'home__webshop'
+      'home__restoration';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @include breakpoint(m) {
+      min-height: calc(100vh - #{$buffer--xxl});
+      grid-template-areas:
+        'home__webshop .'
+        '. home__restoration';
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
-  &__webshop {
+  &__webshop-container {
+    max-width: $large-dimension--xs;
+    aspect-ratio: $card--aspect-ratio--landscape;
     grid-area: home__webshop;
+    place-self: center;
   }
 
-  &__webshop--box {
+  &__restauration-container {
+    max-width: $large-dimension--xs;
+    aspect-ratio: $card--aspect-ratio--landscape;
+    grid-area: home__restoration;
+    place-self: center;
+  }
+}
+
+.i-c-webshop {
+  &__box-outer {
     background-color: var(--color-primary--darkest);
   }
 
-  &__webshop--container {
-    @include flex-container($justify: space-evenly);
+  &__box-inner {
+    @include flex-container;
 
     padding: $buffer--s;
   }
 
-  &__webshop--title {
+  &__title {
     padding: 0;
     color: var(--color-secondary--lightest);
   }
 
-  &__webshop--text {
+  &__text {
+    // @include flex-items;
+
+    // display: flex;
     padding: 0;
     color: var(--color-background--lightest);
+
+    &::first-letter {
+      color: var(--color-secondary--lightest);
+    }
   }
 
-  &__webshop--link {
+  &__link {
     @include box-shadow(1);
 
     overflow: hidden;
@@ -112,12 +142,10 @@
       background: var(--color-text);
     }
   }
+}
 
-  &__restoration {
-    grid-area: home__restoration;
-  }
-
-  &__restoration--box {
+.i-c-restauration {
+  &__box-outer {
     border: $buffer--xxs solid var(--color-tertiary--darkest);
     background-color: var(--color-secondary--lightest);
 
@@ -128,8 +156,8 @@
     }
   }
 
-  &__restoration--container {
-    @include flex-container($justify: space-evenly);
+  &__box-inner {
+    @include flex-container;
 
     padding: $buffer--s;
     border: $buffer--xxs solid var(--color-tertiary--darkest);
@@ -141,17 +169,17 @@
     }
   }
 
-  &__restoration--title {
+  &__title {
     padding: 0;
     color: var(--color-primary--darkest);
   }
 
-  &__restoration--text {
+  &__text {
     padding: 0;
     color: var(--color-text--darkest);
   }
 
-  &__restoration--link {
+  &__link {
     @include box-shadow(1);
 
     overflow: hidden;

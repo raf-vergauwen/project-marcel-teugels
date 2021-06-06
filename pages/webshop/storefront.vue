@@ -96,12 +96,12 @@ export default {
   }
 
   &__title {
-    margin-bottom: $buffer--m;
-    color: var(--color-text);
+    // margin-bottom: $buffer--m;
+    // color: var(--color-text);
 
-    @include breakpoint(l) {
-      margin-bottom: $buffer--l;
-    }
+    // @include breakpoint(l) {
+    //   margin-bottom: $buffer--l;
+    // }
   }
 
   &__btn {
@@ -110,7 +110,7 @@ export default {
 
   &__product-list {
     display: grid;
-    gap: $buffer--l $buffer--m;
+    gap: $buffer--l;
     grid-template-areas: '.';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
@@ -124,7 +124,6 @@ export default {
     }
 
     @include breakpoint(l) {
-      gap: $buffer--l;
       grid-template-areas: '. . .';
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);

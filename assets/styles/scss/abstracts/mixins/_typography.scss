@@ -29,8 +29,10 @@
 @mixin font($tier) {
   // #  TIER 1 : <h1>
   @if $tier == 'h1' {
-    padding: $buffer--m 0;
-    color: var(--color-primary);
+    max-width: $max-width--root;
+    padding: $buffer--m $buffer--s;
+    margin: $center-me;
+    color: var(--color-text);
     font-family: $font-family--h1;
     font-size: $font-size--h1;
     font-stretch: $font-stretch--h1;
@@ -43,8 +45,10 @@
   }
   // #  TIER 2 : <h2>
   @else if $tier == 'h2' {
-    padding: $buffer--m 0;
-    color: var(--color-primary);
+    max-width: $max-width--root;
+    padding: $buffer--m $buffer--s;
+    margin: $center-me;
+    color: var(--color-text);
     font-family: $font-family--h2;
     font-size: $font-size--h2;
     font-stretch: $font-stretch--h2;
@@ -58,7 +62,7 @@
   // #  TIER 3 : <h3>
   @else if $tier == 'h3' {
     padding: $buffer--s 0;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-family: $font-family--h3;
     font-size: $font-size--h3;
     font-stretch: $font-stretch--h3;
@@ -71,7 +75,7 @@
   // #  TIER 4 : <h4>
   @else if $tier == 'h4' {
     padding: $buffer--s 0;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-family: $font-family--h4;
     font-size: $font-size--h4;
     font-stretch: $font-stretch--h4;
@@ -84,7 +88,7 @@
   // #  TIER 5 : <h5>
   @else if $tier == 'h5' {
     padding: $buffer--xs 0;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     font-family: $font-family--h5;
     font-size: $font-size--h5;
     font-stretch: $font-stretch--h5;
@@ -97,7 +101,7 @@
   // #  TIER 6 : <h6>
   @else if $tier == 'h6' {
     padding: $buffer--xs 0;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     font-family: $font-family--h6;
     font-size: $font-size--h6;
     font-stretch: $font-stretch--h6;

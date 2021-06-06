@@ -78,7 +78,7 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< BOX BORDER >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.box {
+.box-outer {
   width: 100%;
   height: 100%;
   padding: null;
@@ -95,7 +95,7 @@
           transform: translate3d(-50%, -50%, 0);
 }
 
-.box::before, .box::after {
+.box-outer::before, .box-outer::after {
   position: absolute;
   top: 0.25rem;
   width: 1rem;
@@ -108,15 +108,15 @@
   text-align: center;
 }
 
-.box::before {
+.box-outer::before {
   left: 0.25rem;
 }
 
-.box::after {
+.box-outer::after {
   right: 0.25rem;
 }
 
-.box:hover {
+.box-outer:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);

@@ -11,7 +11,7 @@
   overflow: hidden;
   min-width: calc(#{$large-dimension--xxs} - (#{$large-dimension--xxs} / 10));
   max-width: calc((#{$large-dimension--l} / 4));
-  aspect-ratio: $card--aspect-ratio;
+  aspect-ratio: $card--aspect-ratio--portrait;
   // height: $card--height;
 
   /* Prevent background color leak outs */
@@ -22,7 +22,7 @@
     min-width: $card--width;
     height: $card--height;
     max-height: $card--height;
-    aspect-ratio: $card--aspect-ratio;
+    aspect-ratio: $card--aspect-ratio--portrait;
   }
 
   &:hover {

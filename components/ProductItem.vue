@@ -74,7 +74,7 @@ export default {
     @include card;
 
     display: grid;
-    gap: $buffer--s $buffer--s;
+    gap: $buffer--s;
     grid-template-areas:
       'c-pi-v'
       'c-pi-t'
@@ -86,8 +86,8 @@ export default {
 
   &__visual-container {
     display: grid;
-    gap: 0 0;
     grid-area: c-pi-v;
+    grid-gap: 0;
     grid-template-areas: 'c-pi-v__visual';
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -101,7 +101,7 @@ export default {
   &__title-container {
     display: grid;
     padding-left: 0;
-    gap: 0 0;
+    gap: 0;
     grid-area: c-pi-t;
     grid-template-areas: 'c-pi-t__title';
     grid-template-columns: auto;
@@ -117,7 +117,7 @@ export default {
 
   &__content-container {
     display: grid;
-    gap: $buffer--xs $buffer--xs;
+    gap: $buffer--xs;
     grid-area: c-pi-c;
     grid-template-areas:
       'c-pi-c__name c-pi-c__id c-pi-c__quantity c-pi-c__price'
@@ -172,7 +172,7 @@ export default {
 
   &__btn-container {
     display: grid;
-    gap: 0 0;
+    gap: 0;
     grid-area: c-pi-b;
     grid-template-areas: 'c-pi-b__btn';
     grid-template-columns: 1fr;

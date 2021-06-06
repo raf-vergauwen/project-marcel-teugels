@@ -82,7 +82,7 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< BOX BORDER >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.box {
+.box-outer {
   width: 100%;
   height: 100%;
   padding: null;
@@ -99,7 +99,7 @@
           transform: translate3d(-50%, -50%, 0);
 }
 
-.box::before, .box::after {
+.box-outer::before, .box-outer::after {
   position: absolute;
   top: 0.25rem;
   width: 1rem;
@@ -112,15 +112,15 @@
   text-align: center;
 }
 
-.box::before {
+.box-outer::before {
   left: 0.25rem;
 }
 
-.box::after {
+.box-outer::after {
   right: 0.25rem;
 }
 
-.box:hover {
+.box-outer:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -321,6 +321,14 @@ body {
 // *  <<--------------------<< SECTIONING >>-------------------->>
 \* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- *\
+// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
+\* -------------------------------------------------------------------------- */
+div {
+  width: 100%;
+  padding: null;
+}
+
+/* -------------------------------------------------------------------------- *\
 -  <<--------------------<< MAIN >>-------------------->>
 \* -------------------------------------------------------------------------- */
 nav {
@@ -337,10 +345,33 @@ article {
 
 section {
   width: 100%;
-  margin: 0 auto;
-  padding: 0.5rem;
+  max-width: 100vw;
+  padding: 1rem;
   min-height: 100vh;
   background-color: #b6a736;
+}
+
+@media (min-width: 1600px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+section > h2 {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1600px) {
+  section > h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+section > div {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 aside {
@@ -352,14 +383,6 @@ aside {
   aside {
     padding: 2rem;
   }
-}
-
-/* -------------------------------------------------------------------------- *\
-// -  <<--------------------<< NON-SEMANTIC  >>-------------------->>
-\* -------------------------------------------------------------------------- */
-div {
-  width: 100%;
-  padding: null;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -408,21 +431,14 @@ footer > div {
 main {
   width: 100%;
   max-width: 100vw;
-  padding: 1rem;
+  padding: null;
   background-color: #06cc06;
-}
-
-@media (min-width: 1600px) {
-  main {
-    padding: 2rem;
-  }
 }
 
 main > div {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: null;
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -432,8 +448,10 @@ main > div {
 -  <<--------------------<< Heading >>-------------------->>
 \* -------------------------------------------------------------------------- */
 h1 {
-  padding: 1rem 0;
-  color: var(--color-primary);
+  max-width: 1920px;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  color: var(--color-text);
   font-family: "Montserrat", sans-serif;
   font-size: 3.8147rem;
   font-stretch: normal;
@@ -446,8 +464,10 @@ h1 {
 }
 
 h2 {
-  padding: 1rem 0;
-  color: var(--color-primary);
+  max-width: 1920px;
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  color: var(--color-text);
   font-family: "Montserrat", sans-serif;
   font-size: 3.05176rem;
   font-stretch: normal;
@@ -461,7 +481,7 @@ h2 {
 
 h3 {
   padding: 0.5rem 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 2.44141rem;
   font-stretch: normal;
@@ -474,7 +494,7 @@ h3 {
 
 h4 {
   padding: 0.5rem 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
   font-stretch: normal;
@@ -487,7 +507,7 @@ h4 {
 
 h5 {
   padding: 0.25rem 0;
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   font-family: "Roboto Slab", serif;
   font-size: 1.5625rem;
   font-stretch: normal;
@@ -500,7 +520,7 @@ h5 {
 
 h6 {
   padding: 0.25rem 0;
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
   font-stretch: normal;
@@ -518,7 +538,7 @@ h4 + p::first-letter,
 h5 + p::first-letter,
 h6 + p::first-letter {
   padding: 0.5rem 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.95312rem;
   font-stretch: normal;

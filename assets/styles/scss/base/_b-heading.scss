@@ -46,7 +46,5 @@ h5,
 h6 {
   + p::first-letter {
     @include font(h4);
-
-    // font-family: inherit;
   }
 }

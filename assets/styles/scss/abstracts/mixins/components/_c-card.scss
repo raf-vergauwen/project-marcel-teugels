@@ -8,7 +8,7 @@
 
   overflow: hidden;
   max-width: $large-dimension--xxs + $large-dimension--xxxs;
-  aspect-ratio: $card--aspect-ratio;
+  aspect-ratio: $card--aspect-ratio--portrait;
 
   /* Prevent background color leak outs */
   background-clip: padding-box;
