@@ -18,6 +18,19 @@
           validation="required"
         />
         <FormulateInput
+          name="email"
+          type="email"
+          label="email"
+          validation-name="email"
+          validation="required"
+        />
+        <FormulateInput
+          name="phoneNumber"
+          type="number"
+          label="telefoonnummer"
+          validation-name="telefoonnummer"
+        />
+        <FormulateInput
           name="address"
           type="text"
           label="adres"

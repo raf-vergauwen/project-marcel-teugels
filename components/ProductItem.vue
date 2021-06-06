@@ -31,6 +31,10 @@
       <p>Quantity: {{ product.quantity_in_stock }}</p>
       <p>Price: € {{ product.price }}</p>
     </div>
+    <div class="c-product-item__quantity">
+      <button>-</button>
+      <button @click="addProduct">+</button>
+    </div>
     <button @click="addProduct">Buy</button>
   </article>
 </template>

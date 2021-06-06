@@ -18,6 +18,7 @@
         <p>{{ product.name }}</p>
         <p>{{ product.description }}</p>
         <p>Price: € {{ product.price }}</p>
+        <p>Quantity: {{ product_quantity }}</p>
       </div>
       <button @click="$emit('remove-product', product)">Remove</button>
     </div>
@@ -38,7 +39,11 @@ export default {
       src: 'http://157.230.126.154/assets/',
     };
   },
-  computed: {},
+  computed: {
+    product_quantity() {
+      return this.$store.getters.productQuantity(this.product);
+    },
+  },
   methods: {},
 };
 </script>
