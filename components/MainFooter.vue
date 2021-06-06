@@ -188,7 +188,8 @@ export default {
 
     .c-foot-about {
       &__title {
-        // ...
+        // color: var(--color-text--darkest);
+        color: var(--color-secondary--lightest);
       }
 
       &__paragraph {
@@ -234,8 +235,7 @@ export default {
       }
 
       &__title {
-        // ...
-        // color: var(--color-tertiary);
+        color: var(--color-text);
       }
 
       &__list {
