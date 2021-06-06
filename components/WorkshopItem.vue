@@ -8,7 +8,7 @@
       />
     </div>
     <div class="c-workshop-item__container">
-      <div v-if="isAdmin === true" class="c-workshop-itmes__admin-btn">
+      <div v-if="isAdmin === true" class="c-workshop-item__admin-container">
         <NuxtLink :to="`/restauratie/workshop/${workshop.id}`">
           <h2 class="c-workshop-item__title">
             {{ workshop.title }}
@@ -71,10 +71,17 @@ export default {
   margin: 2em 4em;
 
   &__image {
-    width: 400px;
+    display: block;
+    min-height: auto;
+    max-width: 600px;
 
     &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 400px;
+      height: 400px;
+      overflow: hidden;
     }
   }
 
@@ -96,7 +103,7 @@ export default {
     border: 0px;
   }
 
-  &__admin-btn {
+  &__admin-container {
     display: flex;
     justify-content: space-between;
   }

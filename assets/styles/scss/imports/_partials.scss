@@ -25,7 +25,21 @@
   min-width: 200px;
   min-height: 35px;
   border-radius: 30px;
-  border: 0px;
+  border: 0;
+}
+
+.link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 35px;
+  border-radius: 30px;
+
+  &-title {
+    font-size: 0.8em;
+    margin: 0em;
+  }
 }
 
 %font-size-0 {

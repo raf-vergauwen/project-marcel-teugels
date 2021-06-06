@@ -1,41 +1,26 @@
 <template>
   <main>
-    <section id="app">
-      <div>
+    <section class="contact">
+      <FormulateForm
+        v-model="contactData"
+        @submit="postRequest"
+        class="contact__inputs"
+      >
+        <FormulateInput name="first_name" type="text" label="voornaam:" />
+        <FormulateInput name="last_name" type="text" label="achternaam:" />
+        <FormulateInput name="email" type="email" label="email" />
         <FormulateInput
-          v-model="firstName"
-          name="firstName"
-          type="text"
-          label="voornaam:"
-        />
-        <FormulateInput
-          v-model="lastName"
-          name="lastName"
-          type="text"
-          label="achternaam:"
-        />
-        <FormulateInput
-          v-model="email"
-          name="email"
-          type="email"
-          label="email"
-        />
-        <FormulateInput
-          v-model="telefoonNummer"
-          name="telefoon"
+          name="telefoon_nummer"
           type="number"
           label="telefoon nummer"
         />
         <FormulateInput
-          v-model="textContent"
-          name="textContent"
+          name="text-content"
           type="textarea"
           label="Waarmee kunnen wij u helpen?"
         />
-      </div>
-      <div class="container">
-        <button @click="postRequest">Verstuur</button>
-      </div>
+        <FormulateInput type="submit" label="verstuur" />
+      </FormulateForm>
     </section>
   </main>
 </template>
@@ -43,57 +28,47 @@
 <script>
 export default {
   name: 'ContactPage',
+  layout: 'restauratie',
   data() {
     return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      telefoonNummer: '',
-      textContent: '',
+      contactData: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        telefoon_nummer: '',
+        text_content: '',
+      },
     };
   },
   methods: {
-    postRequest() {
-      const body = {
-        first_name: this.firstName,
-        last_name: this.lastName,
-        email: this.email,
-        telefoon_nummer: this.telefoonNummer,
-        status: 'draft',
-        text_content: this.textContent,
-      };
-            fetch("http://157.230.126.154/items/user_requests/", {
-                "method": "POST",
-                "headers": {
-                  "Content-Type": "application/json",
-                  "Authorization": "Bearer "
-                },
-                "body":  JSON.stringify(body),
-              })
-              .then((response) => {
-                if (!response.ok) {
-                    console.log('could not post user requests');
-                }
-                return response.json();
-            })
-              .then((data) => {
-                this.requestData = data
-              })
-              .catch(err => {
-                console.error(err);
-              });
-        }
-}}
-</script>
-
-<style>
-</style>
- 154  pages/order.vue
-Viewed
-
+    postRequest(data) {
+      return this.$axios('/items/user_requests', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        data,
+      })
+        .then((response) => {
+          console.log(response);
+          return response.data.data;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
     },
   },
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.contact {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+
+  &__inputs {
+    width: 70vw;
+  }
+}
+</style>
