@@ -26,6 +26,7 @@
 <script>
 export default {
   name: 'ProfilePage',
+  middleware: 'auth',
   data() {
     return {
       oldEmail: '',

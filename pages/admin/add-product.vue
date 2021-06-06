@@ -1,32 +1,54 @@
 <template>
   <main class="p-product-page">
     <section id="app">
-      <div>
-        <label>
-          naam:
-          <input v-model="name" type="text" />
-        </label>
-        <label>
-          omschrijving:
-          <textarea v-model="description"> </textarea>
-        </label>
-        <label>
-          prijs:
-          <input v-model="price" type="number" />
-        </label>
-        <label>
-          grootte:
-          <input v-model="size" type="number" />
-        </label>
-        <label>
-          gewicht:
-          <input v-model="weight" type="number" />
-        </label>
-      </div>
-
-      <div class="container">
-        <button @click="postWorkshop">Verstuur</button>
-      </div>
+      <FormulateForm v-model="productFormData" @submit="postWorkshop">
+        <FormulateInput
+          name="name"
+          type="text"
+          label="product naam"
+          validation-name="naam"
+          validation="required"
+        />
+        <FormulateInput
+          name="description"
+          type="textarea"
+          label="omschrijving"
+          validation="required"
+        />
+        <FormulateInput
+          name="price"
+          type="number"
+          label="prijs"
+          validation="required"
+        />
+        <FormulateInput
+          name="size"
+          type="number"
+          label="grootte"
+          validation="required"
+        />
+        <FormulateInput
+          name="weight"
+          type="number"
+          label="gewicht"
+          validation="required"
+        />
+        <FormulateInput
+          name="quantity_in_stock"
+          type="number"
+          label="hoeveelheid in stock"
+          validation="required"
+        />
+        <FormulateInput
+          type="image"
+          name="images"
+          label="Please select an image"
+          validation="mime:image/jpeg,image/png"
+          :uploader="uploader"
+          multiple
+        />
+        <FormulateInput type="submit" label="add product" />
+      </FormulateForm>
     </section>
   </main>
 </template>
@@ -37,56 +59,60 @@ export default {
   layout: 'admin',
   data() {
     return {
-      name: '',
-      description: '',
-      price: '',
-      size: '',
-      weight: '',
-      status: 'draft',
-      images: [
-        {
-          directus_files_id: '79c4d9ef-cd71-41ed-ae19-87af431bdfa5',
-        },
-      ],
+      productFormData: {
+        name: '',
+        description: '',
+        price: '',
+        size: '',
+        weight: '',
+        quantity_in_stock: '',
+        images: [],
+      },
     };
   },
+
   computed: {
     access_token() {
       return sessionStorage.getItem('access_token');
     },
   },
   methods: {
-    postWorkshop() {
-      const body = {
-        name: this.name,
-        description: this.description,
-        price: this.price,
-        size: this.size,
-        weight: this.weight,
-        text_content: this.textContent,
-        images: this.images,
-      };
-
-      fetch('http://157.230.126.154/items/products/', {
+    postWorkshop(data) {
+      return this.$axios('/items/products/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + this.access_token,
         },
-        body: JSON.stringify(body),
+        data,
       })
         .then((response) => {
-          if (!response.ok) {
-            console.log('could not post new product');
-          }
-
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+          console.log(response);
+          return response.data.data;
         })
         .catch((err) => {
           console.error(err);
+        });
+    },
+    uploader(file, progress, error) {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      return this.$axios('/files', {
+        method: 'POST',
+        data: formData,
+      })
+        .then((response) => {
+          console.log(response);
+
+          progress(100);
+
+          return {
+            directus_files_id: response.data.data.id,
+          };
+        })
+        .catch((e) => {
+          console.error(e);
+          error('Kan afbeelding niet uploaden, probeer het opnieuw');
         });
     },
   },

@@ -48,5 +48,19 @@ export default {
 <style lang="scss">
 .c-order-product {
   display: flex;
+
+  &__image {
+    min-width: 400px;
+    min-height: auto;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+    }
+  }
 }
 </style>

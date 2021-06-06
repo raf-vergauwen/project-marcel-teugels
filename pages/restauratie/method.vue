@@ -7,7 +7,7 @@
         alt=""
       />
       <div>
-        <h1>conservatie van houtwerk</h1>
+        <h1 class="conservation__title">conservatie van hout</h1>
         <p class="conservation__info">
           De conservatie en restauratie van houten erfgoed objecten omvat een
           brede waaier aan object typen. Dit kan gaan over meubels,
@@ -39,7 +39,7 @@
     </div>
     <div class="conservation__container">
       <div>
-        <h1>taxidermi</h1>
+        <h1 class="conservation__title">taxidermi</h1>
         <p class="conservation__info">
           Vanuit mijn liefde voor de natuur, geschiedenis en materialen vloeide
           een fascinatie voor natuurhistorische collecties voort. Combineer dit
@@ -80,7 +80,7 @@
         alt=""
       />
       <div>
-        <h1>conservatie van smeedwerk</h1>
+        <h1 class="conservation__title">conservatie van metaal</h1>
         <p class="conservation__info">
           Historisch smeedwerk heeft vaak het meest geleden van corrosie (roest)
           en mechanische schade. Hierdoor zijn vaak onderdelen verloren gegaan
@@ -103,19 +103,25 @@ export default {
 </script>
 
 <style lang="scss">
-.conservation__img {
-  height: 400px;
-}
+.conservation {
+  &__img {
+    height: 400px;
+  }
 
-.conservation__info {
-  margin: 1em;
-}
+  &__title {
+    margin: 0em 0.4em;
+  }
 
-.conservation__container {
-  display: flex;
-  width: 100vw;
-  margin-right: 3em;
-  margin: 3em 0em;
-  justify-content: center;
+  &__info {
+    margin: 1em;
+  }
+
+  &__container {
+    display: flex;
+    width: 100vw;
+    margin-right: 3em;
+    margin: 3em 0em;
+    justify-content: center;
+  }
 }
 </style>

@@ -4,7 +4,7 @@
     <div class="p-shopping-cart__container">
       <div class="p-shopping-cart__product-list">
         <ShoppingCartItem
-          v-for="product in productData"
+          v-for="product in shoppingList"
           :key="product.id"
           class="p-shopping-cart__product-list__item"
           :product="product"
@@ -14,7 +14,11 @@
       <div class="p-shopping-cart__total">
         <h2>Total:</h2>
         <h3>€ {{ calculate_Total }}</h3>
-        <button @click="createOrderedItems">Afrekenen</button>
+        <button>
+          <nuxt-link class="place-order-link" to="/shop/place-order">
+            Afrekenen
+          </nuxt-link>
+        </button>
       </div>
     </div>
   </main>
@@ -30,53 +34,32 @@ export default {
   data() {
     return {
       shoppingList: [],
-      productData: [],
-      orderedItemId: null,
-      orderId: null,
     };
   },
-  fetch() {
-    return this.fetchItems();
-  },
   computed: {
-    shopping_cart() {
-      return this.$store.state.shoppingCart;
-    },
     calculate_Total() {
-      return this.productData.reduce((acc, product) => {
-        return acc + parseInt(product.price);
+      return this.shoppingList.reduce((acc, product) => {
+        return (
+          acc +
+          parseFloat(product.price) *
+            this.$store.getters.productQuantity(product)
+        );
       }, 0);
     },
   },
   created() {
     if (localStorage.getItem('cart')) {
-      this.shoppingList = localStorage.getItem('cart').split(',');
+      const stringObject = localStorage.getItem('cart');
+      this.shoppingList = JSON.parse(stringObject);
     }
   },
   methods: {
-    fetchItems() {
-      for (let i = 0; i < this.shoppingList.length; i++) {
-        this.$axios(
-          `items/products/` + this.shoppingList[i] + '?fields=*%2Cimages.*',
-          {
-            method: 'GET',
-            headers: {},
-          },
-        )
-          .then((response) => {
-            console.log(response);
-            this.productData.push(response.data.data);
-            console.log(this.productData);
-          })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
-    },
     removeProduct(product) {
-      console.log(product);
-      const index = this.productData.indexOf(product);
-      this.productData.splice(index, index + 1);
+      const index = this.shoppingList.indexOf(product);
+
+      if (this.$store.getters.productQuantity(product) === 1) {
+        this.shoppingList.splice(index, index + 1);
+      }
       this.$store.commit('removeFromCart', product);
     },
     createOrderedItems() {
@@ -99,6 +82,7 @@ export default {
           console.error(err);
         });
     },
+    /*
     createOrders() {
       this.$axios('items/orders', {
         method: 'POST',
@@ -118,7 +102,7 @@ export default {
           console.error(err);
         });
     },
-    linkIds() {},
+    */
   },
 };
 </script>

@@ -29,66 +29,22 @@ export default {
   },
   computed: {
     loginBody() {
-      return JSON.stringify({ email: this.email, password: this.password });
+      return { email: this.email, password: this.password };
     },
-    access_token() {
-      return sessionStorage.getItem('access_token');
+    isLoggedIn() {
+      return this.$store.getters['auth/isLoggedIn'];
     },
-    user_role() {
-      return sessionStorage.getItem('user_role');
+  },
+  watch: {
+    isLoggedIn(newVal) {
+      if (newVal) {
+        this.$router.push('/profile');
+      }
     },
   },
   methods: {
     login() {
-      fetch('http://157.230.126.154/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.loginBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not login');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          sessionStorage.setItem('access_token', body.data.access_token);
-
-          this.$axios.setHeader(
-            'Authorization',
-            'Bearer ' + body.data.access_token,
-          );
-
-          this.$router.push('/profile');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-
-      fetch('http://157.230.126.154/users/me', {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + this.access_token,
-        },
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Could not get user info');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          this.admin = body.data.role;
-          sessionStorage.setItem('user_role', this.admin);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+      this.$store.dispatch('auth/login', this.loginBody);
     },
   },
 };

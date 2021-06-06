@@ -1,7 +1,7 @@
 <template>
   <main class="p-product-page">
     <div class="p-workshop__container">
-      <img class="p-workshop__image" :src="src" alt="" />
+      <img class="p-workshop__image" :src="src + images" alt="" />
       <div
         v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
         class="p-workshop__info"
@@ -60,9 +60,6 @@ export default {
       textContent: '',
     };
   },
-  fetch() {
-    return this.fetchWorkshop();
-  },
 
   computed: {
     user_role() {
@@ -71,6 +68,10 @@ export default {
     access_token() {
       return sessionStorage.getItem('access_token');
     },
+  },
+
+  created() {
+    this.fetchWorkshop();
   },
 
   methods: {
@@ -97,8 +98,9 @@ export default {
           this.organizer = this.workshopData.organizer;
           this.subject = this.workshopData.subject;
           this.textContent = this.workshopData.text_content;
+          this.images = this.workshopData.images[0].directus_files_id;
 
-          console.log(data);
+          console.log(this.workshopData);
         })
         .catch((err) => {
           console.error(err);
@@ -139,10 +141,9 @@ export default {
 .p-workshop__container {
   display: flex;
   flex-direction: row;
-  height: 90vh;
-  width: 100vw;
+
   align-items: center;
-  justify-content: center;
+  margin: 0em 1em;
 }
 
 .p-workshop__info {

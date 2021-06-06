@@ -41,7 +41,7 @@ export default {
       })
         .then((response) => {
           console.log(response);
-          this.requestData = response.data.data;
+          this.requestData = response.data;
         })
         .catch((err) => {
           console.error(err);
@@ -52,12 +52,6 @@ export default {
 </script>
 
 <style>
-body {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  background-color: silver;
-}
 
 .request-item {
   width: 50vw;

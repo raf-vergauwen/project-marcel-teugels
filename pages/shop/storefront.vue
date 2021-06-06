@@ -3,10 +3,7 @@
     <div class="title-btn__container">
       <h1 class="p-product__title">Store</h1>
 
-      <button
-        v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-        class="p-product__btn"
-      >
+      <button v-if="isAdmin === true" class="p-product__btn admin-btn">
         <nuxt-link to="/admin/add-product">+</nuxt-link>
       </button>
     </div>
@@ -34,7 +31,6 @@ export default {
     return {
       productData: {},
       src: 'http://157.230.126.154/assets/',
-      Admin: false,
       shoppingCart: [],
     };
   },
@@ -47,6 +43,12 @@ export default {
     },
     user_role() {
       return sessionStorage.getItem('user_role');
+    },
+    isLoggedIn() {
+      return this.$store.getters['auth/isLoggedIn'];
+    },
+    isAdmin() {
+      return this.$store.getters['auth/isAdmin'];
     },
   },
   mounted() {
@@ -61,7 +63,6 @@ export default {
         .then((response) => {
           console.log(response);
           this.productData = response.data.data;
-          this.Admin = this.user_role;
         })
         .catch((err) => {
           console.error(err);
@@ -139,9 +140,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  color: black;
-}
 .p-storefront {
   @extend .container;
 
@@ -164,14 +162,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-}
-
-.p-product__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: $dark-bg;
-  border: 0;
 }
 
 .p-product__title {

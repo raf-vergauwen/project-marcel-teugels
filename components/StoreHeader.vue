@@ -26,7 +26,7 @@ export default {
     return {
       cijfer: 0,
       navItems: [
-        { path: '/', label: 'home' },
+        { path: '/shop', label: 'home' },
         { path: '/shop/storefront', label: 'store' },
         { path: '/shop/shopping-cart', label: `winkelwagen` },
         { path: '/restauratie', label: 'restauratie' },
