@@ -7,28 +7,21 @@
   .c-header {
     position: fixed;
     z-index: 1;
-    right: 0;
-    left: 0;
+    top: 0;
     padding-top: $buffer--s;
     padding-bottom: $buffer--s;
+    filter: drop-shadow(
+      0 $small-dimension--s $small-dimension--s var(--color-text)
+    );
     transform: translate3d(0, 0, 0);
-    // transition: $transition--default;
+    transition: $transition--transform;
 
     &--hidden {
       transform: translate3d(0, -100%, 0);
     }
 
     &__main-container {
-      // position: fixed;
-      // z-index: 1;
-      // right: 0;
-      // left: 0;
-      // transform: translate3d(0, 0, 0);
-      // transition: $transition--default;
-    }
-
-    &__main-container--hidden {
-      transform: translate3d(0, -100%, 0);
+      // ...
     }
   }
 
@@ -36,13 +29,10 @@
     @include flex-container(nowrap, column);
 
     padding: 0;
-    background-color: var(--color-primary);
-    filter: drop-shadow(
-      0 $small-dimension--s $small-dimension--s var(--color-text)
-    );
+    // background-color: var(--color-primary);
 
     @include breakpoint(m) {
-      @include flex-container(nowrap, row, space-evenly, stretch);
+      @include flex-container(nowrap, row);
 
       overflow: hidden;
       border-radius: $small-dimension--l;
@@ -50,7 +40,7 @@
 
     &__list {
       @include breakpoint(m) {
-        @include flex-container(nowrap, row, space-evenly, stretch);
+        @include flex-container(nowrap, row, space-between);
       }
 
       > li:first-child > a {
@@ -88,8 +78,14 @@
       padding: $buffer--xs $buffer--s;
       color: var(--color-background);
 
-      @include breakpoint(m) {
-        width: auto;
+      @include breakpoint(l) {
+        padding-right: $buffer--m;
+        padding-left: $buffer--m;
+      }
+
+      @include breakpoint(xl) {
+        padding-right: $buffer--l;
+        padding-left: $buffer--l;
       }
 
       &:hover {

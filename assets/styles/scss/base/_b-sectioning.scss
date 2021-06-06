@@ -22,18 +22,15 @@ article {
 // #  <---------------| <section> |--------------->
 section {
   // @include box-dimensions(m, $max-width: $max-width--root, $margin: $center-me);
-  @include box-dimensions(m, $margin: $center-me);
+  @include box-dimensions(s, $margin: $center-me);
 
   min-height: 100vh;
-
-  @include breakpoint(l) {
-    padding: $buffer--l;
-  }
+  background-color: rgb(182, 167, 54);
 }
 
 // #  <---------------| <aside> |--------------->
 aside {
-  @include box-dimensions(m);
+  @include box-dimensions(s);
 
   @include breakpoint(l) {
     padding: $buffer--l;

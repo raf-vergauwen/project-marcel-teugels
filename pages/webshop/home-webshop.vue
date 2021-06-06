@@ -268,7 +268,7 @@ export default {
 \* -------------------------------------------------------------------------- */
 .hot-items {
   &__title {
-    margin-bottom: $buffer--m;
+    margin-bottom: $buffer--s;
     color: var(--color-text);
 
     @include breakpoint(l) {

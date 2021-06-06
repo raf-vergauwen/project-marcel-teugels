@@ -179,11 +179,8 @@ export default {
 
 <style lang="scss" scoped>
 .c-footer {
-
   &__main-container {
-    max-width: $max-width--root;
-    padding: $buffer--s;
-    margin: 0 auto;
+    // ...
   }
 
   &__about-container {
