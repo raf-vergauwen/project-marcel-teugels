@@ -309,18 +309,17 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: var(--color-background--lightest);
   border-radius: 8px;
 }
 
 html::-webkit-scrollbar-thumb {
   height: 25vh;
-  background: var(--color-background--dark);
+  background: var(--color-background);
   border-radius: 8px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: var(--color-background--darker);
+  background: var(--color-background--dark);
   -webkit-transition: color 0.35s ease;
   transition: color 0.35s ease;
 }

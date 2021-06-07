@@ -10,17 +10,16 @@
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--color-#{$color-name}--lightest);
     border-radius: $small-dimension--s;
   }
 
   &::-webkit-scrollbar-thumb {
     height: $height;
-    background: var(--color-#{$color-name}--dark);
+    background: var(--color-#{$color-name});
     border-radius: $small-dimension--s;
 
     &:hover {
-      background: var(--color-#{$color-name}--darker);
+      background: var(--color-#{$color-name}--dark);
       transition: $transition--color;
     }
   }
