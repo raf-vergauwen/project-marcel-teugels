@@ -1,5 +1,7 @@
+// ! [NAMESPACE]-[PREFIX]-[BLOCK]__[ELEMENT]--[MODIFIER]
+
 <template>
-  <div class="root">
+  <div class="roo">
     <store-header />
     <main class="main">
       <section class="hero" :style="bgImages.heroImage">
@@ -32,22 +34,30 @@
       <div class="intermezzo intermezzo--1" :style="bgImages.intermezzo1">
         <div class="intermezzo__container"></div>
       </div>
-      <section class="about">
-        <h2 class="about__title">About</h2>
-        <div class="about__container">
-          <div class="about__visual-container">
-            <img :src="Images.aboutImage" alt="..." class="about__image card" />
+      <section class="hw-l-about">
+        <h2 class="hw-c-about__title">About</h2>
+        <div class="hw-l-about__main-container">
+          <div class="hw-l-about__visual-container">
+            <div class="hw-c-about__box-outer box-outer">
+              <div class="hw-c-about__box-inner box-inner">
+                <img
+                  :src="Images.aboutImage"
+                  alt="..."
+                  class="hw-c-about__image card"
+                />
+              </div>
+            </div>
           </div>
-          <article class="about__text-container">
-            <div class="about__outer-border box-border">
-              <div class="about__inner-border box-border-inner">
-                <h3 class="about__text-title">Marcel Teugels</h3>
-                <h4 class="about__sub-title">
+          <article class="hw-l-about__text-container">
+            <div class="hw-c-about__box-outer box-outer">
+              <div class="hw-c-about__box-inner box-inner">
+                <h3 class="hw-c-about__text-title">Marcel Teugels</h3>
+                <h4 class="hw-c-about__sub-title">
                   Apprentice blacksmith, conservator and restorer of wood &
                   metal
                 </h4>
-                <hr class="about__hr" />
-                <p class="about__paragraph">
+                <hr class="hw-c-about__hr" />
+                <p class="hw-c-about__paragraph">
                   Adipisicing ex ea pariatur dolor sit cupidatat officia laborum
                   est esse velit Lorem dolor dolore. Id consequat proident
                   laboris eu ipsum sunt aliqua sit tempor eu dolore consectetur
@@ -115,7 +125,7 @@
           </article>
         </div>
       </section>
-      <div class="intermezzo intermezzo--1" :style="bgImages.intermezzo2">
+      <div class="intermezzo intermezzo--2" :style="bgImages.intermezzo2">
         <div class="intermezzo__container"></div>
       </div>
     </main>
@@ -205,18 +215,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main {
-  max-width: 100%;
-  background-color: var(--color-background);
-
-  &__main-container {
-    // ...
-  }
-}
-
-/* -------------------------------------------------------------------------- *\
--  SECTION 1: hero
-\* -------------------------------------------------------------------------- */
 .hero {
   @include flex-container($justify: center);
   @include full-width;
@@ -253,8 +251,8 @@ export default {
 /* -------------------------------------------------------------------------- *\
 -  SECTION 2: Hot Items
 \* -------------------------------------------------------------------------- */
+
 .hot-items {
-  @include full-width;
   &__title {
     // ...
   }
@@ -309,8 +307,8 @@ export default {
 \* -------------------------------------------------------------------------- */
 
 .intermezzo {
-  max-width: 100vw;
-  height: 100vh;
+  @include full-width;
+
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -325,120 +323,90 @@ export default {
 -  SECTION 3: About
 \* -------------------------------------------------------------------------- */
 
-.about {
-  background: radial-gradient(#003, #000);
+.hw-l-about {
+  background: radial-gradient(var(--color-secondary), var(--color-primary));
 
-  &__container {
-    @include flex-container(nowrap, column, center, center);
+  &__main-container {
+    display: grid;
+    gap: $buffer--l;
+    grid-template-areas:
+      'hw-l-about__visual-container'
+      'hw-l-about__text-container';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 
-    @include breakpoint(s) {
-      @include flex-container(wrap, row, space-evenly, stretch);
+    @include breakpoint(m) {
+      grid-template-areas: 'hw-l-about__visual-container hw-l-about__text-container';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
     }
   }
 
+  &__visual-container {
+    max-width: $large-dimension--xxs + $large-dimension--xxxs;
+    padding: 0;
+    aspect-ratio: $card--aspect-ratio--portrait;
+    grid-area: hw-l-about__visual-container;
+    place-self: center;
+  }
+
+  &__text-container {
+    max-width: $large-dimension--xxs + $large-dimension--xxxs;
+    padding: 0;
+    aspect-ratio: $card--aspect-ratio--portrait;
+    grid-area: hw-l-about__text-container;
+    place-self: center;
+  }
+}
+
+.hw-c-about {
   &__title {
     // ...
   }
 
-  &__container--visual {
-    padding: 0 $buffer--s $buffer--xxl $buffer--s;
-  }
-
   &__image {
     // ...
+    height: 100%;
   }
 
-  &__container--text {
-    min-width: calc(#{$large-dimension--xxs} - #{$buffer--l});
-    max-width: calc(#{$card--width} + #{$buffer--m});
-    padding: 0;
-
-    @include breakpoint(m) {
-      min-width: calc(#{$card--width} + (#{$card--width} / 2));
-    }
-
-    @include breakpoint(l) {
-      min-width: calc(#{$card--width} * 2);
-    }
+  &__box-outer {
+    background-color: var(--color-primary);
   }
 
-  &__outer-border {
-    top: calc((#{$card--height} / 2) + #{$buffer--s});
-    margin-bottom: $buffer--xxl;
-    // ...
+  &__box-inner {
+    @include flex-container($justify: space-between);
 
-    @include breakpoint(xs) {
-      top: calc((#{$card--height} / 2) + #{$buffer--m} + #{$buffer--m});
-    }
-
-    @include breakpoint(s) {
-      top: calc((#{$card--height} / 2) - #{$buffer--l} - #{$buffer--s});
-      margin-bottom: 0;
-    }
-
-    @include breakpoint(m) {
-      // ...
-    }
-  }
-
-  &__inner-border {
-    @include breakpoint(s) {
-      height: calc(#{$card--height} - #{$buffer--m} + #{$buffer--m});
-    }
+    padding: $buffer--m;
   }
 
   &__text-title {
-    padding: $buffer--s 0;
-    font-size: $font-size--h2;
-    font-variant: small-caps;
-
-    @include breakpoint(s) {
-      height: 10%;
-    }
+    color: var(--color-background);
+    font-size: $font-family--h3;
   }
 
   &__sub-title {
-    padding: $buffer--s 0;
-    font-size: $font-size--h6;
-
-    @include breakpoint(s) {
-      height: 20%;
-    }
-
-    @include breakpoint(m) {
-      height: 15%;
-    }
+    color: var(--color-secondary);
+    font-size: $font-size--h5;
   }
 
   &__hr {
-    height: 1%;
-    border: 0;
-    margin: 2% auto;
-    background-image: linear-gradient(
-      to right,
-      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0),
-      hsla(
-        var(--color-background-h),
-        var(--color-background-s),
-        var(--color-background-l),
-        0.75
-      ),
-      hsla(var(--color-text-h), var(--color-text-s), var(--color-text-l), 0)
-    );
+    height: 3%;
   }
 
   &__paragraph {
-    overflow: auto;
-    height: calc(#{$card--height} - (#{$buffer--m} * 10));
-    color: var(--color-background);
-    text-align: justify;
+    @include scrollbar-style($buffer--s, tertiary, 2.5vh);
 
-    @include breakpoint(s) {
-      height: 62.5%;
+    overflow: auto;
+    color: var(--color-background--dark);
+
+    &::-webkit-scrollbar-track {
+      background: var(--color-primary-lighter);
     }
 
-    @include breakpoint(m) {
-      height: 67.5%;
+    &::first-letter {
+      @include font(h4);
+
+      color: var(--color-secondary);
     }
   }
 }

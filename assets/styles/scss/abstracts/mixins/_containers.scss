@@ -124,12 +124,16 @@
 
 // -  <---------------| .root |--------------->
 .root {
-  @include box-dimensions($width: 100%, $max-width: 100vw);
+  @include box-dimensions($width: 100vw);
+
+  margin: $center-me;
 }
 
 // -  <---------------| .main__container |--------------->
-.main__container > section {
-  min-height: 100vh;
+.main {
+  @include box-dimensions($width: 100vw);
+
+  background-color: var(--color-background);
 }
 
 // -  <---------------| .inline-flex |--------------->

@@ -30,9 +30,10 @@ article {
 
 // #  <---------------| <section> |--------------->
 section {
-  @include box-dimensions(m, $max-width: 100vw);
+  @include box-dimensions(m);
 
-  min-height: 100vh;
+  // @include full-width;
+
   background-color: var(--color-background);
 
   @include breakpoint(l) {
@@ -71,7 +72,8 @@ aside {
 
 // #  <---------------| <header> |--------------->
 header {
-  @include box-dimensions(m, $max-width: 100vw);
+  @include box-dimensions(m);
+  @include full-width;
 
   background-color: var(--color-primary);
 
@@ -90,7 +92,8 @@ header {
 
 // #  <---------------| <footer> |--------------->
 footer {
-  @include box-dimensions(m, $max-width: 100vw);
+  @include box-dimensions(m);
+  @include full-width;
 
   background-color: var(--color-primary);
 
@@ -109,12 +112,10 @@ footer {
 
 // #  <---------------| <main> |--------------->
 main {
-  @include box-dimensions($max-width: 100vw);
+  @include box-dimensions;
+  @include full-width;
 
+  // margin: $center-me;
   background-color: var(--color-background);
   // background-color: rgb(6, 204, 6);
-
-  > div {
-    @include box-dimensions($max-width: $max-width--root, $margin: $center-me);
-  }
 }

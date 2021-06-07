@@ -27,12 +27,13 @@
 }
 
 .root {
-  width: 100%;
-  max-width: 100vw;
+  width: 100vw;
+  margin: 0 auto;
 }
 
-.main__container > section {
-  min-height: 100vh;
+.main {
+  width: 100vw;
+  background-color: var(--color-background);
 }
 
 .inline-flex {
@@ -297,7 +298,36 @@
   margin: 0;
 }
 
+html {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
+}
+
+html::-webkit-scrollbar {
+  width: calc(0.5rem + 0.25rem);
+  height: 25vh;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--color-background--lightest);
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  height: 25vh;
+  background: var(--color-background--dark);
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background--darker);
+  -webkit-transition: color 0.35s ease;
+  transition: color 0.35s ease;
+}
+
 body {
+  width: 100%;
+  max-width: 1920px;
   display: block;
   margin: 0 auto;
   background-color: var(--color-background);
@@ -331,9 +361,7 @@ article {
 
 section {
   width: 100%;
-  max-width: 100vw;
   padding: 1rem;
-  min-height: 100vh;
   background-color: var(--color-background);
 }
 
@@ -376,8 +404,13 @@ aside {
 \* -------------------------------------------------------------------------- */
 header {
   width: 100%;
-  max-width: 100vw;
   padding: 1rem;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
   background-color: var(--color-primary);
 }
 
@@ -396,8 +429,13 @@ header > div {
 
 footer {
   width: 100%;
-  max-width: 100vw;
   padding: 1rem;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
   background-color: var(--color-primary);
 }
 
@@ -416,14 +454,13 @@ footer > div {
 
 main {
   width: 100%;
-  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
   background-color: var(--color-background);
-}
-
-main > div {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 /* -------------------------------------------------------------------------- *\

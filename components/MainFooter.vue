@@ -191,7 +191,7 @@ export default {
       }
 
       &__paragraph {
-        color: var(--color-background--darker);
+        color: var(--color-background--dark);
       }
 
       &__paragraph::first-letter {
@@ -284,7 +284,6 @@ export default {
 
       &__icon {
         // ...
-        color: var(--color-tertiary);
       }
     }
   }
@@ -297,7 +296,8 @@ export default {
 
     .c-foot-legal {
       &__text {
-        color: var(--color-secondary--lighter);
+        // color: var(--color-secondary--lighter);
+        color: var(--color-background--dark);
         font-family: $font-family--text-bigger;
         font-size: $font-size--h6;
         text-align: center;

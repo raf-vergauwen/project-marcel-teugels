@@ -13,17 +13,17 @@
 
 // #  <---------------| <html> |--------------->
 html {
-  // @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
-  // @include scrollbar-style(
-  //   $size: calc(#{$buffer--s} + #{$buffer--xs}),
-  //   $color: var(--color-tertiary)
-  // );
-  // @include scrollbar-function(smooth, y proximity);
+  @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
+  @include scrollbar-style(
+    calc(#{$buffer--s} + #{$buffer--xs}),
+    background,
+    25vh
+  );
 }
 
 // #  <---------------| <body> |--------------->
 body {
-  // @include box-dimensions($max-width: $max-width--root);
+  @include box-dimensions($max-width: $max-width--root);
   @include block-container($center-me);
   // @include font(text);
   // @include text-rendering(optimizeLegibility);

@@ -155,13 +155,9 @@ export default {
     }
 
     .c-pi-c__description {
-      // @include scrollbar-style(
-      //   $size: calc(#{$buffer--s} + #{$buffer--xs}),
-      //   $color: var(--color-tertiary)
-      // );
-      // @include scrollbar-function(smooth, y proximity);
+      @include scrollbar-style($buffer--s, tertiary, 2.5vh);
 
-      // max-height: 85%;
+      max-height: $small-dimension--xxl + $small-dimension--xxxl;
       color: var(--color-background--dark);
       grid-area: c-pi-c__description;
       text-overflow: ellipsis;

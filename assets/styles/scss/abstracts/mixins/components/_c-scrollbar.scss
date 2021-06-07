@@ -3,26 +3,25 @@
 // -----------------------------------------------------------------------------
 
 // -  <---------------| Scrollbar-Style |--------------->
-@mixin scrollbar-style($size, $color) {
-  // For Internet Explorer
-  scrollbar-face-color: $color;
-  scrollbar-track-color: lightness($color, 0.5);
-
+@mixin scrollbar-style($width, $color-name, $height) {
   &::-webkit-scrollbar {
-    width: $size;
+    width: $width;
+    height: 25vh;
   }
 
   &::-webkit-scrollbar-track {
-    background: lightness($color, 0.5);
+    background: var(--color-#{$color-name}--lightest);
     border-radius: $small-dimension--s;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $color;
+    height: $height;
+    background: var(--color-#{$color-name}--dark);
     border-radius: $small-dimension--s;
 
     &:hover {
-      background: lightness($color, 0.9);
+      background: var(--color-#{$color-name}--darker);
+      transition: $transition--color;
     }
   }
 }

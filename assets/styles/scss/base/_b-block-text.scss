@@ -102,7 +102,12 @@ hr {
 
   background-image: linear-gradient(
     to right,
-    hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25),
+    hsla(
+      var(--color-primary-h),
+      var(--color-primary-s),
+      var(--color-primary-l),
+      0.25
+    ),
     hsla(
       var(--color-background-h),
       var(--color-background-s),
@@ -133,7 +138,12 @@ hr {
       var(--color-background-l),
       0.5
     ),
-    hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25),
+    hsla(
+      var(--color-primary-h),
+      var(--color-primary-s),
+      var(--color-primary-l),
+      0.25
+    )
   );
 }
 
