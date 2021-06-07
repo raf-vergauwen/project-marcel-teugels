@@ -179,7 +179,8 @@ export default {
 <style lang="scss" scoped>
 .c-footer {
   &__main-container {
-    // ...
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__about-container {
@@ -261,8 +262,9 @@ export default {
     }
   }
 
-  &____hr-container {
+  &__hr-container {
     padding: 0;
+    margin: $buffer--m 0;
   }
 
   &__end-container {

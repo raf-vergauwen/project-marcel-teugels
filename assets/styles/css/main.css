@@ -100,6 +100,7 @@
 
 .box-outer::before, .box-outer::after {
   position: absolute;
+  z-index: 99;
   top: 0.25rem;
   width: 1rem;
   height: 1rem;
@@ -137,6 +138,7 @@
 
 .box-inner::before, .box-inner::after {
   position: absolute;
+  z-index: 99;
   bottom: -0.125rem;
   width: 1rem;
   height: 1rem;
@@ -304,22 +306,22 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: calc(0.5rem + 0.25rem);
-  height: 25vh;
+  width: calc(8px + 4px);
 }
 
 html::-webkit-scrollbar-track {
+  background: transparent;
   border-radius: 8px;
 }
 
 html::-webkit-scrollbar-thumb {
-  height: 25vh;
-  background: var(--color-background);
+  height: 64px;
+  background: var(--color-background--darker);
   border-radius: 8px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: var(--color-background--dark);
+  background: var(--color-background--darkest);
   -webkit-transition: color 0.35s ease;
   transition: color 0.35s ease;
 }
@@ -376,7 +378,7 @@ section > h2 {
 
 @media (min-width: 1600px) {
   section > h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 }
 

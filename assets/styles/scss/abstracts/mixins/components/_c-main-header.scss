@@ -6,22 +6,18 @@
 @mixin main-header {
   .c-header {
     position: fixed;
-    z-index: 1;
-    // top: 0;
-    padding-top: $buffer--s;
-    padding-bottom: $buffer--s;
+    z-index: 99;
+    padding-top: 0;
+    padding-bottom: 0;
     filter: drop-shadow(
-      0 $small-dimension--s $small-dimension--s var(--color-text)
+      0 $small-dimension--s $small-dimension--s
+        $bg-color--transparant-black---level-3
     );
     transform: translate3d(0, 0, 0);
     transition: $transition--transform;
 
     &--hidden {
       transform: translate3d(0, -100%, 0);
-    }
-
-    &__main-container {
-      // ...
     }
   }
 

@@ -15,9 +15,7 @@
 html {
   @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
   @include scrollbar-style(
-    calc(#{$buffer--s} + #{$buffer--xs}),
-    background,
-    25vh
+    $width-scrollbar: calc(#{$small-dimension--s} + #{$small-dimension--xs})
   );
 }
 

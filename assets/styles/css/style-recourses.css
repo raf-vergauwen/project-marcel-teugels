@@ -96,6 +96,7 @@
 
 .box-outer::before, .box-outer::after {
   position: absolute;
+  z-index: 99;
   top: 0.25rem;
   width: 1rem;
   height: 1rem;
@@ -133,6 +134,7 @@
 
 .box-inner::before, .box-inner::after {
   position: absolute;
+  z-index: 99;
   bottom: -0.125rem;
   width: 1rem;
   height: 1rem;

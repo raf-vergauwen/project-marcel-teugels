@@ -3,27 +3,6 @@
 // -----------------------------------------------------------------------------
 
 // -  <---------------| Scrollbar-Style |--------------->
-@mixin scrollbar-style($width, $color-name, $height) {
-  &::-webkit-scrollbar {
-    width: $width;
-    height: 25vh;
-  }
-
-  &::-webkit-scrollbar-track {
-    border-radius: $small-dimension--s;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    height: $height;
-    background: var(--color-#{$color-name});
-    border-radius: $small-dimension--s;
-
-    &:hover {
-      background: var(--color-#{$color-name}--dark);
-      transition: $transition--color;
-    }
-  }
-}
 
 // -  <---------------| Scrollbar-Behaviour |--------------->
 @mixin scrollbar-function($behaviour, $type) {
@@ -31,5 +10,33 @@
 
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: $behaviour;
+  }
+}
+
+@mixin scrollbar-style(
+  $width-scrollbar: $small-dimension--s,
+  $height-scrollbar-thumb: $small-dimension--xxl,
+  $background-scrollbar-track: transparent,
+  $background-scrollbar-thumb: var(--color-background--darker),
+  $background-scrollbar-thumb--hover: var(--color-background--darkest)
+) {
+  &::-webkit-scrollbar {
+    width: $width-scrollbar;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-scrollbar-track;
+    border-radius: $small-dimension--s;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: $height-scrollbar-thumb;
+    background: $background-scrollbar-thumb;
+    border-radius: $small-dimension--s;
+
+    &:hover {
+      background: $background-scrollbar-thumb--hover;
+      transition: $transition--color;
+    }
   }
 }

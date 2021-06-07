@@ -39,11 +39,11 @@
         <div class="hw-l-about__main-container">
           <div class="hw-l-about__visual-container">
             <div class="hw-c-about__box-outer box-outer">
-              <div class="hw-c-about__box-inner box-inner">
+              <div class="hw-c-about__box-inner--image box-inner">
                 <img
                   :src="Images.aboutImage"
                   alt="..."
-                  class="hw-c-about__image card"
+                  class="hw-c-about__image"
                 />
               </div>
             </div>
@@ -259,6 +259,8 @@ export default {
 
   &__container {
     display: grid;
+    padding-top: 0;
+    padding-bottom: 0;
     gap: $buffer--l;
     grid-template-areas: '.';
     grid-template-columns: 1fr;
@@ -328,6 +330,8 @@ export default {
 
   &__main-container {
     display: grid;
+    padding-top: 0;
+    padding-bottom: 0;
     gap: $buffer--l;
     grid-template-areas:
       'hw-l-about__visual-container'
@@ -365,8 +369,8 @@ export default {
   }
 
   &__image {
-    // ...
     height: 100%;
+    // ..
   }
 
   &__box-outer {
@@ -377,6 +381,12 @@ export default {
     @include flex-container($justify: space-between);
 
     padding: $buffer--m;
+  }
+
+  &__box-inner--image {
+    @include flex-container($justify: space-between);
+
+    padding: 0;
   }
 
   &__text-title {
@@ -390,18 +400,14 @@ export default {
   }
 
   &__hr {
-    height: 3%;
+    height: 1%;
   }
 
   &__paragraph {
-    @include scrollbar-style($buffer--s, tertiary, 2.5vh);
+    @include scrollbar-style;
 
     overflow: auto;
     color: var(--color-background--dark);
-
-    &::-webkit-scrollbar-track {
-      background: var(--color-primary-lighter);
-    }
 
     &::first-letter {
       @include font(h4);

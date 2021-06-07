@@ -16,6 +16,7 @@
   &::before,
   &::after {
     position: absolute;
+    z-index: 99;
     top: $buffer--xs;
     width: $buffer--m;
     height: $buffer--m;
@@ -49,6 +50,7 @@
   &::before,
   &::after {
     position: absolute;
+    z-index: 99;
     bottom: -$buffer--xxs;
     width: $buffer--m;
     height: $buffer--m;
