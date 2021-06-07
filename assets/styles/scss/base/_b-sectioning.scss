@@ -77,7 +77,8 @@ header {
   background-color: var(--color-primary);
 
   @include breakpoint(l) {
-    padding: $buffer--l;
+    padding-right: $buffer--l;
+    padding-left: $buffer--l;
   }
 
   > div {
@@ -97,7 +98,8 @@ footer {
   background-color: var(--color-primary);
 
   @include breakpoint(l) {
-    padding: $buffer--l;
+    padding-right: $buffer--l;
+    padding-left: $buffer--l;
   }
 
   > div {

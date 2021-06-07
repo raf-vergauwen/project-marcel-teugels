@@ -205,7 +205,7 @@ export default {
     padding: 0;
     @include breakpoint(s) {
       display: grid;
-      gap: $buffer--s;
+      gap: $buffer--m;
       grid-template-areas:
         'c-footer-nav__webshop-container c-footer-nav__restoration-container'
         'c-footer-nav__contact-info-container c-footer-nav__accounts-container';

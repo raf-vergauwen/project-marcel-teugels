@@ -362,7 +362,8 @@ header {
 
 @media (min-width: 1600px) {
   header {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -386,7 +387,8 @@ footer {
 
 @media (min-width: 1600px) {
   footer {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
