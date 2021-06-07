@@ -7,8 +7,6 @@
   .c-header {
     position: fixed;
     z-index: 99;
-    padding-top: 0;
-    padding-bottom: 0;
     filter: drop-shadow(
       0 $small-dimension--s $small-dimension--s
         $bg-color--transparant-black---level-3
@@ -57,14 +55,7 @@
       @include breakpoint(m) {
         display: inline-flex;
         width: auto;
-
-        &:first-child {
-          padding-top: $buffer--xs;
-        }
-
-        &:last-child {
-          padding-bottom: $buffer--xs;
-        }
+        padding: 0;
       }
     }
 

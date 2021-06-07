@@ -53,12 +53,14 @@ video {
 svg {
   @include box-dimensions;
 
-  color: var(--color-primary);
-  fill: var(--color-primary);
+  color: var(--color-tertiary);
+  fill: var(--color-tertiary);
   object-fit: cover;
   object-position: center center;
+  transition: $transition--default;
 
-  path {
+  path,
+  circle {
     transition: $transition--default;
   }
 }

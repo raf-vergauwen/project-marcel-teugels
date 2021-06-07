@@ -20,7 +20,6 @@ nav {
   @include box-dimensions(s);
 
   overflow: hidden;
-  border-radius: $small-dimension--s;
 }
 
 // #  <---------------| <article> |--------------->
@@ -32,8 +31,6 @@ article {
 section {
   @include box-dimensions(m);
 
-  // @include full-width;
-
   background-color: var(--color-background);
 
   @include breakpoint(l) {
@@ -41,7 +38,7 @@ section {
   }
 
   > h2 {
-    margin-bottom: $buffer--s;
+    margin-bottom: $buffer--m;
 
     @include breakpoint(l) {
       margin-bottom: $buffer--l;
@@ -50,7 +47,7 @@ section {
 
   > div {
     @include box-dimensions(
-      s,
+      none,
       $max-width: $max-width--root,
       $margin: $center-me
     );
@@ -75,6 +72,8 @@ header {
   @include box-dimensions(m);
   @include full-width;
 
+  padding-top: $buffer--s;
+  padding-bottom: $buffer--s;
   background-color: var(--color-primary);
 
   @include breakpoint(l) {
@@ -83,7 +82,7 @@ header {
 
   > div {
     @include box-dimensions(
-      s,
+      none,
       $max-width: $max-width--root,
       $margin: $center-me
     );
@@ -103,7 +102,7 @@ footer {
 
   > div {
     @include box-dimensions(
-      s,
+      none,
       $max-width: $max-width--root,
       $margin: $center-me
     );
@@ -115,7 +114,5 @@ main {
   @include box-dimensions;
   @include full-width;
 
-  // margin: $center-me;
   background-color: var(--color-background);
-  // background-color: rgb(6, 204, 6);
 }

@@ -18,28 +18,28 @@
       </NuxtLink>
       <div class="c-product-item__content-container c-pi-c">
         <p class="c-pi-c__name">
-          <fa class="item-icon" icon="tag" />
+          <fa class="icon" icon="tag" />
           {{ product.name }}
         </p>
         <p class="c-pi-c__id">
-          <fa class="item-icon" icon="hashtag" />
+          <fa class="icon" icon="hashtag" />
           {{ product.id }}
         </p>
         <p class="c-pi-c__quantity">
-          <fa class="item-icon" icon="shopping-bag" />
+          <fa class="icon" icon="shopping-bag" />
           {{ product.quantity_in_stock }}
         </p>
         <p class="c-pi-c__description">
           {{ product.description }}
         </p>
         <p class="c-pi-c__price">
-          <fa class="item-icon" icon="euro-sign" />
+          <fa class="icon" icon="euro-sign" />
           {{ product.price }}
         </p>
       </div>
       <div class="c-product-item__btn-container c-pi-b">
         <button class="c-pi-b__btn" @click="$emit('add-product', product)">
-          <fa class="item-icon--btn" icon="cart-plus" />
+          <fa class="icon--btn" icon="cart-plus" />
           Buy
         </button>
       </div>

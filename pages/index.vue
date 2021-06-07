@@ -1,37 +1,39 @@
 // ! [NAMESPACE]-[PREFIX]-[BLOCK]__[ELEMENT]--[MODIFIER]
 
 <template>
-  <section class="i-l">
-    <div class="i-l__main-container">
-      <div
-        v-for="indexItem in indexItems"
-        :key="indexItem.id"
-        :class="[`i-l__${indexItem.container}-container`]"
-      >
-        <div :class="[`i-c-${indexItem.container}__box-outer box-outer`]">
-          <div :class="[`i-c-${indexItem.container}__box-inner box-inner`]">
-            <h2 :class="[`i-c-${indexItem.container}__title`]">
-              {{ indexItem.title }}
-            </h2>
-            <p :class="[`i-c-${indexItem.container}__text`]">
-              {{ indexItem.text }}
-            </p>
-            <anchor-link-or-nuxt-link
-              :to="indexItem.path"
-              :nuxt="indexItem.nuxt"
-              :class="[`i-c-${indexItem.container}__link index-link-btn`]"
-            >
-              <fa
-                :class="[`i-c-${indexItem.container}__icon`]"
-                :icon="['fas', indexItem.icon]"
-              />
-              {{ indexItem.label }}
-            </anchor-link-or-nuxt-link>
+  <main class="main">
+    <section class="i-l">
+      <div class="i-l__main-container">
+        <div
+          v-for="indexItem in indexItems"
+          :key="indexItem.id"
+          :class="[`i-l__${indexItem.container}-container`]"
+        >
+          <div :class="[`i-c-${indexItem.container}__box-outer box-outer`]">
+            <div :class="[`i-c-${indexItem.container}__box-inner box-inner`]">
+              <h2 :class="[`i-c-${indexItem.container}__title`]">
+                {{ indexItem.title }}
+              </h2>
+              <p :class="[`i-c-${indexItem.container}__text`]">
+                {{ indexItem.text }}
+              </p>
+              <anchor-link-or-nuxt-link
+                :to="indexItem.path"
+                :nuxt="indexItem.nuxt"
+                :class="[`i-c-${indexItem.container}__link index-link-btn`]"
+              >
+                <fa
+                  :class="[`i-c-${indexItem.container}__icon`]"
+                  :icon="['fas', indexItem.icon]"
+                />
+                {{ indexItem.label }}
+              </anchor-link-or-nuxt-link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -187,7 +189,8 @@ export default {
   }
 
   &__text {
-    // overflow: auto;
+    @include scrollbar-style;
+
     padding: 0;
     margin: $buffer--m 0;
     color: var(--color-text--darker);
@@ -197,7 +200,7 @@ export default {
 .index-link-btn {
   @include color-link(primary, 'text--darkest', btn);
 
-  min-height: 32px;
+  min-height: $buffer--l;
   padding-right: $buffer--xxxl;
   padding-left: $buffer--xxxl;
   margin: $center-me;

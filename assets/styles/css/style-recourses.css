@@ -160,119 +160,64 @@
 /* -------------------------------------------------------------------------- *\
 // *  <<--------------------<< ICON >>-------------------->>
 \* -------------------------------------------------------------------------- */
-.fas,
+[data-prefix='fas'],
+[data-prefix='fab'] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: visible;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 [data-prefix='fas'] {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
   font-size: 1rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: visible;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
-.item-icon {
+.icon {
   color: var(--color-tertiary);
 }
 
-.item-icon--btn {
+.icon--btn {
   color: var(--color-primary);
 }
 
-.item-icon--btn:hover {
+.icon--btn:hover {
   color: var(--color-text);
 }
 
-.fab,
 [data-prefix='fab'] {
   width: 2.44141rem;
   height: 2.44141rem;
   font-size: 2.44141rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: visible;
-  -ms-flex-item-align: center;
-      align-self: center;
-  color: var(--color-secondary);
 }
 
-.fa-facebook:hover {
+[data-prefix='fab'] path,
+[data-prefix='fab'] circle {
+  fill: var(--color-secondary--light);
+}
+
+[data-prefix='fab']:hover {
   -webkit-transform: translate3d(0, -0.25rem, 0);
           transform: translate3d(0, -0.25rem, 0);
 }
 
-.fa-facebook:hover path {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1877f2;
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
+[data-prefix='fab']:hover path,
+[data-prefix='fab']:hover circle {
+  fill: var(--color-secondary--lightest);
+  -webkit-filter: drop-shadow(0 0 1rem var(--color-secondary--lightest));
+          filter: drop-shadow(0 0 1rem var(--color-secondary--lightest));
 }
 
-.fa-twitter:hover {
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
+[data-prefix='fab']::before {
+  content: normal;
 }
 
-.fa-twitter:hover path {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #1da1f2;
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-instagram:hover {
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-instagram:hover path {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #e4405f;
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-pinterest:hover {
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-pinterest:hover path {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #bd081c;
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-youtube:hover {
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
-}
-
-.fa-youtube:hover path {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: #f00;
-  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-  -webkit-transform: translate3d(0, -0.25rem, 0);
-          transform: translate3d(0, -0.25rem, 0);
+[data-prefix='fab']::after {
+  content: normal;
 }
 
 /* -------------------------------------------------------------------------- *\

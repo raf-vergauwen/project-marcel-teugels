@@ -35,18 +35,18 @@
   #{$color-name}-l: #{$lightness};
 }
 
-
-
 // -  <---------------| Color-Link |--------------->
 @mixin color-link($color-name, $color-name--hover, $shadow: false) {
   color: var(--color-#{$color-name});
 
   path {
     color: var(--color-#{$color-name});
+    fill: var(--color-#{$color-name});
   }
 
   &:hover path {
     color: var(--color-#{$color-name--hover});
+    fill: var(--color-#{$color-name--hover});
   }
 
   &::after {

@@ -31,8 +31,8 @@
           />
         </div>
       </section>
-      <div class="intermezzo intermezzo--1" :style="bgImages.intermezzo1">
-        <div class="intermezzo__container"></div>
+      <div class="hw-l-intermezzo" :style="bgImages.intermezzo1">
+        <div class="hw-l-intermezzo__container"></div>
       </div>
       <section class="hw-l-about">
         <h2 class="hw-c-about__title">About</h2>
@@ -125,8 +125,8 @@
           </article>
         </div>
       </section>
-      <div class="intermezzo intermezzo--2" :style="bgImages.intermezzo2">
-        <div class="intermezzo__container"></div>
+      <div class="hw-l-intermezzo" :style="bgImages.intermezzo2">
+        <div class="hw-l-intermezzo__container"></div>
       </div>
     </main>
     <main-footer />
@@ -259,8 +259,6 @@ export default {
 
   &__container {
     display: grid;
-    padding-top: 0;
-    padding-bottom: 0;
     gap: $buffer--l;
     grid-template-areas: '.';
     grid-template-columns: 1fr;
@@ -308,7 +306,7 @@ export default {
 -  INTERMEZZO
 \* -------------------------------------------------------------------------- */
 
-.intermezzo {
+.hw-l-intermezzo {
   @include full-width;
 
   background-attachment: fixed;
@@ -330,8 +328,6 @@ export default {
 
   &__main-container {
     display: grid;
-    padding-top: 0;
-    padding-bottom: 0;
     gap: $buffer--l;
     grid-template-areas:
       'hw-l-about__visual-container'

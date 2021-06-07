@@ -280,7 +280,7 @@ $card--aspect-ratio--portrait: 9 / 16;
 $card--aspect-ratio--landscape: 16 / 9;
 
 // *  <<--------------------<< Transitions >>-------------------->>
-$transition--default: all 0.35s ease;
+$transition--default: 0.2s ease-in;
 $transition--transform: transform 0.35s ease;
 $transition--color: color 0.35s ease;
 

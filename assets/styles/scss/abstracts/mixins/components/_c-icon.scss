@@ -2,21 +2,25 @@
 // *  <<--------------------<< ICON >>-------------------->>
 \* -------------------------------------------------------------------------- */
 
-// -  <<----------<< Solid >>---------->>
-.fas,
-[data-prefix='fas'] {
-  @include box-dimensions(fas, $font-size--text);
+// -  <<----------<< Common >>---------->>
 
+[data-prefix='fas'],
+[data-prefix='fab'] {
   display: inline-flex;
   overflow: visible;
   align-self: center;
 }
 
-.item-icon {
+// -  <<----------<< Solid >>---------->>
+[data-prefix='fas'] {
+  @include box-dimensions(fas, $font-size--text);
+}
+
+.icon {
   color: var(--color-tertiary);
 }
 
-.item-icon--btn {
+.icon--btn {
   color: var(--color-primary);
 
   &:hover {
@@ -25,78 +29,74 @@
 }
 
 // -  <<----------<< Brands >>---------->>
-
-.fab,
 [data-prefix='fab'] {
   @include box-dimensions(fab, $font-size--h3);
 
-  display: inline-flex;
-  overflow: visible;
-  align-self: center;
-  color: var(--color-secondary);
-}
+  path,
+  circle {
+    fill: var(--color-secondary--light);
+  }
 
-.fa-facebook {
   &:hover {
     transform: translate3d(0, -$buffer--xs, 0);
-    path {
-      @include box-transition;
-
-      color: #1877f2;
-      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-      transform: translate3d(0, -$buffer--xs, 0);
+    path,
+    circle {
+      fill: var(--color-secondary--lightest);
+      filter: drop-shadow(0 0 1rem var(--color-secondary--lightest));
     }
+  }
+
+  &::before {
+    content: normal;
+  }
+
+  &::after {
+    content: normal;
   }
 }
 
-.fa-twitter {
-  &:hover {
-    transform: translate3d(0, -$buffer--xs, 0);
-    path {
-      @include box-transition;
+// .fa-facebook {
+//   &:hover {
+//     path {
+//       color: #1877f2;
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(240, 4, 4, 1));
+//     }
+//   }
+// }
 
-      color: #1da1f2;
-      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-      transform: translate3d(0, -$buffer--xs, 0);
-    }
-  }
-}
+// .fa-twitter {
+//   &:hover {
+//     path {
+//       color: #1da1f2;
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
+//     }
+//   }
+// }
 
-.fa-instagram {
-  &:hover {
-    transform: translate3d(0, -$buffer--xs, 0);
-    path {
-      @include box-transition;
+// .fa-instagram {
+//   &:hover {
+//     path {
+//       color: #e4405f;
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
+//     }
+//   }
+// }
 
-      color: #e4405f;
-      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-      transform: translate3d(0, -$buffer--xs, 0);
-    }
-  }
-}
+// .fa-pinterest {
+//   &:hover {
+//     path {
+//       color: #bd081c;
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
+//     }
+//   }
+// }
 
-.fa-pinterest {
-  &:hover {
-    transform: translate3d(0, -$buffer--xs, 0);
-    path {
-      @include box-transition;
-
-      color: #bd081c;
-      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-      transform: translate3d(0, -$buffer--xs, 0);
-    }
-  }
-}
-
-.fa-youtube {
-  &:hover {
-    transform: translate3d(0, -$buffer--xs, 0);
-    path {
-      @include box-transition;
-
-      color: #f00;
-      filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
-      transform: translate3d(0, -$buffer--xs, 0);
-    }
-  }
-}
+// .fa-youtube {
+//   &:hover {
+//     path {
+//       color: #f00;
+//       // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(var(--color-text), 0.5));
+//     }
+//   }
+// }

@@ -3,16 +3,6 @@
 // -----------------------------------------------------------------------------
 
 // -  <---------------| Scrollbar-Style |--------------->
-
-// -  <---------------| Scrollbar-Behaviour |--------------->
-@mixin scrollbar-function($behaviour, $type) {
-  scroll-snap-type: $type;
-
-  @media (prefers-reduced-motion: no-preference) {
-    scroll-behavior: $behaviour;
-  }
-}
-
 @mixin scrollbar-style(
   $width-scrollbar: $small-dimension--s,
   $height-scrollbar-thumb: $small-dimension--xxl,
@@ -38,5 +28,15 @@
       background: $background-scrollbar-thumb--hover;
       transition: $transition--color;
     }
+  }
+}
+
+
+// -  <---------------| Scrollbar-Behaviour |--------------->
+@mixin scrollbar-function($behaviour, $type) {
+  scroll-snap-type: $type;
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: $behaviour;
   }
 }

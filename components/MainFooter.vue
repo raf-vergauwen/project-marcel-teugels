@@ -249,7 +249,7 @@ export default {
       }
 
       &__link {
-        color: var(--color-secondary--lighter);
+        color: var(--color-secondary--light);
 
         &:hover {
           color: var(--color-tertiary--lighter);
@@ -257,7 +257,7 @@ export default {
       }
 
       &__link-icon {
-        color: var(--color-secondary--lighter);
+        color: var(--color-secondary--light);
       }
     }
   }
@@ -280,8 +280,12 @@ export default {
     padding: 0;
 
     .c-foot-sm {
-      &__item {
-        // ...
+      &__item::before {
+        content: normal;
+      }
+
+      &__item::after {
+        content: normal;
       }
 
       &__icon {
@@ -298,7 +302,6 @@ export default {
 
     .c-foot-legal {
       &__text {
-        // color: var(--color-secondary--lighter);
         color: var(--color-background--dark);
         font-family: $font-family--text-bigger;
         font-size: $font-size--h6;
@@ -313,7 +316,7 @@ export default {
       }
 
       &__icon > path {
-        color: var(--color-tertiary);
+        color: var(--color-secondary--light);
       }
     }
   }

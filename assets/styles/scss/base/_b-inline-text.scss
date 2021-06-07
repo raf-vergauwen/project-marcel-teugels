@@ -94,6 +94,17 @@ var {
 
 // #  <---------------| <a> |--------------->
 
+// a {
+//   transition: 0.2s ease-in;
+
+//   svg {
+//     path,
+//     circle {
+//       transition: 0.2s ease-in;
+//     }
+//   }
+// }
+
 a {
   @include font(text-bigger);
 
@@ -102,18 +113,13 @@ a {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
 
-
-  svg {
-    transition: $transition--color;
-  }
-
   &:hover {
     color: var(--color-tertiary--lighter);
-    transition: $transition--color;
+    transition: $transition--default;
 
     path {
       color: var(--color-tertiary--lighter);
-      transition: $transition--color;
+      transition: $transition--default;
     }
   }
 
@@ -150,6 +156,16 @@ a {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+  }
+
+  > [data-prefix='fab'] {
+    &::before {
+      content: normal;
+    }
+
+    &::after {
+      content: normal;
+    }
   }
 }
 
