@@ -141,6 +141,8 @@ hr {
 p {
   @include box-dimensions;
   @include font(text);
+
+  overflow: auto;
 }
 
 // #  <---------------| <pre> |--------------->

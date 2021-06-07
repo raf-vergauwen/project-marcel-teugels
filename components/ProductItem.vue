@@ -155,13 +155,11 @@ export default {
     }
 
     .c-pi-c__description {
-      @include scrollbar-style(
-        $size: calc(#{$buffer--s} + #{$buffer--xs}),
-        $color: var(--color-tertiary)
-      );
-      @include scrollbar-function(smooth, y proximity);
-
-      @include overflow;
+      // @include scrollbar-style(
+      //   $size: calc(#{$buffer--s} + #{$buffer--xs}),
+      //   $color: var(--color-tertiary)
+      // );
+      // @include scrollbar-function(smooth, y proximity);
 
       // max-height: 85%;
       color: var(--color-background--dark);

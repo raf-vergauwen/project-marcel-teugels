@@ -72,6 +72,11 @@
         "hte"
     ],
     "ignoreWords": [
-        "cimages"
+        "amet",
+        "cimages",
+        "consectetur",
+        "elit",
+        "nostrud",
+        "occaecat"
     ]
 }

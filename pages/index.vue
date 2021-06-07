@@ -6,9 +6,7 @@
       <div
         v-for="indexItem in indexItems"
         :key="indexItem.id"
-        :class="[
-          `i-l__${indexItem.container}-container i-c-${indexItem.container}`,
-        ]"
+        :class="[`i-l__${indexItem.container}-container`]"
       >
         <div :class="[`i-c-${indexItem.container}__box-outer box-outer`]">
           <div :class="[`i-c-${indexItem.container}__box-inner box-inner`]">
@@ -58,7 +56,7 @@ export default {
           nuxt: true,
           container: 'restoration',
           title: 'restoration',
-          text: 'Aliquip et exercitation minim laboris culpa irure incididunt fugiat. Ut in sunt aliqua aliqua enim consectetur sunt elit laborum anim mollit. Fugiat est sit laborum nostrud incididunt culpa sunt qui laboris excepteur commodo.',
+          text: 'Aliquip et exercitation minim laboris culpa irure incididunt fugiat. Ut in sunt aliqua aliqua enim consectetur sunt elit laborum anim mollit. Fugiat est sit laborum nostrud incididunt culpa sunt qui laboris excepteur commodo.Aliquip et exercitation minim laboris culpa irure incididunt fugiat. Ut in sunt aliqua aliqua enim consectetur sunt elit laborum anim mollit. Fugiat est sit laborum nostrud incididunt culpa sunt qui laboris excepteur commodo.Aliquip et exercitation minim laboris culpa irure incididunt fugiat. Ut in sunt aliqua aliqua enim consectetur sunt elit laborum anim mollit. Fugiat est sit laborum nostrud incididunt culpa sunt qui laboris excepteur commodo.Aliquip et exercitation minim laboris culpa irure incididunt fugiat. Ut in sunt aliqua aliqua enim consectetur sunt elit laborum anim mollit. Fugiat est sit laborum nostrud incididunt culpa sunt qui laboris excepteur commodo.',
           path: '/restoration/home-restoration',
           icon: 'tools',
           label: 'restoration',
@@ -90,15 +88,15 @@ export default {
     min-height: calc(100vh - #{$buffer--l});
     gap: $buffer--l;
     grid-template-areas:
-      'i-c-webshop'
-      'i-c-restoration';
+      'i-l__webshop-container'
+      'i-l__restoration-container';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 
     @include breakpoint(m) {
       grid-template-areas:
-        'i-c-webshop .'
-        '. i-c-restoration';
+        'i-l__webshop-container .'
+        '. i-l__restoration-container';
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -110,14 +108,14 @@ export default {
   &__webshop-container {
     max-width: $large-dimension--xs;
     aspect-ratio: $card--aspect-ratio--landscape;
-    grid-area: i-c-webshop;
+    grid-area: i-l__webshop-container;
     place-self: center;
   }
 
-  &__restauration-container {
+  &__restoration-container {
     max-width: $large-dimension--xs;
     aspect-ratio: $card--aspect-ratio--landscape;
-    grid-area: i-c-restoration;
+    grid-area: i-l__restoration-container;
     place-self: center;
   }
 }
@@ -133,7 +131,7 @@ export default {
     padding: $buffer--m;
 
     @include breakpoint(xs) {
-      padding: $buffer--m + $buffer--s $buffer--l;
+      padding: $buffer--m $buffer--l;
     }
   }
 
@@ -143,7 +141,9 @@ export default {
   }
 
   &__text {
+    overflow: auto;
     padding: 0;
+    margin: $buffer--m 0;
     color: var(--color-background--lighter);
 
     &::first-letter {
@@ -152,16 +152,14 @@ export default {
   }
 }
 
-.i-c-restauration {
-  background-color: rgb(230, 6, 6);
-
+.i-c-restoration {
   &__box-outer {
-    border: $buffer--xxs solid var(--color-tertiary--darker);
+    border-color: var(--color-tertiary--darker);
     background-color: var(--color-secondary--lighter);
 
     &::before,
     &::after {
-      border: $buffer--xxs solid var(--color-tertiary--darker);
+      border-color: var(--color-tertiary--darker);
       color: var(--color-tertiary--darker);
     }
   }
@@ -170,16 +168,15 @@ export default {
     @include flex-container($justify: space-between);
 
     padding: $buffer--m;
-    padding: $buffer--s;
-    border: $buffer--xxs solid var(--color-tertiary--darker);
+    border-color: var(--color-tertiary--darker);
 
     @include breakpoint(xs) {
-      padding: $buffer--m + $buffer--s $buffer--l;
+      padding: $buffer--m $buffer--l;
     }
 
     &::before,
     &::after {
-      border: $buffer--xxs solid var(--color-tertiary--darker);
+      border-color: var(--color-tertiary--darker);
       color: var(--color-tertiary--darker);
     }
   }
@@ -190,7 +187,9 @@ export default {
   }
 
   &__text {
+    // overflow: auto;
     padding: 0;
+    margin: $buffer--m 0;
     color: var(--color-text--darker);
   }
 }
@@ -198,6 +197,7 @@ export default {
 .index-link-btn {
   @include color-link(primary, 'text--darkest', btn);
 
+  min-height: 32px;
   padding-right: $buffer--xxxl;
   padding-left: $buffer--xxxl;
   margin: $center-me;
