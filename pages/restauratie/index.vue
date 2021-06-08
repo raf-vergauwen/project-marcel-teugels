@@ -88,14 +88,14 @@
         </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="contact__container">
+    <section class="contact-h">
+      <div class="contact-h__container">
         <img
-          class="contact__img"
+          class="contact-h__img"
           src="http://157.230.126.154/assets/8034a8a4-1e35-4e4d-993f-c5e165d56d05"
           alt=""
         />
-        <p class="contact__text"></p>
+        <p class="contact-h__text"></p>
       </div>
       <div class="about__btn-contact link-btn">
         <NuxtLink :to="`contact`">
@@ -216,13 +216,7 @@ a {
   }
 }
 
-.panorama {
-  background-color: #f7f5f5;
-  width: 100vw;
-  height: 40vh;
-}
-
-.contact {
+.contact-h {
   height: 65vh;
   background-color: #f7f5f5;
   display: flex;
@@ -247,7 +241,9 @@ a {
 }
 
 .panorama {
-  max-width: 100vw;
+  background-color: #f7f5f5;
+  width: 100vw;
+  height: 40vh;
   background-image: url('http://157.230.126.154/assets/eaad4d0f-f450-47a0-b99a-bd7767111d7d');
   background-size: cover;
   background-position: 0% -300px;
