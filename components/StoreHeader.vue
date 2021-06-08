@@ -4,7 +4,7 @@
   <header class="sh-l-header" :class="{ 'c-header--hidden': !showNavbar }">
     <div class="sh-l-header__main-container">
       <collapse-transition class="sh-l-header__nav-container sh-c-header-nav">
-        <ul v-show="isOpen" class="sh-c-header-nav__list">
+        <ul v-show="navBtnIsOpen" class="sh-c-header-nav__list">
           <li
             v-for="navItem in navItems"
             :key="navItem.path"
@@ -26,20 +26,14 @@
           </li>
         </ul>
       </collapse-transition>
-      <div
-        class="hamburger"
-        :class="hamburgerOpen ? 'hamburger--is-open' : ''"
-        @click="hamburgerOpen = !hamburgerOpen"
-      >
-        <div class="hamburger__item hamburger__item--first"></div>
-        <div class="hamburger__item hamburger__item--middle"></div>
-        <div class="hamburger__item hamburger__item--last"></div>
-      </div>
       <button
-        class="sh-l-header__menu-btn-container sh-c-menu-btn"
-        @click="isOpen = !isOpen"
+        class="sh-l-header__nav-btn-container sh-c-nav-btn"
+        :class="navBtnIsOpen ? 'nav-btn--is-open' : ''"
+        @click="navBtnIsOpen = !navBtnIsOpen"
       >
-        Old button
+        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--first"></div>
+        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--middle"></div>
+        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--last"></div>
       </button>
     </div>
   </header>
@@ -87,10 +81,9 @@ export default {
         { path: '/accounts/login', label: 'login', icon: 'sign-in-alt' },
         { path: '/accounts/profile', label: 'profile', icon: 'user-circle' },
       ],
-      showNavbar: true,
+      showNavbar: true, // Open by default
       lastScrollPosition: -100,
-      isOpen: false, // closed by default
-      hamburgerOpen: false,
+      navBtnIsOpen: false, // closed by default
     };
   },
   mounted() {

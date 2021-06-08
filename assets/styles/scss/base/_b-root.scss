@@ -13,7 +13,7 @@
 
 // #  <---------------| <html> |--------------->
 html {
-  @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
+  // @include font-sizes--responsive(40rem, 60rem, 1rem, 1.25rem);
   @include scrollbar-style(
     $width-scrollbar: calc(#{$small-dimension--s} + #{$small-dimension--xs})
   );

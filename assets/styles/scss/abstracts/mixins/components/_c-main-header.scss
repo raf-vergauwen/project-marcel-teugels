@@ -26,8 +26,15 @@
       // ...
     }
 
-    &__menu-btn-container {
-      // ...
+    &__nav-btn-container {
+      @include box-dimensions(
+        $type: xs,
+        $width: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
+        $height: $font-size--text-bigger * $line-height--text-bigger +
+          $buffer--s,
+        $margin: 0
+      );
+      @include flex-container($direction: column, $justify: space-between);
     }
   }
 
@@ -96,17 +103,13 @@
     }
   }
 
-  .hamburger {
-    @include box-dimensions(
-      $width: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
-      $height: $font-size--text-bigger * $line-height--text-bigger + $buffer--s
-    );
-    @include flex-container($direction: column, $justify: space-between);
-
+  .sh-c-nav-btn {
     background: var(--color-tertiary);
+    border-radius: 0; // reset
+    cursor: pointer;
 
     &__item {
-      $hamburger-item: $buffer--m - $buffer--xxs;
+      $item-bar: $buffer--s + $buffer--xxs;
       @include box-dimensions($height: $buffer--xxs);
 
       background: var(--color-primary);
@@ -114,20 +117,20 @@
         opacity 300ms linear;
 
       &--first {
-        .hamburger--is-open & {
-          transform: translate(0, $hamburger-item) rotate(45deg);
+        .nav-btn--is-open & {
+          transform: translate(0, $item-bar) rotate(45deg);
         }
       }
 
       &--middle {
-        .hamburger--is-open & {
+        .nav-btn--is-open & {
           opacity: 0;
         }
       }
 
       &--last {
-        .hamburger--is-open & {
-          transform: translate(0, -$hamburger-item) rotate(-45deg);
+        .nav-btn--is-open & {
+          transform: translate(0, -$item-bar) rotate(-45deg);
         }
       }
     }

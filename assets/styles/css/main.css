@@ -245,11 +245,6 @@
   margin: 0;
 }
 
-html {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.5rem + 1.25vw, 1.25rem);
-}
-
 html::-webkit-scrollbar {
   width: calc(8px + 4px);
 }
