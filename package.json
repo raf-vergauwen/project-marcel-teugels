@@ -24,6 +24,8 @@
     "core-js": "^3.9.1",
     "firacode": "^5.2.0",
     "nuxt": "^2.15.3",
+    "vue-resize": "^1.0.1",
+    "vue-screen-size": "^1.0.1",
     "webpack": "^4.46.0"
   },
   "devDependencies": {

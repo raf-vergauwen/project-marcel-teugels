@@ -28,7 +28,9 @@
       </collapse-transition>
       <div class="sh-l-header__nav-btn-container">
         <button
+          ref="myBtn"
           class="sh-c-nav-btn"
+          type="button"
           :class="navBtnIsOpen ? 'nav-btn--is-open' : ''"
           @click="navBtnIsOpen = !navBtnIsOpen"
         >
@@ -45,6 +47,7 @@
 import { CollapseTransition } from '@ivanv/vue-collapse-transition';
 
 export default {
+  el: '#app',
   name: 'StoreHeader',
 
   components: {
@@ -88,12 +91,27 @@ export default {
       navBtnIsOpen: false, // closed by default
     };
   },
+
+  ready() {
+    window.addEventListener('resize', this.myEventHandler);
+    window.addEventListener('resize', this.handleResize);
+  },
+
+  beforeMount() {
+    window.addEventListener('resize', this.myEventHandler);
+  },
+
   mounted() {
     window.addEventListener('scroll', this.onScroll);
+    window.addEventListener('resize', this.handleWindowResize);
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.myEventHandler);
+    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('resize', this.handleWindowResize);
   },
+
   methods: {
     onScroll() {
       const currentScrollPosition =
