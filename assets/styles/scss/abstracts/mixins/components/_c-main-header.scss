@@ -4,7 +4,7 @@
 
 // -  <---------------| Main-Header |--------------->
 @mixin main-header {
-  .c-header {
+  .sh-l-header {
     position: fixed;
     z-index: 99;
     filter: drop-shadow(
@@ -17,9 +17,21 @@
     &--hidden {
       transform: translate3d(0, -100%, 0);
     }
+
+    &__main-container {
+      // ...
+    }
+
+    &__nav-container {
+      // ...
+    }
+
+    &__menu-btn-container {
+      // ...
+    }
   }
 
-  .c-header-nav {
+  .sh-c-header-nav {
     @include flex-container(nowrap, column);
 
     padding: 0;
@@ -77,6 +89,47 @@
 
     &__link--active {
       @include color-link(primary, 'text--darkest', btn);
+    }
+
+    &__link-icon {
+      // ...
+    }
+  }
+
+  .hamburger {
+    @include box-dimensions(
+      $width: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
+      $height: $font-size--text-bigger * $line-height--text-bigger + $buffer--s
+    );
+    @include flex-container($direction: column, $justify: space-between);
+
+    background: var(--color-tertiary);
+
+    &__item {
+      $hamburger-item: $buffer--m - $buffer--xxs;
+      @include box-dimensions($height: $buffer--xxs);
+
+      background: var(--color-primary);
+      transition: transform 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        opacity 300ms linear;
+
+      &--first {
+        .hamburger--is-open & {
+          transform: translate(0, $hamburger-item) rotate(45deg);
+        }
+      }
+
+      &--middle {
+        .hamburger--is-open & {
+          opacity: 0;
+        }
+      }
+
+      &--last {
+        .hamburger--is-open & {
+          transform: translate(0, -$hamburger-item) rotate(-45deg);
+        }
+      }
     }
   }
 }

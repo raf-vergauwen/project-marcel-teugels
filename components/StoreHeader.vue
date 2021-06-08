@@ -1,36 +1,60 @@
+// ! [NAMESPACE]-[PREFIX]-[BLOCK]__[ELEMENT]--[MODIFIER]
+
 <template>
-  <header class="c-header" :class="{ 'c-header--hidden': !showNavbar }">
-    <div class="c-header__main-container">
-      <nav class="c-header-nav">
-        <ul class="c-header-nav__list">
+  <header class="sh-l-header" :class="{ 'c-header--hidden': !showNavbar }">
+    <div class="sh-l-header__main-container">
+      <collapse-transition class="sh-l-header__nav-container sh-c-header-nav">
+        <ul v-show="isOpen" class="sh-c-header-nav__list">
           <li
             v-for="navItem in navItems"
             :key="navItem.path"
-            class="c-header-nav__item"
+            class="sh-c-header-nav__item"
           >
             <nuxt-link
               :class="{
-                'c-header-nav__link': true,
-                'c-header-nav__link--active': navItem.path === $route.path,
+                'sh-c-header-nav__link': true,
+                'sh-c-header-nav__link--active': navItem.path === $route.path,
               }"
               :to="navItem.path"
             >
               <fa
-                class="c-header-nav__link-icon"
+                class="sh-c-header-nav__link-icon"
                 :icon="['fas', navItem.icon]"
               />
               {{ navItem.label }}
             </nuxt-link>
           </li>
         </ul>
-      </nav>
+      </collapse-transition>
+      <div
+        class="hamburger"
+        :class="hamburgerOpen ? 'hamburger--is-open' : ''"
+        @click="hamburgerOpen = !hamburgerOpen"
+      >
+        <div class="hamburger__item hamburger__item--first"></div>
+        <div class="hamburger__item hamburger__item--middle"></div>
+        <div class="hamburger__item hamburger__item--last"></div>
+      </div>
+      <button
+        class="sh-l-header__menu-btn-container sh-c-menu-btn"
+        @click="isOpen = !isOpen"
+      >
+        Old button
+      </button>
     </div>
   </header>
 </template>
 
 <script>
+import { CollapseTransition } from '@ivanv/vue-collapse-transition';
+
 export default {
   name: 'StoreHeader',
+
+  components: {
+    CollapseTransition,
+  },
+
   data() {
     return {
       navItems: [
@@ -65,6 +89,8 @@ export default {
       ],
       showNavbar: true,
       lastScrollPosition: -100,
+      isOpen: false, // closed by default
+      hamburgerOpen: false,
     };
   },
   mounted() {
