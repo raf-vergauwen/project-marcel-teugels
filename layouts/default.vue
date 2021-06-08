@@ -4,18 +4,18 @@
     <StoreHeader />
     <Nuxt />
     <Notify />
-    <Footer />
+    <GlobalFooter />
   </div>
 </template>
 
 <script>
 import Notify from '~/components/Notify';
 import StoreHeader from '~/components/StoreHeader';
-import Footer from '~/components/Footer.vue';
+import GlobalFooter from '~/components/GlobalFooter.vue';
 
 export default {
   name: 'DefaultLayout',
-  components: { Notify, StoreHeader, Footer },
+  components: { Notify, StoreHeader, GlobalFooter },
   middleware: 'session',
 };
 </script>

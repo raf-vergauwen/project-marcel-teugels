@@ -2,8 +2,14 @@
   <article class="c-order-item">
     <div class="c-order-item__content">
       <p>{{ order.id }}</p>
+      <p>{{ order.address }}</p>
+      <p>{{ order.first_name }} {{ order.last_name }}</p>
+      <p>{{ order.date_created }}</p>
+
+      <p>{{ order.total_price }}</p>
+      <p>{{ order.notes }}</p>
       <OrderProducts
-        v-for="product in order.products"
+        v-for="product in order.ordered_items"
         :key="product.id"
         class="c-order-item__product"
         :product="product"

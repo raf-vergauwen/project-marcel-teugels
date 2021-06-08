@@ -1,15 +1,18 @@
 <template>
-  <section id="app">
-    <OrderItems
-      v-for="order in orderProductData"
-      :key="order.id"
-      class="p-storefront__product-list__item"
-      :order="order"
-    />
-  </section>
+  <main>
+    <section class="order">
+      <OrderItems
+        v-for="order in orderProductData"
+        :key="order.id"
+        class="p-storefront__product-list__item"
+        :order="order"
+      />
+    </section>
+  </main>
 </template>
 
 <script>
+// fit= cover
 export default {
   name: 'OrderPage',
   layout: 'admin',
@@ -30,21 +33,12 @@ export default {
   },
   methods: {
     fetchOrder() {
-      fetch(
-        'http://157.230.126.154/items/ordered_items?fields=*,products.*.*',
-        {
-          method: 'GET',
-        },
-      )
-        .then((response) => {
-          if (!response.ok) {
-            console.log('could not fetch ordered items');
-          }
-
-          return response.json();
-        })
+      this.$axios('items/orders?fields=*,ordered_items.*.*,product_id.*', {
+        method: 'GET',
+        headers: {},
+      })
         .then((data) => {
-          this.orderProductData = data.data;
+          this.orderProductData = data.data.data;
           console.log(this.orderProductData);
         })
         .catch((err) => {
@@ -56,7 +50,7 @@ export default {
 </script>
 
 <style>
-#app {
+.order {
   margin: 6em;
 }
 </style>

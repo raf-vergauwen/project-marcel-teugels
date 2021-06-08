@@ -1,18 +1,17 @@
 <template>
   <article class="c-order-product">
-    <div class="c-order-product__image-container">
-      <img
-        :src="src + product.images[0].directus_files_id"
-        alt=""
-        class="c-order-product__image"
-      />
-    </div>
+    <div class="c-order-product__image-container"></div>
     <div class="c-order-product__content">
-      <p>{{ product.name }}</p>
-      <p>{{ product.id }}</p>
-      <p>{{ product.description }}</p>
-      <p>Quantity: {{ product.quantity_in_stock }}</p>
-      <p>Price: € {{ product.price }}</p>
+      <!--
+      <OrderProductDetails
+        v-for="details in product.product_id"
+        :key="details"
+        class="c-order-item__product"
+        :details="details"
+      />
+      -->
+      <p>hoeveelheid: {{ product.quantity }}</p>
+      <p>totaal per product: € {{ product.total_price }}</p>
     </div>
   </article>
 </template>
@@ -49,6 +48,12 @@ export default {
 .c-order-product {
   display: flex;
 
+  &__content {
+    border: 1px solid green;
+    width: 700px;
+    margin: 1em;
+  }
+  /*
   &__image {
     min-width: 400px;
     min-height: auto;
@@ -62,5 +67,6 @@ export default {
       overflow: hidden;
     }
   }
+  */
 }
 </style>
