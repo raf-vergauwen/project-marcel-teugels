@@ -19,7 +19,7 @@
     }
 
     &__main-container {
-      // ...
+      @include flex-container(nowrap, row);
     }
 
     &__nav-container {
@@ -27,14 +27,14 @@
     }
 
     &__nav-btn-container {
-      @include box-dimensions(
-        $type: xs,
-        $width: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
-        $height: $font-size--text-bigger * $line-height--text-bigger +
-          $buffer--s,
-        $margin: 0
+      // @include flex-items(1, 0);
+      @include flex-container(
+        $justify: flex-end,
+        $align: flex-start,
+        $direction: row
       );
-      @include flex-container($direction: column, $justify: space-between);
+
+      flex: $buffer--l;
     }
   }
 
@@ -81,6 +81,7 @@
     &__link {
       @include color-link(background, 'tertiary--lighter');
 
+      width: fit-content;
       padding: $buffer--xs $buffer--s;
 
       @include breakpoint(l) {
@@ -104,6 +105,14 @@
   }
 
   .sh-c-nav-btn {
+    @include box-dimensions(
+      $type: xs,
+      $width: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
+      $height: $font-size--text-bigger * $line-height--text-bigger + $buffer--s,
+      $margin: 0
+    );
+    @include flex-container($direction: column, $justify: space-between);
+
     background: var(--color-tertiary);
     border-radius: 0; // reset
     cursor: pointer;

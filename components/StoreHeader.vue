@@ -3,7 +3,7 @@
 <template>
   <header class="sh-l-header" :class="{ 'c-header--hidden': !showNavbar }">
     <div class="sh-l-header__main-container">
-      <collapse-transition class="sh-l-header__nav-container sh-c-header-nav">
+      <collapse-transition class="sh-l-header__nav-container">
         <ul v-show="navBtnIsOpen" class="sh-c-header-nav__list">
           <li
             v-for="navItem in navItems"
@@ -26,15 +26,17 @@
           </li>
         </ul>
       </collapse-transition>
-      <button
-        class="sh-l-header__nav-btn-container sh-c-nav-btn"
-        :class="navBtnIsOpen ? 'nav-btn--is-open' : ''"
-        @click="navBtnIsOpen = !navBtnIsOpen"
-      >
-        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--first"></div>
-        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--middle"></div>
-        <div class="sh-c-nav-btn__item sh-c-nav-btn__item--last"></div>
-      </button>
+      <div class="sh-l-header__nav-btn-container">
+        <button
+          class="sh-c-nav-btn"
+          :class="navBtnIsOpen ? 'nav-btn--is-open' : ''"
+          @click="navBtnIsOpen = !navBtnIsOpen"
+        >
+          <div class="sh-c-nav-btn__item sh-c-nav-btn__item--first"></div>
+          <div class="sh-c-nav-btn__item sh-c-nav-btn__item--middle"></div>
+          <div class="sh-c-nav-btn__item sh-c-nav-btn__item--last"></div>
+        </button>
+      </div>
     </div>
   </header>
 </template>
