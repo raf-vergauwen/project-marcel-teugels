@@ -94,6 +94,7 @@ export default {
   },
   created() {
     this.checkGuestId();
+    this.checkLogin();
   },
   watch: {
     isLoggedIn(newVal) {
@@ -137,6 +138,7 @@ export default {
           phone_number: data.phoneNumber,
           address: data.address,
           notes: data.notes,
+          user_id: this.formData.user_id,
         },
       })
         .then((response) => {
@@ -154,12 +156,17 @@ export default {
         code += Math.floor(Math.random() * 9) + 0;
       }
       sessionStorage.setItem('guestId', code);
-      this.formData.user_id = code;
+      // this.formData.user_id = code;
       this.access = true;
     },
     checkGuestId() {
       if (sessionStorage.getItem('guestId') !== null && this.access === false) {
         this.access = true;
+      }
+    },
+    checkLogin() {
+      if (!this.isLoggedIn) {
+        this.formData.user_id = this.$store.getters['auth/getUserId'];
       }
     },
     removeComponent() {

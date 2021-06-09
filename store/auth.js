@@ -8,13 +8,16 @@ export const state = () => {
 export const getters = {
   isLoggedIn(state) {
     return state.token !== null;
-  }, 
+  },
   isAdmin(state) {
     if (!state.user) {
       return false;
     }
 
     return state.user.role === '78b6335f-b448-46d6-8086-65057ba5fae0';
+  },
+  getUserId(state) {
+    return state.user.id;
   },
 };
 
