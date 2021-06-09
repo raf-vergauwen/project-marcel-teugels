@@ -9,4 +9,7 @@ module.exports = {
     parser: 'babel-eslint',
   },
   plugins: [],
+  rules: {
+    'no-console': 'off',
+  },
 };

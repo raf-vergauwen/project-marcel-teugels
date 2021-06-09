@@ -14,8 +14,8 @@
       <div class="p-shopping-cart__total">
         <h3>Rekening</h3>
         <h5 v-for="product in shoppingList" :key="product.id">
-          {{ product.quantity }} x {{ product.price }} =
-          {{ product.quantity * product.price }}
+          {{ getQuantity(product) }} x {{ product.price }} =
+          {{ getQuantity(product) * product.price }}
         </h5>
         <h3>Totaal: € {{ calculate_Total }}</h3>
         <button>
@@ -65,6 +65,7 @@ export default {
         this.shoppingList.splice(index, index + 1);
       }
       this.$store.commit('removeFromCart', product);
+      // this.shoppingList = this.$store.state.shoppingCart;
     },
     createOrderedItems() {
       this.$axios('items/ordered_items', {
@@ -85,6 +86,9 @@ export default {
         .catch((err) => {
           console.error(err);
         });
+    },
+    getQuantity(product) {
+      return this.$store.getters.productQuantity(product);
     },
     /*
     createOrders() {

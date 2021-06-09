@@ -1,11 +1,17 @@
 <template>
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
-    <div class="p-place-order__container">
+    <div v-if="!access && isLoggedIn">
+      <button>
+        <nuxt-link class="login-link" to="/login"> Log in </nuxt-link>
+      </button>
+      <button @click="generateGuestId">Ga door als gast</button>
+    </div>
+    <div v-else class="p-place-order__form-container">
       <FormulateForm
         v-model="formData"
-        @submit="createOrder"
         class="p-place-order__form"
+        @submit="createOrder"
       >
         <FormulateInput
           name="firstName"
@@ -72,6 +78,7 @@ export default {
         address: '',
         notes: '',
       },
+      access: false,
     };
   },
   computed: {
@@ -79,6 +86,9 @@ export default {
       return this.shoppingList.reduce((acc, product) => {
         return acc + parseFloat(product.price) * product.quantity;
       }, 0);
+    },
+    isLoggedIn() {
+      return !this.$store.getters['auth/isLoggedIn'];
     },
   },
   methods: {
@@ -127,6 +137,14 @@ export default {
           console.error(err);
         });
     },
+    generateGuestId() {
+      let code = '';
+      for (let i = 0; i < 10; i++) {
+        code += Math.floor(Math.random() * 9) + 0;
+      }
+      sessionStorage.setItem('GuestId', code);
+      this.access = true;
+    },
   },
 };
 </script>
@@ -136,7 +154,7 @@ export default {
   margin: 1em;
 }
 
-.p-place-order__container {
+.p-place-order__form-container {
   display: flex;
 }
 
