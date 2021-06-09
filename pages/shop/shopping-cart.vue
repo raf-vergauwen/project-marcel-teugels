@@ -90,27 +90,6 @@ export default {
     getQuantity(product) {
       return this.$store.getters.productQuantity(product);
     },
-    /*
-    createOrders() {
-      this.$axios('items/orders', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        data: {
-          total_price: this.calculate_Total,
-          notes: 'test1234',
-          ordered_items: [this.orderedItemId],
-        },
-      })
-        .then((response) => {
-          console.log(response);
-          this.orderId = response.data.data.id;
-          console.log(this.orderId);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    */
   },
 };
 </script>

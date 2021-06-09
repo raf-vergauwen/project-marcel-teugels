@@ -1,10 +1,9 @@
 <template>
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
+    <component :is="component" v-on:removeLogin="removeComponent"> </component>
     <div v-if="!access && isLoggedIn">
-      <button>
-        <nuxt-link class="login-link" to="/login"> Log in </nuxt-link>
-      </button>
+      <button @click="component = 'Login'">Log in</button>
       <button @click="generateGuestId">Ga door als gast</button>
     </div>
     <div v-else class="p-place-order__form-container">
@@ -77,8 +76,10 @@ export default {
         phone_number: '',
         address: '',
         notes: '',
+        user_id: null,
       },
       access: false,
+      component: null,
     };
   },
   computed: {
@@ -89,6 +90,16 @@ export default {
     },
     isLoggedIn() {
       return !this.$store.getters['auth/isLoggedIn'];
+    },
+  },
+  created() {
+    this.checkGuestId();
+  },
+  watch: {
+    isLoggedIn(newVal) {
+      if (newVal) {
+        this.component = null;
+      }
     },
   },
   methods: {
@@ -142,8 +153,17 @@ export default {
       for (let i = 0; i < 10; i++) {
         code += Math.floor(Math.random() * 9) + 0;
       }
-      sessionStorage.setItem('GuestId', code);
+      sessionStorage.setItem('guestId', code);
+      this.formData.user_id = code;
       this.access = true;
+    },
+    checkGuestId() {
+      if (sessionStorage.getItem('guestId') !== null && this.access === false) {
+        this.access = true;
+      }
+    },
+    removeComponent() {
+      this.component = null;
     },
   },
 };
