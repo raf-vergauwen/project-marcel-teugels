@@ -9,7 +9,7 @@
           worden gebracht. Bij deze gaat akkoord met de voorwaarden.
         </p>
         <button @click="confirmOrder">Akkoord</button>
-        <button>Niet akkoord</button>
+        <button @click="cancelOrder">Niet akkoord</button>
       </div>
       <div class="p-order-confirmation__total">
         <h3>Rekening</h3>
@@ -38,14 +38,11 @@ export default {
     },
   },
   methods: {
-    generateGuestId() {
-      let code = '';
-      for (let i = 0; i < 10; i++) {
-        code += Math.floor(Math.random() * 9) + 0;
-      }
-      sessionStorage.setItem('guestId', code);
-      // this.formData.user_id = code;
-      this.access = true;
+    generateUniqueCode() {
+      const code =
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15);
+      return code;
     },
     getQuantity(product) {
       return this.$store.getters.productQuantity(product);
@@ -56,14 +53,19 @@ export default {
         headers: { 'Content-Type': 'application/json' },
         data: {
           order_confirmation: true,
+          code: this.generateUniqueCode(),
         },
       })
         .then((response) => {
           console.log(response.data);
+          this.$root.$emit('notify', 'Je bestelling is bevestigd');
         })
         .catch((err) => {
           console.error(err);
         });
+    },
+    cancelOrder() {
+      this.$root.$emit('notify', 'Je bestelling is geannuleerd');
     },
   },
 };
