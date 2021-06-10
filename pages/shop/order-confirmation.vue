@@ -39,8 +39,10 @@ export default {
   },
   methods: {
     generateUniqueCode() {
-      const code = Math.round(Date.now() * Math.random());
-      console.log(code);
+      const code =
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15);
+      return code;
     },
     getQuantity(product) {
       return this.$store.getters.productQuantity(product);
@@ -51,11 +53,11 @@ export default {
         headers: { 'Content-Type': 'application/json' },
         data: {
           order_confirmation: true,
+          code: this.generateUniqueCode(),
         },
       })
         .then((response) => {
           console.log(response.data);
-          this.generateUniqueCode();
           this.$root.$emit('notify', 'Je bestelling is bevestigd');
         })
         .catch((err) => {
