@@ -2,7 +2,7 @@
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
     <component :is="component" @removeLogin="removeComponent"> </component>
-    <div v-if="!access && isLoggedIn" class="p-place-order__login">
+    <div v-if="!access && !isLoggedIn" class="p-place-order__login">
       <button @click="component = 'Login'">Log in</button>
       <button @click="generateGuestId">Ga door als gast</button>
     </div>
@@ -90,10 +90,15 @@ export default {
       }, 0);
     },
     isLoggedIn() {
-      return !this.$store.getters['auth/isLoggedIn'];
+      return this.$store.getters['auth/isLoggedIn'];
     },
     userInfo() {
       return this.$store.getters['auth/getUser'];
+    },
+  },
+  watch: {
+    userInfo() {
+      this.checkLogin();
     },
   },
   created() {
@@ -116,11 +121,11 @@ export default {
       });
 
       return Promise.all(promiseArr)
-        .then((values) => {
+        .then(() => {
           this.$root.$emit('notify', 'Je bestelling is geplaatst');
           this.$router.push('/shop/order-confirmation');
         })
-        .catch((e) => {
+        .catch(() => {
           this.$axios('items/orders/' + orderId, { method: 'DELETE' });
         });
     },
@@ -150,10 +155,9 @@ export default {
         });
     },
     generateGuestId() {
-      let code = '';
-      for (let i = 0; i < 10; i++) {
-        code += Math.floor(Math.random() * 9) + 0;
-      }
+      const code =
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15);
       sessionStorage.setItem('guestId', code);
       // this.formData.user_id = code;
       this.access = true;
@@ -164,7 +168,7 @@ export default {
       }
     },
     checkLogin() {
-      if (!this.isLoggedIn) {
+      if (this.isLoggedIn) {
         this.formData.first_name = this.userInfo.first_name;
         this.formData.last_name = this.userInfo.last_name;
         this.formData.email = this.userInfo.email;
