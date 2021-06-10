@@ -2,14 +2,14 @@
   <article class="c-order-product">
     <div class="c-order-product__image-container"></div>
     <div class="c-order-product__content">
-      <!--
-      <OrderProductDetails
-        v-for="details in product.product_id"
-        :key="details"
-        class="c-order-item__product"
-        :details="details"
-      />
-      -->
+      <p class="c-order-product__name-container">
+        <em>Name:</em>
+        <NuxtLink :to="`/shop/product/${productDetails.id}`">
+          <h2 class="c-order-product__name">
+            {{ productDetails.name }}
+          </h2>
+        </NuxtLink>
+      </p>
       <p>hoeveelheid: {{ product.quantity }}</p>
       <p>totaal per product: € {{ product.total_price }}</p>
     </div>
@@ -30,7 +30,11 @@ export default {
       src: 'http://157.230.126.154/assets/',
     };
   },
-  computed: {},
+  computed: {
+    productDetails() {
+      return this.product.product_id;
+    },
+  },
   methods: {
     addProduct(product) {
       this.$root.$emit('g-add-product', product);
@@ -52,6 +56,15 @@ export default {
     border: 1px solid green;
     width: 700px;
     margin: 1em;
+  }
+
+  &__name {
+    font-size: 1em;
+    margin: 0em 0.5em;
+
+    &-container {
+      display: flex;
+    }
   }
   /*
   &__image {
