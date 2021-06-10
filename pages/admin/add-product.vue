@@ -49,6 +49,13 @@
         />
         <FormulateInput type="submit" label="add product" />
       </FormulateForm>
+      <AdminProduct
+        v-for="product in productData"
+        :key="product.id"
+        class="p-storefront__product-list__item"
+        :product="product"
+        @remove-product="removeProduct($event)"
+      />
     </section>
   </main>
 </template>
@@ -59,6 +66,7 @@ export default {
   layout: 'admin',
   data() {
     return {
+      productData: {},
       productFormData: {
         name: '',
         description: '',
@@ -70,7 +78,9 @@ export default {
       },
     };
   },
-
+  fetch() {
+    return this.fetchItems();
+  },
   computed: {
     access_token() {
       return sessionStorage.getItem('access_token');
@@ -113,6 +123,37 @@ export default {
         .catch((e) => {
           console.error(e);
           error('Kan afbeelding niet uploaden, probeer het opnieuw');
+        });
+    },
+    fetchItems() {
+      this.$axios('items/products', {
+        method: 'GET',
+        headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
+      })
+        .then((response) => {
+          console.log(response);
+          this.productData = response.data.data;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    removeProduct(product) {
+      this.$axios(`/items/products/${product.id}`, {
+        method: 'PATCH',
+        data: {
+          status: 'archived',
+        },
+      })
+        .then(function (con) {
+          this.fetchItems();
+        })
+        .catch(function (error) {
+          console.error(error);
         });
     },
   },

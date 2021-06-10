@@ -1,12 +1,6 @@
 <template>
   <main class="p-storefront">
-    <div class="title-btn__container">
-      <h1 class="p-product__title">Store</h1>
-
-      <button v-if="isAdmin === true" class="p-product__btn admin-btn">
-        <nuxt-link to="/admin/add-product">+</nuxt-link>
-      </button>
-    </div>
+    <h1 class="p-product__title">Store</h1>
 
     <div class="p-storefront__product-list">
       <ProductItem
@@ -14,7 +8,6 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
-        @remove-product="removeProduct($event)"
         @add-product="addProduct"
       />
     </div>
@@ -47,18 +40,19 @@ export default {
     isLoggedIn() {
       return this.$store.getters['auth/isLoggedIn'];
     },
-    isAdmin() {
-      return this.$store.getters['auth/isAdmin'];
-    },
   },
   mounted() {
     this.$store.commit('updateCartFromLocalStorage');
   },
   methods: {
     fetchItems() {
-      this.$axios('items/products?fields=*,images.*', {
+      this.$axios('items/products', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
       })
         .then((response) => {
           console.log(response);
@@ -72,18 +66,6 @@ export default {
       console.log(product);
       this.$store.commit('addToCart', product);
       sessionStorage.setItem('shopping_cart', this.shoppingCart);
-    },
-
-    removeProduct(product) {
-      this.$axios(`/items/products/${product.id}`, {
-        method: 'DELETE',
-      })
-        .then(function (response) {
-          console.log(response.data);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
     },
   },
 };

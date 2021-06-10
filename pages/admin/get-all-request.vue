@@ -26,9 +26,13 @@ export default {
   },
   methods: {
     fetchRequest() {
-      this.$axios('items/user_requests?=*.*', {
+      this.$axios('items/user_requests', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*.*',
+          sort: '-date_created',
+        },
       })
         .then((response) => {
           console.log(response);

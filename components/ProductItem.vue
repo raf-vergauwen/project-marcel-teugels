@@ -3,20 +3,7 @@
     <div class="c-product-item__image">
       <img :src="src + product.images[0].directus_files_id" alt="" />
     </div>
-    <div v-if="isAdmin === true">
-      <NuxtLink :to="`/shop/product/${product.id}`">
-        <h2 class="c-product-item__title">
-          {{ product.name }}
-        </h2>
-      </NuxtLink>
-      <button
-        class="c-product__btn admin-btn"
-        @click="$emit('remove-product', product)"
-      >
-        x
-      </button>
-    </div>
-    <div v-else>
+    <div>
       <NuxtLink :to="`/shop/product/${product.id}`">
         <h2 class="c-product-item__title">
           {{ product.name }}

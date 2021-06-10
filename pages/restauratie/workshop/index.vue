@@ -52,6 +52,10 @@ export default {
       this.$axios('items/workshops?fields=*.*', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
       })
         .then((response) => {
           console.log(response);

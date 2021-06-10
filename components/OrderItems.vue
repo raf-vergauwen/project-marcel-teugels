@@ -10,18 +10,21 @@
           class="c-order-item__status"
           :class="{ active: orderConfirmation === true }"
         >
-          ontvangen
+          goedkeuring bestelling
         </p>
         <span class="c-order-item__space"></span>
         <p
           class="c-order-item__status"
           :class="{ active: paymentConfirmation === true }"
         >
-          ontvangen
+          goedkeuring prijs
         </p>
         <span class="c-order-item__space"></span>
-        <div :class="{ sendBtn: readyToSend === false }">
-          <button @click="sendOrder">
+        <div
+          class="send-btn"
+          :class="{ sendBtnContainer: readyToSend === false }"
+        >
+          <button class="link-btn" @click="sendOrder">
             <p class="c-order-item__status">verzend</p>
           </button>
           <span class="c-order-item__space"></span>
@@ -92,7 +95,6 @@ export default {
         this.paymentConfirmation === false
       ) {
         this.readyToSend = false;
-        console.log(this.readyToSend);
       } else if (this.verzonden === true) {
         this.readyToSend = false;
       } else if (
@@ -100,7 +102,6 @@ export default {
         this.paymentConfirmation === true
       ) {
         this.readyToSend = true;
-        console.log(this.readyToSend);
       } else {
         console.log('fail');
       }
@@ -139,16 +140,19 @@ export default {
     border: 1px solid black;
     margin: 0em 1em;
     width: 30px;
+    height: 0px;
   }
 
   &__status {
     margin: 0;
+    font-size: 1.3em;
 
     &-container {
       display: flex;
       width: 100%;
       align-items: center;
       justify-content: center;
+      padding: 2em 0em;
     }
   }
 }
@@ -157,7 +161,12 @@ export default {
   color: green;
 }
 
-.sendBtn {
+.sendBtnContainer {
   display: none !important;
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
 }
 </style>
