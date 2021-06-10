@@ -16,8 +16,8 @@ export const getters = {
 
     return state.user.role === '78b6335f-b448-46d6-8086-65057ba5fae0';
   },
-  getUserId(state) {
-    return state.user.id;
+  getUser(state) {
+    return state.user;
   },
 };
 

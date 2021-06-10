@@ -13,20 +13,21 @@
         @submit="createOrder"
       >
         <FormulateInput
-          name="firstName"
+          name="first_name"
           type="text"
           label="voornaam"
           validation-name="voornaam"
           validation="required"
         />
         <FormulateInput
-          name="lastName"
+          name="last_name"
           type="text"
           label="achternaam"
           validation-name="achternaam"
           validation="required"
         />
         <FormulateInput
+          v-model="formData.email"
           name="email"
           type="email"
           label="email"
@@ -34,7 +35,7 @@
           validation="required|email"
         />
         <FormulateInput
-          name="phoneNumber"
+          name="phone_number"
           type="number"
           label="telefoonnummer"
           validation-name="telefoonnummer"
@@ -91,17 +92,13 @@ export default {
     isLoggedIn() {
       return !this.$store.getters['auth/isLoggedIn'];
     },
+    userInfo() {
+      return this.$store.getters['auth/getUser'];
+    },
   },
   created() {
     this.checkGuestId();
     this.checkLogin();
-  },
-  watch: {
-    isLoggedIn(newVal) {
-      if (newVal) {
-        this.component = null;
-      }
-    },
   },
   methods: {
     createOrderedItems(orderId) {
@@ -121,6 +118,7 @@ export default {
       return Promise.all(promiseArr)
         .then((values) => {
           this.$root.$emit('notify', 'Je bestelling is geplaatst');
+          this.$router.push('/shop/order-confirmation');
         })
         .catch((e) => {
           this.$axios('items/orders/' + orderId, { method: 'DELETE' });
@@ -132,10 +130,10 @@ export default {
         headers: { 'Content-Type': 'application/json' },
         data: {
           total_price: this.calculate_Total,
-          first_name: data.firstName,
-          last_name: data.lastName,
+          first_name: data.first_name,
+          last_name: data.last_name,
           email: data.email,
-          phone_number: data.phoneNumber,
+          phone_number: data.phone_number,
           address: data.address,
           notes: data.notes,
           user_id: this.formData.user_id,
@@ -143,6 +141,7 @@ export default {
       })
         .then((response) => {
           this.orderId = response.data.data.id;
+          this.$store.state.orderId = response.data.data.id;
 
           return this.createOrderedItems(this.orderId);
         })
@@ -166,11 +165,17 @@ export default {
     },
     checkLogin() {
       if (!this.isLoggedIn) {
-        this.formData.user_id = this.$store.getters['auth/getUserId'];
+        this.formData.first_name = this.userInfo.first_name;
+        this.formData.last_name = this.userInfo.last_name;
+        this.formData.email = this.userInfo.email;
+        this.formData.phone_number = this.userInfo.phone_number;
+        this.formData.address = this.userInfo.location;
+        this.formData.user_id = this.userInfo.id;
       }
     },
     removeComponent() {
       this.component = null;
+      this.checkLogin();
     },
   },
 };
