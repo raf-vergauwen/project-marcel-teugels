@@ -1,8 +1,8 @@
 <template>
   <main class="p-place-order">
     <h1 class="p-place-order__title">Bestelling plaatsen</h1>
-    <component :is="component" v-on:removeLogin="removeComponent"> </component>
-    <div v-if="!access && isLoggedIn">
+    <component :is="component" @removeLogin="removeComponent"> </component>
+    <div v-if="!access && isLoggedIn" class="p-place-order__login">
       <button @click="component = 'Login'">Log in</button>
       <button @click="generateGuestId">Ga door als gast</button>
     </div>
@@ -184,6 +184,10 @@ export default {
 <style lang="scss">
 .p-place-order__title {
   margin: 1em;
+}
+
+.p-place-order__login {
+  margin: 3em;
 }
 
 .p-place-order__form-container {
