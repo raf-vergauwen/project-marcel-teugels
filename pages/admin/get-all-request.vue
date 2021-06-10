@@ -50,8 +50,8 @@ export default {
           done: true,
         },
       })
-        .then((response) => {
-          console.log(response);
+        .then(() => {
+          return this.fetchRequest();
         })
         .catch((err) => {
           console.error(err);
