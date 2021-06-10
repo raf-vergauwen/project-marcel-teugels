@@ -1,23 +1,14 @@
 <template>
-  <section id="app">
-    <ul class="request-list">
-      <li
+  <section class="p-request">
+    <div class="p-request-items__list">
+      <RequestItem
         v-for="request in requestData.data"
-        :key="request.name"
-        class="request-item"
-        style="list-style-type: none"
-      >
-        {{ request.name }}
-        <ul style="list-style-type: none">
-          <li>id: {{ request.id }}</li>
-          <li>voornaam: {{ request.first_name }}</li>
-          <li>achternaam: {{ request.last_name }}</li>
-          <li>email: {{ request.email }}</li>
-          <li>telefoon nummer: {{ request.telefoon_nummer }}</li>
-          <li>tekst: {{ request.text_content }}</li>
-        </ul>
-      </li>
-    </ul>
+        :key="request.id"
+        class="p-request-items"
+        :request="request"
+        @done-request="doneRequest($event)"
+      />
+    </div>
   </section>
 </template>
 
@@ -47,18 +38,40 @@ export default {
           console.error(err);
         });
     },
+    doneRequest(request) {
+      this.$axios(`items/user_requests/${request.id}`, {
+        method: 'PATCH',
+        headers: {},
+        data: {
+          done: true,
+        },
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
   },
 };
 </script>
 
-<style>
+<style lang="scss">
+.p-request {
+  &-items {
+    width: 50vw;
+    padding: 2em;
+    margin: 1em;
+    background-color: $light-bg;
+    color: $dark-blue;
+    border-radius: 15px;
 
-.request-item {
-  width: 50vw;
-  padding: 2em;
-  margin: 1em;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 </style>
