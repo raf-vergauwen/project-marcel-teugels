@@ -71,7 +71,6 @@ export default {
     addProduct(product) {
       console.log(product);
       this.$store.commit('addToCart', product);
-      sessionStorage.setItem('shopping_cart', this.shoppingCart);
     },
 
     removeProduct(product) {
