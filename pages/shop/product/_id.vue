@@ -79,21 +79,11 @@ export default {
   },
   methods: {
     fetchProduct() {
-      return fetch(
-        'http://157.230.126.154/items/products/' + this.$route.params.id,
-        {
-          method: 'GET',
-        },
-      )
+      return this.$axios('/items/products/' + this.$route.params.id, {
+        method: 'GET',
+      })
         .then((response) => {
-          if (!response.ok) {
-            console.log('Error');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          this.productData = data.data;
+          this.productData = response.data.data;
           this.Admin = this.user_role;
           this.name = this.productData.name;
           this.price = this.productData.price;

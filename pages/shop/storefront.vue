@@ -56,9 +56,13 @@ export default {
   },
   methods: {
     fetchItems() {
-      this.$axios('items/products?fields=*,images.*', {
+      this.$axios('items/products', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
       })
         .then((response) => {
           console.log(response);
@@ -76,7 +80,8 @@ export default {
 
     removeProduct(product) {
       this.$axios(`/items/products/${product.id}`, {
-        method: 'DELETE',
+        method: 'PATCH',
+        data: { status: 'archived' },
       })
         .then(function (response) {
           console.log(response.data);

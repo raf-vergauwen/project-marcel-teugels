@@ -1,12 +1,14 @@
 <template>
   <article class="c-order-product_details">
-    <div class="c-order-product-details__content"></div>
+    <div class="c-order-product-details__content">
+      {{ details }}
+    </div>
   </article>
 </template>
 
 <script>
 export default {
-  name: 'DetailItem',
+  name: 'OrderProductDetails',
   props: {
     details: {
       type: Object,
@@ -26,7 +28,7 @@ export default {
 <style lang="scss">
 .c-order-product-details {
   background-color: $light-blue;
-  margin: 2em 0em;
+  margin: 2em 0;
 
   &__content {
     width: 600px;

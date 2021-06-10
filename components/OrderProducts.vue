@@ -2,14 +2,8 @@
   <article class="c-order-product">
     <div class="c-order-product__image-container"></div>
     <div class="c-order-product__content">
-      <!--
-      <OrderProductDetails
-        v-for="details in product.product_id"
-        :key="details"
-        class="c-order-item__product"
-        :details="details"
-      />
-      -->
+      <p><em>Name:</em> {{ productDetails.name }}</p>
+
       <p>hoeveelheid: {{ product.quantity }}</p>
       <p>totaal per product: € {{ product.total_price }}</p>
     </div>
@@ -30,7 +24,11 @@ export default {
       src: 'http://157.230.126.154/assets/',
     };
   },
-  computed: {},
+  computed: {
+    productDetails() {
+      return this.product.product_id;
+    },
+  },
   methods: {
     addProduct(product) {
       this.$root.$emit('g-add-product', product);
