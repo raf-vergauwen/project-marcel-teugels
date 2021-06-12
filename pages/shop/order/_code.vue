@@ -26,9 +26,9 @@
               date.getFullYear()
             }}
           </p>
-          <p>Factuurnummer:</p>
+          <p>Factuurnummer: 1</p>
         </div>
-        <table style="width: 100%">
+        <table class="p-payment-confirmation__table">
           <tr>
             <th>Beschrijving</th>
             <th>Aantal</th>
@@ -40,6 +40,22 @@
             :key="orderedItem.id"
             :ordered-item="orderedItem"
           />
+        </table>
+      </div>
+      <div class="p-payment-confirmation__total">
+        <table>
+          <tr>
+            <th>Subtotaal:</th>
+            <td>{{ totalPrice }}</td>
+          </tr>
+          <tr>
+            <th>Verzendkosten:</th>
+            <td>{{ shippingPrice }}</td>
+          </tr>
+          <tr>
+            <th>Totaal:</th>
+            <td>{{ parseFloat(totalPrice) + parseFloat(shippingPrice) }}</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -60,6 +76,8 @@ export default {
       phoneNumber: '',
       date: new Date(),
       orderedItems: [],
+      totalPrice: '',
+      shippingPrice: '',
     };
   },
   fetch() {
@@ -81,13 +99,13 @@ export default {
         .then((response) => {
           this.orderData = response.data.data[0];
           console.log(this.orderData);
-
           this.name =
             this.orderData.first_name + ' ' + this.orderData.last_name;
           this.address = this.orderData.address;
           this.phoneNumber = this.orderData.phone_number;
           this.orderedItems = this.orderData.ordered_items;
-          console.log(this.orderedItems);
+          this.totalPrice = this.orderData.total_price;
+          this.shippingPrice = this.orderData.shipping_price;
         })
         .catch((err) => {
           console.error(err);
@@ -98,9 +116,31 @@ export default {
 </script>
 
 <style lang="scss">
+.p-payment-confirmation-page {
+  margin-left: 2em;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
 .p-payment-confirmation__contact-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.p-payment-confirmation__invoice-info {
+  margin-bottom: 3em;
+}
+
+.p-payment-confirmation__table {
+  width: 100%;
+  margin-bottom: 8em;
+}
+
+.p-payment-confirmation__total {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2em;
 }
 </style>
