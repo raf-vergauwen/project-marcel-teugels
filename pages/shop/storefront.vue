@@ -9,6 +9,7 @@
         class="p-storefront__product-list__item"
         :product="product"
         @add-product="addProduct"
+        @remove-product="removeProduct($event)"
       />
     </div>
   </main>
@@ -41,6 +42,13 @@ export default {
       return this.$store.getters['auth/isLoggedIn'];
     },
   },
+  created() {
+    if (localStorage.getItem('cart')) {
+      const stringObject = localStorage.getItem('cart');
+      this.shoppingList = JSON.parse(stringObject);
+    }
+  },
+
   mounted() {
     this.$store.commit('updateCartFromLocalStorage');
   },
@@ -65,6 +73,20 @@ export default {
     addProduct(product) {
       console.log(product);
       this.$store.commit('addToCart', product);
+    },
+    removeProduct(product) {
+      const index = this.shoppingList.indexOf(product);
+
+      if (this.$store.getters.productQuantity(product) === 1) {
+        this.shoppingList.splice(index, index + 1);
+      }
+      this.$store.commit('removeFromCart', product);
+
+      this.$root.$emit(
+        'notify',
+        `${product.name} has been removed from your shopping basket`,
+      );
+      // this.shoppingList = this.$store.state.shoppingCart;
     },
   },
 };
