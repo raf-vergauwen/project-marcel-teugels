@@ -32,6 +32,7 @@ export default {
         params: {
           fields: '*.*',
           sort: '-date_created',
+          filter: { done: { _neq: true } },
         },
       })
         .then((response) => {

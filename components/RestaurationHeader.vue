@@ -28,7 +28,7 @@ export default {
         { path: '/restauratie/method', label: 'werkwijze' },
         { path: '/restauratie/workshop', label: 'workshops' },
         { path: '/restauratie/contact', label: 'contact' },
-        { path: '/shop/storefront', label: 'store' },
+        { path: '/shop/', label: 'store' },
       ],
     };
   },

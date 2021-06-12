@@ -20,10 +20,7 @@
           goedkeuring prijs
         </p>
         <span class="c-order-item__space"></span>
-        <div
-          class="send-btn"
-          :class="{ sendBtnContainer: readyToSend === false }"
-        >
+        <div class="send-btn" :class="{ hide: readyToSend === false }">
           <button class="link-btn" @click="sendOrder">
             <p class="c-order-item__status">verzend</p>
           </button>
@@ -41,6 +38,48 @@
 
       <p>{{ order.total_price }}</p>
       <p>{{ order.notes }}</p>
+      <div
+        v-if="order.shipping_price === null && orderConfirmation === true"
+        :class="{ hide: orderConfirmation === false }"
+      >
+        <FormulateForm
+          v-model="shipmentData"
+          class="c-order-item__shipment-container"
+          @submit="addShipment"
+        >
+          <FormulateInput
+            name="shipment_price"
+            type="text"
+            label="verzendkosten"
+            validation-name="naam"
+            validation="required"
+          />
+          <FormulateInput type="submit" label="toevoegen" />
+        </FormulateForm>
+      </div>
+      <div v-else>
+        <p>verzendkost: {{ order.shipping_price }}</p>
+      </div>
+      <div :class="{ hide: readyToSend === false }">
+        <FormulateForm
+          v-if="order.tracking_code === null"
+          v-model="shipmentData"
+          class="c-order-item__shipment-container"
+          @submit="addTracking"
+        >
+          <FormulateInput
+            name="tracking_code"
+            type="text"
+            label="tracking code"
+            validation-name="naam"
+            validation="required"
+          />
+          <FormulateInput type="submit" label="toevoegen" />
+        </FormulateForm>
+        <div v-else>
+          <p>tracking code: {{ order.tracking_code }}</p>
+        </div>
+      </div>
 
       <OrderProducts
         v-for="product in order.ordered_items"
@@ -68,6 +107,10 @@ export default {
       paymentConfirmation: this.order.payment_confirmation,
       readyToSend: false,
       verzonden: null,
+      shipmentData: {
+        shipment_price: '',
+        tracking_code: '',
+      },
       src: 'http://157.230.126.154/assets/',
     };
   },
@@ -123,6 +166,40 @@ export default {
           console.error(err);
         });
     },
+    addShipment() {
+      this.$axios(`items/orders/${this.order.id}`, {
+        method: 'PATCH',
+        headers: {
+          Authorization: 'Bearer ' + this.access_token,
+        },
+        data: {
+          shipping_price: this.shipmentData.shipment_price,
+        },
+      })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    addTracking() {
+      this.$axios(`items/orders/${this.order.id}`, {
+        method: 'PATCH',
+        headers: {
+          Authorization: 'Bearer ' + this.access_token,
+        },
+        data: {
+          tracking_code: this.shipmentData.tracking_code,
+        },
+      })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
   },
 };
 </script>
@@ -143,6 +220,12 @@ export default {
     height: 0px;
   }
 
+  &__shipment {
+    &-container {
+      width: 250px;
+    }
+  }
+
   &__status {
     margin: 0;
     font-size: 1.3em;
@@ -161,12 +244,12 @@ export default {
   color: green;
 }
 
-.sendBtnContainer {
-  display: none !important;
-}
-
 .send-btn {
   display: flex;
   align-items: center;
+}
+
+.hide {
+  display: none !important;
 }
 </style>

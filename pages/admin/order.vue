@@ -1,12 +1,14 @@
 <template>
   <main>
-    <section class="order">
-      <OrderItems
-        v-for="order in orderProductData"
-        :key="order.id"
-        class="p-storefront__product-list__item"
-        :order="order"
-      />
+    <section>
+      <div class="order">
+        <OrderItems
+          v-for="order in orderProductData"
+          :key="order.id"
+          class="p-storefront__product-list__item"
+          :order="order"
+        />
+      </div>
     </section>
   </main>
 </template>
@@ -18,9 +20,11 @@ export default {
   layout: 'admin',
   data() {
     return {
-      orderProductData: {},
+      loading: false,
+      page: 0,
 
-      allProductData: {},
+      orderProductData: {},
+      orderProductLength: 0,
     };
   },
   computed: {
@@ -33,18 +37,28 @@ export default {
   },
   methods: {
     fetchOrder() {
-      this.$axios('items/orders?fields=*,ordered_items.*.*,product_id.*', {
+      this.$axios('items/orders', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,ordered_items.product_id.*',
+          sort: '-date_updated',
+          filter: {
+            status: { _neq: 'verzonden' },
+            order_confirmation: { _eq: true },
+          },
+        },
       })
         .then((data) => {
           this.orderProductData = data.data.data;
-          console.log(this.orderProductData);
+          this.orderProductLength = this.orderProductData.length;
+          console.log(data);
         })
         .catch((err) => {
           console.error(err);
         });
     },
+    
   },
 };
 </script>
@@ -52,5 +66,15 @@ export default {
 <style>
 .order {
   margin: 6em;
+}
+
+button.page-link {
+  display: inline-block;
+}
+
+button.page-link {
+  font-size: 20px;
+  color: #29b3ed;
+  font-weight: 500;
 }
 </style>
