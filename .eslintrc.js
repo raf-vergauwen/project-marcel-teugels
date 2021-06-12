@@ -12,7 +12,4 @@ module.exports = {
     'no-console': 'off',
   },
   plugins: [],
-  rules: {
-    'no-console': 'off',
-  },
 };

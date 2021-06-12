@@ -35,6 +35,11 @@
             <th>Stukprijs</th>
             <th>Bedrag EUR</th>
           </tr>
+          <InvoiceProduct
+            v-for="orderedItem in orderedItems"
+            :key="orderedItem.id"
+            :ordered-item="orderedItem"
+          />
         </table>
       </div>
     </div>
@@ -42,16 +47,19 @@
 </template>
 
 <script>
+import InvoiceProduct from '~/components/InvoiceProduct';
+
 export default {
-  name: 'ProductPage',
+  name: 'PaymentConfirmationPage',
+  components: { InvoiceProduct },
   data() {
     return {
       code: this.$route.params.code,
       name: '',
       address: '',
       phoneNumber: '',
-      products: '',
       date: new Date(),
+      orderedItems: [],
     };
   },
   fetch() {
@@ -67,6 +75,7 @@ export default {
         },
         params: {
           filter: { code: { _eq: this.code } },
+          fields: ['*,ordered_items.*', '*,ordered_items.product_id.*'],
         },
       })
         .then((response) => {
@@ -77,7 +86,8 @@ export default {
             this.orderData.first_name + ' ' + this.orderData.last_name;
           this.address = this.orderData.address;
           this.phoneNumber = this.orderData.phone_number;
-          this.products = this.orderData.ordered_items;
+          this.orderedItems = this.orderData.ordered_items;
+          console.log(this.orderedItems);
         })
         .catch((err) => {
           console.error(err);
