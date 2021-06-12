@@ -60,9 +60,10 @@ export default {
   methods: {
     removeProduct(product) {
       const index = this.shoppingList.indexOf(product);
+      console.log(index);
 
       if (this.$store.getters.productQuantity(product) === 1) {
-        this.shoppingList.splice(index, index + 1);
+        this.shoppingList.splice(index, 1);
       }
       this.$store.commit('removeFromCart', product);
       // this.shoppingList = this.$store.state.shoppingCart;
