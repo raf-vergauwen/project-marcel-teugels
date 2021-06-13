@@ -103,6 +103,21 @@ export default {
     background-color: $light-bg;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $s-site-padding;
+
+    @include lg() {
+      grid-template-columns: 1fr;
+    }
+
+    @include md() {
+      padding: 2em 3em;
+    }
+
+    &__item {
+      @include lg() {
+        width: 300px;
+        color: red;
+      }
+    }
   }
 
   &__about {
@@ -110,26 +125,45 @@ export default {
     width: 100vw;
 
     &__marcel {
-      height: 60vh;
+      min-height: 60vh;
       display: flex;
       justify-content: space-between;
+
+      @include xl() {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &__img--container {
       display: flex;
       align-items: center;
+
+      @include xl() {
+        margin: 0px 0px 5vw;
+      }
     }
 
     &__text {
-      width: 50vw;
+      max-width: 50vw;
       margin-top: 5vw;
       margin-left: 10vw;
       margin-right: 3em;
+
+      @include xl() {
+        margin: 5vw 3em;
+        max-width: 500px;
+      }
     }
 
     &__img--marcel {
       height: 50vh;
+      width: 50vh;
       margin-right: 5vw;
+
+      @include xl() {
+        margin: 0px;
+      }
     }
   }
 }

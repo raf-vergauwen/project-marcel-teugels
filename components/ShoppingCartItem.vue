@@ -8,14 +8,12 @@
       />
     </div>
     <div class="c-shopping-cart-item__text">
-      <NuxtLink :to="`/product/${product.id}`">
+      <NuxtLink :to="`/shop/product/${product.id}`">
         <h2 class="c-shopping-cart-item__title">
           {{ product.name }}
         </h2>
       </NuxtLink>
       <div class="c-shopping-cart-item__content">
-        <p>{{ product.id }}</p>
-        <p>{{ product.name }}</p>
         <p>{{ product.description }}</p>
         <p>Price: € {{ product.price }}</p>
         <p>Quantity: {{ product_quantity }}</p>
@@ -53,15 +51,20 @@ export default {
   display: flex;
   flex-direction: row;
   background-color: $light-blue;
-  padding: $s-site-padding;
-}
+  border-radius: 15px;
+  box-shadow: 0 3px 19.7px rgb(0 0 0 / 1%), 0 5.5px 26.4px rgb(0 0 0 / 2%),
+    0 8.2px 30.6px rgb(0 0 0 / 3%), 0 11.8px 35.6px rgb(0 0 0 / 4%),
+    0 17.2px 45.4px rgb(0 0 0 / 4%), 0 27px 80px rgb(0 0 0 / 6%);
 
-.c-shopping-cart-item__image {
-  width: 400px;
-  margin-right: 1em;
-}
+  &__image {
+    width: 400px;
+    margin-right: 1em;
+    border-radius: 15px 0px 0px 15px;
+  }
 
-.c-shopping-cart-item__title {
-  color: $dark-bg;
+  &__title {
+    color: $dark-bg;
+    margin-top: 0.5em;
+  }
 }
 </style>

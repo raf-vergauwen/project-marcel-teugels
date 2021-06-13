@@ -56,6 +56,7 @@ export default {
       const stringObject = localStorage.getItem('cart');
       this.shoppingList = JSON.parse(stringObject);
     }
+
   },
   methods: {
     removeProduct(product) {
@@ -95,27 +96,29 @@ export default {
 </script>
 
 <style lang="scss">
-.p-shopping-cart__title {
-  margin: 1em;
-}
+.p-shopping-cart {
+  &__title {
+    margin: 1em;
+  }
 
-.p-shopping-cart__container {
-  display: flex;
-}
+  &__container {
+    display: flex;
+  }
 
-.p-shopping-cart__product-list {
-  width: 70%;
-}
+  &__product-list {
+    width: 70%;
 
-.p-shopping-cart__product-list__item {
-  margin-bottom: 1em;
-  margin-left: 2em;
-}
+    &__item {
+      margin-bottom: 1em;
+      margin-left: 2em;
+    }
+  }
 
-.p-shopping-cart__total {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__total {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

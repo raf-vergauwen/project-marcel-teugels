@@ -1,6 +1,6 @@
 <template>
   <main class="p-storefront">
-    <h1 class="p-product__title">Store</h1>
+    <h1 class="p-storefront__title">Store</h1>
 
     <div class="p-storefront__product-list">
       <ProductItem
@@ -100,29 +100,33 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $s-site-padding;
+    height: 100%;
 
     @include md() {
       grid-template-columns: repeat(2, 1fr);
     }
 
     @include sm() {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    &__item {
+      color: white;
+      box-shadow: 0 3px 19.7px rgb(0 0 0 / 1%), 0 5.5px 26.4px rgb(0 0 0 / 2%),
+        0 8.2px 30.6px rgb(0 0 0 / 3%), 0 11.8px 35.6px rgb(0 0 0 / 4%),
+        0 17.2px 45.4px rgb(0 0 0 / 4%), 0 27px 80px rgb(0 0 0 / 6%);
+    }
+  }
+
+  &__title {
+    color: $dark-bg;
   }
 }
 
-.p-storefront__product-list__item {
-  color: white;
-}
-
-.title-btn__container {
+.p-storefront__product .title-btn__container {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-}
-
-.p-product__title {
-  color: $dark-bg;
 }
 
 a {
