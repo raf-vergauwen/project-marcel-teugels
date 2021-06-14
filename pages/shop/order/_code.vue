@@ -4,7 +4,7 @@
       <div class="p-payment-confirmation__contact-info">
         <div class="p-payment-confirmation__costumer-details">
           <p>{{ name }}</p>
-          <p>{{ address }}</p>
+          <p>{{ street }}</p>
           <p>plaats</p>
           <p>gsm: {{ phoneNumber }}</p>
         </div>
@@ -72,12 +72,13 @@ export default {
     return {
       code: this.$route.params.code,
       name: '',
-      address: '',
+      street: '',
+      city: '',
       phoneNumber: '',
       date: new Date(),
       orderedItems: [],
       totalPrice: '',
-      shippingPrice: '',
+      shippingPrice: 1,
     };
   },
   fetch() {
@@ -101,7 +102,8 @@ export default {
           console.log(this.orderData);
           this.name =
             this.orderData.first_name + ' ' + this.orderData.last_name;
-          this.address = this.orderData.address;
+          this.street =
+            this.orderData.street_name + ' ' + this.orderData.house_number;
           this.phoneNumber = this.orderData.phone_number;
           this.orderedItems = this.orderData.ordered_items;
           this.totalPrice = this.orderData.total_price;
