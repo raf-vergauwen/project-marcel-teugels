@@ -35,6 +35,13 @@
           validation-name="wachtwoord"
           validation="required"
         />
+        <FormulateInput
+          name="password_confirm"
+          type="password"
+          label="Wachtwoord herhalen"
+          validation="required|confirm"
+          validation-name="wachtwoord herhalen"
+        />
         <FormulateInput type="submit" label="Registreer" />
       </FormulateForm>
     </div>

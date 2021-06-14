@@ -29,11 +29,11 @@
           validation="optional"
         />
         <FormulateInput
-          name="passwordCheck"
+          name="password_confirm"
           type="password"
           label="Wachtwoord herhalen"
-          validation-name="wachtwoord"
-          validation="optional"
+          validation="required|confirm"
+          validation-name="wachtwoord herhalen"
         />
         <FormulateInput
           v-model="userInfo.email"
