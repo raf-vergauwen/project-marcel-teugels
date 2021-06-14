@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'globalfooter',
+  name: 'GlobalFooter',
   data() {
     return {};
   },
