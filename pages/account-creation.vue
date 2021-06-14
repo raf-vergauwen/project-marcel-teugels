@@ -2,25 +2,41 @@
   <main>
     <div class="container">
       <h1>Account creation</h1>
-      <form action="account-creation" @submit.prevent="createAccount">
-        <label
-          >First name:
-          <input v-model="firstName" type="text" name="first-name" />
-        </label>
-        <label
-          >Last name:
-          <input v-model="lastName" type="text" name="last-name" />
-        </label>
-        <label
-          >E-mail:
-          <input v-model="email" type="text" name="email" />
-        </label>
-        <label
-          >Password:
-          <input v-model="password" type="password" name="password" />
-        </label>
-        <button type="submit">Create</button>
-      </form>
+      <FormulateForm
+        v-model="accountInfo"
+        class="p-account-creation__form"
+        @submit="createAccount"
+      >
+        <FormulateInput
+          name="first_name"
+          type="text"
+          label="Voornaam"
+          validation-name="voornaam"
+          validation="required"
+        />
+        <FormulateInput
+          name="last_name"
+          type="text"
+          label="Achternaam"
+          validation-name="achternaam"
+          validation="required"
+        />
+        <FormulateInput
+          name="email"
+          type="email"
+          label="email"
+          validation-name="email"
+          validation="required|email"
+        />
+        <FormulateInput
+          name="password"
+          type="password"
+          label="Wachtwoord"
+          validation-name="wachtwoord"
+          validation="required"
+        />
+        <FormulateInput type="submit" label="Registreer" />
+      </FormulateForm>
     </div>
   </main>
 </template>
@@ -30,21 +46,23 @@ export default {
   name: 'AccountCreationPage',
   data() {
     return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      password: '',
-      role: 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7',
+      accountInfo: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        password: '',
+        role: 'd4625a28-4f5a-4aaa-970c-f7bf23adceb7',
+      },
     };
   },
   computed: {
     accountBody() {
       return JSON.stringify({
-        first_name: this.firstName,
-        last_name: this.lastName,
-        email: this.email,
-        password: this.password,
-        role: this.role,
+        first_name: this.accountInfo.first_name,
+        last_name: this.accountInfo.last_name,
+        email: this.accountInfo.email,
+        password: this.accountInfo.password,
+        role: this.accountInfo.role,
       });
     },
     access_token() {
@@ -53,15 +71,16 @@ export default {
   },
   methods: {
     createAccount() {
-      this.$axios('users', {
+      this.$axios('/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: this.accountBody,
+        data: this.accountBody,
       })
         .then((response) => {
           console.log(response);
+          return response.data.data;
         })
         .catch((err) => {
           console.error(err);

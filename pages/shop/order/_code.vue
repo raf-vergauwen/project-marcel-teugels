@@ -5,15 +5,15 @@
         <div class="p-payment-confirmation__costumer-details">
           <p>{{ name }}</p>
           <p>{{ street }}</p>
-          <p>plaats</p>
-          <p>gsm: {{ phoneNumber }}</p>
+          <p>{{ city }}</p>
+          <p>{{ phoneNumber }}</p>
         </div>
         <div class="p-payment-confirmation__seller-details">
           <p>Marcel Teugels</p>
           <p>Straat 28</p>
           <p>2000 Antwerpen</p>
-          <p>email: marcel_teugels@hotmail.com</p>
-          <p>gsm:</p>
+          <p>+32 474 22 56 08</p>
+          <p>marcel_teugels@hotmail.com</p>
           <p>Btw-nummer</p>
           <p>Rekeningnummer</p>
         </div>
@@ -104,10 +104,16 @@ export default {
             this.orderData.first_name + ' ' + this.orderData.last_name;
           this.street =
             this.orderData.street_name + ' ' + this.orderData.house_number;
+          this.city =
+            this.orderData.postal_code + ' ' + this.orderData.city_name;
           this.phoneNumber = this.orderData.phone_number;
           this.orderedItems = this.orderData.ordered_items;
           this.totalPrice = this.orderData.total_price;
-          this.shippingPrice = this.orderData.shipping_price;
+          if (this.orderData.shipping_price === null) {
+            this.shippingPrice = 1;
+          } else {
+            this.shippingPrice = this.orderData.shipping_price;
+          }
         })
         .catch((err) => {
           console.error(err);
