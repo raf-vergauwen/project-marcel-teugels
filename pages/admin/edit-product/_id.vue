@@ -2,7 +2,11 @@
   <main class="p-product-page">
     <div class="p-product__container">
       <div class="p-product__info">
-        <FormulateForm v-model="newProductData" @submit="editProduct">
+        <FormulateForm
+          v-if="productLoaded"
+          v-model="newProductData"
+          @submit="editProduct"
+        >
           <FormulateInput
             name="name"
             type="text"
@@ -22,7 +26,6 @@
             type="image"
             name="images"
             label="Please select an image"
-            validation="mime:image/jpeg,image/png"
             :uploader="uploader"
             multiple
           />
@@ -39,6 +42,7 @@ export default {
   layout: 'admin',
   data() {
     return {
+      productLoaded: false,
       src: 'http://157.230.126.154/assets/',
       Admin: false,
       productData: null,
@@ -67,6 +71,13 @@ export default {
     },
   },
   methods: {
+    vueFormulateImages() {
+      return this.productData.images.map((image) => {
+        return {
+          url: `http://157.230.126.154/assets/${image.directus_files_id}`,
+        };
+      });
+    },
     fetchProduct() {
       this.$axios(`items/products/${this.$route.params.id}`, {
         method: 'GET',
@@ -85,6 +96,8 @@ export default {
           this.newProductData.quantity = this.productData.quantity_in_stock;
           this.newProductData.description = this.productData.description;
           this.newProductData.status = this.productData.status;
+          this.newProductData.images = this.vueFormulateImages();
+          this.productLoaded = true;
         })
         .catch((err) => {
           console.error(err);

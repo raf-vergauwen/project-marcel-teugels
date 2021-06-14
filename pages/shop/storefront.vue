@@ -43,14 +43,7 @@ export default {
     },
   },
   created() {
-    if (localStorage.getItem('cart')) {
-      const stringObject = localStorage.getItem('cart');
-      this.shoppingList = JSON.parse(stringObject);
-    }
-  },
-
-  mounted() {
-    this.$store.commit('updateCartFromLocalStorage');
+    this.$store.dispatch('updateCartFromLocalStorage');
   },
   methods: {
     fetchItems() {
@@ -72,7 +65,7 @@ export default {
     },
     addProduct(product) {
       console.log(product);
-      this.$store.commit('addToCart', product);
+      this.$store.dispatch('addToCart', product);
     },
     removeProduct(product) {
       const index = this.shoppingList.indexOf(product);
@@ -80,7 +73,7 @@ export default {
       if (this.$store.getters.productQuantity(product) === 1) {
         this.shoppingList.splice(index, index + 1);
       }
-      this.$store.commit('removeFromCart', product);
+      this.$store.dispatch('removeFromCart', product);
 
       this.$root.$emit(
         'notify',

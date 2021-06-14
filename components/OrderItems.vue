@@ -22,7 +22,7 @@
         <span class="c-order-item__space"></span>
         <div class="send-btn" :class="{ hide: readyToSend === false }">
           <button class="link-btn" @click="sendOrder">
-            <p class="c-order-item__status">verzend</p>
+            <span class="c-order-item__status">verzend</span>
           </button>
           <span class="c-order-item__space"></span>
         </div>
@@ -191,6 +191,7 @@ export default {
         },
         data: {
           tracking_code: this.shipmentData.tracking_code,
+          status: 'verzonden',
         },
       })
         .then((data) => {
@@ -207,7 +208,7 @@ export default {
 <style lang="scss">
 .c-order-item {
   background-color: $light-blue;
-  margin: 2em 0em;
+  margin: 2em 0;
 
   &__content {
     width: 100%;
@@ -215,9 +216,9 @@ export default {
 
   &__space {
     border: 1px solid black;
-    margin: 0em 1em;
+    margin: 0 1em;
     width: 30px;
-    height: 0px;
+    height: 0;
   }
 
   &__shipment {
@@ -235,7 +236,7 @@ export default {
       width: 100%;
       align-items: center;
       justify-content: center;
-      padding: 2em 0em;
+      padding: 2em 0;
     }
   }
 }

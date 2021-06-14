@@ -8,14 +8,14 @@
           :key="product.id"
           class="p-shopping-cart__product-list__item"
           :product="product"
-          @remove-product="removeProduct($event)"
+          @remove-product="removeProduct(product)"
         />
       </div>
       <div class="p-shopping-cart__total">
         <h3>Rekening</h3>
         <h5 v-for="product in shoppingList" :key="product.id">
-          {{ getQuantity(product) }} x {{ product.price }} =
-          {{ getQuantity(product) * product.price }}
+          {{ product.quantity }} x {{ product.price }} =
+          {{ product.quantity * product.price }}
         </h5>
         <h3>Totaal: € {{ calculate_Total }}</h3>
         <button>
@@ -34,13 +34,10 @@ import ShoppingCartItem from '~/components/ShoppingCartItem';
 export default {
   name: 'ShoppingCartPage',
   components: { ShoppingCartItem },
-
-  data() {
-    return {
-      shoppingList: [],
-    };
-  },
   computed: {
+    shoppingList() {
+      return this.$store.state.shoppingCart;
+    },
     calculate_Total() {
       return this.shoppingList.reduce((acc, product) => {
         return (
@@ -52,20 +49,11 @@ export default {
     },
   },
   created() {
-    if (localStorage.getItem('cart')) {
-      const stringObject = localStorage.getItem('cart');
-      this.shoppingList = JSON.parse(stringObject);
-    }
+    this.$store.dispatch('updateCartFromLocalStorage');
   },
   methods: {
     removeProduct(product) {
-      const index = this.shoppingList.indexOf(product);
-      console.log(index);
-
-      if (this.$store.getters.productQuantity(product) === 1) {
-        this.shoppingList.splice(index, 1);
-      }
-      this.$store.commit('removeFromCart', product);
+      this.$store.dispatch('removeFromCart', product);
       // this.shoppingList = this.$store.state.shoppingCart;
     },
     createOrderedItems() {
