@@ -42,11 +42,32 @@
           validation="optional"
         />
         <FormulateInput
-          name="address"
+          name="street_name"
           type="text"
-          label="adres"
-          validation-name="adres"
-          validation="required"
+          label="Straatnaam"
+          validation-name="straatnaam"
+          validation="optional"
+        />
+        <FormulateInput
+          name="house_number"
+          type="number"
+          label="Huisnummer"
+          validation-name="huisnummer"
+          validation="optional"
+        />
+        <FormulateInput
+          name="postal_code"
+          type="number"
+          label="Postcode"
+          validation-name="postcode"
+          validation="optional"
+        />
+        <FormulateInput
+          name="city_name"
+          type="text"
+          label="Stad"
+          validation-name="stad"
+          validation="optional"
         />
         <FormulateInput
           name="notes"
@@ -75,7 +96,10 @@ export default {
         last_name: '',
         email: '',
         phone_number: '',
-        address: '',
+        street_name: '',
+        house_number: 0,
+        postal_code: 0,
+        city_name: '',
         notes: '',
         user_id: null,
       },
@@ -139,7 +163,10 @@ export default {
           last_name: data.last_name,
           email: data.email,
           phone_number: data.phone_number,
-          address: data.address,
+          street_name: data.street_name,
+          house_number: data.house_number,
+          postal_code: data.postal_code,
+          city_name: data.city_name,
           notes: data.notes,
           user_id: this.formData.user_id,
         },
@@ -173,7 +200,10 @@ export default {
         this.formData.last_name = this.userInfo.last_name;
         this.formData.email = this.userInfo.email;
         this.formData.phone_number = this.userInfo.phone_number;
-        this.formData.address = this.userInfo.location;
+        this.formData.street_name = this.userInfo.street_name;
+        this.formData.house_number = this.userInfo.house_number;
+        this.formData.postal_code = this.userInfo.postal_code;
+        this.formData.city_name = this.userInfo.city_name;
         this.formData.user_id = this.userInfo.id;
       }
     },

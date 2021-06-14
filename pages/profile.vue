@@ -1,24 +1,93 @@
 <template>
   <main class="p-profile">
     <div class="p-profile__container">
-      <h1>Profile</h1>
-      <NuxtLink to="admin/add-workshop">Add Workshop</NuxtLink>
-      <form @submit.prevent="checkEmail">
-        <label
-          >First name: <input v-model="userInfo.firstName" type="text" />
-        </label>
-        <label
-          >Last name: <input v-model="userInfo.lastName" type="text" />
-        </label>
-        <label>Email: <input v-model="userInfo.email" type="email" /> </label>
-        <label
-          >Password: <input v-model="userInfo.password" type="password" />
-        </label>
-        <label
-          >Location: <input v-model="userInfo.location" type="text" />
-        </label>
-        <button type="submit">Update</button>
-      </form>
+      <h1>Profiel</h1>
+      <FormulateForm
+        v-model="userInfo"
+        class="p-profile__form"
+        @submit="checkEmail"
+      >
+        <FormulateInput
+          name="first_name"
+          type="text"
+          label="Voornaam"
+          validation-name="voornaam"
+          validation="optional"
+        />
+        <FormulateInput
+          name="last_name"
+          type="text"
+          label="Achternaam"
+          validation-name="achternaam"
+          validation="optional"
+        />
+        <FormulateInput
+          name="password"
+          type="password"
+          label="Wachtwoord"
+          validation-name="wachtwoord"
+          validation="optional"
+        />
+        <FormulateInput
+          name="passwordCheck"
+          type="password"
+          label="Wachtwoord herhalen"
+          validation-name="wachtwoord"
+          validation="optional"
+        />
+        <FormulateInput
+          v-model="userInfo.email"
+          name="email"
+          type="email"
+          label="email"
+          validation-name="email"
+          validation="optional|email"
+        />
+        <FormulateInput
+          name="phone_number"
+          type="number"
+          label="Telefoonnummer"
+          validation-name="telefoonnummer"
+          validation="optional"
+        />
+        <FormulateInput
+          name="street_name"
+          type="text"
+          label="Straatnaam"
+          validation-name="straatnaam"
+          validation="optional"
+        />
+        <FormulateInput
+          name="house_number"
+          type="number"
+          label="Huisnummer"
+          validation-name="huisnummer"
+          validation="optional"
+        />
+        <FormulateInput
+          name="postal_code"
+          type="number"
+          label="Postcode"
+          validation-name="postcode"
+          validation="optional"
+        />
+        <FormulateInput
+          name="city_name"
+          type="text"
+          label="Stad"
+          validation-name="stad"
+          validation="optional"
+        />
+        <FormulateInput type="submit" label="Profiel updaten" />
+      </FormulateForm>
+    </div>
+    <div class="p-profile__orders">
+      <OrderItems
+        v-for="order in orders"
+        :key="order.id"
+        class="p-storefront__product-list__item"
+        :order="order"
+      />
     </div>
   </main>
 </template>
@@ -31,12 +100,19 @@ export default {
     return {
       oldEmail: '',
       userInfo: {
-        firstName: '',
-        lastName: '',
-        email: '',
+        first_name: '',
+        last_name: '',
         password: '',
+        passwordCheck: '',
+        email: '',
+        phone_number: 0,
+        street_name: '',
+        house_number: 0,
+        postal_code: 0,
+        city_name: '',
         location: '',
       },
+      orders: [],
     };
   },
   computed: {
@@ -45,22 +121,19 @@ export default {
     },
   },
   created() {
-    this.$axios('users/me?fields=*,orders.ordered_items.products.*', {
+    this.$axios('users/me', {
       method: 'GET',
       headers: {
         Authorization: 'Bearer ' + this.access_token,
       },
+      fields: ['*,orders.*', '*,orders.ordered_items.*'],
     })
       .then((response) => {
         this.oldEmail = response.data.data.email;
-        console.log(this.oldEmail);
         console.log(response);
         this.userInfo = response.data.data;
-        this.userInfo.firstName = response.data.data.first_name;
-        this.userInfo.lastName = response.data.data.last_name;
-        this.userInfo.email = response.data.data.email;
-        this.userInfo.password = response.data.data.password;
-        this.userInfo.location = response.data.data.location;
+        this.userInfo.password = '';
+        this.userInfo.passwordCheck = '';
       })
       .catch((err) => {
         console.error(err);
@@ -128,5 +201,13 @@ export default {
   &__container {
     @extend .container;
   }
+  padding-top: $m-site-padding;
+  padding-bottom: $m-site-padding;
+}
+
+.p-profile__form {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: $s-site-padding;
 }
 </style>
