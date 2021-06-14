@@ -1,12 +1,6 @@
 <template>
   <main class="p-storefront">
-    <div class="title-btn__container">
-      <h1 class="p-product__title">Store</h1>
-
-      <button v-if="isAdmin === true" class="p-product__btn admin-btn">
-        <nuxt-link to="/admin/add-product">+</nuxt-link>
-      </button>
-    </div>
+    <h1 class="p-product__title">Store</h1>
 
     <div class="p-storefront__product-list">
       <ProductItem
@@ -14,8 +8,8 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
-        @remove-product="removeProduct($event)"
         @add-product="addProduct"
+        @remove-product="removeProduct($event)"
       />
     </div>
   </main>
@@ -47,18 +41,19 @@ export default {
     isLoggedIn() {
       return this.$store.getters['auth/isLoggedIn'];
     },
-    isAdmin() {
-      return this.$store.getters['auth/isAdmin'];
-    },
   },
-  mounted() {
-    this.$store.commit('updateCartFromLocalStorage');
+  created() {
+    this.$store.dispatch('updateCartFromLocalStorage');
   },
   methods: {
     fetchItems() {
-      this.$axios('items/products?fields=*,images.*', {
+      this.$axios('items/products', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
       })
         .then((response) => {
           console.log(response);
@@ -70,71 +65,22 @@ export default {
     },
     addProduct(product) {
       console.log(product);
-      this.$store.commit('addToCart', product);
-      sessionStorage.setItem('shopping_cart', this.shoppingCart);
+      this.$store.dispatch('addToCart', product);
     },
-
     removeProduct(product) {
-      this.$axios(`/items/products/${product.id}`, {
-        method: 'DELETE',
-      })
-        .then(function (response) {
-          console.log(response.data);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+      const index = this.shoppingList.indexOf(product);
+
+      if (this.$store.getters.productQuantity(product) === 1) {
+        this.shoppingList.splice(index, index + 1);
+      }
+      this.$store.dispatch('removeFromCart', product);
+
+      this.$root.$emit(
+        'notify',
+        `${product.name} has been removed from your shopping basket`,
+      );
+      // this.shoppingList = this.$store.state.shoppingCart;
     },
-    /*
-    newShoppingCart() {
-      fetch('http://157.230.126.154/items/ordered_items', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not create new shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('newCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    addToShoppingCart(product) {
-      fetch('http://157.230.126.154/items/ordered_items/21', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not add product to shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('addToCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    */
   },
 };
 </script>
@@ -156,6 +102,10 @@ export default {
       grid-template-columns: 1fr;
     }
   }
+}
+
+.p-storefront__product-list__item {
+  color: white;
 }
 
 .title-btn__container {

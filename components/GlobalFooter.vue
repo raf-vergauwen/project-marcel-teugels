@@ -1,14 +1,14 @@
 <template>
-  <footer class="c-footer">
-    <div class="c-footer__container">
-      <div class="c-footer__nav">
-        <p class="c-footer__item">Marcel Teugels</p>
-        <span class="c-footer__break">•</span>
-        <p class="c-footer__item">nep telefoon</p>
-        <span class="c-footer__break">•</span>
-        <p class="c-footer__item">nep emailadress</p>
-        <span class="c-footer__break">•</span>
-        <a class="c-footer__item">instagram</a>
+  <footer class="c-globalfooter">
+    <div class="c-globalfooter__container">
+      <div class="c-globalfooter__nav">
+        <p class="c-globalfooter__item">Marcel Teugels</p>
+        <span class="c-globalfooter__break">•</span>
+        <p class="c-globalfooter__item">nep telefoon</p>
+        <span class="c-fglobalooter__break">•</span>
+        <p class="c-globalfooter__item">nep emailadress</p>
+        <span class="c-globalfooter__break">•</span>
+        <a class="c-globalfooter__item">instagram</a>
       </div>
     </div>
   </footer>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'footer',
+  name: 'GlobalFooter',
   data() {
     return {};
   },
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-.c-footer {
+.c-globalfooter {
   background-color: $dark-bg;
   display: flex;
   justify-content: center;

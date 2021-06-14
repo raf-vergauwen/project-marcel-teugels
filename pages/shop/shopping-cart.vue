@@ -8,12 +8,16 @@
           :key="product.id"
           class="p-shopping-cart__product-list__item"
           :product="product"
-          @remove-product="removeProduct($event)"
+          @remove-product="removeProduct(product)"
         />
       </div>
       <div class="p-shopping-cart__total">
-        <h2>Total:</h2>
-        <h3>€ {{ calculate_Total }}</h3>
+        <h3>Rekening</h3>
+        <h5 v-for="product in shoppingList" :key="product.id">
+          {{ product.quantity }} x {{ product.price }} =
+          {{ product.quantity * product.price }}
+        </h5>
+        <h3>Totaal: € {{ calculate_Total }}</h3>
         <button>
           <nuxt-link class="place-order-link" to="/shop/place-order">
             Afrekenen
@@ -30,13 +34,10 @@ import ShoppingCartItem from '~/components/ShoppingCartItem';
 export default {
   name: 'ShoppingCartPage',
   components: { ShoppingCartItem },
-
-  data() {
-    return {
-      shoppingList: [],
-    };
-  },
   computed: {
+    shoppingList() {
+      return this.$store.state.shoppingCart;
+    },
     calculate_Total() {
       return this.shoppingList.reduce((acc, product) => {
         return (
@@ -48,19 +49,12 @@ export default {
     },
   },
   created() {
-    if (localStorage.getItem('cart')) {
-      const stringObject = localStorage.getItem('cart');
-      this.shoppingList = JSON.parse(stringObject);
-    }
+    this.$store.dispatch('updateCartFromLocalStorage');
   },
   methods: {
     removeProduct(product) {
-      const index = this.shoppingList.indexOf(product);
-
-      if (this.$store.getters.productQuantity(product) === 1) {
-        this.shoppingList.splice(index, index + 1);
-      }
-      this.$store.commit('removeFromCart', product);
+      this.$store.dispatch('removeFromCart', product);
+      // this.shoppingList = this.$store.state.shoppingCart;
     },
     createOrderedItems() {
       this.$axios('items/ordered_items', {
@@ -82,27 +76,9 @@ export default {
           console.error(err);
         });
     },
-    /*
-    createOrders() {
-      this.$axios('items/orders', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        data: {
-          total_price: this.calculate_Total,
-          notes: 'test1234',
-          ordered_items: [this.orderedItemId],
-        },
-      })
-        .then((response) => {
-          console.log(response);
-          this.orderId = response.data.data.id;
-          console.log(this.orderId);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+    getQuantity(product) {
+      return this.$store.getters.productQuantity(product);
     },
-    */
   },
 };
 </script>

@@ -19,36 +19,62 @@ export const getters = {
 };
 
 export const mutations = {
-  addToCart(state, product) {
-    const item = state.shoppingCart.find((i) => i.id === product.id);
-
-    if (item) {
-      item.quantity++;
-    } else {
-      state.shoppingCart.push({ ...product, quantity: 1 });
-    }
-
-    updateLocalStorage(state.shoppingCart);
+  updateCartItemQuantity(state, payload) {
+    state.shoppingCart[payload.index].quantity = payload.quantity;
   },
-  removeFromCart(state, product) {
-    const item = state.shoppingCart.find((i) => i.id === product.id);
-
-    if (item.quantity > 1) {
-      item.quantity--;
-    } else {
-      state.shoppingCart = state.shoppingCart.filter(
-        (i) => i.id !== product.id,
-      );
-    }
-
-    updateLocalStorage(state.shoppingCart);
+  addProductToCart(state, product) {
+    state.shoppingCart.push(product);
   },
-  updateCartFromLocalStorage(state) {
-    const cart = localStorage.getItem('cart');
-    if (cart) {
-      state.shoppingCart = JSON.parse(cart);
-    }
+  setShoppingCart(state, shoppingCart) {
+    state.shoppingCart = shoppingCart;
+  },
+  removeProductFromCart(state, index) {
+    state.shoppingCart.splice(index, 1);
   },
 };
 
-export const actions = {};
+export const actions = {
+  addToCart(context, product) {
+    const existingProductIndex = context.state.shoppingCart.findIndex(
+      (i) => i.id === product.id,
+    );
+
+    if (existingProductIndex >= 0) {
+      const curQuantity =
+        context.state.shoppingCart[existingProductIndex].quantity;
+      context.commit('updateCartItemQuantity', {
+        index: existingProductIndex,
+        quantity: curQuantity + 1,
+      });
+    } else {
+      context.commit('addProductToCart', { ...product, quantity: 1 });
+    }
+
+    updateLocalStorage(context.state.shoppingCart);
+  },
+  removeFromCart(context, product) {
+    const itemIndex = context.state.shoppingCart.findIndex(
+      (i) => i.id === product.id,
+    );
+
+    if (itemIndex >= 0) {
+      const item = context.state.shoppingCart[itemIndex];
+
+      if (item.quantity > 1) {
+        context.commit('updateCartItemQuantity', {
+          index: itemIndex,
+          quantity: item.quantity - 1,
+        });
+      } else {
+        context.commit('removeProductFromCart', itemIndex);
+      }
+      updateLocalStorage(context.state.shoppingCart);
+    }
+  },
+  updateCartFromLocalStorage(context) {
+    const cart = localStorage.getItem('cart');
+    if (cart) {
+      context.commit('setShoppingCart', JSON.parse(cart));
+    }
+  },
+};

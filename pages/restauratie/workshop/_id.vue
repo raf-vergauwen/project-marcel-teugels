@@ -2,48 +2,20 @@
   <main class="p-product-page">
     <div class="p-workshop__container">
       <img class="p-workshop__image" :src="src + images" alt="" />
-      <div
-        v-if="Admin === '78b6335f-b448-46d6-8086-65057ba5fae0'"
-        class="p-workshop__info"
-      >
-        <label>
-          titel
-          <input v-model="title" type="text" />
-        </label>
-        <label>
-          datum
-          <input v-model="date" type="text" />
-        </label>
-        <label>
-          organizator
-          <input v-model="organizer" type="text" />
-        </label>
-        <label>
-          onderwerp
-          <input v-model="subject" type="text" />
-        </label>
-        <label>
-          tekst
-          <textarea v-model="textContent"> </textarea>
-        </label>
-        <button @click="editWorkshop">edit</button>
-      </div>
-      <div v-else class="p-workshop__container">
-        <div class="p-workshop__info">
-          <h1>{{ title }}</h1>
-          <h3>{{ date }}</h3>
-          <p>{{ organizer }}</p>
-          <p>{{ subject }}</p>
-          <p>{{ textContent }}</p>
-        </div>
+    </div>
+    <div class="p-workshop__container">
+      <div class="p-workshop__info">
+        <h1>{{ title }}</h1>
+        <h3>{{ date }}</h3>
+        <p>{{ organizer }}</p>
+        <p>{{ subject }}</p>
+        <p>{{ textContent }}</p>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
   name: 'WorkShopDetailsPage',
   layout: 'restauratie',
@@ -104,33 +76,6 @@ export default {
         })
         .catch((err) => {
           console.error(err);
-        });
-    },
-    editWorkshop() {
-      console.log(this.workshopData.id);
-      const options = {
-        method: 'PATCH',
-        url: 'http://157.230.126.154/items/workshops/' + this.workshopData.id,
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + this.access_token,
-        },
-        data: {
-          title: this.title,
-          date: this.date,
-          organizer: this.organizer,
-          subject: this.subject,
-          textContent: this.textContent,
-        },
-      };
-
-      axios
-        .request(options)
-        .then(function (response) {
-          console.log(response.data);
-        })
-        .catch(function (error) {
-          console.error(error);
         });
     },
   },

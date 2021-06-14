@@ -3,7 +3,7 @@
     <section class="p-storehome__hero"></section>
     <div class="p-storehome__product-list">
       <HomeItem
-        v-for="product in productData"
+        v-for="product in doneProducts"
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
@@ -63,31 +63,22 @@ export default {
   },
   methods: {
     fetchLimiet() {
-      for (let i = 0; i < this.limiet; i++) {
-        this.$axios('items/products?fields=*,images.*', {
-          method: 'GET',
-          headers: {},
+      this.$axios('items/products?fields=*,images.*', {
+        method: 'GET',
+        headers: {},
+        params: {
+          sort: '-date_updated',
+        },
+      })
+        .then((response) => {
+          this.productData = response.data.data;
+          for (let i = 0; i < this.limiet; i++) {
+            this.doneProducts.push(this.productData[i]);
+          }
         })
-          .then((response) => {
-            // this.productData = response.data.data;
-            const randomNumber = Math.floor(
-              Math.random() * response.data.data.length,
-            );
-            if (this.doneProducts.includes(randomNumber)) {
-              i--;
-              console.log(i);
-            } else {
-              this.doneProducts.push(randomNumber);
-              this.productData.push(response.data.data[randomNumber]);
-            }
-
-            console.log(randomNumber);
-            console.log(this.productData);
-          })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
+        .catch((err) => {
+          console.error(err);
+        });
     },
   },
 };

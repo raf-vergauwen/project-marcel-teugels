@@ -3,6 +3,16 @@
     <div class="c-a-header__container">
       <nav class="c-a-header__nav">
         <nuxt-link
+          v-if="isAdmin"
+          :class="{
+            'c-a-header__nav__items': true,
+            'c-a-header__nav__items--active': '/admin' === $route.path,
+          }"
+          to="/admin/add-product"
+        >
+          admin
+        </nuxt-link>
+        <nuxt-link
           v-if="!isLoggedIn"
           :class="{
             'c-a-header__nav__items': true,
@@ -56,6 +66,9 @@ export default {
   computed: {
     isLoggedIn() {
       return this.$store.getters['auth/isLoggedIn'];
+    },
+    isAdmin() {
+      return this.$store.getters['auth/isAdmin'];
     },
   },
   methods: {
