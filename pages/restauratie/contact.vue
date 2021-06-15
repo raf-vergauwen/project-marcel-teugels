@@ -26,7 +26,7 @@
             label="telefoon nummer"
           />
           <FormulateInput
-            name="text-content"
+            name="text_content"
             type="textarea"
             label="Waarmee kunnen wij u helpen?"
           />
