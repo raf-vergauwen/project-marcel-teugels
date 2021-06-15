@@ -1,7 +1,11 @@
 <template>
   <main class="p-product-page">
-    <section id="app">
-      <FormulateForm v-model="productFormData" @submit="postWorkshop">
+    <section class="p-product-page__add">
+      <FormulateForm
+        v-model="productFormData"
+        class="formulate-container"
+        @submit="postWorkshop"
+      >
         <FormulateInput
           name="name"
           type="text"

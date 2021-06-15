@@ -1,8 +1,13 @@
 <template>
-  <main class="p-product-page">
-    <div class="p-product__container">
-      <div class="p-product__info">
-        <FormulateForm v-model="newWorkshopData" @submit="editWorkshop">
+  <main class="p-edit-workshop-page">
+    <div class="p-edit-workshop__container">
+      <div class="p-edit-workshop__info">
+        <FormulateForm
+          v-if="workshopLoaded"
+          v-model="newWorkshopData"
+          class="formulate-container"
+          @submit="editWorkshop"
+        >
           <FormulateInput
             name="title"
             type="text"
@@ -21,7 +26,6 @@
             type="image"
             name="images"
             label="Please select an image"
-            validation="mime:image/jpeg,image/png"
             :uploader="uploader"
             multiple
           />
@@ -35,11 +39,11 @@
 <script>
 export default {
   name: 'EditWorkshopPage',
-  layout: 'Admin',
+  layout: 'admin',
   data() {
     return {
+      workshopLoaded: false,
       src: 'http://157.230.126.154/assets/',
-      Admin: false,
       workshopData: null,
       newWorkshopData: {
         title: '',
@@ -64,6 +68,14 @@ export default {
     },
   },
   methods: {
+    vueFormulateWorkshopImages() {
+      return this.workshopData.images.map((image) => {
+        return {
+          url: `http://157.230.126.154/assets/${image.directus_files_id}`,
+        };
+      });
+    },
+
     fetchWorkshop() {
       this.$axios(`items/workshops/${this.$route.params.id}`, {
         method: 'GET',
@@ -81,6 +93,8 @@ export default {
           this.newWorkshopData.subject = this.workshopData.subject;
           this.newWorkshopData.textContent = this.workshopData.text_content;
           this.newWorkshopData.status = this.workshopData.status;
+          this.newWorkshopData.images = this.vueFormulateWorkshopImages();
+          this.workshopLoaded = true;
         })
         .catch((err) => {
           console.error(err);

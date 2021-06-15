@@ -1,16 +1,16 @@
 <template>
-  <article class="c-admin-product-item-page">
-    <div class="c-admin-product-item__content">
+  <article class="c-admin-workshop-item-page">
+    <div class="c-admin-workshop-item__content">
       <NuxtLink :to="`/admin/edit-workshop/${workshop.id}`">
-        <h2 class="c-admin-product-item c-admin-product-item__title">
+        <h2 class="c-admin-workshop-item c-admin-product-item__title">
           {{ workshop.title }}
         </h2>
       </NuxtLink>
-      <p class="c-admin-product-item">id: {{ workshop.id }}</p>
-      <p class="c-admin-product-item">{{ workshop.date }}</p>
-      <p class="c-admin-product-item">{{ workshop.status }}</p>
+      <p class="c-admin-workshop-item">id: {{ workshop.id }}</p>
+      <p class="c-admin-workshop-item">{{ workshop.date }}</p>
+      <p class="c-admin-workshop-item">{{ workshop.status }}</p>
       <button
-        class="c-admin-product__btn admin-btn"
+        class="c-admin-workshop__btn admin-btn"
         @click="$emit('remove-workshop', workshop)"
       >
         x
@@ -48,8 +48,9 @@ export default {
 </script>
 
 <style lang="scss">
-.c-admin-product-item {
+.c-admin-workshop-item {
   margin: 0;
+  width: 200px;
 
   &-page {
     padding: $s-site-padding;

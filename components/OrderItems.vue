@@ -21,9 +21,6 @@
         </p>
         <span class="c-order-item__space"></span>
         <div class="send-btn" :class="{ hide: readyToSend === false }">
-          <button class="link-btn" @click="sendOrder">
-            <span class="c-order-item__status">verzend</span>
-          </button>
           <span class="c-order-item__space"></span>
         </div>
 
