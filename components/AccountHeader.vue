@@ -3,6 +3,16 @@
     <div class="c-a-header__container">
       <nav class="c-a-header__nav">
         <nuxt-link
+          v-if="isAdmin"
+          :class="{
+            'c-a-header__nav__items': true,
+            'c-a-header__nav__items--active': '/admin' === $route.path,
+          }"
+          to="/admin/add-product"
+        >
+          Admin
+        </nuxt-link>
+        <nuxt-link
           v-if="!isLoggedIn"
           :class="{
             'c-a-header__nav__items': true,
@@ -10,7 +20,7 @@
           }"
           to="/login"
         >
-          login
+          Login
         </nuxt-link>
         <a
           v-if="isLoggedIn"
@@ -19,7 +29,7 @@
           }"
           @click="logout"
         >
-          logout
+          Logout
         </a>
         <nuxt-link
           v-if="isLoggedIn"
@@ -29,7 +39,7 @@
           }"
           to="/profile"
         >
-          profile
+          {{ userName }}
         </nuxt-link>
         <nuxt-link
           v-if="!isLoggedIn"
@@ -40,7 +50,7 @@
           }"
           to="/account-creation"
         >
-          register
+          Registreer
         </nuxt-link>
       </nav>
     </div>
@@ -56,6 +66,16 @@ export default {
   computed: {
     isLoggedIn() {
       return this.$store.getters['auth/isLoggedIn'];
+    },
+    isAdmin() {
+      return this.$store.getters['auth/isAdmin'];
+    },
+    userName() {
+      if (this.$store.getters['auth/getUser'] !== null) {
+        return this.$store.getters['auth/getUser'].first_name;
+      } else {
+        return null;
+      }
     },
   },
   methods: {

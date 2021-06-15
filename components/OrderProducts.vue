@@ -1,18 +1,17 @@
 <template>
   <article class="c-order-product">
-    <div class="c-order-product__image-container">
-      <img
-        :src="src + product.images[0].directus_files_id"
-        alt=""
-        class="c-order-product__image"
-      />
-    </div>
+    <div class="c-order-product__image-container"></div>
     <div class="c-order-product__content">
-      <p>{{ product.name }}</p>
-      <p>{{ product.id }}</p>
-      <p>{{ product.description }}</p>
-      <p>Quantity: {{ product.quantity_in_stock }}</p>
-      <p>Price: € {{ product.price }}</p>
+      <p class="c-order-product__name-container">
+        <em>Naam:</em>
+        <NuxtLink :to="`/shop/product/${productDetails.id}`">
+          <h2 class="c-order-product__name">
+            {{ productDetails.name }}
+          </h2>
+        </NuxtLink>
+      </p>
+      <p>hoeveelheid: {{ product.quantity }}</p>
+      <p>totaal per product: € {{ productDetails.price }}</p>
     </div>
   </article>
 </template>
@@ -31,17 +30,12 @@ export default {
       src: 'http://157.230.126.154/assets/',
     };
   },
-  computed: {},
-  methods: {
-    addProduct(product) {
-      this.$root.$emit('g-add-product', product);
-      this.$root.$emit(
-        'notify',
-        `${this.product.name} has been added to your shopping basket`,
-      );
-      this.$emit('add-product', product);
+  computed: {
+    productDetails() {
+      return this.product.product_id;
     },
   },
+  methods: {},
 };
 </script>
 
@@ -49,6 +43,21 @@ export default {
 .c-order-product {
   display: flex;
 
+  &__content {
+    border: 1px solid green;
+    width: 700px;
+    margin: 1em;
+  }
+
+  &__name {
+    font-size: 1em;
+    margin: 0em 0.5em;
+
+    &-container {
+      display: flex;
+    }
+  }
+  /*
   &__image {
     min-width: 400px;
     min-height: auto;
@@ -62,5 +71,6 @@ export default {
       overflow: hidden;
     }
   }
+  */
 }
 </style>

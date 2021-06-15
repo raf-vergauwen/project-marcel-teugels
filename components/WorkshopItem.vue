@@ -14,12 +14,6 @@
             {{ workshop.title }}
           </h2>
         </NuxtLink>
-        <button
-          class="c-workshop__btn admin-btn"
-          @click="$emit('remove-workshop', workshop)"
-        >
-          x
-        </button>
       </div>
 
       <div v-else>
@@ -92,15 +86,6 @@ export default {
 
   &__title {
     color: $dark-bg;
-  }
-
-  &__btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: $dark-bg;
-    color: $light-bg;
-    border: 0px;
   }
 
   &__admin-container {

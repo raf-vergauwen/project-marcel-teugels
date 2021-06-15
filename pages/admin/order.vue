@@ -1,23 +1,30 @@
 <template>
-  <section id="app">
-    <OrderItems
-      v-for="order in orderProductData"
-      :key="order.id"
-      class="p-storefront__product-list__item"
-      :order="order"
-    />
-  </section>
+  <main>
+    <section>
+      <div class="p-order">
+        <OrderItems
+          v-for="order in orderProductData"
+          :key="order.id"
+          class="p-order__item"
+          :order="order"
+        />
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
+// fit= cover
 export default {
   name: 'OrderPage',
   layout: 'admin',
   data() {
     return {
-      orderProductData: {},
+      loading: false,
+      page: 0,
 
-      allProductData: {},
+      orderProductData: {},
+      orderProductLength: 0,
     };
   },
   computed: {
@@ -30,22 +37,22 @@ export default {
   },
   methods: {
     fetchOrder() {
-      fetch(
-        'http://157.230.126.154/items/ordered_items?fields=*,products.*.*',
-        {
-          method: 'GET',
+      this.$axios('items/orders', {
+        method: 'GET',
+        headers: {},
+        params: {
+          fields: ['*,ordered_items.*', '*,ordered_items.product_id.*'],
+          sort: '-date_updated',
+          filter: {
+            status: { _neq: 'verzonden' },
+            order_confirmation: { _eq: true },
+          },
         },
-      )
-        .then((response) => {
-          if (!response.ok) {
-            console.log('could not fetch ordered items');
-          }
-
-          return response.json();
-        })
+      })
         .then((data) => {
-          this.orderProductData = data.data;
-          console.log(this.orderProductData);
+          this.orderProductData = data.data.data;
+          this.orderProductLength = this.orderProductData.length;
+          console.log(data);
         })
         .catch((err) => {
           console.error(err);
@@ -55,8 +62,9 @@ export default {
 };
 </script>
 
-<style>
-#app {
+<style lang="scss">
+.p-order {
   margin: 6em;
+  min-height: 80vh;
 }
 </style>

@@ -4,9 +4,9 @@
       <div class="home__webshop-container">
         <h1 class="home__title">webshop</h1>
         <p class="home__webshop-text">
-          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
-          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
-          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+          Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies.
+          Potenti nullam ac tortor vitae purus faucibus. Vel quam elementum
+          pulvinar etiam non quam lacus suspendisse faucibus.
         </p>
         <nuxt-link class="home__link" to="/shop/storefront"> webshop</nuxt-link>
       </div>
@@ -15,9 +15,10 @@
       <div class="home__restauratie-container">
         <h2 class="home__title">restauratie</h2>
         <p class="home__restauratie-text">
-          hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd jsjdjjdjd islkkss
-          jjjdjd jjdjdjjdjd hfdjkslkdj ufridokjfhd hdd jjdjjdjd djdjdjjd jdjdjjd
-          jsjdjjdjd islkkss jjjdjd jjdjdjjdjd
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi
+          bibendum neque egestas congue quisque egestas diam in. Mauris pharetra
+          et ultrices neque ornare aenean euismod elementum.
         </p>
         <nuxt-link class="home__link home__restauratie-link" to="/restauratie">
           restauratie

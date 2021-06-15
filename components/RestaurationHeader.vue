@@ -1,6 +1,11 @@
 <template>
   <header class="c-header">
     <div class="c-header__container">
+      <img
+        src="http://157.230.126.154/assets/96e3df59-a481-44f6-b979-693df355bf90"
+        alt=""
+        class="c-header__logo"
+      />
       <nav class="c-header__nav">
         <nuxt-link
           v-for="navItem in navItems"
@@ -24,11 +29,11 @@ export default {
   data() {
     return {
       navItems: [
-        { path: '/restauratie', label: 'home' },
-        { path: '/restauratie/method', label: 'werkwijze' },
-        { path: '/restauratie/workshop', label: 'workshops' },
-        { path: '/restauratie/contact', label: 'contact' },
-        { path: '/shop/storefront', label: 'store' },
+        { path: '/restauratie', label: 'Home' },
+        { path: '/restauratie/method', label: 'Werkwijze' },
+        { path: '/restauratie/workshop', label: 'Workshops' },
+        { path: '/restauratie/contact', label: 'Contact' },
+        { path: '/shop/', label: 'Winkel' },
       ],
     };
   },
@@ -41,6 +46,12 @@ export default {
 
   &__container {
     @extend .container;
+  }
+
+  &__logo {
+    width: 35px;
+    height: 35px;
+    margin: $s-site-padding;
   }
 
   &__nav {

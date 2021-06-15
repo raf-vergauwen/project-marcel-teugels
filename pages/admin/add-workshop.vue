@@ -1,7 +1,11 @@
 <template>
   <main class="p-product-page">
     <section id="new-workshop">
-      <FormulateForm v-model="workshopFormData" @submit="postWorkshop">
+      <FormulateForm
+        v-model="workshopFormData"
+        class="formulate-container"
+        @submit="postWorkshop"
+      >
         <FormulateInput
           name="title"
           type="text"
@@ -21,12 +25,19 @@
           type="image"
           name="images"
           label="Please select an image"
-          validation="mime:image/jpeg,image/png"
+          validation="mime:image/jpeg,image/png|required"
           :uploader="uploader"
           multiple
         />
         <FormulateInput type="submit" label="Sign up" />
       </FormulateForm>
+      <AdminWorkshop
+        v-for="workshop in workshopData"
+        :key="workshop.id"
+        class="p-storefront__product-list__item"
+        :workshop="workshop"
+        @remove-workshop="removeWorkshop($event)"
+      />
     </section>
   </main>
 </template>
@@ -37,6 +48,7 @@ export default {
   layout: 'admin',
   data() {
     return {
+      workshopData: {},
       workshopFormData: {
         title: '',
         date: '',
@@ -45,13 +57,10 @@ export default {
         text_content: '',
         images: [],
       },
-      newImage: '',
-      images: [
-        {
-          directus_files_id: '79c4d9ef-cd71-41ed-ae19-87af431bdfa5',
-        },
-      ],
     };
+  },
+  fetch() {
+    return this.fetchItems();
   },
   computed: {
     access_token() {
@@ -95,6 +104,37 @@ export default {
         .catch((e) => {
           console.error(e);
           error('Kan afbeelding niet uploaden, probeer het opnieuw');
+        });
+    },
+    fetchItems() {
+      this.$axios('items/workshops', {
+        method: 'GET',
+        headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
+      })
+        .then((response) => {
+          console.log(response.data.data);
+          this.workshopData = response.data.data;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    removeWorkshop(workshop) {
+      this.$axios(`/items/workshops/${workshop.id}`, {
+        method: 'PATCH',
+        data: {
+          status: 'archived',
+        },
+      })
+        .then(function (con) {
+          this.fetchItems();
+        })
+        .catch(function (error) {
+          console.error(error);
         });
     },
   },

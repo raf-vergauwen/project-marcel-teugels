@@ -1,21 +1,21 @@
 <template>
   <div>
-    <AccountHeader />
-    <StoreHeader />
+    <AccountHeader class="print-hide" />
+    <StoreHeader class="print-hide" />
     <Nuxt />
-    <Notify />
-    <Footer />
+    <Notify class="print-hide" />
+    <GlobalFooter class="print-hide" />
   </div>
 </template>
 
 <script>
 import Notify from '~/components/Notify';
 import StoreHeader from '~/components/StoreHeader';
-import Footer from '~/components/Footer.vue';
+import GlobalFooter from '~/components/GlobalFooter.vue';
 
 export default {
   name: 'DefaultLayout',
-  components: { Notify, StoreHeader, Footer },
+  components: { Notify, StoreHeader, GlobalFooter },
   middleware: 'session',
 };
 </script>

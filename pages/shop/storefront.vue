@@ -1,12 +1,6 @@
 <template>
   <main class="p-storefront">
-    <div class="title-btn__container">
-      <h1 class="p-product__title">Store</h1>
-
-      <button v-if="isAdmin === true" class="p-product__btn admin-btn">
-        <nuxt-link to="/admin/add-product">+</nuxt-link>
-      </button>
-    </div>
+    <h1 class="p-storefront__title">Store</h1>
 
     <div class="p-storefront__product-list">
       <ProductItem
@@ -14,8 +8,8 @@
         :key="product.id"
         class="p-storefront__product-list__item"
         :product="product"
-        @remove-product="removeProduct($event)"
         @add-product="addProduct"
+        @remove-product="removeProduct($event)"
       />
     </div>
   </main>
@@ -47,18 +41,19 @@ export default {
     isLoggedIn() {
       return this.$store.getters['auth/isLoggedIn'];
     },
-    isAdmin() {
-      return this.$store.getters['auth/isAdmin'];
-    },
   },
-  mounted() {
-    this.$store.commit('updateCartFromLocalStorage');
+  created() {
+    this.$store.dispatch('updateCartFromLocalStorage');
   },
   methods: {
     fetchItems() {
-      this.$axios('items/products?fields=*,images.*', {
+      this.$axios('items/products', {
         method: 'GET',
         headers: {},
+        params: {
+          fields: '*,images.*',
+          filter: { status: { _neq: 'archived' } },
+        },
       })
         .then((response) => {
           console.log(response);
@@ -70,71 +65,22 @@ export default {
     },
     addProduct(product) {
       console.log(product);
-      this.$store.commit('addToCart', product);
-      sessionStorage.setItem('shopping_cart', this.shoppingCart);
+      this.$store.dispatch('addToCart', product);
     },
-
     removeProduct(product) {
-      this.$axios(`/items/products/${product.id}`, {
-        method: 'DELETE',
-      })
-        .then(function (response) {
-          console.log(response.data);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+      const index = this.shoppingCart.indexOf(product);
+
+      if (this.$store.getters.productQuantity(product) === 1) {
+        this.shoppingCart.splice(index, index + 1);
+      }
+      this.$store.dispatch('removeFromCart', product);
+
+      this.$root.$emit(
+        'notify',
+        `${product.name} has been removed from your shopping basket`,
+      );
+      // this.shoppingList = this.$store.state.shoppingCart;
     },
-    /*
-    newShoppingCart() {
-      fetch('http://157.230.126.154/items/ordered_items', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not create new shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('newCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    addToShoppingCart(product) {
-      fetch('http://157.230.126.154/items/ordered_items/21', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: this.productBody,
-      })
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error('Could not add product to shopping cart');
-          }
-          return response.json();
-        })
-        .then((body) => {
-          console.log(body);
-          //this.clickCount++;
-          console.log('addToCart');
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
-    */
   },
 };
 </script>
@@ -142,30 +88,44 @@ export default {
 <style lang="scss">
 .p-storefront {
   @extend .container;
+  display: flex;
+  padding: 2em 2em;
+  flex-direction: column;
+  justify-content: center;
 
   &__product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $s-site-padding;
+    height: 100%;
 
     @include md() {
       grid-template-columns: repeat(2, 1fr);
     }
 
     @include sm() {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    &__item {
+      color: white;
+      box-shadow: 0 5px 1.7px rgb(0 0 0 / 1%), 0 5.5px 2.4px rgb(0 0 0 / 2%),
+        0 8.2px 3.6px rgb(0 0 0 / 3%), 0 1.8px 3.6px rgb(0 0 0 / 4%),
+        0 1.2px 4.4px rgb(0 0 0 / 4%), 0 7px 8px rgb(0 0 0 / 6%);
+      height: auto;
+    }
+  }
+
+  &__title {
+    color: $dark-bg;
+    width: 100%;
   }
 }
 
-.title-btn__container {
+.p-storefront__product .title-btn__container {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-}
-
-.p-product__title {
-  color: $dark-bg;
 }
 
 a {

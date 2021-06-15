@@ -1,23 +1,17 @@
 CREATE TABLE `users` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
-  `full_name` varchar(255),
+  `user_role` varchar(255),
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `email` varchar(255),
   `password` varchar(255),
   `created_at` timestamp,
-  `birthday` date,
-  `email` varchar(255),
-  `address` varchar(255),
   `phone_number` int,
-  `region` int,
-  `order_id` int,
-  `is_admin` boolean,
-  `discount_code` int
-);
-
-CREATE TABLE `regions` (
-  `id` int PRIMARY KEY,
-  `country_name` varchar(255),
-  `province_name` varchar(255),
-  `continent_name` varchar(255)
+  `street_name` varchar(255),
+  `house_number` varchar(255),
+  `postal_code` int,
+  `city_name` varchar(255),
+  `order_id` int
 );
 
 CREATE TABLE `ordered_items` (
@@ -31,33 +25,47 @@ CREATE TABLE `orders` (
   `id` int PRIMARY KEY,
   `user_id` int UNIQUE NOT NULL,
   `status` varchar(255),
-  `created_at` timestamp COMMENT 'When order created',
-  `total` decimal,
-  `notes` varchar(255)
+  `created_at` timestamp,
+  `total_price` decimal,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `email` varchar(255),
+  `phone_number` int,
+  `street_name` varchar(255),
+  `house_number` varchar(255),
+  `postal_code` int,
+  `city_name` varchar(255),
+  `notes` text,
+  `code` varchar(255),
+  `shipping_price` decimal,
+  `tracking_code` varchar(255),
+  `order_confirmation` boolean,
+  `payment_confirmation` boolean
 );
 
 CREATE TABLE `products` (
   `id` int PRIMARY KEY,
+  `status` varchar(255),
+  `created_at` timestamp,
   `name` varchar(255),
-  `tag_id` int,
+  `description` text,
   `price` decimal,
   `size` decimal,
   `weight` decimal,
-  `status` ENUM ('out_of_stock', 'in_stock', 'running_low'),
-  `created_at` datetime DEFAULT (now()),
   `quantity_in_stock` int,
   `rating` int,
-  `comment_id` int,
-  `image` int
+  `product_comments` int,
+  `tags` int,
+  `images` int
 );
 
 CREATE TABLE `blogposts` (
   `id` int PRIMARY KEY,
   `title` varchar(255),
-  `text_content` varchar(255),
+  `text_content` text,
   `is_admin` boolean,
   `comment_id` int,
-  `image` int
+  `images` int
 );
 
 CREATE TABLE `blog_comments` (
@@ -80,8 +88,8 @@ CREATE TABLE `user_request` (
   `id` int PRIMARY KEY,
   `user_id` int,
   `created_at` timestamp,
-  `tag_id` int,
-  `text_content` varchar(255)
+  `tags` int,
+  `text_content` text
 );
 
 CREATE TABLE `tags` (
@@ -90,15 +98,16 @@ CREATE TABLE `tags` (
   `description` varchar(255)
 );
 
-CREATE TABLE `discounts` (
+CREATE TABLE `workshops` (
   `id` int PRIMARY KEY,
-  `type` varchar(255),
-  `user_id` int,
-  `start_date` timestamp,
-  `end_date` timestamp
+  `status` varchar(255),
+  `datum` datetime,
+  `title` varchar(255),
+  `organiser` varchar(255),
+  `subject` varchar(255),
+  `text_content` text,
+  `images` int
 );
-
-ALTER TABLE `users` ADD FOREIGN KEY (`region`) REFERENCES `regions` (`id`);
 
 ALTER TABLE `ordered_items` ADD FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`);
 
@@ -116,18 +125,14 @@ ALTER TABLE `users` ADD FOREIGN KEY (`id`) REFERENCES `product_comments` (`user_
 
 ALTER TABLE `products` ADD FOREIGN KEY (`id`) REFERENCES `product_comments` (`product_id`);
 
-ALTER TABLE `product_comments` ADD FOREIGN KEY (`id`) REFERENCES `products` (`comment_id`);
+ALTER TABLE `product_comments` ADD FOREIGN KEY (`id`) REFERENCES `products` (`product_comments`);
 
-ALTER TABLE `blogposts` ADD FOREIGN KEY (`is_admin`) REFERENCES `users` (`is_admin`);
+ALTER TABLE `blogposts` ADD FOREIGN KEY (`is_admin`) REFERENCES `users` (`user_role`);
 
 ALTER TABLE `user_request` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
-ALTER TABLE `tags` ADD FOREIGN KEY (`id`) REFERENCES `products` (`tag_id`);
+ALTER TABLE `tags` ADD FOREIGN KEY (`id`) REFERENCES `products` (`tags`);
 
-ALTER TABLE `tags` ADD FOREIGN KEY (`id`) REFERENCES `user_request` (`tag_id`);
-
-ALTER TABLE `discounts` ADD FOREIGN KEY (`id`) REFERENCES `users` (`discount_code`);
-
-ALTER TABLE `discounts` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+ALTER TABLE `tags` ADD FOREIGN KEY (`id`) REFERENCES `user_request` (`tags`);
 
 ALTER TABLE `users` ADD FOREIGN KEY (`id`) REFERENCES `orders` (`user_id`);
