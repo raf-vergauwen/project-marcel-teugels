@@ -75,6 +75,10 @@ export default {
   &__item-a {
     grid-column: 1 / span 2;
   }
+
+  @include md() {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .c-profile-order__items {

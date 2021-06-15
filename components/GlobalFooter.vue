@@ -4,9 +4,9 @@
       <div class="c-globalfooter__nav">
         <p class="c-globalfooter__item">Marcel Teugels</p>
         <span class="c-globalfooter__break">•</span>
-        <p class="c-globalfooter__item">nep telefoon</p>
+        <p class="c-globalfooter__item">+32 474 22 56 08</p>
         <span class="c-globalfooter__break">•</span>
-        <p class="c-globalfooter__item">nep emailadress</p>
+        <p class="c-globalfooter__item">marcel_teugels@hotmail.com</p>
         <span class="c-globalfooter__break">•</span>
         <a class="c-globalfooter__item">instagram</a>
       </div>

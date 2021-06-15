@@ -11,6 +11,7 @@
         </p>
       </section>
       <section class="contact-form">
+        <h1>Contact</h1>
         <FormulateForm
           v-model="contactData"
           class="contact-form__inputs"
@@ -104,8 +105,10 @@ export default {
 
   &-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 80vh;
+    margin-top: $m-site-padding;
 
     &__inputs {
       width: 40vw;

@@ -3,7 +3,7 @@
     <div class="c-order-product__image-container"></div>
     <div class="c-order-product__content">
       <p class="c-order-product__name-container">
-        <em>Name:</em>
+        <em>Naam:</em>
         <NuxtLink :to="`/shop/product/${productDetails.id}`">
           <h2 class="c-order-product__name">
             {{ productDetails.name }}
@@ -11,7 +11,7 @@
         </NuxtLink>
       </p>
       <p>hoeveelheid: {{ product.quantity }}</p>
-      <p>totaal per product: € {{ product.total_price }}</p>
+      <p>totaal per product: € {{ productDetails.price }}</p>
     </div>
   </article>
 </template>
@@ -35,16 +35,7 @@ export default {
       return this.product.product_id;
     },
   },
-  methods: {
-    addProduct(product) {
-      this.$root.$emit('g-add-product', product);
-      this.$root.$emit(
-        'notify',
-        `${this.product.name} has been added to your shopping basket`,
-      );
-      this.$emit('add-product', product);
-    },
-  },
+  methods: {},
 };
 </script>
 

@@ -1,8 +1,13 @@
 <template>
-  <main class="p-payment-confirmation-page">
+  <main class="p-payment-confirmation">
     <div class="p-payment-confirmation__container">
       <div class="p-payment-confirmation__contact-info">
         <div class="p-payment-confirmation__costumer-details">
+          <img
+            src="http://157.230.126.154/assets/d4cb02b1-d712-4db3-996c-78049f3d7c8e"
+            alt=""
+            class="p-payment-confirmation__logo"
+          />
           <p>{{ name }}</p>
           <p>{{ street }}</p>
           <p>{{ city }}</p>
@@ -59,7 +64,7 @@
             </td>
           </tr>
         </table>
-        <div>
+        <div class="print-hide">
           <button :disabled="disabled" @click="confirmPayment">Akkoord</button>
           <button :disabled="disabled">Niet akkoord</button>
         </div>
@@ -153,12 +158,18 @@ export default {
 </script>
 
 <style lang="scss">
-.p-payment-confirmation-page {
+.p-payment-confirmation {
   &__container {
     @extend .container;
   }
   padding-top: $m-site-padding;
   padding-bottom: $m-site-padding;
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: $site-padding;
+  }
 }
 
 .p-payment-confirmation__contact-info {
@@ -185,5 +196,11 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+}
+
+@media print {
+  .print-hide {
+    display: none;
+  }
 }
 </style>

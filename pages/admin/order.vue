@@ -41,7 +41,7 @@ export default {
         method: 'GET',
         headers: {},
         params: {
-          fields: '*,ordered_items.product_id.*',
+          fields: ['*,ordered_items.*', '*,ordered_items.product_id.*'],
           sort: '-date_updated',
           filter: {
             status: { _neq: 'verzonden' },
@@ -58,7 +58,6 @@ export default {
           console.error(err);
         });
     },
-    
   },
 };
 </script>

@@ -57,7 +57,7 @@ export default {
         },
       })
         .then((response) => {
-          console.log(response.data);
+          console.log(response.data.data.code);
           this.$root.$emit('notify', 'Je bestelling is bevestigd');
         })
         .catch((err) => {

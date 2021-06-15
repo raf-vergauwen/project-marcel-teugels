@@ -10,7 +10,7 @@
           }"
           to="/admin/add-product"
         >
-          admin
+          Admin
         </nuxt-link>
         <nuxt-link
           v-if="!isLoggedIn"
@@ -20,7 +20,7 @@
           }"
           to="/login"
         >
-          login
+          Login
         </nuxt-link>
         <a
           v-if="isLoggedIn"
@@ -29,7 +29,7 @@
           }"
           @click="logout"
         >
-          logout
+          Logout
         </a>
         <nuxt-link
           v-if="isLoggedIn"
@@ -39,7 +39,7 @@
           }"
           to="/profile"
         >
-          profile
+          {{ userName }}
         </nuxt-link>
         <nuxt-link
           v-if="!isLoggedIn"
@@ -50,7 +50,7 @@
           }"
           to="/account-creation"
         >
-          register
+          Registreer
         </nuxt-link>
       </nav>
     </div>
@@ -69,6 +69,13 @@ export default {
     },
     isAdmin() {
       return this.$store.getters['auth/isAdmin'];
+    },
+    userName() {
+      if (this.$store.getters['auth/getUser'] !== null) {
+        return this.$store.getters['auth/getUser'].first_name;
+      } else {
+        return null;
+      }
     },
   },
   methods: {

@@ -51,7 +51,7 @@
             name="shipment_price"
             type="text"
             label="verzendkosten"
-            validation-name="naam"
+            validation-name="verzendkost"
             validation="required"
           />
           <FormulateInput type="submit" label="toevoegen" />
@@ -71,7 +71,7 @@
             name="tracking_code"
             type="text"
             label="tracking code"
-            validation-name="naam"
+            validation-name="trackingcode"
             validation="required"
           />
           <FormulateInput type="submit" label="toevoegen" />
@@ -178,6 +178,7 @@ export default {
       })
         .then((data) => {
           console.log(data);
+          this.readyToSend = true;
         })
         .catch((err) => {
           console.error(err);

@@ -224,6 +224,10 @@ export default {
   display: grid;
   grid-template-columns: 45% 45%;
   column-gap: $s-site-padding;
+
+  @include md() {
+    grid-template-columns: 100%;
+  }
 }
 
 .p-profile__orders {
@@ -235,5 +239,7 @@ export default {
   margin-bottom: $m-site-padding;
   background-color: $light-blue;
   padding: $m-site-padding;
+  border-radius: 15px;
+  box-shadow: $box-shadow;
 }
 </style>

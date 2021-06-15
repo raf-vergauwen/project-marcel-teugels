@@ -1,86 +1,88 @@
 <template>
   <main class="p-place-order">
-    <h1 class="p-place-order__title">Bestelling plaatsen</h1>
-    <component :is="component" @removeLogin="removeComponent"> </component>
-    <div v-if="!access && !isLoggedIn" class="p-place-order__login">
-      <button @click="component = 'Login'">Log in</button>
-      <button @click="generateGuestId">Ga door als gast</button>
-    </div>
-    <div v-else class="p-place-order__form-container">
-      <FormulateForm
-        v-model="formData"
-        class="p-place-order__form"
-        @submit="createOrder"
-      >
-        <FormulateInput
-          name="first_name"
-          type="text"
-          label="voornaam"
-          validation-name="voornaam"
-          validation="required"
-        />
-        <FormulateInput
-          name="last_name"
-          type="text"
-          label="achternaam"
-          validation-name="achternaam"
-          validation="required"
-        />
-        <FormulateInput
-          v-model="formData.email"
-          name="email"
-          type="email"
-          label="email"
-          validation-name="email"
-          validation="required|email"
-        />
-        <FormulateInput
-          name="phone_number"
-          type="number"
-          label="telefoonnummer"
-          validation-name="telefoonnummer"
-          validation="optional"
-        />
-        <FormulateInput
-          name="street_name"
-          type="text"
-          label="Straatnaam"
-          validation-name="straatnaam"
-          validation="optional"
-        />
-        <FormulateInput
-          name="house_number"
-          type="text"
-          label="Huisnummer"
-          validation-name="huisnummer"
-          validation="optional"
-        />
-        <FormulateInput
-          name="postal_code"
-          type="number"
-          label="Postcode"
-          validation-name="postcode"
-          validation="optional"
-        />
-        <FormulateInput
-          name="city_name"
-          type="text"
-          label="Stad"
-          validation-name="stad"
-          validation="optional"
-        />
-        <FormulateInput
-          name="notes"
-          type="textarea"
-          label="notities"
-          validation-name="notities"
-          validation="optional"
-        />
-        <FormulateInput type="submit" label="Bestelling plaatsen" />
-      </FormulateForm>
-      <div class="p-place-order__total">
-        <h2>Totaal:</h2>
-        <h3>€ {{ calculate_Total }}</h3>
+    <div class="p-place-order__container">
+      <h1 class="p-place-order__title">Bestelling plaatsen</h1>
+      <component :is="component" @removeLogin="removeComponent"> </component>
+      <div v-if="!access && !isLoggedIn" class="p-place-order__login">
+        <button @click="component = 'Login'">Log in</button>
+        <button @click="generateGuestId">Ga door als gast</button>
+      </div>
+      <div v-else class="p-place-order__form-container">
+        <FormulateForm
+          v-model="formData"
+          class="p-place-order__form"
+          @submit="createOrder"
+        >
+          <FormulateInput
+            name="first_name"
+            type="text"
+            label="voornaam"
+            validation-name="voornaam"
+            validation="required"
+          />
+          <FormulateInput
+            name="last_name"
+            type="text"
+            label="achternaam"
+            validation-name="achternaam"
+            validation="required"
+          />
+          <FormulateInput
+            v-model="formData.email"
+            name="email"
+            type="email"
+            label="email"
+            validation-name="email"
+            validation="required|email"
+          />
+          <FormulateInput
+            name="phone_number"
+            type="number"
+            label="telefoonnummer"
+            validation-name="telefoonnummer"
+            validation="optional"
+          />
+          <FormulateInput
+            name="street_name"
+            type="text"
+            label="Straatnaam"
+            validation-name="straatnaam"
+            validation="optional"
+          />
+          <FormulateInput
+            name="house_number"
+            type="text"
+            label="Huisnummer"
+            validation-name="huisnummer"
+            validation="optional"
+          />
+          <FormulateInput
+            name="postal_code"
+            type="number"
+            label="Postcode"
+            validation-name="postcode"
+            validation="optional"
+          />
+          <FormulateInput
+            name="city_name"
+            type="text"
+            label="Stad"
+            validation-name="stad"
+            validation="optional"
+          />
+          <FormulateInput
+            name="notes"
+            type="textarea"
+            label="notities"
+            validation-name="notities"
+            validation="optional"
+          />
+          <FormulateInput type="submit" label="Bestelling plaatsen" />
+        </FormulateForm>
+        <div class="p-place-order__total">
+          <h2>Totaal:</h2>
+          <h3>€ {{ calculate_Total }}</h3>
+        </div>
       </div>
     </div>
   </main>
@@ -216,16 +218,19 @@ export default {
 </script>
 
 <style lang="scss">
-.p-place-order__title {
-  margin: 1em;
+.p-place-order {
+  min-height: 80vh;
+
+  &__container {
+    @extend .container;
+  }
+
+  padding-top: $m-site-padding;
+  padding-bottom: $m-site-padding;
 }
 
 .p-place-order__login {
   margin: 3em;
-}
-
-.p-place-order__form-container {
-  display: flex;
 }
 
 .p-place-order__form {

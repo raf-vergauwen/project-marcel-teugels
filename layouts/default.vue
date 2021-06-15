@@ -1,10 +1,10 @@
 <template>
   <div>
-    <AccountHeader />
-    <StoreHeader />
+    <AccountHeader class="print-hide" />
+    <StoreHeader class="print-hide" />
     <Nuxt />
-    <Notify />
-    <GlobalFooter />
+    <Notify class="print-hide" />
+    <GlobalFooter class="print-hide" />
   </div>
 </template>
 
