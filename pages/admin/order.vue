@@ -1,11 +1,11 @@
 <template>
   <main>
     <section>
-      <div class="order">
+      <div class="p-order">
         <OrderItems
           v-for="order in orderProductData"
           :key="order.id"
-          class="p-storefront__product-list__item"
+          class="p-order__item"
           :order="order"
         />
       </div>
@@ -62,18 +62,9 @@ export default {
 };
 </script>
 
-<style>
-.order {
+<style lang="scss">
+.p-order {
   margin: 6em;
-}
-
-button.page-link {
-  display: inline-block;
-}
-
-button.page-link {
-  font-size: 20px;
-  color: #29b3ed;
-  font-weight: 500;
+  min-height: 80vh;
 }
 </style>
