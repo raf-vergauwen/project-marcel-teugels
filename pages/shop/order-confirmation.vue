@@ -3,10 +3,10 @@
     <h1 class="p-order-confirmation__title">Bestelling bevestigen</h1>
     <div class="p-order-confirmation__container">
       <div class="p-order-confirmation__text">
-        <p>Bedankt voor u bestelling.</p>
+        <p>Bedankt voor uw bestelling.</p>
         <p>
           De verzendkosten worden berekend en u zal tijdig via mail op de hoogte
-          worden gebracht. Bij deze gaat akkoord met de voorwaarden.
+          worden gebracht. Bij deze gaat u akkoord met de voorwaarden.
         </p>
         <button @click="confirmOrder">Akkoord</button>
         <button @click="cancelOrder">Niet akkoord</button>

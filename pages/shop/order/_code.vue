@@ -10,12 +10,12 @@
         </div>
         <div class="p-payment-confirmation__seller-details">
           <p>Marcel Teugels</p>
-          <p>Straat 28</p>
-          <p>2000 Antwerpen</p>
+          <p>Greinerstraat 12</p>
+          <p>2660 Antwerpen</p>
           <p>+32 474 22 56 08</p>
           <p>marcel_teugels@hotmail.com</p>
-          <p>Btw-nummer</p>
-          <p>Rekeningnummer</p>
+          <p>Btw-nr: BE 0896.755.397</p>
+          <p>IBAN: BE32 3770 9165 1802</p>
         </div>
       </div>
       <div class="p-payment-confirmation__order-info">
@@ -26,7 +26,7 @@
               date.getFullYear()
             }}
           </p>
-          <p>Factuurnummer: 1</p>
+          <p>Factuurnummer: {{ id }}</p>
         </div>
         <table class="p-payment-confirmation__table">
           <tr>
@@ -54,9 +54,15 @@
           </tr>
           <tr>
             <th>Totaal:</th>
-            <td>{{ parseFloat(totalPrice) + parseFloat(shippingPrice) }}</td>
+            <td>
+              {{ parseFloat(totalPrice) + parseFloat(shippingPrice) }} EUR
+            </td>
           </tr>
         </table>
+        <div>
+          <button :disabled="disabled" @click="confirmPayment">Akkoord</button>
+          <button :disabled="disabled">Niet akkoord</button>
+        </div>
       </div>
     </div>
   </main>
@@ -71,6 +77,7 @@ export default {
   data() {
     return {
       code: this.$route.params.code,
+      id: '',
       name: '',
       street: '',
       city: '',
@@ -79,6 +86,7 @@ export default {
       orderedItems: [],
       totalPrice: '',
       shippingPrice: 1,
+      disabled: false,
     };
   },
   fetch() {
@@ -86,6 +94,26 @@ export default {
   },
   computed: {},
   methods: {
+    confirmPayment() {
+      this.$axios('items/orders/' + this.id, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        data: {
+          payment_confirmation: true,
+        },
+      })
+        .then((response) => {
+          console.log(response.data);
+          this.disabled = true;
+          this.$root.$emit(
+            'notify',
+            'Je betaling is bevestigd, uw bestelling is onderweg',
+          );
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
     fetchOrder() {
       this.$axios('items/orders/', {
         method: 'GET',
@@ -100,6 +128,7 @@ export default {
         .then((response) => {
           this.orderData = response.data.data[0];
           console.log(this.orderData);
+          this.id = this.orderData.id;
           this.name =
             this.orderData.first_name + ' ' + this.orderData.last_name;
           this.street =
@@ -125,20 +154,26 @@ export default {
 
 <style lang="scss">
 .p-payment-confirmation-page {
-  margin-left: 2em;
-  margin-bottom: 3em;
-  margin-top: 3em;
+  &__container {
+    @extend .container;
+  }
+  padding-top: $m-site-padding;
+  padding-bottom: $m-site-padding;
 }
 
 .p-payment-confirmation__contact-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 1em;
+  margin-bottom: $m-site-padding;
+}
+
+.p-payment-confirmation__order-info {
+  margin-left: $m-site-padding;
 }
 
 .p-payment-confirmation__invoice-info {
-  margin-bottom: 3em;
+  margin-bottom: $m-site-padding;
 }
 
 .p-payment-confirmation__table {
@@ -149,6 +184,6 @@ export default {
 .p-payment-confirmation__total {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 2em;
+  justify-content: space-around;
 }
 </style>

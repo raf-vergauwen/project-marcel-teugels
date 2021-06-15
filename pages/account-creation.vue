@@ -1,50 +1,48 @@
 <template>
-  <main>
-    <div class="container">
-      <h1>Account creation</h1>
-      <FormulateForm
-        v-model="accountInfo"
-        class="p-account-creation__form"
-        @submit="createAccount"
-      >
-        <FormulateInput
-          name="first_name"
-          type="text"
-          label="Voornaam"
-          validation-name="voornaam"
-          validation="required"
-        />
-        <FormulateInput
-          name="last_name"
-          type="text"
-          label="Achternaam"
-          validation-name="achternaam"
-          validation="required"
-        />
-        <FormulateInput
-          name="email"
-          type="email"
-          label="email"
-          validation-name="email"
-          validation="required|email"
-        />
-        <FormulateInput
-          name="password"
-          type="password"
-          label="Wachtwoord"
-          validation-name="wachtwoord"
-          validation="required"
-        />
-        <FormulateInput
-          name="password_confirm"
-          type="password"
-          label="Wachtwoord herhalen"
-          validation="required|confirm"
-          validation-name="wachtwoord herhalen"
-        />
-        <FormulateInput type="submit" label="Registreer" />
-      </FormulateForm>
-    </div>
+  <main class="p-account-creation">
+    <h1>Registreer</h1>
+    <FormulateForm
+      v-model="accountInfo"
+      class="p-account-creation__form"
+      @submit="createAccount"
+    >
+      <FormulateInput
+        name="first_name"
+        type="text"
+        label="Voornaam"
+        validation-name="voornaam"
+        validation="required"
+      />
+      <FormulateInput
+        name="last_name"
+        type="text"
+        label="Achternaam"
+        validation-name="achternaam"
+        validation="required"
+      />
+      <FormulateInput
+        name="email"
+        type="email"
+        label="email"
+        validation-name="email"
+        validation="required|email"
+      />
+      <FormulateInput
+        name="password"
+        type="password"
+        label="Wachtwoord"
+        validation-name="wachtwoord"
+        validation="required"
+      />
+      <FormulateInput
+        name="password_confirm"
+        type="password"
+        label="Wachtwoord herhalen"
+        validation="required|confirm"
+        validation-name="wachtwoorden"
+      />
+      <FormulateInput type="submit" label="Account aanmaken" />
+    </FormulateForm>
   </main>
 </template>
 
@@ -86,7 +84,10 @@ export default {
         data: this.accountBody,
       })
         .then((response) => {
-          console.log(response);
+          this.$root.$emit(
+            'notify',
+            `Registratie geslaagd, welkom ${this.accountInfo.first_name}!`,
+          );
           return response.data.data;
         })
         .catch((err) => {
@@ -97,46 +98,11 @@ export default {
 };
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss">
+.p-account-creation {
+  @extend .container;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-label {
-  padding: 1em;
+  padding-top: $m-site-padding;
+  padding-bottom: $m-site-padding;
 }
 </style>

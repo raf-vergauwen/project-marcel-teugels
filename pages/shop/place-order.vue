@@ -50,7 +50,7 @@
         />
         <FormulateInput
           name="house_number"
-          type="number"
+          type="text"
           label="Huisnummer"
           validation-name="huisnummer"
           validation="optional"
@@ -97,8 +97,8 @@ export default {
         email: '',
         phone_number: '',
         street_name: '',
-        house_number: 0,
-        postal_code: 0,
+        house_number: '',
+        postal_code: '',
         city_name: '',
         notes: '',
         user_id: null,
