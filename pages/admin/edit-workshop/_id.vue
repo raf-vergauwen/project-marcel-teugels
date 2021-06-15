@@ -14,18 +14,35 @@
             label="workshop naam"
             validation="required"
           />
-          <FormulateInput name="date" type="date" label="datum" />
-          <FormulateInput name="organizer" type="text" label="organisator" />
-          <FormulateInput name="subject" type="text" label="onderwerp" />
+          <FormulateInput
+            name="date"
+            type="date"
+            label="datum"
+            validation="required"
+          />
+          <FormulateInput
+            name="organizer"
+            type="text"
+            label="organisator"
+            validation="required"
+          />
+          <FormulateInput
+            name="subject"
+            type="text"
+            label="onderwerp"
+            validation="required"
+          />
           <FormulateInput
             name="textContent"
             type="textarea"
             label="omschrijving"
+            validation="required"
           />
           <FormulateInput
             type="image"
             name="images"
             label="Please select an image"
+            validation="required"
             :uploader="uploader"
             multiple
           />

@@ -20,9 +20,6 @@
           goedkeuring prijs
         </p>
         <span class="c-order-item__space"></span>
-        <div class="send-btn" :class="{ hide: readyToSend === false }">
-          <span class="c-order-item__space"></span>
-        </div>
 
         <p class="c-order-item__status" :class="{ active: verzonden === true }">
           verzonden
@@ -210,6 +207,7 @@ export default {
 
   &__content {
     width: 100%;
+    padding: 2em;
   }
 
   &__space {
