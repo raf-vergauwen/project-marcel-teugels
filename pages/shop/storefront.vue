@@ -68,10 +68,10 @@ export default {
       this.$store.dispatch('addToCart', product);
     },
     removeProduct(product) {
-      const index = this.shoppingList.indexOf(product);
+      const index = this.shoppingCart.indexOf(product);
 
       if (this.$store.getters.productQuantity(product) === 1) {
-        this.shoppingList.splice(index, index + 1);
+        this.shoppingCart.splice(index, index + 1);
       }
       this.$store.dispatch('removeFromCart', product);
 

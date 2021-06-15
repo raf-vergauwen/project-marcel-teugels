@@ -123,4 +123,8 @@ export default {
     }
   }
 }
+
+.place-order-link {
+  color: $dark-bg;
+}
 </style>

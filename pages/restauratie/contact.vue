@@ -63,6 +63,7 @@ export default {
       })
         .then((response) => {
           console.log(response);
+          this.$root.$emit('notify', 'Je verzoek is verstuurd!');
           return response.data.data;
         })
         .catch((err) => {

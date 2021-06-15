@@ -172,7 +172,6 @@ export default {
       })
         .then((data) => {
           console.log(data);
-          this.readyToSend = true;
         })
         .catch((err) => {
           console.error(err);
