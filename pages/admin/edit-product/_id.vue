@@ -14,19 +14,41 @@
             label="product naam"
             validation="required"
           />
-          <FormulateInput name="price" type="number" label="prijs" />
-          <FormulateInput name="weight" type="text" label="gewicht" />
-          <FormulateInput name="size" type="text" label="grootte" />
-          <FormulateInput name="quantity" type="text" label="hoeveelheid" />
+          <FormulateInput
+            name="price"
+            type="number"
+            label="prijs"
+            validation="required"
+          />
+          <FormulateInput
+            name="weight"
+            type="text"
+            label="gewicht"
+            validation="required"
+          />
+          <FormulateInput
+            name="size"
+            type="text"
+            label="grootte"
+            validation="required"
+          />
+          <FormulateInput
+            name="quantity"
+            type="text"
+            label="hoeveelheid"
+            validation="required"
+          />
           <FormulateInput
             name="description"
             type="textarea"
             label="omschrijving"
+            validation="required"
           />
           <FormulateInput
             type="image"
             name="images"
             label="Please select an image"
+            validation="required"
             :uploader="uploader"
             multiple
           />

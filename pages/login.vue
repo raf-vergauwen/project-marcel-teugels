@@ -76,6 +76,8 @@ export default {
   }
   padding-top: $m-site-padding;
   padding-bottom: $m-site-padding;
+
+  min-height: 80vh;
 }
 
 .p-login__form {

@@ -95,10 +95,21 @@
           src="http://157.230.126.154/assets/8034a8a4-1e35-4e4d-993f-c5e165d56d05"
           alt=""
         />
-        <p class="contact-h__text"></p>
+        <p class="contact-h__text">
+          Reproducties van bestaand werk of nieuwe creaties gemaakt binnen een
+          bepaalde stijl vinden hun plaats bij restauratiewerken waar stukken
+          verloren zijn gegaan, bij een tijdsgebonden inkleding van een
+          historische- of een nieuwe ruimte of als blikvanger binnen een
+          hedendaagse context. Hiervoor worden zo veel mogelijk traditionele
+          materialen en technieken gebruikt om zo goed mogelijk bij het
+          origineel aan te sluiten. Dus heeft U een historisch object in uw
+          bezit, ontbreken er bepaalde elementen in uit interieur of heeft u
+          ergens iets gezien wat u graag laat kopiëren. Contacteer mij om de
+          mogelijkheden te bespreken.
+        </p>
       </div>
       <div class="about__btn-contact link-btn">
-        <NuxtLink :to="`contact`">
+        <NuxtLink :to="`restauratie/contact`">
           <h1 class="about__btn-contact__name link-btn-title">contact</h1>
         </NuxtLink>
       </div>

@@ -64,6 +64,7 @@ export default {
 
 <style lang="scss">
 .p-request {
+  min-height: 90vh;
   &-items {
     width: 50vw;
     padding: 2em;

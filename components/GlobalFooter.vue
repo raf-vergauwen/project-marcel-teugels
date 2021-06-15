@@ -8,7 +8,11 @@
         <span class="c-globalfooter__break">•</span>
         <p class="c-globalfooter__item">marcel_teugels@hotmail.com</p>
         <span class="c-globalfooter__break">•</span>
-        <a class="c-globalfooter__item">instagram</a>
+        <a
+          href="https://www.instagram.com/marcelteugels/"
+          class="c-globalfooter__item"
+          >instagram</a
+        >
       </div>
     </div>
   </footer>
