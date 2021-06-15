@@ -32,8 +32,8 @@
           name="password_confirm"
           type="password"
           label="Wachtwoord herhalen"
-          validation="required|confirm"
-          validation-name="wachtwoord herhalen"
+          validation="optional|confirm"
+          validation-name="wachtwoord"
         />
         <FormulateInput
           v-model="userInfo.email"
@@ -59,7 +59,7 @@
         />
         <FormulateInput
           name="house_number"
-          type="number"
+          type="text"
           label="Huisnummer"
           validation-name="huisnummer"
           validation="optional"
@@ -82,19 +82,22 @@
       </FormulateForm>
     </div>
     <div class="p-profile__orders">
-      <OrderItems
+      <ProfileOrders
         v-for="order in orders"
         :key="order.id"
-        class="p-storefront__product-list__item"
         :order="order"
+        class="p-profile__orders__component"
       />
     </div>
   </main>
 </template>
 
 <script>
+import ProfileOrders from '~/components/ProfileOrders';
+
 export default {
   name: 'ProfilePage',
+  components: { ProfileOrders },
   middleware: 'auth',
   data() {
     return {
@@ -103,12 +106,11 @@ export default {
         first_name: '',
         last_name: '',
         password: '',
-        passwordCheck: '',
         email: '',
-        phone_number: 0,
+        phone_number: '',
         street_name: '',
-        house_number: 0,
-        postal_code: 0,
+        house_number: '',
+        postal_code: '',
         city_name: '',
         location: '',
       },
@@ -126,14 +128,21 @@ export default {
       headers: {
         Authorization: 'Bearer ' + this.access_token,
       },
-      fields: ['*,orders.*', '*,orders.ordered_items.*'],
+      params: {
+        fields: [
+          '*,orders.*',
+          '*,orders.ordered_items.*',
+          '*,orders.ordered_items.product_id.*',
+        ],
+      },
     })
       .then((response) => {
-        this.oldEmail = response.data.data.email;
         console.log(response);
+        this.oldEmail = response.data.data.email;
         this.userInfo = response.data.data;
-        this.userInfo.password = '';
-        this.userInfo.passwordCheck = '';
+        // this.userInfo.password = '';
+        this.orders = response.data.data.orders;
+        console.log(this.orders);
       })
       .catch((err) => {
         console.error(err);
@@ -157,11 +166,14 @@ export default {
           Authorization: 'Bearer ' + this.access_token,
         },
         data: {
-          first_name: this.userInfo.firstName,
-          last_name: this.userInfo.lastName,
+          first_name: this.userInfo.first_name,
+          last_name: this.userInfo.last_name,
           email: this.userInfo.email,
-          password: this.userInfo.password,
-          location: this.userInfo.location,
+          phone_number: this.userInfo.phone_number,
+          street_name: this.userInfo.street_name,
+          house_number: this.userInfo.house_number,
+          postal_code: this.userInfo.postal_code,
+          city_name: this.userInfo.city_name,
         },
       })
         .then((response) => {
@@ -181,8 +193,11 @@ export default {
         data: {
           first_name: this.userInfo.firstName,
           last_name: this.userInfo.lastName,
-          password: this.userInfo.password,
-          location: this.userInfo.location,
+          phone_number: this.userInfo.phone_number,
+          street_name: this.userInfo.street_name,
+          house_number: this.userInfo.house_number,
+          postal_code: this.userInfo.postal_code,
+          city_name: this.userInfo.city_name,
         },
       })
         .then((response) => {
@@ -209,5 +224,16 @@ export default {
   display: grid;
   grid-template-columns: 45% 45%;
   column-gap: $s-site-padding;
+}
+
+.p-profile__orders {
+  @extend .container;
+}
+
+.p-profile__orders__component {
+  margin-top: $m-site-padding;
+  margin-bottom: $m-site-padding;
+  background-color: $light-blue;
+  padding: $m-site-padding;
 }
 </style>
