@@ -95,6 +95,10 @@ export default {
 <style lang="scss">
 .p-storefront {
   @extend .container;
+  display: flex;
+  padding: 2em 2em;
+  flex-direction: column;
+  justify-content: center;
 
   &__product-list {
     display: grid;
@@ -112,14 +116,16 @@ export default {
 
     &__item {
       color: white;
-      box-shadow: 0 3px 19.7px rgb(0 0 0 / 1%), 0 5.5px 26.4px rgb(0 0 0 / 2%),
-        0 8.2px 30.6px rgb(0 0 0 / 3%), 0 11.8px 35.6px rgb(0 0 0 / 4%),
-        0 17.2px 45.4px rgb(0 0 0 / 4%), 0 27px 80px rgb(0 0 0 / 6%);
+      box-shadow: 0 5px 1.7px rgb(0 0 0 / 1%), 0 5.5px 2.4px rgb(0 0 0 / 2%),
+        0 8.2px 3.6px rgb(0 0 0 / 3%), 0 1.8px 3.6px rgb(0 0 0 / 4%),
+        0 1.2px 4.4px rgb(0 0 0 / 4%), 0 7px 8px rgb(0 0 0 / 6%);
+      height: auto;
     }
   }
 
   &__title {
     color: $dark-bg;
+    width: 100%;
   }
 }
 

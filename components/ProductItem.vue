@@ -100,9 +100,12 @@ export default {
 .c-product-item {
   background-color: $dark-blue;
   border-radius: 15px;
-
+  height: auto;
 
   &__image {
+    overflow: hidden;
+    max-height: 400px;
+
     img {
       display: block;
       width: 100%;

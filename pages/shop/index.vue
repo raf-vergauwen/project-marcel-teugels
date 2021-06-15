@@ -14,24 +14,33 @@
         <p class="p-storehome__about__text">
           Ik studeerde af als master in de conservatie en restauratie van hout
           aan de Universiteit van Antwerpen (UA). Tijdens mijn bachelor werkte
-          ik hoofdzakelijk rond de restauratie van historisch, (beschilderd)
-          meubilair. In de master verschoof ik de focus naar de restauratie en
-          conservatie van natuurhistorische collecties, en in het bijzonder de
-          restauratie van taxidermie (opgezette dieren). Ik liep in dit
-          masterjaar stage aan het Koninklijk Belgisch Instituut voor
+          ik hoofdzakelijk rond de restauratie en conservatie van historisch,
+          (beschilderd) meubilair. In de master verschoof ik de focus naar de
+          restauratie en conservatie van natuurhistorische collecties, en in het
+          bijzonder de restauratie van taxidermie (opgezette dieren). Ik liep in
+          dit masterjaar stage aan het Koninklijk Belgisch Instituut voor
           Natuurwetenschappen (KBIN) waar ik meewerkte aan de restauratie van de
           collectie jachttrofeeën van het Koninklijk Museum voor Midden-Afrika
           (KMMA) in Tervuren. Om me verder te verdiepen in deze unieke
-          discipline reisde ik naar het Verenigd Koninkrijk voor het volgen van
-          een “Taxidermy Conservatie Course” van enkele dagen, onder leiding van
-          gerenommeerd conservator van natuurhistorische collectie, Simon
-          Moore.<br />
-          Na het behalen van mijn masterdiploma begon ik met de steun van het
-          Fonds Baillet Latour aan een jaar lange vervolmakingsstage in het
-          restauratie-conservatie atelier voor polychrome houtsculptuur van het
-          Koninklijk Instituut voor het Kunstpatrimonium (KIK) in Brussel. Hier
-          werkte ik samen met de top van de Belgische erfgoedwerkers aan
-          houtsnijwerk topstukken uit de lage landen.
+          discipline reisde ik later ook naar het Verenigd Koninkrijk voor het
+          volgen van een “Taxidermy Conservatie Course” van enkele dagen, onder
+          leiding van gerenommeerd conservator van natuurhistorische collectie,
+          Simon Moore. Na het behalen van mijn masterdiploma begon ik met de
+          steun van het Fonds Baillet Latour aan een jaar lange
+          vervolmakingsstage in het restauratie en conservatie atelier voor
+          polychrome houtsculptuur van het Koninklijk Instituut voor het
+          Kunstpatrimonium (KIK) in Brussel. Hier werkte ik samen met de top van
+          de Belgische erfgoedwerkers aan houtsnijwerk topstukken uit de lage
+          landen. Na de stage in het KIK werkte ik twee en een half jaar lang
+          als restaurator van hout en metaal voor de restauratiefirma Remmen bv
+          en startte ik een tweejarig Meester-Leerling-Traject als opleiding tot
+          kunstsmid met steun van de Vlaamse Overheid, Departement Cultuur,
+          Jeugd en Media. In maart 2021 startte ik als zelfstandige restaurator
+          en ambachtsman en kan je als klant bij mij terecht voor de conservatie
+          en restauratie van houten erfgoed, objecten, meubels,
+          (gepolychromeerd) beeldhouwwerk, taxidermie, etnografie en smeedwerk.
+          Maar ook voor historische reproducties in hout en smeedwerk en
+          hedendaagse creaties op maat in hout en metaal.
         </p>
         <div class="p-storehome__about__img--container">
           <img
@@ -163,6 +172,11 @@ export default {
 
       @include xl() {
         margin: 0px;
+      }
+
+      @include sm() {
+        width: 300px;
+        height: 300px;
       }
     }
   }

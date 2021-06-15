@@ -5,7 +5,7 @@
         <p class="c-globalfooter__item">Marcel Teugels</p>
         <span class="c-globalfooter__break">•</span>
         <p class="c-globalfooter__item">nep telefoon</p>
-        <span class="c-fglobalooter__break">•</span>
+        <span class="c-globalfooter__break">•</span>
         <p class="c-globalfooter__item">nep emailadress</p>
         <span class="c-globalfooter__break">•</span>
         <a class="c-globalfooter__item">instagram</a>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'globalfooter',
+  name: 'GlobalFooter',
   data() {
     return {};
   },
@@ -39,14 +39,26 @@ export default {
     justify-content: center;
     align-items: center;
 
+    @include md() {
+      flex-direction: column;
+    }
+
     &__item {
       padding: $s-site-padding $s-site-padding;
       text-decoration: none;
       color: $light-bg;
+
+      @include md() {
+        margin: 1em;
+      }
     }
   }
   &__break {
     margin: 0em 2em;
+
+    @include md() {
+      display: none;
+    }
   }
 
   &__item {
