@@ -5,6 +5,7 @@
         <FormulateForm
           v-if="productLoaded"
           v-model="newProductData"
+          class="formulate-container"
           @submit="editProduct"
         >
           <FormulateInput

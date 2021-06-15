@@ -52,6 +52,7 @@ export default {
 <style lang="scss">
 .c-admin-product-item {
   margin: 0;
+  width: 200px;
 
   &-page {
     padding: $s-site-padding;
