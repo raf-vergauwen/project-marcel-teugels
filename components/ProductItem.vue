@@ -3,27 +3,35 @@
     <div class="c-product-item__image">
       <img :src="src + product.images[0].directus_files_id" alt="" />
     </div>
-    <div>
-      <NuxtLink :to="`/shop/product/${product.id}`">
-        <h2 class="c-product-item__title">
-          {{ product.name }}
-        </h2>
-      </NuxtLink>
-    </div>
+    <div class="c-product-item__info">
+      <div>
+        <NuxtLink :to="`/shop/product/${product.id}`">
+          <h2 class="c-product-item__title">
+            {{ product.name }}
+          </h2>
+        </NuxtLink>
+      </div>
 
-    <div class="c-product-item__content">
-      <p>{{ product.name }}</p>
-      <p>{{ product.id }}</p>
-      <p>{{ product.description }}</p>
-      <p>Quantity: {{ product.quantity_in_stock }}</p>
-      <p>Price: € {{ product.price }}</p>
-    </div>
-    <div class="c-product-item__quantity">
-      <button :disabled="isEmpty" @click="$emit('remove-product', product)">
-        -
-      </button>
-      {{ product_quantity }}
-      <button :disabled="isDisabled" @click="addProduct">+</button>
+      <div class="c-product-item__content">
+        <p>Price: € {{ product.price }}</p>
+      </div>
+      <div class="c-product-item__quantity">
+        <button
+          class="c-product-item__btn"
+          :disabled="isEmpty"
+          @click="$emit('remove-product', product)"
+        >
+          -
+        </button>
+        {{ product_quantity }}
+        <button
+          class="c-product-item__btn"
+          :disabled="isDisabled"
+          @click="addProduct"
+        >
+          +
+        </button>
+      </div>
     </div>
   </article>
 </template>
@@ -91,14 +99,34 @@ export default {
 <style lang="scss">
 .c-product-item {
   background-color: $dark-blue;
-  padding: $s-site-padding;
+  border-radius: 15px;
+  height: auto;
 
   &__image {
+    overflow: hidden;
+    max-height: 400px;
+
     img {
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 15px 15px 0 0;
     }
+  }
+
+  &__info {
+    margin: 1em;
+  }
+
+  &__title {
+    @extend %font-size-5;
+  }
+
+  &__btn {
+    border: 0px;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

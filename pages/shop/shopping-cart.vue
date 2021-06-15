@@ -84,27 +84,43 @@ export default {
 </script>
 
 <style lang="scss">
-.p-shopping-cart__title {
-  margin: 1em;
-}
+.p-shopping-cart {
+  min-height: 80vh;
 
-.p-shopping-cart__container {
-  display: flex;
-}
+  &__title {
+    margin: 1em;
+  }
 
-.p-shopping-cart__product-list {
-  width: 70%;
-}
+  &__container {
+    display: flex;
 
-.p-shopping-cart__product-list__item {
-  margin-bottom: 1em;
-  margin-left: 2em;
-}
+    @include xl() {
+      flex-direction: column;
+    }
+  }
 
-.p-shopping-cart__total {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__product-list {
+    width: 70%;
+
+    @include xl() {
+      width: 100%;
+    }
+
+    &__item {
+      margin: 1em 2em;
+    }
+  }
+
+  &__total {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include xl() {
+      width: 100vw;
+      margin: 1em 0em;
+    }
+  }
 }
 </style>

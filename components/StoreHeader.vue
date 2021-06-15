@@ -52,10 +52,19 @@ export default {
   &__nav {
     display: flex;
     justify-content: flex-end;
+
+    @include sm() {
+      flex-direction: column;
+    }
+
     &__item {
       padding: $s-site-padding $s-site-padding;
       text-decoration: none;
       color: $light-bg;
+
+      @include sm() {
+        padding: 0em;
+      }
 
       &--active,
       &:hover {

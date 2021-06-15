@@ -1,6 +1,6 @@
 <template>
   <main class="p-storefront">
-    <h1 class="p-product__title">Store</h1>
+    <h1 class="p-storefront__title">Store</h1>
 
     <div class="p-storefront__product-list">
       <ProductItem
@@ -88,34 +88,44 @@ export default {
 <style lang="scss">
 .p-storefront {
   @extend .container;
+  display: flex;
+  padding: 2em 2em;
+  flex-direction: column;
+  justify-content: center;
 
   &__product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $s-site-padding;
+    height: 100%;
 
     @include md() {
       grid-template-columns: repeat(2, 1fr);
     }
 
     @include sm() {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    &__item {
+      color: white;
+      box-shadow: 0 5px 1.7px rgb(0 0 0 / 1%), 0 5.5px 2.4px rgb(0 0 0 / 2%),
+        0 8.2px 3.6px rgb(0 0 0 / 3%), 0 1.8px 3.6px rgb(0 0 0 / 4%),
+        0 1.2px 4.4px rgb(0 0 0 / 4%), 0 7px 8px rgb(0 0 0 / 6%);
+      height: auto;
+    }
+  }
+
+  &__title {
+    color: $dark-bg;
+    width: 100%;
   }
 }
 
-.p-storefront__product-list__item {
-  color: white;
-}
-
-.title-btn__container {
+.p-storefront__product .title-btn__container {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-}
-
-.p-product__title {
-  color: $dark-bg;
 }
 
 a {
