@@ -25,7 +25,7 @@
           type="image"
           name="images"
           label="Please select an image"
-          validation="mime:image/jpeg,image/png"
+          validation="mime:image/jpeg,image/png|required"
           :uploader="uploader"
           multiple
         />

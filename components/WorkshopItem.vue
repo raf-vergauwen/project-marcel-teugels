@@ -14,12 +14,6 @@
             {{ workshop.title }}
           </h2>
         </NuxtLink>
-        <button
-          class="c-workshop__btn admin-btn"
-          @click="$emit('remove-workshop', workshop)"
-        >
-          x
-        </button>
       </div>
 
       <div v-else>

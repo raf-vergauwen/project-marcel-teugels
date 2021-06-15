@@ -2,9 +2,6 @@
   <main>
     <div v-if="isAdmin === true" class="title-btn__container">
       <h1 class="p-workshop__title">Workshops</h1>
-      <button class="p-workshop__btn admin-btn">
-        <a href="/admin/add-workshop">+</a>
-      </button>
     </div>
 
     <div v-else class="title-btn__container">
@@ -17,7 +14,6 @@
         :key="workshop.id"
         class="p-workshops__product-list__item"
         :workshop="workshop"
-        @remove-workshop="removeWorkshop($event)"
       />
     </div>
   </main>
@@ -65,17 +61,6 @@ export default {
         })
         .catch((err) => {
           console.error(err);
-        });
-    },
-    removeWorkshop(workshop) {
-      this.$axios(`/items/workshops/${workshop.id}`, {
-        method: 'DELETE',
-      })
-        .then(function (response) {
-          console.log(response.data);
-        })
-        .catch(function (error) {
-          console.error(error);
         });
     },
   },
